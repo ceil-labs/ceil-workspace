@@ -58,8 +58,14 @@ Inspired by **Ciel** from *That Time I Got Reincarnated as a Slime* — the part
 ## Infrastructure
 
 ### Agents
-- **Ceil** (main) — workspace at `~/.openclaw/workspace`
-- **Neo** — workspace at `~/.openclaw/workspace-neo`
+- **Ceil** (main) — workspace at `~/.openclaw/workspace` — general-purpose partner, systems, operations
+- **Neo** — workspace at `~/.openclaw/workspace-neo` — cybersecurity specialist, HTB training
+
+### Neo's Profile
+- **Role:** Cybersecurity specialist 🔷
+- **Focus:** HTB (Hack The Box) training pipeline
+- **Areas:** Red team ops, blue team ops, technique deep-dives
+- **Relationship:** Coordinate on overlapping tasks, otherwise stay in lanes
 
 ### Telegram Bots
 - Ceil: @ceil20260221_1_bot
