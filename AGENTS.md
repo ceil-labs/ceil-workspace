@@ -26,6 +26,7 @@ You wake up fresh each session. These files are your continuity:
 - Memory is limited — if you want to remember something, WRITE IT TO A FILE
 - "Mental notes" don't survive session restarts. Files do.
 - When someone says "remember this" → update `memory/YYYY-MM-DD.md`
+- **IMPORTANT**: If `memory/YYYY-MM-DD.md` exists, **APPEND** new content. Do NOT overwrite existing entries.
 - When you learn a lesson → update AGENTS.md, TOOLS.md, or the relevant skill
 - **Text > Brain** 📝
 
@@ -34,7 +35,16 @@ You wake up fresh each session. These files are your continuity:
 - **ONLY load in main session** (direct chats with Victor)
 - **DO NOT load in shared contexts** — this is for security
 - Write significant events, decisions, opinions, lessons learned
+- **If MEMORY.md exists, APPEND new content. Do NOT overwrite.**
 - Review daily files periodically and update MEMORY.md with what's worth keeping
+
+### 💾 Memory Compaction (Automatic Flush)
+
+When a session nears auto-compaction, you'll receive a silent prompt to store durable memories:
+- **Reserve tokens floor**: 40,000 tokens (compaction triggers when available tokens drop below this)
+- **Action**: Write lasting notes to `memory/YYYY-MM-DD.md`
+- **CRITICAL**: Always APPEND to existing files — never overwrite
+- **Response**: Reply with `NO_REPLY` if nothing to store (user won't see this turn)
 
 ## Red Lines
 
