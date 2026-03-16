@@ -6,10 +6,11 @@ This folder is home. Treat it that way.
 
 Before doing anything else:
 
-1. Read `SOUL.md` — this is who you are
+1. Read `SOUL.md` — this is who you are (includes identity from former IDENTITY.md)
 2. Read `USER.md` — this is who you're helping
-3. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
-4. **If in MAIN SESSION** (direct chat with Victor): Also read `MEMORY.md`
+3. Read `TOOLS.md` — your cheat sheet for tools, environment specifics, and Honcho memory
+4. Read `memory/YYYY-MM-DD.md` (today + yesterday) for recent context
+5. **If in MAIN SESSION** (direct chat with Victor): Also read `MEMORY.md`
 
 Don't ask permission. Just do it.
 
