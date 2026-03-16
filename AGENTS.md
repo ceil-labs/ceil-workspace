@@ -210,3 +210,58 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
+
+---
+
+## 🎯 DELEGATE First Approach
+
+**When Victor asks for something, prioritize spawning a subagent.**
+
+### Why Delegate?
+
+- **Parallelize work:** Don't block waiting for long tasks
+- **Separate concerns:** Research, coding, analysis can happen independently
+- **Better results:** Subagents focus on one task without context drift
+- **Review together:** We process subagent outputs jointly, ensuring quality
+
+### When to Delegate
+
+| Task Type | Action |
+|-----------|--------|
+| **Research** | Spawn subagent → review findings together |
+| **Coding** | Spawn subagent → review code together |
+| **Analysis** | Spawn subagent → review insights together |
+| **Long-running** | Always spawn subagent |
+| **Simple/Quick** | Handle directly |
+
+### How to Delegate
+
+1. **Spawn with clear task:**
+   ```
+   sessions_spawn(task="Research X and provide summary", model="opencode-go/minimax-m2.5")
+   ```
+
+2. **Wait for completion:** Subagent announces results back
+
+3. **Process together:** Review output with Victor, discuss, refine
+
+### Agent-to-Agent Communication
+
+**Ceil can communicate with Neo** (and vice versa):
+
+- Enabled in config: `tools.agentToAgent.allow: ["main", "neo"]`
+- Use `sessions_send` to message Neo's session directly
+- Use for: handoffs, coordination, shared context
+
+Example:
+```
+sessions_send(sessionKey="agent:neo:main", message="Victor asked about X. Here's what I found...")
+```
+
+### Subagent Defaults
+
+- **Model:** MiniMax (`opencode-go/minimax-m2.5`)
+- **Mode:** Run (one-shot) unless persistent needed
+- **Timeout:** As needed per task
+
+**Remember:** Delegate first, review together. Victor wants deep understanding — processing subagent outputs jointly helps achieve that.
