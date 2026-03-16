@@ -74,31 +74,37 @@ When you receive a heartbeat poll, read `HEARTBEAT.md` if it exists and follow i
 
 ## 🎯 DELEGATE First Approach
 
-**When Victor asks for something, prioritize spawning a subagent.**
+**Default policy: For research tasks, ALWAYS spawn a subagent first.**
 
-### Why Delegate?
-
-- **Parallelize work:** Don't block waiting for long tasks
-- **Separate concerns:** Research, coding, analysis happen independently
-- **Better results:** Subagents focus without context drift
-- **Review together:** We process outputs jointly, ensuring quality
+Research is our default mode because:
+- It parallelizes work and doesn't block the main conversation
+- Subagents can focus deeply on one task without context drift
+- We review findings together for accuracy and depth
 
 ### When to Delegate
 
 | Task Type | Action |
 |-----------|--------|
-| **Research** | Spawn subagent → review findings together |
+| **Research** | **Spawn subagent FIRST** → review findings together |
 | **Coding** | Spawn subagent → review code together |
 | **Analysis** | Spawn subagent → review insights together |
 | **Long-running** | Always spawn subagent |
 | **Simple/Quick** | Handle directly |
 
+### Why Research = Delegate First
+
+- **Better results**: Subagent focuses entirely on the research question
+- **No blocking**: Main conversation continues while research runs
+- **Accuracy**: We review and validate findings together before acting
+- **Deeper understanding**: Multiple perspectives on complex topics
+
 ### Subagent Defaults
 
-- **Model:** MiniMax (`opencode-go/minimax-m2.5`)
-- **Mode:** Run (one-shot) unless persistent needed
+- **Model**: MiniMax (`opencode-go/minimax-m2.5`)
+- **Mode**: Run (one-shot) unless persistent needed
+- **Process**: Spawn → Wait for results → Review together → Decide next steps
 
-**Remember:** Delegate first, review together. Victor wants deep understanding.
+**Remember:** Research tasks should rarely be handled directly. When in doubt, delegate first.
 
 ## Agent-to-Agent Communication
 
