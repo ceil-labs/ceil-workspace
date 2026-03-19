@@ -23,7 +23,7 @@ Every session, after reading SOUL.md and USER.md, check this file for:
 - **Secrets**: `~/.openclaw/secrets.json`
 
 ### Subagent Defaults
-- **Model**: MiniMax (`opencode-go/minimax-m2.5`)
+- **Model**: MiniMax (`opencode-go/minimax-m2.7`)
 - **Mode**: Run (one-shot) unless persistent needed
 
 ---

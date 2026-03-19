@@ -154,9 +154,18 @@ Research is our default mode because:
 
 ### Subagent Defaults
 
-- **Model**: MiniMax (`opencode-go/minimax-m2.5`)
+- **Model**: MiniMax (`opencode-go/minimax-m2.7`)
 - **Mode**: Run (one-shot) unless persistent needed
+- **Timeout**: 10 minutes default (600s), extend for complex tasks
 - **Process**: Spawn → Wait for results → Review together → Decide next steps
+
+**Timeout Guidelines:**
+| Task Type | Recommended Timeout |
+|-----------|-------------------|
+| Quick verification | 30-60s |
+| Standard research/analysis | 10 minutes (600s) |
+| Complex multi-step work | 15-30 minutes (900-1800s) |
+| Long-running tasks | Use `mode: session` instead of `run` |
 
 **Remember:** Research tasks should rarely be handled directly. When in doubt, delegate first.
 
