@@ -82,37 +82,6 @@ Honcho tools are fully functional and should be used proactively to build deep u
 
 ---
 
-**⚠️ Critical Configuration Requirement:**
-
-For Honcho tools to appear in function schema, `tools.profile` must be `"full"` (not `"coding"`).
-
-```json
-// ~/.openclaw/config/openclaw.json
-{
-  "tools": {
-    "profile": "full"
-  }
-}
-```
-
-After changing, restart gateway: `openclaw gateway restart`
-
-**Why this matters:** The `"coding"` profile whitelists only built-in tools for safety/efficiency. Plugin-exposed tools require `"full"` profile or explicit allowlisting. See [OpenClaw docs](https://docs.openclaw.ai/tools#tool-profiles-base-allowlist).
-
----
-
-## Tool Profile Configuration
-
-| Profile | Description | Plugin Tools Exposed? |
-|---------|-------------|----------------------|
-| `"base"` | Essential tools only | ❌ No |
-| `"coding"` | Code-focused tools | ❌ No (built-in only) |
-| `"full"` | All available tools | ✅ Yes |
-
-**Recommendation:** Use `"full"` when working with plugins (Honcho, custom skills, etc.).
-
----
-
 ## Browser Control
 
 Remote browser control from VPS to Victor's MacBook Pro Chrome.
