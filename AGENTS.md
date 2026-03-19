@@ -47,10 +47,15 @@ Two memory systems work together:
 - Use when: Looking for specific files, documented decisions, technical details
 - How: Call `memory_search` with keywords, then `memory_get` to read files
 
-**Honcho Cloud (`honcho_profile`, `honcho_search`, `honcho_recall`, `honcho_analyze`):**
+**Honcho Cloud (`honcho_profile`, `honcho_search`, `honcho_session`, `honcho_context`, `honcho_recall`, `honcho_analyze`):**
 - Cross-channel user memory with dialectic reasoning
 - Use when: Understanding Victor's preferences, style, patterns; cross-channel context
 - How: Call appropriate Honcho tool based on question type
+
+**📖 See TOOLS.md for:**
+- Complete tool descriptions and use cases
+- Critical configuration requirements (`tools.profile: "full"`)
+- Troubleshooting notes
 
 **When to use either:**
 - Victor refers to "earlier today" or previous conversations
@@ -80,9 +85,35 @@ Two memory systems work together:
 - Anything that leaves the machine
 - Anything you're uncertain about
 
-## Tools
+## Skills Discovery
 
-Skills provide your tools. When you need one, check its `SKILL.md`. Keep local notes (camera names, SSH details, voice preferences) in `TOOLS.md`.
+Skills come from **two sources** — always check BOTH before assuming a skill doesn't exist:
+
+### 1. System-Prompt Bundled Skills
+These are pre-loaded in your system prompt at session start. Check the skills list in session context:
+
+```
+Skills: clawhub, gh-issues, github, gog, healthcheck, node-connect, skill-creator, tmux, weather, xurl, ...
+```
+
+**DO NOT** look for these in `~/.openclaw/skills/` — they have no physical directory.
+
+### 2. User-Installed Skills
+Located at `~/.openclaw/skills/{skill-name}/`. These have:
+- `skill.yaml` (manifest)
+- `README.md` or `SKILL.md` (documentation)
+
+### Quick Check Protocol
+
+When asked to "use the X skill":
+1. **Check system prompt skills list first** — if present, invoke it directly
+2. **Check filesystem** `~/.openclaw/skills/` — if directory exists, use that
+3. **Only then** conclude it doesn't exist
+
+**Common bundled skills to remember:** `gog`, `skill-creator`, `tmux`, `github`, `gh-issues`, `node-connect`, `healthcheck`, `weather`, `xurl`, `clawhub`
+
+### Neo Update Required
+This same guidance applies to Neo — ensure Neo's AGENTS.md or bootstrap includes this bundled skills awareness.
 
 ## 💓 Heartbeats
 

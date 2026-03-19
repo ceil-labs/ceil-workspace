@@ -1,0 +1,222 @@
+{
+  "timestamp": "2026-03-19T02:44:05.422Z",
+  "sheetId": "1I6fvHntIpdRy_xCMbE1cdo_5IPRU_FeV_ePC1Xz559Q",
+  "status": "OK",
+  "discrepancies": [],
+  "positionIssues": [],
+  "rowGaps": [],
+  "missingWeeks": [
+    {
+      "type": "missing_month",
+      "month": "April 2026",
+      "note": "No data found for April 2026 — weekly tabs and monthly row need to be created"
+    },
+    {
+      "type": "missing_month",
+      "month": "May 2026",
+      "note": "No data found for May 2026 — weekly tabs and monthly row need to be created"
+    },
+    {
+      "type": "missing_month",
+      "month": "June 2026",
+      "note": "No data found for June 2026 — weekly tabs and monthly row need to be created"
+    },
+    {
+      "type": "missing_month",
+      "month": "July 2026",
+      "note": "No data found for July 2026 — weekly tabs and monthly row need to be created"
+    },
+    {
+      "type": "missing_month",
+      "month": "August 2026",
+      "note": "No data found for August 2026 — weekly tabs and monthly row need to be created"
+    },
+    {
+      "type": "missing_month",
+      "month": "September 2026",
+      "note": "No data found for September 2026 — weekly tabs and monthly row need to be created"
+    },
+    {
+      "type": "missing_month",
+      "month": "October 2026",
+      "note": "No data found for October 2026 — weekly tabs and monthly row need to be created"
+    },
+    {
+      "type": "missing_month",
+      "month": "November 2026",
+      "note": "No data found for November 2026 — weekly tabs and monthly row need to be created"
+    },
+    {
+      "type": "missing_month",
+      "month": "December 2026",
+      "note": "No data found for December 2026 — weekly tabs and monthly row need to be created"
+    }
+  ],
+  "validChecks": [
+    "January 2026: Income ✅",
+    "January 2026: Expenses ✅",
+    "February 2026: Income ✅",
+    "February 2026: Expenses ✅",
+    "March 2026: Income ✅",
+    "March 2026: Expenses ✅",
+    "TOTAL 2026: Income ✅",
+    "TOTAL 2026: Expenses ✅",
+    "January 2026: Income formula links to all 4 weekly tabs ✅",
+    "January 2026: Expenses formula links to all 4 weekly tabs ✅",
+    "January 2026: Net formula links to all 4 weekly tabs ✅",
+    "February 2026: Income formula links to all 4 weekly tabs ✅",
+    "February 2026: Expenses formula links to all 4 weekly tabs ✅",
+    "February 2026: Net formula links to all 4 weekly tabs ✅",
+    "March 2026: Income formula links to all 3 weekly tabs ✅",
+    "March 2026: Expenses formula links to all 3 weekly tabs ✅",
+    "March 2026: Net formula links to all 3 weekly tabs ✅"
+  ],
+  "monthlyTotals": [
+    {
+      "month": "January 2026",
+      "row": 2,
+      "income": 5434833.44,
+      "expenses": 5604713.68,
+      "net": -169880.24,
+      "balance": null
+    },
+    {
+      "month": "February 2026",
+      "row": 3,
+      "income": 3147781.28,
+      "expenses": 2107260.81,
+      "net": 1040520.47,
+      "balance": null
+    },
+    {
+      "month": "March 2026",
+      "row": 4,
+      "income": 798022.12,
+      "expenses": 1838931.84,
+      "net": -1040909.72,
+      "balance": null
+    }
+  ],
+  "weeklySums": {
+    "January": {
+      "income": 5434833.44,
+      "expenses": 5604713.68,
+      "net": -169880.24000000002
+    },
+    "February": {
+      "income": 3147781.2800000003,
+      "expenses": 2107260.81,
+      "net": 1040520.4699999999
+    },
+    "March": {
+      "income": 798022.12,
+      "expenses": 1838931.8399999999,
+      "net": -1040909.72
+    }
+  },
+  "breakdownPositions": {
+    "JANUARY": {
+      "entries": [
+        {
+          "week": "JAN.5 TO JAN.9.26",
+          "income": 727030.27,
+          "expenses": 868746.19,
+          "net": -141715.92,
+          "row": 17
+        },
+        {
+          "week": "JAN.10-16-26",
+          "income": 515175.29,
+          "expenses": 570754.61,
+          "net": -55579.32,
+          "row": 18
+        },
+        {
+          "week": "JAN.17 TO JAN.23-26",
+          "income": 3652153.49,
+          "expenses": 3430885.31,
+          "net": 221268.18,
+          "row": 19
+        },
+        {
+          "week": "JAN.24TO JAN.31-26",
+          "income": 540474.39,
+          "expenses": 734327.57,
+          "net": -193853.18,
+          "row": 20
+        }
+      ],
+      "startRow": 15,
+      "endRow": 20
+    },
+    "FEBRUARY": {
+      "entries": [
+        {
+          "week": "2-2TO6-26",
+          "income": 1900278.34,
+          "expenses": 573758.91,
+          "net": 1326519.43,
+          "row": 23
+        },
+        {
+          "week": "2-7 TO 2-13-26",
+          "income": 288450.24,
+          "expenses": 503886.67,
+          "net": -215436.43,
+          "row": 24
+        },
+        {
+          "week": "2-14 to 2-20-26",
+          "income": 328691.93,
+          "expenses": 353963.54,
+          "net": -25271.61,
+          "row": 25
+        },
+        {
+          "week": "2-22 TO2-28-26",
+          "income": 630360.77,
+          "expenses": 675651.69,
+          "net": -45290.92,
+          "row": 26
+        }
+      ],
+      "startRow": 21,
+      "endRow": 26
+    },
+    "MARCH": {
+      "entries": [
+        {
+          "week": "3-2TO3-6-26",
+          "income": 276149.71,
+          "expenses": 759203.85,
+          "net": -483054.14,
+          "row": 29
+        },
+        {
+          "week": "3-7TO3-13-26",
+          "income": 430034.18,
+          "expenses": 822560.28,
+          "net": -392526.1,
+          "row": 30
+        },
+        {
+          "week": "3-15TO3-20-26",
+          "income": 91838.23,
+          "expenses": 257167.71,
+          "net": -165329.48,
+          "row": 31
+        }
+      ],
+      "startRow": 27,
+      "endRow": 31
+    }
+  },
+  "total2026Issue": null,
+  "endingBalanceIssue": {
+    "cell": "MONTHLY SUMMARY 2026!E14",
+    "cellRef": "E14",
+    "row": 14,
+    "note": "Ending balance is 0 or null — requires Dec 2025 starting balance to compute. Manual entry required."
+  },
+  "formulaIssues": []
+}

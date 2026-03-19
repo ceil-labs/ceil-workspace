@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-03-19T02:33:39.148Z",
+  "sheetId": "1I6fvHntIpdRy_xCMbE1cdo_5IPRU_FeV_ePC1Xz559Q",
+  "totalChanges": 2,
+  "changes": [
+    {
+      "cell": "MONTHLY SUMMARY 2026!C4",
+      "old_value": 1838931.84,
+      "new_value": 1829031.8399999999,
+      "reason": "expenses_mismatch: weekly sum vs monthly reported",
+      "command": "gog sheets update \"1I6fvHntIpdRy_xCMbE1cdo_5IPRU_FeV_ePC1Xz559Q\" 'MONTHLY SUMMARY 2026!C4' \"1829031.8399999999\""
+    },
+    {
+      "cell": "MONTHLY SUMMARY 2026!C14",
+      "old_value": 9541006.33,
+      "new_value": 9550906.33,
+      "reason": "total_expenses_mismatch: weekly sum vs monthly reported",
+      "command": "gog sheets update \"1I6fvHntIpdRy_xCMbE1cdo_5IPRU_FeV_ePC1Xz559Q\" 'MONTHLY SUMMARY 2026!C14' \"9550906.33\""
+    }
+  ]
+}
