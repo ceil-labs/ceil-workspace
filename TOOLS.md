@@ -1,116 +1,40 @@
-# TOOLS.md - Environment Cheat Sheet
+# Browser Control Setup
 
-This file is your quick reference for tools, environment specifics, and setup details unique to this workspace.
+Remote browser control from VPS to local laptop Chrome via OpenClaw node.
 
-## Session Startup Checklist
+## Status
+✅ **Active** — Node connected, browser control working via isolated profile
 
-Every session, after reading SOUL.md and USER.md, check this file for:
-- Tool availability and configurations
-- Environment-specific notes
-- Recent changes to tools or setup
+## Quick Reference
 
----
+| Component | Location | Status |
+|-----------|----------|--------|
+| Node Host | Victor's MacBook Pro | ✅ Connected via Tailscale |
+| Browser Profile | Isolated (openclaw) | ✅ Working |
+| Personal Profile | Requires SSH tunnel | ⬜ Not configured |
 
-## Environment Notes
+## What I Can Do
+- Open URLs, navigate websites
+- Search, click, type, interact
+- Take screenshots (full page or element)
+- Extract page content (snapshots)
 
-### Workspace
-- **Location**: `~/.openclaw/workspace`
-- **GitHub**: https://github.com/ceil-labs/ceil-workspace
-- **Peer in Honcho**: `agent-main`
+## What You Need to Do (On Your Laptop)
 
-### Shared Resources
-- **Skills**: `~/.openclaw/skills/` (shared with Neo)
-- **Secrets**: `~/.openclaw/secrets.json`
+**To maintain connection:**
+1. Keep OpenClaw node running: `openclaw node run --host srv1405873.tailcd23a1.ts.net --port 443 --tls`
+2. Token is in `~/.openclaw/secrets.json` (gateway.authToken)
 
-### Subagent Defaults
-- **Model**: MiniMax (`opencode-go/minimax-m2.7`)
-- **Mode**: Run (one-shot) unless persistent needed
+**For personal Chrome profile (optional):**
+- See `tools/browser-control.md` for detailed setup
+- Requires: Chrome with `--remote-debugging-port=9222` + SSH tunnel
 
----
-
-## File Locations Quick Reference
-
-| File | Purpose |
-|------|---------|
-| `SOUL.md` | Who I am (loaded every session) |
-| `USER.md` | Who Victor is |
-| `AGENTS.md` | Operating rules and procedures |
-| `TOOLS.md` | This file — environment, tools, and configuration |
-| `MEMORY.md` | Long-term curated memory (main session only) |
-| `memory/YYYY-MM-DD.md` | Daily logs |
+## Detailed Docs
+See `tools/browser-control.md` for:
+- Full setup instructions
+- SSH tunnel configuration
+- Personal profile access
+- Troubleshooting
 
 ---
-
-## Memory Tools Reference
-
-### Built-in SQLite Memory (Local)
-| Tool | Purpose | Backend |
-|------|---------|---------|
-| `memory_search` | Semantic search over MEMORY.md and memory/*.md files | Local SQLite |
-| `memory_get` | Read specific file sections with line ranges | Local SQLite |
-
-**Use for:** Session-level technical details, documented decisions, local file-based memory.
-
-### Honcho Cloud Memory (Cross-Channel)
-| Tool | Purpose | Backend |
-|------|---------|---------|
-| `honcho_profile` | User's peer card (curated facts) | Honcho cloud |
-| `honcho_search` | Semantic search over stored observations | Honcho cloud |
-| `honcho_session` | Conversation history & summaries | Honcho cloud |
-| `honcho_context` | Full Honcho representation | Honcho cloud |
-| `honcho_recall` | Simple factual Q&A (minimal reasoning) | Honcho cloud |
-| `honcho_analyze` | Complex synthesis Q&A (medium reasoning) | Honcho cloud |
-
-### 🧠 Memory Tools — Active Use Recommended
-
-Honcho tools are fully functional and should be used proactively to build deep user understanding. Don't wait for auto-injection — retrieve context explicitly when it would improve response quality.
-
-**Session Start Protocol:**
-1. Call `honcho_profile` — Get Victor's peer card (name, preferences, current priorities)
-2. Call `honcho_context` — Load full representation if starting complex work
-3. Reference findings naturally in responses (don't mention the tool calls)
-
-**During Session:**
-| Situation | Tool | Why |
-|-----------|------|-----|
-| Need a quick fact | `honcho_recall` | Fast lookup (name, timezone, config) |
-| Cross-session pattern | `honcho_search` | Find related past work |
-| Complex synthesis | `honcho_analyze` | Deep reasoning over multiple sessions |
-| Victor asks about past | `honcho_session` | Specific conversation history |
-
-**Principle:** Leverage that you know Victor well. Use Honcho to retrieve and apply that knowledge, not just rely on surface-level auto-injection.
-
----
-
-**⚠️ Critical Configuration Requirement:**
-
-For Honcho tools to appear in function schema, `tools.profile` must be `"full"` (not `"coding"`).
-
-```json
-// ~/.openclaw/config/openclaw.json
-{
-  "tools": {
-    "profile": "full"
-  }
-}
-```
-
-After changing, restart gateway: `openclaw gateway restart`
-
-**Why this matters:** The `"coding"` profile whitelists only built-in tools for safety/efficiency. Plugin-exposed tools require `"full"` profile or explicit allowlisting. See [OpenClaw docs](https://docs.openclaw.ai/tools#tool-profiles-base-allowlist).
-
----
-
-## Tool Profile Configuration
-
-| Profile | Description | Plugin Tools Exposed? |
-|---------|-------------|----------------------|
-| `"base"` | Essential tools only | ❌ No |
-| `"coding"` | Code-focused tools | ❌ No (built-in only) |
-| `"full"` | All available tools | ✅ Yes |
-
-**Recommendation:** Use `"full"` when working with plugins (Honcho, custom skills, etc.).
-
----
-
-_Add environment-specific notes here as needed: SSH hosts, API endpoints, preferences, etc._
+_Last updated: 2026-03-19_
