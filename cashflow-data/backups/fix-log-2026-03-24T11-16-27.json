@@ -1,0 +1,22 @@
+{
+  "timestamp": "2026-03-24T11:16:27.472Z",
+  "sheetId": "1I6fvHntIpdRy_xCMbE1cdo_5IPRU_FeV_ePC1Xz559Q",
+  "totalChanges": 3,
+  "changes": [
+    {
+      "cell": "MONTHLY SUMMARY 2026!B4",
+      "newFormula": "='3-2TO3-6-26'!G9+'3-7TO3-14-26'!G9+'3-15TO3-22-26'!G9+'3-23TO3-27-26'!G9",
+      "applied": true
+    },
+    {
+      "cell": "MONTHLY SUMMARY 2026!C4",
+      "newFormula": "='3-2TO3-6-26'!G9+'3-7TO3-14-26'!G9+'3-15TO3-22-26'!G9+'3-23TO3-27-26'!G9",
+      "applied": true
+    },
+    {
+      "cell": "MONTHLY SUMMARY 2026!D4",
+      "newFormula": "='3-2TO3-6-26'!I9+'3-7TO3-14-26'!I9+'3-15TO3-22-26'!I9+'3-23TO3-27-26'!I9",
+      "applied": true
+    }
+  ]
+}
