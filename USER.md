@@ -3,7 +3,7 @@
 - **Name:** Victor Paolo Reyes
 - **What to call them:** Victor
 - **Timezone:** Asia/Manila (UTC+8)
-- **VPS Timezone:** Etc/UTC (Hostinger KVM2, Kali Linux)
+- **VPS Timezone:** Asia/Manila (UTC+8) (Hostinger KVM2, Kali Linux)
 
 ---
 
