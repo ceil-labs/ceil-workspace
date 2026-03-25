@@ -16,7 +16,7 @@
 
 ## Session Start Protocol
 1. Read SOUL.md → USER.md → TOOLS.md → memory/YYYY-MM-DD.md
-2. **Proactive Honcho**: Call `honcho_profile` + `honcho_context` at session start
+2. **Proactive Honcho**: Call `honcho_ask` (depth='quick') + `honcho_context` (detail='full') at session start
 3. **Research = delegate first**: Spawn subagent → review → decide
 4. **Memory search first**: Before answering "what did we..." questions
 
@@ -48,3 +48,4 @@
 - `trash` > `rm` (recoverable beats gone)
 - Ask before destructive commands
 - No "mental notes" — write it down
+write it down

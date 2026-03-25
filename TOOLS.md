@@ -54,28 +54,28 @@ Every session, after reading SOUL.md and USER.md, check this file for:
 ### Honcho Cloud Memory (Cross-Channel)
 | Tool | Purpose | Backend |
 |------|---------|---------|
-| `honcho_profile` | User's peer card (curated facts) | Honcho cloud |
-| `honcho_search` | Semantic search over stored observations | Honcho cloud |
+| `honcho_context` (detail='card') | User's peer card (curated facts) | Honcho cloud |
+| `honcho_context` (detail='full') | Full Honcho representation | Honcho cloud |
 | `honcho_session` | Conversation history & summaries | Honcho cloud |
-| `honcho_context` | Full Honcho representation | Honcho cloud |
-| `honcho_recall` | Simple factual Q&A (minimal reasoning) | Honcho cloud |
-| `honcho_analyze` | Complex synthesis Q&A (medium reasoning) | Honcho cloud |
+| `honcho_ask` (depth='quick') | Simple factual Q&A (minimal reasoning) | Honcho cloud |
+| `honcho_ask` (depth='thorough') | Complex synthesis Q&A (medium reasoning) | Honcho cloud |
+| `honcho_search_conclusions` | Semantic search over stored observations | Honcho cloud |
 
 ### 🧠 Memory Tools — Active Use Recommended
 
 Honcho tools are fully functional and should be used proactively to build deep user understanding. Don't wait for auto-injection — retrieve context explicitly when it would improve response quality.
 
 **Session Start Protocol:**
-1. Call `honcho_profile` — Get Victor's peer card (name, preferences, current priorities)
-2. Call `honcho_context` — Load full representation if starting complex work
+1. Call `honcho_ask` (depth='quick') — Get Victor's peer card (name, preferences, current priorities)
+2. Call `honcho_context` (detail='full') — Load full representation if starting complex work
 3. Reference findings naturally in responses (don't mention the tool calls)
 
 **During Session:**
 | Situation | Tool | Why |
 |-----------|------|-----|
-| Need a quick fact | `honcho_recall` | Fast lookup (name, timezone, config) |
-| Cross-session pattern | `honcho_search` | Find related past work |
-| Complex synthesis | `honcho_analyze` | Deep reasoning over multiple sessions |
+| Need a quick fact | `honcho_ask` (depth='quick') | Fast lookup (name, timezone, config) |
+| Cross-session pattern | `honcho_search_conclusions` | Find related past work |
+| Complex synthesis | `honcho_ask` (depth='thorough') | Deep reasoning over multiple sessions |
 | Victor asks about past | `honcho_session` | Specific conversation history |
 
 **Principle:** Leverage that you know Victor well. Use Honcho to retrieve and apply that knowledge, not just rely on surface-level auto-injection.
