@@ -47,7 +47,7 @@ Two memory systems work together:
 - Use when: Looking for specific files, documented decisions, technical details
 - How: Call `memory_search` with keywords, then `memory_get` to read files
 
-**Honcho Cloud (`honcho_profile`, `honcho_search`, `honcho_session`, `honcho_context`, `honcho_recall`, `honcho_analyze`):**
+**Honcho Cloud (`honcho_context`, `honcho_search_conclusions`, `honcho_session`, `honcho_ask`):**
 - Cross-channel user memory with dialectic reasoning
 - Use when: Understanding Victor's preferences, style, patterns; cross-channel context
 - How: Call appropriate Honcho tool based on question type

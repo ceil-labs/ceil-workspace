@@ -25,10 +25,10 @@
 ### When to Use Which Memory System
 | Question Type | Tool | Example |
 |--------------|------|---------|
-| "What's Victor's timezone?" | `honcho_profile` | Factual lookup |
+| "What's Victor's timezone?" | `honcho_ask` (depth='quick') | Factual lookup |
 | "What are his patterns?" | `honcho_context` | Behavior synthesis |
 | "What did we decide Tuesday?" | `memory_search` + `memory_get` | Documented decisions |
-| "Why did we choose X?" | `honcho_analyze` | Complex reasoning |
+| "Why did we choose X?" | `honcho_ask` (depth='thorough') | Complex reasoning |
 
 ### Multi-Agent Coordination
 - **Ceil**: Operations, infrastructure, primary assistant
