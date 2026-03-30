@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProTek FSM Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <meta http-equiv="Cache-Control" content="no-cache">
+</head>
+<body class="bg-gray-900 text-white min-h-screen p-4">
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-6">
+            <div>
+                <h1 class="text-3xl font-bold text-blue-400">ProTek FSM Operations</h1>
+                <p class="text-gray-400">Fiber Installation Monitoring Dashboard</p>
+                <div class="mt-2 flex gap-2">
+                    <span id="statusBadge" class="px-2 py-1 bg-gray-800 text-gray-400 text-xs rounded">⏳ Discovering data...</span>
+                </div>
+            </div>
+            <div class="text-right">
+                <div id="currentDate" class="text-2xl font-bold">--</div>
+                <div id="currentTime" class="text-sm text-gray-500">--</div>
+            </div>
+        </div>
+
+        <!-- Company Total -->
+        <div id="companyTotal" class="bg-gradient-to-r from-blue-900 to-gray-800 rounded-lg p-4 mb-6">
+            <div class="text-lg font-semibold mb-3">Company Total (All Zones)</div>
+            <div class="grid grid-cols-4 gap-4">
+                <div><div class="text-gray-300 text-sm">Total</div><div id="totalTasks" class="text-2xl font-bold">--</div></div>
+                <div><div class="text-gray-300 text-sm">Completed</div><div id="completedTasks" class="text-2xl font-bold">--</div></div>
+                <div><div class="text-gray-300 text-sm">Pending</div><div id="pendingTasks" class="text-2xl font-bold text-yellow-400">--</div></div>
+                <div><div class="text-gray-300 text-sm">Rate</div><div id="completionRate" class="text-2xl font-bold">--</div></div>
+            </div>
+            <div id="dayStatus" class="mt-3 text-sm text-gray-400"></div>
+        </div>
+
+        <!-- Historical Trend -->
+        <div class="bg-gray-800 rounded-lg p-6 border border-gray-700 mb-6">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-semibold text-blue-300">Historical Completed Tasks</h2>
+                <select id="zoneSelector" onchange="renderTrendChart()" class="bg-gray-700 text-white px-3 py-2 rounded border border-gray-600 text-sm"><option value="all">All Zones</option></select>
+            </div>
+            <div style="height: 200px"><canvas id="trendChart"></canvas></div>
+        </div>
+
+        <!-- Zone Performance -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+            <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                <h2 class="text-xl font-semibold mb-4 text-blue-300">Zone Performance</h2>
+                <div style="height: 250px"><canvas id="zoneChart"></canvas></div>
+            </div>
+            <div class="bg-gray-800 rounded-lg p-6 border border-gray-700">
+                <h2 class="text-xl font-semibold mb-4 text-blue-300">Completion Rates</h2>
+                <div id="zoneRates" class="space-y-2 max-h-64 overflow-y-auto"></div>
+            </div>
+        </div>
+
+        <!-- Zone Cards -->
+        <div class="mb-6">
+            <h2 class="text-xl font-semibold mb-4 text-blue-300">Zone Details</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4" id="zoneCards"></div>
+        </div>
+    </div>
+
+    <script>
+        Chart.register(ChartDataLabels);
+        
+        const DATA_BASE_URL = 'data/';  // Folder with dated subfolders
+        let allData = {};  // Cache: { "2026-03-30": data, ... }
+        let zones = [];
+        let trendChart = null;
+        let zoneChart = null;
+        let availableDates = [];
+
+        // Get list of available dates by trying common patterns
+        async function discoverDates() {
+            const dates = [];
+            const today = new Date();
+            
+            // Check last 14 days
+            for (let i = 0; i <= 14; i++) {
+                const d = new Date(today);
+                d.setDate(d.getDate() - i);
+                const dateStr = d.toISOString().split('T')[0];
+                
+                // Try to fetch any summary file for this date
+                try {
+                    const response = await fetch(`${DATA_BASE_URL}${dateStr}/`, { method: 'HEAD' });
+                    if (response.ok || response.status === 403) {
+                        // Directory exists (403 means no index, but exists)
+                        dates.push(dateStr);
+                    }
+                } catch (e) {
+                    // Try alternative: directly fetch a likely file
+                    try {
+                        const fileResponse = await fetch(`${DATA_BASE_URL}${dateStr}/18-05-summary.json`, { method: 'HEAD' });
+                        if (fileResponse.ok) {
+                            dates.push(dateStr);
+                        }
+                    } catch (e2) {
+                        // Date not available
+                    }
+                }
+            }
+            
+            return dates.sort();  // Oldest first
+        }
+
+        // Load data for a specific date - try all file patterns
+        async function loadDateData(dateStr) {
+            if (allData[dateStr]) return allData[dateStr];
+            
+            const cacheBuster = `?_=${Date.now()}`;
+            
+            // Try to find ANY summary file for this date
+            const patterns = ['18-05-summary.json', '18-06-summary.json', '12-05-summary.json', '07-05-summary.json'];
+            
+            for (const pattern of patterns) {
+                try {
+                    const response = await fetch(`${DATA_BASE_URL}${dateStr}/${pattern}${cacheBuster}`);
+                    if (response.ok) {
+                        const data = await response.json();
+                        allData[dateStr] = data;
+                        console.log(`Loaded ${dateStr} from ${pattern}`);
+                        return data;
+                    }
+                } catch (e) {
+                    // Try next pattern
+                }
+            }
+            
+            // Try the latest.json symlink as last resort
+            try {
+                const response = await fetch(`${DATA_BASE_URL}${dateStr}/latest.json${cacheBuster}`);
+                if (response.ok) {
+                    const data = await response.json();
+                    allData[dateStr] = data;
+                    console.log(`Loaded ${dateStr} from latest.json`);
+                    return data;
+                }
+            } catch (e) {
+                console.log(`No data found for ${dateStr}`);
+            }
+            
+            return null;
+        }
+
+        // Get today's date in YYYY-MM-DD format (local timezone)
+        function getTodayString() {
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            return `${year}-${month}-${day}`;
+        }
+
+        // Find the latest available date (check today first, then yesterday, etc.)
+        async function findLatestDate() {
+            const today = new Date();
+            console.log(`Today is: ${getTodayString()}`);
+            
+            for (let i = 0; i <= 14; i++) {
+                const d = new Date(today);
+                d.setDate(d.getDate() - i);
+                const year = d.getFullYear();
+                const month = String(d.getMonth() + 1).padStart(2, '0');
+                const day = String(d.getDate()).padStart(2, '0');
+                const dateStr = `${year}-${month}-${day}`;
+                
+                console.log(`Trying ${dateStr}...`);
+                const data = await loadDateData(dateStr);
+                if (data) {
+                    console.log(`Found data for ${dateStr}`);
+                    return { dateStr, data };
+                }
+            }
+            console.log('No data found in last 14 days');
+            return null;
+        }
+
+        // Format zone name for display
+        function formatZoneName(name) {
+            return name === 'PASIG-PATEROS-TAGUIG' ? 'PASIG-PTT' :
+                   name === 'NORTH QUEZON CITY' ? 'NORTH QC' :
+                   name === 'SOUTH QUEZON CITY' ? 'SOUTH QC' :
+                   name === 'LAS PINAS-ALABANG' ? 'LAS PIÑAS-ALABANG' : name;
+        }
+
+        // Update dashboard with current data
+        function updateDashboard(dateStr, data) {
+            const date = new Date(data.last_updated_at || dateStr);
+            const protek = data.zones.find(z => z.zone === 'PROTEK');
+            
+            if (!protek) {
+                console.error('No PROTEK zone found');
+                return;
+            }
+            
+            // Extract operational zones
+            zones = data.zones
+                .filter(z => z.zone !== 'PROTEK')
+                .map(z => ({
+                    name: formatZoneName(z.zone),
+                    pending: z.pending,
+                    completed: z.completed,
+                    afd: z.afd || 0,
+                    not_in_ofsc: z.not_in_ofsc || 0,
+                    rpr: z.rpr_total || 0,
+                    total: z.total
+                }));
+            
+            // Update header
+            document.getElementById('currentDate').textContent = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+            document.getElementById('currentTime').textContent = date.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+            
+            // Status badge
+            const isEarly = date.getHours() < 10;
+            const badge = document.getElementById('statusBadge');
+            if (isEarly && protek.completed === 0) {
+                badge.textContent = '📊 Early morning - Work day starting';
+                badge.className = 'px-2 py-1 bg-gray-800 text-gray-400 text-xs rounded';
+            } else {
+                badge.textContent = `✅ ${dateStr}`;
+                badge.className = 'px-2 py-1 bg-green-900 text-green-300 text-xs rounded';
+            }
+            
+            // Company totals
+            document.getElementById('totalTasks').textContent = protek.total.toLocaleString();
+            document.getElementById('completedTasks').textContent = protek.completed.toLocaleString();
+            document.getElementById('completedTasks').className = `text-2xl font-bold ${protek.completed > 0 ? 'text-green-400' : 'text-gray-400'}`;
+            document.getElementById('pendingTasks').textContent = protek.pending.toLocaleString();
+            
+            const rate = protek.total > 0 ? Math.round((protek.completed / protek.total) * 100) : 0;
+            document.getElementById('completionRate').textContent = rate + '%';
+            document.getElementById('completionRate').className = `text-2xl font-bold ${rate >= 25 ? 'text-green-400' : rate > 0 ? 'text-yellow-400' : 'text-gray-400'}`;
+            
+            // Day status
+            const dayStatus = document.getElementById('dayStatus');
+            if (isEarly && protek.completed === 0) {
+                dayStatus.textContent = 'Early morning data - work day just starting';
+            } else if (rate >= 25) {
+                dayStatus.textContent = `📈 Good progress - ${rate}% completion rate`;
+            } else {
+                dayStatus.textContent = `⚠️ Low completion - ${rate}% rate`;
+            }
+            
+            // Populate zone selector
+            const selector = document.getElementById('zoneSelector');
+            while (selector.options.length > 1) selector.remove(1);
+            zones.forEach(z => {
+                const opt = document.createElement('option');
+                opt.value = z.name;
+                opt.textContent = z.name;
+                selector.appendChild(opt);
+            });
+            
+            // Update displays
+            updateZoneList();
+            updateZoneCards();
+            renderZoneChart();
+        }
+
+        function updateZoneList() {
+            const container = document.getElementById('zoneRates');
+            container.innerHTML = '';
+            zones.forEach(z => {
+                const rate = z.total > 0 ? Math.round((z.completed / z.total) * 100) : 0;
+                const color = rate >= 60 ? 'text-green-400' : rate >= 30 ? 'text-yellow-400' : 'text-red-400';
+                const div = document.createElement('div');
+                div.className = 'flex justify-between items-center p-2 bg-gray-700 rounded';
+                div.innerHTML = `
+                    <span class="text-gray-300 text-sm">${z.name}</span>
+                    <span class="font-bold ${color}">${rate}% (${z.completed}/${z.total})</span>
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function updateZoneCards() {
+            const container = document.getElementById('zoneCards');
+            container.innerHTML = '';
+            zones.forEach(z => {
+                const rate = z.total > 0 ? Math.round((z.completed / z.total) * 100) : 0;
+                const isCritical = z.name === 'MAKATI' || (z.not_in_ofsc > 40);
+                const div = document.createElement('div');
+                div.className = `bg-gray-800 p-4 rounded border ${isCritical ? 'border-red-500' : 'border-gray-700'}`;
+                div.innerHTML = `
+                    <div class="flex justify-between mb-2">
+                        <span class="font-semibold text-blue-300">${z.name}</span>
+                        <span class="font-bold ${rate >= 60 ? 'text-green-400' : rate >= 30 ? 'text-yellow-400' : 'text-red-400'}">${rate}%</span>
+                    </div>
+                    <div class="text-sm space-y-1 text-gray-400">
+                        <div class="flex justify-between"><span>Total:</span><span class="text-white">${z.total}</span></div>
+                        <div class="flex justify-between"><span>Pending:</span><span class="text-yellow-400">${z.pending}</span></div>
+                        <div class="flex justify-between"><span>Completed:</span><span class="text-green-400">${z.completed}</span></div>
+                        <div class="flex justify-between"><span>RPR:</span><span class="text-red-400">${z.rpr}</span></div>
+                    </div>
+                    ${isCritical ? '<div class="mt-2 text-xs text-red-400">🚨 Critical</div>' : ''}
+                `;
+                container.appendChild(div);
+            });
+        }
+
+        function renderZoneChart() {
+            if (zoneChart) zoneChart.destroy();
+            const ctx = document.getElementById('zoneChart').getContext('2d');
+            zoneChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: zones.map(z => z.name),
+                    datasets: [
+                        { label: 'Completed', data: zones.map(z => z.completed), backgroundColor: 'rgba(74, 222, 128, 0.8)' },
+                        { label: 'Pending', data: zones.map(z => z.pending), backgroundColor: 'rgba(250, 204, 21, 0.8)' }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: { stacked: true, ticks: { color: '#9ca3af', font: { size: 9 } } },
+                        y: { stacked: true, ticks: { color: '#9ca3af' }, grid: { color: '#374151' } }
+                    },
+                    plugins: { legend: { labels: { color: '#9ca3af' } } }
+                }
+            });
+        }
+
+        async function renderTrendChart() {
+            const selectedZone = document.getElementById('zoneSelector').value;
+            const dates = [];
+            const values = [];
+            
+            // Get available dates with data (check last 14 days)
+            const today = new Date();
+            for (let i = 14; i >= 0; i--) {
+                const d = new Date(today);
+                d.setDate(d.getDate() - i);
+                const year = d.getFullYear();
+                const month = String(d.getMonth() + 1).padStart(2, '0');
+                const day = String(d.getDate()).padStart(2, '0');
+                const dateStr = `${year}-${month}-${day}`;
+                
+                const data = await loadDateData(dateStr);
+                
+                if (data) {
+                    const label = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                    dates.push(label);
+                    
+                    if (selectedZone === 'all') {
+                        const protek = data.zones.find(z => z.zone === 'PROTEK');
+                        values.push(protek ? protek.completed : 0);
+                    } else {
+                        const zone = data.zones.find(z => formatZoneName(z.zone) === selectedZone);
+                        values.push(zone ? zone.completed : 0);
+                    }
+                }
+            }
+            
+            // Limit to last 8 data points
+            const displayDates = dates.slice(-8);
+            const displayValues = values.slice(-8);
+            
+            if (trendChart) trendChart.destroy();
+            const ctx = document.getElementById('trendChart').getContext('2d');
+            trendChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: displayDates,
+                    datasets: [{
+                        label: 'Completed',
+                        data: displayValues,
+                        borderColor: '#4ade80',
+                        backgroundColor: 'rgba(74, 222, 128, 0.1)',
+                        tension: 0.3,
+                        fill: true,
+                        pointRadius: 4,
+                        datalabels: {
+                            align: 'top',
+                            anchor: 'end',
+                            color: '#9ca3af',
+                            font: { size: 10 },
+                            formatter: (v) => v > 0 ? v : ''
+                        }
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: { beginAtZero: true, ticks: { color: '#9ca3af' }, grid: { color: '#374151' } },
+                        x: { ticks: { color: '#9ca3af' }, grid: { display: false } }
+                    },
+                    plugins: { legend: { display: false }, datalabels: { display: true } }
+                }
+            });
+        }
+
+        // Initialize
+        async function init() {
+            console.log('Starting dashboard init...');
+            const latest = await findLatestDate();
+            if (latest) {
+                console.log(`Dashboard showing ${latest.dateStr}`);
+                updateDashboard(latest.dateStr, latest.data);
+                await renderTrendChart();
+            } else {
+                document.getElementById('statusBadge').textContent = '⚠️ No data available';
+            }
+        }
+
+        // Force init on load
+        window.addEventListener('load', init);
+        
+        // Auto-refresh every 5 minutes
+        setInterval(init, 5 * 60 * 1000);
+    </script>
+</body>
+</html>
