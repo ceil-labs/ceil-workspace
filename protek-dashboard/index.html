@@ -110,14 +110,21 @@
             return dates.sort();  // Oldest first
         }
 
-        // Load data for a specific date - try all file patterns
+        // Load data for a specific date - check cron schedule times only
         async function loadDateData(dateStr) {
             if (allData[dateStr]) return allData[dateStr];
             
             const cacheBuster = `?_=${Date.now()}`;
             
-            // Try to find ANY summary file for this date
-            const patterns = ['18-05-summary.json', '18-06-summary.json', '12-05-summary.json', '07-05-summary.json'];
+            // Cron runs at: 07:05, 08:05, 10:05, 12:05, 14:05, 16:05, 18:05
+            // Plus some variations we've seen: 18-06
+            // Try latest times first
+            const patterns = [
+                '18-06-summary.json', '18-05-summary.json',
+                '16-05-summary.json', '14-05-summary.json',
+                '12-05-summary.json', '10-05-summary.json',
+                '08-05-summary.json', '07-05-summary.json'
+            ];
             
             for (const pattern of patterns) {
                 try {
@@ -129,23 +136,11 @@
                         return data;
                     }
                 } catch (e) {
-                    // Try next pattern
+                    // Continue to next pattern
                 }
             }
             
-            // Try the latest.json symlink as last resort
-            try {
-                const response = await fetch(`${DATA_BASE_URL}${dateStr}/latest.json${cacheBuster}`);
-                if (response.ok) {
-                    const data = await response.json();
-                    allData[dateStr] = data;
-                    console.log(`Loaded ${dateStr} from latest.json`);
-                    return data;
-                }
-            } catch (e) {
-                console.log(`No data found for ${dateStr}`);
-            }
-            
+            console.log(`No data found for ${dateStr}`);
             return null;
         }
 
@@ -364,6 +359,10 @@
             const displayDates = dates.slice(-8);
             const displayValues = values.slice(-8);
             
+            // Calculate dynamic Y-axis max with padding
+            const maxValue = Math.max(...displayValues);
+            const yMax = Math.ceil(maxValue * 1.15 / 50) * 50; // Round up to nearest 50 with 15% padding
+            
             if (trendChart) trendChart.destroy();
             const ctx = document.getElementById('trendChart').getContext('2d');
             trendChart = new Chart(ctx, {
@@ -381,6 +380,7 @@
                         datalabels: {
                             align: 'top',
                             anchor: 'end',
+                            offset: 4,
                             color: '#9ca3af',
                             font: { size: 10 },
                             formatter: (v) => v > 0 ? v : ''
@@ -390,11 +390,30 @@
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
+                    layout: {
+                        padding: {
+                            top: 20
+                        }
+                    },
                     scales: {
-                        y: { beginAtZero: true, ticks: { color: '#9ca3af' }, grid: { color: '#374151' } },
+                        y: { 
+                            beginAtZero: true, 
+                            max: yMax,
+                            ticks: { 
+                                color: '#9ca3af',
+                                stepSize: Math.ceil(yMax / 5 / 50) * 50
+                            }, 
+                            grid: { color: '#374151' } 
+                        },
                         x: { ticks: { color: '#9ca3af' }, grid: { display: false } }
                     },
-                    plugins: { legend: { display: false }, datalabels: { display: true } }
+                    plugins: { 
+                        legend: { display: false }, 
+                        datalabels: { 
+                            display: true,
+                            clip: false
+                        } 
+                    }
                 }
             });
         }

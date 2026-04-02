@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Control</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .status-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+        .status-ok { background-color: #4ade80; }
+        .status-error { background-color: #ef4444; }
+        .status-warn { background-color: #facc15; }
+        .live-indicator { animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+        .card { transition: all 0.2s; }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+        .log-entry { font-family: monospace; font-size: 0.8rem; }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen">
+    <!-- Header -->
+    <header class="bg-gray-800 border-b border-gray-700 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="text-2xl font-bold text-blue-400">🚀 Mission Control</div>
+                <span class="text-xs text-gray-500">Agent Monitoring Dashboard</span>
+            </div>
+            
+            <div class="flex items-center gap-4">
+                <div id="lastUpdate" class="text-xs text-gray-400">⏸️ Static mode</div>
+                
+                <!-- Live Toggle -->
+                <button id="liveToggle" onclick="toggleLive()" class="flex items-center gap-2 px-3 py-1.5 rounded border border-gray-600 hover:border-gray-500 transition-colors">
+                    <span id="liveIcon">⏸️</span>
+                    <span id="liveText">Live OFF</span>
+                </button>
+                
+                <button onclick="refreshData()" class="px-3 py-1.5 bg-blue-600 hover:bg-blue-500 rounded text-sm">
+                    🔄 Refresh
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-7xl mx-auto px-4 py-6">
+        <!-- Alert Banner (if errors) -->
+        <div id="alertBanner" class="hidden mb-4 p-3 bg-red-900/50 border border-red-700 rounded-lg">
+            <span class="text-red-300">🚨 <span id="alertText"></span></span>
+        </div>
+
+        <!-- Stats Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+            <!-- Agents Card -->
+            <div class="card bg-gray-800 rounded-lg p-4 border border-gray-700">
+                <div class="text-sm text-gray-400 mb-1">Agents</div>
+                <div class="flex items-end gap-2">
+                    <span id="agentCount" class="text-3xl font-bold">--</span>
+                    <span class="text-xs text-gray-500 mb-1">active</span>
+                </div>
+                <div id="agentStatus" class="mt-2 text-xs"></div>
+            </div>
+
+            <!-- Subagents Card -->
+            <div class="card bg-gray-800 rounded-lg p-4 border border-gray-700">
+                <div class="text-sm text-gray-400 mb-1">Subagent Runs</div>
+                <div class="flex items-end gap-2">
+                    <span id="subagentCount" class="text-3xl font-bold">--</span>
+                    <span class="text-xs text-gray-500 mb-1">total</span>
+                </div>
+                <div id="subagentStatus" class="mt-2 text-xs"></div>
+            </div>
+
+            <!-- Cron Card -->
+            <div class="card bg-gray-800 rounded-lg p-4 border border-gray-700">
+                <div class="text-sm text-gray-400 mb-1">Cron Jobs</div>
+                <div class="flex items-end gap-2">
+                    <span id="cronCount" class="text-3xl font-bold">--</span>
+                    <span id="cronErrorBadge" class="hidden px-2 py-0.5 bg-red-900 text-red-300 text-xs rounded"></span>
+                </div>
+                <div id="cronStatus" class="mt-2 text-xs"></div>
+            </div>
+
+            <!-- System Card -->
+            <div class="card bg-gray-800 rounded-lg p-4 border border-gray-700">
+                <div class="text-sm text-gray-400 mb-1">System</div>
+                <div class="flex items-end gap-2">
+                    <span id="processCount" class="text-3xl font-bold">--</span>
+                    <span class="text-xs text-gray-500 mb-1">processes</span>
+                </div>
+                <div id="memoryStatus" class="mt-2 text-xs"></div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Agents Section -->
+            <div class="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
+                <div class="px-4 py-3 border-b border-gray-700 flex justify-between items-center">
+                    <h2 class="font-semibold text-blue-300">👤 Agents</h2>
+                    <span id="agentUpdateTime" class="text-xs text-gray-500"></span>
+                </div>
+                <div id="agentsList" class="p-4 space-y-3">
+                    <div class="text-gray-500 text-sm">Loading...</div>
+                </div>
+            </div>
+
+            <!-- Cron Section -->
+            <div class="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden">
+                <div class="px-4 py-3 border-b border-gray-700 flex justify-between items-center">
+                    <h2 class="font-semibold text-blue-300">⏰ Cron Jobs</h2>
+                    <span id="cronUpdateTime" class="text-xs text-gray-500"></span>
+                </div>
+                <div id="cronList" class="p-4 space-y-2 max-h-64 overflow-y-auto">
+                    <div class="text-gray-500 text-sm">Loading...</div>
+                </div>
+            </div>
+
+            <!-- Subagents Section -->
+            <div class="bg-gray-800 rounded-lg border border-gray-700 overflow-hidden lg:col-span-2">
+                <div class="px-4 py-3 border-b border-gray-700 flex justify-between items-center">
+                    <h2 class="font-semibold text-blue-300">⚡ Recent Subagent Runs</h2>
+                    <div class="flex gap-2">
+                        <select id="agentFilter" onchange="filterSubagents()" class="bg-gray-700 text-white text-xs px-2 py-1 rounded border border-gray-600">
+                            <option value="all">All Agents</option>
+                            <option value="main">Ceil (main)</option>
+                            <option value="neo">Neo</option>
+                        </select>
+                        <span id="subagentUpdateTime" class="text-xs text-gray-500"></span>
+                    </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead class="bg-gray-750">
+                            <tr class="text-gray-400 text-xs">
+                                <th class="px-4 py-2 text-left">Time</th>
+                                <th class="px-4 py-2 text-left">Agent</th>
+                                <th class="px-4 py-2 text-left">Task</th>
+                                <th class="px-4 py-2 text-left">Status</th>
+                                <th class="px-4 py-2 text-right">Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody id="subagentTable" class="divide-y divide-gray-700">
+                            <tr>
+                                <td colspan="5" class="px-4 py-4 text-gray-500 text-center">Loading...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let isLive = false;
+        let liveInterval = null;
+        let currentData = null;
+
+        // Format duration
+        function formatDuration(ms) {
+            if (!ms) return '--';
+            if (ms < 1000) return `${ms}ms`;
+            if (ms < 60000) return `${Math.round(ms/1000)}s`;
+            return `${Math.round(ms/60000)}m ${Math.round((ms%60000)/1000)}s`;
+        }
+
+        // Format time
+        function formatTime(isoString) {
+            if (!isoString) return '--';
+            const d = new Date(isoString);
+            return d.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+        }
+
+        // Format relative time
+        function timeAgo(isoString) {
+            if (!isoString) return '--';
+            const d = new Date(isoString);
+            const now = new Date();
+            const diff = Math.floor((now - d) / 1000);
+            
+            if (diff < 60) return `${diff}s ago`;
+            if (diff < 3600) return `${Math.floor(diff/60)}m ago`;
+            if (diff < 86400) return `${Math.floor(diff/3600)}h ago`;
+            return `${Math.floor(diff/86400)}d ago`;
+        }
+
+        // Toggle live mode
+        function toggleLive() {
+            isLive = !isLive;
+            const btn = document.getElementById('liveToggle');
+            const icon = document.getElementById('liveIcon');
+            const text = document.getElementById('liveText');
+            const indicator = document.getElementById('lastUpdate');
+            
+            if (isLive) {
+                icon.textContent = '🔴';
+                text.textContent = 'Live ON';
+                btn.classList.add('border-red-600', 'bg-red-900/20');
+                indicator.textContent = '🔴 Live updating...';
+                indicator.classList.add('live-indicator');
+                liveInterval = setInterval(refreshData, 5000);
+            } else {
+                icon.textContent = '⏸️';
+                text.textContent = 'Live OFF';
+                btn.classList.remove('border-red-600', 'bg-red-900/20');
+                indicator.textContent = '⏸️ Static mode';
+                indicator.classList.remove('live-indicator');
+                clearInterval(liveInterval);
+            }
+        }
+
+        // Render agents
+        function renderAgents(agents) {
+            const container = document.getElementById('agentsList');
+            const agentIds = Object.keys(agents);
+            
+            document.getElementById('agentCount').textContent = agentIds.length;
+            
+            if (agentIds.length === 0) {
+                container.innerHTML = '<div class="text-gray-500 text-sm">No agents found</div>';
+                return;
+            }
+            
+            let html = '';
+            agentIds.forEach(agentId => {
+                const agent = agents[agentId];
+                const lastActive = agent.lastActive ? timeAgo(agent.lastActive) : 'Never';
+                const isActive = agent.isActive !== false;
+                
+                html += `
+                    <div class="flex items-center justify-between p-2 bg-gray-700/50 rounded">
+                        <div class="flex items-center gap-2">
+                            <span class="status-dot ${isActive ? 'status-ok' : 'status-error'}"></span>
+                            <span class="font-medium">${agentId}</span>
+                        </div>
+                        <span class="text-xs text-gray-400">${lastActive}</span>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+            document.getElementById('agentUpdateTime').textContent = formatTime(new Date());
+        }
+
+        // Render cron jobs
+        function renderCron(cron) {
+            const jobs = cron.jobs || [];
+            document.getElementById('cronCount').textContent = jobs.length;
+            
+            const errorJobs = jobs.filter(j => j.lastRunStatus === 'error' || j.consecutiveErrors > 0);
+            const errorBadge = document.getElementById('cronErrorBadge');
+            
+            if (errorJobs.length > 0) {
+                errorBadge.textContent = `${errorJobs.length} errors`;
+                errorBadge.classList.remove('hidden');
+                
+                // Show alert banner
+                document.getElementById('alertBanner').classList.remove('hidden');
+                document.getElementById('alertText').textContent = 
+                    `${errorJobs.length} cron job${errorJobs.length > 1 ? 's' : ''} failing`;
+            } else {
+                errorBadge.classList.add('hidden');
+                document.getElementById('alertBanner').classList.add('hidden');
+            }
+            
+            const container = document.getElementById('cronList');
+            let html = '';
+            
+            jobs.forEach(job => {
+                const hasError = job.lastRunStatus === 'error' || job.consecutiveErrors > 0;
+                const statusClass = hasError ? 'text-red-400' : 'text-green-400';
+                const statusIcon = hasError ? '🔴' : '🟢';
+                
+                html += `
+                    <div class="flex items-center justify-between p-2 ${hasError ? 'bg-red-900/20' : 'bg-gray-700/30'} rounded">
+                        <div class="flex items-center gap-2">
+                            <span class="${statusClass}">${statusIcon}</span>
+                            <span class="text-sm">${job.name || job.id}</span>
+                        </div>
+                        <div class="text-xs text-gray-400">
+                            ${job.consecutiveErrors > 0 ? `Errors: ${job.consecutiveErrors}` : 'OK'}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+            document.getElementById('cronUpdateTime').textContent = formatTime(new Date());
+        }
+
+        // Render subagents
+        function renderSubagents(subagents) {
+            const runs = subagents.runs || [];
+            document.getElementById('subagentCount').textContent = runs.length;
+            
+            // Filter by agent
+            const filter = document.getElementById('agentFilter').value;
+            let filteredRuns = runs;
+            if (filter !== 'all') {
+                filteredRuns = runs.filter(r => {
+                    const sessionKey = r.sessionKey || '';
+                    return sessionKey.includes(filter);
+                });
+            }
+            
+            // Take last 20
+            const recentRuns = filteredRuns.slice(-20).reverse();
+            
+            const container = document.getElementById('subagentTable');
+            let html = '';
+            
+            recentRuns.forEach(run => {
+                const time = formatTime(run.createdAt);
+                const agent = run.sessionKey?.includes('neo') ? 'Neo' : 'Ceil';
+                const task = run.task ? run.task.substring(0, 50) + '...' : 'No task';
+                const status = run.status || 'unknown';
+                const statusClass = status === 'completed' ? 'text-green-400' : 
+                                   status === 'error' ? 'text-red-400' : 'text-yellow-400';
+                const duration = formatDuration(run.durationMs);
+                
+                html += `
+                    <tr class="hover:bg-gray-700/50">
+                        <td class="px-4 py-2 text-gray-400">${time}</td>
+                        <td class="px-4 py-2">${agent}</td>
+                        <td class="px-4 py-2 max-w-md truncate" title="${run.task || ''}">${task}</td>
+                        <td class="px-4 py-2 ${statusClass}">${status}</td>
+                        <td class="px-4 py-2 text-right text-gray-400">${duration}</td>
+                    </tr>
+                `;
+            });
+            
+            container.innerHTML = html || '<tr><td colspan="5" class="px-4 py-4 text-gray-500 text-center">No runs found</td></tr>';
+            document.getElementById('subagentUpdateTime').textContent = formatTime(new Date());
+        }
+
+        // Render system stats
+        function renderSystem(system) {
+            document.getElementById('processCount').textContent = system.processes || 0;
+            
+            if (system.memory) {
+                const used = Math.round(system.memory.used / 1024);
+                const total = Math.round(system.memory.total / 1024);
+                const pct = Math.round((used / total) * 100);
+                document.getElementById('memoryStatus').textContent = 
+                    `Memory: ${used}GB / ${total}GB (${pct}%)`;
+            }
+        }
+
+        // Filter subagents
+        function filterSubagents() {
+            if (currentData) {
+                renderSubagents(currentData.subagents);
+            }
+        }
+
+        // Fetch data
+        async function refreshData() {
+            try {
+                const response = await fetch('/api/all?_=' + Date.now());
+                const data = await response.json();
+                currentData = data;
+                
+                renderAgents(data.agents);
+                renderCron(data.cron);
+                renderSubagents(data.subagents);
+                renderSystem(data.system);
+                
+            } catch (e) {
+                console.error('Failed to fetch data:', e);
+            }
+        }
+
+        // Initial load
+        refreshData();
+    </script>
+</body>
+</html>
