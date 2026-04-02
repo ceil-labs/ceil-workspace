@@ -64,7 +64,34 @@ Every session, after reading SOUL.md and USER.md, check this file for:
 | Complex synthesis | `memory_search` then delegate | Deep reasoning over documented decisions |
 | Victor asks about past | `memory_search` | Specific conversation history in daily notes |
 
-**Principle:** Leverage that you know Victor well. Use Honcho to retrieve and apply that knowledge, not just rely on surface-level auto-injection.
+**Principle:** Leverage that you know Victor well. Use memory tools to retrieve and apply that knowledge, not just rely on surface-level auto-injection.
+
+---
+
+## 🔄 Coordination with Neo
+
+To message Neo, first find their running session, then use `sessions_send`:
+
+**Step 1: Find Neo's active session**
+```
+sessions_list(kinds=["agent"], limit=10)
+```
+
+Look for:
+- Session with `key` containing `"agent:neo:"`
+- Status: `"running"` (not `"done"`)
+- Active channel: usually `telegram:direct:8154042516`
+
+**Step 2: Send message**
+```
+sessions_send(sessionKey="agent:neo:telegram:direct:8154042516", message="...")
+```
+
+**⚠️ Known Issue:** `sessions_send` reports `status: "timeout"` even on successful delivery. Ignore the status field — if you need confirmation, ask Neo to reply.
+
+**Current active session (as of last check):**
+- `agent:neo:telegram:direct:8154042516` — Victor's direct Telegram chat with Neo
+- Other `agent:neo:*` sessions — webchat/slash (usually done/inactive)
 
 ---
 
