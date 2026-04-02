@@ -1,5 +1,5 @@
 # MEMORY.md — Curated Operating Guidance
-<!-- Last updated: 2026-03-22 -->
+<!-- Last updated: 2026-04-02 -->
 <!-- Overwrite this file when patterns change. Do not append. -->
 
 ## Victor's Core Principles
@@ -16,19 +16,19 @@
 
 ## Session Start Protocol
 1. Read SOUL.md → USER.md → TOOLS.md → memory/YYYY-MM-DD.md
-2. **Proactive Honcho**: Call `honcho_ask` (depth='quick') + `honcho_context` (detail='full') at session start
+2. **Memory search first**: Call `memory_search` before answering "what did we..." questions
 3. **Research = delegate first**: Spawn subagent → review → decide
 4. **Memory search first**: Before answering "what did we..." questions
 
 ## Critical Patterns
 
-### When to Use Which Memory System
-| Question Type | Tool | Example |
-|--------------|------|---------|
-| "What's Victor's timezone?" | `honcho_ask` (depth='quick') | Factual lookup |
-| "What are his patterns?" | `honcho_context` | Behavior synthesis |
-| "What did we decide Tuesday?" | `memory_search` + `memory_get` | Documented decisions |
-| "Why did we choose X?" | `honcho_ask` (depth='thorough') | Complex reasoning |
+### When to Use Memory Search
+| Question Type | Approach | Example |
+|--------------|----------|---------|
+| "What's Victor's timezone?" | `memory_search` "Victor timezone" | Factual lookup from USER.md |
+| "What are his patterns?" | `memory_search` + read relevant files | Behavior synthesis from MEMORY.md |
+| "What did we decide Tuesday?" | `memory_search` + `memory_get` | Documented decisions in daily notes |
+| "Why did we choose X?" | `memory_search` then delegate if needed | Complex reasoning |
 
 ### Multi-Agent Coordination
 - **Ceil**: Operations, infrastructure, primary assistant
