@@ -1,10 +1,10 @@
 # DIY Karpathy Memory Architecture — Design Document
 
-> **Status:** Design v1.1  
+> **Status:** Design v1.2  
 > **Author:** Ceil (subagent)  
 > **Date:** 2026-04-04  
-> **Updated:** 2026-04-04 (added bidirectional growth concept)  
-> **Purpose:** Architectural specification for a personal memory system that grows from both what you SAVE and what you ASK.
+> **Updated:** 2026-04-05 (added human-AI collaboration model, approval queue, interactive vs batch workflows)  
+> **Purpose:** Architectural specification for a personal memory system that grows from what you save, what you ask, and what you explore.
 
 ---
 
@@ -14,71 +14,250 @@
 
 **Karpathy's approach:** The AI reads its entire knowledge base like a book, understands everything together, then answers. (Like a human who has read widely and deeply about a topic.)
 
-**Key insight:** Memory grows from **two directions**:
-1. **What you save** — articles, papers, bookmarks (explicit inputs)
-2. **What you ask** — your questions reveal what you care about (implicit inputs)
+**Our addition:** Human maintains **editorial control** through an approval queue. The AI proposes, the human approves.
+
+> *"Obsidian is the IDE; the LLM is the programmer; the wiki is the codebase."* — Karpathy
 
 ---
 
 ## Table of Contents
 
-1. [The Mental Model — Think of It Like...](#1-the-mental-model--think-of-it-like)
-2. [Bidirectional Growth — The Missing Piece](#2-bidirectional-growth--the-missing-piece)
-3. [System Overview & Directory Structure](#3-system-overview--directory-structure)
-4. [Knowledge Base vs. Session Memory](#4-knowledge-base-vs-session-memory)
-5. [The Four Routines — How the System Maintains Itself](#5-the-four-routines--how-the-system-maintains-itself)
-6. [Query-Time: How the AI "Thinks"](#6-query-time-how-the-ai-thinks)
-7. [Cache Layers — Token Optimization](#7-cache-layers--token-optimization)
-8. [Backlinks and Navigation](#8-backlinks-and-navigation)
-9. [Example Workflows](#9-example-workflows)
-10. [Design Principles & Trade-offs](#10-design-principles--trade-offs)
-11. [Glossary](#11-glossary)
+1. [The Mental Model — IDE + Programmer + Codebase](#1-the-mental-model--ide--programmer--codebase)
+2. [Three Layers of the System](#2-three-layers-of-the-system)
+3. [Two Modes of Operation](#3-two-modes-of-operation)
+4. [Bidirectional Growth — The Missing Piece](#4-bidirectional-growth--the-missing-piece)
+5. [System Overview & Directory Structure](#5-system-overview--directory-structure)
+6. [Knowledge Base vs. Session Memory vs. Log](#6-knowledge-base-vs-session-memory-vs-log)
+7. [The Five Routines + Approval Queue](#7-the-five-routines--approval-queue)
+8. [Query-Time: How the AI "Thinks"](#8-query-time-how-the-ai-thinks)
+9. [Cache Layers — Token Optimization](#9-cache-layers--token-optimization)
+10. [Backlinks and Navigation](#10-backlinks-and-navigation)
+11. [Example Workflows](#11-example-workflows)
+12. [Design Principles & Trade-offs](#12-design-principles--trade-offs)
+13. [Glossary](#13-glossary)
 
 ---
 
-## 1. The Mental Model — Think of It Like...
+## 1. The Mental Model — IDE + Programmer + Codebase
 
-### Your Memory System is a Personal Wikipedia
+Karpathy's core metaphor:
 
-Imagine you're building a **personal Wikipedia** that only you can edit and read. The Wikipedia:
+> **Obsidian is the IDE; the LLM is the programmer; the wiki is the codebase.**
 
-- Has articles you've written about topics you care about
-- Gets updated when you read new papers or save interesting things
-- Gets updated when you have important discussions
-- **Grows from both what you read AND what you ask about**
+### What This Means
 
-### The Two Types of Memory
+| Component | Role | Analogy |
+|-----------|------|---------|
+| **You (Human)** | Product owner, code reviewer | Project manager who approves PRs |
+| **LLM** | Programmer, maintainer | Developer who writes and refactors code |
+| **Wiki** | Codebase | Living system that evolves |
+| **Obsidian/UI** | IDE | Where you browse, review, navigate |
+| **Schema** | Coding standards | `CLAUDE.md` / `AGENTS.md` — rules for the LLM |
 
-| Type | File | Purpose | Lifetime |
-|------|------|---------|----------|
-| **Knowledge Base** | `wiki/` | Your compiled understanding of topics | Long-term |
-| **Session Log** | `sessions/` | What happened in conversations today | Short-term |
+### The Human's Job vs. The LLM's Job
 
-### The Four Routines — Maintenance Workers
+**Human (You):**
+- Curate sources (papers, bookmarks, URLs)
+- Ask questions, direct analysis
+- **Approve or reject proposed changes** ← Key addition
+- Think about what it all means
 
-Your Wikipedia has four automated workers that keep it tidy:
+**LLM:**
+- Read sources and extract knowledge
+- Write and maintain wiki articles
+- Cross-reference, link, lint
+- Propose updates (but not apply without approval)
 
-1. **Compiler** — Reads new papers/saved articles → writes wiki articles
-2. **Curator** — Finds broken links, orphaned pages, suggests improvements
-3. **Organizer** — Reorganizes when the wiki gets too big
-4. **Synthesizer** — Takes old conversation notes → extracts useful knowledge → updates wiki
+> *"The tedious part of maintaining a knowledge base is not the reading or the thinking — it's the bookkeeping. Humans abandon wikis because the maintenance burden grows faster than the value. LLMs don't get bored, don't forget to update a cross-reference, and can touch 15 files in one pass."* — Karpathy
+
+### The Approval Queue Concept
+
+Instead of the LLM editing the wiki directly, changes go through a **pending approval queue**:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    APPROVAL QUEUE (Pending Changes)          │
+├─────────────────────────────────────────────────────────────┤
+│  □ Update [[multi-agent-architecture]]                      │
+│    └─ Added: ByteRover handoff pattern                      │
+│    └─ Source: session 2026-04-04                            │
+│    [Preview] [Approve] [Edit] [Reject]                     │
+├─────────────────────────────────────────────────────────────┤
+│  □ Create [[raft-consensus]] (full article from stub)       │
+│    └─ Query count: 5 → deserves comprehensive treatment     │
+│    [Preview] [Approve] [Reject]                            │
+├─────────────────────────────────────────────────────────────┤
+│  □ Link [[agent-platform]] → [[n8n-setup]]                  │
+│    └─ Cross-reference detected during linting               │
+│    [Approve] [Reject]                                      │
+└─────────────────────────────────────────────────────────────┘
+```
+
+**Benefits:**
+- **Safe:** LLM can't accidentally mess up wiki
+- **Transparent:** You see exactly what changed
+- **Batched:** Review multiple changes at once
+- **Teachable:** Your feedback improves LLM's future proposals
 
 ---
 
-## 2. Bidirectional Growth — The Missing Piece
+## 2. Three Layers of the System
+
+Karpathy defines three distinct layers:
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│  LAYER 3: ANSWERS & EXPLORATIONS                             │
+│  Synthesized responses, comparisons, analyses                │
+│  Can be filed back into wiki as new pages                    │
+│  "Your explorations compound too"                            │
+└─────────────────────────────┬───────────────────────────────┘
+                              │ Query / Explore
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│  LAYER 2: THE WIKI (The Codebase)                            │
+│  LLM-generated markdown. Summaries, entities, concepts.      │
+│  Cross-referenced, interlinked, maintained.                  │
+│  LLM owns this layer entirely (with human approval).         │
+└─────────────────────────────┬───────────────────────────────┘
+                              │ Ingest / Compile
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│  LAYER 1: RAW SOURCES (Source of Truth)                      │
+│  Papers, articles, bookmarks, images, URLs.                  │
+│  Immutable. You curate this. LLM reads but never modifies.   │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### Layer 1: Raw Sources
+
+**Your job:** Curate. Drop files here. Never modified by LLM.
+
+```
+raw/
+├── papers/              # Research papers (PDF)
+├── bookmarks/           # Web articles (markdown)
+├── images/              # Images with annotations
+└── assets/              # Downloaded images (local, not URLs)
+```
+
+**Key practice:** Download images locally, don't rely on URLs.
+- In Obsidian: Settings → Files → "Attachment folder path" = `raw/assets/`
+- Hotkey: "Download attachments for current file"
+- LLM can view images directly (read text first, then view images separately)
+
+### Layer 2: The Wiki
+
+**LLM's job:** Write, maintain, cross-reference. **Your job:** Approve changes.
+
+```
+wiki/
+├── _index.md           # Content catalog (TOC) — LLM reads this first
+├── _backlinks.json     # Cross-reference index
+├── _pending/           # 💡 PROPOSED CHANGES (approval queue)
+│   ├── 001-update-multi-agent.md
+│   ├── 002-create-raft-article.md
+│   └── 003-link-n8n.md
+├── concepts/           # General concepts & ideas
+├── projects/           # Project-specific knowledge
+├── people/             # User preferences, team info
+└── explorations/       # 💡 Query answers that became wiki pages
+```
+
+### Layer 3: Answers & Explorations
+
+**Key insight from Karpathy:** Good answers can be **filed back** into the wiki.
+
+When you ask a deep question:
+1. LLM synthesizes answer from wiki
+2. Answer is valuable — don't let it disappear into chat history
+3. **File it back** as a new wiki page in `explorations/`
+
+**Example:**
+```
+You: "Compare our multi-agent approach vs. ByteRover's"
+
+LLM: [synthesizes comparison from wiki]
+
+→ Proposed change: Create wiki/explorations/
+  multi-agent-vs-byterover-comparison.md
+
+You: [approve] → Now part of permanent wiki
+```
+
+This way **your explorations compound** just like ingested sources.
+
+---
+
+## 3. Two Modes of Operation
+
+The system supports both **batch** and **interactive** workflows:
+
+### Mode A: Batch/Automated (Our Current Architecture)
+
+```
+Schedule → Routine runs → Proposes changes → Queue → Human reviews
+```
+
+**When to use:**
+- Daily compilation of new sources
+- Weekly session rollup
+- Periodic linting
+
+**Benefits:**
+- Non-interruptive
+- Batched for efficiency
+- Human reviews at convenient time
+
+### Mode B: Interactive/Real-Time (Karpathy's Style)
+
+```
+You + LLM collaborate in real-time
+↓
+LLM makes edits as you discuss
+↓
+You browse in Obsidian, see changes immediately
+↓
+Approve or refine on the spot
+```
+
+**When to use:**
+- Deep research sessions
+- Active sense-making
+- Building understanding together
+
+**Benefits:**
+- Immediate feedback
+- Tighter collaboration
+- Better for exploration
+
+### Hybrid Approach (Recommended)
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    INTERACTIVE MODE                          │
+│  Real-time collaboration during active sessions             │
+│  → Proposed changes go to _pending/ immediately             │
+│  → You approve/reject as you go                             │
+└─────────────────────────────────────────────────────────────┘
+                              │
+                    At session end / daily
+                              ▼
+┌─────────────────────────────────────────────────────────────┐
+│                     BATCH MODE                               │
+│  Automated routines run on schedule                         │
+│  → New proposals added to _pending/                         │
+│  → You review queue when convenient                         │
+└─────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 4. Bidirectional Growth — The Missing Piece
 
 > **Memory grows from both sides: what you save AND what you ask.**
 
-This is the key insight from the Karpathy tweet that our original architecture missed.
-
-### Why This Matters
-
-When you ask about something, you're revealing:
-- What you care about
-- What you're trying to understand
-- What you need to remember
-
-This is just as valuable as what you explicitly save. Your questions are breadcrumbs that show where your knowledge needs to grow.
+This is the key insight from Karpathy's tweet.
 
 ### Two Input Streams
 
@@ -93,304 +272,245 @@ This is just as valuable as what you explicitly save. Your questions are breadcr
 │  • Bookmarks you add     │  • Topics you inquire about       │
 │  • URLs you clip         │  • Problems you're solving        │
 │  • Code you reference    │  • Decisions you discuss          │
+│                          │  • Comparisons you request        │
 │                          │                                   │
 │  → Triggers:            │  → Triggers:                      │
-│    Compilation Routine   │    Query Reflection (NEW)         │
+│    Compilation           │    Query Reflection               │
+│    Routine               │    Routine                        │
+│                          │    + Explorations                 │
 └──────────────────────────┴──────────────────────────────────┘
 ```
 
-### The Fifth Routine: Query Reflection
+### Why "What You Ask" Matters
 
-**Purpose:** Capture what you ask about as signals of interest and knowledge gaps.
+When you ask about something, you're revealing:
+- What you care about
+- What you're trying to understand
+- What you need to remember
 
-```
-Trigger:  After each user query
-Input:    Current session + user question
-Output:   Wiki article stubs OR interest markers
-```
+Your questions are **breadcrumbs** showing where knowledge needs to grow.
 
-**What it does:**
+### Interest Stubs
 
-```
-User asks: "How does RAFConsensus work again?"
-           │
-           ▼
-┌─────────────────────────────────────────────────────────────┐
-│  Query Reflection:                                          │
-│                                                             │
-│  1. Extract topic: "RAFConsensus"                          │
-│  2. Check: Does wiki have article on RAFConsensus?         │
-│     │                                                        │
-│     ├── YES ──→ Add "queried" tag + increment query count  │
-│     │           This shows topic is important to user       │
-│     │                                                        │
-│     └── NO ───→ Create "interest stub" in wiki:            │
-│                 # RAFConsensus (INTEREST STUB)             │
-│                 *Queried by Victor on 2026-04-04*          │
-│                 *Status: Needs research*                    │
-│                 *Source: [[session:2026-04-04]]*           │
-└─────────────────────────────────────────────────────────────┘
-```
+Created by Query Reflection when you ask about something not in wiki:
 
-### Why Interest Stubs Matter
+```markdown
+# RAFT Consensus
 
-Over time, your stubs reveal patterns:
+*Interest stub — first queried: 2026-04-04*  
+*Query count: 5 (last queried: 2026-04-05)*  
+*Status: Needs research — high priority (5 queries)*  
+*Source: [[session:2026-04-04]], [[session:2026-04-05]]*
 
-```
-# Topics Victor Asks About (Queried 3+ times)
-- [[RAFConsensus]] — queried 5 times, most recent: 2026-04-04
-- [[distributed-systems]] — queried 3 times, most recent: 2026-04-02
-- [[agent-handoffs]] — queried 4 times, most recent: 2026-04-04
+## What We Know
+(Very brief — just enough to answer basic questions)
+
+## What We Need
+- Full article on RAFT algorithm
+- Comparison with Paxos
+- Use cases in distributed systems
+
+## Related
+- [[distributed-systems]] (parent topic)
+- [[consensus-algorithms]] (sibling topic)
 ```
 
-This tells you:
-1. **What matters to the user** (high query count)
-2. **What needs documentation** (stub exists but no full article)
-3. **What to prioritize** (frequently asked topics)
-
-### Updated System Diagram
-
-```
-┌─────────────────────────────────────────────────────────────────────┐
-│                         TWO INPUT STREAMS                            │
-├───────────────────────────┬─────────────────────────────────────────┤
-│  EXPLICIT                 │  IMPLICIT                                │
-│  (What you save)          │  (What you ask)                          │
-├───────────────────────────┼─────────────────────────────────────────┤
-│                           │                                          │
-│  ┌─────────────────────┐  │  ┌──────────────────────────────────┐   │
-│  │  raw/               │  │  │  sessions/ (today's logs)        │   │
-│  │  ├── papers/        │  │  │  └── User questions extracted     │   │
-│  │  ├── bookmarks/     │  │  └──────────────┬───────────────────┘   │
-│  │  └── urls/          │  │                 │                        │
-│  └──────────┬──────────┘  │                 │ Query Reflection       │
-│              │             │                 ▼                        │
-│              │ Compilation │  ┌──────────────────────────────────┐   │
-│              │ Routine     │  │  wiki/                            │   │
-│              ▼             │  │  ├── Interest stubs created       │   │
-│  ┌─────────────────────┐  │  │  ├── Query counts updated         │   │
-│  │  wiki/              │◄─┼──┤  └── Topics flagged for research  │   │
-│  │  └── (articles)     │  │  └──────────────────────────────────┘   │
-│  └─────────────────────┘  │                                          │
-│              ▲            │                 ▲                        │
-│              │ Session    │                 │                        │
-│              │ Rollup     │                 │                        │
-│  ┌──────────┴──────────┐  │                 │                        │
-│  │  sessions/ (older)  │──┴─────────────────┘                        │
-│  │  └── Rolled-up      │                                            │
-│  └─────────────────────┘                                            │
-└─────────────────────────────────────────────────────────────────────┘
-```
+**Over time:** High query count signals "this needs a full article."
 
 ---
 
-## 3. System Overview & Directory Structure
+## 5. System Overview & Directory Structure
 
 ```
 memory/
-├── raw/                        # 📦 SOURCE OF TRUTH — untouched originals
+├── raw/                        # 📦 SOURCE OF TRUTH — your curation
 │   ├── papers/                 #   Research papers (PDF)
-│   ├── codebases/              #   Code files you've saved
+│   ├── bookmarks/              #   Web articles (markdown)
 │   ├── images/                 #   Images with annotations
-│   └── bookmarks/              #   Saved URLs, web clips
+│   └── assets/                 #   Downloaded images (local storage)
 │
-├── wiki/                       # 🧠 THE WIKI — compiled knowledge
-│   ├── _index.md              #   Master navigation (table of contents)
-│   ├── _backlinks.json        #   Cross-reference index ("see also")
+├── wiki/                       # 🧠 THE WIKI — LLM-maintained (you approve)
+│   ├── _index.md              #   Content catalog (TOC) — navigation
+│   ├── _backlinks.json        #   Cross-reference index
+│   ├── _pending/              #   💡 PROPOSED CHANGES (approval queue)
+│   │   └── YYYY-MM-DD-###-description.md
+│   ├── _schema.md             #   💡 Rules for LLM (coding standards)
 │   ├── concepts/              #   General concepts & ideas
-│   │   ├── multi-agent-architecture.md
-│   │   ├── memory-systems.md
-│   │   └── ...
 │   ├── projects/              #   Project-specific knowledge
-│   │   ├── ceil-workspace.md
-│   │   ├── agent-platform.md
-│   │   └── ...
-│   ├── people/                #   User preferences, team info
-│   │   ├── victor-preferences.md
-│   │   └── ...
-│   └── interests/             #   💡 INTEREST STUBS (NEW)
-│       ├── rafconsensus.md    #   "Needs research" stub
-│       └── distributed-systems.md
+│   ├── people/                #   User preferences, profiles
+│   ├── explorations/          #   💡 Answers that became wiki pages
+│   └── interests/             #   💡 Interest stubs (query-driven)
 │
 ├── sessions/                   # 💬 TODAY'S CONVERSATION LOG
 │   ├── 2026-04-04.md         #   Today's raw conversation
-│   ├── 2026-04-03.md         #   Yesterday's
-│   └── archive/               #   Rolled-up sessions
+│   └── archive/               #   Rolled-up old sessions
+│
+├── log.md                      # 📜 TIMELINE — chronological record
+│                               #   Alternative to sessions/ (Karpathy style)
+│                               #   Append-only: ingests, queries, lint passes
 │
 └── cache/                      # ⚡ TOKEN OPTIMIZATION
-    ├── summaries/             #   L1: Article summaries (~100 tokens each)
+    ├── summaries/             #   L1: Article summaries (~100 tokens)
     └── embeddings/            #   L2: (optional) Article embeddings
 ```
 
-### Why This Structure?
+### Special Files Explained
 
-- **`raw/`** = You trust this. It's the original source.
-- **`wiki/`** = The AI has processed and understood this. It's the AI's "brain."
-- **`sessions/`** = Ephemeral scratchpad. Today's notes, tomorrow's rolled-up insights.
-- **`cache/`** = Speed optimization. Like a book's index and chapter summaries.
+| File | Purpose | Karpathy's Approach | Our Approach |
+|------|---------|---------------------|--------------|
+| **`_index.md`** | Content catalog | ✅ Yes — LLM reads first to find relevant pages | Same |
+| **`log.md`** | Chronological timeline | ✅ Yes — single append-only file | Alternative to `sessions/` |
+| **`_schema.md`** | Rules for LLM | ✅ Yes — `CLAUDE.md` or `AGENTS.md` | Same concept |
+| **`_pending/`** | Approval queue | ❌ Not mentioned | 💡 Our addition for safety |
+| **`sessions/`** | Daily conversation logs | ❌ Not mentioned | Our approach (per-day files) |
+
+### Sessions/ vs. Log.md — Two Approaches
+
+**Karpathy's log.md:**
+```markdown
+## [2026-04-04] ingest | Transformer Architecture Paper
+## [2026-04-04] query | Multi-agent comparison
+## [2026-04-04] lint | Found 3 broken links
+## [2026-04-05] ingest | RAFT Consensus Article
+```
+- Single file, append-only
+- Parseable with `grep "^## \[" log.md | tail -5`
+- Timeline view of wiki evolution
+
+**Our sessions/ approach:**
+- Per-day files: `sessions/2026-04-04.md`
+- Full conversation content
+- Easier to read as narrative
+- Archive after rollup
+
+**Can use both:** `sessions/` for detailed logs, `log.md` for timeline summary.
 
 ---
 
-## 4. Knowledge Base vs. Session Memory
+## 6. Knowledge Base vs. Session Memory vs. Log
 
-These are fundamentally different tools with different jobs.
+| Component | Purpose | Content | Lifetime | Owner |
+|-----------|---------|---------|----------|-------|
+| **Wiki** | Persistent knowledge | Articles, concepts, synthesis | Long-term | LLM writes, you approve |
+| **Sessions** | Today's conversation | Raw chat logs, scratchpad | Short-term (7 days) | Append-only |
+| **Log** | Timeline summary | Ingests, queries, events | Permanent | Append-only |
 
-### 4.1 Knowledge Base (`wiki/`)
-
-**Think of it as:** Your compiled understanding of the world.
-
-| Attribute | Description |
-|-----------|-------------|
-| **Purpose** | Persistent, curated, cross-session understanding |
-| **Content** | Concepts, project facts, user preferences, decisions |
-| **Source** | LLM compiles from raw files + session rollups + interest stubs |
-| **Update trigger** | Compilation routine, session rollup, query reflection |
-| **Lifecycle** | Long-term. Gets richer over time. |
-| **Example** | `concepts/multi-agent-architecture.md` |
-
-### 4.2 Session Memory (`sessions/`)
-
-**Think of it as:** A notepad for today's work.
-
-| Attribute | Description |
-|-----------|-------------|
-| **Purpose** | Ephemeral, working context for current conversation |
-| **Content** | Chat history, scratchpad notes, decisions made today |
-| **Source** | Real-time append during conversation |
-| **Update trigger** | Every message exchange |
-| **Lifecycle** | Short-term. Rolled up after 7 days, then archived. |
-| **Example** | `sessions/2026-04-04.md` |
-
-### 4.3 The Relationship
+### The Flow
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│                    WIKI (Long-Term Memory)                   │
-│                                                             │
-│  "I know about multi-agent architecture..."               │
-│  "Victor prefers morning sessions..."                      │
-│  "We decided to use Redis over Solid..."                   │
-│                                                             │
-│  Compiled from: raw files + old sessions + interest stubs  │
+│                    WIKI (Persistent)                         │
+│  Compiled knowledge — articles, concepts, synthesis         │
+│  Source: raw files + approved session learnings             │
 └────────────────────────────▲────────────────────────────────┘
+                             │  Approved changes from _pending/
+                             │  (human review gate)
+┌────────────────────────────┴────────────────────────────────┐
+│                  _pending/ (Proposed Changes)                │
+│  LLM proposes → You approve/reject → Applied to wiki        │
+└────────────────────────────▲────────────────────────────────┘
+                             │  Routine outputs
                              │
-                    Session Rollup
-                    (extracts decisions,
-                     preferences, knowledge)
+┌────────────────────────────┼────────────────────────────────┐
+│                  SESSIONS / LOG (Ephemeral)                  │
+│  Raw conversation → Routines extract → Proposals            │
+└────────────────────────────▲────────────────────────────────┘
+                             │  Real-time append
                              │
 ┌────────────────────────────┴────────────────────────────────┐
-│                   SESSIONS (Today's Work)                    │
-│                                                             │
-│  "User asked about RAFConsensus..."                        │
-│  "Agent provided explanation..."                           │
-│  "Interest stub created..."                                │
-│                                                             │
-│  Today's scratchpad — will be rolled up eventually         │
+│                    RAW SOURCES (Immutable)                   │
+│  You curate → Compilation routine → Wiki updates            │
 └─────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## 5. The Four Routines — How the System Maintains Itself
+## 7. The Five Routines + Approval Queue
 
-The system isn't just storage — it has automated maintenance routines.
+### The Five Routines
 
-### 5.1 Compilation Routine
+| # | Routine | Trigger | Input | Output |
+|---|---------|---------|-------|--------|
+| 1 | **Compilation** | New raw file | `raw/` | Wiki update proposals |
+| 2 | **Query Reflection** | User asks question | Query text | Interest stub proposals |
+| 3 | **Exploration Filing** | Deep answer generated | Answer content | New wiki page proposals |
+| 4 | **Linting** | Scheduled (weekly) | `wiki/` | Fix proposals |
+| 5 | **Session Rollup** | Session 7+ days old | `sessions/` | Wiki update proposals |
 
-**Job:** Read new papers/documents → Write wiki articles.
+### The Approval Queue `_pending/`
 
-```
-Trigger:  New file in raw/ OR scheduled (daily)
-Input:    raw/ directory
-Output:   New or updated wiki articles
-```
-
-**Example:** You save `paper-llm-attention.pdf` to `raw/papers/`.
-
-```
-┌──────────────┐    ┌──────────────┐    ┌──────────────┐
-│  Read the    │───▶│  Extract     │───▶│  Write or    │
-│  paper       │    │  key concepts│    │  update wiki │
-│              │    │  & facts     │    │  article     │
-└──────────────┘    └──────────────┘    └──────┬───────┘
-                                                 │
-                                                 ▼
-                                        ┌──────────────┐
-                                        │  Link to     │
-                                        │  related     │
-                                        │  articles    │
-                                        └──────────────┘
-```
-
-### 5.2 Query Reflection Routine
-
-**Job:** Capture what you ask → Signal what needs documentation.
+All routines output to `_pending/`, not directly to wiki:
 
 ```
-Trigger:  After each user query
-Input:    User's question
-Output:   Interest stubs OR query count updates
+_pending/
+├── 2026-04-04-001-update-multi-agent.md
+├── 2026-04-04-002-create-raft-stub.md
+├── 2026-04-05-001-exploration-comparison.md
+└── 2026-04-05-002-link-n8n.md
 ```
 
-**Example:** You ask about "RAFT consensus"
+**Format of a pending change:**
+```markdown
+---
+type: update
+status: pending
+created: 2026-04-04
+source: compilation-routine
+source_file: raw/papers/transformer-attention.pdf
+---
+
+# Proposed: Update [[multi-agent-architecture]]
+
+## Changes
+- Add section on ByteRover handoff pattern
+- Update [[agent-ceil]] cross-reference
+- Add link to new paper
+
+## Preview
+(Current article content with changes highlighted)
+
+## Rationale
+Source paper discusses handoff mechanisms that complement our architecture.
+
+---
+
+[Approve] [Edit] [Reject] [Defer]
+```
+
+### Human Review Interface
 
 ```
-User asks: "How does RAFT consensus work?"
-           │
-           ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  Does wiki have RAFT article?                               │
-│     │                                                        │
-│     ├── YES ──→ Increment query count, add "queried" tag   │
-│     │           "This topic was queried 3 times"          │
-│     │                                                        │
-│     └── NO ───→ Create interest stub:                     │
-│                 # RAFT Consensus                             │
-│                 *Status: Needs research*                    │
-│                 *First queried: 2026-04-04*                 │
-│                 *Source: [[session:2026-04-04]]*            │
+│  Pending Wiki Changes (4)                                   │
+│  Last updated: 2026-04-05 13:30                             │
+├─────────────────────────────────────────────────────────────┤
+│                                                             │
+│  □ 001: Update [[multi-agent-architecture]]                │
+│    Source: Compilation routine | transformer-paper.pdf      │
+│    Type: Add ByteRover handoff section                      │
+│    [Preview] [Approve] [Edit] [Reject]                     │
+│                                                             │
+│  □ 002: Create [[raft-consensus]] (from interest stub)      │
+│    Source: Query reflection | 5 queries on this topic       │
+│    Type: Full article from stub                             │
+│    [Preview] [Approve] [Reject]                            │
+│                                                             │
+│  □ 003: File exploration [[multi-agent-vs-byterover]]       │
+│    Source: Your query on 2026-04-05                         │
+│    Type: New exploration page                               │
+│    [Preview] [Approve] [Edit] [Reject]                     │
+│                                                             │
+│  □ 004: Fix broken link [[openclaw-setup]] → [[gateway]]    │
+│    Source: Lint routine                                     │
+│    Type: Fix broken backlink                                │
+│    [Approve] [Reject]                                      │
+│                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### 5.3 Linting Routine
-
-**Job:** Keep the wiki healthy. Find problems.
-
-```
-Trigger:  Scheduled (weekly) OR manual
-Input:    wiki/ directory (full scan)
-Output:   Report: broken links, orphaned pages, suggestions
-```
-
-**What it checks:**
-- Do all `[[links]]` point to existing articles?
-- Are there articles no one links to? (orphaned)
-- Any facts contradicting across articles?
-- Articles not updated in 30+ days?
-
-### 5.4 Session Rollup Routine
-
-**Job:** Extract valuable learnings from old sessions → Add to wiki.
-
-```
-Trigger:  Session is 7+ days old
-Input:    sessions/YYYY-MM-DD.md
-Output:   Wiki updates with provenance links
-```
-
-**What it extracts:**
-| Category | Example |
-|----------|---------|
-| **Decisions** | "We decided to use X instead of Y because..." |
-| **Preferences** | "Victor prefers A over B" |
-| **Knowledge** | "New understanding gained from this session" |
-| **Todos** | "Open items identified but not completed" |
-
 ---
 
-## 6. Query-Time: How the AI "Thinks"
-
-When you ask a question, here's what happens:
+## 8. Query-Time: How the AI "Thinks"
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -399,57 +519,46 @@ When you ask a question, here's what happens:
                              │
                              ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  CONTEXT CONSTRUCTION (per request)                         │
-│                                                             │
-│  1. [System prompt] — Who I am, rules                      │
-│  2. [Wiki _index.md] — List of all articles (TOC)         │
-│  3. [Wiki articles] — Selected articles based on query    │
-│  4. [Session history] — Recent conversation               │
-│  5. [Your question]                                        │
-│                                                             │
-│  Total: ~10-30K tokens (fits in context window)           │
+│  STEP 1: Read _index.md (content catalog)                   │
+│  → List of all articles with summaries                      │
 └────────────────────────────┬────────────────────────────────┘
                              │
                              ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  THE AI "READS" THIS CONTEXT LIKE A BOOK                   │
-│                                                             │
-│  - Sees the full article on agent architecture            │
-│  - Understands relationships between concepts               │
-│  - Knows about Victor's preferences from wiki             │
-│  - Has today's conversation context from session           │
-│                                                             │
-│  → Generates coherent, context-aware response             │
+│  STEP 2: Select relevant articles                           │
+│  → [[multi-agent-architecture]]                             │
+│  → [[agent-ceil]]                                           │
+│  → [[agent-platform]]                                       │
 └────────────────────────────┬────────────────────────────────┘
                              │
                              ▼
 ┌─────────────────────────────────────────────────────────────┐
-│  RESPONSE SENT TO YOU                                       │
+│  STEP 3: Load full selected articles + session context      │
+└────────────────────────────┬────────────────────────────────┘
+                             │
+                             ▼
+┌─────────────────────────────────────────────────────────────┐
+│  LLM GENERATES RESPONSE                                     │
+│  Synthesized from wiki (not raw sources)                    │
+└────────────────────────────┬────────────────────────────────┘
+                             │
+                             ▼
+┌─────────────────────────────────────────────────────────────┐
+│  DEEP ANSWER? → Propose filing to explorations/             │
+│  "This comparison is valuable — add to wiki?"               │
 └────────────────────────────┬────────────────────────────────┘
                              │
                              ▼
 ┌─────────────────────────────────────────────────────────────┐
 │  SESSION APPEND                                             │
-│  sessions/2026-04-04.md += [your question, my response]   │
+│  sessions/2026-04-04.md += [question, response]             │
+│  log.md += "## [2026-04-04] query | agent architecture"    │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-**Why this is better than traditional RAG:**
-
-| Traditional RAG | Karpathy Approach |
-|----------------|------------------|
-| Find 3-5 chunks | Read full article |
-| Lose cross-references | Understands relationships |
-| May miss context | Has full picture |
-| "Tell me about X" | "I understand X in context of Y and Z" |
-
 ---
 
-## 7. Cache Layers — Token Optimization
-
-The context window is finite (e.g., 128K tokens). We optimize what we send.
-
-### Three Cache Tiers
+## 9. Cache Layers — Token Optimization
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -468,66 +577,23 @@ The context window is finite (e.g., 128K tokens). We optimize what we send.
 └─────────┴──────────────────┴──────────────────────────────┘
 ```
 
-### L1: Article Summaries (Always On)
-
-Each wiki article has a ~100 token summary. Like a book's chapter preview.
-
-```
-Query arrives
-     │
-     ▼
-┌─────────────────────────────────────┐
-│  Read ALL article summaries         │
-│  (25 articles × 100 tokens = 2.5K)  │
-└─────────────────┬───────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────┐
-│  AI reads summaries → selects       │
-│  which articles are relevant        │
-└─────────────────┬───────────────────┘
-                  │
-                  ▼
-┌─────────────────────────────────────┐
-│  Read FULL content of selected      │
-│  articles only                      │
-└─────────────────────────────────────┘
-```
-
-### L2: Embeddings (Optional)
-
-**Only enable when wiki has 50+ articles.**
-
-Uses vector similarity instead of summaries to find relevant articles.
-
-### L3: Session Compression (Optional)
-
-**Only enable when session has 20+ messages.**
-
-```
-Session has 50 messages? Compress first 30 into summary:
-"Victor asked about X. We discussed Y. Decided to Z."
-
-Result: Only 20 recent messages + 1 summary sent to AI
-```
+**Key insight:** At Karpathy's scale (~100 sources, ~hundreds of pages), the `_index.md` approach works without embeddings. Only add L2 when you outgrow the index.
 
 ---
 
-## 8. Backlinks and Navigation
+## 10. Backlinks and Navigation
 
 ### Wiki Links
 
 ```markdown
-# Simple link
+# Standard link
 See [[multi-agent-architecture]] for details.
 
-# Link with custom text
+# Link with display text
 The design follows [[agent-architecture|Rimuru-style]] principles.
 ```
 
-### Backlink Index
-
-Stored in `_backlinks.json`:
+### Backlink Index `_backlinks.json`
 
 ```json
 {
@@ -535,164 +601,128 @@ Stored in `_backlinks.json`:
     "agent-architecture",
     "ceil-workspace",
     "research-delegate-skill"
+  ],
+  "victor-preferences": [
+    "user-profile",
+    "session-rollup-2026-03-28"
   ]
 }
 ```
 
-### Session Provenance Links
+### Graph View
 
-When session rollup adds knowledge to wiki, it links back:
+Obsidian's graph view shows:
+- What's connected to what
+- Which pages are hubs (many connections)
+- Which are orphans (no incoming links)
 
-```markdown
-# victor-preferences.md
+**Use for:** Understanding wiki structure at a glance.
 
-Victor prefers scheduled check-ins over ad-hoc messages.
-*Last updated from session rollup: [[session:2026-03-28]]*
+---
+
+## 11. Example Workflows
+
+### 11.1 Interactive Ingestion (Karpathy Style)
+
+```
+You: "Process this paper on transformer attention"
+      ↓
+[LLM reads paper, discusses with you]
+      ↓
+LLM: "Key insight: attention patterns correlate with
+      semantic importance. I'll propose updates to
+      [[transformer-models]] and create a new concept
+      page for [[attention-mechanisms]]."
+      ↓
+[Proposals added to _pending/]
+      ↓
+You review in approval queue:
+  □ Approve update to [[transformer-models]]
+  □ Approve new [[attention-mechanisms]] page
+      ↓
+[Changes applied to wiki]
+      ↓
+You browse in Obsidian: follow links, check graph view
 ```
 
-### Interest Stub Provenance
+### 11.2 Batch Mode (Our Architecture)
 
-```markdown
-# rafconsensus.md
+```
+[Daily, scheduled]
+      ↓
+Compilation routine runs:
+  - Scans raw/ for new files
+  - Processes each
+  - Generates proposals in _pending/
+      ↓
+[You review queue when convenient]
+      ↓
+Batch approve/reject pending changes
+      ↓
+[Approved changes applied to wiki]
+```
 
-*Interest stub — first queried: 2026-04-04*
-*Query count: 5 (last queried: 2026-04-04)*
-*Status: Needs research*
-*Source: [[session:2026-04-04]], [[session:2026-04-02]]*
+### 11.3 Exploration That Compounds
+
+```
+You: "Compare our approach to ByteRover's handoffs"
+      ↓
+[LLM synthesizes from wiki]
+      ↓
+LLM generates deep comparison
+      ↓
+LLM: "This analysis is valuable — propose filing as
+      wiki/explorations/multi-agent-vs-byterover.md?"
+      ↓
+You: [Approve]
+      ↓
+[New exploration page added to wiki]
+      ↓
+Future queries can reference this comparison
 ```
 
 ---
 
-## 9. Example Workflows
-
-### 9.1 You Ask About Something New
-
-**Scenario:** You ask about RAFConsensus (从未问过)
-
-```
-Victor: "How does RAFConsensus work?"
-        │
-        ▼
-[Context construction:]
-  1. Load wiki _index.md (all article titles)
-  2. Load article summaries — RAFConsensus has interest stub
-  3. AI sees: "This is an interest stub, needs research"
-  4. AI responds: "I don't have full docs yet, but I can explain what I know..."
-        │
-        ▼
-[Query Reflection runs:]
-  1. Check: Does RAFConsensus article exist?
-     → YES (interest stub exists)
-  2. Increment query count: 1 → 2
-  3. Update stub with "last queried: today"
-        │
-        ▼
-[Session append:]
-  sessions/2026-04-04.md += [question, response]
-```
-
-### 9.2 You Save a Paper
-
-**Scenario:** You save `transformer-paper.pdf` to `raw/papers/`
-
-```
-Trigger: New file in raw/
-
-[Compilation Routine runs:]
-  1. Read transformer-paper.pdf (full text)
-  2. Extract: key concepts, facts, relationships
-  3. Check: Does wiki have related article?
-     → YES: [[neural-networks]] exists
-  4. Update [[neural-networks]] with new insights
-  5. Generate backlinks
-  6. Update _index.md
-        │
-        ▼
-[Result:]
-  - [[neural-networks]] is now richer
-  - Links to transformer-paper.pdf
-  - Provenance recorded
-```
-
-### 9.3 Weekly Session Rollup
-
-**Scenario:** End of week — `sessions/2026-03-28.md` is 7 days old
-
-```
-Trigger: Session age = 7 days
-
-[Session Rollup runs:]
-  1. Read sessions/2026-03-28.md
-  2. LLM extracts:
-     - Decision: "Use DIY Karpathy over Honcho"
-     - Preference: "Victor likes morning deep work"
-     - Knowledge: "Learned about ByteRover handoffs"
-  3. Update wiki articles with extracted info
-  4. Add provenance links
-  5. Mark session as "rolled up"
-        │
-        ▼
-[Result:]
-  - Decisions captured in wiki
-  - Preferences documented
-  - Original session preserved in archive/
-```
-
----
-
-## 10. Design Principles & Trade-offs
+## 12. Design Principles & Trade-offs
 
 ### Core Principles
 
-1. **Raw sources are sacred.** Never modify originals. All knowledge goes through compilation.
+1. **Raw sources are sacred.** Immutable. You curate.
+2. **Wiki is the mental model.** Structured, interlinked, maintained.
+3. **Human maintains editorial control.** Approval queue, not direct edits.
+4. **Explorations compound.** Good answers become wiki pages.
+5. **LLM does bookkeeping.** Cross-references, links, consistency.
 
-2. **Wiki is your mental model.** Structure it like a well-organized brain, not a file dump.
+### Interactive vs. Batch Trade-offs
 
-3. **Sessions are logs, not memory.** They record what happened. Wiki captures what was learned.
+| Aspect | Interactive (Karpathy) | Batch (Ours) |
+|--------|------------------------|--------------|
+| **Speed** | Immediate | Delayed (scheduled) |
+| **Control** | Real-time review | Batched review |
+| **Interrupts** | High (during session) | Low (when convenient) |
+| **Best for** | Deep research, exploration | Maintenance, routine updates |
 
-4. **Questions are valuable.** Your queries reveal what matters. Capture them.
-
-5. **Cache for efficiency, not correctness.** Optimization layers must never change what the AI sees — only which subset.
-
-### Trade-offs
-
-| Decision | Trade-off |
-|----------|-----------|
-| **No embeddings initially** | Simpler, but less precise article selection. Use summaries instead. |
-| **Interest stubs** | Extra maintenance, but reveals user priorities. |
-| **Per-day session files** | Easy to find, but needs date-based rollup triggers. |
-| **LLM-driven maintenance** | High quality, but not free (API costs). |
-
-### Known Limitations
-
-- **LLM cost for routines:** Compilation, linting, rollup, and reflection all use API calls.
-- **Context window finite:** Even with caching, very large wikis may exceed available context.
-- **Real-time sync gaps:** If raw files change during compilation, may have race conditions.
+**Recommendation:** Hybrid. Interactive for active sessions, batch for maintenance.
 
 ---
 
-## 11. Glossary
+## 13. Glossary
 
 | Term | Definition |
 |------|------------|
-| **Backlink** | A link from one wiki article to another. Enables bidirectional navigation. |
-| **Bidirectional Growth** | Memory grows from two streams: what you save (explicit) + what you ask (implicit). |
-| **Compilation Routine** | Automated worker that reads raw files and writes wiki articles. |
-| **Interest Stub** | A wiki article created from a user query. Marks a topic that needs research. |
-| **Karpathy Approach** | Treating memory as a wiki the AI reads, not a database it queries. |
-| **L1 Cache** | Article summaries (~100 tokens each). Always enabled. |
-| **L2 Cache** | Embedding-based similarity search. Only for wikis > 50 articles. |
-| **L3 Cache** | Session compression. Only for sessions > 20 messages. |
-| **Lint Report** | Output of the linting routine. Lists broken links, orphaned pages, suggestions. |
-| **Linting Routine** | Automated worker that checks wiki health weekly. |
-| **Provenance** | Tracking where wiki knowledge came from (which raw file or session). |
-| **Query Reflection** | The routine that captures what you ask and creates interest stubs. |
-| **RAG** | Retrieval-Augmented Generation. Traditional: chunk, embed, retrieve top-K. |
-| **Raw Sources** | Original unmodified files in `raw/`. The source of truth. |
-| **Rollup** | Extracting knowledge from old sessions into the wiki. |
-| **Session Memory** | Today's conversation log (`sessions/YYYY-MM-DD.md`). Short-term. |
-| **Session Rollup** | The routine that processes old sessions and integrates learnings. |
-| **Wiki** | The compiled knowledge base (`wiki/`). Long-term memory. |
+| **Approval Queue** | `_pending/` directory where LLM-proposed changes wait for human review. |
+| **Backlink** | Link from one wiki article to another. Enables bidirectional navigation. |
+| **Bidirectional Growth** | Memory grows from: what you save + what you ask + what you explore. |
+| **Compilation Routine** | Processes raw sources → proposes wiki updates. |
+| **Exploration** | Deep answer synthesized from wiki, filed back as new wiki page. |
+| **Interest Stub** | Wiki article created from user query. Marks topic needing research. |
+| **Karpathy Approach** | Treat memory as wiki LLM maintains, not database to query. |
+| **Linting Routine** | Health-checks wiki: broken links, orphans, contradictions. |
+| **Log.md** | Append-only timeline of wiki evolution (ingests, queries, lint). |
+| **Query Reflection** | Captures user questions → creates interest stubs. |
+| **Schema** | Rules document (`_schema.md`) guiding LLM behavior. |
+| **Session Rollup** | Extracts knowledge from old sessions → proposes wiki updates. |
+| **Wiki** | LLM-maintained knowledge base. Human-approved changes only. |
 
 ---
 
@@ -701,12 +731,30 @@ Trigger: Session age = 7 days
 | Component | Status | Notes |
 |-----------|--------|-------|
 | Directory structure | ✅ Defined | In this doc |
-| Session logging | ✅ Implemented | `sessions/` with daily files |
-| Wiki articles | 🔄 In progress | Core structure exists |
-| Compilation routine | 🔄 In progress | Basic workflow defined |
-| Query reflection | 📋 To implement | New, documented here |
-| Linting routine | 📋 To implement | Can start simple |
-| Session rollup | 📋 To implement | After sessions have content |
+| Raw sources layer | ✅ Concept | Ready to implement |
+| Wiki layer | ✅ Concept | Ready to implement |
+| Approval queue (`_pending/`) | 📋 New | Key addition for safety |
+| `_index.md` navigation | 📋 To implement | Start simple |
+| `log.md` timeline | 📋 Optional | Alternative to sessions |
+| `_schema.md` | 📋 To implement | Rules for LLM |
+| Compilation routine | 📋 To implement | Batch workflow |
+| Query reflection | 📋 To implement | Captures "what you ask" |
+| Exploration filing | 📋 To implement | Answers become pages |
+| Interactive mode | 📋 Future | Real-time collaboration |
+| Obsidian integration | ⏸ Optional | IDE for browsing |
 | L1 summaries | 📋 To implement | Key for optimization |
 | L2 embeddings | ⏸ Optional | Only if > 50 articles |
 | L3 compression | ⏸ Optional | Only if > 20 messages |
+
+---
+
+## References
+
+- **Karpathy's Gist:** https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
+- **Vannevar Bush's Memex (1945):** Associative trails between documents. This architecture realizes that vision with LLM maintenance.
+- **Obsidian:** https://obsidian.md — Recommended IDE for wiki browsing
+- **qmd:** https://github.com/tobi/qmd — Local search engine for markdown (optional)
+
+---
+
+*This document is intentionally abstract. The exact directory structure, schema conventions, page formats, and tooling depend on your domain and preferences. Share this with your LLM agent and work together to instantiate a version that fits your needs.*
