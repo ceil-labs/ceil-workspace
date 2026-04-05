@@ -1,0 +1,1181 @@
+{
+  "timestamp": "2026-04-05T04:05:23.629Z",
+  "overall": {
+    "total": 1141,
+    "completed": 68,
+    "pending": 635,
+    "rpr_total": 41
+  },
+  "zones": [
+    {
+      "name": "MAKATI",
+      "total": 3,
+      "completed": 0,
+      "pending": 0,
+      "afd": 3,
+      "not_in_ofsc": 0,
+      "rpr_total": 0,
+      "actionable": 0,
+      "handling_total": 0,
+      "resolved_total": 0,
+      "completion_rate": 0,
+      "rpr_ratio": 0,
+      "clearance_rate": 0,
+      "completion_share": 0,
+      "rpr_share": 0,
+      "status": "critical",
+      "needs_rpr_investigation": false
+    },
+    {
+      "name": "BULACAN",
+      "total": 111,
+      "completed": 3,
+      "pending": 74,
+      "afd": 14,
+      "not_in_ofsc": 19,
+      "rpr_total": 1,
+      "actionable": 77,
+      "handling_total": 78,
+      "resolved_total": 4,
+      "completion_rate": 3.9,
+      "rpr_ratio": 1.28,
+      "clearance_rate": 5.13,
+      "completion_share": 75,
+      "rpr_share": 25,
+      "status": "critical",
+      "needs_rpr_investigation": false
+    },
+    {
+      "name": "PASIG-PATEROS-TAGUIG",
+      "total": 253,
+      "completed": 9,
+      "pending": 122,
+      "afd": 104,
+      "not_in_ofsc": 16,
+      "rpr_total": 2,
+      "actionable": 131,
+      "handling_total": 133,
+      "resolved_total": 11,
+      "completion_rate": 6.87,
+      "rpr_ratio": 1.5,
+      "clearance_rate": 8.27,
+      "completion_share": 81.82,
+      "rpr_share": 18.18,
+      "status": "critical",
+      "needs_rpr_investigation": false
+    },
+    {
+      "name": "NEGROS",
+      "total": 106,
+      "completed": 7,
+      "pending": 77,
+      "afd": 9,
+      "not_in_ofsc": 6,
+      "rpr_total": 7,
+      "actionable": 84,
+      "handling_total": 91,
+      "resolved_total": 14,
+      "completion_rate": 8.33,
+      "rpr_ratio": 7.69,
+      "clearance_rate": 15.38,
+      "completion_share": 50,
+      "rpr_share": 50,
+      "status": "critical",
+      "needs_rpr_investigation": false
+    },
+    {
+      "name": "PANAY",
+      "total": 181,
+      "completed": 13,
+      "pending": 129,
+      "afd": 22,
+      "not_in_ofsc": 11,
+      "rpr_total": 6,
+      "actionable": 142,
+      "handling_total": 148,
+      "resolved_total": 19,
+      "completion_rate": 9.15,
+      "rpr_ratio": 4.05,
+      "clearance_rate": 12.84,
+      "completion_share": 68.42,
+      "rpr_share": 31.58,
+      "status": "critical",
+      "needs_rpr_investigation": false
+    },
+    {
+      "name": "LAS PINAS-ALABANG",
+      "total": 182,
+      "completed": 12,
+      "pending": 110,
+      "afd": 50,
+      "not_in_ofsc": 7,
+      "rpr_total": 3,
+      "actionable": 122,
+      "handling_total": 125,
+      "resolved_total": 15,
+      "completion_rate": 9.84,
+      "rpr_ratio": 2.4,
+      "clearance_rate": 12,
+      "completion_share": 80,
+      "rpr_share": 20,
+      "status": "critical",
+      "needs_rpr_investigation": false
+    },
+    {
+      "name": "NORTH QUEZON CITY",
+      "total": 115,
+      "completed": 7,
+      "pending": 45,
+      "afd": 15,
+      "not_in_ofsc": 41,
+      "rpr_total": 7,
+      "actionable": 52,
+      "handling_total": 59,
+      "resolved_total": 14,
+      "completion_rate": 13.46,
+      "rpr_ratio": 11.86,
+      "clearance_rate": 23.73,
+      "completion_share": 50,
+      "rpr_share": 50,
+      "status": "warning",
+      "needs_rpr_investigation": false
+    },
+    {
+      "name": "PASAY-PARANAQUE",
+      "total": 118,
+      "completed": 10,
+      "pending": 59,
+      "afd": 26,
+      "not_in_ofsc": 13,
+      "rpr_total": 10,
+      "actionable": 69,
+      "handling_total": 79,
+      "resolved_total": 20,
+      "completion_rate": 14.49,
+      "rpr_ratio": 12.66,
+      "clearance_rate": 25.32,
+      "completion_share": 50,
+      "rpr_share": 50,
+      "status": "warning",
+      "needs_rpr_investigation": false
+    },
+    {
+      "name": "SOUTH QUEZON CITY",
+      "total": 72,
+      "completed": 7,
+      "pending": 19,
+      "afd": 39,
+      "not_in_ofsc": 2,
+      "rpr_total": 5,
+      "actionable": 26,
+      "handling_total": 31,
+      "resolved_total": 12,
+      "completion_rate": 26.92,
+      "rpr_ratio": 16.13,
+      "clearance_rate": 38.71,
+      "completion_share": 58.33,
+      "rpr_share": 41.67,
+      "status": "normal",
+      "needs_rpr_investigation": false
+    }
+  ],
+  "alerts": [
+    {
+      "zone": "BULACAN",
+      "type": "low_completion",
+      "message": "Completion rate 3.9% below 10%",
+      "severity": "critical"
+    },
+    {
+      "zone": "LAS PINAS-ALABANG",
+      "type": "low_completion",
+      "message": "Completion rate 9.8% below 10%",
+      "severity": "critical"
+    },
+    {
+      "zone": "MAKATI",
+      "type": "low_completion",
+      "message": "Completion rate 0.0% below 10%",
+      "severity": "critical"
+    },
+    {
+      "zone": "NEGROS",
+      "type": "low_completion",
+      "message": "Completion rate 8.3% below 10%",
+      "severity": "critical"
+    },
+    {
+      "zone": "NORTH QUEZON CITY",
+      "type": "low_completion",
+      "message": "Completion rate 13.5% below 20%",
+      "severity": "warning"
+    },
+    {
+      "zone": "PANAY",
+      "type": "low_completion",
+      "message": "Completion rate 9.2% below 10%",
+      "severity": "critical"
+    },
+    {
+      "zone": "PASAY-PARANAQUE",
+      "type": "low_completion",
+      "message": "Completion rate 14.5% below 20%",
+      "severity": "warning"
+    },
+    {
+      "zone": "PASIG-PATEROS-TAGUIG",
+      "type": "low_completion",
+      "message": "Completion rate 6.9% below 10%",
+      "severity": "critical"
+    }
+  ],
+  "within_day_progress": {
+    "is_same_day_comparison": true,
+    "checks_today": 2,
+    "overall": {
+      "completed_delta": 68,
+      "pending_delta": -109,
+      "rpr_delta": 41
+    },
+    "zones": [
+      {
+        "name": "MAKATI",
+        "completed_delta": 0,
+        "pending_delta": 0,
+        "rpr_delta": 0,
+        "rate_change": 0,
+        "is_accelerating": false
+      },
+      {
+        "name": "BULACAN",
+        "completed_delta": 3,
+        "pending_delta": -6,
+        "rpr_delta": 1,
+        "rate_change": 3.9,
+        "is_accelerating": true
+      },
+      {
+        "name": "PASIG-PATEROS-TAGUIG",
+        "completed_delta": 9,
+        "pending_delta": 2,
+        "rpr_delta": 2,
+        "rate_change": 6.87,
+        "is_accelerating": true
+      },
+      {
+        "name": "NEGROS",
+        "completed_delta": 7,
+        "pending_delta": -11,
+        "rpr_delta": 7,
+        "rate_change": 8.33,
+        "is_accelerating": true
+      },
+      {
+        "name": "PANAY",
+        "completed_delta": 13,
+        "pending_delta": -13,
+        "rpr_delta": 6,
+        "rate_change": 9.15,
+        "is_accelerating": true
+      },
+      {
+        "name": "LAS PINAS-ALABANG",
+        "completed_delta": 12,
+        "pending_delta": -23,
+        "rpr_delta": 3,
+        "rate_change": 9.84,
+        "is_accelerating": true
+      },
+      {
+        "name": "NORTH QUEZON CITY",
+        "completed_delta": 7,
+        "pending_delta": -16,
+        "rpr_delta": 7,
+        "rate_change": 13.46,
+        "is_accelerating": true
+      },
+      {
+        "name": "PASAY-PARANAQUE",
+        "completed_delta": 10,
+        "pending_delta": -32,
+        "rpr_delta": 10,
+        "rate_change": 14.49,
+        "is_accelerating": true
+      },
+      {
+        "name": "SOUTH QUEZON CITY",
+        "completed_delta": 7,
+        "pending_delta": -10,
+        "rpr_delta": 5,
+        "rate_change": 26.92,
+        "is_accelerating": true
+      }
+    ],
+    "pace_assessment": "fast",
+    "previous_check_time": "08:05 AM",
+    "current_check_time": "12:05 PM"
+  },
+  "remarks_analysis": {
+    "total_records": 1141,
+    "with_remarks": 443,
+    "keyword_analysis": [
+      {
+        "word": "subs",
+        "count": 136
+      },
+      {
+        "word": "april",
+        "count": 77
+      },
+      {
+        "word": "pldt",
+        "count": 62
+      },
+      {
+        "word": "resched",
+        "count": 59
+      },
+      {
+        "word": "customer",
+        "count": 55
+      },
+      {
+        "word": "thru",
+        "count": 49
+      },
+      {
+        "word": "reschedule",
+        "count": 42
+      },
+      {
+        "word": "done",
+        "count": 41
+      },
+      {
+        "word": "working",
+        "count": 34
+      },
+      {
+        "word": "available",
+        "count": 32
+      }
+    ],
+    "common_issues": [
+      {
+        "issue": "Rescheduling",
+        "count": 49,
+        "percentage": "11.1"
+      },
+      {
+        "issue": "Activation issues",
+        "count": 34,
+        "percentage": "7.7"
+      },
+      {
+        "issue": "Customer unavailable",
+        "count": 22,
+        "percentage": "5.0"
+      },
+      {
+        "issue": "Infrastructure missing",
+        "count": 12,
+        "percentage": "2.7"
+      },
+      {
+        "issue": "NAP capacity",
+        "count": 12,
+        "percentage": "2.7"
+      }
+    ],
+    "by_category": {
+      "customer": {
+        "count": 221,
+        "remarks": [
+          "SUBS NOT AVAILABLE RESCHED ON APRIL 6 AS PER SUBS THRU CALL CBR 639178588862",
+          "Resched sunday",
+          "Reschedule on sunday",
+          "PLDT CUSTOMER OTHERS CBR RNA CANT LOCATE IN ACTUAL DI KILALA SI SUBS SA AREA FOR REIMPLEMENTATION PROCESS",
+          "RESCHEDULE APRIL6",
+          "PLDT CUSTOMER OTHERS NEED PERMIT HOLD FOR FURTHER NOTICE",
+          "PLDT CUSTOMER RESCHED TOM ASPER SOR THRU CBR 639625282463",
+          "PLDT CUSTOMER CLUB HOUSED CLOSED HINDI NAG PAPASOK KAPAG WEEKENDS",
+          "RESCHED TOMORROW ",
+          "SITE CANT LOCATE CBR 639654419726 RINGING ONLY NO REPLY ON TEXT VALIDATED BY SPOC ",
+          "DUPLICATE APPLICATION",
+          "Reschedule on saturday",
+          "SUBS CBR CANT CONTACT TEL NUMBER NO ANSWER  09390153623 0333201088",
+          "CBR UNATTENDED ",
+          "SUBS NOT AVAILABLE RESCHEDULE ON APRIL 7 THRU CALL CBR 639060770564 VALIDATED BY SPOC",
+          "PLDT CUSTOMER OTHERS NEED PERMIT HOLD FOR FURTHER NOTICE",
+          "CBR BUSY TONE ALREADY TEXTED NO REPLY",
+          "For conduit wiring",
+          "CBR UNATTENDED DONE MESSAGE BUT NO REPLY",
+          "PLDT CUSTOMER OTHERS NEED PERMIT HOLD FOR FURTHER NOTICE",
+          "RSO WRONG AREA UNDER LACSOZ AOR",
+          "PLDT CUSTOMER RESCHED ON MONDAY ASPER SOR THRU CBR 639202270288",
+          "PLDT CUSTOMER OTHERS NEED PERMIT HOLD FOR FURTHER NOTICE",
+          "SUBS CANT LOCATE CBR UNATTENDED DONE MESSAGE BUT NO REPLY ",
+          "PLDT CUSTOMER RESCHED APRIL 1 ASPER RENZ",
+          "PLDT CUSTOMER CLUB HOUSED CLOSED HINDI NAG PAPASOK KAPAG WEEKENDS",
+          "Reschedule on sunday",
+          "FOR RESCHEDULE ON APRIL 6 2026 TOK SOR 09651850070",
+          "SUBS CANT LOCATE CBR RINGING ONLY HINDI RIIN KILALA SI SUBS SA AREA CBR RINGING ONLY 639244233519",
+          "RSO WRONG SO SAID ADDRESS UNDER PASIG AOR",
+          "RESCHEDULE APRIL 6 AS PER SUBS THRU CALL 639150957462",
+          "NEED WORKING PERMIT ",
+          "RESCHEDULE AFTER HOLY WEEK THRU CALL CBR 09391239757 VALIDATED BY SPOC ",
+          "SITE NOT YET READY MAASK PA SUBS PERMISSION  SA LAND OWNER DUE TO PRIVATE PASSING RESCHED TOMORROW TOK SOR",
+          "PLDT CUSTOMER OTHERS NEED PERMIT HOLD FOR FURTHER NOTICE",
+          "SUBS NOT AVAILABLE RESCHED ON APRIL 9 THRU CALL CBR 639693108523 VALIDATED BY SPOC ",
+          "PLDT CUSTOMER RESCHED ON APRIL 8 ASPER JAMES ROBERT",
+          "SUBS CBR RINGING ONLY NO OTHER CBR CANT LOCATE",
+          "BUSINESS CLOSED  SUBS SCHED ON APRIL 6 AS PER SOR THRU CBR 639684816418",
+          "PLDT CUSTOMER CANCELLED REQUEST NOT INTERESTED HINDI PUMAYAG ANG MAYARI NG BAHAY  AS PER IVAN",
+          "PLDT CUSTOMER RESCHED ON APRIL 10 ASPER SOR THRU CBR 639300489073",
+          "PLDT CUSTOMER RESCHED ON APRIL 8 ASPER NONATO",
+          "PLDT CUSTOMER RESCHED APR 11 ASPER SOR THRU CBR 09175427270",
+          "Reschedule on monday",
+          "CBR RINGING ONLY ALREADY TEXTED NO REPLY ",
+          "PLDT CUSTOMER CANCELLED REQUEST AS PER JADIELYN",
+          "RESCHED ON APRIL 9 TOK SOR",
+          "SUBS REQUESTED TO RESCHEDULE ON APRIL10 TOK SOR",
+          "CBR UNATTENDED DONE SEND SMS CBR 639687101542",
+          "RSO SUBS NEED WORKIGN PERMIT NO ADMIN EVERY SUNDAY",
+          "SCHEDULE APRIL 5 AS PER SUBS CONFIRM THRU CALL 09286396546",
+          "SUBS RESCHED AFTER HOLY WEEK",
+          "SUBS RESCHED AFTER HOLY WEEK  APRIL 6 2026",
+          "PLDT CUSTOMER CLUB HOUSED CLOSED HINDI NAG PAPASOK KAPAG WEEKENDS",
+          "PLDT CUSTOMER OTHERS CBR RNA CANT LOCATE IN ACTUAL DI KILALA SI SUBS SA AREA",
+          "SUBS NOT AVAILABLE RESCHED ON APRIL 8 12 PM THRU CALL CBR 639561594375 VALIDATED BY SPOC ",
+          "NEED SERVICES POLE BTJLP13NP2",
+          "SUBS CBR RINGING DONE MESSAGE BUT NO REPLY 639649526263",
+          "RSO SUBS NEED WORKIGN PERMIT NO ADMIN EVERY SUNDAY",
+          "SUBS NOT AVAILABLE RESCHEDULE ON APRIL 10 THRU CALL CBR 639267417152 VALIDATED BY SPOC",
+          "MAGTETEXT NALANG SI SUBS KAPAG NAILATAG NA YUNG CABLE NA INIWAN FOR CONDUIT ",
+          "INCORRECT CBR NOT RINGING 639173284527 AGENT NO RESPONSE",
+          "SUBS REQUEST FOR RSECEHDULE ON APRIL 8 2026 DUE TO SUBS NOT AVAILABLE TOK SOR 639241985420",
+          "SUBS CANCEL REQUEST DUE TO ALREADY HAVE OTHER PROVIDER",
+          "RSO WRONG SO SAID ADDRESS UNDER PASIG AOR",
+          "SUBS AT BORACAY SUBS RESCHED ON AFTER HOLYWEEK ",
+          "RSO SUBS NEED WORKIGN PERMIT NO ADMIN EVERY SUNDAY",
+          "DUPLICATE APPLICATION",
+          "NEED SERVICES POLE BTJLP13NP2",
+          "PLDT CUSTOMER OTHERS NEED PERMIT HOLD FOR FURTHER NOTICE",
+          "CBR NOT RINGING HOUSE CLOSE UPON VISIT",
+          "PLDT CUSTOMER CLUB HOUSED CLOSED HINDI NAG PAPASOK KAPAG WEEKENDS",
+          "RSO SUBS NEED WORKIGN PERMIT NO ADMIN EVERY SUNDAY",
+          "PLDT CUSTOMER RESCHED ON MARCH 12 ASPER JOVELYN",
+          "CBR UNATTENDED DONE MESSAGE BUT NO REPLY HOUSE CLOSE",
+          "RESCHED APRIL 2, 2026",
+          "SUBS RESCHED APIL 07, 2026",
+          "PLDT CUSTOMER CBR UNATTENDED CANT LOCATE ACTUAL NO RESPONSE TEXT AND CALL",
+          "SUBS SCHED ON APIL 6 AS PER SOR THRU CBR 09129302881",
+          "RESCHEDULE ON APRIL 7 THRU CALL AS PER SUBS 09101970841",
+          "PLDT CUSTOMER RESCHED ON APRIL 6 ASPER SOR THRU CBR 639087674329",
+          "SUBS SCHED ON APRIL 5 AS PER SOR THRU CBR 09056630696",
+          "RESCHED ON APRIL 7 TOK SOR",
+          "SUBS RESCHED APRIL 7, 2026",
+          "SUBS NOT AVAILABLE RESCHEDULE ON APRIL 11 THRU CALL CBR 639988401355 VALIDATED BY SPOC ",
+          "SUBS RESCHEDULE APRIL 6 2026 TOK SOR VIA CBR 639398144790",
+          "SUBS NEED PERMIT FROM NAVY OFFICE RESCHEDULE ON MONDAY THRU TEXT CBR  639654785421 VALIDATED BY SPOC",
+          "SUBS NEED CONDUIT BUT NO MAINTENANCE AVAILABLE ",
+          "PLDT CUSTOMER RESCHED SATURDAY ASPER CARLOS",
+          "SUBS RESCHED APRIL 07, 2026",
+          "SUBS NEED PERMIT FROM NAVY OFFICE RESCHEDULE ON MONDAY THRU TEXT CBR  639654785421 VALIDATED BY SPOC",
+          "PLDT CUSTOMER OTHERS CBR RNA CANT LOCATE IN ACTUAL DI KILALA SI SUBS SA AREA",
+          "PLDT CUSTOMER CLUB HOUSED CLOSED HINDI NAG PAPASOK KAPAG WEEKENDS",
+          "CBR UNCONTACTED CBR NO RESPONSE",
+          "SUBS CBR RINGING DONE MESSAGE BUT NO REPLY 09950736649",
+          "SUBS NOT AVAILABLE RESCHED ON MONDAY APRIL 6 AS PER SUBS THRU TEXT CBR 639924930863 VALIDATED BY SPOC",
+          "RSO CANCEL REQUEST NO LONGER NEEDED THRU CALL CBR 639618404644 VALIDATED BY SPOC ",
+          "SUBS SCHED ON APRIL 5 AS PER SOR THRU CBR 09631766186",
+          "PLDT CUSTOMER RESCHED ON THURSDAY OR FRIDAY ASPER SOR THRU LANDLINE 288093602",
+          "SITE CANT LOCATE CBR 09311034434  CANNOT BE COMPLETED UPON DIAL NO REPLY ON TEXT VALIDATED BY SPOC ",
+          "SUBS CONDUIT NOT YET READY 100 METERS FOC PROVIDED",
+          "SUBS CANCEL REQUEST NO LONGER NEEDED MAY CONVERGE NADAW SILA AS PER MAAM JOLINA",
+          "RSO SUBS NEED WORKIGN PERMIT NO ADMIN EVERY SUNDAY",
+          "PLDT CUSTOMER CBR UNATTENDED CANT LOCATE ACTUAL NO RESPONSE TEXT AND CALL",
+          "RSO CANCEL REQUEST NO LONGER NEEDED THRU CALL CBR 639218127231",
+          "PLDT CUSTOMER CLUB HOUSED CLOSED HINDI NAG PAPASOK KAPAG WEEKENDS",
+          "CBR CANT BE REACH IN CALL AND TEXT",
+          "SUBS NOT AVAILABLE RESCHEDULE ON APRIL 10 AS PER SUBS THRU CALL 09153473400 VALIDATED BY SPOC",
+          "PASSING PRIVATE PROPERTY NO POLE ATTACHMENT VISIT ON ACTUAL ",
+          "PLDT CUSTOMER RESCHED ON APRIL 5 ASPER IRIS ",
+          "PLDT CUSTOMER SUBS NEED WORKING PERMIT NEED MUNA MAKAUSAP NG HOA ANG PLDT MISMO ADVICE SOR THRU ACTUAL",
+          "SUBS SCHED ON APRIL 5 AS PER SOR THRU CBR 09387588743",
+          "SITE CANT LOCATE CBR  RINGING ONLY",
+          "Reschedule on monday",
+          "SUBS CANT LOCATE SUBS  UNKNOWN CBR UNATTENDED TEXTED NO REPLY 639626872754",
+          "SUBS NOT AVAILABLE RESCHEDULE TOMORROW AS PER SUBS THRU CALL 639753158910",
+          "WORKING DATA  WITH TEST CHANNEL  CBR CONTACTED 09947382008\t\t TOK ALEX DETORI PORRAS\t\tDNELP23NP4P2\t48575443E1F55CB5     02780877246",
+          "CANT LOCATE CBR NOT RINGING ",
+          "PLDT CUSTOMER CBR UNATTENDED CANT LOCATE ACTUAL NO RESPONSE TEXT AND CALL",
+          "SUBS REQIEST FOR RESCHEDULEON APRIL 4 2026 DUE TO SUBS NOT AVAILABLE TOK SOR ",
+          "SCHEDULE ON AFER HOLLY WEEK TATAWAG NA LANG SI SUBS ONCE AVAILABLE NA SIYA AS PER ARIEL ABAD FLOJO CBR 639162509076",
+          "SITE CANNOT LOCATE CBR 639275577367 WRONG NUMBER CBR 639164459653 INCORRECT VALIDATED BY SPOC ",
+          "PLDT CUSTOMER RESCHEDULE ON MONDAY APRIL 6 2026 ASPER SOR THRU ACTUAL",
+          "CANT LOCATE CBR NOT RINGING ",
+          " SUBS CBR NOT CONTACTED ",
+          "SUBS CONDUIT NOT YET READY",
+          "SUBS REQUESTED TO RESCHEDULE ON APRIL 6 TOK SOR",
+          "RESCHEDULE APRIL 1 2026",
+          "SCHED ON APRIL 5 AS PER LEO FIGGUEROA TTHRU CBR 09517040324",
+          "HOUSE CLOSED SUBS OUT OF TOWN, RESCHEDULE ON WEEKEND NO EXACT DATE, TOK SOR THRU CBR",
+          "RESCHED APRIL 2, 2026",
+          "RESCHED APRIL 2, 2026",
+          "RESCHED NEXTWEEK AS PER SUBS HINDI PA DAW PO TAPOS GINAGAWANG BAHAY",
+          "RESCHEDULE TOMORROW NO ADMIN ON SUNDAY",
+          "SUBS SITE CANNOT LOCATE CBR 639165141278 NO RESPONSE IN CALL AND TEXT VALIDATED BY SPOC ALSO NEED PERMIT FROM BRGY WESTERN BICUTAN TAGUIG",
+          "RSO SUBS NEED WORKIGN PERMIT NO ADMIN EVERY SUNDAY",
+          "Resched tomorrow subs not avalable 09665093396",
+          "RESCHED ON MONDAY APRIL 6 TOK SOR",
+          "3X VISISTED SUBS UNKNOWN CBR UNATTENDED  TEXTED NO REPLY 639658863526 09519310633",
+          "RESCHED APRIL 2, 2026",
+          "SUBS REQUESTED TO RESCHEDULE NEXTWEEK APRIL 7 TOK SOR EDMARK",
+          "Reschedule on sunday",
+          "RESCHEDULE ON APRIL 6 NASA  VACATION DAW SI SUBS ",
+          "PLDT CUSTOMER OTHERS NEED PERMIT HOLD FOR FURTHER NOTICE",
+          "Reschedule on Saturday ",
+          "SUBS AT JAMINDAN SCHED ON APRIL 5 AS PER SOR THRU CBR 09167760623",
+          "SITE CANTLOCATE",
+          "PLDT CUSTOMER RESCHED ON APRIL 10 ASPER SOR THRU CBR 639260086092",
+          "PLDT CUSTOMER RESCHED APRIL 11 ASPER ADRIAN FOR RE IMPLEMENT PROCESS",
+          "CANCEL AS PER SUBS THRU TEXT 09816497163",
+          "SUBS REQUEST FOE RESCHEDULE ON APRIL 6, 2026 TOK SOR",
+          "PLDT CUSTOMER CLUB HOUSED CLOSED HINDI NAG PAPASOK KAPAG WEEKENDS",
+          "CANT LOCATE WRONG CBR ",
+          "PLDT CUSTOMER RESCEHD TOM AS PER ROSIE",
+          "PLDT CUSTOMER RESCHED ON APRIL 10 ASPER DIANA",
+          "PLDT CUSTOMER CLUB HOUSED CLOSED HINDI NAG PAPASOK KAPAG WEEKENDS",
+          "PLDT CUSTOMER CLUB HOUSED CLOSED HINDI NAG PAPASOK KAPAG WEEKENDS",
+          "RESCHED APRIL 4, 2026 HND PA NAKAKALIPAT ",
+          "RSO SITE WRONG ADDRESS ACTUAL ADDRESS IS AZURE URBAN RESORT RESIDENCES SATORNINI TOWER UNIT 614 KM 16 WEST SERVICE ROAD BRGY MARCELLO GREEN PARANAQUE CITY",
+          "PLDT CUSTOMER OTHERS CHANGE ENTRY POINT INMOVE TRANSFER FROM 1ST TO 2ND FLOOR CBR IS 09212347231 LOOK FOR MAAM AJ",
+          "RESCHED APRIL 2, 2026",
+          "Reschedule on sunday",
+          "PLDT CUSTOMER RESCHED ON MONDAY ASPER SOR THRU CBR 639175805709",
+          "SITE CANT LOCATE BOTH CBR 09127615142 09195907813 UNATTENDED NO REPLY ON TEXT VALIDATED BY SPOC ",
+          "Reschedule on sunday",
+          "SUBS NOT AVAILABLE RESCHEDULE ON WEEKEND APRIL 4 OR 5",
+          "RESCHEDULE MONDAY AS PER SUBS THRU CALL APRIL 6",
+          "PLDT CUSTOMER OTHERS NEED PERMIT HOLD FOR FURTHER NOTICE",
+          "CBR UNATTENDED DONE MANUAL CANT LOCATE",
+          " CANT LOCATE  KAG KAG ANG LANDMARK NYA NGA NAKA BUTANG WALA SANG MAY NAGA ESTAR SA UNIT KAG ANG CBR NYS LAIN ANG NAGA SABAT 639984924033",
+          "PLDT CUSTOMER OTHERS CBR RNA CANT LOCATE IN ACTUAL DI KILALA SI SUBS SA AREA",
+          "PLDT CUSTOMER RESCHED APRIL 10 ASPER ALFREDO ",
+          "SUBS CANCEL REQUEST TOK SOR ",
+          "PLDT CUSTOMER CLUB HOUSED CLOSED HINDI NAG PAPASOK KAPAG WEEKENDS",
+          "SUBS REQUESTED TO RESCHEDULE TOMORROW MARCH 30 TOK SOR",
+          "SUBS NOT AVAILABLE RESCHEDULE TOMORROW MORNING THRU CALL CBR 639635566736 VALIDATED BY SPOC ",
+          "SUBS NOT AVAILABLE RESCHEDULE APRIL 8 DUE TO NO WORKING PERMIT THRU ACTUAL VISIT",
+          "SUBS CANCEL REQUEST DUE TO ALREADY HAVE OTHER PROVIDER",
+          "SUBS SITE CANNOT LOCATE RINGING ONLY CBR 639454776550 VALIDATED BY SPOC ",
+          "CBR RINGING NO OTHER CBR IN OFSC",
+          "PLDT CUSTOMER RESCHED NEXT WEEK ASPER SOR THRU CBR 639095904117",
+          "SITE CANT LOCATE CBR RRINGING ONLY TEXTED NO REPLY 639777152631, 09507425357",
+          "SUBS NOT AVAILABLE RESCHEDULE APRIL 6  THRU CALL CBR 639778361471 VALIDATED BY SPOC",
+          "RESCHEDULE APRIL 1 2026",
+          "RSO CANCEL REQUEST DUPLICATE APPLICATION ",
+          "RE SCHED NEED PERMIT KAKAUSAPIN DAW MUNA SI KAPITAN TATAWAG NA LANG SI SUBS PAG NAKAUSAP NA",
+          "SUBS CANCEL REQUEST NO LONGER NEEDED AS PER MAAM ROCHELLE",
+          "RESCHED MONDAY APRIL 1, 2026",
+          "SUBS CBR RINGING DONE MESSAGE BUT NO REPLY 09494606458",
+          "SUBS NOT AVAILABLE AFTER HOLYWEEK APRIL 6 TOK SOR",
+          "SUBS NOT AVAILABLE RESCHEDULE TOMORROW THRU CALL CBR 639494578632 VALIDATED BY SPOC ",
+          "SUBS NEED CONDUIT WIRING TECH CANDELARIA PROVIDED 50 METERS",
+          "RESCHED APRIL 6, 2026",
+          "RESCHEDULE MONDAY AS PER SUBS THRU CALL APRIL 6",
+          "SUBS CANCEL REQUEST TOK MARILOU VIA CBR 639274801185",
+          "PLDT CUSTOMER RESCHED TOMORROW CONDUIT NOT READY ASPER RYAN",
+          "PLDT CUSTOMER OTHERS REFUSED TO ENTY NO HOA TODAY DUE TO HOLIDAY SEASON",
+          "RESCHEDULE APRIL 1 2026 ",
+          "SUBS CBR RINGING DONE MESSAGE BUT NO REPLY 09638942158",
+          "SUBS NOT AVAILABLE RESCHED ON SUNDAY AS PER SUB THRU CALL CBR  639175941820 VALIDATED BY SPOC ",
+          "PLDT CUSTOMER CLUB HOUSED CLOSED HINDI NAG PAPASOK KAPAG WEEKENDS",
+          "RESCHED APRIL 7,2026",
+          "PLDT CUSTOMER RESCHED ON MONDAY ASPER SOR THRU CBR 639679206583",
+          "SUBS NOT AVAILABLE RESCHED ON APRIL 6 AS PER SUBS THRU CALL CBR 639153720477 VALIDATED BY SPOC ",
+          "RESCHED APRIL 2, 2026",
+          "SUBS REQUESTED TO RESCHEDULE ON APRIL 3 TOK SOR",
+          "Resched tom",
+          "SUBS NOT AVAILABLE RESCHED ON SUNDAY AS PER SUBS THRU CALL CBR 639173261708 VALIDATED BY SPOC ",
+          "RSO SUBS CANCEL REQUEST NO LONGER NEEDED",
+          "PLDT CUSTOMER RESCHED ON APRIL 8 AVAILABLE HINDI PA NAKAKALIPAT",
+          "SUBS NOT AVAILABLE RESCHED ON APRIL 8 DUE NOT YET TOTALLY MOVE IN",
+          "RESCHED MONDAY APRIL 6, 2026 WAITING FOR CONDUIT ",
+          "CBR RINGING ONLY 639516940493",
+          "SUBS CBR RINGING DONE MESSAGE BUT NO REPLY ",
+          "SUBS RESCHED APRIL 7, 2026",
+          "RSO SUBS NEED WORKIGN PERMIT NO ADMIN EVERY SUNDAY",
+          "WRONG ADDRESS IT SHOULD IN BGY ZONE 1 POBLACION CADIZ CITY ",
+          "Resched sunday",
+          "PLDT CUSTOMER OTHERS CBR RNA CANT LOCATE IN ACTUAL DI KILALA SI SUBS SA AREA",
+          "RESCHED ON APRIL 5 SUNDAY AS PER SUBS EVERY SUNDAY OR HOLIDAY DAW PO PEDE SI SUBS",
+          "RESCHED APRIL 6, 2026"
+        ]
+      },
+      "others": {
+        "count": 182,
+        "remarks": [
+          "WORKING",
+          "WORKING COMPLETED",
+          "UNFINISHED",
+          "SUBS REQUEST TO RESCHEDULED TOMORROW TOK SOR  09675189918",
+          "COMPLETED BY PRO GARCIA ZTEGD4A237D1 202009L17704984 QCYLP1411NP1P3 3SPAN 150METERS",
+          "Activation Requested â³",
+          "CANT CAPTURED FOR REVISIT",
+          "FOR MANUAL ACTIVATION",
+          "DONE INSTALLATION",
+          "FULLNAPESTLP38NP4",
+          "FOR CTW MAGTETEXT NA LANG DAW SI SUBS PAG NAILATAG NA ",
+          "AFTER HOLYWEEK SCEHDULE AS PER SUBS THRU CALL APRIL 6 639178922903",
+          "PENDING ACTIVATION ",
+          "PENDING ACTIVATION FOR CHANGE TELEPHONE NUMBER ",
+          "DONE INSTALLATION WORKING",
+          "FOR CIRCUIT REDESIGN ERROR ",
+          "WORKING COMPLETED",
+          "DONE INSTALLATION WORKING",
+          "COMPLETED BY PRO SALTING 48575443D3F327B6 CT24CID20251239836 02780961853 QCYFELP40WNP004P7 2SPAN 100METERS ",
+          "FOR ACTIVATION ",
+          "Working data voice IPTV 48575443F4BDB0B5 CT24CID20251057294 02780837366 CADLP182NP3P5",
+          "DONE INSTALLATION BY PROTEK",
+          "WORKING DATA",
+          "RESCHEUDLE ON APRIL 6 WALA PA DAW YUNG MODEM ",
+          "UN FINISHED",
+          "SERRIAL",
+          "UNFINISHED",
+          "SUBS CANCELLED REQUEST ALREADY INSTALLED KAILANGAN NILA REPAIR ",
+          "CANT CAPTURE ",
+          "DONE INSTALLATION WORKING",
+          "DONE INSTALLATION WORKING",
+          "FOR CLOSING",
+          "ACTIVATED NOOJB",
+          "CANT CAPTURED FOR REVISIT",
+          "DONE",
+          "ACTIVATED NOOJB",
+          "FOR END BUTTON / FALL OUT",
+          "SUBS ALREADY CANCELLED THIS APPLICATION ",
+          "NO END BUTTON NAKA ACTIVATION FAILURE",
+          "FOR AA",
+          "FOR UPDATE CAFAC",
+          "Working data ",
+          "NOS, HIGH READING 32DBM, A PASSING BY CONTRACTOR ALSO ADVISED ME ABOUT THE CURRENT ISSUE ON THE STREET, OLIVE ST, PACITA 2 PH2",
+          "PENDING ACTIVATION FAILURE Error cant capture ONU OR LOS ",
+          "FOR VOICE ACTIVATION",
+          "COMPLETED BY PRO AQUINO 48575443C9284EB6 CT24CID20251263396 QCYLP34GNP6P3 2SPAN 100METERS",
+          "AREA COVERED BY SQC",
+          "DONE AA FOR MANUAL ACTI ",
+          "na",
+          "For activation Stock in circuit",
+          "DONE INSTALLATION WORKING",
+          "WORKING TALK WITH ZOE",
+          "For BP handling",
+          "serial does not exist in sap",
+          "Activation Failure â",
+          "BVALP78NP3P2\t48575443C34D06B6  CT24CID20251163323\t\tTOK MARY JOY FLOR MIRANDA\tWORKING DATA VOICE\t\tARGUELLES DIONERO",
+          "RSO REFUSE TO ENTRY",
+          "SUBS REQUEST TO RESCHEDULED ON APRIL 8 TOK SOR 09076521880 ",
+          "SRECHEDULE APRIL 6 8AM AS PER SUBS UMALIS DAW KASI SYA CONFIRM THRU CALL 09159382824",
+          "DATA AND VOICE SLXLP168NP1P7 48575443E4686CB5 CT24CID20251182689 SPAN2",
+          "Completed",
+          "DONE INSTALLATION",
+          "CTW 80 METERS LEFT BY TECH MONTERDE ",
+          "CIRCUIT DESIGN ERR0R",
+          "SUBS OUT CBRDA",
+          "WORKING DATA VOICE \t\tTOK GENEROSA ESCOBILLAS LABORDO\tCASQUEJO BANAYO\tBTDLP12NP4P7\t48575443C35072B6   CT24CID20251005899",
+          "FOR ACTI DONE INSTALLED ",
+          "STUCK CIRCUIT REDESIGN",
+          "WORKING",
+          "Found business",
+          "SUBS REQUEST TO RESCHEDULED ON APRIL 3 DUE TO SUBS NEED STEEL SUBS WILL UPDATE IF STELLPOLE IS OKAY",
+          "Activation Failure â",
+          "DATA AND VOICE WORKING 48575443E46707B5 BGXLP146NP1P4 RINGING 2SPAN",
+          "Working ",
+          "CTW 200 METERS LEFT BY TECH LANZARROTE",
+          "AWAIT ACTIVATION",
+          "NO IHW FOR BP HANDLING",
+          "COMPLETED BY PRO DEL PILAR 48575443C92B95B6 CT24CID20251239537 QCYLP1417NP3P4 3SPAN 150METERS",
+          "LETTER",
+          "NO END BUTTON",
+          "For manual activation",
+          "WORKING",
+          "SUBS NEED TO ASK PERMISSION FROM THE OWNER OF STEELPOLE ",
+          "FAILURE",
+          "Done",
+          "CTW 100 METERS LEFT BY TECH PASCO",
+          "COMPLETED BY PRO CABALLO 48575443D3EF41B6 02781085524 202511C160001631 QCYFELPR95NP004P2 3SPAN 150METERS ",
+          "DONE INSTALLATION WORKING",
+          "ERROR IN REDESIGN",
+          "DONE INSTALLATION WORKING",
+          "SUBS REQUEST TO RESCHEDULED ON TUESDAY DUE TO SUBS IN CEBU THRU MESSAGE  09661638419",
+          "revisit ",
+          "for revisit uno offline",
+          "Subs out",
+          "RAISE TO BESS",
+          "HOA PROBLEM BAWAL NA DAW DITO PUMASOK AT MAG KABIT NAKAUSAP NA DIN NG CX YUNG HOA ",
+          "Copper on actual",
+          "WORKING DATA VOICE \tDEGAYO BANAYO\t TOK ANABELLE DELOS SANTOS BERBERIO\t\tSRALP11NP4P8\t48575443F4B4DBB5     CT24CID20251040256",
+          "Working voice And data 48575443F4CA26B5 CT24CID20251181130 0344714507 TOK SOR",
+          "1",
+          "ERROR  IN ACTIVATION",
+          "DONE INSTALLATION",
+          "FOR INSTALLATION APRIL 7",
+          "LOS UPON INSTALLTION",
+          "Activation Failure â",
+          "SUBS RINGING ONLY ",
+          "RTOK KATHERINE",
+          "FOR END BUTTON FALL OUT ",
+          "FOR ACTIVATION DONE ENDORSE TO WMA",
+          "OTNLP138NP4P8\t48575443BD616FA6  GT230810521135  02770480353\t5\tTOK JULIET DELAVEGA DILAG\tWORKING DATA TO FOLLOW IPTV KY NABALIN ILA TV MACALL LANG SILA KY TECHNICIAN AS PER SUBS\tdefective telset\tJEREZA AZARES",
+          "Done",
+          "UNDER CAMANAVA TAWID NLEX",
+          "DONE INSTALLATION WORKING",
+          "UN FINISHED",
+          "Wrong location",
+          "DONE",
+          "DONE INSTALLATION",
+          "COMPLETED",
+          "PENDING FOR ACTIVATION CANT LCOATE ONU",
+          "FOR FH HANDLING INSTALLATION",
+          "DONE INSTALLATION BY PROTEK",
+          "DONE INSTALLATION BY PROTEK",
+          "PENDING ACTIVATION",
+          "ACTIVATED NOOJB",
+          "FOR CHANGE PID KASI IPIT SA CIRCUIT 439600389004",
+          "Working data",
+          "SCHED ON APRIL 5 AS PER MILA MAGNATE MOTHER 09128622538",
+          "KAKAUSAPIN PA DAW YUNG ASAWA 09653990923",
+          "HOA PROBLEM BAWAL NA DAW DITO PUMASOK AT MAG KABIT ",
+          "SUBS RINGING ONLY ",
+          "DATACABLEVOICEALLACTIVETOKRACHELBELARTE02780892276CT24CID2025117614148575443F059A3B5BGXLP39NP7P8SPAN4METER200",
+          "COMPLETED BY PRO LANZAORTE REUSED MODEM TEKSET 48575443B1B8C0B1 202305L177035168 QCYLP47PNP3P5  2SPAN 100METERS ",
+          "SUBS RINGING ONLY ",
+          "SUBS REQUEST TO RESCHEDULED TOMORROW TOK SOR   09075299783",
+          "OFSC CLOSED ",
+          "FOR ACTIVATION ",
+          "NO END BUTTON",
+          "Waiting IPTV serial ",
+          "CTW 30 METERS LEFT BY TECH AQUINO ",
+          "ERROR IN REDESIGN",
+          "AWAIT ACTIVATION",
+          "UNO OFFLINE",
+          "DONE INSTALLATION WORKING",
+          "AREA COVERED BY SQC",
+          "COM",
+          "DONE INSTALLATION   ",
+          "SUBS REQUEST TO RESCHEDULED ON APRIL 5 TOK MARLON ",
+          "Activation Failure â",
+          "FOR CLOSING NO END BUTTON stock at activation",
+          "DATA AND VOICE ACTIVATED NSGLP62NP3P6 485754438A7C21B6\t\t\t2780792909\t\tCT24CID20251182775 2SPAN TOK SOR ",
+          "NO END BUTTON ",
+          "Dataandvoiceworking48575443E464BFB5CT24CID20251176142",
+          "DONE INSTALLATION BY PTEK",
+          "Activation Failure â endorse manual activate voice",
+          "DONE",
+          "Working ",
+          "unfinished  ",
+          "SDELP166NP4",
+          "FOR BESS HANDLING",
+          "SUBS NEED ASK PERMISSION TO THE OWNER OF THE STEELPOLE ",
+          "WORKING",
+          "Circuit Redesign Error â",
+          "RE SCHED AFTER HOLY WEEK TATAWAG NA LANG DAW PO SI SUBS",
+          "TELEPHONE IS CURRENTLY RINGING",
+          "PENDING ACTIVATION CANT LOCATE ONU",
+          "Cannot be reach",
+          "FOR CLOSING",
+          "WORKING DATA",
+          "PENDING ACTIVATION",
+          "Re sched",
+          "FOR ACTIVATION ",
+          "PENDING FOR ACTIVATION NOT YET UPDATED STOCK IN CKT REDESIGN ",
+          "ACTIVATED NOOJB",
+          "COMPLETED BY PRO LANZAROTE  48575443D3FA35B6 CT24CID20251239834 02780976814 QCYLP89NNP6P2 2SPAN 100METERS ",
+          "for confirm new reloc need also iptv serial",
+          "AWAIT ACTIVATION",
+          "WAITING FOR ACTIVATION ",
+          "RETAIN OLD TELEPHONE NUMBER 0289287674",
+          "RE SCHED FOR REVISIT",
+          "DONE INSTALLATION",
+          "Circuit Redesign Requested â³",
+          "DONE INSTALLATION WORKING"
+        ]
+      },
+      "no_remarks": {
+        "count": 698,
+        "remarks": []
+      },
+      "facility": {
+        "count": 40,
+        "remarks": [
+          "NO FIBER FACILITY ALONG MARIANO ST AS PER TECH PASAHOL ON SITE VISIT  FOR ADD NAP  -  NO CAFAC FTTX-  ALREADY ADVISE SUBS",
+          "NO MORE PORT AVAILABLE  ASPER TECH GAMUETA",
+          "LONGSPANNING ILOLP908NP1 NP4 ILOLP466NP8  AND MAINTAINANCE ISSUE FULLNAP ILOLP466NP1 ALREADY COORDINATE CX DONE ADVICE SUBS",
+          "PLDT FACILITY FULL NAP MTPLPB24NP3 MTPLP686NP1 MTPLPB25NP2 MTPLP805NP5 MTPLP805NP4 MTPLPB25NP4 MTPLPB25NP1 MTPLPB25NP6",
+          "PLDT FACILIITY FULL NAP  LPNLPI48 NP1 NP2 NP3 LPNLP652 NP1 NP2 NP3",
+          "cannot install fiber as per maintenance in mall tok nelson  obstruction subs located in city walk",
+          "RSO NO FIBER FACILITY AT THE VICINITY SUBS LOCATED AT CAMELLA 3 WITH APPROVAL SIR ERIC EDRALIN WMS",
+          "NO MORE PORT AVAILABLE ",
+          "NO FIBER FACILITIES",
+          "FULL NAP BNXLP17NP1",
+          "NO FIBER FACILITIES",
+          "NO MORE AVAILABLE PORT FULL NAP",
+          "NO PLDT FIBER FACILITIES1km from nearest NAP BTD LP18 NP1",
+          "FULLNAP SRELP98NP7,NP8,SRELP181NP3",
+          "FULLNAP CLSLPJ99NP5 CLSLPJ99NP6 CLSLPJ99NP3 CLSLPJ99NP4 CLSLPJ99NP7 CLSLPJ99NP1 CLSLPJ99NP2",
+          "PLDT FACILITY OTHERS NO FIBER FACILITY",
+          "NO MORE PORT AVAILABLE ",
+          "PLDT FACILITY FULL NAP LPNLPA76 NP7 NP6 NP5 LPNLP4 NP4",
+          "NO FIBER FACILITY At KAINING 1",
+          " FULL NAP AJY LP21 NAP1-5 TOK SOR",
+          "PLDT FACILITY FULL NAP MTPLP349 NAP2,3,4,5,6 MTPLP581 NAP1 ALL ARE FULLY LOADED",
+          "NO MORE PORT AVAILABLE  ASPER TECH GAMUETA",
+          "no fiber facility ",
+          "PRQLPK56NP1NP3PRQLPK55NP4PRQLPK52NP2 FULLY LOADED PENDING FOR APPROVAL VALIDED BY SPOC",
+          "RSO NO FIBER FACILITY WITH APPROVAL OF SIR ERIC EDRALIN WMS OF PRQ",
+          "MCT NAP UPON INSTALLATION",
+          "RSO NO VACANT NAP PORT PRQLPG44NP1 PRQLPG44NP2 PRQLPG44NP3 PRQLPG44NP4 PRQLPG44NP5 PRQLPG44NP6 PRQLPG44NP7 PRQLPG44NP8 WITH APPROVAL SIR JEFF HERNANDEZ",
+          "DONE EMAIL FOR MCT  LOS NAP AT  VALLP508NP1 VALLP508NP2 VALLP508NP6 VALLP508NP5",
+          "NO MORE PORT AVAILABLE ",
+          "NO FIBER FACILITY ALMOST 1KM AWAY FROM NEAREST NAP IVSLP10NP4",
+          "PENDING FOR APPROVAL RSO NO VACANT NAP PORT PRQLPJ83NP3 PRQLPC53NP8",
+          "LOS NAP BCDLP95NP5 ",
+          "FOR CTW MAG PAPAPALAM PA SI ADMIN PARA MAIWANA NG FOC FOR CTW",
+          "NO FIBER FACILITIES",
+          "NEED OUTSIDE SUPPORT REROUTING OF OUTSIDE INSIDE FOC",
+          "NO FIBER FACILTY ON AREA TRU ACTUAL DONE ADVISE SA SUBS",
+          "NO MORE PORT AVAILABLE ",
+          "NO PORT AVAILABLE ",
+          "NO FIBER FACILITIES IN AREA",
+          "Circuit Redesign Error â Vacant actual port 4 to 8   QCYLP28ZNP8"
+        ]
+      }
+    }
+  },
+  "facility_rpr": {
+    "total_facility_rpr": 40,
+    "by_zone": {
+      "NORTH QUEZON CITY": {
+        "count": 8,
+        "prs": [
+          {
+            "pr_number": "02926842EB064A6299C53DEBE11298D9~02926842EB064A6299C53DEBE11298D9",
+            "subscriber": "CLOE ALOLOR FELIX",
+            "technician": null,
+            "remarks": "NO FIBER FACILITY ALONG MARIANO ST AS PER TECH PASAHOL ON SITE VISIT  FOR ADD NAP  -  NO CAFAC FTTX-",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "3198931EEF5441B3A177F8DFDF44C42B~3198931EEF5441B3A177F8DFDF44C42B",
+            "subscriber": "DONNABELLE SALCEDO TORRES",
+            "technician": null,
+            "remarks": "NO FIBER FACILITIES",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "61850AE99E014C88BB1F0E116CC38366~61850AE99E014C88BB1F0E116CC38366",
+            "subscriber": "DANIELLA HUNGAY GAUPO",
+            "technician": null,
+            "remarks": "FULLNAP CLSLPJ99NP5 CLSLPJ99NP6 CLSLPJ99NP3 CLSLPJ99NP4 CLSLPJ99NP7 CLSLPJ99NP1 CLSLPJ99NP2",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "BA9C3946CB2646F2B1BF57DC7D875401~BA9C3946CB2646F2B1BF57DC7D875401~BA9C3946CB2646F2B1BF57DC7D875401",
+            "subscriber": "ROSELLE PESCASIO MIRANDA",
+            "technician": null,
+            "remarks": "DONE EMAIL FOR MCT  LOS NAP AT  VALLP508NP1 VALLP508NP2 VALLP508NP6 VALLP508NP5",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "DA3BDBBD8C7D427BA218583C26D7DF1D~DA3BDBBD8C7D427BA218583C26D7DF1D~DA3BDBBD8C7D427BA218583C26D7DF1D",
+            "subscriber": "MARIO RAGASA ACOSTA",
+            "technician": null,
+            "remarks": "NO FIBER FACILITIES",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "E574F3E9E75B4E32A23DD126BD112F0E~E574F3E9E75B4E32A23DD126BD112F0E",
+            "subscriber": "LEONORA HERNANDEZ GUEVARRA",
+            "technician": null,
+            "remarks": "NO FIBER FACILTY ON AREA TRU ACTUAL DONE ADVISE SA SUBS",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "F01FFD9C0C9E4F3880A42E8B9452F915~F01FFD9C0C9E4F3880A42E8B9452F915",
+            "subscriber": "PATRICK SANECO PELAEZ",
+            "technician": null,
+            "remarks": "NO FIBER FACILITIES IN AREA",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "F37435DAD02D4285AF03860E6E7F5D46~F37435DAD02D4285AF03860E6E7F5D46~F37435DAD02D4285AF03860E6E7F5D46",
+            "subscriber": "JOCELYN GRACE BALDANO FUENTES",
+            "technician": null,
+            "remarks": "Circuit Redesign Error â Vacant actual port 4 to 8   QCYLP28ZNP8",
+            "callout_remarks": ""
+          }
+        ]
+      },
+      "PASIG-PATEROS-TAGUIG": {
+        "count": 8,
+        "prs": [
+          {
+            "pr_number": "04501A56BE9049F18E87F3348CF7EDBF~04501A56BE9049F18E87F3348CF7EDBF~04501A56BE9049F18E87F3348CF7EDBF",
+            "subscriber": "EDIMER TABLO IGANA",
+            "technician": null,
+            "remarks": "NO MORE PORT AVAILABLE  ASPER TECH GAMUETA",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "2ED578397F95415CAB4952923ABD978F~2ED578397F95415CAB4952923ABD978F",
+            "subscriber": "JONALYN MANALO PAGLINAWAN",
+            "technician": null,
+            "remarks": "NO MORE PORT AVAILABLE ",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "4906657A33F04C3A82E1392021293E84~4906657A33F04C3A82E1392021293E84",
+            "subscriber": "DANTE FIGUEROA ACUNA",
+            "technician": null,
+            "remarks": "NO MORE AVAILABLE PORT FULL NAP",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "6869BDB976D94C1CBC555434434EB4EF",
+            "subscriber": "CLARISS PULOG TILOS",
+            "technician": null,
+            "remarks": "NO MORE PORT AVAILABLE ",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "936BAF0862B34C5DB70760C3AB876E0A~936BAF0862B34C5DB70760C3AB876E0A",
+            "subscriber": "MA  DIVINE VIVORA CADIZ",
+            "technician": null,
+            "remarks": "NO MORE PORT AVAILABLE  ASPER TECH GAMUETA",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "C24A168A70E84E9C934954F48DDF06BD~C24A168A70E84E9C934954F48DDF06BD",
+            "subscriber": "LARRY DEL ROSARIO BALANGUE",
+            "technician": null,
+            "remarks": "NO MORE PORT AVAILABLE ",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "ED3A2D11151341C483E6014A39C6CB3F~ED3A2D11151341C483E6014A39C6CB3F",
+            "subscriber": "ZABIDE MAMASUNDA SABAN",
+            "technician": null,
+            "remarks": "NO MORE PORT AVAILABLE ",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "EE219286AB3241CD9C5F2E6747647BE7~EE219286AB3241CD9C5F2E6747647BE7",
+            "subscriber": "JERICHO RELUCIO MARIANO",
+            "technician": null,
+            "remarks": "NO PORT AVAILABLE ",
+            "callout_remarks": ""
+          }
+        ]
+      },
+      "LAS PINAS-ALABANG": {
+        "count": 6,
+        "prs": [
+          {
+            "pr_number": "0DFBBF1CE59043E1A1DB351A6EC1733B~0DFBBF1CE59043E1A1DB351A6EC1733B~0DFBBF1CE59043E1A1DB351A6EC1733B",
+            "subscriber": "EDEN ROSE BANLASAN PEREZ",
+            "technician": null,
+            "remarks": "PLDT FACILITY FULL NAP MTPLPB24NP3 MTPLP686NP1 MTPLPB25NP2 MTPLP805NP5 MTPLP805NP4 MTPLPB25NP4 MTPLP",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "1E446415E06B47AC966F3C6613B05E75~1E446415E06B47AC966F3C6613B05E75~1E446415E06B47AC966F3C6613B05E75",
+            "subscriber": "GEORGETTE   TUAZON",
+            "technician": null,
+            "remarks": "PLDT FACILIITY FULL NAP  LPNLPI48 NP1 NP2 NP3 LPNLP652 NP1 NP2 NP3",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "62B4B2C4D33A4D09BD47F0DF304D1C58~62B4B2C4D33A4D09BD47F0DF304D1C58",
+            "subscriber": "JONATHAN PEPITO BASCO",
+            "technician": null,
+            "remarks": "PLDT FACILITY OTHERS NO FIBER FACILITY",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "78EB3EDEF0C54D50BA4C6B708925F070~78EB3EDEF0C54D50BA4C6B708925F070~78EB3EDEF0C54D50BA4C6B708925F070",
+            "subscriber": "CRESELDA DAVID CLAMOR",
+            "technician": null,
+            "remarks": "PLDT FACILITY FULL NAP LPNLPA76 NP7 NP6 NP5 LPNLP4 NP4",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "92E154C2DC7145B0A896B28D51018E17~92E154C2DC7145B0A896B28D51018E17",
+            "subscriber": "IRENE LUBRIN MANZANO",
+            "technician": null,
+            "remarks": "PLDT FACILITY FULL NAP MTPLP349 NAP2,3,4,5,6 MTPLP581 NAP1 ALL ARE FULLY LOADED",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "E05BF9FC6A8B46A3AB8EF7FDC39AD721",
+            "subscriber": "DANIELA CANQUE IBANEZ",
+            "technician": null,
+            "remarks": "NEED OUTSIDE SUPPORT REROUTING OF OUTSIDE INSIDE FOC",
+            "callout_remarks": ""
+          }
+        ]
+      },
+      "PANAY": {
+        "count": 5,
+        "prs": [
+          {
+            "pr_number": "08F40B32074E45BDB96FA28950BF761C~08F40B32074E45BDB96FA28950BF761C",
+            "subscriber": "LEZIEL TOME PALMA",
+            "technician": null,
+            "remarks": "LONGSPANNING ILOLP908NP1 NP4 ILOLP466NP8  AND MAINTAINANCE ISSUE FULLNAP ILOLP466NP1 ALREADY COORDIN",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "3B40337507764D8098F3B8945F59C2D3~3B40337507764D8098F3B8945F59C2D3",
+            "subscriber": "RALPH FRANCIS MARTINEZ FRANCO",
+            "technician": null,
+            "remarks": "FULL NAP BNXLP17NP1",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "56D3171E3BB342E5B7B83AB430AE9F26~56D3171E3BB342E5B7B83AB430AE9F26",
+            "subscriber": "JUNE REY PORRAS ALIANZA",
+            "technician": null,
+            "remarks": "NO PLDT FIBER FACILITIES1km from nearest NAP BTD LP18 NP1",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "90C50671CBBF49B5884BD5D2F241365E~90C50671CBBF49B5884BD5D2F241365E~90C50671CBBF49B5884BD5D2F241365E",
+            "subscriber": "CRISEL SILVA ELEVADO",
+            "technician": null,
+            "remarks": " FULL NAP AJY LP21 NAP1-5 TOK SOR",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "CD85CAA1D7D54BDB8D7E538D7628E81B~CD85CAA1D7D54BDB8D7E538D7628E81B",
+            "subscriber": "STEVE CABANTUG ABISAN",
+            "technician": null,
+            "remarks": "NO FIBER FACILITY ALMOST 1KM AWAY FROM NEAREST NAP IVSLP10NP4",
+            "callout_remarks": ""
+          }
+        ]
+      },
+      "PASAY-PARANAQUE": {
+        "count": 5,
+        "prs": [
+          {
+            "pr_number": "2BBA02C3BA274629887E22B3EC3FBF1A~2BBA02C3BA274629887E22B3EC3FBF1A",
+            "subscriber": "IRMA REYES MAGTIBAY",
+            "technician": null,
+            "remarks": "RSO NO FIBER FACILITY AT THE VICINITY SUBS LOCATED AT CAMELLA 3 WITH APPROVAL SIR ERIC EDRALIN WMS",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "9B3623EAB74549158463122E579353CF~9B3623EAB74549158463122E579353CF~9B3623EAB74549158463122E579353CF",
+            "subscriber": "LILIBETH ROMERO TANGSON",
+            "technician": null,
+            "remarks": "PRQLPK56NP1NP3PRQLPK55NP4PRQLPK52NP2 FULLY LOADED PENDING FOR APPROVAL VALIDED BY SPOC",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "A92665F617CC4AF3BE72939AFA27F35A~A92665F617CC4AF3BE72939AFA27F35A~A92665F617CC4AF3BE72939AFA27F35A",
+            "subscriber": "NICOLE SAMOLE CATORCE",
+            "technician": null,
+            "remarks": "RSO NO FIBER FACILITY WITH APPROVAL OF SIR ERIC EDRALIN WMS OF PRQ",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "B8C5B0A719274BBD87FB3DC53CEBE8D6~B8C5B0A719274BBD87FB3DC53CEBE8D6",
+            "subscriber": "JABIGAIL ILAGAN ABELLA",
+            "technician": null,
+            "remarks": "RSO NO VACANT NAP PORT PRQLPG44NP1 PRQLPG44NP2 PRQLPG44NP3 PRQLPG44NP4 PRQLPG44NP5 PRQLPG44NP6 PRQLP",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "D1C2C08CD0DC4DA489D9359827DD6BC1~D1C2C08CD0DC4DA489D9359827DD6BC1",
+            "subscriber": "NIKKO DE LIRA MALABANAN",
+            "technician": null,
+            "remarks": "PENDING FOR APPROVAL RSO NO VACANT NAP PORT PRQLPJ83NP3 PRQLPC53NP8",
+            "callout_remarks": ""
+          }
+        ]
+      },
+      "BULACAN": {
+        "count": 4,
+        "prs": [
+          {
+            "pr_number": "3D2AF366515D430AB00125AF25C4097D~3D2AF366515D430AB00125AF25C4097D",
+            "subscriber": "GLADIES ROSE BAUTISTA sta maria",
+            "technician": null,
+            "remarks": "NO FIBER FACILITIES",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "5873CD17DE6444999D4ECEC4B42CBA7A",
+            "subscriber": "JETHRO CRUZ FERNANDO",
+            "technician": null,
+            "remarks": "FULLNAP SRELP98NP7,NP8,SRELP181NP3",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "99AFBE3E1192483781D48A693714DE1F~99AFBE3E1192483781D48A693714DE1F",
+            "subscriber": "ANGELINE SANTOS DADIVAS",
+            "technician": null,
+            "remarks": "no fiber facility ",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "AD29B767994D4FB7B040494582FC1EE6~AD29B767994D4FB7B040494582FC1EE6~AD29B767994D4FB7B040494582FC1EE6",
+            "subscriber": "RACHELLE ANN AGUSTIN CRUZ",
+            "technician": null,
+            "remarks": "MCT NAP UPON INSTALLATION",
+            "callout_remarks": ""
+          }
+        ]
+      },
+      "NEGROS": {
+        "count": 2,
+        "prs": [
+          {
+            "pr_number": "210F2EFECFD04E17B7864EA35CCF4913~210F2EFECFD04E17B7864EA35CCF4913~210F2EFECFD04E17B7864EA35CCF4913",
+            "subscriber": "ELLA REA NOBLES FERNANDEZ",
+            "technician": null,
+            "remarks": "cannot install fiber as per maintenance in mall tok nelson  obstruction subs located in city walk",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "D1E10686972B43B1A919A33F55E23AC7~D1E10686972B43B1A919A33F55E23AC7",
+            "subscriber": "LORNA HILARIO CAFE",
+            "technician": null,
+            "remarks": "LOS NAP BCDLP95NP5 ",
+            "callout_remarks": ""
+          }
+        ]
+      },
+      "SOUTH QUEZON CITY": {
+        "count": 2,
+        "prs": [
+          {
+            "pr_number": "8BAD0303101F4C87B000901290CDE95D~8BAD0303101F4C87B000901290CDE95D",
+            "subscriber": "NINO MATTHEW FETALVERO RIOJA",
+            "technician": null,
+            "remarks": "NO FIBER FACILITY At KAINING 1",
+            "callout_remarks": ""
+          },
+          {
+            "pr_number": "D9426D90CB6C43A088879F6BEA0D9EC9~D9426D90CB6C43A088879F6BEA0D9EC9",
+            "subscriber": "VRYAN PHILIP ALCOSER TANO",
+            "technician": null,
+            "remarks": "FOR CTW MAG PAPAPALAM PA SI ADMIN PARA MAIWANA NG FOC FOR CTW",
+            "callout_remarks": ""
+          }
+        ]
+      }
+    },
+    "timestamp": "2026-04-05T04:05:26.385Z"
+  }
+}
