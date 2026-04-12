@@ -283,4 +283,95 @@ Candidates
 Possible Lasting Updates
 - Deep phase: Promotes durable memories to MEMORY.md [memory/2026-04-07.md:74]
 - Updates to MEMORY.md — Durable long-term memories [memory/2026-04-07.md:80]
+
+---
+
+*April 12, 2026 at 7:00 PM*
+
+2026-04-12 10:15 — Cross-Agent Note: n8n Redirect Fix Applied by Neo: **Context:** Victor noticed n8n at `https://srv1405873.tailcd23a1.ts.net:8444/n8n` was redirecting to `http://srv...:3000/n8n/` and failing due to n8n secure-cookie rejection. He intended to ask Ceil but inadve
+
+
+---
+
+*April 12, 2026 at 7:00 PM*
+
+## 2026-04-11 17:45 — n8n Subpath Fix Applied **Problem:** n8n UI displayed a plain white page at `/n8n/` because assets were requested from `/assets/...` instead of `/n8n/assets/...`. Nginx routed those to Rails, causing 404s. **Root cause:** Missing `N8N_PATH=/n8n/` environment variable. n8n didn't know it was deployed under a subpath. **Changes made:** - `docker-compose.yml` — Added `N8N_PATH=/n8n/`; wired `N8N_EDITOR_BASE_URL` to `.env` - `docker-compose.ghcr.yml` — Same fixes for production compose - `.env` — Changed `N8N_EDITOR_BASE_URL` to `https://srv1405873.tailcd23a1.ts.net:8444/n8n` - `nginx-proxy.conf` — Added redirect `/n8n` → `/n8n/` **Containers recreated:** `n8n` and `pro
+
+
+---
+
+*April 12, 2026 at 7:00 PM*
+
+## 2026-04-11 17:45 — n8n Subpath Fix Applied **Problem:** n8n UI displayed a plain white page at `/n8n/` because assets were requested from `/assets/...` instead of `/n8n/assets/...`. Nginx routed those to Rails, causing 404s. **Root cause:** Missing `N8N_PATH=/n8n/` environment variable. n8n didn't know it was deployed under a subpath. **Changes made:** - `docker-compose.yml` — Added `N8N_PATH=/n8n/`; wired `N8N_EDITOR_BASE_URL` to `.env` - `docker-compose.ghcr.yml` — Same fixes for production compose - `.env` — Changed `N8N_EDITOR_BASE_URL` to `https://srv1405873.tailcd23a1.ts.net:8444/n8n` - `nginx-proxy.conf` — Added redirect `/n8n` → `/n8n/` **Containers recreated:** `n8n` and `pro
+
+
+---
+
+*April 12, 2026 at 7:30 PM*
+
+Reflections: Theme: `assistant` kept surfacing across 159 memories.; confidence: 0.77; evidence: memory/.dreams/session-corpus/2026-04-07.txt:2-2, memory/.dreams/session-corpus/2026-04-07.txt:4-4, memory/.dreams/session-corpus/2026-04-07.txt:5-5; note: reflection
+
+
+---
+
+*April 12, 2026 at 7:30 PM*
+
+- HOWEVER: Ceil and Neo have **separate workspaces** (see below), so dreaming consolidates each workspace's memory independently ## Workspace Isolation Confirmed | Agent | Workspace | Memory | |-------|-----------|--------| | Ceil (main) | `~/.openclaw/workspace/` | Separate `memory/` | | Neo | `~/.openclaw/workspace-neo/` | Separate `memory/` | - Dreaming config is shared (global), but workspace isolation means each agent's dreaming consolidates only its own memory signals - Each agent has its own `memory/.dreams/` directory ## Memory-Wiki — Separate Vaults ### Limitation Found `memory-wiki` plugin config is at `plugins.entries` (gateway level), NOT per-agent. This means: - One vault p
+
+
+---
+
+*April 12, 2026 at 7:52 PM*
+
+Reflections: Theme: `assistant` kept surfacing across 188 memories.; confidence: 0.81; evidence: memory/.dreams/session-corpus/2026-04-07.txt:2-2, memory/.dreams/session-corpus/2026-04-07.txt:4-4, memory/.dreams/session-corpus/2026-04-07.txt:5-5; note: reflection
+
+
+---
+
+*April 12, 2026 at 7:52 PM*
+
+- HOWEVER: Ceil and Neo have **separate workspaces** (see below), so dreaming consolidates each workspace's memory independently ## Workspace Isolation Confirmed | Agent | Workspace | Memory | |-------|-----------|--------| | Ceil (main) | `~/.openclaw/workspace/` | Separate `memory/` | | Neo | `~/.openclaw/workspace-neo/` | Separate `memory/` | - Dreaming config is shared (global), but workspace isolation means each agent's dreaming consolidates only its own memory signals - Each agent has its own `memory/.dreams/` directory ## Memory-Wiki — Separate Vaults ### Limitation Found `memory-wiki` plugin config is at `plugins.entries` (gateway level), NOT per-agent. This means: - One vault p
+
+
+---
+
+*April 12, 2026 at 8:22 PM*
+
+Reflections: Theme: `assistant` kept surfacing across 206 memories.; confidence: 0.83; evidence: memory/.dreams/session-corpus/2026-04-07.txt:2-2, memory/.dreams/session-corpus/2026-04-07.txt:4-4, memory/.dreams/session-corpus/2026-04-07.txt:5-5; note: reflection
+
+
+---
+
+*April 12, 2026 at 8:22 PM*
+
+- HOWEVER: Ceil and Neo have **separate workspaces** (see below), so dreaming consolidates each workspace's memory independently ## Workspace Isolation Confirmed | Agent | Workspace | Memory | |-------|-----------|--------| | Ceil (main) | `~/.openclaw/workspace/` | Separate `memory/` | | Neo | `~/.openclaw/workspace-neo/` | Separate `memory/` | - Dreaming config is shared (global), but workspace isolation means each agent's dreaming consolidates only its own memory signals - Each agent has its own `memory/.dreams/` directory ## Memory-Wiki — Separate Vaults ### Limitation Found `memory-wiki` plugin config is at `plugins.entries` (gateway level), NOT per-agent. This means: - One vault p
+
+
+---
+
+*April 12, 2026 at 8:52 PM*
+
+Reflections: Theme: `assistant` kept surfacing across 215 memories.; confidence: 0.83; evidence: memory/.dreams/session-corpus/2026-04-07.txt:2-2, memory/.dreams/session-corpus/2026-04-07.txt:4-4, memory/.dreams/session-corpus/2026-04-07.txt:5-5; note: reflection
+
+
+---
+
+*April 12, 2026 at 8:52 PM*
+
+- HOWEVER: Ceil and Neo have **separate workspaces** (see below), so dreaming consolidates each workspace's memory independently ## Workspace Isolation Confirmed | Agent | Workspace | Memory | |-------|-----------|--------| | Ceil (main) | `~/.openclaw/workspace/` | Separate `memory/` | | Neo | `~/.openclaw/workspace-neo/` | Separate `memory/` | - Dreaming config is shared (global), but workspace isolation means each agent's dreaming consolidates only its own memory signals - Each agent has its own `memory/.dreams/` directory ## Memory-Wiki — Separate Vaults ### Limitation Found `memory-wiki` plugin config is at `plugins.entries` (gateway level), NOT per-agent. This means: - One vault p
+
+
+---
+
+*April 12, 2026 at 9:22 PM*
+
+Reflections: Theme: `assistant` kept surfacing across 215 memories.; confidence: 0.83; evidence: memory/.dreams/session-corpus/2026-04-07.txt:2-2, memory/.dreams/session-corpus/2026-04-07.txt:4-4, memory/.dreams/session-corpus/2026-04-07.txt:5-5; note: reflection
+
+
+---
+
+*April 12, 2026 at 9:22 PM*
+
+- HOWEVER: Ceil and Neo have **separate workspaces** (see below), so dreaming consolidates each workspace's memory independently ## Workspace Isolation Confirmed | Agent | Workspace | Memory | |-------|-----------|--------| | Ceil (main) | `~/.openclaw/workspace/` | Separate `memory/` | | Neo | `~/.openclaw/workspace-neo/` | Separate `memory/` | - Dreaming config is shared (global), but workspace isolation means each agent's dreaming consolidates only its own memory signals - Each agent has its own `memory/.dreams/` directory ## Memory-Wiki — Separate Vaults ### Limitation Found `memory-wiki` plugin config is at `plugins.entries` (gateway level), NOT per-agent. This means: - One vault p
+
 <!-- openclaw:dreaming:diary:end -->
