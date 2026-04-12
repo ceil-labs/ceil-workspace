@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-09T20:24:18.471Z",
+  "updatedAt": "2026-04-12T02:12:41.443Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -6682,6 +6682,264 @@
         "the",
         "timezone",
         "settings"
+      ]
+    },
+    "memory:memory/2026-04-06.md:1:60": {
+      "key": "memory:memory/2026-04-06.md:1:60",
+      "path": "memory/2026-04-06.md",
+      "startLine": 1,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "# 2026-04-06 — OpenClaw 2026.4.5 Upgrade + Dreaming Enabled ## Summary Upgraded OpenClaw from 2026.4.1 to 2026.4.5. Configured and tested experimental dreaming feature for automatic memory consolidation. ## OpenClaw Upgrade ### Version - **From:** 2026.4.1 - **To:** 2026.4.5 ### Upgrade Steps 1. `npm update -g openclaw` 2. `openclaw doctor --fix` (migrated config, backup created) 3. `openclaw gateway restart` ### Config Migration - Doctor automatically fixed config - Backup saved: `~/.openclaw/openclaw.json.bak` - No deprecated settings found (clean upgrade) ## Dreaming Configuration (Experimental) ### What is Dreaming? Background memory consolidation system that moves strong short-te",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.4541037291288377,
+      "maxScore": 0.5133781969547272,
+      "firstRecalledAt": "2026-04-12T02:06:27.192Z",
+      "lastRecalledAt": "2026-04-12T02:12:38.607Z",
+      "queryHashes": [
+        "b1a812254815",
+        "3b2cdf3b87f1",
+        "065c0d3f5af3"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "backup",
+        "gateway",
+        "2026.4.5",
+        "2026.4.1",
+        "openclaw/openclaw.json.bak",
+        "short-te",
+        "openclaw",
+        "upgrade"
+      ]
+    },
+    "memory:memory/2026-04-10.md:1:27": {
+      "key": "memory:memory/2026-04-10.md:1:27",
+      "path": "memory/2026-04-10.md",
+      "startLine": 1,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: Session Start: Victor upgraded OpenClaw from 2026.4.5 → 2026.4.9 successfully; Had to remove `\"memory-lancedb\": { \"enabled\": false }` from config — even when disabled, app was looking for required properties - confidence: 0.00 - evidence: memory/2026-04-09.md:4-5 - recalls: 0 - status: staged - Candidate: Dreaming Config — Complete: Docs confirm only 2 user-facing settings exist: - confidence: 0.00 - evidence: memory/2026-04-09.md:10-10 - recalls: 0 - status: staged - Candidate: Dreaming Config — Complete: \"dreaming\": { \"enabled\": true, \"frequency\": \"0 3 * * *\" - confidence: 0.00 - evidence: memory/2026-04",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.9167348325252531,
+      "maxScore": 0.5006158679723739,
+      "firstRecalledAt": "2026-04-12T02:06:27.192Z",
+      "lastRecalledAt": "2026-04-12T02:12:41.443Z",
+      "queryHashes": [
+        "b1a812254815",
+        "3b2cdf3b87f1",
+        "065c0d3f5af3",
+        "13b21b3d178b"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "2026.4.5",
+        "2026.4.9",
+        "memory-lancedb",
+        "0.00",
+        "memory/2026-04-09.md",
+        "4-5",
+        "user-facing",
+        "10-10"
+      ]
+    },
+    "memory:memory/2026-04-07.md:1:53": {
+      "key": "memory:memory/2026-04-07.md:1:53",
+      "path": "memory/2026-04-07.md",
+      "startLine": 1,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "# 2026-04-07 — Dreaming Activated ## Summary Dreaming feature is now fully activated via slash command. Previous configuration-only approach didn't create the cron job; `/dreaming on` was required. ## Dreaming Activation ### What Was Missing - Config was set in `openclaw.json` (plugins.entries.memory-core.config.dreaming) - Gateway was restarted - **But**: No cron job was auto-created from config alone ### Solution Used slash command interface to enable: ``` /dreaming on ``` ### Confirmed Status ``` Dreaming status: • enabled: on • sweep cadence: 0 3 * * * (3:00 AM daily) • promotion policy: score>=0.8, recalls>=3, uniqueQueries>=3 Phases: • light -> REM -> deep (each sweep) • deep pha",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.969055140018463,
+      "maxScore": 0.49863009154796595,
+      "firstRecalledAt": "2026-04-12T02:06:27.192Z",
+      "lastRecalledAt": "2026-04-12T02:06:30.374Z",
+      "queryHashes": [
+        "b1a812254815",
+        "3b2cdf3b87f1"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "gateway",
+        "configuration-only",
+        "openclaw.json",
+        "auto-created",
+        "0.8",
+        "dreaming",
+        "activated",
+        "summary"
+      ]
+    },
+    "memory:memory/2026-04-02.md:1:55": {
+      "key": "memory:memory/2026-04-02.md:1:55",
+      "path": "memory/2026-04-02.md",
+      "startLine": 1,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "# 2026-04-02 — Daily Log ## Memory System Migration ### Problem - OpenClaw responses were slow (~60s delays) - Logs showed `Failed to save messages to Honcho: TimeoutError` - `memorySearch.multimodal` config error blocking startup ### Investigation - Honcho memory plugin was timing out on every message sync - QMD memory initialization failing due to multimodal embedding requirement - `memory-core` plugin was disabled ### Fixes Applied 1. **Uninstalled Honcho plugin** ```bash openclaw plugins uninstall openclaw-honcho ``` 2. **Disabled multimodal memory** (was causing provider adapter errors) - Set `agents.defaults.memorySearch.multimodal.enabled: false` - Set `agents.lis",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9533408492803572,
+      "maxScore": 0.48763136267662044,
+      "firstRecalledAt": "2026-04-12T02:06:27.192Z",
+      "lastRecalledAt": "2026-04-12T02:06:30.374Z",
+      "queryHashes": [
+        "b1a812254815",
+        "3b2cdf3b87f1"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "embedding",
+        "qmd",
+        "memorysearch.multimodal",
+        "memory-core",
+        "openclaw-honcho",
+        "agents.lis",
+        "log",
+        "system"
+      ]
+    },
+    "memory:memory/2026-04-10.md:58:94": {
+      "key": "memory:memory/2026-04-10.md:58:94",
+      "path": "memory/2026-04-10.md",
+      "startLine": 58,
+      "endLine": 94,
+      "source": "memory",
+      "snippet": "- Candidate: Proposed Setup (Ceil — main agent): \"memory-wiki\": { \"enabled\": true, \"config\": { \"vaultMode\": \"isolated\", - confidence: 0.00 - evidence: memory/2026-04-09.md:53-56 - recalls: 0 - status: staged - Candidate: Proposed Setup (Ceil — main agent): \"vault\": { \"path\": \"~/.openclaw/wiki/main\", \"renderMode\": \"obsidian\" - confidence: 0.00 - evidence: memory/2026-04-09.md:57-59 - recalls: 0 - status: staged - Candidate: Proposed Setup (Ceil — main agent): \"obsidian\": { \"enabled\": true, \"useOfficialCli\": true, \"vaultName\": \"Ceil Wiki\", - confidence: 0.00 - evidence: memory/2026-04-09.md:61-64 - recalls: 0 - status: staged - Candidate: Proposed Setup (Ceil — main age",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9429121851921081,
+      "maxScore": 0.49553541541099544,
+      "firstRecalledAt": "2026-04-12T02:06:30.374Z",
+      "lastRecalledAt": "2026-04-12T02:12:38.607Z",
+      "queryHashes": [
+        "3b2cdf3b87f1",
+        "065c0d3f5af3"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "memory-wiki",
+        "0.00",
+        "memory/2026-04-09.md",
+        "53-56",
+        "openclaw/wiki/main",
+        "57-59",
+        "61-64",
+        "candidate"
+      ]
+    },
+    "memory:memory/2026-04-10.md:113:143": {
+      "key": "memory:memory/2026-04-10.md:113:143",
+      "path": "memory/2026-04-10.md",
+      "startLine": 113,
+      "endLine": 143,
+      "source": "memory",
+      "snippet": "- Candidate: Next Steps (Pending Victor): Decide: try `{agentId}` templating workaround OR file feature request for per-agent vault paths; Enable memory-wiki for Ceil once vault setup is resolved; After Ceil is stable, add Neo to separate vault - confidence: 0.00 - evidence: memory/2026-04-09.md:101-103 - recalls: 0 - status: staged - Candidate: Summary: Dreaming feature is now fully activated via slash command. Previous configuration-only approach didn't create the cron job; `/dreaming on` was required. - confidence: 0.00 - evidence: memory/2026-04-07.md:4-4 - recalls: 0 - status: staged - Candidate: What Was Missing: Config was set in `openclaw.json` (plugins.entries.memory",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.425360268354416,
+      "maxScore": 0.4892267346382141,
+      "firstRecalledAt": "2026-04-12T02:06:30.374Z",
+      "lastRecalledAt": "2026-04-12T02:12:41.443Z",
+      "queryHashes": [
+        "3b2cdf3b87f1",
+        "065c0d3f5af3",
+        "13b21b3d178b"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "per-agent",
+        "memory-wiki",
+        "0.00",
+        "memory/2026-04-09.md",
+        "101-103",
+        "configuration-only",
+        "memory/2026-04-07.md",
+        "4-4"
+      ]
+    },
+    "memory:memory/2026-04-10.md:278:302": {
+      "key": "memory:memory/2026-04-10.md:278:302",
+      "path": "memory/2026-04-10.md",
+      "startLine": 278,
+      "endLine": 302,
+      "source": "memory",
+      "snippet": "- Candidate: Assistant: **Found the issue!** The logs show: ``` config change requires gateway restart (plugins.entries.memory-core.config.dreaming.enabled) ``` The dreaming config was detected but **requires a full gateway restart**, not just a `gateway restart` command. Let me check when th - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-07.txt:13-13 - recalls: 0 - status: staged - Candidate: Assistant: The gateway was restarted, but dreaming still isn't showing up. Let me check if there's an issue with the feature itself by looking at the plugin status: - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-07.txt:14-14 - recalls: 0 - sta",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.45932958424091336,
+      "maxScore": 0.45932958424091336,
+      "firstRecalledAt": "2026-04-12T02:12:38.607Z",
+      "lastRecalledAt": "2026-04-12T02:12:38.607Z",
+      "queryHashes": [
+        "065c0d3f5af3"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "gateway",
+        "0.00",
+        "13-13",
+        "14-14",
+        "candidate",
+        "assistant",
+        "found",
+        "the"
+      ]
+    },
+    "memory:memory/2026-04-10.md:88:117": {
+      "key": "memory:memory/2026-04-10.md:88:117",
+      "path": "memory/2026-04-10.md",
+      "startLine": 88,
+      "endLine": 117,
+      "source": "memory",
+      "snippet": "- Candidate: Proposed Setup (Ceil — main agent): \"ingest\": { \"autoCompile\": true, \"maxConcurrentJobs\": 1 - confidence: 0.00 - evidence: memory/2026-04-09.md:75-77 - recalls: 0 - status: staged - Candidate: Proposed Setup (Ceil — main agent): \"search\": { \"backend\": \"shared\", \"corpus\": \"all\" - confidence: 0.00 - evidence: memory/2026-04-09.md:79-81 - recalls: 0 - status: staged - Candidate: Proposed Setup (Ceil — main agent): \"render\": { \"preserveHumanBlocks\": true, \"createBacklinks\": true, \"createDashboards\": true - confidence: 0.00 - evidence: memory/2026-04-09.md:83-86 - recalls: 0 - status: staged - Candidate: Open Questions: Per-agent vault paths: feature gap — Vic",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4461959600448608,
+      "maxScore": 0.4461959600448608,
+      "firstRecalledAt": "2026-04-12T02:12:38.607Z",
+      "lastRecalledAt": "2026-04-12T02:12:38.607Z",
+      "queryHashes": [
+        "065c0d3f5af3"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "0.00",
+        "memory/2026-04-09.md",
+        "75-77",
+        "79-81",
+        "83-86",
+        "per-agent",
+        "candidate",
+        "proposed"
       ]
     }
   }
