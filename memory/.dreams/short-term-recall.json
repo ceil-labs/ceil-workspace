@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-12T02:12:41.443Z",
+  "updatedAt": "2026-04-12T02:24:07.767Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -6940,6 +6940,68 @@
         "per-agent",
         "candidate",
         "proposed"
+      ]
+    },
+    "memory:memory/2026-04-11.md:29:60": {
+      "key": "memory:memory/2026-04-11.md:29:60",
+      "path": "memory/2026-04-11.md",
+      "startLine": 29,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "## 2026-04-11 17:45 — n8n Subpath Fix Applied **Problem:** n8n UI displayed a plain white page at `/n8n/` because assets were requested from `/assets/...` instead of `/n8n/assets/...`. Nginx routed those to Rails, causing 404s. **Root cause:** Missing `N8N_PATH=/n8n/` environment variable. n8n didn't know it was deployed under a subpath. **Changes made:** - `docker-compose.yml` — Added `N8N_PATH=/n8n/`; wired `N8N_EDITOR_BASE_URL` to `.env` - `docker-compose.ghcr.yml` — Same fixes for production compose - `.env` — Changed `N8N_EDITOR_BASE_URL` to `https://srv1405873.tailcd23a1.ts.net:8444/n8n` - `nginx-proxy.conf` — Added redirect `/n8n` → `/n8n/` **Containers recreated:** `n8n` and `pro",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5608003959059715,
+      "maxScore": 0.5608003959059715,
+      "firstRecalledAt": "2026-04-12T02:24:07.767Z",
+      "lastRecalledAt": "2026-04-12T02:24:07.767Z",
+      "queryHashes": [
+        "502492490583"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "n8n/assets",
+        "n8n-path",
+        "docker-compose.yml",
+        "n8n-editor-base-url",
+        "docker-compose.ghcr.yml",
+        "srv1405873.tailcd23a1.ts.net",
+        "8444/n8n",
+        "nginx-proxy.conf"
+      ]
+    },
+    "memory:memory/2026-04-11.md:1:35": {
+      "key": "memory:memory/2026-04-11.md:1:35",
+      "path": "memory/2026-04-11.md",
+      "startLine": 1,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "## 2026-04-11 14:17 — Agent-Platform Progress **Continuing work on agent-platform from previous sessions.** ### Completed Today - Reviewed current project state: `docker-compose.yml` has full dev stack (app, postgres, redis, n8n, proxy) wired correctly - Reviewed `Dockerfile.dev` — clean and good to go (minor note: verify `ruby:4.0.2-slim` exists on Docker Hub) - Reviewed `nginx-proxy.conf` — routes `/`, `/n8n/`, `/n8n/webhook/` properly - Created `postgres-init-scripts/01-create-n8n-db.sql` to auto-create n8n database on first postgres startup - Updated both `docker-compose.yml` and `docker-compose.ghcr.yml` to mount the init script - Advised `--no-cache` build for this test run due to p",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5595777481794357,
+      "maxScore": 0.5595777481794357,
+      "firstRecalledAt": "2026-04-12T02:24:07.767Z",
+      "lastRecalledAt": "2026-04-12T02:24:07.767Z",
+      "queryHashes": [
+        "502492490583"
+      ],
+      "recallDays": [
+        "2026-04-12"
+      ],
+      "conceptTags": [
+        "agent-platform",
+        "docker-compose.yml",
+        "dockerfile.dev",
+        "4.0.2-slim",
+        "nginx-proxy.conf",
+        "n8n/webhook",
+        "auto-create",
+        "docker-compose.ghcr.yml"
       ]
     }
   }
