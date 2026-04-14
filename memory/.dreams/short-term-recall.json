@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-13T14:44:37.736Z",
+  "updatedAt": "2026-04-13T19:00:00.377Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -15,7 +15,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "84c029107fed"
       ],
@@ -48,7 +48,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "84c029107fed"
       ],
@@ -81,7 +81,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "84c029107fed"
       ],
@@ -112,7 +112,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "84c029107fed"
       ],
@@ -145,7 +145,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "84c029107fed"
       ],
@@ -178,7 +178,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "84c029107fed"
       ],
@@ -731,7 +731,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "87c77efd6245"
       ],
@@ -765,7 +765,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "87c77efd6245"
       ],
@@ -799,7 +799,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "87c77efd6245"
       ],
@@ -831,7 +831,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "87c77efd6245"
       ],
@@ -859,7 +859,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "87c77efd6245"
       ],
@@ -893,7 +893,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "87c77efd6245"
       ],
@@ -5215,7 +5215,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "b1f16f36272f"
       ],
@@ -5249,7 +5249,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "b1f16f36272f"
       ],
@@ -5278,7 +5278,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "b1f16f36272f"
       ],
@@ -5312,7 +5312,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "b1f16f36272f"
       ],
@@ -5346,7 +5346,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "b1f16f36272f"
       ],
@@ -5380,7 +5380,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "b1f16f36272f"
       ],
@@ -9131,7 +9131,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-12T19:00:00.534Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "ed3026e16517"
       ],
@@ -9164,7 +9164,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-12T19:00:00.534Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "ed3026e16517"
       ],
@@ -25905,14 +25905,14 @@
       "startLine": 415,
       "endLine": 415,
       "source": "memory",
-      "snippet": "2026-04-13 10:45 — Agent-Platform: Rails Auth Gate for n8n Implemented: **Goal achieved:** n8n UI/API is now accessible only to authenticated Rails users. Webhook paths remain open for external triggers.",
+      "snippet": "Reflections: No strong patterns surfaced.",
       "recallCount": 0,
       "dailyCount": 1,
       "groundedCount": 0,
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T05:22:33.340Z",
-      "lastRecalledAt": "2026-04-13T05:22:33.340Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -25920,14 +25920,10 @@
         "2026-04-13"
       ],
       "conceptTags": [
-        "agent-platform",
-        "ui/api",
-        "platform",
-        "rails",
-        "auth",
-        "gate",
-        "n8n",
-        "implemented"
+        "reflections",
+        "strong",
+        "patterns",
+        "surfaced"
       ]
     },
     "memory:memory/2026-04-13.md:419:419": {
@@ -32460,7 +32456,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -32491,7 +32487,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -32522,7 +32518,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -32553,7 +32549,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -32584,7 +32580,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -32615,7 +32611,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -32646,7 +32642,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -32674,7 +32670,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -32705,7 +32701,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -32736,7 +32732,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-13T14:22:32.681Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -33062,6 +33058,341 @@
         "across",
         "three",
         "hundred"
+      ]
+    },
+    "memory:memory/2026-04-13.md:418:420": {
+      "key": "memory:memory/2026-04-13.md:418:420",
+      "path": "memory/2026-04-13.md",
+      "startLine": 418,
+      "endLine": 420,
+      "source": "memory",
+      "snippet": "Possible Lasting Truths: - ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "queryHashes": [
+        "0dac2e09ca9b"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "possible",
+        "lasting",
+        "truths",
+        "dependabot",
+        "weekly",
+        "gem",
+        "actions",
+        "updates"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-13.txt:139:139": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:139:139",
+      "path": "memory/.dreams/session-corpus/2026-04-13.txt",
+      "startLine": 139,
+      "endLine": 139,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18238\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Mon 2026-04-13 22:27 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "queryHashes": [
+        "27426694d940"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-13.txt:140:140": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:140:140",
+      "path": "memory/.dreams/session-corpus/2026-04-13.txt",
+      "startLine": 140,
+      "endLine": 140,
+      "source": "memory",
+      "snippet": "Assistant: Upgrade looks clean. Gateway is running and RPC probe is `ok`. Here's what matters: ## ✅ Good - **Plugins:** 52 loaded, **0 errors** - **Channels:** Discord and Telegram both `ok` - **Gateway:** Active on `127.0.0.1:18789` - **Memory/active-memory:** Working, but emitt",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "queryHashes": [
+        "27426694d940"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "gateway",
+        "127.0.0.1",
+        "memory/active-memory",
+        "assistant",
+        "upgrade",
+        "looks",
+        "clean",
+        "running"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-13.txt:141:141": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:141:141",
+      "path": "memory/.dreams/session-corpus/2026-04-13.txt",
+      "startLine": 141,
+      "endLine": 141,
+      "source": "memory",
+      "snippet": "User: System (untrusted): [2026-04-13 22:28:47 GMT+8] Exec completed (young-co, code 0) :: narrative-rem-1776088392328 (35m ago) - agent:main:dreaming-narrative-light-1776088392328 (35m ago) - agent:main:dreaming-narrative-rem-1776088352473 (36m ago) [plugins] active-me… An async",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "queryHashes": [
+        "27426694d940"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "young-co",
+        "narrative-rem-1776088392328",
+        "active-me",
+        "user",
+        "system",
+        "untrusted",
+        "gmt",
+        "exec"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-13.txt:142:142": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:142:142",
+      "path": "memory/.dreams/session-corpus/2026-04-13.txt",
+      "startLine": 142,
+      "endLine": 142,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "queryHashes": [
+        "27426694d940"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-13.txt:143:143": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:143:143",
+      "path": "memory/.dreams/session-corpus/2026-04-13.txt",
+      "startLine": 143,
+      "endLine": 143,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18246\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Mon 2026-04-13 22:44 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "queryHashes": [
+        "27426694d940"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-13.txt:144:144": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:144:144",
+      "path": "memory/.dreams/session-corpus/2026-04-13.txt",
+      "startLine": 144,
+      "endLine": 144,
+      "source": "memory",
+      "snippet": "Assistant: Upgrade went smoothly — **no breakages**. **Gateway:** Running fine, RPC probe `ok` **Plugins:** 52 loaded, 0 errors **Channels:** Discord + Telegram both `ok` **Active-memory:** Working, but flagged a deprecation — `modelFallbackPolicy` is now ignored in favor of `mod",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "queryHashes": [
+        "27426694d940"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "gateway",
+        "active-memory",
+        "assistant",
+        "upgrade",
+        "went",
+        "smoothly",
+        "breakages",
+        "running"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-13.txt:145:145": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:145:145",
+      "path": "memory/.dreams/session-corpus/2026-04-13.txt",
+      "startLine": 145,
+      "endLine": 145,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18249\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Mon 2026-04-13 22:45 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "queryHashes": [
+        "27426694d940"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-13.txt:146:146": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:146:146",
+      "path": "memory/.dreams/session-corpus/2026-04-13.txt",
+      "startLine": 146,
+      "endLine": 146,
+      "source": "memory",
+      "snippet": "Assistant: Yes — it's already correct. The file currently has: ```json \"modelFallback\": \"opencode-go/minimax-m2.7\" ``` and `modelFallbackPolicy` is no longer present. So that deprecation warning should be cleared on the next run.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "queryHashes": [
+        "27426694d940"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "opencode-go/minimax-m2.7",
+        "assistant",
+        "yes",
+        "it's",
+        "already",
+        "correct",
+        "the",
+        "currently"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-13.txt:147:147": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:147:147",
+      "path": "memory/.dreams/session-corpus/2026-04-13.txt",
+      "startLine": 147,
+      "endLine": 147,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18253\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Mon 2026-04-13 22:46 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "queryHashes": [
+        "27426694d940"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-13.txt:148:148": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-13.txt:148:148",
+      "path": "memory/.dreams/session-corpus/2026-04-13.txt",
+      "startLine": 148,
+      "endLine": 148,
+      "source": "memory",
+      "snippet": "Assistant: Everything looks solid post-upgrade. **OpenClaw:** `2026.4.12` running, gateway active, up to date **Model:** `kimi/k2p5` with `opencode-go/minimax-m2.7` fallback **Channels:** Discord `ok`, Telegram `ok` **Active Memory:** `ok` — 17.2s recall, `full` mode, 220 chars *",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "queryHashes": [
+        "27426694d940"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "gateway",
+        "post-upgrade",
+        "2026.4.12",
+        "kimi/k2p5",
+        "opencode-go/minimax-m2.7",
+        "17.2s",
+        "assistant",
+        "everything"
       ]
     }
   }
