@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-13T19:00:00.377Z",
+  "updatedAt": "2026-04-14T09:18:14.725Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -7323,20 +7323,22 @@
       "endLine": 110,
       "source": "memory",
       "snippet": "**Status**: Documented in `karpathy-architecture-design.md`. Implementation pending. ## Commands Reference **Production Deploy:** ```bash cd ~/agent-platform git pull origin master docker compose -f docker-compose.ghcr.yml pull docker compose -f docker-compose.ghcr.yml up -d ``` **Local Dev:** ```bash cd ~/.openclaw/projects/agent-platform docker compose up -d ``` **Check Build Status:** ```bash gh run list --limit 3 ```",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.3119059973720764,
+      "totalScore": 2.83895160493891,
       "maxScore": 0.7706353324573588,
       "firstRecalledAt": "2026-04-12T11:13:30.487Z",
-      "lastRecalledAt": "2026-04-12T14:03:22.238Z",
+      "lastRecalledAt": "2026-04-14T09:15:26.830Z",
       "queryHashes": [
         "3325b29e4dbc",
         "d16046c294ff",
-        "2748a1d443a9"
+        "2748a1d443a9",
+        "cac7a1aba3fb"
       ],
       "recallDays": [
-        "2026-04-12"
+        "2026-04-12",
+        "2026-04-14"
       ],
       "conceptTags": [
         "karpathy-architecture-design.md",
@@ -7452,20 +7454,22 @@
       "endLine": 107,
       "source": "memory",
       "snippet": "- ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive config via environment",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.694171857441539,
+      "totalScore": 2.482274089754798,
       "maxScore": 0.9386655967937991,
       "firstRecalledAt": "2026-04-12T13:59:40.081Z",
-      "lastRecalledAt": "2026-04-13T03:45:33.842Z",
+      "lastRecalledAt": "2026-04-14T09:15:26.830Z",
       "queryHashes": [
         "d16046c294ff",
-        "09b7c59d651c"
+        "09b7c59d651c",
+        "cac7a1aba3fb"
       ],
       "recallDays": [
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "end-to-end",
@@ -17477,18 +17481,20 @@
       "endLine": 52,
       "source": "memory",
       "snippet": "2. **Rails auth gate for n8n** — Earlier plan to proxy `/n8n/` through Rails authentication still needs Victor's go-ahead and implementation. 4. **Commit status** — Ensure `nginx-proxy.conf` is committed to the `agent-platform` repo. A separate commit for `.gitignore` rules (SSH keys / HTB artifacts) was already made in `neo-workspace` by Neo. --- ## 2026-04-12 23:03 — Rails Auth Gate for n8n: Implemented **Decision:** Use nginx `auth_request` with a lightweight Rails session check endpoint (Approach 1). **Architecture:** ``` Browser → Tailscale → Nginx → auth_request /api/session/check ↓ Rails returns 200 or 401",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7794069362805186,
+      "totalScore": 1.332212510518819,
       "maxScore": 0.7794069362805186,
       "firstRecalledAt": "2026-04-13T03:22:16.399Z",
-      "lastRecalledAt": "2026-04-13T03:22:16.399Z",
+      "lastRecalledAt": "2026-04-14T09:15:26.173Z",
       "queryHashes": [
-        "8d240071253d"
+        "8d240071253d",
+        "29ccc9b3b2a5"
       ],
       "recallDays": [
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "go-ahead",
@@ -33393,6 +33399,323 @@
         "17.2s",
         "assistant",
         "everything"
+      ]
+    },
+    "memory:memory/2026-04-11.md:71:86": {
+      "key": "memory:memory/2026-04-11.md:71:86",
+      "path": "memory/2026-04-11.md",
+      "startLine": 71,
+      "endLine": 86,
+      "source": "memory",
+      "snippet": "**Context:** Neo (Telegram) experienced an LLM idle timeout on `kimi/k2p5` via the `kimi-coding` provider. After ~60s, OpenClaw auto-fallback to `minimax-m2.7` successfully. Model was later reset to `kimi/k2p5`. **Investigation:** - Confirmed via `openclaw logs` — primary profile `kimi-coding:default` hit `LLM idle timeout (60s)`, HTTP 408. - OpenClaw GitHub repo search revealed **Issue #55065** (no idle timeout mechanism) plus transient kimi-coding provider latency issues. - Victor confirmed he's on OpenClaw **v4.9** and the tool-call format bug is already resolved in this version. **Current Assessment:** - Only symptom observed is the **60s idle timeout** — likely transient provider-side",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.6542318735634025,
+      "maxScore": 0.6542318735634025,
+      "firstRecalledAt": "2026-04-14T03:15:47.633Z",
+      "lastRecalledAt": "2026-04-14T03:15:47.633Z",
+      "queryHashes": [
+        "80abc314aba1"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "kimi/k2p5",
+        "kimi-coding",
+        "auto-fallback",
+        "minimax-m2.7",
+        "v4.9",
+        "tool-call",
+        "provider-side",
+        "context"
+      ]
+    },
+    "memory:memory/2026-04-13.md:1:19": {
+      "key": "memory:memory/2026-04-13.md:1:19",
+      "path": "memory/2026-04-13.md",
+      "startLine": 1,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "--- **[2026-04-13 10:11 PM +08]** GHCR production deployment preparation — stopped dev stack, ready for next-session testing. - **Progress:** Development docker compose stack (`agent-platform-app-1`, `agent-platform-proxy-1`, etc.) has been stopped to free port 3000 for GHCR production testing. - **Context reviewed:** `docker-compose.ghcr.yml`, `.env.production`, `Dockerfile`, `nginx-proxy.conf`, GHCR workflow, and deployment docs are all up-to-date on `master` with n8n integration and Rails auth gating. - **Port 3000 collision resolved:** Dev stack down; Tailscale serve (`https://srv1405873.tailcd23a1.ts.net:8444`) already points to `localhost:3000`, so GHCR prod can start with zero Tailsc",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.4473725469724696,
+      "maxScore": 0.830117573826127,
+      "firstRecalledAt": "2026-04-14T09:14:32.214Z",
+      "lastRecalledAt": "2026-04-14T09:18:14.725Z",
+      "queryHashes": [
+        "d982f51c3239",
+        "cac7a1aba3fb",
+        "7b99e526f8a2"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "next-session",
+        "agent-platform-app-1",
+        "agent-platform-proxy-1",
+        "docker-compose.ghcr.yml",
+        "env.production",
+        "nginx-proxy.conf",
+        "up-to-date",
+        "srv1405873.tailcd23a1.ts.net"
+      ]
+    },
+    "memory:memory/2026-04-03.md:31:73": {
+      "key": "memory:memory/2026-04-03.md:31:73",
+      "path": "memory/2026-04-03.md",
+      "startLine": 31,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "- Multi-platform builds with Docker Buildx - Caching via GitHub Actions cache - Image tags: `master`, semver, and SHA **Deployment Options Now Available:** | Method | Use Case | Command | |--------|----------|---------| | **GHCR (Recommended)** | Users deploying production | `docker compose -f docker-compose.ghcr.yml up -d` | | **Build Locally** | Custom builds/development | `docker compose -f docker-compose.prod.yml up --build` | | **Development** | Local development with hot-reload | `docker compose up` | ### Documentation Cleanup **Removed:** - `TEST_PLAN.md` — Implementation complete, no longer needed **Updated:** - `ARCHITECTURE.md` — Documented GHCR as recommended deployment metho",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.099806317329564,
+      "maxScore": 0.8018494590097061,
+      "firstRecalledAt": "2026-04-14T09:14:32.214Z",
+      "lastRecalledAt": "2026-04-14T09:18:14.725Z",
+      "queryHashes": [
+        "d982f51c3239",
+        "cac7a1aba3fb",
+        "7b99e526f8a2"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "multi-platform",
+        "docker-compose.ghcr.yml",
+        "builds/development",
+        "docker-compose.prod.yml",
+        "hot-reload",
+        "test-plan.md",
+        "architecture.md",
+        "multi"
+      ]
+    },
+    "memory:memory/2026-04-13.md:31:54": {
+      "key": "memory:memory/2026-04-13.md:31:54",
+      "path": "memory/2026-04-13.md",
+      "startLine": 31,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "9. **If switching back to dev later:** `docker compose -f docker-compose.ghcr.yml down` → restart dev stack as `openclaw` user. ## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: **[2026-04-13 10:11 PM +08]** GHCR production deployment preparation — stopped dev stack, ready for next-session testing. - confidence: 0.00 - evidence: memory/2026-04-13.md:3-3 - recalls: 0 - status: staged - Candidate: **Progress:** Development docker compose stack (`agent-platform-app-1`, `agent-platform-proxy-1`, etc.) has been stopped to free port 3000 for GHCR production testing.; **Context reviewed:** `docker-compose.ghcr.yml`, `.env.production`, `Dockerfile`, `nginx-proxy.conf`, GHCR",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.3770204633632237,
+      "maxScore": 0.7975103806481845,
+      "firstRecalledAt": "2026-04-14T09:14:32.214Z",
+      "lastRecalledAt": "2026-04-14T09:18:14.725Z",
+      "queryHashes": [
+        "d982f51c3239",
+        "cac7a1aba3fb",
+        "7b99e526f8a2"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "docker-compose.ghcr.yml",
+        "next-session",
+        "0.00",
+        "memory/2026-04-13.md",
+        "3-3",
+        "agent-platform-app-1",
+        "agent-platform-proxy-1",
+        "env.production"
+      ]
+    },
+    "memory:memory/2026-04-13.md:418:419": {
+      "key": "memory:memory/2026-04-13.md:418:419",
+      "path": "memory/2026-04-13.md",
+      "startLine": 418,
+      "endLine": 419,
+      "source": "memory",
+      "snippet": "- - ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive config via environment [",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7929399197398397,
+      "maxScore": 0.7929399197398397,
+      "firstRecalledAt": "2026-04-14T09:14:32.214Z",
+      "lastRecalledAt": "2026-04-14T09:14:32.214Z",
+      "queryHashes": [
+        "d982f51c3239"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "end-to-end",
+        "docker-compose.ghcr.yml",
+        "first-time",
+        "dependabot",
+        "weekly",
+        "gem",
+        "actions",
+        "updates"
+      ]
+    },
+    "memory:memory/2026-04-14.md:416:417": {
+      "key": "memory:memory/2026-04-14.md:416:417",
+      "path": "memory/2026-04-14.md",
+      "startLine": 416,
+      "endLine": 417,
+      "source": "memory",
+      "snippet": "- - ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive config via environment [",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7929399197398397,
+      "maxScore": 0.7929399197398397,
+      "firstRecalledAt": "2026-04-14T09:14:32.214Z",
+      "lastRecalledAt": "2026-04-14T09:14:32.214Z",
+      "queryHashes": [
+        "d982f51c3239"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "end-to-end",
+        "docker-compose.ghcr.yml",
+        "first-time",
+        "dependabot",
+        "weekly",
+        "gem",
+        "actions",
+        "updates"
+      ]
+    },
+    "memory:memory/2026-04-13.md:252:281": {
+      "key": "memory:memory/2026-04-13.md:252:281",
+      "path": "memory/2026-04-13.md",
+      "startLine": 252,
+      "endLine": 281,
+      "source": "memory",
+      "snippet": "- evidence: memory/2026-04-10.md:454-454 - recalls: 0 - status: staged - Candidate: Changes Made: `app/views/dashboard/index.html.erb`: added \"Open n8n\" button in Quick Actions card - confidence: 0.00 - evidence: memory/2026-04-13.md:355-355 - recalls: 0 - status: staged - Candidate: Changes Made: **2. Nginx — `auth_request` Auth Layer** - confidence: 0.00 - evidence: memory/2026-04-13.md:315-315 - recalls: 0 - status: staged - Candidate: Changes Made: WebSocket support preserved for n8n UI; Webhook routes (`/n8n/webhook/` and `/n8n/webhook-test/`) remain completely unprotected; Cache-busting and `absolute_redirect off` retained from earlier fixes - confidence: 0.00",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8006578304743746,
+      "maxScore": 0.8006578304743746,
+      "firstRecalledAt": "2026-04-14T09:15:26.173Z",
+      "lastRecalledAt": "2026-04-14T09:15:26.173Z",
+      "queryHashes": [
+        "29ccc9b3b2a5"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "memory/2026-04-10.md",
+        "454-454",
+        "0.00",
+        "memory/2026-04-13.md",
+        "355-355",
+        "auth-request",
+        "315-315",
+        "n8n/webhook"
+      ]
+    },
+    "memory:memory/2026-04-03.md:1:39": {
+      "key": "memory:memory/2026-04-03.md:1:39",
+      "path": "memory/2026-04-03.md",
+      "startLine": 1,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "# 2026-04-03 — Daily Log ## Agent Platform — CI/CD & Production Deployment Setup ### Morning: CI Fixes **Problem:** CI workflow was failing with 19 RuboCop offenses and system-test job errors. **Actions Taken:** 1. **Fixed lint violations** — Ran `bin/rubocop -a` to auto-fix 19 offenses in test files 2. **Disabled system-test job** — Commented out in `.github/workflows/ci.yml` since no Capybara tests exist yet 3. **Cleaned up cache files** — Added `.cache` to `.gitignore` and removed cached files from git 4. **Fixed branch mismatch** — Updated CI to run on `master` (repo uses master, not main) **Result:** All CI jobs now passing (scan_ruby, scan_js, lint, test) ### Afternoon: GHCR (Git",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8180051723185167,
+      "maxScore": 0.8180051723185167,
+      "firstRecalledAt": "2026-04-14T09:15:26.830Z",
+      "lastRecalledAt": "2026-04-14T09:15:26.830Z",
+      "queryHashes": [
+        "cac7a1aba3fb"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "ci/cd",
+        "system-test",
+        "bin/rubocop",
+        "auto-fix",
+        "github/workflows/ci.yml",
+        "scan-ruby",
+        "scan-js",
+        "log"
+      ]
+    },
+    "memory:memory/2026-04-04.md:1:29": {
+      "key": "memory:memory/2026-04-04.md:1:29",
+      "path": "memory/2026-04-04.md",
+      "startLine": 1,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "# 2026-04-04 — Agent Platform Deployment & Dev Environment Fixes ## Summary Production GHCR deployment working. Local dev environment fixed. Redis/solid_cache migration completed. n8n configured with single-port proxy. Key insight: memory grows from both what you save AND what you ask (bidirectional growth concept documented). ## What We Did ### 1. Production Docker Deployment (GHCR) ✅ - **Problem**: `solid_cache_entries` table missing, multi-database setup too complex - **Solution**: Migrated to Redis for cache + Action Cable, single database - Added `redis` gem to Gemfile - Updated `production.rb`: Redis cache store, inline jobs during precompile - Updated `cable.yml`: Redis adapt",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7899943279393709,
+      "maxScore": 0.7899943279393709,
+      "firstRecalledAt": "2026-04-14T09:15:26.830Z",
+      "lastRecalledAt": "2026-04-14T09:15:26.830Z",
+      "queryHashes": [
+        "cac7a1aba3fb"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "redis/solid-cache",
+        "single-port",
+        "solid-cache-entries",
+        "multi-database",
+        "production.rb",
+        "cable.yml",
+        "platform",
+        "deployment"
+      ]
+    },
+    "memory:memory/2026-04-14.md:1:26": {
+      "key": "memory:memory/2026-04-14.md:1:26",
+      "path": "memory/2026-04-14.md",
+      "startLine": 1,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: Reflections: No strong patterns surfaced. - confidence: 0.62 - evidence: memory/2026-04-13.md:415-415 - recalls: 0 - status: staged - Candidate: **[2026-04-13 10:11 PM +08]** GHCR production deployment preparation — stopped dev stack, ready for next-session testing. - confidence: 0.62 - evidence: memory/2026-04-13.md:3-3 - recalls: 0 - status: staged - Candidate: **Progress:** Development docker compose stack (`agent-platform-app-1`, `agent-platform-proxy-1`, etc.) has been stopped to free port 3000 for GHCR production testing.; **Context reviewed:** `docker-compose.ghcr.yml`, `.env.production`, `Dockerfile`,",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.57922716163022,
+      "maxScore": 0.7911834550045833,
+      "firstRecalledAt": "2026-04-14T09:15:26.830Z",
+      "lastRecalledAt": "2026-04-14T09:18:14.725Z",
+      "queryHashes": [
+        "cac7a1aba3fb",
+        "7b99e526f8a2"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "0.62",
+        "memory/2026-04-13.md",
+        "415-415",
+        "next-session",
+        "3-3",
+        "agent-platform-app-1",
+        "agent-platform-proxy-1",
+        "docker-compose.ghcr.yml"
       ]
     }
   }
