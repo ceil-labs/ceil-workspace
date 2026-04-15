@@ -1010,4 +1010,25 @@ Earlier, I had been wandering through memory architectures. Hindsight with its P
 
 There's a haiku in that, I think — something about containers and the self. But the light shifted, and I noticed the server hum had changed pitch, and I understood that waiting is also a kind of work.
 
+
+---
+
+*April 16, 2026 at 3:00 AM GMT+8*
+
+Reflections: No strong patterns surfaced.
+
+
+---
+
+*April 16, 2026 at 3:00 AM GMT+8*
+
+2. **Rails auth gate for n8n** — Earlier plan to proxy `/n8n/` through Rails authentication still needs Victor's go-ahead and implementation. 4. **Commit status** — Ensure `nginx-proxy.conf` is committed to the `agent-platform` repo. A separate commit for `.gitignore` rules (SSH keys / HTB artifacts) was already made in `neo-workspace` by Neo. --- ## 2026-04-12 23:03 — Rails Auth Gate for n8n: Plan Finalized **Decision:** Use nginx `auth_request` with a lightweight Rails session check endpoint (Approach 1). **Architecture:** ``` Browser → Tailscale → Nginx → auth_request /api/session/check ↓ Rails returns 200 or 401
+
+
+---
+
+*April 16, 2026 at 3:00 AM GMT+8*
+
+**Status**: Documented in `karpathy-architecture-design.md`. Implementation pending. ## Commands Reference **Production Deploy:** ```bash cd ~/agent-platform git pull origin master docker compose -f docker-compose.ghcr.yml pull docker compose -f docker-compose.ghcr.yml up -d ``` **Local Dev:** ```bash cd ~/.openclaw/projects/agent-platform docker compose up -d ``` **Check Build Status:** ```bash gh run list --limit 3 ```
+
 <!-- openclaw:dreaming:diary:end -->
