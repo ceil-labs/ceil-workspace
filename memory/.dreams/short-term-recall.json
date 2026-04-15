@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-14T09:18:14.725Z",
+  "updatedAt": "2026-04-14T19:00:00.748Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -15,14 +15,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "84c029107fed"
       ],
       "recallDays": [
         "2026-04-09",
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "2026.4.5",
@@ -48,14 +49,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "84c029107fed"
       ],
       "recallDays": [
         "2026-04-09",
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "user-facing",
@@ -81,14 +83,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "84c029107fed"
       ],
       "recallDays": [
         "2026-04-09",
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "dreaming",
@@ -112,14 +115,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "84c029107fed"
       ],
       "recallDays": [
         "2026-04-09",
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "light/deep/rem",
@@ -145,14 +149,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "84c029107fed"
       ],
       "recallDays": [
         "2026-04-09",
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "gateway",
@@ -178,14 +183,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "84c029107fed"
       ],
       "recallDays": [
         "2026-04-09",
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "gateway",
@@ -731,7 +737,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "87c77efd6245"
       ],
@@ -739,7 +745,8 @@
         "2026-04-07",
         "2026-04-09",
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "configuration-only",
@@ -765,7 +772,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "87c77efd6245"
       ],
@@ -773,7 +780,8 @@
         "2026-04-07",
         "2026-04-09",
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "gateway",
@@ -799,7 +807,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "87c77efd6245"
       ],
@@ -807,7 +815,8 @@
         "2026-04-07",
         "2026-04-09",
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "solution",
@@ -831,7 +840,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "87c77efd6245"
       ],
@@ -839,7 +848,8 @@
         "2026-04-07",
         "2026-04-09",
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "solution",
@@ -859,7 +869,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "87c77efd6245"
       ],
@@ -867,7 +877,8 @@
         "2026-04-07",
         "2026-04-09",
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "0.8",
@@ -893,7 +904,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-09T20:24:08.958Z",
-      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "87c77efd6245"
       ],
@@ -901,7 +912,8 @@
         "2026-04-07",
         "2026-04-09",
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "memory.md",
@@ -7453,7 +7465,7 @@
       "startLine": 67,
       "endLine": 107,
       "source": "memory",
-      "snippet": "- ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive config via environment",
+      "snippet": "- ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive config via environment variables (DATABASE_URL, SECRET_KEY_BASE) --- ## Agent Memory Tools Research ### Context Victor is evaluating memory tools for the agent-platform project. Requirements: self-hosted, n8n integration, multi-agent shared memory, open-source preference. ### Tools Researched **1. Hindsight** - MIT license, multi-strategy retrieval (semantic + BM25 + graph + temporal) - Requires PostgreSQL + pgvector - **Finding:** Primarily semantic search; BM25+ requires specific backends **2. OpenViking** - Apache 2.0, tiered loading (L0/L1/L2), filesystem paradigm - Closest architectural match to Karpathy's approach - Requires Go 1.22+, C++ toolchain, VLM + embedding model **3. ByteRover** - Elastic License v2, context tree as Markdown files - Agentic Search (LLM-navigated, not vector-based) - CLI-first, zero infrastructure, MCP server available **4. Memary**",
       "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
@@ -7480,7 +7492,8 @@
         "gem",
         "actions",
         "updates"
-      ]
+      ],
+      "promotedAt": "2026-04-14T19:00:00.748Z"
     },
     "memory:memory/2026-04-11.md:56:82": {
       "key": "memory:memory/2026-04-11.md:56:82",
@@ -8282,13 +8295,14 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-12T19:00:00.534Z",
-      "lastRecalledAt": "2026-04-12T19:00:00.534Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "2213b71c3c98"
       ],
       "recallDays": [
         "2026-04-11",
-        "2026-04-12"
+        "2026-04-12",
+        "2026-04-14"
       ],
       "conceptTags": [
         "agent-platform",
@@ -8311,13 +8325,14 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-12T19:00:00.534Z",
-      "lastRecalledAt": "2026-04-12T19:00:00.534Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "2213b71c3c98"
       ],
       "recallDays": [
         "2026-04-11",
-        "2026-04-12"
+        "2026-04-12",
+        "2026-04-14"
       ],
       "conceptTags": [
         "docker-compose.yml",
@@ -8343,13 +8358,14 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-12T19:00:00.534Z",
-      "lastRecalledAt": "2026-04-12T19:00:00.534Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "2213b71c3c98"
       ],
       "recallDays": [
         "2026-04-11",
-        "2026-04-12"
+        "2026-04-12",
+        "2026-04-14"
       ],
       "conceptTags": [
         "docker-compose.yml",
@@ -8375,13 +8391,14 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-12T19:00:00.534Z",
-      "lastRecalledAt": "2026-04-12T19:00:00.534Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "2213b71c3c98"
       ],
       "recallDays": [
         "2026-04-11",
-        "2026-04-12"
+        "2026-04-12",
+        "2026-04-14"
       ],
       "conceptTags": [
         "no-cache",
@@ -8407,13 +8424,14 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-12T19:00:00.534Z",
-      "lastRecalledAt": "2026-04-12T19:00:00.534Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "2213b71c3c98"
       ],
       "recallDays": [
         "2026-04-11",
-        "2026-04-12"
+        "2026-04-12",
+        "2026-04-14"
       ],
       "conceptTags": [
         "auto-created",
@@ -8439,13 +8457,14 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-12T19:00:00.534Z",
-      "lastRecalledAt": "2026-04-12T19:00:00.534Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "2213b71c3c98"
       ],
       "recallDays": [
         "2026-04-11",
-        "2026-04-12"
+        "2026-04-12",
+        "2026-04-14"
       ],
       "conceptTags": [
         "docker-compose.yml",
@@ -9135,14 +9154,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-12T19:00:00.534Z",
-      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "ed3026e16517"
       ],
       "recallDays": [
         "2026-04-10",
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "0.85",
@@ -9168,14 +9188,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-12T19:00:00.534Z",
-      "lastRecalledAt": "2026-04-13T19:00:00.377Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
       "queryHashes": [
         "ed3026e16517"
       ],
       "recallDays": [
         "2026-04-10",
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-14"
       ],
       "conceptTags": [
         "possible",
@@ -33716,6 +33737,1738 @@
         "agent-platform-app-1",
         "agent-platform-proxy-1",
         "docker-compose.ghcr.yml"
+      ]
+    },
+    "memory:memory/2026-04-14.md:413:413": {
+      "key": "memory:memory/2026-04-14.md:413:413",
+      "path": "memory/2026-04-14.md",
+      "startLine": 413,
+      "endLine": 413,
+      "source": "memory",
+      "snippet": "Reflections: No strong patterns surfaced.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "11d1361acb2d"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "reflections",
+        "strong",
+        "patterns",
+        "surfaced"
+      ]
+    },
+    "memory:memory/2026-04-14.md:416:418": {
+      "key": "memory:memory/2026-04-14.md:416:418",
+      "path": "memory/2026-04-14.md",
+      "startLine": 416,
+      "endLine": 418,
+      "source": "memory",
+      "snippet": "Possible Lasting Truths: - ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "11d1361acb2d"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "possible",
+        "lasting",
+        "truths",
+        "dependabot",
+        "weekly",
+        "gem",
+        "actions",
+        "updates"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [cron:e1793498-dcfd-42e0-95f7-7ddd8c9049ce ProTek 08:05 Morning Trends] Use the protek-fsm-analyzer skill to run: /fsm check --8am Current time: Tuesday, April 14th, 2026 - 8:05 AM (Asia/Manila) / 2026-04-14 00:05 UTC Return your summary as plain text; it will be delivered",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron:e1793498",
+        "dcfd",
+        "42e0",
+        "95f7",
+        "7ddd8c9049ce"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-14 08:06 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…6b5f session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "tue",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: **8AM Morning Trends Report — Tuesday, April 14, 2026** --- 📊 **Protek FSM Report** (2026-04-14 08:06 HKT) 📈 Company-wide: 0/1181 completed (0.0%) ⏳ Pending: 942 | 🔄 RPR: 1 📊 **8AM Week Trend** (Actionable PRs) • Today: **942** actionable • Yesterday 8AM: 938 (↑0.4",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "0/1181",
+        "0.0",
+        "0.4",
+        "assistant",
+        "8am",
+        "morning",
+        "trends"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: 📊 **Protek FSM Report** (2026-04-14 08:06 HKT) 📈 Company-wide: 0/1181 completed (0.0%) ⏳ Pending: 942 | 🔄 RPR: 1 📊 **8AM Week Trend** (Actionable PRs) • Today: **942** actionable • Yesterday 8AM: 938 (↑0.4%) • 7-day avg: 833 • Trend: 📈 +13.1% vs avg • Daily: Tue:7",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "0/1181",
+        "0.0",
+        "0.4",
+        "7-day",
+        "13.1",
+        "assistant",
+        "protek"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: 📊 **Protek FSM Report** (2026-04-14 10:05 HKT) 📈 Company-wide: 7/1267 completed (0.6%) ⏳ Pending: 941 | 🔄 RPR: 8 📈 **Today's Progress** (Check 2) Comparing 10:05 AM vs 08:05 AM • Completed: +7 • Pending: -1 • RPR: +7 • Pace: 🐢 slow ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "7/1267",
+        "0.6",
+        "assistant",
+        "protek",
+        "fsm",
+        "report",
+        "hkt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "User: [cron:3a96b336-0929-403a-a231-0828a6aa496d ProTek 07:05 Morning Cleanup] Use the protek-fsm-analyzer skill to run: /fsm check --cleanup Current time: Tuesday, April 14th, 2026 - 7:05 AM (Asia/Manila) / 2026-04-13 23:05 UTC Return your summary as plain text; it will be deliv",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron",
+        "3a96b336",
+        "403a",
+        "a231",
+        "0828a6aa496d"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: **Protek FSM Morning Cleanup Report — Apr 14, 2026 · 07:05 HKT** **🧹 Cleanup:** Removed 1 old data folder (2026-03-29) — 5 MB freed --- **📊 Company Status** - Total: 1,168 assigned | Completed: 0 (0.0%) | Pending: 948 | RPR: 0 **🔴 All 9 zones at 0% completion** — ex",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "0.0",
+        "assistant",
+        "protek",
+        "fsm",
+        "morning",
+        "cleanup",
+        "report",
+        "apr"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-14 08:05 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the protek-fsm-analyzer skill with the command: /fsm check --8am This is the 8AM morning tre",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "protek-fsm-analyzer",
+        "user",
+        "tue",
+        "gmt",
+        "subagent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: Now let me send the report to the Telegram channel:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "assistant",
+        "now",
+        "let",
+        "send",
+        "the",
+        "report",
+        "telegram",
+        "channel"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: **8AM Morning Trends Report — Tuesday, April 14, 2026** --- 📊 **Protek FSM Report** (2026-04-14 08:06 HKT) 📈 Company-wide: 0/1181 completed (0.0%) ⏳ Pending: 942 | 🔄 RPR: 1 📊 **8AM Week Trend** (Actionable PRs) • Today: **942** actionable • Yesterday 8AM: 938 (↑0.4",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "0/1181",
+        "0.0",
+        "0.4",
+        "assistant",
+        "8am",
+        "morning",
+        "trends"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-14 16:05 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM analyzer command: /fsm check --facility This should fetch the summary data, c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "tue",
+        "gmt",
+        "subagent",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: Now let me also fetch the facility RPR breakdown data:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "assistant",
+        "now",
+        "let",
+        "fetch",
+        "the",
+        "facility",
+        "rpr",
+        "breakdown"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: Now I have all the data. Here's the complete report: --- ## 📊 Protek FSM Report — April 14, 2026 (4:06 PM HKT) ### Overall Summary | Metric | Value | |--------|-------| | **Total PRs** | 1,527 | | **Completed** | 269 | | **Pending** | 594 | | **RPR Total** | 91 | ---",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "assistant",
+        "now",
+        "all",
+        "the",
+        "data",
+        "here's",
+        "complete",
+        "report"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "User: [media attached: /home/openclaw/.openclaw/media/inbound/file_251---42610a78-69f6-494c-a586-5f64732e4b5e.jpg (image/jpeg) | /home/openclaw/.openclaw/media/inbound/file_251---42610a78-69f6-494c-a586-5f64732e4b5e.jpg] To send an image back, prefer the message tool (media/path/",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "home/openclaw",
+        "openclaw/media/inbound/file-251",
+        "image/jpeg",
+        "media/path",
+        "user",
+        "media",
+        "attached",
+        "home"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-14 11:15 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…841c session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "tue",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: Here's what the research turned up. ## Proposal: K2.6-code-preview Configuration ### The Situation **K2.6-code-preview has not been officially released yet** (as of April 14, 2026). Rumors from the last 24–48 hours say it's **imminent** — a code-focused fine-tune over",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "k2.6-code-preview",
+        "code-focused",
+        "fine-tune",
+        "assistant",
+        "here's",
+        "what",
+        "the",
+        "research"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18273\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Tue 2026-04-14 11:24 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: It's already in your config — no edit needed. In `~/.openclaw/openclaw.json`, under `models.providers.kimi-coding.models[]`, the entry exists: ```json { \"id\": \"k2.6-code-preview\", \"name\": \"Kimi K2.6 Code Preview\", \"reasoning\": true, \"input\": [\"text\", \"image\"], \"cost\":",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "openclaw/openclaw.json",
+        "k2.6-code-preview",
+        "k2.6",
+        "assistant",
+        "it's",
+        "already",
+        "your",
+        "config"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "User: [Queued messages while agent was busy] --- Queued #1 Conversation info (untrusted metadata): ```json { \"message_id\": \"18271\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Tue 2026-04-14 11:16 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"l",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "queued",
+        "messages",
+        "while",
+        "was",
+        "busy"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: The research completed successfully — I already summarized the findings above. Here's the short version: - **K2.6-code-preview isn't officially released yet** (as of today), but rumors say it's imminent - **Your existing `kimi-coding` API key and endpoint** will likely",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "k2.6-code-preview",
+        "kimi-coding",
+        "assistant",
+        "the",
+        "research",
+        "completed",
+        "successfully",
+        "already"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: The research completed successfully — I already summarized the findings above. Here's the short version: - **K2.6-code-preview isn't officially released yet** (as of today), but rumors say it's imminent - **Your existing `kimi-coding` API key and endpoint** will likely",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "k2.6-code-preview",
+        "kimi-coding",
+        "assistant",
+        "the",
+        "research",
+        "completed",
+        "successfully",
+        "already"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18279\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Tue 2026-04-14 11:29 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: It failed immediately: ``` model not allowed: kimi/k2.6-code-preview ``` **The Kimi Coding API rejected the model ID.** This confirms K2.6-code-preview isn't live on the `api.kimi.com/coding/` endpoint yet — it's still coming. Your config is ready; we'll just need to w",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "kimi/k2.6-code-preview",
+        "k2.6-code-preview",
+        "api.kimi.com/coding",
+        "assistant",
+        "failed",
+        "immediately",
+        "model",
+        "not"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18283\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Tue 2026-04-14 11:32 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: Still rejected: ``` model not allowed: kimi/k2p6 ``` The Kimi Coding API doesn't recognize `k2p6` yet either. The model genuinely isn't available on their endpoint — no matter what alias we use locally, the upstream API rejects it. Your config is clean and ready. We'll",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "kimi/k2p6",
+        "assistant",
+        "still",
+        "rejected",
+        "model",
+        "not",
+        "allowed",
+        "kimi"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "User: A new session was started via /new or /reset. If runtime-provided startup context is included for this first turn, use it before responding to the user. Then greet the user in your configured persona, if one is provided. Be yourself - use your defined voice, mannerisms, and",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "runtime-provided",
+        "user",
+        "new",
+        "was",
+        "started",
+        "via",
+        "reset",
+        "runtime"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: Hey Victor 🌌 I'm back online. I see we left the GHCR production deployment queued up for testing, and the n8n auth gate is solid. What's on your mind today?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "assistant",
+        "hey",
+        "victor",
+        "i'm",
+        "back",
+        "online",
+        "see",
+        "left"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18303\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Tue 2026-04-14 17:14 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18303\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Tue 2026-04-14 17:14 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: Here's the full picture of where we are and how we got here: --- ## 📜 History (How We Got Here) **Apr 3** — Set up the GHCR deployment pipeline: - Created `docker-compose.ghcr.yml` (pulls pre-built images from GHCR instead of building locally) - GitHub Actions builds",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "docker-compose.ghcr.yml",
+        "pre-built",
+        "assistant",
+        "here's",
+        "the",
+        "full",
+        "picture",
+        "where"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "User: [cron:c5c9902a-9717-4f49-bf11-1fa246f921b4 ProTek 16:05 Late Afternoon] Use the protek-fsm-analyzer skill to run: /fsm check --facility Current time: Tuesday, April 14th, 2026 - 4:05 PM (Asia/Manila) / 2026-04-14 08:05 UTC Return your summary as plain text; it will be deliv",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron:c5c9902a",
+        "4f49",
+        "bf11",
+        "1fa246f921b4",
+        "protek"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-14 16:08 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…c2e8 session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "tue",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: 📊 **Protek FSM Report — April 14, 2026 (4:06 PM HKT)** **Overall Summary** | Metric | Value | |--------|-------| | Total PRs | 1,527 | | Completed | 269 | | Pending | 594 | | RPR Total | 91 | **Zone Performance** | Zone | Total | Done | Pending | RPR | Completion Rate",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "assistant",
+        "protek",
+        "fsm",
+        "report",
+        "april",
+        "hkt",
+        "overall",
+        "summary"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-14 11:12 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Research the new Kimi model **K2.6-code-preview** for OpenClaw configuration. The user currently",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "k2.6-code-preview",
+        "user",
+        "tue",
+        "gmt",
+        "subagent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: Now let me check Victor's current config to understand his exact setup:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "assistant",
+        "now",
+        "let",
+        "check",
+        "victor's",
+        "current",
+        "config",
+        "understand"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: --- ## Research Report: Kimi K2.6-code-preview ### TL;DR — K2.6 Does Not Exist Yet (But It's Coming Very Soon) **K2.6-code-preview has not been officially released or documented anywhere as of April 14, 2026.** Reddit sources say it's \"imminent\" (posted ~14 hours ago)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "k2.6-code-preview",
+        "k2.6",
+        "assistant",
+        "research",
+        "report",
+        "kimi",
+        "code",
+        "preview"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "User: [cron:222b2b7a-2d39-4c0b-b191-f3dc27347512 ProTek 10:05 Mid-Morning] Use the protek-fsm-analyzer skill to run: /fsm check Current time: Tuesday, April 14th, 2026 - 10:05 AM (Asia/Manila) / 2026-04-14 02:05 UTC Return your summary as plain text; it will be delivered automati",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "mid-morning",
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron",
+        "222b2b7a",
+        "2d39",
+        "4c0b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: Now sending the report to the configured Telegram channel:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "assistant",
+        "now",
+        "sending",
+        "the",
+        "report",
+        "configured",
+        "telegram",
+        "channel"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: 📊 **Protek FSM 10:05 AM Mid-Morning Check Complete** **Company-wide:** 7/1267 completed (0.6%) | 941 pending | 8 RPR **Pace:** 🐢 slow — completed +7, pending -1 since 8AM **All 9 zones are in critical state** (completion rate below 10% threshold). Top zones by progre",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "mid-morning",
+        "company-wide",
+        "7/1267",
+        "0.6",
+        "assistant",
+        "protek",
+        "fsm",
+        "mid"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-14 11:11 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Research the new Kimi coding model. The user mentions \"kimi code\" and \"Kimi for Coding\" as a mod",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "tue",
+        "gmt",
+        "subagent",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "Assistant: Here's my comprehensive findings summary: --- ## Kimi for Coding / \"Kimi code\" — Research Findings ### 1. Exact Model Name/Identifier The official model identifier for \"Kimi for Coding\" is **`kimi-for-coding/k2p5`** (also available: `kimi-for-coding/kimi-k2-thinking`).",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "name/identifier",
+        "kimi-for-coding/k2p5",
+        "kimi-for-coding/kimi-k2-thinking",
+        "assistant",
+        "here's",
+        "comprehensive",
+        "findings",
+        "summary"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "User: [cron:9a3f4f11-99da-42db-b6f1-935d2831b6ba ProTek 14:05 Afternoon Facility] Use the protek-fsm-analyzer skill to run: /fsm check --facility Current time: Tuesday, April 14th, 2026 - 2:05 PM (Asia/Manila) / 2026-04-14 06:05 UTC Return your summary as plain text; it will be d",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron",
+        "9a3f4f11",
+        "99da",
+        "42db",
+        "b6f1"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-14 14:06 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…971c session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "tue",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: **Protek FSM Afternoon Facility Check Complete** 📊 **Apr 14, 2026 · 2:05 PM HKT** **Overall:** 138/1421 completed (9.7%) — 623 pending — 78 RPR **Since 12:05 PM:** +58 completed, -228 pending, +33 RPR — fast pace this afternoon --- **🚨 Critical Zones:** - **MAKATI**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "138/1421",
+        "9.7",
+        "assistant",
+        "protek",
+        "fsm",
+        "afternoon",
+        "facility",
+        "check"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-14 11:14 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…3e52 session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "tue",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: Good news — the research on Kimi for Coding is done. Here's what we found: ## Key Finding **You already have Kimi for Coding configured** under the alias `kimi-coding/k2p5`. The model setup is mostly correct — there's just **one bug**: - Your `baseUrl` is set to `https",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "kimi-coding/k2p5",
+        "assistant",
+        "good",
+        "news",
+        "the",
+        "research",
+        "kimi",
+        "coding"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-14 14:05 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: /fsm check --facility",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "tue",
+        "gmt",
+        "subagent",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: **`/fsm check --facility` completed** ✅ 📊 **Protek FSM Report (Apr 14, 2026 · 2:05 PM HKT)** **Company-wide: 138/1421 completed (9.7%)** | ⏳ 623 pending | 🔄 78 RPR **Progress vs 12:05 PM:** +58 completed | -228 pending | +33 RPR | 🚀 **fast pace** --- **🚨 Critical Z",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "138/1421",
+        "9.7",
+        "assistant",
+        "fsm",
+        "check",
+        "facility",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "User: [cron:47278df8-ab00-49bd-a380-0d837cce97e3 ProTek 12:05 Midday Facility] Use the protek-fsm-analyzer skill to run: /fsm check --facility Current time: Tuesday, April 14th, 2026 - 12:05 PM (Asia/Manila) / 2026-04-14 04:05 UTC Return your summary as plain text; it will be del",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron",
+        "47278df8",
+        "ab00",
+        "49bd",
+        "a380"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: 📊 **Protek FSM Midday Report** — Apr 14, 2026 12:05 PM HKT **Company-wide:** 80/1,347 completed (5.9%) Pending: 851 | RPR: 45 --- **🚨 Critical Zones (<10% completion):** - MAKATI: 0% (0/2 actionable) - NEGROS: 5.3% (7/133) - PANAY: 5.9% (13/221) - PASIG-PATEROS-TAGUI",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "80/1",
+        "5.9",
+        "0/2",
+        "5.3",
+        "7/133",
+        "13/221",
+        "pasig-pateros-tagui"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "User: [cron:60daffdb-3b1f-42f8-9dff-85471f8b0b7e ProTek 18:05 EOD Summary] Use the protek-fsm-analyzer skill to run: /fsm check --6pm --facility Current time: Tuesday, April 14th, 2026 - 6:05 PM (Asia/Manila) / 2026-04-14 10:05 UTC Return your summary as plain text; it will be de",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron",
+        "60daffdb",
+        "3b1f",
+        "42f8",
+        "9dff"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Assistant: **Protek FSM EOD Summary - April 14, 2026 (6:05 PM HKT)** **Company-Wide: 332/1,616 completed (20.5%)** | Pending: 474 | RPR: 99 --- **🚨 ALERT: MAKATI** — 0% completion (0/4 actionable) — CRITICAL --- **Zone Performance:** | Zone | Completed | Rate | Status | |------|",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "332/1",
+        "20.5",
+        "0/4",
+        "assistant",
+        "protek",
+        "fsm",
+        "eod"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18289\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Tue 2026-04-14 11:35 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-14.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-14.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-04-14.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: Got it — config stays as-is with `k2p6` registered in `models.providers.kimi-coding.models[]`. When Moonshot flips it live upstream, the alias will work without any further edits on your end.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-14T19:00:00.748Z",
+      "lastRecalledAt": "2026-04-14T19:00:00.748Z",
+      "queryHashes": [
+        "91b74f012fab"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "as-is",
+        "assistant",
+        "got",
+        "config",
+        "stays",
+        "k2p6",
+        "registered",
+        "models.providers.kimi"
       ]
     }
   }
