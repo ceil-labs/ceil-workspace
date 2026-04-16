@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-16T00:03:50.885Z",
+  "updatedAt": "2026-04-16T01:52:45.229Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -7472,33 +7472,35 @@
       "startLine": 67,
       "endLine": 107,
       "source": "memory",
-      "snippet": "- ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive config via environment variables (DATABASE_URL, SECRET_KEY_BASE) --- ## Agent Memory Tools Research ### Context Victor is evaluating memory tools for the agent-platform project. Requirements: self-hosted, n8n integration, multi-agent shared memory, open-source preference. ### Tools Researched **1. Hindsight** - MIT license, multi-strategy retrieval (semantic + BM25 + graph + temporal) - Requires PostgreSQL + pgvector - **Finding:** Primarily semantic search; BM25+ requires specific backends **2. OpenViking** - Apache 2.0, tiered loading (L0/L1/L2), filesystem paradigm - Closest architectural match to Karpathy's approach - Requires Go 1.22+, C++ toolchain, VLM + embedding model **3. ByteRover** - Elastic License v2, context tree as Markdown files - Agentic Search (LLM-navigated, not vector-based) - CLI-first, zero infrastructure, MCP server available **4. Memary**",
-      "recallCount": 3,
+      "snippet": "- ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive config via environment",
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.482274089754798,
+      "totalScore": 3.3050148706038094,
       "maxScore": 0.9386655967937991,
       "firstRecalledAt": "2026-04-12T13:59:40.081Z",
-      "lastRecalledAt": "2026-04-14T09:15:26.830Z",
+      "lastRecalledAt": "2026-04-16T01:14:39.495Z",
       "queryHashes": [
         "d16046c294ff",
         "09b7c59d651c",
-        "cac7a1aba3fb"
+        "cac7a1aba3fb",
+        "6181dc273126"
       ],
       "recallDays": [
         "2026-04-12",
         "2026-04-13",
-        "2026-04-14"
+        "2026-04-14",
+        "2026-04-16"
       ],
       "conceptTags": [
-        "embedding",
         "end-to-end",
         "docker-compose.ghcr.yml",
         "first-time",
-        "database-url",
-        "secret-key-base",
-        "agent-platform",
-        "self-hosted"
+        "dependabot",
+        "weekly",
+        "gem",
+        "actions",
+        "updates"
       ],
       "promotedAt": "2026-04-14T19:00:00.748Z"
     },
@@ -33481,20 +33483,24 @@
       "endLine": 19,
       "source": "memory",
       "snippet": "--- **[2026-04-13 10:11 PM +08]** GHCR production deployment preparation — stopped dev stack, ready for next-session testing. - **Progress:** Development docker compose stack (`agent-platform-app-1`, `agent-platform-proxy-1`, etc.) has been stopped to free port 3000 for GHCR production testing. - **Context reviewed:** `docker-compose.ghcr.yml`, `.env.production`, `Dockerfile`, `nginx-proxy.conf`, GHCR workflow, and deployment docs are all up-to-date on `master` with n8n integration and Rails auth gating. - **Port 3000 collision resolved:** Dev stack down; Tailscale serve (`https://srv1405873.tailcd23a1.ts.net:8444`) already points to `localhost:3000`, so GHCR prod can start with zero Tailsc",
-      "recallCount": 3,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.4473725469724696,
+      "totalScore": 4.165198664170145,
       "maxScore": 0.830117573826127,
       "firstRecalledAt": "2026-04-14T09:14:32.214Z",
-      "lastRecalledAt": "2026-04-14T09:18:14.725Z",
+      "lastRecalledAt": "2026-04-16T01:26:34.690Z",
       "queryHashes": [
         "d982f51c3239",
         "cac7a1aba3fb",
-        "7b99e526f8a2"
+        "7b99e526f8a2",
+        "76716d065d67",
+        "b34686ccbbe0",
+        "423f25bf9757"
       ],
       "recallDays": [
-        "2026-04-14"
+        "2026-04-14",
+        "2026-04-16"
       ],
       "conceptTags": [
         "next-session",
@@ -36806,6 +36812,575 @@
         "18.6",
         "0.0",
         "candidate"
+      ]
+    },
+    "memory:memory/2026-04-12.md:1:28": {
+      "key": "memory:memory/2026-04-12.md:1:28",
+      "path": "memory/2026-04-12.md",
+      "startLine": 1,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "# Session Log — 2026-04-12 ## 2026-04-12 10:15 — Cross-Agent Note: n8n Redirect Fix Applied by Neo **Context:** Victor noticed n8n at `https://srv1405873.tailcd23a1.ts.net:8444/n8n` was redirecting to `http://srv...:3000/n8n/` and failing due to n8n secure-cookie rejection. He intended to ask Ceil but inadvertently routed the request to Neo. **What Neo changed:** - **File:** `/home/openclaw/.openclaw/projects/agent-platform/nginx-proxy.conf` - **Change:** Added `absolute_redirect off;` inside the `server` block - **Effect:** The `location /n8n { return 301 /n8n/; }` now emits a relative `Location: /n8n/` header instead of an absolute `http://...:3000/n8n/` redirect - **Action taken:** Pro",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4294925570487976,
+      "maxScore": 0.4294925570487976,
+      "firstRecalledAt": "2026-04-16T01:14:45.607Z",
+      "lastRecalledAt": "2026-04-16T01:14:45.607Z",
+      "queryHashes": [
+        "cb1df9e3aeb6"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "cross-agent",
+        "srv1405873.tailcd23a1.ts.net",
+        "8444/n8n",
+        "3000/n8n",
+        "secure-cookie",
+        "home/openclaw",
+        "absolute-redirect",
+        "log"
+      ]
+    },
+    "memory:memory/2026-04-15.md:428:452": {
+      "key": "memory:memory/2026-04-15.md:428:452",
+      "path": "memory/2026-04-15.md",
+      "startLine": 428,
+      "endLine": 452,
+      "source": "memory",
+      "snippet": "- Candidate: Next Steps (for next session): **SSH/switch to the other VPS user** and navigate to their agent-platform checkout.; **Ensure their working tree is on latest `master`** (especially `nginx-proxy.conf`, `docker-compose.ghcr.yml`, `postgres-init-scripts/`, `.env.production`).; **Rege - confidence: 0.62 - evidence: memory/2026-04-13.md:9-12 - recalls: 0 - status: staged - Candidate: Next Steps (for next session): `PROD_POSTGRES_PASSWORD` → strong password; `N8N_PASSWORD` → strong password; `N8N_EDITOR_BASE_URL` → `https://srv1405873.tailcd23a1.ts.net:8444/n8n`; **Verify `RAILS_MASTER_KEY` is present** in `.env.production` (add if missing to avoid `credential - confidence: 0",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.3450043350458145,
+      "maxScore": 0.507779124379158,
+      "firstRecalledAt": "2026-04-16T01:14:45.607Z",
+      "lastRecalledAt": "2026-04-16T01:26:34.690Z",
+      "queryHashes": [
+        "cb1df9e3aeb6",
+        "76716d065d67",
+        "7778ebca381d",
+        "b34686ccbbe0",
+        "423f25bf9757"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "ssh/switch",
+        "agent-platform",
+        "nginx-proxy.conf",
+        "docker-compose.ghcr.yml",
+        "postgres-init-scripts",
+        "env.production",
+        "0.62",
+        "memory/2026-04-13.md"
+      ]
+    },
+    "memory:memory/2026-04-15.md:283:292": {
+      "key": "memory:memory/2026-04-15.md:283:292",
+      "path": "memory/2026-04-15.md",
+      "startLine": 283,
+      "endLine": 292,
+      "source": "memory",
+      "snippet": "- Candidate: # 2026-04-04 — Agent Platform Deployment & Dev Environment Fixes ## Summary Production GHCR deployment working. Local dev environment fixed. Redis/solid_cache migration completed. n8n configured with single-port proxy. Key insight: memory grows from both what you save AND what you ask (bidirectional growth concept documented). ## What We Did ### 1. Production Docker Deployment (GHCR) ✅ - **Problem**: `solid_cache_entries` table missing, multi-database setup too complex - **Solution**: Migrated to Redis for cache + Action Cable, single database - Added `redis` gem to Gemfile - Updated `production.rb`: Redis cache store, inline jobs during precompile - Updated `cable.yml`: Redis a",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.470057612657547,
+      "maxScore": 0.470057612657547,
+      "firstRecalledAt": "2026-04-16T01:23:00.568Z",
+      "lastRecalledAt": "2026-04-16T01:23:00.568Z",
+      "queryHashes": [
+        "76716d065d67"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "redis/solid-cache",
+        "single-port",
+        "solid-cache-entries",
+        "multi-database",
+        "production.rb",
+        "cable.yml",
+        "candidate",
+        "platform"
+      ]
+    },
+    "memory:memory/2026-04-14.md:23:49": {
+      "key": "memory:memory/2026-04-14.md:23:49",
+      "path": "memory/2026-04-14.md",
+      "startLine": 23,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "- Candidate: Next Steps (for next session): `PROD_POSTGRES_PASSWORD` → strong password; `N8N_PASSWORD` → strong password; `N8N_EDITOR_BASE_URL` → `https://srv1405873.tailcd23a1.ts.net:8444/n8n`; **Verify `RAILS_MASTER_KEY` is present** in `.env.production` (add if missing to avoid `credential - confidence: 0.62 - evidence: memory/2026-04-13.md:13-16 - recalls: 0 - status: staged - Candidate: Next Steps (for next session): **Optionally patch `docker-compose.ghcr.yml`** to pass `RAILS_MASTER_KEY` into the `app` service if not already present.; **Start the GHCR stack:** - confidence: 0.62 - evidence: memory/2026-04-13.md:17-18 - recalls: 0 - status: staged - Candidate: Next Step",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.4243726581335068,
+      "maxScore": 0.5079536944627762,
+      "firstRecalledAt": "2026-04-16T01:23:03.660Z",
+      "lastRecalledAt": "2026-04-16T01:26:34.690Z",
+      "queryHashes": [
+        "7778ebca381d",
+        "c886dd287fda",
+        "423f25bf9757"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "prod-postgres-password",
+        "n8n-password",
+        "n8n-editor-base-url",
+        "srv1405873.tailcd23a1.ts.net",
+        "8444/n8n",
+        "rails-master-key",
+        "env.production",
+        "0.62"
+      ]
+    },
+    "memory:memory/2026-04-13.md:50:76": {
+      "key": "memory:memory/2026-04-13.md:50:76",
+      "path": "memory/2026-04-13.md",
+      "startLine": 50,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "- Candidate: Next Steps (for next session): `PROD_POSTGRES_PASSWORD` → strong password; `N8N_PASSWORD` → strong password; `N8N_EDITOR_BASE_URL` → `https://srv1405873.tailcd23a1.ts.net:8444/n8n`; **Verify `RAILS_MASTER_KEY` is present** in `.env.production` (add if missing to avoid `credential - confidence: 0.00 - evidence: memory/2026-04-13.md:13-16 - recalls: 0 - status: staged - Candidate: Next Steps (for next session): **Optionally patch `docker-compose.ghcr.yml`** to pass `RAILS_MASTER_KEY` into the `app` service if not already present.; **Start the GHCR stack:** - confidence: 0.00 - evidence: memory/2026-04-13.md:17-18 - recalls: 0 - status: staged - Candidate: Next Step",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9710218489170075,
+      "maxScore": 0.5098033487796784,
+      "firstRecalledAt": "2026-04-16T01:23:03.660Z",
+      "lastRecalledAt": "2026-04-16T01:26:34.690Z",
+      "queryHashes": [
+        "7778ebca381d",
+        "423f25bf9757"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "prod-postgres-password",
+        "n8n-password",
+        "n8n-editor-base-url",
+        "srv1405873.tailcd23a1.ts.net",
+        "8444/n8n",
+        "rails-master-key",
+        "env.production",
+        "0.00"
+      ]
+    },
+    "memory:memory/2026-04-02.md:166:189": {
+      "key": "memory:memory/2026-04-02.md:166:189",
+      "path": "memory/2026-04-02.md",
+      "startLine": 166,
+      "endLine": 189,
+      "source": "memory",
+      "snippet": "docker compose run --rm app bash # If container already running docker compose exec app bin/rails <command> ``` **Important:** Rails is NOT installed on host — must use Docker. ### Current Stack | Component | Version | |-----------|---------| | Ruby | 4.0.2 | | Rails | 8.1.3 | | Database | PostgreSQL 16 | | Cache | Redis 7 | | CSS | Tailwind CSS | | User | UID 1001 (not root) | ### Next Steps - Setup built-in Rails 8 authentication generator (`bin/rails generate authentication`) - Test authentication flow - Continue development workflow with Docker - Commit initial Rails app structure",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.43355982303619384,
+      "maxScore": 0.43355982303619384,
+      "firstRecalledAt": "2026-04-16T01:23:03.660Z",
+      "lastRecalledAt": "2026-04-16T01:23:03.660Z",
+      "queryHashes": [
+        "7778ebca381d"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "bin/rails",
+        "4.0.2",
+        "8.1.3",
+        "built-in",
+        "docker",
+        "compose",
+        "run",
+        "app"
+      ]
+    },
+    "memory:memory/2026-04-15.md:443:467": {
+      "key": "memory:memory/2026-04-15.md:443:467",
+      "path": "memory/2026-04-15.md",
+      "startLine": 443,
+      "endLine": 467,
+      "source": "memory",
+      "snippet": "- Candidate: Next Steps (for next session): docker compose -f docker-compose.ghcr.yml --env-file .env.production up -d - confidence: 0.62 - evidence: memory/2026-04-13.md:20-20 - recalls: 0 - status: staged - Candidate: Next Steps (for next session): **Initialize database (if fresh volume):** - confidence: 0.62 - evidence: memory/2026-04-13.md:22-22 - recalls: 0 - status: staged - Candidate: Next Steps (for next session): docker compose -f docker-compose.ghcr.yml --env-file .env.production exec app bin/rails db:create db:migrate db:seed - confidence: 0.62 - evidence: memory/2026-04-13.md:24-24 - recalls: 0 - status: staged - Candidate: Next Steps (for next session): *",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4312748074531555,
+      "maxScore": 0.4312748074531555,
+      "firstRecalledAt": "2026-04-16T01:23:03.660Z",
+      "lastRecalledAt": "2026-04-16T01:23:03.660Z",
+      "queryHashes": [
+        "7778ebca381d"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "docker-compose.ghcr.yml",
+        "env-file",
+        "env.production",
+        "0.62",
+        "memory/2026-04-13.md",
+        "20-20",
+        "22-22",
+        "bin/rails"
+      ]
+    },
+    "memory:memory/2026-04-15.md:278:286": {
+      "key": "memory:memory/2026-04-15.md:278:286",
+      "path": "memory/2026-04-15.md",
+      "startLine": 278,
+      "endLine": 286,
+      "source": "memory",
+      "snippet": "- Candidate: # 2026-04-03 — Daily Log ## Agent Platform — CI/CD & Production Deployment Setup ### Morning: CI Fixes **Problem:** CI workflow was failing with 19 RuboCop offenses and system-test job errors. **Actions Taken:** 1. **Fixed lint violations** — Ran `bin/rubocop -a` to auto-fix 19 offenses in test files 2. **Disabled system-test job** — Commented out in `.github/workflows/ci.yml` since no Capybara tests exist yet 3. **Cleaned up cache files** — Added `.cache` to `.gitignore` and removed cached files from git 4. **Fixed branch mismatch** — Updated CI to run on `master` (repo uses master, not main) **Result:** All CI jobs now passing (scan_ruby, scan_js, lint, test) ### Afternoon: GH",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9380595207214355,
+      "maxScore": 0.47890527844429015,
+      "firstRecalledAt": "2026-04-16T01:23:11.580Z",
+      "lastRecalledAt": "2026-04-16T01:52:45.229Z",
+      "queryHashes": [
+        "b34686ccbbe0",
+        "9281fb8ad9e5"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "ci/cd",
+        "system-test",
+        "bin/rubocop",
+        "auto-fix",
+        "github/workflows/ci.yml",
+        "scan-ruby",
+        "scan-js",
+        "candidate"
+      ]
+    },
+    "memory:memory/2026-04-16.md:443:459": {
+      "key": "memory:memory/2026-04-16.md:443:459",
+      "path": "memory/2026-04-16.md",
+      "startLine": 443,
+      "endLine": 459,
+      "source": "memory",
+      "snippet": "- Candidate: User: [cron:c5c9902a-9717-4f49-bf11-1fa246f921b4 ProTek 16:05 Late Afternoon] Use the protek-fsm-analyzer skill to run: /fsm check --facility Current time: Tuesday, April 14th, 2026 - 4:05 PM (Asia/Manila) / 2026-04-14 08:05 UTC Return your summary as plain text; it will be deliv - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-14.txt:31-31 - recalls: 0 - status: staged - Candidate: User: [Tue 2026-04-14 16:08 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…c2e8 ses",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.484008052945137,
+      "maxScore": 0.484008052945137,
+      "firstRecalledAt": "2026-04-16T01:26:26.889Z",
+      "lastRecalledAt": "2026-04-16T01:26:26.889Z",
+      "queryHashes": [
+        "2f612646f5dc"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "0.58",
+        "31-31",
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key"
+      ]
+    },
+    "memory:memory/2026-04-16.md:368:384": {
+      "key": "memory:memory/2026-04-16.md:368:384",
+      "path": "memory/2026-04-16.md",
+      "startLine": 368,
+      "endLine": 384,
+      "source": "memory",
+      "snippet": "- Candidate: User: [media attached: /home/openclaw/.openclaw/media/inbound/file_251---42610a78-69f6-494c-a586-5f64732e4b5e.jpg (image/jpeg) | /home/openclaw/.openclaw/media/inbound/file_251---42610a78-69f6-494c-a586-5f64732e4b5e.jpg] To send an image back, prefer the message tool (media/path/ - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-14.txt:14-14 - recalls: 0 - status: staged - Candidate: User: [Tue 2026-04-14 11:15 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…841c ses",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9499619334936141,
+      "maxScore": 0.47598694562911986,
+      "firstRecalledAt": "2026-04-16T01:26:26.889Z",
+      "lastRecalledAt": "2026-04-16T01:26:42.528Z",
+      "queryHashes": [
+        "2f612646f5dc",
+        "4010d2e2c976"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "home/openclaw",
+        "openclaw/media/inbound/file-251",
+        "image/jpeg",
+        "media/path",
+        "0.58",
+        "14-14",
+        "begin-openclaw-internal-context",
+        "runtime-generated"
+      ]
+    },
+    "memory:memory/2026-04-15.md:157:177": {
+      "key": "memory:memory/2026-04-15.md:157:177",
+      "path": "memory/2026-04-15.md",
+      "startLine": 157,
+      "endLine": 177,
+      "source": "memory",
+      "snippet": "- status: staged - Candidate: Assistant: 📊 **Protek FSM Report — April 14, 2026 (4:06 PM HKT)** **Overall Summary** | Metric | Value | |--------|-------| | Total PRs | 1,527 | | Completed | 269 | | Pending | 594 | | RPR Total | 91 | **Zone Performance** | Zone | Total | Done | Pending | RPR | Completion Rate - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-14.txt:33-33 - recalls: 0 - status: staged - Candidate: User: [Tue 2026-04-14 11:12 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Research the new Kimi model **K2.6-code-preview** for OpenClaw configu",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9523017108440398,
+      "maxScore": 0.47826059162616724,
+      "firstRecalledAt": "2026-04-16T01:26:26.889Z",
+      "lastRecalledAt": "2026-04-16T01:26:42.528Z",
+      "queryHashes": [
+        "2f612646f5dc",
+        "4010d2e2c976"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "0.58",
+        "33-33",
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "k2.6-code-preview",
+        "status",
+        "staged"
+      ]
+    },
+    "memory:memory/2026-04-15.md:273:281": {
+      "key": "memory:memory/2026-04-15.md:273:281",
+      "path": "memory/2026-04-15.md",
+      "startLine": 273,
+      "endLine": 281,
+      "source": "memory",
+      "snippet": "- Candidate: - ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive config via en",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9723569929599761,
+      "maxScore": 0.49316086173057555,
+      "firstRecalledAt": "2026-04-16T01:26:34.690Z",
+      "lastRecalledAt": "2026-04-16T01:52:45.229Z",
+      "queryHashes": [
+        "423f25bf9757",
+        "9281fb8ad9e5"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "end-to-end",
+        "docker-compose.ghcr.yml",
+        "first-time",
+        "candidate",
+        "dependabot",
+        "weekly",
+        "gem",
+        "actions"
+      ]
+    },
+    "memory:memory/2026-04-15.md:298:305": {
+      "key": "memory:memory/2026-04-15.md:298:305",
+      "path": "memory/2026-04-15.md",
+      "startLine": 298,
+      "endLine": 305,
+      "source": "memory",
+      "snippet": "- Candidate: - - ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive config via",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49126775264739986,
+      "maxScore": 0.49126775264739986,
+      "firstRecalledAt": "2026-04-16T01:26:34.690Z",
+      "lastRecalledAt": "2026-04-16T01:26:34.690Z",
+      "queryHashes": [
+        "423f25bf9757"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "end-to-end",
+        "docker-compose.ghcr.yml",
+        "first-time",
+        "candidate",
+        "dependabot",
+        "weekly",
+        "gem",
+        "actions"
+      ]
+    },
+    "memory:memory/2026-04-15.md:82:99": {
+      "key": "memory:memory/2026-04-15.md:82:99",
+      "path": "memory/2026-04-15.md",
+      "startLine": 82,
+      "endLine": 99,
+      "source": "memory",
+      "snippet": "- status: staged - Candidate: Assistant: Here's what the research turned up. ## Proposal: K2.6-code-preview Configuration ### The Situation **K2.6-code-preview has not been officially released yet** (as of April 14, 2026). Rumors from the last 24–48 hours say it's **imminent** — a code-focused fine-tune over - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-14.txt:16-16 - recalls: 0 - status: staged - Candidate: User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18273\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Tue 2026-04-14 11:24 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47630258202552794,
+      "maxScore": 0.47630258202552794,
+      "firstRecalledAt": "2026-04-16T01:26:42.528Z",
+      "lastRecalledAt": "2026-04-16T01:26:42.528Z",
+      "queryHashes": [
+        "4010d2e2c976"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "k2.6-code-preview",
+        "code-focused",
+        "fine-tune",
+        "0.58",
+        "16-16",
+        "message-id",
+        "sender-id",
+        "status"
+      ]
+    },
+    "memory:memory/2026-04-09.md:1:36": {
+      "key": "memory:memory/2026-04-09.md:1:36",
+      "path": "memory/2026-04-09.md",
+      "startLine": 1,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "# Daily Log — 2026-04-09 ## Session Start - Victor upgraded OpenClaw from 2026.4.5 → 2026.4.9 successfully - Had to remove `\"memory-lancedb\": { \"enabled\": false }` from config — even when disabled, app was looking for required properties ## Dreaming Research Results ### Dreaming Config — Complete Docs confirm only 2 user-facing settings exist: ```json \"dreaming\": { \"enabled\": true, \"frequency\": \"0 3 * * *\" } ``` Your current config is complete. No missing fields. Light/deep/REM thresholds are intentionally internal — not user-configurable. ### Dreaming Uses Internal Scheduler (NOT jobs.json) - Dreaming cron is managed by **memory-core plugin's own internal scheduler**, NOT the gatewa",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49405741095542904,
+      "maxScore": 0.49405741095542904,
+      "firstRecalledAt": "2026-04-16T01:52:45.229Z",
+      "lastRecalledAt": "2026-04-16T01:52:45.229Z",
+      "queryHashes": [
+        "9281fb8ad9e5"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "2026.4.5",
+        "2026.4.9",
+        "memory-lancedb",
+        "user-facing",
+        "light/deep/rem",
+        "user-configurable",
+        "jobs.json",
+        "memory-core"
+      ]
+    },
+    "memory:memory/2026-03-17.md:70:109": {
+      "key": "memory:memory/2026-03-17.md:70:109",
+      "path": "memory/2026-03-17.md",
+      "startLine": 70,
+      "endLine": 109,
+      "source": "memory",
+      "snippet": "- [ ] Set up any scheduled tasks or reminders ## Notes Victor prefers deep, fundamental understanding when learning. When he asks for help, provide thorough explanations, not surface-level fixes. He gets annoyed by people who don't make sense. --- ## Later Today - Honcho & Agent Communication ### Agent-to-Agent Communication ✅ - Successfully tested messaging between Ceil and Neo - Coordination protocol established: - Clean separation on daily tasks - **Coordination triggers:** \"lab setup\" or \"infrastructure for testing\" - Neo's focus: HTB training (red/blue team, technique deep-dives) ### Honcho Memory Setup - **Ceil workspace:** Uploaded to Honcho (8 files) - USER.md, MEMORY.m",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47429867684841154,
+      "maxScore": 0.47429867684841154,
+      "firstRecalledAt": "2026-04-16T01:52:45.229Z",
+      "lastRecalledAt": "2026-04-16T01:52:45.229Z",
+      "queryHashes": [
+        "9281fb8ad9e5"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "surface-level",
+        "agent-to-agent",
+        "red/blue",
+        "deep-dives",
+        "user.md",
+        "memory.m",
+        "set",
+        "any"
+      ]
+    },
+    "memory:memory/2026-04-13.md:90:106": {
+      "key": "memory:memory/2026-04-13.md:90:106",
+      "path": "memory/2026-04-13.md",
+      "startLine": 90,
+      "endLine": 106,
+      "source": "memory",
+      "snippet": "- Candidate: Assistant: Done — appended the GHCR production prep status and the full next-session checklist to `memory/2026-04-13.md`. The main things waiting for next time: - Switch to the other VPS user - Pull latest `master` - Update `.env.production` with real `SECRET_KEY_BASE`, strong pa - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:130-130 - recalls: 0 - status: staged - Candidate: User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18233\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Mon 2026-04-13 22:15 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"i",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47369229197502133,
+      "maxScore": 0.47369229197502133,
+      "firstRecalledAt": "2026-04-16T01:52:45.229Z",
+      "lastRecalledAt": "2026-04-16T01:52:45.229Z",
+      "queryHashes": [
+        "9281fb8ad9e5"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "next-session",
+        "memory/2026-04-13.md",
+        "env.production",
+        "secret-key-base",
+        "0.00",
+        "130-130",
+        "message-id",
+        "sender-id"
+      ]
+    },
+    "memory:memory/2026-04-14.md:228:244": {
+      "key": "memory:memory/2026-04-14.md:228:244",
+      "path": "memory/2026-04-14.md",
+      "startLine": 228,
+      "endLine": 244,
+      "source": "memory",
+      "snippet": "- Candidate: Assistant: Done — appended the GHCR production prep status and the full next-session checklist to `memory/2026-04-13.md`. The main things waiting for next time: - Switch to the other VPS user - Pull latest `master` - Update `.env.production` with real `SECRET_KEY_BASE`, strong pa - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:130-130 - recalls: 0 - status: staged - Candidate: User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18233\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Mon 2026-04-13 22:15 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"i",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47295481264591216,
+      "maxScore": 0.47295481264591216,
+      "firstRecalledAt": "2026-04-16T01:52:45.229Z",
+      "lastRecalledAt": "2026-04-16T01:52:45.229Z",
+      "queryHashes": [
+        "9281fb8ad9e5"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "next-session",
+        "memory/2026-04-13.md",
+        "env.production",
+        "secret-key-base",
+        "0.58",
+        "130-130",
+        "message-id",
+        "sender-id"
       ]
     }
   }
