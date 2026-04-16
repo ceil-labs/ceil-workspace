@@ -1,39 +1,65 @@
 {
   "period": "today",
-  "last_updated_at": "2026-04-01T07:58:51.634+08:00",
+  "last_updated_at": "2026-04-17T06:58:36.733+08:00",
   "zones": [
     {
       "zone": "PROTEK",
-      "pending": 579,
+      "pending": 768,
       "completed": 0,
-      "afd": 72,
-      "not_in_ofsc": 26,
+      "afd": 199,
+      "not_in_ofsc": 134,
       "rpr_customer": 0,
       "rpr_facility": 0,
       "rpr_others": 0,
       "rpr_no_remarks": 0,
       "rpr_total": 0,
-      "total": 677
+      "total": 1101
     },
     {
       "zone": "BULACAN",
-      "pending": 47,
+      "pending": 53,
       "completed": 0,
-      "afd": 0,
-      "not_in_ofsc": 2,
+      "afd": 10,
+      "not_in_ofsc": 8,
       "rpr_customer": 0,
       "rpr_facility": 0,
       "rpr_others": 0,
       "rpr_no_remarks": 0,
       "rpr_total": 0,
-      "total": 49
+      "total": 71
     },
     {
       "zone": "LAS PINAS-ALABANG",
-      "pending": 116,
+      "pending": 194,
       "completed": 0,
-      "afd": 11,
+      "afd": 18,
       "not_in_ofsc": 0,
+      "rpr_customer": 0,
+      "rpr_facility": 0,
+      "rpr_others": 0,
+      "rpr_no_remarks": 0,
+      "rpr_total": 0,
+      "total": 212
+    },
+    {
+      "zone": "MAKATI",
+      "pending": 3,
+      "completed": 0,
+      "afd": 2,
+      "not_in_ofsc": 0,
+      "rpr_customer": 0,
+      "rpr_facility": 0,
+      "rpr_others": 0,
+      "rpr_no_remarks": 0,
+      "rpr_total": 0,
+      "total": 5
+    },
+    {
+      "zone": "NEGROS",
+      "pending": 0,
+      "completed": 0,
+      "afd": 6,
+      "not_in_ofsc": 121,
       "rpr_customer": 0,
       "rpr_facility": 0,
       "rpr_others": 0,
@@ -42,95 +68,69 @@
       "total": 127
     },
     {
-      "zone": "MAKATI",
-      "pending": 1,
-      "completed": 0,
-      "afd": 0,
-      "not_in_ofsc": 0,
-      "rpr_customer": 0,
-      "rpr_facility": 0,
-      "rpr_others": 0,
-      "rpr_no_remarks": 0,
-      "rpr_total": 0,
-      "total": 1
-    },
-    {
-      "zone": "NEGROS",
-      "pending": 91,
-      "completed": 0,
-      "afd": 5,
-      "not_in_ofsc": 2,
-      "rpr_customer": 0,
-      "rpr_facility": 0,
-      "rpr_others": 0,
-      "rpr_no_remarks": 0,
-      "rpr_total": 0,
-      "total": 98
-    },
-    {
       "zone": "NORTH QUEZON CITY",
-      "pending": 58,
+      "pending": 48,
       "completed": 0,
-      "afd": 3,
+      "afd": 42,
       "not_in_ofsc": 0,
       "rpr_customer": 0,
       "rpr_facility": 0,
       "rpr_others": 0,
       "rpr_no_remarks": 0,
       "rpr_total": 0,
-      "total": 61
+      "total": 90
     },
     {
       "zone": "PANAY",
-      "pending": 103,
+      "pending": 190,
       "completed": 0,
-      "afd": 9,
-      "not_in_ofsc": 8,
+      "afd": 28,
+      "not_in_ofsc": 1,
       "rpr_customer": 0,
       "rpr_facility": 0,
       "rpr_others": 0,
       "rpr_no_remarks": 0,
       "rpr_total": 0,
-      "total": 120
+      "total": 219
     },
     {
       "zone": "PASAY-PARANAQUE",
-      "pending": 53,
+      "pending": 85,
       "completed": 0,
-      "afd": 10,
+      "afd": 24,
       "not_in_ofsc": 0,
       "rpr_customer": 0,
       "rpr_facility": 0,
       "rpr_others": 0,
       "rpr_no_remarks": 0,
       "rpr_total": 0,
-      "total": 63
+      "total": 109
     },
     {
       "zone": "PASIG-PATEROS-TAGUIG",
-      "pending": 82,
+      "pending": 170,
       "completed": 0,
-      "afd": 26,
-      "not_in_ofsc": 9,
+      "afd": 32,
+      "not_in_ofsc": 4,
       "rpr_customer": 0,
       "rpr_facility": 0,
       "rpr_others": 0,
       "rpr_no_remarks": 0,
       "rpr_total": 0,
-      "total": 117
+      "total": 206
     },
     {
       "zone": "SOUTH QUEZON CITY",
-      "pending": 28,
+      "pending": 25,
       "completed": 0,
-      "afd": 8,
-      "not_in_ofsc": 5,
+      "afd": 37,
+      "not_in_ofsc": 0,
       "rpr_customer": 0,
       "rpr_facility": 0,
       "rpr_others": 0,
       "rpr_no_remarks": 0,
       "rpr_total": 0,
-      "total": 41
+      "total": 62
     }
   ]
 }
