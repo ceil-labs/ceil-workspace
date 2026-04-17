@@ -1052,4 +1052,18 @@ Reflections: No strong patterns surfaced.
 
 --- **[2026-04-13 10:11 PM +08]** GHCR production deployment preparation — stopped dev stack, ready for next-session testing. - **Progress:** Development docker compose stack (`agent-platform-app-1`, `agent-platform-proxy-1`, etc.) has been stopped to free port 3000 for GHCR production testing. - **Context reviewed:** `docker-compose.ghcr.yml`, `.env.production`, `Dockerfile`, `nginx-proxy.conf`, GHCR workflow, and deployment docs are all up-to-date on `master` with n8n integration and Rails auth gating. - **Port 3000 collision resolved:** Dev stack down; Tailscale serve (`https://srv1405873.tailcd23a1.ts.net:8444`) already points to `localhost:3000`, so GHCR prod can start with zero Tailsc
 
+
+---
+
+*April 18, 2026 at 3:00 AM GMT+8*
+
+Reflections: No strong patterns surfaced.
+
+
+---
+
+*April 18, 2026 at 3:00 AM GMT+8*
+
+# Session Log — 2026-04-12 ## 2026-04-12 10:15 — Cross-Agent Note: n8n Redirect Fix Applied by Neo **Context:** Victor noticed n8n at `https://srv1405873.tailcd23a1.ts.net:8444/n8n` was redirecting to `http://srv...:3000/n8n/` and failing due to n8n secure-cookie rejection. He intended to ask Ceil but inadvertently routed the request to Neo. **What Neo changed:** - **File:** `/home/openclaw/.openclaw/projects/agent-platform/nginx-proxy.conf` - **Change:** Added `absolute_redirect off;` inside the `server` block - **Effect:** The `location /n8n { return 301 /n8n/; }` now emits a relative `Location: /n8n/` header instead of an absolute `http://...:3000/n8n/` redirect - **Action taken:** Pro
+
 <!-- openclaw:dreaming:diary:end -->
