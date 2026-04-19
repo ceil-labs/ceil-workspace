@@ -1066,4 +1066,18 @@ Reflections: No strong patterns surfaced.
 
 # Session Log — 2026-04-12 ## 2026-04-12 10:15 — Cross-Agent Note: n8n Redirect Fix Applied by Neo **Context:** Victor noticed n8n at `https://srv1405873.tailcd23a1.ts.net:8444/n8n` was redirecting to `http://srv...:3000/n8n/` and failing due to n8n secure-cookie rejection. He intended to ask Ceil but inadvertently routed the request to Neo. **What Neo changed:** - **File:** `/home/openclaw/.openclaw/projects/agent-platform/nginx-proxy.conf` - **Change:** Added `absolute_redirect off;` inside the `server` block - **Effect:** The `location /n8n { return 301 /n8n/; }` now emits a relative `Location: /n8n/` header instead of an absolute `http://...:3000/n8n/` redirect - **Action taken:** Pro
 
+
+---
+
+*April 19, 2026 at 3:00 AM GMT+8*
+
+Reflections: No strong patterns surfaced.
+
+
+---
+
+*April 19, 2026 at 3:00 AM GMT+8*
+
+# Session Log — 2026-04-12 ## 2026-04-12 10:15 — Cross-Agent Note: n8n Redirect Fix Applied by Neo **Context:** Victor noticed n8n at `https://srv1405873.tailcd23a1.ts.net:8444/n8n` was redirecting to `http://srv...:3000/n8n/` and failing due to n8n secure-cookie rejection. He intended to ask Ceil but inadvertently routed the request to Neo. **What Neo changed:** - **File:** `/home/openclaw/.openclaw/projects/agent-platform/nginx-proxy.conf` - **Change:** Added `absolute_redirect off;` inside the `server` block - **Effect:** The `location /n8n { return 301 /n8n/; }` now emits a relative `Location: /n8n/` header instead of an absolute `http://...:3000/n8n/` redirect - **Action taken:** Pro
+
 <!-- openclaw:dreaming:diary:end -->
