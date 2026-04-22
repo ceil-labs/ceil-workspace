@@ -1094,4 +1094,32 @@ Reflections: No strong patterns surfaced.
 
 # Session Log — 2026-04-12 ## 2026-04-12 10:15 — Cross-Agent Note: n8n Redirect Fix Applied by Neo **Context:** Victor noticed n8n at `https://srv1405873.tailcd23a1.ts.net:8444/n8n` was redirecting to `http://srv...:3000/n8n/` and failing due to n8n secure-cookie rejection. He intended to ask Ceil but inadvertently routed the request to Neo. **What Neo changed:** - **File:** `/home/openclaw/.openclaw/projects/agent-platform/nginx-proxy.conf` - **Change:** Added `absolute_redirect off;` inside the `server` block - **Effect:** The `location /n8n { return 301 /n8n/; }` now emits a relative `Location: /n8n/` header instead of an absolute `http://...:3000/n8n/` redirect - **Action taken:** Pro
 
+
+---
+
+*April 21, 2026 at 3:00 AM GMT+8*
+
+Reflections: No strong patterns surfaced.
+
+
+---
+
+*April 21, 2026 at 3:00 AM GMT+8*
+
+2. **Rails auth gate for n8n** — Earlier plan to proxy `/n8n/` through Rails authentication still needs Victor's go-ahead and implementation. 4. **Commit status** — Ensure `nginx-proxy.conf` is committed to the `agent-platform` repo. A separate commit for `.gitignore` rules (SSH keys / HTB artifacts) was already made in `neo-workspace` by Neo. --- ## 2026-04-12 23:03 — Rails Auth Gate for n8n: Plan Finalized **Decision:** Use nginx `auth_request` with a lightweight Rails session check endpoint (Approach 1). **Architecture:** ``` Browser → Tailscale → Nginx → auth_request /api/session/check ↓ Rails returns 200 or 401
+
+
+---
+
+*April 22, 2026 at 3:00 AM GMT+8*
+
+Reflections: No strong patterns surfaced.
+
+
+---
+
+*April 22, 2026 at 3:00 AM GMT+8*
+
+9. **If switching back to dev later:** `docker compose -f docker-compose.ghcr.yml down` → restart dev stack as `openclaw` user. ## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: **[2026-04-13 10:11 PM +08]** GHCR production deployment preparation — stopped dev stack, ready for next-session testing. - confidence: 0.00 - evidence: memory/2026-04-13.md:3-3 - recalls: 0 - status: staged - Candidate: **Progress:** Development docker compose stack (`agent-platform-app-1`, `agent-platform-proxy-1`, etc.) has been stopped to free port 3000 for GHCR production testing.; **Context reviewed:** `docker-compose.ghcr.yml`, `.env.production`, `Dockerfile`, `nginx-proxy.conf`, GHCR
+
 <!-- openclaw:dreaming:diary:end -->

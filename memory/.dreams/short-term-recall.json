@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-19T19:00:03.206Z",
+  "updatedAt": "2026-04-22T02:52:53.830Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -6751,22 +6751,27 @@
       "endLine": 60,
       "source": "memory",
       "snippet": "# 2026-04-06 — OpenClaw 2026.4.5 Upgrade + Dreaming Enabled ## Summary Upgraded OpenClaw from 2026.4.1 to 2026.4.5. Configured and tested experimental dreaming feature for automatic memory consolidation. ## OpenClaw Upgrade ### Version - **From:** 2026.4.1 - **To:** 2026.4.5 ### Upgrade Steps 1. `npm update -g openclaw` 2. `openclaw doctor --fix` (migrated config, backup created) 3. `openclaw gateway restart` ### Config Migration - Doctor automatically fixed config - Backup saved: `~/.openclaw/openclaw.json.bak` - No deprecated settings found (clean upgrade) ## Dreaming Configuration (Experimental) ### What is Dreaming? Background memory consolidation system that moves strong short-te",
-      "recallCount": 4,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.9763905495405196,
-      "maxScore": 0.5222868204116821,
+      "totalScore": 4.174497349531241,
+      "maxScore": 0.7926711156674108,
       "firstRecalledAt": "2026-04-12T02:06:27.192Z",
-      "lastRecalledAt": "2026-04-13T14:44:37.736Z",
+      "lastRecalledAt": "2026-04-22T02:23:56.795Z",
       "queryHashes": [
         "b1a812254815",
         "3b2cdf3b87f1",
         "065c0d3f5af3",
-        "48c470d54b2f"
+        "48c470d54b2f",
+        "cb1c43583e4b",
+        "6c70a997f668",
+        "fefe4048e15b",
+        "2d91467c7129"
       ],
       "recallDays": [
         "2026-04-12",
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-22"
       ],
       "conceptTags": [
         "backup",
@@ -6786,21 +6791,25 @@
       "endLine": 27,
       "source": "memory",
       "snippet": "## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: Session Start: Victor upgraded OpenClaw from 2026.4.5 → 2026.4.9 successfully; Had to remove `\"memory-lancedb\": { \"enabled\": false }` from config — even when disabled, app was looking for required properties - confidence: 0.00 - evidence: memory/2026-04-09.md:4-5 - recalls: 0 - status: staged - Candidate: Dreaming Config — Complete: Docs confirm only 2 user-facing settings exist: - confidence: 0.00 - evidence: memory/2026-04-09.md:10-10 - recalls: 0 - status: staged - Candidate: Dreaming Config — Complete: \"dreaming\": { \"enabled\": true, \"frequency\": \"0 3 * * *\" - confidence: 0.00 - evidence: memory/2026-04",
-      "recallCount": 4,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.9167348325252531,
-      "maxScore": 0.5006158679723739,
+      "totalScore": 3.9500126454822757,
+      "maxScore": 0.8253069944139466,
       "firstRecalledAt": "2026-04-12T02:06:27.192Z",
-      "lastRecalledAt": "2026-04-12T02:12:41.443Z",
+      "lastRecalledAt": "2026-04-22T02:23:53.551Z",
       "queryHashes": [
         "b1a812254815",
         "3b2cdf3b87f1",
         "065c0d3f5af3",
-        "13b21b3d178b"
+        "13b21b3d178b",
+        "cb1c43583e4b",
+        "6c70a997f668",
+        "fefe4048e15b"
       ],
       "recallDays": [
-        "2026-04-12"
+        "2026-04-12",
+        "2026-04-22"
       ],
       "conceptTags": [
         "2026.4.5",
@@ -6875,138 +6884,6 @@
         "agents.lis",
         "log",
         "system"
-      ]
-    },
-    "memory:memory/2026-04-10.md:58:94": {
-      "key": "memory:memory/2026-04-10.md:58:94",
-      "path": "memory/2026-04-10.md",
-      "startLine": 58,
-      "endLine": 94,
-      "source": "memory",
-      "snippet": "- Candidate: Proposed Setup (Ceil — main agent): \"memory-wiki\": { \"enabled\": true, \"config\": { \"vaultMode\": \"isolated\", - confidence: 0.00 - evidence: memory/2026-04-09.md:53-56 - recalls: 0 - status: staged - Candidate: Proposed Setup (Ceil — main agent): \"vault\": { \"path\": \"~/.openclaw/wiki/main\", \"renderMode\": \"obsidian\" - confidence: 0.00 - evidence: memory/2026-04-09.md:57-59 - recalls: 0 - status: staged - Candidate: Proposed Setup (Ceil — main agent): \"obsidian\": { \"enabled\": true, \"useOfficialCli\": true, \"vaultName\": \"Ceil Wiki\", - confidence: 0.00 - evidence: memory/2026-04-09.md:61-64 - recalls: 0 - status: staged - Candidate: Proposed Setup (Ceil — main age",
-      "recallCount": 4,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 2.522815080921205,
-      "maxScore": 0.7964054179174006,
-      "firstRecalledAt": "2026-04-12T02:06:30.374Z",
-      "lastRecalledAt": "2026-04-12T11:19:18.800Z",
-      "queryHashes": [
-        "3b2cdf3b87f1",
-        "065c0d3f5af3",
-        "35a3e4a4eaec",
-        "2ce1916977e8"
-      ],
-      "recallDays": [
-        "2026-04-12"
-      ],
-      "conceptTags": [
-        "memory-wiki",
-        "0.00",
-        "memory/2026-04-09.md",
-        "53-56",
-        "openclaw/wiki/main",
-        "57-59",
-        "61-64",
-        "candidate"
-      ]
-    },
-    "memory:memory/2026-04-10.md:113:143": {
-      "key": "memory:memory/2026-04-10.md:113:143",
-      "path": "memory/2026-04-10.md",
-      "startLine": 113,
-      "endLine": 143,
-      "source": "memory",
-      "snippet": "- Candidate: Next Steps (Pending Victor): Decide: try `{agentId}` templating workaround OR file feature request for per-agent vault paths; Enable memory-wiki for Ceil once vault setup is resolved; After Ceil is stable, add Neo to separate vault - confidence: 0.00 - evidence: memory/2026-04-09.md:101-103 - recalls: 0 - status: staged - Candidate: Summary: Dreaming feature is now fully activated via slash command. Previous configuration-only approach didn't create the cron job; `/dreaming on` was required. - confidence: 0.00 - evidence: memory/2026-04-07.md:4-4 - recalls: 0 - status: staged - Candidate: What Was Missing: Config was set in `openclaw.json` (plugins.entries.memory",
-      "recallCount": 3,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 1.425360268354416,
-      "maxScore": 0.4892267346382141,
-      "firstRecalledAt": "2026-04-12T02:06:30.374Z",
-      "lastRecalledAt": "2026-04-12T02:12:41.443Z",
-      "queryHashes": [
-        "3b2cdf3b87f1",
-        "065c0d3f5af3",
-        "13b21b3d178b"
-      ],
-      "recallDays": [
-        "2026-04-12"
-      ],
-      "conceptTags": [
-        "per-agent",
-        "memory-wiki",
-        "0.00",
-        "memory/2026-04-09.md",
-        "101-103",
-        "configuration-only",
-        "memory/2026-04-07.md",
-        "4-4"
-      ]
-    },
-    "memory:memory/2026-04-10.md:278:302": {
-      "key": "memory:memory/2026-04-10.md:278:302",
-      "path": "memory/2026-04-10.md",
-      "startLine": 278,
-      "endLine": 302,
-      "source": "memory",
-      "snippet": "- Candidate: Assistant: **Found the issue!** The logs show: ``` config change requires gateway restart (plugins.entries.memory-core.config.dreaming.enabled) ``` The dreaming config was detected but **requires a full gateway restart**, not just a `gateway restart` command. Let me check when th - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-07.txt:13-13 - recalls: 0 - status: staged - Candidate: Assistant: The gateway was restarted, but dreaming still isn't showing up. Let me check if there's an issue with the feature itself by looking at the plugin status: - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-07.txt:14-14 - recalls: 0 - sta",
-      "recallCount": 1,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 0.45932958424091336,
-      "maxScore": 0.45932958424091336,
-      "firstRecalledAt": "2026-04-12T02:12:38.607Z",
-      "lastRecalledAt": "2026-04-12T02:12:38.607Z",
-      "queryHashes": [
-        "065c0d3f5af3"
-      ],
-      "recallDays": [
-        "2026-04-12"
-      ],
-      "conceptTags": [
-        "gateway",
-        "0.00",
-        "13-13",
-        "14-14",
-        "candidate",
-        "assistant",
-        "found",
-        "the"
-      ]
-    },
-    "memory:memory/2026-04-10.md:88:117": {
-      "key": "memory:memory/2026-04-10.md:88:117",
-      "path": "memory/2026-04-10.md",
-      "startLine": 88,
-      "endLine": 117,
-      "source": "memory",
-      "snippet": "- Candidate: Proposed Setup (Ceil — main agent): \"ingest\": { \"autoCompile\": true, \"maxConcurrentJobs\": 1 - confidence: 0.00 - evidence: memory/2026-04-09.md:75-77 - recalls: 0 - status: staged - Candidate: Proposed Setup (Ceil — main agent): \"search\": { \"backend\": \"shared\", \"corpus\": \"all\" - confidence: 0.00 - evidence: memory/2026-04-09.md:79-81 - recalls: 0 - status: staged - Candidate: Proposed Setup (Ceil — main agent): \"render\": { \"preserveHumanBlocks\": true, \"createBacklinks\": true, \"createDashboards\": true - confidence: 0.00 - evidence: memory/2026-04-09.md:83-86 - recalls: 0 - status: staged - Candidate: Open Questions: Per-agent vault paths: feature gap — Vic",
-      "recallCount": 3,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 2.0153936739058587,
-      "maxScore": 0.7905392116707586,
-      "firstRecalledAt": "2026-04-12T02:12:38.607Z",
-      "lastRecalledAt": "2026-04-13T03:22:07.030Z",
-      "queryHashes": [
-        "065c0d3f5af3",
-        "52427feb0827",
-        "5965b6481312"
-      ],
-      "recallDays": [
-        "2026-04-12",
-        "2026-04-13"
-      ],
-      "conceptTags": [
-        "0.00",
-        "memory/2026-04-09.md",
-        "75-77",
-        "79-81",
-        "83-86",
-        "per-agent",
-        "candidate",
-        "proposed"
       ]
     },
     "memory:memory/2026-04-11.md:29:60": {
@@ -7176,39 +7053,6 @@
         "vector-based",
         "cli-first",
         "neo4j/falkordb"
-      ]
-    },
-    "memory:memory/2026-04-10.md:38:67": {
-      "key": "memory:memory/2026-04-10.md:38:67",
-      "path": "memory/2026-04-10.md",
-      "startLine": 38,
-      "endLine": 67,
-      "source": "memory",
-      "snippet": "- Candidate: Workspace Isolation Confirmed: Dreaming config is shared (global), but workspace isolation means each agent's dreaming consolidates only its own memory signals; Each agent has its own `memory/.dreams/` directory - confidence: 0.00 - evidence: memory/2026-04-09.md:37-38 - recalls: 0 - status: staged - Candidate: Limitation Found: `memory-wiki` plugin config is at `plugins.entries` (gateway level), NOT per-agent. This means: - confidence: 0.00 - evidence: memory/2026-04-09.md:43-43 - recalls: 0 - status: staged - Candidate: Limitation Found: One vault path shared by all agents on this gateway; No built-in per-agent vault path support (no `{agentId}` templating conf",
-      "recallCount": 3,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 2.4680197094940466,
-      "maxScore": 0.8926547749908879,
-      "firstRecalledAt": "2026-04-12T11:13:21.905Z",
-      "lastRecalledAt": "2026-04-12T11:19:18.800Z",
-      "queryHashes": [
-        "35a3e4a4eaec",
-        "31543f4c7470",
-        "2ce1916977e8"
-      ],
-      "recallDays": [
-        "2026-04-12"
-      ],
-      "conceptTags": [
-        "gateway",
-        "0.00",
-        "memory/2026-04-09.md",
-        "37-38",
-        "memory-wiki",
-        "plugins.entries",
-        "per-agent",
-        "43-43"
       ]
     },
     "memory:memory/2026-04-04.md:58:107": {
@@ -17477,37 +17321,6 @@
         "link-to"
       ]
     },
-    "memory:memory/2026-04-13.md:358:374": {
-      "key": "memory:memory/2026-04-13.md:358:374",
-      "path": "memory/2026-04-13.md",
-      "startLine": 358,
-      "endLine": 374,
-      "source": "memory",
-      "snippet": "- Candidate: User: [media attached: /home/openclaw/.openclaw/media/inbound/file_244---cd7241ac-d76e-427e-ad74-e5761380e7f5.jpg (image/jpeg) | /home/openclaw/.openclaw/media/inbound/file_244---cd7241ac-d76e-427e-ad74-e5761380e7f5.jpg] To send an image back, prefer the message tool (media/path/ - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-12.txt:63-63 - recalls: 0 - status: staged - Candidate: Assistant: The containers are actually running. The bug is because nginx tells Rails the protocol is `$scheme`, but since Tailscale terminates HTTPS and forwards plain HTTP to nginx, `$scheme` is `http`. Rails then generates `http://...` redirects. Let me fix the nginx con",
-      "recallCount": 1,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 0.7822859723374777,
-      "maxScore": 0.7822859723374777,
-      "firstRecalledAt": "2026-04-13T03:22:07.030Z",
-      "lastRecalledAt": "2026-04-13T03:22:07.030Z",
-      "queryHashes": [
-        "5965b6481312"
-      ],
-      "recallDays": [
-        "2026-04-13"
-      ],
-      "conceptTags": [
-        "home/openclaw",
-        "openclaw/media/inbound/file-244",
-        "image/jpeg",
-        "media/path",
-        "0.00",
-        "63-63",
-        "candidate",
-        "user"
-      ]
-    },
     "memory:memory/2026-03-18.md:73:116": {
       "key": "memory:memory/2026-03-18.md:73:116",
       "path": "memory/2026-03-18.md",
@@ -17601,37 +17414,6 @@
         "api/session/check",
         "rails",
         "auth"
-      ]
-    },
-    "memory:memory/2026-04-13.md:123:139": {
-      "key": "memory:memory/2026-04-13.md:123:139",
-      "path": "memory/2026-04-13.md",
-      "startLine": 123,
-      "endLine": 139,
-      "source": "memory",
-      "snippet": "- Candidate: User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18134\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Mon 2026-04-13 09:04 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154 - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:21-21 - recalls: 0 - status: staged - Candidate: Assistant: Here's the consolidated implementation plan for your review: --- ## Plan: Gate n8n UI Behind Rails Auth via Nginx `auth_request` ### Goal Only authenticated Rails users can access n8n at `/n8n/`. External webhooks at `/n8n/webhook/` and `/n8n/webhook-test/` rema",
-      "recallCount": 1,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 0.7787543597365764,
-      "maxScore": 0.7787543597365764,
-      "firstRecalledAt": "2026-04-13T03:22:16.399Z",
-      "lastRecalledAt": "2026-04-13T03:22:16.399Z",
-      "queryHashes": [
-        "8d240071253d"
-      ],
-      "recallDays": [
-        "2026-04-13"
-      ],
-      "conceptTags": [
-        "message-id",
-        "sender-id",
-        "0.00",
-        "21-21",
-        "auth-request",
-        "n8n/webhook",
-        "n8n/webhook-test",
-        "candidate"
       ]
     },
     "memory:memory/2026-04-13.md:470:470": {
@@ -32558,7 +32340,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -32567,7 +32349,8 @@
         "2026-04-16",
         "2026-04-17",
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20"
       ],
       "conceptTags": [
         "next-session",
@@ -32593,7 +32376,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -32602,7 +32385,8 @@
         "2026-04-16",
         "2026-04-17",
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20"
       ],
       "conceptTags": [
         "agent-platform-app-1",
@@ -32628,7 +32412,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -32637,7 +32421,8 @@
         "2026-04-16",
         "2026-04-17",
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20"
       ],
       "conceptTags": [
         "ssh/switch",
@@ -32663,7 +32448,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -32672,7 +32457,8 @@
         "2026-04-16",
         "2026-04-17",
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20"
       ],
       "conceptTags": [
         "prod-postgres-password",
@@ -32698,7 +32484,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -32707,7 +32493,8 @@
         "2026-04-16",
         "2026-04-17",
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20"
       ],
       "conceptTags": [
         "docker-compose.ghcr.yml",
@@ -32733,7 +32520,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T14:22:32.681Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
       "queryHashes": [
         "0dac2e09ca9b"
       ],
@@ -32742,7 +32529,8 @@
         "2026-04-16",
         "2026-04-17",
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20"
       ],
       "conceptTags": [
         "docker-compose.ghcr.yml",
@@ -33528,18 +33316,20 @@
       "endLine": 86,
       "source": "memory",
       "snippet": "**Context:** Neo (Telegram) experienced an LLM idle timeout on `kimi/k2p5` via the `kimi-coding` provider. After ~60s, OpenClaw auto-fallback to `minimax-m2.7` successfully. Model was later reset to `kimi/k2p5`. **Investigation:** - Confirmed via `openclaw logs` — primary profile `kimi-coding:default` hit `LLM idle timeout (60s)`, HTTP 408. - OpenClaw GitHub repo search revealed **Issue #55065** (no idle timeout mechanism) plus transient kimi-coding provider latency issues. - Victor confirmed he's on OpenClaw **v4.9** and the tool-call format bug is already resolved in this version. **Current Assessment:** - Only symptom observed is the **60s idle timeout** — likely transient provider-side",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.6542318735634025,
+      "totalScore": 1.1203107152496512,
       "maxScore": 0.6542318735634025,
       "firstRecalledAt": "2026-04-14T03:15:47.633Z",
-      "lastRecalledAt": "2026-04-14T03:15:47.633Z",
+      "lastRecalledAt": "2026-04-22T02:07:43.762Z",
       "queryHashes": [
-        "80abc314aba1"
+        "80abc314aba1",
+        "fc49abb81cea"
       ],
       "recallDays": [
-        "2026-04-14"
+        "2026-04-14",
+        "2026-04-22"
       ],
       "conceptTags": [
         "kimi/k2p5",
@@ -33856,7 +33646,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-14T19:00:00.748Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "11d1361acb2d"
       ],
@@ -33864,7 +33654,9 @@
         "2026-04-14",
         "2026-04-17",
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "reflections",
@@ -33886,7 +33678,7 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-14T19:00:00.748Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "11d1361acb2d"
       ],
@@ -33894,7 +33686,9 @@
         "2026-04-14",
         "2026-04-17",
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "possible",
@@ -35594,14 +35388,16 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-15T19:00:00.327Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "4c4c0cb04efa"
       ],
       "recallDays": [
         "2026-04-15",
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "reflections",
@@ -35623,14 +35419,16 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-15T19:00:00.327Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "4c4c0cb04efa"
       ],
       "recallDays": [
         "2026-04-15",
         "2026-04-18",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "possible",
@@ -36870,37 +36668,6 @@
         "two"
       ]
     },
-    "memory:memory/2026-04-10.md:238:261": {
-      "key": "memory:memory/2026-04-10.md:238:261",
-      "path": "memory/2026-04-10.md",
-      "startLine": 238,
-      "endLine": 261,
-      "source": "memory",
-      "snippet": "- Candidate: Assistant: Now sending the facility RPR breakdown: - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-07.txt:5-5 - recalls: 0 - status: staged - Candidate: Assistant: The facility RPR report is too long. Let me split it: - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-07.txt:6-6 - recalls: 0 - status: staged - Candidate: Assistant: ## Task Complete ✅ **4:05 PM Late Afternoon FSM Check with Facility RPR Breakdown completed.** ### Summary: - **Company-wide**: 245/1318 completed (18.6%) | 514 pending | 68 RPR - **Pace**: 🚀 Fast (+90 completed since 2:05 PM) - **Alert**: 🔴 MAKATI at 0.0% completion - confidence: 0.00 - evi",
-      "recallCount": 1,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 0.4846007317304611,
-      "maxScore": 0.4846007317304611,
-      "firstRecalledAt": "2026-04-16T00:03:50.885Z",
-      "lastRecalledAt": "2026-04-16T00:03:50.885Z",
-      "queryHashes": [
-        "d34508fc0dbd"
-      ],
-      "recallDays": [
-        "2026-04-16"
-      ],
-      "conceptTags": [
-        "0.00",
-        "5-5",
-        "6-6",
-        "company-wide",
-        "245/1318",
-        "18.6",
-        "0.0",
-        "candidate"
-      ]
-    },
     "memory:memory/2026-04-12.md:1:28": {
       "key": "memory:memory/2026-04-12.md:1:28",
       "path": "memory/2026-04-12.md",
@@ -36930,41 +36697,6 @@
         "home/openclaw",
         "absolute-redirect",
         "log"
-      ]
-    },
-    "memory:memory/2026-04-15.md:428:452": {
-      "key": "memory:memory/2026-04-15.md:428:452",
-      "path": "memory/2026-04-15.md",
-      "startLine": 428,
-      "endLine": 452,
-      "source": "memory",
-      "snippet": "- Candidate: Next Steps (for next session): **SSH/switch to the other VPS user** and navigate to their agent-platform checkout.; **Ensure their working tree is on latest `master`** (especially `nginx-proxy.conf`, `docker-compose.ghcr.yml`, `postgres-init-scripts/`, `.env.production`).; **Rege - confidence: 0.62 - evidence: memory/2026-04-13.md:9-12 - recalls: 0 - status: staged - Candidate: Next Steps (for next session): `PROD_POSTGRES_PASSWORD` → strong password; `N8N_PASSWORD` → strong password; `N8N_EDITOR_BASE_URL` → `https://srv1405873.tailcd23a1.ts.net:8444/n8n`; **Verify `RAILS_MASTER_KEY` is present** in `.env.production` (add if missing to avoid `credential - confidence: 0",
-      "recallCount": 5,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 2.3450043350458145,
-      "maxScore": 0.507779124379158,
-      "firstRecalledAt": "2026-04-16T01:14:45.607Z",
-      "lastRecalledAt": "2026-04-16T01:26:34.690Z",
-      "queryHashes": [
-        "cb1df9e3aeb6",
-        "76716d065d67",
-        "7778ebca381d",
-        "b34686ccbbe0",
-        "423f25bf9757"
-      ],
-      "recallDays": [
-        "2026-04-16"
-      ],
-      "conceptTags": [
-        "ssh/switch",
-        "agent-platform",
-        "nginx-proxy.conf",
-        "docker-compose.ghcr.yml",
-        "postgres-init-scripts",
-        "env.production",
-        "0.62",
-        "memory/2026-04-13.md"
       ]
     },
     "memory:memory/2026-04-15.md:283:292": {
@@ -36998,71 +36730,6 @@
         "platform"
       ]
     },
-    "memory:memory/2026-04-14.md:23:49": {
-      "key": "memory:memory/2026-04-14.md:23:49",
-      "path": "memory/2026-04-14.md",
-      "startLine": 23,
-      "endLine": 49,
-      "source": "memory",
-      "snippet": "- Candidate: Next Steps (for next session): `PROD_POSTGRES_PASSWORD` → strong password; `N8N_PASSWORD` → strong password; `N8N_EDITOR_BASE_URL` → `https://srv1405873.tailcd23a1.ts.net:8444/n8n`; **Verify `RAILS_MASTER_KEY` is present** in `.env.production` (add if missing to avoid `credential - confidence: 0.62 - evidence: memory/2026-04-13.md:13-16 - recalls: 0 - status: staged - Candidate: Next Steps (for next session): **Optionally patch `docker-compose.ghcr.yml`** to pass `RAILS_MASTER_KEY` into the `app` service if not already present.; **Start the GHCR stack:** - confidence: 0.62 - evidence: memory/2026-04-13.md:17-18 - recalls: 0 - status: staged - Candidate: Next Step",
-      "recallCount": 3,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 1.4243726581335068,
-      "maxScore": 0.5079536944627762,
-      "firstRecalledAt": "2026-04-16T01:23:03.660Z",
-      "lastRecalledAt": "2026-04-16T01:26:34.690Z",
-      "queryHashes": [
-        "7778ebca381d",
-        "c886dd287fda",
-        "423f25bf9757"
-      ],
-      "recallDays": [
-        "2026-04-16"
-      ],
-      "conceptTags": [
-        "prod-postgres-password",
-        "n8n-password",
-        "n8n-editor-base-url",
-        "srv1405873.tailcd23a1.ts.net",
-        "8444/n8n",
-        "rails-master-key",
-        "env.production",
-        "0.62"
-      ]
-    },
-    "memory:memory/2026-04-13.md:50:76": {
-      "key": "memory:memory/2026-04-13.md:50:76",
-      "path": "memory/2026-04-13.md",
-      "startLine": 50,
-      "endLine": 76,
-      "source": "memory",
-      "snippet": "- Candidate: Next Steps (for next session): `PROD_POSTGRES_PASSWORD` → strong password; `N8N_PASSWORD` → strong password; `N8N_EDITOR_BASE_URL` → `https://srv1405873.tailcd23a1.ts.net:8444/n8n`; **Verify `RAILS_MASTER_KEY` is present** in `.env.production` (add if missing to avoid `credential - confidence: 0.00 - evidence: memory/2026-04-13.md:13-16 - recalls: 0 - status: staged - Candidate: Next Steps (for next session): **Optionally patch `docker-compose.ghcr.yml`** to pass `RAILS_MASTER_KEY` into the `app` service if not already present.; **Start the GHCR stack:** - confidence: 0.00 - evidence: memory/2026-04-13.md:17-18 - recalls: 0 - status: staged - Candidate: Next Step",
-      "recallCount": 2,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 0.9710218489170075,
-      "maxScore": 0.5098033487796784,
-      "firstRecalledAt": "2026-04-16T01:23:03.660Z",
-      "lastRecalledAt": "2026-04-16T01:26:34.690Z",
-      "queryHashes": [
-        "7778ebca381d",
-        "423f25bf9757"
-      ],
-      "recallDays": [
-        "2026-04-16"
-      ],
-      "conceptTags": [
-        "prod-postgres-password",
-        "n8n-password",
-        "n8n-editor-base-url",
-        "srv1405873.tailcd23a1.ts.net",
-        "8444/n8n",
-        "rails-master-key",
-        "env.production",
-        "0.00"
-      ]
-    },
     "memory:memory/2026-04-02.md:166:189": {
       "key": "memory:memory/2026-04-02.md:166:189",
       "path": "memory/2026-04-02.md",
@@ -37092,37 +36759,6 @@
         "compose",
         "run",
         "app"
-      ]
-    },
-    "memory:memory/2026-04-15.md:443:467": {
-      "key": "memory:memory/2026-04-15.md:443:467",
-      "path": "memory/2026-04-15.md",
-      "startLine": 443,
-      "endLine": 467,
-      "source": "memory",
-      "snippet": "- Candidate: Next Steps (for next session): docker compose -f docker-compose.ghcr.yml --env-file .env.production up -d - confidence: 0.62 - evidence: memory/2026-04-13.md:20-20 - recalls: 0 - status: staged - Candidate: Next Steps (for next session): **Initialize database (if fresh volume):** - confidence: 0.62 - evidence: memory/2026-04-13.md:22-22 - recalls: 0 - status: staged - Candidate: Next Steps (for next session): docker compose -f docker-compose.ghcr.yml --env-file .env.production exec app bin/rails db:create db:migrate db:seed - confidence: 0.62 - evidence: memory/2026-04-13.md:24-24 - recalls: 0 - status: staged - Candidate: Next Steps (for next session): *",
-      "recallCount": 1,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 0.4312748074531555,
-      "maxScore": 0.4312748074531555,
-      "firstRecalledAt": "2026-04-16T01:23:03.660Z",
-      "lastRecalledAt": "2026-04-16T01:23:03.660Z",
-      "queryHashes": [
-        "7778ebca381d"
-      ],
-      "recallDays": [
-        "2026-04-16"
-      ],
-      "conceptTags": [
-        "docker-compose.ghcr.yml",
-        "env-file",
-        "env.production",
-        "0.62",
-        "memory/2026-04-13.md",
-        "20-20",
-        "22-22",
-        "bin/rails"
       ]
     },
     "memory:memory/2026-04-15.md:278:286": {
@@ -37157,70 +36793,6 @@
         "candidate"
       ]
     },
-    "memory:memory/2026-04-16.md:443:459": {
-      "key": "memory:memory/2026-04-16.md:443:459",
-      "path": "memory/2026-04-16.md",
-      "startLine": 443,
-      "endLine": 459,
-      "source": "memory",
-      "snippet": "- Candidate: User: [cron:c5c9902a-9717-4f49-bf11-1fa246f921b4 ProTek 16:05 Late Afternoon] Use the protek-fsm-analyzer skill to run: /fsm check --facility Current time: Tuesday, April 14th, 2026 - 4:05 PM (Asia/Manila) / 2026-04-14 08:05 UTC Return your summary as plain text; it will be deliv - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-14.txt:31-31 - recalls: 0 - status: staged - Candidate: User: [Tue 2026-04-14 16:08 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…c2e8 ses",
-      "recallCount": 2,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 0.9054443091154099,
-      "maxScore": 0.484008052945137,
-      "firstRecalledAt": "2026-04-16T01:26:26.889Z",
-      "lastRecalledAt": "2026-04-16T11:13:00.642Z",
-      "queryHashes": [
-        "2f612646f5dc",
-        "0f1ebcfab0fa"
-      ],
-      "recallDays": [
-        "2026-04-16"
-      ],
-      "conceptTags": [
-        "protek-fsm-analyzer",
-        "asia/manila",
-        "0.58",
-        "31-31",
-        "begin-openclaw-internal-context",
-        "runtime-generated",
-        "user-authored",
-        "session-key"
-      ]
-    },
-    "memory:memory/2026-04-16.md:368:384": {
-      "key": "memory:memory/2026-04-16.md:368:384",
-      "path": "memory/2026-04-16.md",
-      "startLine": 368,
-      "endLine": 384,
-      "source": "memory",
-      "snippet": "- Candidate: User: [media attached: /home/openclaw/.openclaw/media/inbound/file_251---42610a78-69f6-494c-a586-5f64732e4b5e.jpg (image/jpeg) | /home/openclaw/.openclaw/media/inbound/file_251---42610a78-69f6-494c-a586-5f64732e4b5e.jpg] To send an image back, prefer the message tool (media/path/ - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-14.txt:14-14 - recalls: 0 - status: staged - Candidate: User: [Tue 2026-04-14 11:15 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…841c ses",
-      "recallCount": 2,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 0.9499619334936141,
-      "maxScore": 0.47598694562911986,
-      "firstRecalledAt": "2026-04-16T01:26:26.889Z",
-      "lastRecalledAt": "2026-04-16T01:26:42.528Z",
-      "queryHashes": [
-        "2f612646f5dc",
-        "4010d2e2c976"
-      ],
-      "recallDays": [
-        "2026-04-16"
-      ],
-      "conceptTags": [
-        "home/openclaw",
-        "openclaw/media/inbound/file-251",
-        "image/jpeg",
-        "media/path",
-        "0.58",
-        "14-14",
-        "begin-openclaw-internal-context",
-        "runtime-generated"
-      ]
-    },
     "memory:memory/2026-04-15.md:157:177": {
       "key": "memory:memory/2026-04-15.md:157:177",
       "path": "memory/2026-04-15.md",
@@ -37228,19 +36800,21 @@
       "endLine": 177,
       "source": "memory",
       "snippet": "- status: staged - Candidate: Assistant: 📊 **Protek FSM Report — April 14, 2026 (4:06 PM HKT)** **Overall Summary** | Metric | Value | |--------|-------| | Total PRs | 1,527 | | Completed | 269 | | Pending | 594 | | RPR Total | 91 | **Zone Performance** | Zone | Total | Done | Pending | RPR | Completion Rate - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-14.txt:33-33 - recalls: 0 - status: staged - Candidate: User: [Tue 2026-04-14 11:12 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Research the new Kimi model **K2.6-code-preview** for OpenClaw configu",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9523017108440398,
+      "totalScore": 1.4242217034101485,
       "maxScore": 0.47826059162616724,
       "firstRecalledAt": "2026-04-16T01:26:26.889Z",
-      "lastRecalledAt": "2026-04-16T01:26:42.528Z",
+      "lastRecalledAt": "2026-04-22T02:07:43.762Z",
       "queryHashes": [
         "2f612646f5dc",
-        "4010d2e2c976"
+        "4010d2e2c976",
+        "fc49abb81cea"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-22"
       ],
       "conceptTags": [
         "0.58",
@@ -37355,18 +36929,20 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# Daily Log — 2026-04-09 ## Session Start - Victor upgraded OpenClaw from 2026.4.5 → 2026.4.9 successfully - Had to remove `\"memory-lancedb\": { \"enabled\": false }` from config — even when disabled, app was looking for required properties ## Dreaming Research Results ### Dreaming Config — Complete Docs confirm only 2 user-facing settings exist: ```json \"dreaming\": { \"enabled\": true, \"frequency\": \"0 3 * * *\" } ``` Your current config is complete. No missing fields. Light/deep/REM thresholds are intentionally internal — not user-configurable. ### Dreaming Uses Internal Scheduler (NOT jobs.json) - Dreaming cron is managed by **memory-core plugin's own internal scheduler**, NOT the gatewa",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.49405741095542904,
-      "maxScore": 0.49405741095542904,
+      "totalScore": 1.2918328944000514,
+      "maxScore": 0.7977754834446225,
       "firstRecalledAt": "2026-04-16T01:52:45.229Z",
-      "lastRecalledAt": "2026-04-16T01:52:45.229Z",
+      "lastRecalledAt": "2026-04-22T02:15:29.301Z",
       "queryHashes": [
-        "9281fb8ad9e5"
+        "9281fb8ad9e5",
+        "6c70a997f668"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-22"
       ],
       "conceptTags": [
         "2026.4.5",
@@ -37408,99 +36984,6 @@
         "memory.m",
         "set",
         "any"
-      ]
-    },
-    "memory:memory/2026-04-13.md:90:106": {
-      "key": "memory:memory/2026-04-13.md:90:106",
-      "path": "memory/2026-04-13.md",
-      "startLine": 90,
-      "endLine": 106,
-      "source": "memory",
-      "snippet": "- Candidate: Assistant: Done — appended the GHCR production prep status and the full next-session checklist to `memory/2026-04-13.md`. The main things waiting for next time: - Switch to the other VPS user - Pull latest `master` - Update `.env.production` with real `SECRET_KEY_BASE`, strong pa - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:130-130 - recalls: 0 - status: staged - Candidate: User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18233\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Mon 2026-04-13 22:15 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"i",
-      "recallCount": 1,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 0.47369229197502133,
-      "maxScore": 0.47369229197502133,
-      "firstRecalledAt": "2026-04-16T01:52:45.229Z",
-      "lastRecalledAt": "2026-04-16T01:52:45.229Z",
-      "queryHashes": [
-        "9281fb8ad9e5"
-      ],
-      "recallDays": [
-        "2026-04-16"
-      ],
-      "conceptTags": [
-        "next-session",
-        "memory/2026-04-13.md",
-        "env.production",
-        "secret-key-base",
-        "0.00",
-        "130-130",
-        "message-id",
-        "sender-id"
-      ]
-    },
-    "memory:memory/2026-04-14.md:228:244": {
-      "key": "memory:memory/2026-04-14.md:228:244",
-      "path": "memory/2026-04-14.md",
-      "startLine": 228,
-      "endLine": 244,
-      "source": "memory",
-      "snippet": "- Candidate: Assistant: Done — appended the GHCR production prep status and the full next-session checklist to `memory/2026-04-13.md`. The main things waiting for next time: - Switch to the other VPS user - Pull latest `master` - Update `.env.production` with real `SECRET_KEY_BASE`, strong pa - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:130-130 - recalls: 0 - status: staged - Candidate: User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18233\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Mon 2026-04-13 22:15 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"i",
-      "recallCount": 1,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 0.47295481264591216,
-      "maxScore": 0.47295481264591216,
-      "firstRecalledAt": "2026-04-16T01:52:45.229Z",
-      "lastRecalledAt": "2026-04-16T01:52:45.229Z",
-      "queryHashes": [
-        "9281fb8ad9e5"
-      ],
-      "recallDays": [
-        "2026-04-16"
-      ],
-      "conceptTags": [
-        "next-session",
-        "memory/2026-04-13.md",
-        "env.production",
-        "secret-key-base",
-        "0.58",
-        "130-130",
-        "message-id",
-        "sender-id"
-      ]
-    },
-    "memory:memory/2026-04-15.md:188:204": {
-      "key": "memory:memory/2026-04-15.md:188:204",
-      "path": "memory/2026-04-15.md",
-      "startLine": 188,
-      "endLine": 204,
-      "source": "memory",
-      "snippet": "- Candidate: Assistant: 📊 **Protek FSM 10:05 AM Mid-Morning Check Complete** **Company-wide:** 7/1267 completed (0.6%) | 941 pending | 8 RPR **Pace:** 🐢 slow — completed +7, pending -1 since 8AM **All 9 zones are in critical state** (completion rate below 10% threshold). Top zones by progre - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-14.txt:39-39 - recalls: 0 - status: staged - Candidate: User: [Tue 2026-04-14 11:11 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Research the new Kimi coding model. The user mentions \"kimi code\" and \"Kimi for Coding\" a",
-      "recallCount": 1,
-      "dailyCount": 0,
-      "groundedCount": 0,
-      "totalScore": 0.4248871862888336,
-      "maxScore": 0.4248871862888336,
-      "firstRecalledAt": "2026-04-16T11:13:00.642Z",
-      "lastRecalledAt": "2026-04-16T11:13:00.642Z",
-      "queryHashes": [
-        "0f1ebcfab0fa"
-      ],
-      "recallDays": [
-        "2026-04-16"
-      ],
-      "conceptTags": [
-        "mid-morning",
-        "company-wide",
-        "7/1267",
-        "0.6",
-        "0.58",
-        "39-39",
-        "1/1",
-        "auto-announce"
       ]
     },
     "memory:memory/2026-04-16.md:397:414": {
@@ -37609,13 +37092,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-16T19:00:00.352Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "b628913e3912"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "reflections",
@@ -37637,13 +37122,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-16T19:00:00.352Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "b628913e3912"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "go-ahead",
@@ -37669,13 +37156,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-16T19:00:00.352Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "b628913e3912"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "kimi/k2p6",
@@ -37701,13 +37190,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-16T19:00:00.352Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "b628913e3912"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "kimi/k2p6",
@@ -37733,13 +37224,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-16T19:00:00.352Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "b628913e3912"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "kimi/k2p6",
@@ -37765,13 +37258,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-16T19:00:00.352Z",
-      "lastRecalledAt": "2026-04-19T19:00:00.325Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "b628913e3912"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-19"
+        "2026-04-19",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "kimi/k2p6",
@@ -40115,13 +39610,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T19:00:00.337Z",
-      "lastRecalledAt": "2026-04-18T19:00:00.317Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "500c0eda9949"
       ],
       "recallDays": [
         "2026-04-17",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "reflections",
@@ -40143,13 +39640,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T19:00:00.337Z",
-      "lastRecalledAt": "2026-04-18T19:00:00.317Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "500c0eda9949"
       ],
       "recallDays": [
         "2026-04-17",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "next-session",
@@ -40175,13 +39674,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T19:00:00.337Z",
-      "lastRecalledAt": "2026-04-18T19:00:00.317Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "500c0eda9949"
       ],
       "recallDays": [
         "2026-04-17",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "agent-platform",
@@ -40207,13 +39708,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T19:00:00.337Z",
-      "lastRecalledAt": "2026-04-18T19:00:00.317Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "500c0eda9949"
       ],
       "recallDays": [
         "2026-04-17",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "auto-generates",
@@ -40239,13 +39742,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T19:00:00.337Z",
-      "lastRecalledAt": "2026-04-18T19:00:00.317Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "500c0eda9949"
       ],
       "recallDays": [
         "2026-04-17",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "changes",
@@ -40271,13 +39776,15 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-17T19:00:00.337Z",
-      "lastRecalledAt": "2026-04-18T19:00:00.317Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "500c0eda9949"
       ],
       "recallDays": [
         "2026-04-17",
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-20",
+        "2026-04-21"
       ],
       "conceptTags": [
         "zero-config",
@@ -42824,12 +42331,13 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-18T19:00:00.317Z",
-      "lastRecalledAt": "2026-04-18T19:00:00.317Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
       "recallDays": [
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-21"
       ],
       "conceptTags": [
         "reflections",
@@ -42851,12 +42359,13 @@
       "totalScore": 0.62,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-18T19:00:00.317Z",
-      "lastRecalledAt": "2026-04-18T19:00:00.317Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
       "queryHashes": [
         "77ca9720ec15"
       ],
       "recallDays": [
-        "2026-04-18"
+        "2026-04-18",
+        "2026-04-21"
       ],
       "conceptTags": [
         "cross-agent",
@@ -46891,6 +46400,3409 @@
         "untrusted",
         "metadata",
         "sender"
+      ]
+    },
+    "memory:memory/2026-04-20.md:508:508": {
+      "key": "memory:memory/2026-04-20.md:508:508",
+      "path": "memory/2026-04-20.md",
+      "startLine": 508,
+      "endLine": 508,
+      "source": "memory",
+      "snippet": "Reflections: No strong patterns surfaced.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "511fd8111b88"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "reflections",
+        "strong",
+        "patterns",
+        "surfaced"
+      ]
+    },
+    "memory:memory/2026-04-20.md:511:513": {
+      "key": "memory:memory/2026-04-20.md:511:513",
+      "path": "memory/2026-04-20.md",
+      "startLine": 511,
+      "endLine": 513,
+      "source": "memory",
+      "snippet": "Possible Lasting Truths: # Session Log — 2026-04-12 ## 2026-04-12 10:15 — Cross-Agent Note: n8n Redirect Fix Applied by Neo **Context:** Victor noticed n8n at `https://srv1405873.tailcd23a1.ts.net:8444/n8n` was redirecting to `http://srv...:3000/n8n/` and failing due to n8n secur",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "511fd8111b88"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "cross-agent",
+        "srv1405873.tailcd23a1.ts.net",
+        "8444/n8n",
+        "3000/n8n",
+        "possible",
+        "lasting",
+        "truths",
+        "log"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18678\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Sat 2026-04-18 10:12 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: ✅ **Documented in** `memory/2026-04-17.md` **Summary captured:** - Zero-config deployment complete - All README fixes from testing - Both production & dev flows verified working - Next task: agent-harness n8n workflows Ready to start designing the n8n workflows when yo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "memory/2026-04-17.md",
+        "zero-config",
+        "agent-harness",
+        "assistant",
+        "documented",
+        "summary",
+        "captured",
+        "zero"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "User: [media attached: 2 files] [media attached 1/2: /home/openclaw/.openclaw/media/inbound/file_257---15ccbf40-9adb-41fe-ad9b-5608e3e1b7e2.jpg (image/jpeg) | /home/openclaw/.openclaw/media/inbound/file_257---15ccbf40-9adb-41fe-ad9b-5608e3e1b7e2.jpg] [media attached 2/2: /home/op",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "1/2",
+        "home/openclaw",
+        "openclaw/media/inbound/file-257",
+        "image/jpeg",
+        "2/2",
+        "home/op",
+        "user",
+        "media"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-18.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-18.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-04-18.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: Yes! **\"On message\"** is exactly what you want for a simple chat trigger. From your screenshot, I can see the Telegram triggers list. Click **\"On message\"** — that fires whenever anyone sends a message to your bot. **Next steps after selecting \"On message\":** 1. **Conn",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "6ca7743b227b"
+      ],
+      "recallDays": [
+        "2026-04-18",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "yes",
+        "message",
+        "exactly",
+        "what",
+        "you",
+        "want",
+        "simple"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "User: [media attached: 2 files] [media attached 1/2: /home/openclaw/.openclaw/media/inbound/file_259---efab1d3f-7fb7-4322-a71b-1f9092dc4186.jpg (image/jpeg) | /home/openclaw/.openclaw/media/inbound/file_259---efab1d3f-7fb7-4322-a71b-1f9092dc4186.jpg] [media attached 2/2: /home/op",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "1/2",
+        "home/openclaw",
+        "openclaw/media/inbound/file-259",
+        "image/jpeg",
+        "2/2",
+        "home/op",
+        "user",
+        "media"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: **Short answer:** `localhost` **won't work** for Telegram webhooks — Telegram needs to call that URL from the internet. ## How Telegram Webhooks Work ``` User sends message → Telegram servers → POST to your webhook URL → n8n receives it ``` If the webhook is `http://lo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "answer",
+        "localhost",
+        "won't",
+        "telegram",
+        "webhooks",
+        "needs",
+        "call"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18691\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Sun 2026-04-19 08:36 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: Tailscale Funnel is perfect for this — it lets Telegram reach your webhook without traditional port forwarding. Here's how it works with your setup: ## Tailscale Funnel Explained ```text Telegram → Tailscale edge relay → Funnel tunnel → Your VPS (n8n webhook) ``` **You",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "tailscale",
+        "funnel",
+        "perfect",
+        "lets",
+        "telegram",
+        "reach",
+        "your"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18694\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Sun 2026-04-19 08:39 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: You're right to question this. Let me clarify how Funnel works with your setup: ## Tailscale Funnel Port Mapping ``` sudo tailscale funnel 3000 ``` **What this does:** - **Public side:** `https://srv1405873.tailcd23a1.ts.net` (port 443 on Tailscale's edge) - **Local si",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "srv1405873.tailcd23a1.ts.net",
+        "assistant",
+        "you're",
+        "right",
+        "question",
+        "let",
+        "clarify",
+        "how"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18697\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Sun 2026-04-19 08:44 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: You're right — I missed that constraint. Let me review the Tailscale Funnel docs properly: ## Tailscale Funnel Port Restrictions From the docs, Funnel can **only** listen publicly on: - **443** (standard HTTPS) - **8443** (alternate HTTPS) - **10000** (arbitrary high p",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "you're",
+        "right",
+        "missed",
+        "constraint",
+        "let",
+        "review",
+        "the"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [Mon 2026-04-20 12:05 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM analyzer command: /fsm check --facility This is a midday facility check. Exec",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "mon",
+        "gmt",
+        "subagent",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: Here's the complete midday facility check report: --- **📊 PROTEK FSM MIDDAY REPORT — April 20, 2026 (12:05 PM HKT)** --- **OVERALL SUMMARY** | Metric | Value | |--------|-------| | Total Work | 1,220 | | Completed | 70 | | Pending | 790 | | RPR Total | 30 | | Completi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "here's",
+        "the",
+        "complete",
+        "midday",
+        "facility",
+        "check",
+        "report"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: [cron:3a96b336-0929-403a-a231-0828a6aa496d ProTek 07:05 Morning Cleanup] Use the protek-fsm-analyzer skill to run: /fsm check --cleanup Current time: Monday, April 20th, 2026 - 7:05 AM (Asia/Manila) / 2026-04-19 23:05 UTC Return your summary as plain text; it will be delive",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron",
+        "3a96b336",
+        "403a",
+        "a231",
+        "0828a6aa496d"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "User: [Mon 2026-04-20 07:05 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…8511 session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "mon",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: **Protek FSM 7:05 AM Cleanup — Complete** 🧹 **Cleanup:** Removed 1 old data folder (2026-04-04) — freed 4.5 MB 📊 **Current Status (2026-04-20, 07:05 HKT):** - Total RO: 966 - Completed: 0 (0.0%) - Pending: 758 - RPR: 0 ⚠️ **Alert:** All 9 zones at 0% completion rate",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "4.5",
+        "0.0",
+        "assistant",
+        "protek",
+        "fsm",
+        "cleanup",
+        "complete",
+        "removed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /home/openclaw/.openclaw/workspace/HEARTBEAT.md (exact ca",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "heartbeat-ok",
+        "home/openclaw",
+        "openclaw/workspace/heartbeat.md",
+        "user",
+        "read",
+        "exists",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "User: [Mon 2026-04-20 16:05 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Execute the Protek FSM analyzer skill command: /fsm check --facility This is the Late Afternoon",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "mon",
+        "gmt",
+        "subagent",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: Now I'll run the handler with the `--facility` flag for the late afternoon check:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "now",
+        "i'll",
+        "run",
+        "the",
+        "handler",
+        "facility",
+        "flag"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: The analysis completed successfully. Here's the full report for the **Late Afternoon check (4:05 PM Asia/Manila) for Monday, April 20th, 2026**: --- 📊 **Protek FSM Report** (2026-04-20 16:05 HKT) 📈 Company-wide: 216/1395 completed (15.5%) ⏳ Pending: 497 | 🔄 RPR: 108",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "asia/manila",
+        "company-wide",
+        "216/1395",
+        "15.5",
+        "assistant",
+        "the",
+        "analysis",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "User: [Mon 2026-04-20 07:05 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM analyzer cleanup check: execute `node /home/openclaw/.openclaw/skills/protek-",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "home/openclaw",
+        "openclaw/skills/protek",
+        "user",
+        "mon",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: ## Protek FSM Cleanup Check — Complete **✅ Success** **🧹 Cleanup result:** Removed 1 old data folder (`2026-04-04`) — freed **4.5 MB** **📊 Data snapshot** (2026-04-19): - **Total RO:** 966 - **Completed:** 0 (0.0%) across all 9 zones - **Pending:** 758 - **RPR:** 0 *",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "4.5",
+        "0.0",
+        "assistant",
+        "protek",
+        "fsm",
+        "cleanup",
+        "check",
+        "complete"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "User: [cron:9a3f4f11-99da-42db-b6f1-935d2831b6ba ProTek 14:05 Afternoon Facility] Use the protek-fsm-analyzer skill to run: /fsm check --facility Current time: Monday, April 20th, 2026 - 2:05 PM (Asia/Manila) / 2026-04-20 06:05 UTC Return your summary as plain text; it will be de",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron",
+        "9a3f4f11",
+        "99da",
+        "42db",
+        "b6f1"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "User: [Mon 2026-04-20 14:06 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…e5f5 session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "mon",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: The subagent completed successfully. Here's the full Protek FSM report from the `/fsm check --facility` run: --- 📊 **Protek FSM Report** (2026-04-20 14:06 HKT) 📈 Company-wide: 132/1319 completed (10.0%) ⏳ Pending: 732 | 🔄 RPR: 54 📈 **Today's Progress** (Check 3) Co",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "132/1319",
+        "10.0",
+        "assistant",
+        "the",
+        "subagent",
+        "completed",
+        "successfully"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "User: [cron:60daffdb-3b1f-42f8-9dff-85471f8b0b7e ProTek 18:05 EOD Summary] Use the protek-fsm-analyzer skill to run: /fsm check --6pm --facility Current time: Monday, April 20th, 2026 - 6:05 PM (Asia/Manila) / 2026-04-20 10:05 UTC Return your summary as plain text; it will be del",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron",
+        "60daffdb",
+        "3b1f",
+        "42f8",
+        "9dff"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: Now let me read the saved analysis data and format the final summary:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "now",
+        "let",
+        "read",
+        "the",
+        "saved",
+        "analysis",
+        "data"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: **PROTEK FSM - 6:05 PM EOD SUMMARY | April 20, 2026** **OVERALL** Total: 1,558 | Completed: 288 | Pending: 516 | RPR: 95 Clearance Rate: 75.2% (288 of 383 actionable resolved) **ZONE PERFORMANCE** Zone Total Done Pending RPR Rate ───────────────────────────────────────",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "75.2",
+        "assistant",
+        "protek",
+        "fsm",
+        "eod",
+        "summary",
+        "april",
+        "overall"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "User: [Mon 2026-04-20 18:06 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…1cef session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "mon",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "User: [Mon 2026-04-20 08:05 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM analyzer command: `/fsm check --8am`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "mon",
+        "gmt",
+        "subagent",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: **Task Complete: `/fsm check --8am`** Successfully executed the 8AM FSM analysis. Here's a summary: --- **📊 Protek FSM Report (Apr 20, 2026 08:06 HKT)** | Metric | Value | |--------|-------| | Company-wide | 2/970 completed (0.2%) | | Pending | 764 | | RPR | 0 | | Pac",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "2/970",
+        "0.2",
+        "assistant",
+        "task",
+        "complete",
+        "fsm",
+        "check"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "User: [cron:c5c9902a-9717-4f49-bf11-1fa246f921b4 ProTek 16:05 Late Afternoon] Use the protek-fsm-analyzer skill to run: /fsm check --facility Current time: Monday, April 20th, 2026 - 4:05 PM (Asia/Manila) / 2026-04-20 08:05 UTC Return your summary as plain text; it will be delive",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron:c5c9902a",
+        "4f49",
+        "bf11",
+        "1fa246f921b4",
+        "protek"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "User: [Mon 2026-04-20 16:06 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…b2d6 session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "mon",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: The sub-agent completed the analysis. Here's the summary for the Late Afternoon check (4:05 PM, Monday, April 20th, 2026): --- 📊 **Protek FSM Report** (2026-04-20 16:05 HKT) 📈 Company-wide: **216/1395 completed (15.5%)** ⏳ Pending: 497 | 🔄 RPR: 108 📈 **Today's Prog",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "sub-agent",
+        "company-wide",
+        "216/1395",
+        "15.5",
+        "assistant",
+        "the",
+        "sub",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "User: [Mon 2026-04-20 14:05 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM analyzer skill command: `/fsm check --facility`. Fetch the summary data from",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "mon",
+        "gmt",
+        "subagent",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: Here's the full Protek FSM report from the `/fsm check --facility` run: --- 📊 **Protek FSM Report** (2026-04-20 14:06 HKT) 📈 Company-wide: 132/1319 completed (10.0%) ⏳ Pending: 732 | 🔄 RPR: 54 📈 **Today's Progress** (Check 3) Comparing 02:06 PM vs 12:05 PM • Comple",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "132/1319",
+        "10.0",
+        "assistant",
+        "here's",
+        "the",
+        "full",
+        "protek"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "User: [Mon 2026-04-20 10:05 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Execute the Protek FSM analyzer skill with the /fsm check command. This is a mid-morning check r",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "mid-morning",
+        "user",
+        "mon",
+        "gmt",
+        "subagent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: Here are the results from my mid-morning FSM check: --- ## 📊 Protek FSM Status (Apr 20, 10:05 HKT) | Zone | Total | Completed | Pending | RPR | Rate | Status | |------|------:|----------:|--------:|----:|-----:|--------| | PROTEK | 1056 | 8 | 786 | 10 | **1.0%** | ⚠️",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "mid-morning",
+        "1.0",
+        "assistant",
+        "here",
+        "the",
+        "results",
+        "mid",
+        "morning"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "User: [cron:e1793498-dcfd-42e0-95f7-7ddd8c9049ce ProTek 08:05 Morning Trends] Use the protek-fsm-analyzer skill to run: /fsm check --8am Current time: Monday, April 20th, 2026 - 8:05 AM (Asia/Manila) / 2026-04-20 00:05 UTC Return your summary as plain text; it will be delivered a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron:e1793498",
+        "dcfd",
+        "42e0",
+        "95f7",
+        "7ddd8c9049ce"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "User: [Mon 2026-04-20 08:06 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…2f87 session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "mon",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: **Protek FSM 8AM Report — April 20, 2026** **Overall Status:** 🐢 Slow start — only 2 completions out of 970 PRs (0.2%) **Zone Performance:** All 9 zones are in CRITICAL status (< 10% completion) - 8 zones at **0.0%** — no work completed yet - Only **NEGROS** showing a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "0.2",
+        "0.0",
+        "assistant",
+        "protek",
+        "fsm",
+        "8am",
+        "report",
+        "april"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "User: [cron:47278df8-ab00-49bd-a380-0d837cce97e3 ProTek 12:05 Midday Facility] Use the protek-fsm-analyzer skill to run: /fsm check --facility Current time: Monday, April 20th, 2026 - 12:05 PM (Asia/Manila) / 2026-04-20 04:05 UTC Return your summary as plain text; it will be deli",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron",
+        "47278df8",
+        "ab00",
+        "49bd",
+        "a380"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "User: [Mon 2026-04-20 12:06 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…5adb session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "mon",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: 📊 **PROTEK FSM MIDDAY REPORT — April 20, 2026 (12:05 PM HKT)** --- **OVERALL SUMMARY** | Metric | Value | |--------|-------| | Total Work | 1,220 | | Completed | 70 | | Pending | 790 | | RPR Total | 30 | | Completion Rate | 8.1% | **📈 TODAY'S PROGRESS (Check 2)** Com",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "8.1",
+        "assistant",
+        "protek",
+        "fsm",
+        "midday",
+        "report",
+        "april",
+        "hkt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "User: [cron:222b2b7a-2d39-4c0b-b191-f3dc27347512 ProTek 10:05 Mid-Morning] Use the protek-fsm-analyzer skill to run: /fsm check Current time: Monday, April 20th, 2026 - 10:05 AM (Asia/Manila) / 2026-04-20 02:05 UTC Return your summary as plain text; it will be delivered automatic",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "mid-morning",
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron",
+        "222b2b7a",
+        "2d39",
+        "4c0b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "User: [Mon 2026-04-20 10:06 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…1dea session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "mon",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: ## 📊 Protek FSM Status (Apr 20, 10:05 HKT) | Zone | Total | Completed | Pending | RPR | Rate | Status | |------|------:|----------:|--------:|----:|-----:|--------| | PROTEK | 1056 | 8 | 786 | 10 | **1.0%** | ⚠️ | | BULACAN | 48 | 1 | 31 | 0 | **3.1%** | ⚠️ | | LAS PI",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "1.0",
+        "3.1",
+        "assistant",
+        "protek",
+        "fsm",
+        "status",
+        "apr",
+        "hkt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "User: [Mon 2026-04-20 18:05 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM Analyzer skill command: /fsm check --6pm --facility This is a 6:05 PM EOD sum",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "mon",
+        "gmt",
+        "subagent",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-20.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-20.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-04-20.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: **Task Complete.** Here's the full 6:05 PM EOD report for April 20, 2026: --- ## 📊 Protek FSM — EOD Summary (Apr 20, 2026, 6:06 PM) ### Overall Stats | Metric | Value | |--------|-------| | Total PRs | 1,558 | | Completed | 288 | | Pending | 516 | | RPR Total | 95 | -",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "9bbfcb9cbaf5"
+      ],
+      "recallDays": [
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "task",
+        "complete",
+        "here's",
+        "the",
+        "full",
+        "eod",
+        "report"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18700\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Sun 2026-04-19 08:48 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "Assistant: Yes, exactly! **The entire Rails app + n8n + everything behind nginx becomes available on port 10000.** ``` https://srv1405873.tailcd23a1.ts.net:10000/ → Rails app https://srv1405873.tailcd23a1.ts.net:10000/n8n/ → n8n editor https://srv1405873.tailcd23a1.ts.net:10000/n",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "srv1405873.tailcd23a1.ts.net",
+        "10000/n8n",
+        "10000/n",
+        "assistant",
+        "yes",
+        "exactly",
+        "the",
+        "entire"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18703\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Sun 2026-04-19 08:51 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: ✅ **Documented in** `memory/2026-04-19.md` Captured: - Port restrictions (10000/8443/443 only) - Command with flags - What gets exposed (entire Rails + n8n stack) - Webhook URL change - Security note about Rails auth gate Ready for your recap after testing! 🌌",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "memory/2026-04-19.md",
+        "10000/8443/443",
+        "assistant",
+        "documented",
+        "captured",
+        "restrictions",
+        "only",
+        "command"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18707\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Sun 2026-04-19 09:07 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "Assistant: You're right — I should have appended, not overwritten. Let me check what was lost and fix it:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "you're",
+        "right",
+        "appended",
+        "not",
+        "overwritten",
+        "let",
+        "check"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: The file currently only has the Tailscale entry — looks like it was empty this morning or I did overwrite existing content. Let me create a separate file for this documentation as you suggested:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "the",
+        "currently",
+        "only",
+        "has",
+        "tailscale",
+        "entry",
+        "looks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "Assistant: ✅ **Moved to separate file:** `memory/2026-04-19-tailscale.md` Sorry about the overwrite — the Tailscale documentation is now in its own file as you suggested, keeping `memory/2026-04-19.md` free for other daily entries. If you had content in the daily log from earlier",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "memory/2026-04-19-tailscale.md",
+        "memory/2026-04-19.md",
+        "assistant",
+        "moved",
+        "separate",
+        "tailscale.md",
+        "sorry",
+        "the"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18714\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Sun 2026-04-19 09:10 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "Assistant: Clean — `nothing to commit, working tree clean`. No uncommitted changes were lost. The `memory/2026-04-19.md` was likely empty this morning (it was the start of the day), so my write didn't overwrite any existing content. **Current state:** - `memory/2026-04-19.md` — h",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "memory/2026-04-19.md",
+        "assistant",
+        "clean",
+        "nothing",
+        "commit",
+        "working",
+        "tree",
+        "uncommitted"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18718\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Sun 2026-04-19 09:15 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (8154042516)\", \"id\": \"8154",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata",
+        "sender"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-19.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-19.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-04-19.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "Assistant: I see the problem — I overwrote 509 lines of existing content! Let me restore and properly append:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-20T19:00:00.957Z",
+      "lastRecalledAt": "2026-04-20T19:00:00.957Z",
+      "queryHashes": [
+        "c9fd66cc4843"
+      ],
+      "recallDays": [
+        "2026-04-19",
+        "2026-04-20"
+      ],
+      "conceptTags": [
+        "assistant",
+        "see",
+        "the",
+        "problem",
+        "overwrote",
+        "existing",
+        "content",
+        "let"
+      ]
+    },
+    "memory:memory/2026-04-21.md:508:508": {
+      "key": "memory:memory/2026-04-21.md:508:508",
+      "path": "memory/2026-04-21.md",
+      "startLine": 508,
+      "endLine": 508,
+      "source": "memory",
+      "snippet": "Reflections: No strong patterns surfaced.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "f52400c81d76"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "reflections",
+        "strong",
+        "patterns",
+        "surfaced"
+      ]
+    },
+    "memory:memory/2026-04-21.md:511:513": {
+      "key": "memory:memory/2026-04-21.md:511:513",
+      "path": "memory/2026-04-21.md",
+      "startLine": 511,
+      "endLine": 513,
+      "source": "memory",
+      "snippet": "Possible Lasting Truths: 2. **Rails auth gate for n8n** — Earlier plan to proxy `/n8n/` through Rails authentication still needs Victor's go-ahead and implementation. 4. **Commit status** — Ensure `nginx-proxy.conf` is committed to the `agent-platform` repo. A separate commit for",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "f52400c81d76"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "go-ahead",
+        "nginx-proxy.conf",
+        "agent-platform",
+        "possible",
+        "lasting",
+        "truths",
+        "rails",
+        "auth"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [cron:3a96b336-0929-403a-a231-0828a6aa496d ProTek 07:05 Morning Cleanup] Use the protek-fsm-analyzer skill to run: /fsm check --cleanup Current time: Tuesday, April 21st, 2026 - 7:05 AM (Asia/Manila) / 2026-04-20 23:05 UTC Return your summary as plain text; it will be deliv",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron",
+        "3a96b336",
+        "403a",
+        "a231",
+        "0828a6aa496d"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-21 07:06 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…1376 session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "tue",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: **7AM Morning Cleanup — Complete** 🧹 **Cleanup:** Removed old data folder `2026-04-05` — **5.3 MB freed** 📊 **Data fetched:** 1,137 total PRs across 9 zones ✅ **Completion rate:** 0% across all zones (expected — very early morning, work just starting) **Zone Breakdow",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "5.3",
+        "assistant",
+        "7am",
+        "morning",
+        "cleanup",
+        "complete",
+        "removed",
+        "old"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-21 12:05 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM analyzer command `/fsm check --facility`. Execute it exactly as if typing in",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "tue",
+        "gmt",
+        "subagent",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: I sent the command `/fsm check --facility` to Victor's Telegram chat (target: 8154042516). Message ID: 18747. The command was successfully dispatched. However, as a subagent I don't have an active Telegram listener to receive and return the response — the reply will co",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "sent",
+        "the",
+        "command",
+        "fsm",
+        "check",
+        "facility",
+        "victor's"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /home/openclaw/.openclaw/workspace/HEARTBEAT.md (exact ca",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "heartbeat-ok",
+        "home/openclaw",
+        "openclaw/workspace/heartbeat.md",
+        "user",
+        "read",
+        "exists",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: HEARTBEAT_OK",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18738\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Tue 2026-04-21 07:35 GMT+8\", \"was_mentioned\": true } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes (81",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "message-id",
+        "sender-id",
+        "was-mentioned",
+        "user",
+        "conversation",
+        "info",
+        "untrusted",
+        "metadata"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: Here are the **6 pending flagged items** waiting for approval (last 100 days through today, HKT): | Subscriber | Zone | PR Number | Status | |------------|------|-----------|--------| | RAINIEL JOHN HERNANDO LOPEZ | PASAY-PARANAQUE | B3EF494D... | Pending | | AMINA JAI",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "pasay-paranaque",
+        "assistant",
+        "here",
+        "the",
+        "pending",
+        "flagged",
+        "items",
+        "waiting"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: /fsm check --facility",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "assistant",
+        "fsm",
+        "check",
+        "facility"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "User: [cron:9a3f4f11-99da-42db-b6f1-935d2831b6ba ProTek 14:05 Afternoon Facility] Use the protek-fsm-analyzer skill to run: /fsm check --facility Current time: Tuesday, April 21st, 2026 - 2:05 PM (Asia/Manila) / 2026-04-21 06:05 UTC Return your summary as plain text; it will be d",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron",
+        "9a3f4f11",
+        "99da",
+        "42db",
+        "b6f1"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: Sub-agent spawned (run: `6a1c5bff`) to run `/fsm check --facility`. Waiting for results...",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "sub-agent",
+        "assistant",
+        "sub",
+        "spawned",
+        "run",
+        "6a1c5bff",
+        "fsm",
+        "check"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-21 14:06 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…272f session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "tue",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: The subagent completed successfully. Let me present the results to the user. **Protek FSM Afternoon Facility Check — April 21, 2026 (2:05 PM)** --- ### 📊 Overall Status - **Total assigned:** 1,454 - **Completed:** 170 (11.7%) - **Pending:** 736 - **RPR (blocked):** 80",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "11.7",
+        "assistant",
+        "the",
+        "subagent",
+        "completed",
+        "successfully",
+        "let",
+        "present"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-21 07:05 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run /fsm check --cleanup using the protek-fsm-analyzer skill. This is the 7AM morning cleanup ru",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "protek-fsm-analyzer",
+        "user",
+        "tue",
+        "gmt",
+        "subagent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: **7AM Morning Cleanup Run Complete** **Summary:** - 🧹 Cleanup: Removed old data folder `2026-04-05` — **5.3 MB freed** - 📊 Data fetched: **1,137 total PRs** across 9 zones - ✅ All zones at **0% completion** (very early morning, work just starting) **Zone Breakdown (0",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "5.3",
+        "assistant",
+        "7am",
+        "morning",
+        "cleanup",
+        "run",
+        "complete",
+        "summary"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "User: [cron:c5c9902a-9717-4f49-bf11-1fa246f921b4 ProTek 16:05 Late Afternoon] Use the protek-fsm-analyzer skill to run: /fsm check --facility Current time: Tuesday, April 21st, 2026 - 4:05 PM (Asia/Manila) / 2026-04-21 08:05 UTC Return your summary as plain text; it will be deliv",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron:c5c9902a",
+        "4f49",
+        "bf11",
+        "1fa246f921b4",
+        "protek"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: **ProTek FSM Late Afternoon Report — April 21, 2026 (4:05 PM HKT)** 📊 **Overall Summary** - Total Work: 1,570 | Completed: 284 (18.1%) | Pending: 677 | RPR: 91 **Zone Performance** | Zone | Total | Completed | Pending | Rate | |------|-------|-----------|---------|---",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "18.1",
+        "assistant",
+        "protek",
+        "fsm",
+        "late",
+        "afternoon",
+        "report",
+        "april"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "User: [cron:47278df8-ab00-49bd-a380-0d837cce97e3 ProTek 12:05 Midday Facility] Use the protek-fsm-analyzer skill to run: /fsm check --facility Current time: Tuesday, April 21st, 2026 - 12:05 PM (Asia/Manila) / 2026-04-21 04:05 UTC Return your summary as plain text; it will be del",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron",
+        "47278df8",
+        "ab00",
+        "49bd",
+        "a380"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-21 12:06 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…803b session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "tue",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: NO_REPLY",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "assistant"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-21 14:05 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Execute: /fsm check --facility",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "tue",
+        "gmt",
+        "subagent",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: ## Task Complete: `/fsm check --facility` ✅ Successfully executed FSM facility check. Here's the summary: ### 📊 Overall Status (Apr 21, 2026 — 14:06 HKT) - **Total assigned:** 1,454 - **Completed:** 170 (11.7%) - **Pending:** 736 - **RPR (blocked):** 80 ### 🚨 Zones N",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "11.7",
+        "assistant",
+        "task",
+        "complete",
+        "fsm",
+        "check",
+        "facility",
+        "successfully"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-21 18:05 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: /fsm check --6pm --facility",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "tue",
+        "gmt",
+        "subagent",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: **Task Complete — `/fsm check --6pm --facility` · Apr 21, 2026 · 6:05 PM** --- **📊 STATUS SUMMARY** | Zone | Total | Done | Pend | AFD | RPR | Rate | |------|------:|-----:|-----:|-----:|---:|-----:| | PROTEK | 1,680 | 351 | 557 | 339 | 125 | 34.0% | | PASIG-PATEROS-T",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "34.0",
+        "pasig-pateros-t",
+        "assistant",
+        "task",
+        "complete",
+        "fsm",
+        "check",
+        "6pm"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "User: [cron:e1793498-dcfd-42e0-95f7-7ddd8c9049ce ProTek 08:05 Morning Trends] Use the protek-fsm-analyzer skill to run: /fsm check --8am Current time: Tuesday, April 21st, 2026 - 8:05 AM (Asia/Manila) / 2026-04-21 00:05 UTC Return your summary as plain text; it will be delivered",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron:e1793498",
+        "dcfd",
+        "42e0",
+        "95f7",
+        "7ddd8c9049ce"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-21 08:06 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…9cd7 session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "tue",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: Protek FSM 8AM Morning Report — 2026-04-21 --- ### 📊 Company-Wide Summary (08:06 HKT) | Metric | Value | |--------|-------| | **Completion Rate** | **0.0%** (0 / 1,140) | | Pending (actionable) | 882 | | RPR (blocked) | 1 | | Total assigned | 1,140 | **⚠️ All 9 zones",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "0.0",
+        "assistant",
+        "protek",
+        "fsm",
+        "8am",
+        "morning",
+        "report"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "User: [cron:60daffdb-3b1f-42f8-9dff-85471f8b0b7e ProTek 18:05 EOD Summary] Use the protek-fsm-analyzer skill to run: /fsm check --6pm --facility Current time: Tuesday, April 21st, 2026 - 6:05 PM (Asia/Manila) / 2026-04-21 10:05 UTC Return your summary as plain text; it will be de",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron",
+        "60daffdb",
+        "3b1f",
+        "42f8",
+        "9dff"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-21 18:08 GMT+8] <<<BEGIN_OPENCLAW_INTERNAL_CONTEXT>>> OpenClaw runtime context (internal): This context is runtime-generated, not user-authored. Keep internal details private. [Internal task completion event] source: subagent session_key: agent:…0801 session_id",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "begin-openclaw-internal-context",
+        "runtime-generated",
+        "user-authored",
+        "session-key",
+        "session-id",
+        "user",
+        "tue",
+        "gmt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "User: Continue where you left off. The previous model attempt failed or timed out.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "user",
+        "continue",
+        "where",
+        "you",
+        "left",
+        "off",
+        "the",
+        "previous"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: **📊 ProTek FSM — 6:05 PM EOD Summary · Apr 21, 2026** **STATUS ACROSS ALL ZONES** | Zone | Total | Done | Pend | AFD | RPR | Rate | |------|------:|-----:|-----:|-----:|---:|-----:| | PROTEK | 1,680 | 351 | 557 | 339 | 125 | 34.0% | | PASAY-PARANAQUE | 237 | 51 | 61 |",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "34.0",
+        "pasay-paranaque",
+        "assistant",
+        "protek",
+        "fsm",
+        "eod",
+        "summary",
+        "apr"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "User: [cron:222b2b7a-2d39-4c0b-b191-f3dc27347512 ProTek 10:05 Mid-Morning] Use the protek-fsm-analyzer skill to run: /fsm check Current time: Tuesday, April 21st, 2026 - 10:05 AM (Asia/Manila) / 2026-04-21 02:05 UTC Return your summary as plain text; it will be delivered automati",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "mid-morning",
+        "protek-fsm-analyzer",
+        "asia/manila",
+        "user",
+        "cron",
+        "222b2b7a",
+        "2d39",
+        "4c0b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: **Protek FSM Mid-Morning Report — Apr 21, 2026 · 10:05 AM HKT** 📊 **Company-Wide: 10/1,230 completed (0.8%)** ⏳ Pending: 881 | 🔄 RPR: 15 📈 **Progress vs. 8:06 AM** +10 completed, -1 pending, +14 RPR | Pace: moderate --- **Zone Breakdown:** | Zone | Total | Completed",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "mid-morning",
+        "company-wide",
+        "10/1",
+        "0.8",
+        "assistant",
+        "protek",
+        "fsm",
+        "mid"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "User: [Tue 2026-04-21 08:05 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM analyzer command: /fsm check --8am This should: 1. Fetch summary data from th",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "user",
+        "tue",
+        "gmt",
+        "subagent",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-21.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-04-21.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: **Task Complete.** ## Protek FSM 8AM Morning Report — 2026-04-21 --- ### 📊 Company-Wide Summary (08:06 HKT) | Metric | Value | |--------|-------| | **Completion Rate** | **0.0%** (0 / 1,140) | | Pending (actionable) | 882 | | RPR (blocked) | 1 | | Total assigned | 1,1",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-21T19:00:00.375Z",
+      "lastRecalledAt": "2026-04-21T19:00:00.375Z",
+      "queryHashes": [
+        "01a984828e3e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "0.0",
+        "assistant",
+        "task",
+        "complete",
+        "protek",
+        "fsm",
+        "8am"
+      ]
+    },
+    "memory:memory/2026-04-16.md:492:512": {
+      "key": "memory:memory/2026-04-16.md:492:512",
+      "path": "memory/2026-04-16.md",
+      "startLine": 492,
+      "endLine": 512,
+      "source": "memory",
+      "snippet": "## 2026-04-16 09:51 — OpenClaw Model Config Fixed: kimi/k2p6 Now Resolves Correctly **Problem:** Model `kimi/k2p6` was falling back to `kimi-coding/k2p6` because provider name mismatch caused \"selected model unavailable\" error. **Root cause:** Config had provider named `kimi-coding` but requests used `kimi/k2p6` alias. **Changes made to `~/.openclaw/openclaw.json`:** 1. Renamed `auth.profiles` key: `kimi-coding:default` → `kimi:default` 2. Updated `auth.profiles` provider field: `kimi-coding` → `kimi` 3. Renamed `models.providers` key: `kimi-coding` → `kimi` 4. Removed test model `k2p7` from models list 5. Updated `agents.defaults.model.primary`: `kimi-coding/k2p6` → `kimi/k2p6` 6. Fixed",
+      "recallCount": 5,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.7374134481180565,
+      "maxScore": 0.8087188959349056,
+      "firstRecalledAt": "2026-04-22T02:07:43.762Z",
+      "lastRecalledAt": "2026-04-22T02:52:53.830Z",
+      "queryHashes": [
+        "fc49abb81cea",
+        "1f7b4b3166e4",
+        "db0c56ab6811",
+        "901885d3f752",
+        "a68c58509ffd"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "kimi/k2p6",
+        "kimi-coding/k2p6",
+        "kimi-coding",
+        "openclaw/openclaw.json",
+        "auth.profiles",
+        "models.providers",
+        "agents.defaults.model.primary",
+        "openclaw"
+      ]
+    },
+    "memory:memory/2026-04-17.md:373:382": {
+      "key": "memory:memory/2026-04-17.md:373:382",
+      "path": "memory/2026-04-17.md",
+      "startLine": 373,
+      "endLine": 382,
+      "source": "memory",
+      "snippet": "- Candidate: # Daily Log — 2026-04-09 ## Session Start - Victor upgraded OpenClaw from 2026.4.5 → 2026.4.9 successfully - Had to remove `\"memory-lancedb\": { \"enabled\": false }` from config — even when disabled, app was looking for required properties ## Dreaming Research Results ### Dreaming Config — Complete Docs confirm only 2 user-facing settings exist: ```json \"dreaming\": { \"enabled\": true, \"frequency\": \"0 3 * * *\" } ``` Your current config is complete. No missing fields. Light/deep/REM thresholds are intentionally internal — not user-configurable. ### Dreaming Uses Internal Scheduler (NOT jobs.json) - Dreaming cron is managed by **memory-core plugin's own internal scheduler**, NOT the g",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7967318246874538,
+      "maxScore": 0.7967318246874538,
+      "firstRecalledAt": "2026-04-22T02:15:29.301Z",
+      "lastRecalledAt": "2026-04-22T02:15:29.301Z",
+      "queryHashes": [
+        "6c70a997f668"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "2026.4.5",
+        "2026.4.9",
+        "memory-lancedb",
+        "user-facing",
+        "light/deep/rem",
+        "user-configurable",
+        "jobs.json",
+        "memory-core"
+      ]
+    },
+    "memory:memory/2026-04-07.md:46:88": {
+      "key": "memory:memory/2026-04-07.md:46:88",
+      "path": "memory/2026-04-07.md",
+      "startLine": 46,
+      "endLine": 88,
+      "source": "memory",
+      "snippet": "- Config was set correctly in `openclaw.json` - `/dreaming on` enabled status to \"on\" - But **no cron job was actually created** in `~/.openclaw/cron/jobs.json` - This is a **bug in OpenClaw 2026.4.5** — the slash command updates in-memory status but doesn't persist the cron job ### Relevant Open Issues | Issue | Title | Status | |-------|-------|--------| | #61421 | Docs mention Dreaming config/commands, but 2026.4.2 doesn't expose them | Open | | #62051 | v2026.4.5 regression: worker CPU saturation | ⚠️ Not observed on this system | ### CPU Regression - **Issue #62051**: v2026.4.5 causes worker processes to load all plugins, CPU saturation - **Victor did NOT observe this** — system runni",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5298585578799248,
+      "maxScore": 0.5298585578799248,
+      "firstRecalledAt": "2026-04-22T02:15:29.301Z",
+      "lastRecalledAt": "2026-04-22T02:15:29.301Z",
+      "queryHashes": [
+        "6c70a997f668"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "openclaw.json",
+        "openclaw/cron/jobs.json",
+        "2026.4.5",
+        "in-memory",
+        "config/commands",
+        "2026.4.2",
+        "v2026.4.5",
+        "config"
+      ]
+    },
+    "memory:memory/2026-04-17.md:19:46": {
+      "key": "memory:memory/2026-04-17.md:19:46",
+      "path": "memory/2026-04-17.md",
+      "startLine": 19,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "- confidence: 0.62 - evidence: memory/2026-04-16.md:496-496 - recalls: 0 - status: staged - Candidate: 2026-04-16 09:51 — OpenClaw Model Config Fixed: kimi/k2p6 Now Resolves Correctly: **Changes made to `~/.openclaw/openclaw.json`:** - confidence: 0.62 - evidence: memory/2026-04-16.md:498-498 - recalls: 0 - status: staged - Candidate: 2026-04-16 09:51 — OpenClaw Model Config Fixed: kimi/k2p6 Now Resolves Correctly: Renamed `auth.profiles` key: `kimi-coding:default` → `kimi:default`; Updated `auth.profiles` provider field: `kimi-coding` → `kimi`; Renamed `models.providers` key: `kimi-coding` → `kimi`; Removed t - confidence: 0.62 - evidence: memory/2026-04-16.md:499-502",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.2645814279359926,
+      "maxScore": 0.7944112250846972,
+      "firstRecalledAt": "2026-04-22T02:43:19.951Z",
+      "lastRecalledAt": "2026-04-22T02:52:53.830Z",
+      "queryHashes": [
+        "901885d3f752",
+        "a68c58509ffd"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "0.62",
+        "memory/2026-04-16.md",
+        "496-496",
+        "kimi/k2p6",
+        "openclaw/openclaw.json",
+        "498-498",
+        "auth.profiles",
+        "kimi-coding"
+      ]
+    },
+    "memory:memory/2026-04-17.md:1:27": {
+      "key": "memory:memory/2026-04-17.md:1:27",
+      "path": "memory/2026-04-17.md",
+      "startLine": 1,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: Reflections: No strong patterns surfaced. - confidence: 0.62 - evidence: memory/2026-04-16.md:483-483 - recalls: 0 - status: staged - Candidate: Possible Lasting Truths: 2. **Rails auth gate for n8n** — Earlier plan to proxy `/n8n/` through Rails authentication still needs Victor's go-ahead and implementation. 4. **Commit status** — Ensure `nginx-proxy.conf` is committed to the `agent-platform` repo. A separate commit for - confidence: 0.62 - evidence: memory/2026-04-16.md:486-488 - recalls: 0 - status: staged - Candidate: 2026-04-16 09:51 — OpenClaw Model Config Fixed: kimi/k2p6 Now Resolves Correctly: **Prob",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.768075924148077,
+      "maxScore": 0.768075924148077,
+      "firstRecalledAt": "2026-04-22T02:52:53.830Z",
+      "lastRecalledAt": "2026-04-22T02:52:53.830Z",
+      "queryHashes": [
+        "a68c58509ffd"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "0.62",
+        "memory/2026-04-16.md",
+        "483-483",
+        "go-ahead",
+        "nginx-proxy.conf",
+        "agent-platform",
+        "486-488",
+        "kimi/k2p6"
+      ]
+    },
+    "memory:memory/2026-04-22.md:256:282": {
+      "key": "memory:memory/2026-04-22.md:256:282",
+      "path": "memory/2026-04-22.md",
+      "startLine": 256,
+      "endLine": 282,
+      "source": "memory",
+      "snippet": "- recalls: 0 - status: staged - Candidate: 2026-04-16 09:51 — OpenClaw Model Config Fixed: kimi/k2p6 Now Resolves Correctly: **Root cause:** Config had provider named `kimi-coding` but requests used `kimi/k2p6` alias. - confidence: 0.62 - evidence: memory/2026-04-16.md:496-496 - recalls: 0 - status: staged - Candidate: 2026-04-16 09:51 — OpenClaw Model Config Fixed: kimi/k2p6 Now Resolves Correctly: **Changes made to `~/.openclaw/openclaw.json`:** - confidence: 0.62 - evidence: memory/2026-04-16.md:498-498 - recalls: 0 - status: staged - Candidate: 2026-04-16 09:51 — OpenClaw Model Config Fixed: kimi/k2p6 Now Resolves Correctly: Renamed `auth.profiles` key: `kimi-coding:d",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7455918072961083,
+      "maxScore": 0.7455918072961083,
+      "firstRecalledAt": "2026-04-22T02:52:53.830Z",
+      "lastRecalledAt": "2026-04-22T02:52:53.830Z",
+      "queryHashes": [
+        "a68c58509ffd"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "kimi/k2p6",
+        "kimi-coding",
+        "0.62",
+        "memory/2026-04-16.md",
+        "496-496",
+        "openclaw/openclaw.json",
+        "498-498",
+        "auth.profiles"
       ]
     }
   }
