@@ -1143,4 +1143,25 @@ Reflections: Theme: `assistant` kept surfacing across 240 memories.; confidence:
 
 # 2026-04-06 — OpenClaw 2026.4.5 Upgrade + Dreaming Enabled ## Summary Upgraded OpenClaw from 2026.4.1 to 2026.4.5. Configured and tested experimental dreaming feature for automatic memory consolidation. ## OpenClaw Upgrade ### Version - **From:** 2026.4.1 - **To:** 2026.4.5 ### Upgrade Steps 1. `npm update -g openclaw` 2. `openclaw doctor --fix` (migrated config, backup created) 3. `openclaw gateway restart` ### Config Migration - Doctor automatically fixed config - Backup saved: `~/.openclaw/openclaw.json.bak` - No deprecated settings found (clean upgrade) ## Dreaming Configuration (Experimental) ### What is Dreaming? Background memory consolidation system that moves strong short-te
 
+
+---
+
+*April 24, 2026 at 3:00 AM GMT+8*
+
+User: [cron:9a3f4f11-99da-42db-b6f1-935d2831b6ba ProTek 14:05 Afternoon Facility] Use the protek-fsm-analyzer skill to run: /fsm check --facility Current time: Thursday, April 23rd, 2026 - 2:05 PM (Asia/Manila) / 2026-04-23 06:05 UTC Use the message tool if you need to notify the
+
+
+---
+
+*April 24, 2026 at 3:00 AM GMT+8*
+
+# Daily Log — 2026-04-09 ## Session Start - Victor upgraded OpenClaw from 2026.4.5 → 2026.4.9 successfully - Had to remove `"memory-lancedb": { "enabled": false }` from config — even when disabled, app was looking for required properties ## Dreaming Research Results ### Dreaming Config — Complete Docs confirm only 2 user-facing settings exist: ```json "dreaming": { "enabled": true, "frequency": "0 3 * * *" } ``` Your current config is complete. No missing fields. Light/deep/REM thresholds are intentionally internal — not user-configurable. ### Dreaming Uses Internal Scheduler (NOT jobs.json) - Dreaming cron is managed by **memory-core plugin's own internal scheduler**, NOT the gatewa
+
+
+---
+
+*April 24, 2026 at 3:00 AM GMT+8*
+
+Possible Lasting Truths: --- **[2026-04-13 10:11 PM +08]** GHCR production deployment preparation — stopped dev stack, ready for next-session testing. - **Progress:** Development docker compose stack (`agent-platform-app-1`, `agent-platform-proxy-1`, etc.) has been stopped to fre
+
 <!-- openclaw:dreaming:diary:end -->
