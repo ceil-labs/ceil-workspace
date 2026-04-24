@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-23T19:00:00.467Z",
+  "updatedAt": "2026-04-24T00:07:23.496Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -53785,6 +53785,99 @@
         "fsm",
         "check",
         "complete"
+      ]
+    },
+    "memory:memory/2026-04-22.md:32:52": {
+      "key": "memory:memory/2026-04-22.md:32:52",
+      "path": "memory/2026-04-22.md",
+      "startLine": 32,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "- status: staged - Candidate: Assistant: I sent the command `/fsm check --facility` to Victor's Telegram chat (target: 8154042516). Message ID: 18747. The command was successfully dispatched. However, as a subagent I don't have an active Telegram listener to receive and return the response — the reply will co - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-21.txt:5-5 - recalls: 0 - status: staged - Candidate: User: Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK. When reading HEARTBEAT.md, use workspace file /home/openclaw/.openclaw/workspac",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7096693761091846,
+      "maxScore": 0.7096693761091846,
+      "firstRecalledAt": "2026-04-24T00:07:23.496Z",
+      "lastRecalledAt": "2026-04-24T00:07:23.496Z",
+      "queryHashes": [
+        "9d4668d65398"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "0.58",
+        "5-5",
+        "heartbeat.md",
+        "heartbeat-ok",
+        "home/openclaw",
+        "openclaw/workspac",
+        "status",
+        "staged"
+      ]
+    },
+    "memory:memory/2026-03-17.md:1:46": {
+      "key": "memory:memory/2026-03-17.md:1:46",
+      "path": "memory/2026-03-17.md",
+      "startLine": 1,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "# 2026-03-17 - Initial Setup Complete ## What We Built Today ### Multi-Agent Infrastructure - **Ceil** (main agent) - Primary AI assistant for Victor - **Neo** (second agent) - Separate workspace and Telegram bot - Both agents have isolated workspaces, auth profiles, and routing ### Telegram Setup - Ceil bot: @ceil20260221_1_bot (existing) - Neo bot: @vprsneo_bot (new) - DM routing via bindings based on which bot receives the message ### Security & Secrets - Migrated all credentials to `secrets.json` with file provider - SecretRefs configured for: - Telegram bot tokens (ceil + neo) - Gateway auth token - Kimi/OpencGo API keys - Google API key (nano-banana-pro) - File permissions",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4685965687036514,
+      "maxScore": 0.4685965687036514,
+      "firstRecalledAt": "2026-04-24T00:07:23.496Z",
+      "lastRecalledAt": "2026-04-24T00:07:23.496Z",
+      "queryHashes": [
+        "9d4668d65398"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "gateway",
+        "multi-agent",
+        "ceil20260221-1-bot",
+        "vprsneo-bot",
+        "secrets.json",
+        "kimi/opencgo",
+        "nano-banana-pro",
+        "initial"
+      ]
+    },
+    "memory:memory/2026-04-17.md:378:387": {
+      "key": "memory:memory/2026-04-17.md:378:387",
+      "path": "memory/2026-04-17.md",
+      "startLine": 378,
+      "endLine": 387,
+      "source": "memory",
+      "snippet": "- Candidate: - [ ] Set up any scheduled tasks or reminders ## Notes Victor prefers deep, fundamental understanding when learning. When he asks for help, provide thorough explanations, not surface-level fixes. He gets annoyed by people who don't make sense. --- ## Later Today - Honcho & Agent Communication ### Agent-to-Agent Communication ✅ - Successfully tested messaging between Ceil and Neo - Coordination protocol established: - Clean separation on daily tasks - **Coordination triggers:** \"lab setup\" or \"infrastructure for testing\" - Neo's focus: HTB training (red/blue team, technique deep-dives) ### Honcho Memory Setup - **Ceil workspace:** Uploaded to Honcho (8 files) - USER.md, MEMORY.m",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4469738483428955,
+      "maxScore": 0.4469738483428955,
+      "firstRecalledAt": "2026-04-24T00:07:23.496Z",
+      "lastRecalledAt": "2026-04-24T00:07:23.496Z",
+      "queryHashes": [
+        "9d4668d65398"
+      ],
+      "recallDays": [
+        "2026-04-24"
+      ],
+      "conceptTags": [
+        "surface-level",
+        "agent-to-agent",
+        "red/blue",
+        "deep-dives",
+        "user.md",
+        "memory.m",
+        "candidate",
+        "set"
       ]
     }
   }
