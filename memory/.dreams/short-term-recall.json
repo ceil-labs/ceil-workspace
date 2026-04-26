@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-26T04:43:21.868Z",
+  "updatedAt": "2026-04-26T12:25:20.928Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -6863,19 +6863,21 @@
       "endLine": 55,
       "source": "memory",
       "snippet": "# 2026-04-02 — Daily Log ## Memory System Migration ### Problem - OpenClaw responses were slow (~60s delays) - Logs showed `Failed to save messages to Honcho: TimeoutError` - `memorySearch.multimodal` config error blocking startup ### Investigation - Honcho memory plugin was timing out on every message sync - QMD memory initialization failing due to multimodal embedding requirement - `memory-core` plugin was disabled ### Fixes Applied 1. **Uninstalled Honcho plugin** ```bash openclaw plugins uninstall openclaw-honcho ``` 2. **Disabled multimodal memory** (was causing provider adapter errors) - Set `agents.defaults.memorySearch.multimodal.enabled: false` - Set `agents.lis",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9533408492803572,
+      "totalScore": 1.4071512192487714,
       "maxScore": 0.48763136267662044,
       "firstRecalledAt": "2026-04-12T02:06:27.192Z",
-      "lastRecalledAt": "2026-04-12T02:06:30.374Z",
+      "lastRecalledAt": "2026-04-26T11:07:27.556Z",
       "queryHashes": [
         "b1a812254815",
-        "3b2cdf3b87f1"
+        "3b2cdf3b87f1",
+        "02712bbd58fd"
       ],
       "recallDays": [
-        "2026-04-12"
+        "2026-04-12",
+        "2026-04-26"
       ],
       "conceptTags": [
         "embedding",
@@ -7032,19 +7034,23 @@
       "endLine": 145,
       "source": "memory",
       "snippet": "- Apache 2.0, tiered loading (L0/L1/L2), filesystem paradigm - Closest architectural match to Karpathy's approach - Requires Go 1.22+, C++ toolchain, VLM + embedding model **3. ByteRover** - Elastic License v2, context tree as Markdown files - Agentic Search (LLM-navigated, not vector-based) - CLI-first, zero infrastructure, MCP server available **4. Memary** - MIT license, knowledge graph (Neo4j/FalkorDB) - Multi-hop reasoning, multi-agent via user_id - **Issue:** Last commit 2 years ago — stale project **5. Redis Agent Memory** - MIT license, native OpenClaw plugin - Multi-agent scopes (shared + personal) - Simplest setup: Docker one-liner ### Karpathy's Memory Approach (DIY) **Core I",
-      "recallCount": 2,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.5830599791938695,
+      "totalScore": 3.0329926766092217,
       "maxScore": 0.7978884877330754,
       "firstRecalledAt": "2026-04-12T11:13:21.905Z",
-      "lastRecalledAt": "2026-04-12T11:19:18.800Z",
+      "lastRecalledAt": "2026-04-26T07:11:33.969Z",
       "queryHashes": [
         "35a3e4a4eaec",
-        "2ce1916977e8"
+        "2ce1916977e8",
+        "984bb7cec559",
+        "29f6d952b980",
+        "b50ccbe86f92"
       ],
       "recallDays": [
-        "2026-04-12"
+        "2026-04-12",
+        "2026-04-26"
       ],
       "conceptTags": [
         "embedding",
@@ -7193,24 +7199,30 @@
       "endLine": 110,
       "source": "memory",
       "snippet": "**Status**: Documented in `karpathy-architecture-design.md`. Implementation pending. ## Commands Reference **Production Deploy:** ```bash cd ~/agent-platform git pull origin master docker compose -f docker-compose.ghcr.yml pull docker compose -f docker-compose.ghcr.yml up -d ``` **Local Dev:** ```bash cd ~/.openclaw/projects/agent-platform docker compose up -d ``` **Check Build Status:** ```bash gh run list --limit 3 ```",
-      "recallCount": 5,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.3284691923622343,
+      "totalScore": 5.74988584456484,
       "maxScore": 0.7706353324573588,
       "firstRecalledAt": "2026-04-12T11:13:30.487Z",
-      "lastRecalledAt": "2026-04-24T06:38:54.278Z",
+      "lastRecalledAt": "2026-04-26T10:18:06.355Z",
       "queryHashes": [
         "3325b29e4dbc",
         "d16046c294ff",
         "2748a1d443a9",
         "cac7a1aba3fb",
-        "f1ff6e7d232f"
+        "f1ff6e7d232f",
+        "e12c055556ac",
+        "984bb7cec559",
+        "29f6d952b980",
+        "81496f112b73",
+        "3f9b94ceb6cc"
       ],
       "recallDays": [
         "2026-04-12",
         "2026-04-14",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-26"
       ],
       "conceptTags": [
         "karpathy-architecture-design.md",
@@ -32307,18 +32319,20 @@
       "endLine": 57,
       "source": "memory",
       "snippet": "## Session Cleanup Skill - Created Created `session-cleanup` skill for archiving/removing stale OpenClaw session files: - Location: `~/.openclaw/skills/session-cleanup/` - SKILL.md: Documentation and workflow - Scripts: `cleanup-sessions.sh` (in progress) Purpose: Address session bloat from .jsonl.reset.* and .jsonl.deleted.* files that slow down agent responses. ## Current Session Status - Main sessions directory: 26MB - Large stale files identified: ~13MB of .reset. and .deleted. files - Archive approach recommended for safety - Cleanup pending completion ## Next Steps 1. Finish cleanup script implementation 2. Archive stale session files 3. Restart gateway to clear cached reference",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7333058527145067,
+      "totalScore": 1.1878114572200456,
       "maxScore": 0.7333058527145067,
       "firstRecalledAt": "2026-04-13T14:11:54.898Z",
-      "lastRecalledAt": "2026-04-13T14:11:54.898Z",
+      "lastRecalledAt": "2026-04-26T10:56:42.495Z",
       "queryHashes": [
-        "3c86310b0fca"
+        "3c86310b0fca",
+        "039cddd403bb"
       ],
       "recallDays": [
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-26"
       ],
       "conceptTags": [
         "gateway",
@@ -33320,20 +33334,22 @@
       "endLine": 86,
       "source": "memory",
       "snippet": "**Context:** Neo (Telegram) experienced an LLM idle timeout on `kimi/k2p5` via the `kimi-coding` provider. After ~60s, OpenClaw auto-fallback to `minimax-m2.7` successfully. Model was later reset to `kimi/k2p5`. **Investigation:** - Confirmed via `openclaw logs` — primary profile `kimi-coding:default` hit `LLM idle timeout (60s)`, HTTP 408. - OpenClaw GitHub repo search revealed **Issue #55065** (no idle timeout mechanism) plus transient kimi-coding provider latency issues. - Victor confirmed he's on OpenClaw **v4.9** and the tool-call format bug is already resolved in this version. **Current Assessment:** - Only symptom observed is the **60s idle timeout** — likely transient provider-side",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.1203107152496512,
-      "maxScore": 0.6542318735634025,
+      "totalScore": 1.857525900377418,
+      "maxScore": 0.7372151851277668,
       "firstRecalledAt": "2026-04-14T03:15:47.633Z",
-      "lastRecalledAt": "2026-04-22T02:07:43.762Z",
+      "lastRecalledAt": "2026-04-26T11:14:06.792Z",
       "queryHashes": [
         "80abc314aba1",
-        "fc49abb81cea"
+        "fc49abb81cea",
+        "04d942d19d67"
       ],
       "recallDays": [
         "2026-04-14",
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-26"
       ],
       "conceptTags": [
         "kimi/k2p5",
@@ -36779,21 +36795,23 @@
       "endLine": 286,
       "source": "memory",
       "snippet": "- Candidate: # 2026-04-03 — Daily Log ## Agent Platform — CI/CD & Production Deployment Setup ### Morning: CI Fixes **Problem:** CI workflow was failing with 19 RuboCop offenses and system-test job errors. **Actions Taken:** 1. **Fixed lint violations** — Ran `bin/rubocop -a` to auto-fix 19 offenses in test files 2. **Disabled system-test job** — Commented out in `.github/workflows/ci.yml` since no Capybara tests exist yet 3. **Cleaned up cache files** — Added `.cache` to `.gitignore` and removed cached files from git 4. **Fixed branch mismatch** — Updated CI to run on `master` (repo uses master, not main) **Result:** All CI jobs now passing (scan_ruby, scan_js, lint, test) ### Afternoon: GH",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.4071456283330916,
+      "totalScore": 1.8577729523181914,
       "maxScore": 0.47890527844429015,
       "firstRecalledAt": "2026-04-16T01:23:11.580Z",
-      "lastRecalledAt": "2026-04-24T06:38:54.278Z",
+      "lastRecalledAt": "2026-04-26T11:07:27.556Z",
       "queryHashes": [
         "b34686ccbbe0",
         "9281fb8ad9e5",
-        "f1ff6e7d232f"
+        "f1ff6e7d232f",
+        "02712bbd58fd"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-26"
       ],
       "conceptTags": [
         "ci/cd",
@@ -36813,21 +36831,23 @@
       "endLine": 177,
       "source": "memory",
       "snippet": "- status: staged - Candidate: Assistant: 📊 **Protek FSM Report — April 14, 2026 (4:06 PM HKT)** **Overall Summary** | Metric | Value | |--------|-------| | Total PRs | 1,527 | | Completed | 269 | | Pending | 594 | | RPR Total | 91 | **Zone Performance** | Zone | Total | Done | Pending | RPR | Completion Rate - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-14.txt:33-33 - recalls: 0 - status: staged - Candidate: User: [Tue 2026-04-14 11:12 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Research the new Kimi model **K2.6-code-preview** for OpenClaw configu",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.4242217034101485,
+      "totalScore": 1.8618307054042815,
       "maxScore": 0.47826059162616724,
       "firstRecalledAt": "2026-04-16T01:26:26.889Z",
-      "lastRecalledAt": "2026-04-22T02:07:43.762Z",
+      "lastRecalledAt": "2026-04-26T11:18:06.719Z",
       "queryHashes": [
         "2f612646f5dc",
         "4010d2e2c976",
-        "fc49abb81cea"
+        "fc49abb81cea",
+        "f18e51bd7ead"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-26"
       ],
       "conceptTags": [
         "0.58",
@@ -37006,18 +37026,20 @@
       "endLine": 414,
       "source": "memory",
       "snippet": "- status: staged - Candidate: Assistant: The research completed successfully — I already summarized the findings above. Here's the short version: - **K2.6-code-preview isn't officially released yet** (as of today), but rumors say it's imminent - **Your existing `kimi-coding` API key and endpoint** will likely - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-14.txt:20-20 - recalls: 0 - status: staged - Candidate: User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18279\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Tue 2026-04-14 11:29 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.42296328544616696,
-      "maxScore": 0.42296328544616696,
+      "totalScore": 0.8536809206008911,
+      "maxScore": 0.4307176351547241,
       "firstRecalledAt": "2026-04-16T11:13:00.642Z",
-      "lastRecalledAt": "2026-04-16T11:13:00.642Z",
+      "lastRecalledAt": "2026-04-26T07:11:54.207Z",
       "queryHashes": [
-        "0f1ebcfab0fa"
+        "0f1ebcfab0fa",
+        "12bb0281b38f"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-26"
       ],
       "conceptTags": [
         "k2.6-code-preview",
@@ -37068,18 +37090,21 @@
       "endLine": 327,
       "source": "memory",
       "snippet": "- Candidate: **Context:** Neo (Telegram) experienced an LLM idle timeout on `kimi/k2p5` via the `kimi-coding` provider. After ~60s, OpenClaw auto-fallback to `minimax-m2.7` successfully. Model was later reset to `kimi/k2p5`. **Investigation:** - Confirmed via `openclaw logs` — primary profile `kimi-coding:default` hit `LLM idle timeout (60s)`, HTTP 408. - OpenClaw GitHub repo search revealed **Issue #55065** (no idle timeout mechanism) plus transient kimi-coding provider latency issues. - Victor confirmed he's on OpenClaw **v4.9** and the tool-call format bug is already resolved in this version. **Current Assessment:** - Only symptom observed is the **60s idle timeout** — likely transient pr",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.42121662497520446,
-      "maxScore": 0.42121662497520446,
+      "totalScore": 1.3557462751865386,
+      "maxScore": 0.47005646526813505,
       "firstRecalledAt": "2026-04-16T11:13:00.642Z",
-      "lastRecalledAt": "2026-04-16T11:13:00.642Z",
+      "lastRecalledAt": "2026-04-26T10:17:59.474Z",
       "queryHashes": [
-        "0f1ebcfab0fa"
+        "0f1ebcfab0fa",
+        "1f41bdcf1eb9",
+        "b83d991fa3d7"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-26"
       ],
       "conceptTags": [
         "kimi/k2p5",
@@ -49691,22 +49716,26 @@
       "endLine": 512,
       "source": "memory",
       "snippet": "## 2026-04-16 09:51 — OpenClaw Model Config Fixed: kimi/k2p6 Now Resolves Correctly **Problem:** Model `kimi/k2p6` was falling back to `kimi-coding/k2p6` because provider name mismatch caused \"selected model unavailable\" error. **Root cause:** Config had provider named `kimi-coding` but requests used `kimi/k2p6` alias. **Changes made to `~/.openclaw/openclaw.json`:** 1. Renamed `auth.profiles` key: `kimi-coding:default` → `kimi:default` 2. Updated `auth.profiles` provider field: `kimi-coding` → `kimi` 3. Renamed `models.providers` key: `kimi-coding` → `kimi` 4. Removed test model `k2p7` from models list 5. Updated `agents.defaults.model.primary`: `kimi-coding/k2p6` → `kimi/k2p6` 6. Fixed",
-      "recallCount": 5,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.7374134481180565,
+      "totalScore": 4.2621020078886405,
       "maxScore": 0.8087188959349056,
       "firstRecalledAt": "2026-04-22T02:07:43.762Z",
-      "lastRecalledAt": "2026-04-22T02:52:53.830Z",
+      "lastRecalledAt": "2026-04-26T11:22:57.111Z",
       "queryHashes": [
         "fc49abb81cea",
         "1f7b4b3166e4",
         "db0c56ab6811",
         "901885d3f752",
-        "a68c58509ffd"
+        "a68c58509ffd",
+        "a3b7f3605f2a",
+        "c2233f0d691e",
+        "c882f77f56c7"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-26"
       ],
       "conceptTags": [
         "kimi/k2p6",
@@ -49726,18 +49755,20 @@
       "endLine": 382,
       "source": "memory",
       "snippet": "- Candidate: # Daily Log — 2026-04-09 ## Session Start - Victor upgraded OpenClaw from 2026.4.5 → 2026.4.9 successfully - Had to remove `\"memory-lancedb\": { \"enabled\": false }` from config — even when disabled, app was looking for required properties ## Dreaming Research Results ### Dreaming Config — Complete Docs confirm only 2 user-facing settings exist: ```json \"dreaming\": { \"enabled\": true, \"frequency\": \"0 3 * * *\" } ``` Your current config is complete. No missing fields. Light/deep/REM thresholds are intentionally internal — not user-configurable. ### Dreaming Uses Internal Scheduler (NOT jobs.json) - Dreaming cron is managed by **memory-core plugin's own internal scheduler**, NOT the g",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7967318246874538,
+      "totalScore": 1.259293625763389,
       "maxScore": 0.7967318246874538,
       "firstRecalledAt": "2026-04-22T02:15:29.301Z",
-      "lastRecalledAt": "2026-04-22T02:15:29.301Z",
+      "lastRecalledAt": "2026-04-26T11:07:27.556Z",
       "queryHashes": [
-        "6c70a997f668"
+        "6c70a997f668",
+        "02712bbd58fd"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-26"
       ],
       "conceptTags": [
         "2026.4.5",
@@ -49788,19 +49819,22 @@
       "endLine": 46,
       "source": "memory",
       "snippet": "- confidence: 0.62 - evidence: memory/2026-04-16.md:496-496 - recalls: 0 - status: staged - Candidate: 2026-04-16 09:51 — OpenClaw Model Config Fixed: kimi/k2p6 Now Resolves Correctly: **Changes made to `~/.openclaw/openclaw.json`:** - confidence: 0.62 - evidence: memory/2026-04-16.md:498-498 - recalls: 0 - status: staged - Candidate: 2026-04-16 09:51 — OpenClaw Model Config Fixed: kimi/k2p6 Now Resolves Correctly: Renamed `auth.profiles` key: `kimi-coding:default` → `kimi:default`; Updated `auth.profiles` provider field: `kimi-coding` → `kimi`; Renamed `models.providers` key: `kimi-coding` → `kimi`; Removed t - confidence: 0.62 - evidence: memory/2026-04-16.md:499-502",
-      "recallCount": 2,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.2645814279359926,
+      "totalScore": 2.216540152792369,
       "maxScore": 0.7944112250846972,
       "firstRecalledAt": "2026-04-22T02:43:19.951Z",
-      "lastRecalledAt": "2026-04-22T02:52:53.830Z",
+      "lastRecalledAt": "2026-04-26T11:22:51.047Z",
       "queryHashes": [
         "901885d3f752",
-        "a68c58509ffd"
+        "a68c58509ffd",
+        "d0390f37a6a7",
+        "c2233f0d691e"
       ],
       "recallDays": [
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-26"
       ],
       "conceptTags": [
         "0.62",
@@ -54148,18 +54182,20 @@
       "endLine": 365,
       "source": "memory",
       "snippet": "- Candidate: - Candidate: **Context:** Neo (Telegram) experienced an LLM idle timeout on `kimi/k2p5` via the `kimi-coding` provider. After ~60s, OpenClaw auto-fallback to `minimax-m2.7` successfully. Model was later reset to `kimi/k2p5`. **Investigation:** - Confirmed via `openclaw logs` — primary profile `kimi-coding:default` hit `LLM idle timeout (60s)`, HTTP 408. - OpenClaw GitHub repo search revealed **Issue #55065** (no idle timeout mechanism) plus transient kimi-coding provider latency issues. - Victor confirmed he's on OpenClaw **v4.9** and the tool-call format bug is already resolved in this version. **Current Assessment:** - Only symptom observed is the **60s idle timeout** — likely",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4650806128978729,
-      "maxScore": 0.4650806128978729,
+      "totalScore": 1.2128105362682837,
+      "maxScore": 0.7477299233704108,
       "firstRecalledAt": "2026-04-24T06:38:54.278Z",
-      "lastRecalledAt": "2026-04-24T06:38:54.278Z",
+      "lastRecalledAt": "2026-04-26T11:14:06.792Z",
       "queryHashes": [
-        "f1ff6e7d232f"
+        "f1ff6e7d232f",
+        "04d942d19d67"
       ],
       "recallDays": [
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-26"
       ],
       "conceptTags": [
         "kimi/k2p5",
@@ -54179,18 +54215,20 @@
       "endLine": 497,
       "source": "memory",
       "snippet": "- **Status**: Documented in `karpathy-architecture-design.md`. Implementation pending. ## Commands Reference **Production Deploy:** ```bash cd ~/agent-platform git pull origin master docker compose -f docker-compose.ghcr.yml pull docker compose -f docker-compose.ghcr.yml up -d ``` **Local Dev:** ```bash cd ~/.openclaw/projects/agent-platform docker compose up -d ``` **Check Build Status:** ```bash gh run list --limit 3 ``` [confidence=0.76 evidence=memory/2026-04-04.md:88-110] - - Added build args `USER_ID` and `GROUP_ID` in docker-compose.yml - Pre-create `node_modules` directory with correct ownership - **Result**: Local dev `docker compose up` works seamlessly ### 3. Build Pipeline Unders",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4647336214780807,
-      "maxScore": 0.4647336214780807,
+      "totalScore": 0.9417963802814483,
+      "maxScore": 0.47706275880336757,
       "firstRecalledAt": "2026-04-24T06:38:54.278Z",
-      "lastRecalledAt": "2026-04-24T06:38:54.278Z",
+      "lastRecalledAt": "2026-04-26T07:05:15.362Z",
       "queryHashes": [
-        "f1ff6e7d232f"
+        "f1ff6e7d232f",
+        "29f6d952b980"
       ],
       "recallDays": [
-        "2026-04-24"
+        "2026-04-24",
+        "2026-04-26"
       ],
       "conceptTags": [
         "karpathy-architecture-design.md",
@@ -55688,6 +55726,355 @@
         "eod",
         "summary",
         "triggered"
+      ]
+    },
+    "memory:memory/2026-03-17.md:161:202": {
+      "key": "memory:memory/2026-03-17.md:161:202",
+      "path": "memory/2026-03-17.md",
+      "startLine": 161,
+      "endLine": 202,
+      "source": "memory",
+      "snippet": "**Decision:** Use built-in SQLite backend with Gemini Embeddings 2 (not QMD) **Rationale:** - QMD requires local CPU for embeddings (embeddinggemma-300M model) - VPS has no GPU, so QMD would be slow - Built-in backend + Gemini Embeddings 2 allows cloud-based embeddings - No local CPU/GPU load for embeddings **Configuration:** ```json { \"agents\": { \"defaults\": { \"memorySearch\": { \"provider\": \"gemini\", \"model\": \"gemini-embedding-2-preview\", \"outputDimensionality\": 1536, \"remote\": { \"apiKey\": \"${GEMINI_API_KEY}\" } } } } } ``` **Key Details:** - Gemini Embeddings 2 announced March 10, 2026 (latest from Google) - Support",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.3973012775182723,
+      "maxScore": 0.47570625245571135,
+      "firstRecalledAt": "2026-04-26T07:04:32.167Z",
+      "lastRecalledAt": "2026-04-26T07:11:54.207Z",
+      "queryHashes": [
+        "e12c055556ac",
+        "ab824160f64b",
+        "12bb0281b38f"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "embedding",
+        "embeddings",
+        "qmd",
+        "built-in",
+        "embeddinggemma-300m",
+        "cloud-based",
+        "cpu/gpu",
+        "gemini-embedding-2-preview"
+      ]
+    },
+    "memory:memory/2026-04-03.md:135:177": {
+      "key": "memory:memory/2026-04-03.md:135:177",
+      "path": "memory/2026-04-03.md",
+      "startLine": 135,
+      "endLine": 177,
+      "source": "memory",
+      "snippet": "└── ... ``` **Workflow:** 1. **Ingest:** Add sources to `raw/` 2. **Compile:** LLM reads raw/, writes summaries + backlinks to `wiki/` 3. **Query:** LLM reads `wiki/_index.md`, finds relevant articles, reads full content **Advantages:** - Zero infrastructure (just files) - Exact symbol search (LLM reads full files) - Hierarchical organization matches mental model - Cheap: only LLM API costs (no embeddings, no vector DB) - Multi-agent: shared `~/memory/` directory **Integration:** - Rails `MemoryService` class handles LLM calls - n8n triggers auto-compilation on new files - OpenCode-Go for cheap LLM (MiniMax M2.5 for compile, GLM-5 for query) **Status:** DIY Karpathy approach identifi",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9309997379779815,
+      "maxScore": 0.47058806121349334,
+      "firstRecalledAt": "2026-04-26T07:04:47.223Z",
+      "lastRecalledAt": "2026-04-26T07:05:15.362Z",
+      "queryHashes": [
+        "984bb7cec559",
+        "29f6d952b980"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "embedding",
+        "embeddings",
+        "index.md",
+        "multi-agent",
+        "auto-compilation",
+        "opencode-go",
+        "m2.5",
+        "glm-5"
+      ]
+    },
+    "memory:memory/2026-04-17.md:368:376": {
+      "key": "memory:memory/2026-04-17.md:368:376",
+      "path": "memory/2026-04-17.md",
+      "startLine": 368,
+      "endLine": 376,
+      "source": "memory",
+      "snippet": "- Candidate: - Candidate: - ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8772149622440337,
+      "maxScore": 0.4513618201017379,
+      "firstRecalledAt": "2026-04-26T07:11:54.207Z",
+      "lastRecalledAt": "2026-04-26T11:07:27.556Z",
+      "queryHashes": [
+        "12bb0281b38f",
+        "02712bbd58fd"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "end-to-end",
+        "docker-compose.ghcr.yml",
+        "first-time",
+        "candidate",
+        "dependabot",
+        "weekly",
+        "gem",
+        "actions"
+      ]
+    },
+    "memory:memory/2026-04-26.md:1:15": {
+      "key": "memory:memory/2026-04-26.md:1:15",
+      "path": "memory/2026-04-26.md",
+      "startLine": 1,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "--- ## 2026-04-26 16:00 — Scope Narrowed **Victor's directive:** Focus on ingestion + rendering only. No wiki, no compaction, no L2. **Scoped deliverable:** - Ingest: PDF, MD, Text, URL - Output per chunk: Markdown file + Vector embedding - Render: View ingested content (list + detail) **Deferred:** L2 wiki, LLM compilation, compaction, multi-agent scoping, Redis queue.",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.9090507239103318,
+      "maxScore": 0.5315232634544372,
+      "firstRecalledAt": "2026-04-26T10:17:45.355Z",
+      "lastRecalledAt": "2026-04-26T10:56:42.495Z",
+      "queryHashes": [
+        "1f41bdcf1eb9",
+        "3f9b94ceb6cc",
+        "b041111681fd",
+        "039cddd403bb"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "embedding",
+        "multi-agent",
+        "scope",
+        "narrowed",
+        "victor's",
+        "directive",
+        "focus",
+        "ingestion"
+      ]
+    },
+    "memory:memory/2026-04-14.md:278:287": {
+      "key": "memory:memory/2026-04-14.md:278:287",
+      "path": "memory/2026-04-14.md",
+      "startLine": 278,
+      "endLine": 287,
+      "source": "memory",
+      "snippet": "- Candidate: **Current status:** All 7 ProTek cron jobs configured with `delivery.mode: \"announce\"` and delivering successfully. --- ## Action Items | Task | Status | |------|--------| | Monitor 14:05, 16:05, 18:05 runs | ⏳ In progress | | Verify consistent delivery | ⏳ In progress | | Document findings for GitHub issue | ⏳ Pending | **Observation period:** Continue monitoring through end of day to confirm stability. --- ## Configuration Revert Completed All 7 ProTek cron jobs reverted to original configuration: - delivery.mode: \"announce\" - Prompts no longer ask agent to explicitly send messages - Payload.message: Simple skill invocation only Awaiting 12:05 test results. - confidence: 0.8",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.45787189900875086,
+      "maxScore": 0.45787189900875086,
+      "firstRecalledAt": "2026-04-26T10:56:42.495Z",
+      "lastRecalledAt": "2026-04-26T10:56:42.495Z",
+      "queryHashes": [
+        "039cddd403bb"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "delivery.mode",
+        "payload.message",
+        "0.8",
+        "candidate",
+        "current",
+        "status",
+        "all",
+        "protek"
+      ]
+    },
+    "memory:memory/2026-04-13.md:140:149": {
+      "key": "memory:memory/2026-04-13.md:140:149",
+      "path": "memory/2026-04-13.md",
+      "startLine": 140,
+      "endLine": 149,
+      "source": "memory",
+      "snippet": "- Candidate: **Current status:** All 7 ProTek cron jobs configured with `delivery.mode: \"announce\"` and delivering successfully. --- ## Action Items | Task | Status | |------|--------| | Monitor 14:05, 16:05, 18:05 runs | ⏳ In progress | | Verify consistent delivery | ⏳ In progress | | Document findings for GitHub issue | ⏳ Pending | **Observation period:** Continue monitoring through end of day to confirm stability. --- ## Configuration Revert Completed All 7 ProTek cron jobs reverted to original configuration: - delivery.mode: \"announce\" - Prompts no longer ask agent to explicitly send messages - Payload.message: Simple skill invocation only Awaiting 12:05 test results. - confidence: 0.8",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.45787189900875086,
+      "maxScore": 0.45787189900875086,
+      "firstRecalledAt": "2026-04-26T10:56:42.495Z",
+      "lastRecalledAt": "2026-04-26T10:56:42.495Z",
+      "queryHashes": [
+        "039cddd403bb"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "delivery.mode",
+        "payload.message",
+        "0.8",
+        "candidate",
+        "current",
+        "status",
+        "all",
+        "protek"
+      ]
+    },
+    "memory:memory/2026-03-30.md:1:48": {
+      "key": "memory:memory/2026-03-30.md:1:48",
+      "path": "memory/2026-03-30.md",
+      "startLine": 1,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "# Daily Memory Log — 2026-03-30 ## ProTek Cron Job Delivery — Continued Observation ### Morning Results (Mar 30) | Time | Job | Status | Notes | |------|-----|--------|-------| | **07:05** | **Morning Cleanup** | **❌ Failed** | No delivery | | **08:05** | **Morning Trends** | **❌ Failed** | No delivery | | 10:05 | Mid-Morning | ⏳ Pending | Awaiting | | 12:05 | Midday Facility | ⏳ Pending | Awaiting | ### Pattern Analysis — Morning Failures **Both morning jobs failed today** — different from Mar 29 where 08:05 delivered. **Comparison:** | Job | Mar 28 | Mar 29 | Mar 30 | |-----|--------|--------|--------| | 07:05 | ✅ | ❌ | ❌ | | 08:05 | ❌ | ✅ | ❌ | **Observation:** Both morning slots n",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.45965273082256314,
+      "maxScore": 0.45965273082256314,
+      "firstRecalledAt": "2026-04-26T11:07:27.556Z",
+      "lastRecalledAt": "2026-04-26T11:07:27.556Z",
+      "queryHashes": [
+        "02712bbd58fd"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "mid-morning",
+        "log",
+        "protek",
+        "cron",
+        "job",
+        "delivery",
+        "continued",
+        "observation"
+      ]
+    },
+    "memory:memory/2026-03-28.md:1:50": {
+      "key": "memory:memory/2026-03-28.md:1:50",
+      "path": "memory/2026-03-28.md",
+      "startLine": 1,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "# Daily Memory Log — 2026-03-28 ## ProTek Cron Job Delivery — Ongoing Monitoring ### Issue: 8:05 AM Report Missing **Reported:** March 28, 9:12 AM HKT **Missing job:** ProTek 08:05 Morning Trends (e1793498-dcfd-42e0-95f7-7ddd8c9049ce) ### Recent Delivery History | Date/Time | Job | Status | Received | |-----------|-----|--------|----------| | Mar 26, 12:05 | 12:05 Midday | ✅ | Yes | | Mar 27, 07:05 | 07:05 Morning | ❌ | No (error) | | Mar 27, 08:05 | 08:05 Morning | ❌ | No (error) | | Mar 27, 12:05 | 12:05 Midday | ✅ | Yes | | **Mar 28, 08:05** | **08:05 Morning** | **❌** | **No** | ### Pattern Analysis - **12:05 PM jobs:** Consistently delivering ✅ - **Morning jobs (07:05, 08:05):*",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4552436470985412,
+      "maxScore": 0.4552436470985412,
+      "firstRecalledAt": "2026-04-26T11:07:27.556Z",
+      "lastRecalledAt": "2026-04-26T11:07:27.556Z",
+      "queryHashes": [
+        "02712bbd58fd"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "date/time",
+        "log",
+        "protek",
+        "cron",
+        "job",
+        "delivery",
+        "ongoing",
+        "monitoring"
+      ]
+    },
+    "memory:memory/2026-03-27.md:1:48": {
+      "key": "memory:memory/2026-03-27.md:1:48",
+      "path": "memory/2026-03-27.md",
+      "startLine": 1,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "# Daily Memory Log — 2026-03-27 ## ProTek Cron Job Delivery Issue ### Timeline of Events | Date/Time (HKT) | Event | Status | |-----------------|-------|--------| | Mar 20-26 | ProTek reports delivering normally | ✅ Working | | Mar 26, 12:05 | Last successful delivery | ✅ Delivered | | Mar 27, 05:50 | Gateway restart (update check for 3.24) | ⚠️ Restart | | Mar 27, 07:05 | First failure - \"Unsupported channel: telegram\" | ❌ Failed | | Mar 27, 08:05 | Second failure | ❌ Failed | | Mar 27, 09:03 | Manual test with message tool | ✅ Delivered | | Mar 27, 10:05 | Reverted to announce mode | ⏳ Awaiting 12:05 test | ### Key Finding from @chrysb Tweet OpenClaw 3.11 (released Mar 12) introduced",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49376438856124877,
+      "maxScore": 0.49376438856124877,
+      "firstRecalledAt": "2026-04-26T11:10:28.508Z",
+      "lastRecalledAt": "2026-04-26T11:10:28.508Z",
+      "queryHashes": [
+        "a3b7f3605f2a"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "gateway",
+        "date/time",
+        "20-26",
+        "3.24",
+        "3.11",
+        "log",
+        "protek",
+        "cron"
+      ]
+    },
+    "memory:memory/2026-04-26.md:1:41": {
+      "key": "memory:memory/2026-04-26.md:1:41",
+      "path": "memory/2026-04-26.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "--- ## 2026-04-26 16:00 — Scope Narrowed **Victor's directive:** Focus on ingestion + rendering only. No wiki, no compaction, no L2. **Scoped deliverable:** - Ingest: PDF, MD, Text, URL - Output per chunk: Markdown file + Vector embedding - Render: View ingested content (list + detail) **Deferred:** L2 wiki, LLM compilation, compaction, multi-agent scoping, Redis queue. --- ## 2026-04-26 19:07 — karpathy-ingest Status Capture **Project:** https://github.com/ceil-labs/karpathy-ingest **Server:** Running at `https://srv1405873.tailcd23a1.ts.net:8444` ### What's Built - Dockerized TypeScript/Express API with PostgreSQL + pgvector - Extractors: PDF (pdf-parse), MD/Text (passthrough), UR",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.007602271437645,
+      "maxScore": 0.5218194991350174,
+      "firstRecalledAt": "2026-04-26T11:10:59.492Z",
+      "lastRecalledAt": "2026-04-26T11:31:05.301Z",
+      "queryHashes": [
+        "3d5eb5d21289",
+        "98f6c677e439"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "embedding",
+        "multi-agent",
+        "karpathy-ingest",
+        "srv1405873.tailcd23a1.ts.net",
+        "typescript/express",
+        "pdf-parse",
+        "md/text",
+        "scope"
+      ]
+    },
+    "memory:memory/2026-04-16.md:457:482": {
+      "key": "memory:memory/2026-04-16.md:457:482",
+      "path": "memory/2026-04-16.md",
+      "startLine": 457,
+      "endLine": 482,
+      "source": "memory",
+      "snippet": "- status: staged - Candidate: User: [Tue 2026-04-14 11:12 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Research the new Kimi model **K2.6-code-preview** for OpenClaw configuration. The user currently - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-14.txt:34-34 - recalls: 0 - status: staged - Candidate: Assistant: Now let me check Victor's current config to understand his exact setup: - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-14.txt:35-35 - recalls: 0 - status: staged - Candidate: Assistant: --- ## Research Report: Kim",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4412441194057464,
+      "maxScore": 0.4412441194057464,
+      "firstRecalledAt": "2026-04-26T11:18:06.719Z",
+      "lastRecalledAt": "2026-04-26T11:18:06.719Z",
+      "queryHashes": [
+        "f18e51bd7ead"
+      ],
+      "recallDays": [
+        "2026-04-26"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "k2.6-code-preview",
+        "0.58",
+        "34-34",
+        "35-35",
+        "status"
       ]
     }
   }
