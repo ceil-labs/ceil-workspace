@@ -1164,4 +1164,25 @@ User: [cron:9a3f4f11-99da-42db-b6f1-935d2831b6ba ProTek 14:05 Afternoon Facility
 
 Possible Lasting Truths: --- **[2026-04-13 10:11 PM +08]** GHCR production deployment preparation — stopped dev stack, ready for next-session testing. - **Progress:** Development docker compose stack (`agent-platform-app-1`, `agent-platform-proxy-1`, etc.) has been stopped to fre
 
+
+---
+
+*April 26, 2026 at 12:43 PM GMT+8*
+
+User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Execute the Protek FSM Analyzer skill for the 10:05 AM mid-morning check. Run the equivalent of `/fsm check` - fetch summary
+
+
+---
+
+*April 26, 2026 at 12:43 PM GMT+8*
+
+# Daily Log — 2026-04-09 ## Session Start - Victor upgraded OpenClaw from 2026.4.5 → 2026.4.9 successfully - Had to remove `"memory-lancedb": { "enabled": false }` from config — even when disabled, app was looking for required properties ## Dreaming Research Results ### Dreaming Config — Complete Docs confirm only 2 user-facing settings exist: ```json "dreaming": { "enabled": true, "frequency": "0 3 * * *" } ``` Your current config is complete. No missing fields. Light/deep/REM thresholds are intentionally internal — not user-configurable. ### Dreaming Uses Internal Scheduler (NOT jobs.json) - Dreaming cron is managed by **memory-core plugin's own internal scheduler**, NOT the gatewa
+
+
+---
+
+*April 26, 2026 at 12:43 PM GMT+8*
+
+Possible Lasting Truths: # Session Log — 2026-04-12 ## 2026-04-12 10:15 — Cross-Agent Note: n8n Redirect Fix Applied by Neo **Context:** Victor noticed n8n at `https://srv1405873.tailcd23a1.ts.net:8444/n8n` was redirecting to `http://srv...:3000/n8n/` and failing due to n8n secur
+
 <!-- openclaw:dreaming:diary:end -->

@@ -92,3 +92,12 @@ write it down
 - **Root cause:** Config had provider named `kimi-coding` but requests used `kimi/k2p6` alias. [score=0.840 recalls=0 avg=0.620 source=memory/2026-04-16.md:496-496]
 <!-- openclaw-memory-promotion:memory:memory/2026-04-16.md:498:498 -->
 - **Changes made to `~/.openclaw/openclaw.json`:** [score=0.840 recalls=0 avg=0.620 source=memory/2026-04-16.md:498-498]
+
+## Promoted From Short-Term Memory (2026-04-26)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:506:508 -->
+- - Candidate: Possible Lasting Truths: # Session Log — 2026-04-12 ## 2026-04-12 10:15 — Cross-Agent Note: n8n Redirect Fix Applied by Neo **Context:** Victor noticed n8n at `https://srv1405873.tailcd23a1.ts.net:8444/n8n` was redirecting to `http://srv...:3000/n8n/` and failing due to n8n secur - confidence: 0.62 - evidence: memory/2026-04-18.md:506-508 [score=0.857 recalls=0 avg=0.620 source=memory/2026-04-19.md:58-60]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-19.md:503:503 -->
+- - Candidate: Reflections: No strong patterns surfaced. [score=0.837 recalls=0 avg=0.620 source=memory/2026-04-19.md:458-458]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-16.md:483:483 -->
+- - Candidate: Reflections: No strong patterns surfaced. [score=0.808 recalls=0 avg=0.620 source=memory/2026-04-16.md:298-298]
