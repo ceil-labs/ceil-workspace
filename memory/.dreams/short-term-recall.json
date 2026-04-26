@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-26T12:25:20.928Z",
+  "updatedAt": "2026-04-26T13:01:05.080Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -6750,14 +6750,14 @@
       "startLine": 1,
       "endLine": 60,
       "source": "memory",
-      "snippet": "# 2026-04-06 — OpenClaw 2026.4.5 Upgrade + Dreaming Enabled ## Summary Upgraded OpenClaw from 2026.4.1 to 2026.4.5. Configured and tested experimental dreaming feature for automatic memory consolidation. ## OpenClaw Upgrade ### Version - **From:** 2026.4.1 - **To:** 2026.4.5 ### Upgrade Steps 1. `npm update -g openclaw` 2. `openclaw doctor --fix` (migrated config, backup created) 3. `openclaw gateway restart` ### Config Migration - Doctor automatically fixed config - Backup saved: `~/.openclaw/openclaw.json.bak` - No deprecated settings found (clean upgrade) ## Dreaming Configuration (Experimental) ### What is Dreaming? Background memory consolidation system that moves strong short-term signals into durable long-term memory. Runs automatically via scheduled sweeps. ### Config Location ```json plugins.entries.memory-core.config.dreaming ``` ### Settings Applied ```json { \"dreaming\": { \"enabled\": true, \"frequency\": \"0 3 * * *\" } } ``` | Setting | Value | Description | |---------|-------|-------------| | `enabled` | `true` | Dreaming active | | `frequency` | `0 3 * * *` | Runs at 3:00 AM daily | ### Promotion Policy - **Score threshold:** >= 0.8 - **Recall count:** >= 3 - **Unique queries:** >= 3 ### Three Phases | Phase | Purpose | Writes to MEMORY.md? | |-------|---------|---------------------| | Light | Sort/stage recent signals | No | | REM | Extract patterns/themes | No | | Deep | Promote durable memories | Yes | ### Output Files - `memory/.dreams/` — Machine state (recall store, signals, locks)",
-      "recallCount": 8,
+      "snippet": "# 2026-04-06 — OpenClaw 2026.4.5 Upgrade + Dreaming Enabled ## Summary Upgraded OpenClaw from 2026.4.1 to 2026.4.5. Configured and tested experimental dreaming feature for automatic memory consolidation. ## OpenClaw Upgrade ### Version - **From:** 2026.4.1 - **To:** 2026.4.5 ### Upgrade Steps 1. `npm update -g openclaw` 2. `openclaw doctor --fix` (migrated config, backup created) 3. `openclaw gateway restart` ### Config Migration - Doctor automatically fixed config - Backup saved: `~/.openclaw/openclaw.json.bak` - No deprecated settings found (clean upgrade) ## Dreaming Configuration (Experimental) ### What is Dreaming? Background memory consolidation system that moves strong short-te",
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.174497349531241,
+      "totalScore": 4.622056136996337,
       "maxScore": 0.7926711156674108,
       "firstRecalledAt": "2026-04-12T02:06:27.192Z",
-      "lastRecalledAt": "2026-04-22T02:23:56.795Z",
+      "lastRecalledAt": "2026-04-26T13:01:05.080Z",
       "queryHashes": [
         "b1a812254815",
         "3b2cdf3b87f1",
@@ -6766,12 +6766,14 @@
         "cb1c43583e4b",
         "6c70a997f668",
         "fefe4048e15b",
-        "2d91467c7129"
+        "2d91467c7129",
+        "72f6cc919e6a"
       ],
       "recallDays": [
         "2026-04-12",
         "2026-04-13",
-        "2026-04-22"
+        "2026-04-22",
+        "2026-04-26"
       ],
       "conceptTags": [
         "backup",
@@ -6779,9 +6781,9 @@
         "2026.4.5",
         "2026.4.1",
         "openclaw/openclaw.json.bak",
-        "short-term",
-        "long-term",
-        "0.8"
+        "short-te",
+        "openclaw",
+        "upgrade"
       ],
       "promotedAt": "2026-04-22T19:00:00.459Z"
     },
@@ -33334,17 +33336,18 @@
       "endLine": 86,
       "source": "memory",
       "snippet": "**Context:** Neo (Telegram) experienced an LLM idle timeout on `kimi/k2p5` via the `kimi-coding` provider. After ~60s, OpenClaw auto-fallback to `minimax-m2.7` successfully. Model was later reset to `kimi/k2p5`. **Investigation:** - Confirmed via `openclaw logs` — primary profile `kimi-coding:default` hit `LLM idle timeout (60s)`, HTTP 408. - OpenClaw GitHub repo search revealed **Issue #55065** (no idle timeout mechanism) plus transient kimi-coding provider latency issues. - Victor confirmed he's on OpenClaw **v4.9** and the tool-call format bug is already resolved in this version. **Current Assessment:** - Only symptom observed is the **60s idle timeout** — likely transient provider-side",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.857525900377418,
+      "totalScore": 2.3493354711667553,
       "maxScore": 0.7372151851277668,
       "firstRecalledAt": "2026-04-14T03:15:47.633Z",
-      "lastRecalledAt": "2026-04-26T11:14:06.792Z",
+      "lastRecalledAt": "2026-04-26T12:57:08.383Z",
       "queryHashes": [
         "80abc314aba1",
         "fc49abb81cea",
-        "04d942d19d67"
+        "04d942d19d67",
+        "ef9fcc493051"
       ],
       "recallDays": [
         "2026-04-14",
