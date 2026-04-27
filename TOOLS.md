@@ -103,6 +103,44 @@ Remote browser control from VPS to Victor's MacBook Pro Chrome.
 **Details:** See `tools/browser-control.md`  
 **Quick command (on laptop):** `openclaw node run --host srv1405873.tailcd23a1.ts.net --port 443 --tls`
 
+## 🖼️ Image Generation (Google Gemini)
+
+**Provider:** `google/gemini-3.1-flash-image-preview`  
+**Configured:** ✅ `GOOGLE_API_KEY` in `~/.openclaw/gateway.systemd.env`
+
+### Critical Requirements
+
+Google's image generation API is **slow** (~60–120s). Two parameters are required for reliable results:
+
+| Parameter | Value | Why |
+|-----------|-------|-----|
+| `timeoutMs` | `300000` (5 min) | Default 60s aborts before generation completes |
+| `aspectRatio` | `"1:1"` (or `"16:9"`, etc.) | Without this, API sometimes times out or returns no image |
+
+### Working Example
+
+```json
+{
+  "action": "generate",
+  "prompt": "A simple red circle on white background",
+  "aspectRatio": "1:1",
+  "timeoutMs": 300000
+}
+```
+
+### Supported Aspect Ratios
+`1:1`, `2:3`, `3:2`, `3:4`, `4:3`, `4:5`, `5:4`, `9:16`, `16:9`, `21:9`
+
+### Supported Sizes
+`1024x1024`, `1024x1536`, `1536x1024`, `1024x1792`, `1792x1024`
+
+### Notes
+- **No global timeout config** — must pass `timeoutMs` in every `image_generate` call
+- Provider source: `dist/extensions/google/image-generation-provider.js` (default timeout hardcoded at 60s)
+- Files saved to: `~/.openclaw/media/tool-image-generation/`
+- If generation fails with "This operation was aborted" → timeout too short
+- If fails with "missing image data" → likely timeout + no aspect ratio combined
+
 ---
 
 _Add environment-specific notes here as needed: SSH hosts, API endpoints, preferences, etc._
