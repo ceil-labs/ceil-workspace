@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-27T02:44:50.134Z",
+  "updatedAt": "2026-04-27T15:11:00.026Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -7003,23 +7003,25 @@
       "endLine": 145,
       "source": "memory",
       "snippet": "- Apache 2.0, tiered loading (L0/L1/L2), filesystem paradigm - Closest architectural match to Karpathy's approach - Requires Go 1.22+, C++ toolchain, VLM + embedding model **3. ByteRover** - Elastic License v2, context tree as Markdown files - Agentic Search (LLM-navigated, not vector-based) - CLI-first, zero infrastructure, MCP server available **4. Memary** - MIT license, knowledge graph (Neo4j/FalkorDB) - Multi-hop reasoning, multi-agent via user_id - **Issue:** Last commit 2 years ago — stale project **5. Redis Agent Memory** - MIT license, native OpenClaw plugin - Multi-agent scopes (shared + personal) - Simplest setup: Docker one-liner ### Karpathy's Memory Approach (DIY) **Core I",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.0329926766092217,
+      "totalScore": 3.815180816898617,
       "maxScore": 0.7978884877330754,
       "firstRecalledAt": "2026-04-12T11:13:21.905Z",
-      "lastRecalledAt": "2026-04-26T07:11:33.969Z",
+      "lastRecalledAt": "2026-04-27T05:34:29.945Z",
       "queryHashes": [
         "35a3e4a4eaec",
         "2ce1916977e8",
         "984bb7cec559",
         "29f6d952b980",
-        "b50ccbe86f92"
+        "b50ccbe86f92",
+        "7869d46978d4"
       ],
       "recallDays": [
         "2026-04-12",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ],
       "conceptTags": [
         "embedding",
@@ -7168,13 +7170,13 @@
       "endLine": 110,
       "source": "memory",
       "snippet": "**Status**: Documented in `karpathy-architecture-design.md`. Implementation pending. ## Commands Reference **Production Deploy:** ```bash cd ~/agent-platform git pull origin master docker compose -f docker-compose.ghcr.yml pull docker compose -f docker-compose.ghcr.yml up -d ``` **Local Dev:** ```bash cd ~/.openclaw/projects/agent-platform docker compose up -d ``` **Check Build Status:** ```bash gh run list --limit 3 ```",
-      "recallCount": 13,
+      "recallCount": 15,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 7.168358501172468,
+      "totalScore": 8.144123741364881,
       "maxScore": 0.7706353324573588,
       "firstRecalledAt": "2026-04-12T11:13:30.487Z",
-      "lastRecalledAt": "2026-04-27T02:27:15.795Z",
+      "lastRecalledAt": "2026-04-27T05:34:29.945Z",
       "queryHashes": [
         "3325b29e4dbc",
         "d16046c294ff",
@@ -7188,7 +7190,9 @@
         "3f9b94ceb6cc",
         "a5eeed39ff49",
         "5f4080d7c9c0",
-        "8e060fbc1405"
+        "8e060fbc1405",
+        "a5160ae88763",
+        "7869d46978d4"
       ],
       "recallDays": [
         "2026-04-12",
@@ -23429,29 +23433,31 @@
       "startLine": 419,
       "endLine": 422,
       "source": "memory",
-      "snippet": "Changes Made: `nginx-proxy.conf`:; `location /n8n/` now uses `auth_request /auth_check;`; Added internal `location = /auth_check` subrequest to Rails; Unauthenticated requests redirect to `https://$http_host/session/new`",
-      "recallCount": 0,
+      "snippet": "- - Added build args `USER_ID` and `GROUP_ID` in docker-compose.yml - Pre-create `node_modules` directory with correct ownership - **Result**: Local dev `docker compose up` works seamlessly ### 3. Build Pipeline Understanding - **Two independent builds**: - **Local dev**: `Dockerfile.dev` → builds on your machine - **Production**: `Dockerfile` → built by GitHub Actions, pushed to GHCR - **Production workflow**: `git push` → Actions builds → `docker compose pull` on VPS ### 4. CI/CD Maintenance - Updated GitHub Actions to `actions/cache@v5` and `actions/upload-artifact@v7` - Fixed branch name from `main` to `master` - Disabled system-test job (no browser tests yet) ## Key Files Chang [confide",
+      "recallCount": 1,
       "dailyCount": 1,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.0679044437408447,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-13T04:52:32.591Z",
-      "lastRecalledAt": "2026-04-13T04:52:32.591Z",
+      "lastRecalledAt": "2026-04-27T03:55:39.503Z",
       "queryHashes": [
-        "0dac2e09ca9b"
+        "0dac2e09ca9b",
+        "c451767eebcc"
       ],
       "recallDays": [
-        "2026-04-13"
+        "2026-04-13",
+        "2026-04-27"
       ],
       "conceptTags": [
-        "nginx-proxy.conf",
-        "auth-request",
-        "auth-check",
-        "http-host/session/new",
-        "changes",
-        "made",
-        "nginx",
-        "proxy.conf"
+        "user-id",
+        "group-id",
+        "docker-compose.yml",
+        "pre-create",
+        "node-modules",
+        "dockerfile.dev",
+        "ci/cd",
+        "actions/cache"
       ]
     },
     "memory:memory/2026-04-13.md:423:425": {
@@ -33412,18 +33418,20 @@
       "endLine": 419,
       "source": "memory",
       "snippet": "- - ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive config via environment [",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7929399197398397,
+      "totalScore": 1.2410679375230047,
       "maxScore": 0.7929399197398397,
       "firstRecalledAt": "2026-04-14T09:14:32.214Z",
-      "lastRecalledAt": "2026-04-14T09:14:32.214Z",
+      "lastRecalledAt": "2026-04-27T03:55:39.503Z",
       "queryHashes": [
-        "d982f51c3239"
+        "d982f51c3239",
+        "c451767eebcc"
       ],
       "recallDays": [
-        "2026-04-14"
+        "2026-04-14",
+        "2026-04-27"
       ],
       "conceptTags": [
         "end-to-end",
@@ -33443,18 +33451,20 @@
       "endLine": 417,
       "source": "memory",
       "snippet": "- - ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive config via environment [",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.7929399197398397,
+      "totalScore": 1.2410679375230047,
       "maxScore": 0.7929399197398397,
       "firstRecalledAt": "2026-04-14T09:14:32.214Z",
-      "lastRecalledAt": "2026-04-14T09:14:32.214Z",
+      "lastRecalledAt": "2026-04-27T03:55:39.503Z",
       "queryHashes": [
-        "d982f51c3239"
+        "d982f51c3239",
+        "c451767eebcc"
       ],
       "recallDays": [
-        "2026-04-14"
+        "2026-04-14",
+        "2026-04-27"
       ],
       "conceptTags": [
         "end-to-end",
@@ -54119,20 +54129,22 @@
       "endLine": 497,
       "source": "memory",
       "snippet": "- **Status**: Documented in `karpathy-architecture-design.md`. Implementation pending. ## Commands Reference **Production Deploy:** ```bash cd ~/agent-platform git pull origin master docker compose -f docker-compose.ghcr.yml pull docker compose -f docker-compose.ghcr.yml up -d ``` **Local Dev:** ```bash cd ~/.openclaw/projects/agent-platform docker compose up -d ``` **Check Build Status:** ```bash gh run list --limit 3 ``` [confidence=0.76 evidence=memory/2026-04-04.md:88-110] - - Added build args `USER_ID` and `GROUP_ID` in docker-compose.yml - Pre-create `node_modules` directory with correct ownership - **Result**: Local dev `docker compose up` works seamlessly ### 3. Build Pipeline Unders",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9417963802814483,
+      "totalScore": 1.4039608508348465,
       "maxScore": 0.47706275880336757,
       "firstRecalledAt": "2026-04-24T06:38:54.278Z",
-      "lastRecalledAt": "2026-04-26T07:05:15.362Z",
+      "lastRecalledAt": "2026-04-27T03:46:49.403Z",
       "queryHashes": [
         "f1ff6e7d232f",
-        "29f6d952b980"
+        "29f6d952b980",
+        "ae627c47b90e"
       ],
       "recallDays": [
         "2026-04-24",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ],
       "conceptTags": [
         "karpathy-architecture-design.md",
@@ -55668,19 +55680,21 @@
       "endLine": 177,
       "source": "memory",
       "snippet": "└── ... ``` **Workflow:** 1. **Ingest:** Add sources to `raw/` 2. **Compile:** LLM reads raw/, writes summaries + backlinks to `wiki/` 3. **Query:** LLM reads `wiki/_index.md`, finds relevant articles, reads full content **Advantages:** - Zero infrastructure (just files) - Exact symbol search (LLM reads full files) - Hierarchical organization matches mental model - Cheap: only LLM API costs (no embeddings, no vector DB) - Multi-agent: shared `~/memory/` directory **Integration:** - Rails `MemoryService` class handles LLM calls - n8n triggers auto-compilation on new files - OpenCode-Go for cheap LLM (MiniMax M2.5 for compile, GLM-5 for query) **Status:** DIY Karpathy approach identifi",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9309997379779815,
-      "maxScore": 0.47058806121349334,
+      "totalScore": 1.4077605873346328,
+      "maxScore": 0.47676084935665125,
       "firstRecalledAt": "2026-04-26T07:04:47.223Z",
-      "lastRecalledAt": "2026-04-26T07:05:15.362Z",
+      "lastRecalledAt": "2026-04-27T05:42:15.090Z",
       "queryHashes": [
         "984bb7cec559",
-        "29f6d952b980"
+        "29f6d952b980",
+        "1ac82d44f651"
       ],
       "recallDays": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ],
       "conceptTags": [
         "embedding",
@@ -55921,13 +55935,13 @@
       "endLine": 41,
       "source": "memory",
       "snippet": "--- ## 2026-04-26 16:00 — Scope Narrowed **Victor's directive:** Focus on ingestion + rendering only. No wiki, no compaction, no L2. **Scoped deliverable:** - Ingest: PDF, MD, Text, URL - Output per chunk: Markdown file + Vector embedding - Render: View ingested content (list + detail) **Deferred:** L2 wiki, LLM compilation, compaction, multi-agent scoping, Redis queue. --- ## 2026-04-26 19:07 — karpathy-ingest Status Capture **Project:** https://github.com/ceil-labs/karpathy-ingest **Server:** Running at `https://srv1405873.tailcd23a1.ts.net:8444` ### What's Built - Dockerized TypeScript/Express API with PostgreSQL + pgvector - Extractors: PDF (pdf-parse), MD/Text (passthrough), UR",
-      "recallCount": 9,
+      "recallCount": 26,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.55143928527832,
-      "maxScore": 0.5417041331529617,
+      "totalScore": 12.958829818665981,
+      "maxScore": 0.5542030423879623,
       "firstRecalledAt": "2026-04-26T11:10:59.492Z",
-      "lastRecalledAt": "2026-04-27T02:27:22.003Z",
+      "lastRecalledAt": "2026-04-27T15:11:00.026Z",
       "queryHashes": [
         "3d5eb5d21289",
         "98f6c677e439",
@@ -55937,7 +55951,24 @@
         "9ac455764943",
         "b57f55d9ed1c",
         "2c0a52020e55",
-        "af959b9a6b5e"
+        "af959b9a6b5e",
+        "2dd6a4aafb48",
+        "265eaeb4171a",
+        "89ea187ec4e7",
+        "15c37205b690",
+        "0f6087285675",
+        "d0793151526b",
+        "b7b313f4024d",
+        "7869d46978d4",
+        "8f52dafb7fcb",
+        "74592106bc18",
+        "1ac82d44f651",
+        "723f9cfd0cee",
+        "68d1b1a1088a",
+        "ec2fda022931",
+        "94d590f8ac11",
+        "ab7a910f960c",
+        "8f29c907dc15"
       ],
       "recallDays": [
         "2026-04-26",
@@ -61370,15 +61401,23 @@
       "endLine": 248,
       "source": "memory",
       "snippet": "**Deferred:** Victor will implement hybrid search later. --- ## 2026-04-26 16:30 — Embedding Model Decision Chose `gemini-embedding-2` (768 dims) over `text-embedding-004` (3072 dims): - Latest GA model - Multimodal support - Cheaper pricing - 97-99% quality vs 3072-dim version - 8K context window - 150 RPM rate limit --- ## 2026-04-26 16:00 — VPS Crash Recovery VPS crashed ~12:40 +08. Rebooted successfully. No data loss — karpathy-ingest project intact in `~/.openclaw/projects/karpathy-ingest/`. --- ## 2026-04-26 15:30 — OpenClaw Downgrade 4.24 → 4.23 Upgraded to 2026.4.24 then downgraded back to 2026.4.23 due to stuck-agent issues. **Config backup:** `~/.openclaw/openclaw.json.b",
-      "recallCount": 1,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5209362179040908,
-      "maxScore": 0.5209362179040908,
+      "totalScore": 4.558685331046581,
+      "maxScore": 0.5397489085793494,
       "firstRecalledAt": "2026-04-27T01:37:04.772Z",
-      "lastRecalledAt": "2026-04-27T01:37:04.772Z",
+      "lastRecalledAt": "2026-04-27T15:11:00.026Z",
       "queryHashes": [
-        "084c6cd26d74"
+        "084c6cd26d74",
+        "74592106bc18",
+        "1ac82d44f651",
+        "723f9cfd0cee",
+        "775a2049f420",
+        "42977912956c",
+        "ab7a910f960c",
+        "aab410696367",
+        "8f29c907dc15"
       ],
       "recallDays": [
         "2026-04-27"
@@ -61401,17 +61440,21 @@
       "endLine": 38,
       "source": "memory",
       "snippet": "--- ## 2026-04-27 07:43 — Session Start **Victor's asks:** 1. Recap karpathy-ingest status 2. Add tests (integration with real DB) 3. Fix README to clearly distinguish dev mode vs production mode **Status reviewed:** Phase 1 (ingest + render + search) built and deployed at `https://srv1405873.tailcd23a1.ts.net:8444`. --- ## 2026-04-27 09:10 — Test Suite Implementation **Test framework:** Vitest + Supertest + Testcontainers (@testcontainers/postgresql) **Files created:** - `vitest.config.ts` — 60s timeout for testcontainers spin-up - `tests/setup.ts` — PostgreSqlContainer with init.sql migrations, test data dir cleanup - `tests/chunker.test.ts` — Unit tests for splitIntoChunks - `tests",
-      "recallCount": 3,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.560492293536663,
+      "totalScore": 3.533562903106212,
       "maxScore": 0.5440385282039641,
       "firstRecalledAt": "2026-04-27T02:17:19.570Z",
-      "lastRecalledAt": "2026-04-27T02:27:11.504Z",
+      "lastRecalledAt": "2026-04-27T10:13:53.360Z",
       "queryHashes": [
         "cacab37c0b7f",
         "e4990b16b5a5",
-        "6c5a72afbabf"
+        "6c5a72afbabf",
+        "89ea187ec4e7",
+        "8f52dafb7fcb",
+        "723f9cfd0cee",
+        "94d590f8ac11"
       ],
       "recallDays": [
         "2026-04-27"
@@ -61456,6 +61499,397 @@
         "updated",
         "test",
         "use"
+      ]
+    },
+    "memory:memory/2026-04-19.md:177:194": {
+      "key": "memory:memory/2026-04-19.md:177:194",
+      "path": "memory/2026-04-19.md",
+      "startLine": 177,
+      "endLine": 194,
+      "source": "memory",
+      "snippet": "- status: staged - Candidate: User: [media attached: 3 files] [media attached 1/3: /home/openclaw/.openclaw/media/inbound/file_252---3aa5231a-0b3f-4f5f-8bd9-4bfb4130cb09.jpg (image/jpeg) | /home/openclaw/.openclaw/media/inbound/file_252---3aa5231a-0b3f-4f5f-8bd9-4bfb4130cb09.jpg] [media attached 2/3: /home/op - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-16.txt:102-102 - recalls: 0 - status: staged - Candidate: Assistant: The error is `denied` — Docker can't pull from GHCR. Your token has the right scopes (`read:packages`, `write:packages`), but the VPS Docker daemon isn't authenticated with this token yet. **Two things to check:** --- ## 1. Is your repo publ",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.46480759680271144,
+      "maxScore": 0.46480759680271144,
+      "firstRecalledAt": "2026-04-27T03:46:49.403Z",
+      "lastRecalledAt": "2026-04-27T03:46:49.403Z",
+      "queryHashes": [
+        "ae627c47b90e"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "1/3",
+        "home/openclaw",
+        "openclaw/media/inbound/file-252",
+        "image/jpeg",
+        "2/3",
+        "home/op",
+        "0.58",
+        "102-102"
+      ]
+    },
+    "memory:memory/2026-04-14.md:417:420": {
+      "key": "memory:memory/2026-04-14.md:417:420",
+      "path": "memory/2026-04-14.md",
+      "startLine": 417,
+      "endLine": 420,
+      "source": "memory",
+      "snippet": "- - Added build args `USER_ID` and `GROUP_ID` in docker-compose.yml - Pre-create `node_modules` directory with correct ownership - **Result**: Local dev `docker compose up` works seamlessly ### 3. Build Pipeline Understanding - **Two independent builds**: - **Local dev**: `Dockerfile.dev` → builds on your machine - **Production**: `Dockerfile` → built by GitHub Actions, pushed to GHCR - **Production workflow**: `git push` → Actions builds → `docker compose pull` on VPS ### 4. CI/CD Maintenance - Updated GitHub Actions to `actions/cache@v5` and `actions/upload-artifact@v7` - Fixed branch name from `main` to `master` - Disabled system-test job (no browser tests yet) ## Key Files Chang [confide",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9096998304128646,
+      "maxScore": 0.4617953866720199,
+      "firstRecalledAt": "2026-04-27T03:46:49.403Z",
+      "lastRecalledAt": "2026-04-27T03:55:39.503Z",
+      "queryHashes": [
+        "ae627c47b90e",
+        "c451767eebcc"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "user-id",
+        "group-id",
+        "docker-compose.yml",
+        "pre-create",
+        "node-modules",
+        "dockerfile.dev",
+        "ci/cd",
+        "actions/cache"
+      ]
+    },
+    "memory:memory/2026-04-26.md:135:185": {
+      "key": "memory:memory/2026-04-26.md:135:185",
+      "path": "memory/2026-04-26.md",
+      "startLine": 135,
+      "endLine": 185,
+      "source": "memory",
+      "snippet": "**Bug:** `llmProcess=true` was parsed as string `\"true\"` from form fields, but code checked `=== true` (boolean). PDFs always processed, but optional flag for other types never worked. **Fix:** Added string check: ```ts const shouldProcess = llmProcess === \"true\" || llmProcess === true || (llmProcess === undefined && sourceType === \"pdf\"); ``` --- ## 2026-04-26 19:15 — Generation Model Name Fix **Bug:** Used `gemini-3.1-flash` which doesn't exist. API returned model not found. **Fix:** Changed to `gemini-2.5-flash` in `src/services/generate.ts`. --- ## 2026-04-26 18:45 — dotenv Loading Fix **Bug:** `dotenv.config()` was imported after other modules, so environment variables wer",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4677099913358688,
+      "maxScore": 0.4677099913358688,
+      "firstRecalledAt": "2026-04-27T04:34:43.484Z",
+      "lastRecalledAt": "2026-04-27T04:34:43.484Z",
+      "queryHashes": [
+        "c6dc761bd5fd"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "gemini-3.1-flash",
+        "gemini-2.5-flash",
+        "src/services/generate.ts",
+        "dotenv.config",
+        "bug",
+        "llmprocess",
+        "true",
+        "was"
+      ]
+    },
+    "memory:memory/2026-04-27.md:32:62": {
+      "key": "memory:memory/2026-04-27.md:32:62",
+      "path": "memory/2026-04-27.md",
+      "startLine": 32,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "## 2026-04-27 09:40 — Bug Fixes Discovered Through Testing ### 1. extractor.ts — Buffer vs String **Problem:** Multer's `memoryStorage` returns `Buffer`, but `extractText` and `extractMarkdown` called `.trim()` and `.replace()` (string methods). **Fix:** Changed to `content.toString()` before processing. ### 2. init.sql — IVFFlat Index on Small Tables **Problem:** `CREATE INDEX idx_chunks_embedding ON chunks USING ivfflat (...)` returns 0 rows on small tables. **Fix:** Removed the index from init.sql (already fixed manually in production earlier). ### 3. Routes — Invalid UUIDs Caused 500 **Problem:** `/sources/bad-uuid` hit DB with malformed UUID → 500 error instead of 404. **Fix:** Added",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4662443786859512,
+      "maxScore": 0.4662443786859512,
+      "firstRecalledAt": "2026-04-27T04:34:43.484Z",
+      "lastRecalledAt": "2026-04-27T04:34:43.484Z",
+      "queryHashes": [
+        "c6dc761bd5fd"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "embedding",
+        "extractor.ts",
+        "content.tostring",
+        "init.sql",
+        "idx-chunks-embedding",
+        "sources/bad-uuid",
+        "bug",
+        "fixes"
+      ]
+    },
+    "memory:memory/2026-04-27.md:85:112": {
+      "key": "memory:memory/2026-04-27.md:85:112",
+      "path": "memory/2026-04-27.md",
+      "startLine": 85,
+      "endLine": 112,
+      "source": "memory",
+      "snippet": "## 2026-04-27 11:00 — UI Implementation (React + Vite) **Decision:** React + Vite + Tailwind CSS + React Router + Lucide icons - Separate `ui/` directory with own package.json - Vite proxies `/api/*` to `localhost:3000` in dev mode - Express serves built `ui/dist/` in production (SPA fallback to index.html) **Files created:** - `ui/package.json` — React 19, Vite 6, Tailwind CSS v4, React Router v7, Lucide React - `ui/vite.config.ts` — API proxy config (`/api` → `localhost:3000`) - `ui/tailwind.config.js` — content paths - `ui/postcss.config.js` — @tailwindcss/postcss plugin - `ui/src/main.tsx` — React root render - `ui/src/App.tsx` — BrowserRouter with Layout + nav bar - `ui/src/api.ts` —",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4660559356212616,
+      "maxScore": 0.4660559356212616,
+      "firstRecalledAt": "2026-04-27T04:34:43.484Z",
+      "lastRecalledAt": "2026-04-27T04:34:43.484Z",
+      "queryHashes": [
+        "c6dc761bd5fd"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "router",
+        "package.json",
+        "ui/dist",
+        "index.html",
+        "ui/package.json",
+        "ui/vite.config.ts",
+        "ui/tailwind.config.js",
+        "ui/postcss.config.js"
+      ]
+    },
+    "memory:memory/2026-04-27.md:177:214": {
+      "key": "memory:memory/2026-04-27.md:177:214",
+      "path": "memory/2026-04-27.md",
+      "startLine": 177,
+      "endLine": 214,
+      "source": "memory",
+      "snippet": "## 2026-04-27 13:30 — Push to GitHub **Pushed:** `master` → `origin` (9 commits ahead) GitHub reports 10 dependency vulnerabilities (npm audit pending). --- ## Architecture Discussion — Agent Integration **Victor's question:** Should karpathy-ingest push jobs to agents, or agents pull from karpathy-ingest APIs? **My recommendation: Pull model.** The app exposes clean REST APIs. Agents (Ceil, Neo, future agents) call those APIs when they need to: - `POST /api/ingest` — ingest content - `GET /api/sources` — browse what's ingested - `GET /api/search` — semantic search for context - `GET /api/sources/:id/chunks` — read chunk details **Why pull over push:** 1. Loose coupling — app doesn't",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.4753214731812476,
+      "maxScore": 0.5444185957312584,
+      "firstRecalledAt": "2026-04-27T05:42:08.575Z",
+      "lastRecalledAt": "2026-04-27T07:54:21.243Z",
+      "queryHashes": [
+        "74592106bc18",
+        "1ac82d44f651",
+        "723f9cfd0cee"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "api/ingest",
+        "api/sources",
+        "api/search",
+        "id/chunks",
+        "push",
+        "github",
+        "pushed"
+      ]
+    },
+    "memory:memory/2026-04-27.md:140:189": {
+      "key": "memory:memory/2026-04-27.md:140:189",
+      "path": "memory/2026-04-27.md",
+      "startLine": 140,
+      "endLine": 189,
+      "source": "memory",
+      "snippet": "**Commits:** `9c4eee9`, `77b06cb` --- ## 2026-04-27 13:00 — UI Bug Fixes (Raw/Processed View, Chunk Navigation) **Bug 1:** Raw tab showed processed content (viewUrl always pointed to processedPath) **Fix:** API returns `rawViewUrl` and `processedViewUrl` separately **Bug 2:** Chunk prev/next navigation used sourceId + index (broken) **Fix:** Fetch all source chunks, navigate by actual chunk UUIDs **Bug 3:** Missing `/ingest` and `/chunks/:id` routes (blank pages) **Fix:** Added routes + ChunkDetailPage component **Bug 4:** PDF filter empty + \"Invalid Date\" **Fix:** API list query uses explicit column aliases (camelCase) instead of `s.*` **Commits:** `b36a255`, `77b06cb` --- ## 2026-",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5249864190816879,
+      "maxScore": 0.5249864190816879,
+      "firstRecalledAt": "2026-04-27T07:54:21.243Z",
+      "lastRecalledAt": "2026-04-27T07:54:21.243Z",
+      "queryHashes": [
+        "723f9cfd0cee"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "raw/processed",
+        "prev/next",
+        "commits",
+        "9c4eee9",
+        "77b06cb",
+        "bug",
+        "fixes",
+        "raw"
+      ]
+    },
+    "memory:memory/2026-04-27.md:272:298": {
+      "key": "memory:memory/2026-04-27.md:272:298",
+      "path": "memory/2026-04-27.md",
+      "startLine": 272,
+      "endLine": 298,
+      "source": "memory",
+      "snippet": "- `POST /api/search` accepts `searchType`: `\"vector\"` | `\"fts\"` | `\"hybrid\"` - `fts`: BM25 keyword search via `websearch_to_tsquery('english', query)` - `hybrid`: Weighted combination `α * fts_rank + (1-α) * cosine_similarity` - `ftsWeight` param controls balance (0.0 = all semantic, 1.0 = all keyword) **UI changes:** - Search page shows 3 mode tabs: 🧠 Semantic / 🔤 Keyword / ⚡ Hybrid - Hybrid mode exposes slider: Keyword % vs Semantic % - Results show appropriate score label per mode **Commit:** `31bc484` ### Usage ```bash # Deploy docker compose down docker compose up -d --build # Test via API curl -X POST http://localhost:3000/api/search \\ -H \"Content-Type: application/json\" \\ -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5363002836704254,
+      "maxScore": 0.5363002836704254,
+      "firstRecalledAt": "2026-04-27T10:11:35.527Z",
+      "lastRecalledAt": "2026-04-27T10:11:35.527Z",
+      "queryHashes": [
+        "775a2049f420"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "api/search",
+        "websearch-to-tsquery",
+        "fts-rank",
+        "1-α",
+        "cosine-similarity",
+        "0.0",
+        "1.0",
+        "3000/api/search"
+      ]
+    },
+    "memory:memory/2026-04-27.md:241:278": {
+      "key": "memory:memory/2026-04-27.md:241:278",
+      "path": "memory/2026-04-27.md",
+      "startLine": 241,
+      "endLine": 278,
+      "source": "memory",
+      "snippet": "### How Agents Interact - **Ceil captures question** → POST /wiki/pages (type: research) - **Victor mentions topic again** → Ceil GET /wiki/search → \"You asked about this...\" - **New relevant content ingested** → Wiki updates research page with findings - **Question resolved** → Research page marked answered, links to compiled wiki ### Next: Automation Rules When ready, decide: - Does Ceil auto-create topic wiki when 3+ related sources exist? - Does Ceil auto-create research page when Victor asks a question? - Does wiki auto-monitor ingest and suggest linkages? **Key insight:** Questions are the bridge between ingestion and understanding. Raw content answers questions; questions drive what",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9217978000640868,
+      "maxScore": 0.49008005857467646,
+      "firstRecalledAt": "2026-04-27T10:11:35.527Z",
+      "lastRecalledAt": "2026-04-27T14:47:56.817Z",
+      "queryHashes": [
+        "775a2049f420",
+        "d30099fc22f1"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "wiki/pages",
+        "wiki/search",
+        "auto-create",
+        "auto-monitor",
+        "how",
+        "agents",
+        "interact",
+        "ceil"
+      ]
+    },
+    "memory:memory/2026-04-27.md:272:316": {
+      "key": "memory:memory/2026-04-27.md:272:316",
+      "path": "memory/2026-04-27.md",
+      "startLine": 272,
+      "endLine": 316,
+      "source": "memory",
+      "snippet": "- `POST /api/search` accepts `searchType`: `\"vector\"` | `\"fts\"` | `\"hybrid\"` - `fts`: BM25 keyword search via `websearch_to_tsquery('english', query)` - `hybrid`: Weighted combination `α * fts_rank + (1-α) * cosine_similarity` - `ftsWeight` param controls balance (0.0 = all semantic, 1.0 = all keyword) **UI changes:** - Search page shows 3 mode tabs: 🧠 Semantic / 🔤 Keyword / ⚡ Hybrid - Hybrid mode exposes slider: Keyword % vs Semantic % - Results show appropriate score label per mode **Commit:** `31bc484` --- ## 2026-04-27 19:10 — BM25-like Ranking Fix **Victor's feedback:** FTS mode showed low scores (~0.100) and wasn't true BM25. **Problem:** Original implementation used `ts_rank_c",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.9606775457836445,
+      "maxScore": 0.7103075946546848,
+      "firstRecalledAt": "2026-04-27T12:03:20.701Z",
+      "lastRecalledAt": "2026-04-27T14:53:25.662Z",
+      "queryHashes": [
+        "cedb70361264",
+        "d30099fc22f1",
+        "6ad8c465d737",
+        "67c71098e548",
+        "6635fcc68609",
+        "0d3ec84ff792"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "api/search",
+        "websearch-to-tsquery",
+        "fts-rank",
+        "1-α",
+        "cosine-similarity",
+        "0.0",
+        "1.0",
+        "bm25-like"
+      ]
+    },
+    "memory:memory/2026-04-27.md:348:377": {
+      "key": "memory:memory/2026-04-27.md:348:377",
+      "path": "memory/2026-04-27.md",
+      "startLine": 348,
+      "endLine": 377,
+      "source": "memory",
+      "snippet": "**Decision:** Revert to original implementation and label accurately. **Changes:** - Removed `search_bm25()` PostgreSQL function - Removed `migrations/002_add_bm25.sql` - FTS mode back to inline `ts_rank_cd` SQL (cover density ranking) - Hybrid mode back to `ts_rank_cd` for consistency - UI labels updated: \"BM25-like\" → \"Keyword\" (accurate) **What `ts_rank_cd` actually is:** - PostgreSQL's **cover density** ranking - Rewards term frequency, proximity, and coverage - **Not BM25** — scores are lower for long documents - **Not BM25** — proximity matters (BM25 ignores it) - **Not BM25** — no saturation curve for term frequency **Why this is fine:** - For 400-token chunks, the difference vs BM",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.9280926138162613,
+      "maxScore": 0.5052331507205963,
+      "firstRecalledAt": "2026-04-27T14:47:56.817Z",
+      "lastRecalledAt": "2026-04-27T14:53:25.662Z",
+      "queryHashes": [
+        "d30099fc22f1",
+        "6ad8c465d737",
+        "67c71098e548",
+        "d24aedc96d08",
+        "6635fcc68609",
+        "0d3ec84ff792"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "search-bm25",
+        "migrations/002-add-bm25.sql",
+        "ts-rank-cd",
+        "bm25-like",
+        "400-token",
+        "decision",
+        "revert",
+        "original"
+      ]
+    },
+    "memory:memory/2026-04-27.md:300:356": {
+      "key": "memory:memory/2026-04-27.md:300:356",
+      "path": "memory/2026-04-27.md",
+      "startLine": 300,
+      "endLine": 356,
+      "source": "memory",
+      "snippet": "- Materialized view `chunk_stats` for document statistics **UI:** Labels updated from \"Keyword\" to \"BM25-like\" **Commit:** `2ea1c22` **Pushed to GitHub:** `master` up to `2ea1c22` ### Usage ```bash # Deploy docker compose down docker compose up -d --build # Test via API curl -X POST http://localhost:3000/api/search \\ -H \"Content-Type: application/json\" \\ -d '{\"query\": \"pgvector concurrency\", \"searchType\": \"hybrid\", \"ftsWeight\": 0.5, \"limit\": 5}' ``` **Pushed to GitHub:** `master` up to `31bc484` --- ## 2026-04-27 19:20 — True BM25 Extension Research **Victor's ask:** Find true BM25 PostgreSQL extensions instead of approximations. **Research findings:** ### 1. timescale/pg_te",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.8554986834526055,
+      "maxScore": 0.4998289048671722,
+      "firstRecalledAt": "2026-04-27T14:47:56.817Z",
+      "lastRecalledAt": "2026-04-27T14:53:25.662Z",
+      "queryHashes": [
+        "d30099fc22f1",
+        "6ad8c465d737",
+        "67c71098e548",
+        "d24aedc96d08",
+        "6635fcc68609",
+        "0d3ec84ff792"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "chunk-stats",
+        "bm25-like",
+        "3000/api/search",
+        "content-type",
+        "application/json",
+        "0.5",
+        "timescale/pg-te",
+        "materialized"
       ]
     }
   }
