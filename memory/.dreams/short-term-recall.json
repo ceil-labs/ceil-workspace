@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-26T22:12:01.177Z",
+  "updatedAt": "2026-04-27T01:47:15.474Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -7168,13 +7168,13 @@
       "endLine": 110,
       "source": "memory",
       "snippet": "**Status**: Documented in `karpathy-architecture-design.md`. Implementation pending. ## Commands Reference **Production Deploy:** ```bash cd ~/agent-platform git pull origin master docker compose -f docker-compose.ghcr.yml pull docker compose -f docker-compose.ghcr.yml up -d ``` **Local Dev:** ```bash cd ~/.openclaw/projects/agent-platform docker compose up -d ``` **Check Build Status:** ```bash gh run list --limit 3 ```",
-      "recallCount": 10,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.74988584456484,
+      "totalScore": 6.684987311935828,
       "maxScore": 0.7706353324573588,
       "firstRecalledAt": "2026-04-12T11:13:30.487Z",
-      "lastRecalledAt": "2026-04-26T10:18:06.355Z",
+      "lastRecalledAt": "2026-04-27T01:29:56.003Z",
       "queryHashes": [
         "3325b29e4dbc",
         "d16046c294ff",
@@ -7185,13 +7185,16 @@
         "984bb7cec559",
         "29f6d952b980",
         "81496f112b73",
-        "3f9b94ceb6cc"
+        "3f9b94ceb6cc",
+        "a5eeed39ff49",
+        "5f4080d7c9c0"
       ],
       "recallDays": [
         "2026-04-12",
         "2026-04-14",
         "2026-04-24",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ],
       "conceptTags": [
         "karpathy-architecture-design.md",
@@ -55911,19 +55914,24 @@
       "endLine": 41,
       "source": "memory",
       "snippet": "--- ## 2026-04-26 16:00 — Scope Narrowed **Victor's directive:** Focus on ingestion + rendering only. No wiki, no compaction, no L2. **Scoped deliverable:** - Ingest: PDF, MD, Text, URL - Output per chunk: Markdown file + Vector embedding - Render: View ingested content (list + detail) **Deferred:** L2 wiki, LLM compilation, compaction, multi-agent scoping, Redis queue. --- ## 2026-04-26 19:07 — karpathy-ingest Status Capture **Project:** https://github.com/ceil-labs/karpathy-ingest **Server:** Running at `https://srv1405873.tailcd23a1.ts.net:8444` ### What's Built - Dockerized TypeScript/Express API with PostgreSQL + pgvector - Extractors: PDF (pdf-parse), MD/Text (passthrough), UR",
-      "recallCount": 2,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.007602271437645,
-      "maxScore": 0.5218194991350174,
+      "totalScore": 3.0287089020013807,
+      "maxScore": 0.5417041331529617,
       "firstRecalledAt": "2026-04-26T11:10:59.492Z",
-      "lastRecalledAt": "2026-04-26T11:31:05.301Z",
+      "lastRecalledAt": "2026-04-27T01:47:15.474Z",
       "queryHashes": [
         "3d5eb5d21289",
-        "98f6c677e439"
+        "98f6c677e439",
+        "a5eeed39ff49",
+        "5f4080d7c9c0",
+        "05185d432af2",
+        "9ac455764943"
       ],
       "recallDays": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-27"
       ],
       "conceptTags": [
         "embedding",
@@ -61343,6 +61351,37 @@
         "gemini-3-flash-preview",
         "imageconfig",
         "aspectratio"
+      ]
+    },
+    "memory:memory/2026-04-26.md:202:248": {
+      "key": "memory:memory/2026-04-26.md:202:248",
+      "path": "memory/2026-04-26.md",
+      "startLine": 202,
+      "endLine": 248,
+      "source": "memory",
+      "snippet": "**Deferred:** Victor will implement hybrid search later. --- ## 2026-04-26 16:30 — Embedding Model Decision Chose `gemini-embedding-2` (768 dims) over `text-embedding-004` (3072 dims): - Latest GA model - Multimodal support - Cheaper pricing - 97-99% quality vs 3072-dim version - 8K context window - 150 RPM rate limit --- ## 2026-04-26 16:00 — VPS Crash Recovery VPS crashed ~12:40 +08. Rebooted successfully. No data loss — karpathy-ingest project intact in `~/.openclaw/projects/karpathy-ingest/`. --- ## 2026-04-26 15:30 — OpenClaw Downgrade 4.24 → 4.23 Upgraded to 2026.4.24 then downgraded back to 2026.4.23 due to stuck-agent issues. **Config backup:** `~/.openclaw/openclaw.json.b",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5209362179040908,
+      "maxScore": 0.5209362179040908,
+      "firstRecalledAt": "2026-04-27T01:37:04.772Z",
+      "lastRecalledAt": "2026-04-27T01:37:04.772Z",
+      "queryHashes": [
+        "084c6cd26d74"
+      ],
+      "recallDays": [
+        "2026-04-27"
+      ],
+      "conceptTags": [
+        "backup",
+        "embedding",
+        "gemini-embedding-2",
+        "text-embedding-004",
+        "97-99",
+        "3072-dim",
+        "karpathy-ingest",
+        "4.24"
       ]
     }
   }
