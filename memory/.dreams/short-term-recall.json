@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-28T02:31:44.192Z",
+  "updatedAt": "2026-04-28T09:26:22.250Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -7002,26 +7002,30 @@
       "startLine": 98,
       "endLine": 145,
       "source": "memory",
-      "snippet": "- Apache 2.0, tiered loading (L0/L1/L2), filesystem paradigm - Closest architectural match to Karpathy's approach - Requires Go 1.22+, C++ toolchain, VLM + embedding model **3. ByteRover** - Elastic License v2, context tree as Markdown files - Agentic Search (LLM-navigated, not vector-based) - CLI-first, zero infrastructure, MCP server available **4. Memary** - MIT license, knowledge graph (Neo4j/FalkorDB) - Multi-hop reasoning, multi-agent via user_id - **Issue:** Last commit 2 years ago — stale project **5. Redis Agent Memory** - MIT license, native OpenClaw plugin - Multi-agent scopes (shared + personal) - Simplest setup: Docker one-liner ### Karpathy's Memory Approach (DIY) **Core Insight:** At ~400K words (~100 articles), LLM can read full context directly — no RAG needed. **Architecture:** ``` ~/memory/ ├── raw/ # Source documents (untouched) │ ├── papers/ │ ├── codebases/ │ └── images/ ├── wiki/ # LLM-compiled knowledge (auto-generated) │ ├── _index.md # Master index │ ├── agents/ # Agent architecture docs │ ├── projects/ # Project documentation │ └── memory-tools/ # Tool comparisons └── sessions/ # Daily working memory ├── 2026-04-04.md └── ... ``` **Workflow:** 1. **Ingest:** Add sources to `raw/` 2. **Compile:** LLM reads raw/, writes summaries + backlinks to `wiki/` 3. **Query:** LLM reads `wiki/_index.md`, finds relevant articles, reads full content **Advantages:** - Zero infrastructure (just files) - Exact symbol search (LLM reads full files)",
-      "recallCount": 6,
+      "snippet": "- Apache 2.0, tiered loading (L0/L1/L2), filesystem paradigm - Closest architectural match to Karpathy's approach - Requires Go 1.22+, C++ toolchain, VLM + embedding model **3. ByteRover** - Elastic License v2, context tree as Markdown files - Agentic Search (LLM-navigated, not vector-based) - CLI-first, zero infrastructure, MCP server available **4. Memary** - MIT license, knowledge graph (Neo4j/FalkorDB) - Multi-hop reasoning, multi-agent via user_id - **Issue:** Last commit 2 years ago — stale project **5. Redis Agent Memory** - MIT license, native OpenClaw plugin - Multi-agent scopes (shared + personal) - Simplest setup: Docker one-liner ### Karpathy's Memory Approach (DIY) **Core I",
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.815180816898617,
+      "totalScore": 5.284144511471066,
       "maxScore": 0.7978884877330754,
       "firstRecalledAt": "2026-04-12T11:13:21.905Z",
-      "lastRecalledAt": "2026-04-27T05:34:29.945Z",
+      "lastRecalledAt": "2026-04-28T09:25:54.403Z",
       "queryHashes": [
         "35a3e4a4eaec",
         "2ce1916977e8",
         "984bb7cec559",
         "29f6d952b980",
         "b50ccbe86f92",
-        "7869d46978d4"
+        "7869d46978d4",
+        "4397bcb19f50",
+        "82910b2abf2a",
+        "267ee66dc64a"
       ],
       "recallDays": [
         "2026-04-12",
         "2026-04-26",
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ],
       "conceptTags": [
         "embedding",
@@ -49685,22 +49689,24 @@
       "endLine": 382,
       "source": "memory",
       "snippet": "- Candidate: # Daily Log — 2026-04-09 ## Session Start - Victor upgraded OpenClaw from 2026.4.5 → 2026.4.9 successfully - Had to remove `\"memory-lancedb\": { \"enabled\": false }` from config — even when disabled, app was looking for required properties ## Dreaming Research Results ### Dreaming Config — Complete Docs confirm only 2 user-facing settings exist: ```json \"dreaming\": { \"enabled\": true, \"frequency\": \"0 3 * * *\" } ``` Your current config is complete. No missing fields. Light/deep/REM thresholds are intentionally internal — not user-configurable. ### Dreaming Uses Internal Scheduler (NOT jobs.json) - Dreaming cron is managed by **memory-core plugin's own internal scheduler**, NOT the g",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.692506436518165,
+      "totalScore": 2.1467670212301933,
       "maxScore": 0.7967318246874538,
       "firstRecalledAt": "2026-04-22T02:15:29.301Z",
-      "lastRecalledAt": "2026-04-27T15:54:21.054Z",
+      "lastRecalledAt": "2026-04-28T09:26:22.250Z",
       "queryHashes": [
         "6c70a997f668",
         "02712bbd58fd",
-        "6a51c916cb2e"
+        "6a51c916cb2e",
+        "a7eafb657196"
       ],
       "recallDays": [
         "2026-04-22",
         "2026-04-26",
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ],
       "conceptTags": [
         "2026.4.5",
@@ -55962,18 +55968,14 @@
       "endLine": 41,
       "source": "memory",
       "snippet": "--- ## 2026-04-26 16:00 — Scope Narrowed **Victor's directive:** Focus on ingestion + rendering only. No wiki, no compaction, no L2. **Scoped deliverable:** - Ingest: PDF, MD, Text, URL - Output per chunk: Markdown file + Vector embedding - Render: View ingested content (list + detail) **Deferred:** L2 wiki, LLM compilation, compaction, multi-agent scoping, Redis queue. --- ## 2026-04-26 19:07 — karpathy-ingest Status Capture **Project:** https://github.com/ceil-labs/karpathy-ingest **Server:** Running at `https://srv1405873.tailcd23a1.ts.net:8444` ### What's Built - Dockerized TypeScript/Express API with PostgreSQL + pgvector - Extractors: PDF (pdf-parse), MD/Text (passthrough), UR",
-      "recallCount": 34,
+      "recallCount": 38,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 16.98740273714066,
+      "totalScore": 18.98551772832871,
       "maxScore": 0.5542030423879623,
       "firstRecalledAt": "2026-04-26T11:10:59.492Z",
-      "lastRecalledAt": "2026-04-27T23:58:45.738Z",
+      "lastRecalledAt": "2026-04-28T09:25:54.403Z",
       "queryHashes": [
-        "a5eeed39ff49",
-        "5f4080d7c9c0",
-        "05185d432af2",
-        "9ac455764943",
         "b57f55d9ed1c",
         "2c0a52020e55",
         "af959b9a6b5e",
@@ -56001,7 +56003,11 @@
         "81d6d6a48cbd",
         "90296798904a",
         "3433cd019abb",
-        "3f3ff018cd30"
+        "3f3ff018cd30",
+        "51f1da2c84a3",
+        "a0430be67199",
+        "4397bcb19f50",
+        "267ee66dc64a"
       ],
       "recallDays": [
         "2026-04-26",
@@ -61451,13 +61457,13 @@
       "endLine": 248,
       "source": "memory",
       "snippet": "**Deferred:** Victor will implement hybrid search later. --- ## 2026-04-26 16:30 — Embedding Model Decision Chose `gemini-embedding-2` (768 dims) over `text-embedding-004` (3072 dims): - Latest GA model - Multimodal support - Cheaper pricing - 97-99% quality vs 3072-dim version - 8K context window - 150 RPM rate limit --- ## 2026-04-26 16:00 — VPS Crash Recovery VPS crashed ~12:40 +08. Rebooted successfully. No data loss — karpathy-ingest project intact in `~/.openclaw/projects/karpathy-ingest/`. --- ## 2026-04-26 15:30 — OpenClaw Downgrade 4.24 → 4.23 Upgraded to 2026.4.24 then downgraded back to 2026.4.23 due to stuck-agent issues. **Config backup:** `~/.openclaw/openclaw.json.b",
-      "recallCount": 10,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.0628736689686775,
+      "totalScore": 5.534715993702411,
       "maxScore": 0.5397489085793494,
       "firstRecalledAt": "2026-04-27T01:37:04.772Z",
-      "lastRecalledAt": "2026-04-27T15:44:06.408Z",
+      "lastRecalledAt": "2026-04-28T08:33:24.479Z",
       "queryHashes": [
         "084c6cd26d74",
         "74592106bc18",
@@ -61468,10 +61474,12 @@
         "ab7a910f960c",
         "aab410696367",
         "8f29c907dc15",
-        "cbc51ed0118d"
+        "cbc51ed0118d",
+        "51f1da2c84a3"
       ],
       "recallDays": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ],
       "conceptTags": [
         "backup",
@@ -61847,23 +61855,25 @@
       "endLine": 316,
       "source": "memory",
       "snippet": "- `POST /api/search` accepts `searchType`: `\"vector\"` | `\"fts\"` | `\"hybrid\"` - `fts`: BM25 keyword search via `websearch_to_tsquery('english', query)` - `hybrid`: Weighted combination `α * fts_rank + (1-α) * cosine_similarity` - `ftsWeight` param controls balance (0.0 = all semantic, 1.0 = all keyword) **UI changes:** - Search page shows 3 mode tabs: 🧠 Semantic / 🔤 Keyword / ⚡ Hybrid - Hybrid mode exposes slider: Keyword % vs Semantic % - Results show appropriate score label per mode **Commit:** `31bc484` --- ## 2026-04-27 19:10 — BM25-like Ranking Fix **Victor's feedback:** FTS mode showed low scores (~0.100) and wasn't true BM25. **Problem:** Original implementation used `ts_rank_c",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.9606775457836445,
+      "totalScore": 3.4711227442003545,
       "maxScore": 0.7103075946546848,
       "firstRecalledAt": "2026-04-27T12:03:20.701Z",
-      "lastRecalledAt": "2026-04-27T14:53:25.662Z",
+      "lastRecalledAt": "2026-04-28T08:33:16.686Z",
       "queryHashes": [
         "cedb70361264",
         "d30099fc22f1",
         "6ad8c465d737",
         "67c71098e548",
         "6635fcc68609",
-        "0d3ec84ff792"
+        "0d3ec84ff792",
+        "21a3ab3bcd82"
       ],
       "recallDays": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ],
       "conceptTags": [
         "api/search",
@@ -61919,23 +61929,25 @@
       "endLine": 356,
       "source": "memory",
       "snippet": "- Materialized view `chunk_stats` for document statistics **UI:** Labels updated from \"Keyword\" to \"BM25-like\" **Commit:** `2ea1c22` **Pushed to GitHub:** `master` up to `2ea1c22` ### Usage ```bash # Deploy docker compose down docker compose up -d --build # Test via API curl -X POST http://localhost:3000/api/search \\ -H \"Content-Type: application/json\" \\ -d '{\"query\": \"pgvector concurrency\", \"searchType\": \"hybrid\", \"ftsWeight\": 0.5, \"limit\": 5}' ``` **Pushed to GitHub:** `master` up to `31bc484` --- ## 2026-04-27 19:20 — True BM25 Extension Research **Victor's ask:** Find true BM25 PostgreSQL extensions instead of approximations. **Research findings:** ### 1. timescale/pg_te",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.8554986834526055,
+      "totalScore": 3.3539513260126106,
       "maxScore": 0.4998289048671722,
       "firstRecalledAt": "2026-04-27T14:47:56.817Z",
-      "lastRecalledAt": "2026-04-27T14:53:25.662Z",
+      "lastRecalledAt": "2026-04-28T08:33:16.686Z",
       "queryHashes": [
         "d30099fc22f1",
         "6ad8c465d737",
         "67c71098e548",
         "d24aedc96d08",
         "6635fcc68609",
-        "0d3ec84ff792"
+        "0d3ec84ff792",
+        "21a3ab3bcd82"
       ],
       "recallDays": [
-        "2026-04-27"
+        "2026-04-27",
+        "2026-04-28"
       ],
       "conceptTags": [
         "chunk-stats",
@@ -68325,6 +68337,99 @@
         "14-14",
         "pasay-paranaque",
         "pasig-pateros-taguig",
+        "status"
+      ]
+    },
+    "memory:memory/2026-04-28.md:1:41": {
+      "key": "memory:memory/2026-04-28.md:1:41",
+      "path": "memory/2026-04-28.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "# Session Log — 2026-04-28 (early morning session, started late on 04-27) ## 2026-04-28 00:00 — True BM25 Search with pg_textsearch **Victor's ask:** Build true BM25 keyword search alongside semantic vector search. ### Problem PostgreSQL's `ts_rank_cd` is NOT BM25. It's cover density ranking that rewards proximity and coverage, not BM25's term frequency saturation (k1 parameter) and length normalization (b parameter). ### Solution: Custom PostgreSQL Docker Image **Dockerfile.postgres:** - Base: `pgvector/pgvector:pg17` (includes pgvector extension) - Downloads pg_textsearch v1.1.0 pre-built `.deb` from GitHub releases - Installs via `dpkg -i` - Adds `pg_textsearch` to `shared_preload_li",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5121953636407852,
+      "maxScore": 0.5121953636407852,
+      "firstRecalledAt": "2026-04-28T08:33:16.686Z",
+      "lastRecalledAt": "2026-04-28T08:33:16.686Z",
+      "queryHashes": [
+        "21a3ab3bcd82"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "04-27",
+        "pg-textsearch",
+        "ts-rank-cd",
+        "dockerfile.postgres",
+        "pgvector/pgvector",
+        "v1.1.0",
+        "pre-built",
+        "shared-preload-li"
+      ]
+    },
+    "memory:memory/2026-04-28.md:63:89": {
+      "key": "memory:memory/2026-04-28.md:63:89",
+      "path": "memory/2026-04-28.md",
+      "startLine": 63,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "BM25 treats query as separate tokens. \"support\" is a common word with low IDF, but high term frequency (12×) in technical docs boosts their score enough to outweigh the rare terms \"protek\" and \"telecoms\". **Takeaway:** BM25 doesn't understand proper noun phrases. For phrase-sensitive search, Hybrid mode is better — semantic search understands \"Protek Telecoms Support\" as a company name concept. ### Verification | Feature | Status | |---------|--------| | Vector search | ✅ Working (cosine similarity) | | BM25 search | ✅ Working (true BM25 scores) | | Hybrid search | ✅ Working (normalized BM25 + similarity) | | Ingest (web) | ✅ Working | | Rendering (source/chunk) | ✅ Working | | Tests | ✅",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4957754075527191,
+      "maxScore": 0.4957754075527191,
+      "firstRecalledAt": "2026-04-28T08:33:16.686Z",
+      "lastRecalledAt": "2026-04-28T08:33:16.686Z",
+      "queryHashes": [
+        "21a3ab3bcd82"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "phrase-sensitive",
+        "source/chunk",
+        "bm25",
+        "treats",
+        "query",
+        "separate",
+        "tokens",
+        "support"
+      ]
+    },
+    "memory:memory/2026-03-20.md:34:45": {
+      "key": "memory:memory/2026-03-20.md:34:45",
+      "path": "memory/2026-03-20.md",
+      "startLine": 34,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "_Last updated: 2026-03-20 08:10 AM_ ## Update - 12:07 PM **ProTek FSM Cron Status:** | Time | Status | Notes | |------|--------|-------| | 8:05 AM | ❌ Preamble only | Transient issue — data fetched but report not sent | | 10:05 AM | ✅ Full report | Delivered successfully | | 12:05 PM | ✅ Full report | Delivered successfully | **Conclusion:** 8:05 AM issue was **transient/isolated**, not systematic. No fix needed unless issue recurs.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4689993441104889,
+      "maxScore": 0.4689993441104889,
+      "firstRecalledAt": "2026-04-28T08:42:25.276Z",
+      "lastRecalledAt": "2026-04-28T08:42:25.276Z",
+      "queryHashes": [
+        "78b4a4525176"
+      ],
+      "recallDays": [
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "transient/isolated",
+        "last",
+        "updated",
+        "update",
+        "protek",
+        "fsm",
+        "cron",
         "status"
       ]
     }
