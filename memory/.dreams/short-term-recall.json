@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-28T09:26:22.250Z",
+  "updatedAt": "2026-04-28T19:00:00.915Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -36938,14 +36938,14 @@
         "2026-04-26"
       ],
       "conceptTags": [
+        "gateway",
         "2026.4.5",
         "2026.4.9",
         "memory-lancedb",
         "user-facing",
         "light/deep/rem",
         "user-configurable",
-        "jobs.json",
-        "memory-core"
+        "jobs.json"
       ],
       "promotedAt": "2026-04-27T19:00:00.844Z"
     },
@@ -48484,17 +48484,17 @@
     "memory:memory/2026-04-21.md:508:508": {
       "key": "memory:memory/2026-04-21.md:508:508",
       "path": "memory/2026-04-21.md",
-      "startLine": 508,
-      "endLine": 508,
+      "startLine": 383,
+      "endLine": 383,
       "source": "memory",
-      "snippet": "Reflections: No strong patterns surfaced.",
+      "snippet": "- Candidate: Reflections: No strong patterns surfaced.",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-21T19:00:00.375Z",
-      "lastRecalledAt": "2026-04-27T19:00:00.844Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
       "queryHashes": [
         "f52400c81d76"
       ],
@@ -48502,29 +48502,31 @@
         "2026-04-21",
         "2026-04-26",
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ],
       "conceptTags": [
         "reflections",
         "strong",
         "patterns",
         "surfaced"
-      ]
+      ],
+      "promotedAt": "2026-04-28T19:00:00.915Z"
     },
     "memory:memory/2026-04-21.md:511:513": {
       "key": "memory:memory/2026-04-21.md:511:513",
       "path": "memory/2026-04-21.md",
-      "startLine": 511,
-      "endLine": 513,
+      "startLine": 358,
+      "endLine": 360,
       "source": "memory",
-      "snippet": "Possible Lasting Truths: 2. **Rails auth gate for n8n** — Earlier plan to proxy `/n8n/` through Rails authentication still needs Victor's go-ahead and implementation. 4. **Commit status** — Ensure `nginx-proxy.conf` is committed to the `agent-platform` repo. A separate commit for",
+      "snippet": "- Candidate: Possible Lasting Truths: 2. **Rails auth gate for n8n** — Earlier plan to proxy `/n8n/` through Rails authentication still needs Victor's go-ahead and implementation. 4. **Commit status** — Ensure `nginx-proxy.conf` is committed to the `agent-platform` repo. A separate commit for - confidence: 0.62 - evidence: memory/2026-04-16.md:486-488",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-21T19:00:00.375Z",
-      "lastRecalledAt": "2026-04-27T19:00:00.844Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
       "queryHashes": [
         "f52400c81d76"
       ],
@@ -48532,7 +48534,8 @@
         "2026-04-21",
         "2026-04-26",
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ],
       "conceptTags": [
         "go-ahead",
@@ -48543,7 +48546,8 @@
         "truths",
         "rails",
         "auth"
-      ]
+      ],
+      "promotedAt": "2026-04-28T19:00:00.915Z"
     },
     "memory:memory/.dreams/session-corpus/2026-04-21.txt:1:1": {
       "key": "memory:memory/.dreams/session-corpus/2026-04-21.txt:1:1",
@@ -49855,12 +49859,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 240 memories.; confidence: 0.84; evidence: memory/2026-04-10.md:448-451, memory/.dreams/session-corpus/2026-04-14.txt:3-3, memory/.dreams/session-corpus/2026-04-14.txt:4-4; note: reflection",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-22T19:00:00.459Z",
-      "lastRecalledAt": "2026-04-27T19:00:00.844Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
       "queryHashes": [
         "7b7a9134bc2c"
       ],
@@ -49869,7 +49873,8 @@
         "2026-04-22",
         "2026-04-26",
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ],
       "conceptTags": [
         "0.84",
@@ -49890,12 +49895,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 215 memories.; confidence: 0.76; evidence: memory/2026-04-09.md:10-10, memory/.dreams/session-corpus/2026-04-14.txt:1-1, memory/.dreams/session-corpus/2026-04-14.txt:2-2; note: reflection",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-22T19:00:00.459Z",
-      "lastRecalledAt": "2026-04-27T19:00:00.844Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
       "queryHashes": [
         "7b7a9134bc2c"
       ],
@@ -49904,7 +49909,8 @@
         "2026-04-22",
         "2026-04-26",
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ],
       "conceptTags": [
         "0.76",
@@ -49920,17 +49926,17 @@
     "memory:memory/2026-04-22.md:518:520": {
       "key": "memory:memory/2026-04-22.md:518:520",
       "path": "memory/2026-04-22.md",
-      "startLine": 2,
-      "endLine": 2,
+      "startLine": 518,
+      "endLine": 520,
       "source": "memory",
-      "snippet": "<!-- openclaw:dreaming:light:start -->",
+      "snippet": "Possible Lasting Truths: 9. **If switching back to dev later:** `docker compose -f docker-compose.ghcr.yml down` → restart dev stack as `openclaw` user. ## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: **[2026-04-13 10:11 PM +08]** GHCR production deployment pre",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-22T19:00:00.459Z",
-      "lastRecalledAt": "2026-04-27T19:00:00.844Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
       "queryHashes": [
         "7b7a9134bc2c"
       ],
@@ -49939,7 +49945,8 @@
         "2026-04-22",
         "2026-04-26",
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ],
       "conceptTags": [
         "docker-compose.ghcr.yml",
@@ -55967,7 +55974,7 @@
       "startLine": 1,
       "endLine": 41,
       "source": "memory",
-      "snippet": "--- ## 2026-04-26 16:00 — Scope Narrowed **Victor's directive:** Focus on ingestion + rendering only. No wiki, no compaction, no L2. **Scoped deliverable:** - Ingest: PDF, MD, Text, URL - Output per chunk: Markdown file + Vector embedding - Render: View ingested content (list + detail) **Deferred:** L2 wiki, LLM compilation, compaction, multi-agent scoping, Redis queue. --- ## 2026-04-26 19:07 — karpathy-ingest Status Capture **Project:** https://github.com/ceil-labs/karpathy-ingest **Server:** Running at `https://srv1405873.tailcd23a1.ts.net:8444` ### What's Built - Dockerized TypeScript/Express API with PostgreSQL + pgvector - Extractors: PDF (pdf-parse), MD/Text (passthrough), UR",
+      "snippet": "--- ## 2026-04-26 16:00 — Scope Narrowed **Victor's directive:** Focus on ingestion + rendering only. No wiki, no compaction, no L2. **Scoped deliverable:** - Ingest: PDF, MD, Text, URL - Output per chunk: Markdown file + Vector embedding - Render: View ingested content (list + detail) **Deferred:** L2 wiki, LLM compilation, compaction, multi-agent scoping, Redis queue. --- ## 2026-04-26 19:07 — karpathy-ingest Status Capture **Project:** https://github.com/ceil-labs/karpathy-ingest **Server:** Running at `https://srv1405873.tailcd23a1.ts.net:8444` ### What's Built - Dockerized TypeScript/Express API with PostgreSQL + pgvector - Extractors: PDF (pdf-parse), MD/Text (passthrough), URL (cheerio) - Chunker: Recursive character splitter, ~400 tokens, 15% overlap - Embedding: gemini-embedding-2 @ 768 dims via **batchEmbedContents API** - LLM reformat: gemini-2.5-flash (PDFs always, optional for others) - Search: Semantic only (cosine similarity via pgvector `<=>` operator) ### API Endpoints | Endpoint | Method | Description | |----------|--------|-------------| | `/health` | GET | Health check | | `/ingest` | POST | File upload or URL ingestion | | `/sources` | GET | List all sources with chunk count | | `/sources/:id` | GET | Source metadata | | `/sources/:id/chunks` | GET | List chunks for source | | `/chunks/:id` | GET | Single chunk detail | | `/search` | POST | Semantic search over chunks | | `/data/raw/:id/full.md` | GET | Raw source markdown | | `/data/raw/:id/processed.md` | GET | LLM-reformatted markdown |",
       "recallCount": 38,
       "dailyCount": 0,
       "groundedCount": 0,
@@ -56023,7 +56030,8 @@
         "pdf-parse",
         "md/text",
         "scope"
-      ]
+      ],
+      "promotedAt": "2026-04-28T19:00:00.915Z"
     },
     "memory:memory/2026-04-16.md:457:482": {
       "key": "memory:memory/2026-04-16.md:457:482",
@@ -68431,6 +68439,3934 @@
         "fsm",
         "cron",
         "status"
+      ]
+    },
+    "memory:memory/2026-04-28.md:6:6": {
+      "key": "memory:memory/2026-04-28.md:6:6",
+      "path": "memory/2026-04-28.md",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "2026-04-28 17:30 — Project Rename: karpathy-ingest → Memoria: **Victor's decision:** Rename to \"Memoria\" — better reflects the knowledge system vision beyond just ingestion.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "project",
+        "rename",
+        "karpathy",
+        "ingest",
+        "memoria",
+        "victor's",
+        "decision"
+      ]
+    },
+    "memory:memory/2026-04-28.md:8:8": {
+      "key": "memory:memory/2026-04-28.md:8:8",
+      "path": "memory/2026-04-28.md",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "2026-04-28 17:30 — Project Rename: karpathy-ingest → Memoria: **Changes made:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "project",
+        "rename",
+        "karpathy",
+        "ingest",
+        "memoria",
+        "changes",
+        "made"
+      ]
+    },
+    "memory:memory/2026-04-28.md:9:12": {
+      "key": "memory:memory/2026-04-28.md:9:12",
+      "path": "memory/2026-04-28.md",
+      "startLine": 9,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "2026-04-28 17:30 — Project Rename: karpathy-ingest → Memoria: **GitHub repo:** Settings → Rename to `memoria`; **Local folder:** `~/.openclaw/projects/karpathy-ingest` → `memoria`; **Git remote:** Updated to `github.com/ceil-labs/memoria.git`; **Codebase:** All references updated",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "github.com/ceil-labs/memoria.git",
+        "project",
+        "rename",
+        "karpathy",
+        "ingest",
+        "memoria",
+        "github"
+      ]
+    },
+    "memory:memory/2026-04-28.md:14:14": {
+      "key": "memory:memory/2026-04-28.md:14:14",
+      "path": "memory/2026-04-28.md",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "2026-04-28 17:30 — Project Rename: karpathy-ingest → Memoria: **Files changed:** 8 files across README, package.json, docker-compose, UI, services, tests",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "package.json",
+        "docker-compose",
+        "project",
+        "rename",
+        "karpathy",
+        "ingest",
+        "memoria"
+      ]
+    },
+    "memory:memory/2026-04-28.md:16:16": {
+      "key": "memory:memory/2026-04-28.md:16:16",
+      "path": "memory/2026-04-28.md",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "2026-04-28 17:30 — Project Rename: karpathy-ingest → Memoria: **README updated with:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "project",
+        "rename",
+        "karpathy",
+        "ingest",
+        "memoria",
+        "readme",
+        "updated"
+      ]
+    },
+    "memory:memory/2026-04-28.md:17:19": {
+      "key": "memory:memory/2026-04-28.md:17:19",
+      "path": "memory/2026-04-28.md",
+      "startLine": 17,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "2026-04-28 17:30 — Project Rename: karpathy-ingest → Memoria: Inspiration section crediting Karpathy's LLM Wiki; Divergence section documenting how we differ; Clearer positioning as knowledge system, not just ingestion pipeline",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "project",
+        "rename",
+        "karpathy",
+        "ingest",
+        "memoria",
+        "inspiration",
+        "section"
+      ]
+    },
+    "memory:memory/2026-04-28.md:25:25": {
+      "key": "memory:memory/2026-04-28.md:25:25",
+      "path": "memory/2026-04-28.md",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "2026-04-28 17:25 — README Streamlining: **Victor's ask:** README should reflect that Memoria is a knowledge system, not just for ingesting.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "readme",
+        "streamlining",
+        "victor's",
+        "ask",
+        "reflect",
+        "memoria",
+        "knowledge",
+        "not"
+      ]
+    },
+    "memory:memory/2026-04-28.md:27:27": {
+      "key": "memory:memory/2026-04-28.md:27:27",
+      "path": "memory/2026-04-28.md",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "2026-04-28 17:25 — README Streamlining: **Changes made to README.md:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "readme.md",
+        "readme",
+        "streamlining",
+        "changes",
+        "made"
+      ]
+    },
+    "memory:memory/2026-04-28.md:28:31": {
+      "key": "memory:memory/2026-04-28.md:28:31",
+      "path": "memory/2026-04-28.md",
+      "startLine": 28,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "2026-04-28 17:25 — README Streamlining: **Title:** \"A personal knowledge system. Ingest anything. Search everything.\"; **What Memoria Does:** Full flow (Ingest → Chunk → Search → Browse); **Why Memoria?:** Problem statement + approach; **Search Modes:** Table showing semantic, BM",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "readme",
+        "streamlining",
+        "title",
+        "personal",
+        "knowledge",
+        "ingest",
+        "anything",
+        "everything"
+      ]
+    },
+    "memory:memory/2026-04-28.md:32:35": {
+      "key": "memory:memory/2026-04-28.md:32:35",
+      "path": "memory/2026-04-28.md",
+      "startLine": 32,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "2026-04-28 17:25 — README Streamlining: **Architecture:** ASCII diagram + component table; **Inspiration & Divergence:** Credits Karpathy, documents how we differ; **Roadmap:** Wiki layer, agent integration, confidence scoring, forgetting curves; **Security:** Documents scanning",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "readme",
+        "streamlining",
+        "architecture",
+        "ascii",
+        "diagram",
+        "component",
+        "table",
+        "inspiration"
+      ]
+    },
+    "memory:memory/2026-04-28.md:37:37": {
+      "key": "memory:memory/2026-04-28.md:37:37",
+      "path": "memory/2026-04-28.md",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "2026-04-28 17:25 — README Streamlining: **GitHub security:** Down to 2 moderate vulnerabilities (from 9) after dependency updates",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "readme",
+        "streamlining",
+        "github",
+        "security",
+        "down",
+        "moderate",
+        "vulnerabilities",
+        "dependency"
+      ]
+    },
+    "memory:memory/2026-04-28.md:39:39": {
+      "key": "memory:memory/2026-04-28.md:39:39",
+      "path": "memory/2026-04-28.md",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "2026-04-28 17:25 — README Streamlining: **Commit:** `5ad23f7` — pushed to `github.com/ceil-labs/memoria`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "github.com/ceil-labs/memoria",
+        "readme",
+        "streamlining",
+        "commit",
+        "5ad23f7",
+        "pushed",
+        "github.com",
+        "ceil"
+      ]
+    },
+    "memory:memory/2026-04-28.md:45:45": {
+      "key": "memory:memory/2026-04-28.md:45:45",
+      "path": "memory/2026-04-28.md",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "Summary: 2026-04-28: **Major deliverables:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "summary",
+        "major",
+        "deliverables"
+      ]
+    },
+    "memory:memory/2026-04-28.md:46:49": {
+      "key": "memory:memory/2026-04-28.md:46:49",
+      "path": "memory/2026-04-28.md",
+      "startLine": 46,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "Summary: 2026-04-28: ✅ True BM25 via custom PostgreSQL image with pg_textsearch; ✅ Auto-search on tab switch + slider/limit debounce; ✅ Security scanning (ESLint + CodeQL + Dependabot + Secret detection); ✅ Vulnerability fixes (drizzle-orm, esbuild, undici)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "pg-textsearch",
+        "auto-search",
+        "slider/limit",
+        "drizzle-orm",
+        "summary",
+        "true",
+        "bm25",
+        "via"
+      ]
+    },
+    "memory:memory/2026-04-28.md:50:51": {
+      "key": "memory:memory/2026-04-28.md:50:51",
+      "path": "memory/2026-04-28.md",
+      "startLine": 50,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "Summary: 2026-04-28: ✅ Project rename: karpathy-ingest → Memoria; ✅ README rewrite: knowledge system positioning with Karpathy inspiration",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "summary",
+        "project",
+        "rename",
+        "karpathy",
+        "ingest",
+        "memoria",
+        "readme"
+      ]
+    },
+    "memory:memory/2026-04-28.md:53:53": {
+      "key": "memory:memory/2026-04-28.md:53:53",
+      "path": "memory/2026-04-28.md",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "Summary: 2026-04-28: **Open items:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "summary",
+        "open",
+        "items"
+      ]
+    },
+    "memory:memory/2026-04-28.md:54:56": {
+      "key": "memory:memory/2026-04-28.md:54:56",
+      "path": "memory/2026-04-28.md",
+      "startLine": 54,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "Summary: 2026-04-28: GitHub repo now `memoria`, local folder `memoria`, all code references updated; 2 moderate vulnerabilities remain (testcontainers chain, dev-only); Next: Wiki layer, agent pull model, confidence scoring",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "1174d07d7efc"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "dev-only",
+        "summary",
+        "github",
+        "repo",
+        "now",
+        "memoria",
+        "local",
+        "folder"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: We have changes across **10 files** — README fix, test suite, bug fixes (extractor Buffer→String, UUID validation, lazy DATA_DIR), plus new test deps. Want me to commit this batch, or is there something else you want to tackle first?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "data-dir",
+        "changes",
+        "across",
+        "readme",
+        "fix",
+        "test",
+        "suite",
+        "bug"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:55:55": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:55:55",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 55,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "User: An async command completion event was triggered, but user delivery is disabled for this run. Handle the result internally and reply HEARTBEAT_OK only. Do not mention, summarize, or reuse command output. Current time: Monday, April 27th, 2026 - 10:07 AM (Asia/Manila) / 2026-",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "asia/manila",
+        "async",
+        "command",
+        "completion",
+        "event",
+        "was",
+        "triggered"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:56:56": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:56:56",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 56,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "User: Pre-compaction memory flush. Store durable memories only in memory/2026-04-27.md (create memory/ if needed). Treat workspace bootstrap/reference files such as MEMORY.md, DREAMS.md, SOUL.md, TOOLS.md, and AGENTS.md as read-only during this flush; never overwrite, replace, or",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "pre-compaction",
+        "memory/2026-04-27.md",
+        "bootstrap/reference",
+        "memory.md",
+        "dreams.md",
+        "soul.md",
+        "tools.md",
+        "agents.md"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:57:57": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:57:57",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 57,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "User: > All 28 tests pass across 4 test files. The 3 \"errors\" are just postgres connection drops during container teardown — harmless. What's command to run tests? I want to check Yes, let's fix README to make it clear if it isn't yet.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "all",
+        "tests",
+        "pass",
+        "across",
+        "test",
+        "errors",
+        "postgres",
+        "connection"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:58:58": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:58:58",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 58,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "Assistant: **Test command:** `npm test` (runs in watch mode) or `npx vitest run` (single run, CI-style). ```bash # One-shot run (what you want for checking) npx vitest run # Watch mode (re-runs on file changes) npm test # With verbose output npx vitest run --reporter=verbose ```",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "ci-style",
+        "one-shot",
+        "re-runs",
+        "test",
+        "command",
+        "npm",
+        "runs",
+        "watch"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:59:59": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:59:59",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 59,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "User: Run tests. Looks good. The errors are noisy and misleading. How to resolve? can you recap thing we tested for?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "run",
+        "tests",
+        "looks",
+        "good",
+        "errors",
+        "noisy",
+        "misleading",
+        "how"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:60:60": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:60:60",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 60,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "Assistant: Tests pass but teardown is noisy. The container stops while pg connections are still open. Let me fix the cleanup.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "tests",
+        "pass",
+        "but",
+        "teardown",
+        "noisy",
+        "container",
+        "stops",
+        "while"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:61:61": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:61:61",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 61,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "Assistant: Clean — **0 errors**, 28 tests passing. The `closeDb()` call drains the pool before the container stops. --- ## What We Tested For | Test File | Tests | What It Covers | |-----------|-------|----------------| | **chunker.test.ts** (7) | Small text → single chunk, parag",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "chunker.test.ts",
+        "clean",
+        "errors",
+        "tests",
+        "passing",
+        "closedb",
+        "call",
+        "drains"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:62:62": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:62:62",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 62,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "Assistant: ingest flow with mocked embeddings + LLM | | **search.test.ts** (6) | Search with no results, search with results, similarity ordering, result shape validation, limit enforcement, threshold filtering | Search pipeline with fake embeddings | **Bug discoveries from tests",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "embedding",
+        "embeddings",
+        "search.test.ts",
+        "ingest",
+        "flow",
+        "mocked",
+        "llm",
+        "results"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:63:63": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:63:63",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 63,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "User: An async command completion event was triggered, but user delivery is disabled for this run. Handle the result internally and reply HEARTBEAT_OK only. Do not mention, summarize, or reuse command output. Current time: Monday, April 27th, 2026 - 10:19 AM (Asia/Manila) / 2026-",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "asia/manila",
+        "async",
+        "command",
+        "completion",
+        "event",
+        "was",
+        "triggered"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:64:64": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:64:64",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 64,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "User: Yes, commit. Document in daily logs our progress also",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "yes",
+        "commit",
+        "document",
+        "logs",
+        "progress"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:65:65": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:65:65",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 65,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "Assistant: Done. Committed as `a46671f` — 17 files, full test suite + all discovered bug fixes. Daily log updated with commit details and the teardown fix that cleaned up the postgres connection noise. What's next?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "done",
+        "committed",
+        "a46671f",
+        "full",
+        "test",
+        "suite",
+        "all",
+        "discovered"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Monitor the GitHub Actions workflow run for commit 7a3670d on ceil-labs/karpathy-ingest. The workflow file has been updated w",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "ceil-labs/karpathy-ingest",
+        "context",
+        "running",
+        "depth",
+        "results"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "User: manual intervention is needed. Location: /home/openclaw/.openclaw/projects/karpathy-ingest",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "home/openclaw",
+        "manual",
+        "intervention",
+        "needed",
+        "location",
+        "home",
+        "openclaw",
+        "projects"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: [Retry after the previous model attempt failed or timed out] [Tue 2026-04-28 08:10 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Monitor the GitHub Actions workflow",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "retry",
+        "previous",
+        "model",
+        "attempt",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "User: workflow or code - Commit and push fixes Report back when all jobs are passing or if manual intervention is needed. Location: /home/openclaw/.openclaw/projects/karpathy-ingest",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "home/openclaw",
+        "workflow",
+        "code",
+        "commit",
+        "push",
+        "fixes",
+        "report",
+        "back"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: Let me try a simpler GraphQL query to get check run details.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "let",
+        "try",
+        "simpler",
+        "graphql",
+        "query",
+        "get",
+        "check",
+        "run"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: The PAT doesn't have access to check runs either. Let me try using the browser to check the GitHub Actions page directly.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "pat",
+        "doesn't",
+        "access",
+        "check",
+        "runs",
+        "either",
+        "let",
+        "try"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: Browser is unavailable. Let me check the current git state and recent commits.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "browser",
+        "unavailable",
+        "let",
+        "check",
+        "current",
+        "git",
+        "state",
+        "recent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: There are uncommitted changes. Let me check the workflow file syntax to ensure it's valid.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "uncommitted",
+        "changes",
+        "let",
+        "check",
+        "workflow",
+        "syntax",
+        "ensure",
+        "it's"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: The workflow YAML is valid. Let me check if there are any local changes that might help, and then trigger a new workflow run by pushing a fix.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "workflow",
+        "valid",
+        "let",
+        "check",
+        "any",
+        "local",
+        "changes",
+        "might"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: Let me see what changes are pending.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "let",
+        "see",
+        "what",
+        "changes",
+        "pending"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: These are good fixes for type safety and ESLint issues. Let me commit these and push to trigger a new workflow run.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "good",
+        "fixes",
+        "type",
+        "safety",
+        "eslint",
+        "issues",
+        "let",
+        "commit"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: The commit was pushed successfully. GitHub reported 9 vulnerabilities (7 high, 2 moderate). Let me check the status of the new commit.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "commit",
+        "was",
+        "pushed",
+        "successfully",
+        "github",
+        "reported",
+        "vulnerabilities",
+        "high"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Go to https://github.com/ceil-labs/karpathy-ingest/settings/security_analysis and enable Dependabot alerts, Dependabot securi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "context",
+        "running",
+        "depth",
+        "results",
+        "auto"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: Browser isn't available. Let me try the GitHub CLI instead.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "browser",
+        "isn't",
+        "available",
+        "let",
+        "try",
+        "github",
+        "cli",
+        "instead"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "User: [Retry after the previous model attempt failed or timed out] [Tue 2026-04-28 06:42 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Go to https://github.com/ceil-labs/",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "github.com/ceil-labs",
+        "retry",
+        "previous",
+        "model",
+        "attempt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: I'll help you enable those security features on the karpathy-ingest repository. Let me navigate to the settings page using the browser.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "i'll",
+        "help",
+        "enable",
+        "those",
+        "security",
+        "features",
+        "karpathy"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: The browser isn't available. Let me use the GitHub CLI instead to enable these security features.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "browser",
+        "isn't",
+        "available",
+        "let",
+        "use",
+        "github",
+        "cli",
+        "instead"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: Good, I'm authenticated. Let me enable the security features via the GitHub API:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "good",
+        "i'm",
+        "authenticated",
+        "let",
+        "enable",
+        "security",
+        "features",
+        "via"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Fix all security scan failures in the karpathy-ingest project: **Location:** /home/openclaw/.openclaw/projects/karpathy-inges",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "karpathy-ingest",
+        "home/openclaw",
+        "openclaw/projects/karpathy-inges",
+        "context",
+        "running"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "User: src/routes/search.ts lines 40, 81, 132 — Replace `any` with proper types 3. src/services/extractor.ts line 1 — Remove unused 'fs' import 4. Fix tsconfig.json to include drizzle.config.ts and tests, OR update eslint.config.js to exclude them from type-checked linting **Steps",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "src/routes/search.ts",
+        "src/services/extractor.ts",
+        "tsconfig.json",
+        "drizzle.config.ts",
+        "eslint.config.js",
+        "type-checked",
+        "src",
+        "routes"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: Let me read the files with ESLint errors and the tsconfig/eslint config:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "tsconfig/eslint",
+        "let",
+        "read",
+        "eslint",
+        "errors",
+        "tsconfig",
+        "config"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: Now let me run the actual ESLint check to see exact error messages:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "now",
+        "let",
+        "run",
+        "actual",
+        "eslint",
+        "check",
+        "see",
+        "exact"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: Now I have the full picture. Let me fix everything systematically.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "now",
+        "full",
+        "picture",
+        "let",
+        "fix",
+        "everything",
+        "systematically"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: Now I see the issues. Let me fix all ESLint errors:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "now",
+        "see",
+        "issues",
+        "let",
+        "fix",
+        "all",
+        "eslint",
+        "errors"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: The Map approach still triggers object injection since the security plugin flags any `map[key]` access. Let me use a different approach - disable the rule inline for these safe cases since `i` is a loop counter, not user-controlled.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "user-controlled",
+        "map",
+        "approach",
+        "still",
+        "triggers",
+        "object",
+        "injection",
+        "security"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: Now let me update the dependencies to fix security vulnerabilities:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "now",
+        "let",
+        "update",
+        "dependencies",
+        "fix",
+        "security",
+        "vulnerabilities"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Fix all security scan failures in the karpathy-ingest project: **Location:** /home/openclaw/.openclaw/projects/karpathy-inges",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "karpathy-ingest",
+        "home/openclaw",
+        "openclaw/projects/karpathy-inges",
+        "context",
+        "running"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "User: src/routes/search.ts lines 40, 81, 132 — Replace `any` with proper types 3. src/services/extractor.ts line 1 — Remove unused 'fs' import 4. Fix tsconfig.json to include drizzle.config.ts and tests, OR update eslint.config.js to exclude them from type-checked linting **Steps",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "src/routes/search.ts",
+        "src/services/extractor.ts",
+        "tsconfig.json",
+        "drizzle.config.ts",
+        "eslint.config.js",
+        "type-checked",
+        "src",
+        "routes"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: The workspace is already clean — the previous session committed all changes. Let me verify the current state:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "already",
+        "clean",
+        "previous",
+        "committed",
+        "all",
+        "changes",
+        "let",
+        "verify"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: ## Task Complete **All security scan failures have been fixed.** Here's a summary: ### Dependencies Updated | Package | Old Version | New Version | Fixes | |---|---|---|---| | drizzle-orm | ^0.41.0 | ^0.45.2 | ✅ SQL injection (GHSA-gpj5-g38j-94v9) | | vite | ^6.2.0 | ^",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "drizzle-orm",
+        "0.41.0",
+        "0.45.2",
+        "ghsa-gpj5-g38j-94v9",
+        "6.2.0",
+        "task",
+        "complete",
+        "all"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM analyzer skill with the command: /fsm check --facility This should: 1. Fetch summary data from the Protek",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "context",
+        "running",
+        "depth",
+        "results",
+        "auto"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: The Protek FSM analyzer completed successfully. Let me check if Telegram alerts were sent:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "protek",
+        "fsm",
+        "analyzer",
+        "completed",
+        "successfully",
+        "let",
+        "check",
+        "telegram"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: The analysis is complete. The handler generated the report but the Telegram message needs to be sent directly. Let me send the alert to Victor via Telegram:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "analysis",
+        "complete",
+        "handler",
+        "generated",
+        "report",
+        "but",
+        "telegram",
+        "message"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: **ProteK FSM `/fsm check --facility` complete.** ### Summary of Findings **Company-wide:** 91/1196 completed (7.6%) | 613 pending | 118 RPR **🚨 3 Critical Zones (< 10% completion):** - MAKATI: 0.0% (1 actionable job, 0 completed) - PASIG-PATEROS-TAGUIG: 6.6% (166 acti",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "91/1196",
+        "7.6",
+        "0.0",
+        "pasig-pateros-taguig",
+        "6.6",
+        "protek",
+        "fsm"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: Telegram alert sent ✅ (message ID: 20664) Data saved to: `~/.openclaw/workspace/protek-data/2026-04-28/14-06-analysis.json`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "telegram",
+        "alert",
+        "sent",
+        "message",
+        "data",
+        "saved",
+        "openclaw",
+        "protek"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM analyzer command: /fsm check --8am This should: 1. Fetch summary data from the Protek FSM API 2. Calculate",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "context",
+        "running",
+        "depth",
+        "results",
+        "auto"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: Analysis complete. All 9 zones are at 0% completion (critical alert) — this is normal at 8AM start of day, but I should still send the morning report to Victor via Telegram.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "analysis",
+        "complete",
+        "all",
+        "zones",
+        "completion",
+        "critical",
+        "alert",
+        "normal"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: ## ✅ /fsm check --8am Complete **Report sent to Telegram** (ProTek Alerts channel ✅) ### Summary | Metric | Value | |--------|-------| | **Time** | 2026-04-28 08:06 HKT | | **Company-wide** | 0/922 completed (0.0%) | | **Pending** | 709 | | **RPR** | 0 | | **8AM Trend*",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "0/922",
+        "0.0",
+        "fsm",
+        "check",
+        "8am",
+        "complete",
+        "report"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: | MAKATI | 3 | 1 | 0 | 1 | ### Top Issues - **Rescheduling**: 45 (16.8%) - **Activation issues**: 31 (11.6%) - **Customer unavailable**: 21 (7.8%) ### Data Saved - `protek-data/2026-04-28/08-06-summary.json` - `protek-data/2026-04-28/08-06-analysis.json` - Dashboard sy",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "16.8",
+        "11.6",
+        "7.8",
+        "makati",
+        "top",
+        "issues",
+        "rescheduling",
+        "activation"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: 📊 *Protek FSM EOD Summary* — Apr 28, 2026 · 6:05 PM ━━━━━━━━━━━ OVERALL ━━━━━━━━━━━ Total: 1,414 | ✅ Completed: 262 | ⏳ Pending: 461 | 🔴 RPR: 105 📈 Completion Rate: 36.3% ⚡ Pace: *FAST* (+62 done since 4PM) ━━━━━━━━━━━ ZONE BREAKDOWN ━━━━━━━━━━━ ``` Zone Total Done",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "36.3",
+        "protek",
+        "fsm",
+        "eod",
+        "summary",
+        "apr",
+        "overall",
+        "total"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM analyzer with the command: /fsm check --facility This is a midday facility check for Tuesday, April 28th,",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "context",
+        "running",
+        "depth",
+        "results",
+        "auto"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: The handler executed successfully. Let me extract the formatted report:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "handler",
+        "executed",
+        "successfully",
+        "let",
+        "extract",
+        "formatted",
+        "report"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: ## ✅ Protek FSM Midday Report Complete **Task:** Midday facility check for Tuesday, April 28th, 2026 at 12:05 PM (Asia/Manila) **Command:** `/fsm check --facility` **Status:** ✅ Success — data fetched, analyzed, and report generated --- ### Key Findings **Company-Wide:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "asia/manila",
+        "company-wide",
+        "protek",
+        "fsm",
+        "midday",
+        "report",
+        "complete",
+        "task"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: PANAY | 5.2% | 70% RPR-blocked | | SOUTH QUEZON CITY | 8.0% | 86% RPR-blocked | | BULACAN | 9.3% | Best zone, 100% clearance rate | **Top Company-Wide Issues:** - Activation failures: 61 (14.4%) - Rescheduling: 54 (12.8%) - Customer unavailable: 24 (5.7%) - NAP capacit",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "5.2",
+        "rpr-blocked",
+        "8.0",
+        "9.3",
+        "company-wide",
+        "14.4",
+        "12.8",
+        "5.7"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "Assistant: `protek-data/2026-04-28/12-06-summary.json` and `12-06-analysis.json`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "12-06-analysis.json",
+        "protek",
+        "data",
+        "summary.json",
+        "analysis.json"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Monitor the GitHub Actions security workflow run for commit 98f4ca6 on ceil-labs/karpathy-ingest repo. Check the workflow run",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "ceil-labs/karpathy-ingest",
+        "context",
+        "running",
+        "depth",
+        "results"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "User: positives) - Dependency Audit: Vulnerabilities that need npm updates - ESLint: Code issues that need fixing Location: /home/openclaw/.openclaw/projects/karpathy-ingest Report back when all jobs are green or if you need help with complex fixes.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "home/openclaw",
+        "positives",
+        "dependency",
+        "audit",
+        "vulnerabilities",
+        "need",
+        "npm",
+        "updates"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: I'll fix this properly by casting through `unknown` to preserve type safety while fixing the build.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "i'll",
+        "fix",
+        "properly",
+        "casting",
+        "unknown",
+        "preserve",
+        "type",
+        "safety"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "Assistant: Let me use sed for precise line-by-line edits:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "line-by-line",
+        "let",
+        "use",
+        "sed",
+        "precise",
+        "edits"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: Build succeeded. Now let me verify ESLint and check the npm audit issues:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "succeeded",
+        "now",
+        "let",
+        "verify",
+        "eslint",
+        "check",
+        "npm",
+        "audit"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "User: [Retry after the previous model attempt failed or timed out] [Tue 2026-04-28 07:59 GMT+8] [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Monitor the GitHub Actions security",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "retry",
+        "previous",
+        "model",
+        "attempt",
+        "failed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "User: Secret Detection: Finding actual secrets (add to .trufflehog.yml allowlist if false positives) - Dependency Audit: Vulnerabilities that need npm updates - ESLint: Code issues that need fixing Location: /home/openclaw/.openclaw/projects/karpathy-ingest Report back when all j",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "trufflehog.yml",
+        "home/openclaw",
+        "secret",
+        "detection",
+        "finding",
+        "actual",
+        "secrets",
+        "add"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "Assistant: Let me continue fixing the remaining ESLint issues. I was fixing the `ingestRes` unused variable issue. Let me use Python for more precise edits.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "let",
+        "continue",
+        "fixing",
+        "remaining",
+        "eslint",
+        "issues",
+        "was",
+        "ingestres"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: Now let me fix the UI files - the `any` types and the setState in effect issues.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "now",
+        "let",
+        "fix",
+        "any",
+        "types",
+        "setstate",
+        "effect",
+        "issues"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:55:55": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:55:55",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 55,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "Assistant: I can see the issues in SearchPage.tsx. Let me fix them: 1. `any` type on line 39 2. setState in effect on lines 69 and 77",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "searchpage.tsx",
+        "can",
+        "see",
+        "issues",
+        "let",
+        "fix",
+        "them",
+        "any"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:56:56": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:56:56",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 56,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "Assistant: Now let me fix the ChunkDetailPage.tsx `any` type issue.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "chunkdetailpage.tsx",
+        "now",
+        "let",
+        "fix",
+        "any",
+        "type",
+        "issue"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:57:57": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:57:57",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 57,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "Assistant: Now let me check the remaining ESLint issues in test files - the `any` types and unused variables.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "now",
+        "let",
+        "check",
+        "remaining",
+        "eslint",
+        "issues",
+        "test",
+        "any"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:58:58": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:58:58",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 58,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM analyzer command: /fsm check --facility",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "context",
+        "running",
+        "depth",
+        "results",
+        "auto"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:59:59": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:59:59",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 59,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "Assistant: The Protek FSM analyzer ran successfully with `--facility` flag. Here's the summary: **📊 Protek FSM Report (2026-04-28 16:06 HKT)** **Company-wide: 200/1304 completed (15.3%)** - ⏳ Pending: 562 | 🔄 RPR: 113 **Today's Progress (Check 5):** - Completed: +109 | Pending:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "200/1304",
+        "15.3",
+        "protek",
+        "fsm",
+        "analyzer",
+        "ran",
+        "successfully"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:60:60": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:60:60",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 60,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "Assistant: | SOUTH QC | 61.5% | ✅ | **🏭 Facility RPR Breakdown:** 89 total facility-related RPR records across zones (data saved to `protek-data/2026-04-28/16-06-raw-facility.json`) Data saved to: `protek-data/2026-04-28/`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "61.5",
+        "facility-related",
+        "protek-data/2026-04-28",
+        "south",
+        "facility",
+        "rpr",
+        "breakdown",
+        "total"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:61:61": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:61:61",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 61,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Implement slider and limit auto-search with debounce in the karpathy-ingest UI. **File:** /home/openclaw/.openclaw/projects/k",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "auto-search",
+        "karpathy-ingest",
+        "home/openclaw",
+        "openclaw/projects/k",
+        "context"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:62:62": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:62:62",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 62,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "User: Auto-search when limit changes (debounced) useEffect(() => { if (!query.trim() || !searched) return; const timer = setTimeout(() => handleSearch(), 200); return () => clearTimeout(timer); }, [limit]); ``` **Important notes:** - The existing `handleSearch` is already defined",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "auto-search",
+        "query.trim",
+        "auto",
+        "when",
+        "limit",
+        "changes",
+        "debounced",
+        "useeffect"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:63:63": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:63:63",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 63,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "User: changes\"` 5. Push: `git push origin master` Report back when complete.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "changes",
+        "push",
+        "git",
+        "origin",
+        "master",
+        "report",
+        "back",
+        "when"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:64:64": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:64:64",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 64,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "Assistant: Build succeeded. Now committing and pushing:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "succeeded",
+        "now",
+        "committing",
+        "pushing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:65:65": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:65:65",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 65,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "Assistant: **Done.** Changes committed and pushed to `ceil-labs/karpathy-ingest` (master). **Summary:** - Added debounced `useEffect` for `ftsWeight` (200ms delay, only triggers in hybrid mode) - Added debounced `useEffect` for `limit` (200ms delay, triggers for any search type)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "ceil-labs/karpathy-ingest",
+        "done",
+        "changes",
+        "committed",
+        "pushed",
+        "ceil",
+        "labs",
+        "karpathy"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:66:66": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:66:66",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 66,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Rename project from \"karpathy-ingest\" to \"memoria\" and update all references. **Files to update:** 1. **README.md** — Complet",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "karpathy-ingest",
+        "readme.md",
+        "context",
+        "running",
+        "depth"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:67:67": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:67:67",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 67,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "User: — Check for service names referencing karpathy-ingest, update if found 5. **UI files** — Search for any \"karpathy\" references in ui/src/ and update/remove them 6. **Other files** — Search entire codebase for \"karpathy-ingest\" or \"karpathy_ingest\" strings and replace with \"m",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "ui/src",
+        "update/remove",
+        "check",
+        "service",
+        "names",
+        "referencing",
+        "karpathy"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:68:68": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:68:68",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 68,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "User: File-based storage | Dockerized API with database persistence | | Manual scripts | REST API + React web UI | | 3-layer: raw → wiki → search | 3-layer: ingest → chunk/embed → search/render | ``` **After all changes:** 1. Build UI: `cd ui && npm run build` (should have no err",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "file-based",
+        "3-layer",
+        "chunk/embed",
+        "search/render",
+        "based",
+        "storage",
+        "dockerized",
+        "api"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:69:69": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:69:69",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 69,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "Assistant: Now I have a clear picture. Let me make all the changes systematically.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "now",
+        "clear",
+        "picture",
+        "let",
+        "all",
+        "changes",
+        "systematically"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:70:70": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:70:70",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 70,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "Assistant: Now I have a clear picture of all the changes needed. Let me execute them all:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "now",
+        "clear",
+        "picture",
+        "all",
+        "changes",
+        "needed",
+        "let",
+        "execute"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:71:71": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:71:71",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 71,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "Assistant: All intentional \"Karpathy\" references in README are preserved (referring to Andrej Karpathy the person, not the project name). Now let's build and test:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "all",
+        "intentional",
+        "karpathy",
+        "references",
+        "readme",
+        "preserved",
+        "referring",
+        "andrej"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:72:72": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:72:72",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 72,
+      "endLine": 72,
+      "source": "memory",
+      "snippet": "Assistant: All tests pass. Now committing and pushing.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "all",
+        "tests",
+        "pass",
+        "now",
+        "committing",
+        "pushing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:73:73": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:73:73",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 73,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "Assistant: Done. Here's a summary of all changes: **Files modified (8 files, +27/-14 lines):** | File | Change | |------|--------| | `README.md` | Complete rewrite — title `# Memoria`, added Inspiration + Divergence sections, updated clone URL | | `package.json` | `name`: `karpat",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "readme.md",
+        "package.json",
+        "done",
+        "here's",
+        "summary",
+        "all",
+        "changes",
+        "modified"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:74:74": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:74:74",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 74,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "Assistant: build: `tsc -b && vite build` — clean, no errors - ✅ Tests: 28/28 passed across 4 test files - ✅ Git commit and push successful **Note:** The GitHub repository name is still `karpathy-ingest` on GitHub — this rename only updated local project files. The repo name on Gi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "28/28",
+        "karpathy-ingest",
+        "tsc",
+        "vite",
+        "clean",
+        "errors",
+        "tests",
+        "passed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:75:75": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:75:75",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 75,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "Assistant: 🏭 Protek FSM Midday Facility Report Tuesday, April 28, 2026 — 12:05 PM ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 📊 COMPANY-WIDE STATUS ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ Total: 1,087 | Completed: 34 | Rate: 3.1% Pending: 665 | RPR: 82 | AFD/Removed: ~306 ⚠️ ALL 9 ZONES IN CRITICA",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "3.1",
+        "afd/removed",
+        "protek",
+        "fsm",
+        "midday",
+        "facility",
+        "report"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:76:76": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:76:76",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 76,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "Assistant: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 🏭 FACILITY RPR BREAKDOWN (57 total) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 🔴 PASIG-PATEROS-TAGUIG — 28 PRs (WORST) • Full NAPs, no fiber available • NAP not broadcast, LOS issues • Lock ports, pending approvals 🔴 PASAY-PARANAQUE — 11 PRs • L",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "pasig-pateros-taguig",
+        "pasay-paranaque",
+        "facility",
+        "rpr",
+        "breakdown",
+        "total",
+        "pasig",
+        "pateros"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:77:77": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:77:77",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 77,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "Assistant: unavailable — 24 cases (5.7%) 4. NAP capacity — 18 cases (4.3%) 5. Infrastructure missing — 11 cases (2.6%) ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ⏰ Next check: 2:00 PM 📁 Data saved: protek-data/2026-04-28/",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "5.7",
+        "4.3",
+        "2.6",
+        "protek-data/2026-04-28",
+        "unavailable",
+        "cases",
+        "nap",
+        "capacity"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:66:66": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:66:66",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 66,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "User: Next, let's work on UI for uploading for ingest. We should make UI clear on different types that can be ingested. Let's also have UI for viewing the different files ingested in the different views (chunks, raw, processed ?). UI for seearch also. Present the plan. Don't make",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "let's",
+        "uploading",
+        "ingest",
+        "clear",
+        "different",
+        "types",
+        "can",
+        "ingested"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:67:67": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:67:67",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 67,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "Assistant: Here's the plan for a **karpathy-ingest UI** — three screens, clear source-type differentiation, and multiple view modes for ingested content. --- ## UI Plan ### 1. Ingest / Upload Page (`/ui/ingest`) **Goal:** Make it dead obvious what can be ingested and how. **Layou",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "source-type",
+        "ui/ingest",
+        "here's",
+        "plan",
+        "karpathy",
+        "ingest",
+        "three"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:68:68": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:68:68",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 68,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "Assistant: On submit: show progress spinner → result card with source ID, chunk count, links to view --- ### 2. Browse / Sources Page (`/ui/sources`) **Goal:** See everything ingested, filter by type, drill into views. **Layout:** ``` ┌────────────────────────────────────────────",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "ui/sources",
+        "submit",
+        "show",
+        "progress",
+        "spinner",
+        "result",
+        "card",
+        "source"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:69:69": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:69:69",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 69,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "Assistant: └─────────────────────────────────────────────────────┘ ``` **View modes per source:** | Button | Shows | |--------|-------| | **Raw** | Full original extracted text (from `/sources/:id` → `viewUrl`) | | **Processed** | LLM-reformatted markdown (if `llmProcess=true` wa",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "llm-reformatted",
+        "view",
+        "modes",
+        "per",
+        "source",
+        "button",
+        "shows",
+        "raw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:70:70": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:70:70",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 70,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "Assistant: 3/12) │ │ │ │ \"Machine learning is a subset of...\" │ │ │ │ [View Source] [View Chunk] │ │ │ └─────────────────────────────────────────────┘ │ └─────────────────────────────────────────────────────┘ ``` --- ## Architecture Options **Option A: Static HTML + Vanilla JS**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "3/12",
+        "machine",
+        "learning",
+        "subset",
+        "view",
+        "source",
+        "chunk",
+        "architecture"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:71:71": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:71:71",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 71,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "Assistant: A** — vanilla JS in a `public/` directory. Reasons: - No build step, no webpack/vite config - API already exists, just `fetch()` calls - Can still look clean with a lightweight CSS framework (e.g., Pico CSS or simple custom CSS) - One container, one process — keeps the",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "webpack/vite",
+        "e.g",
+        "vanilla",
+        "public",
+        "directory",
+        "reasons",
+        "step",
+        "webpack"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:72:72": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:72:72",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 72,
+      "endLine": 72,
+      "source": "memory",
+      "snippet": "Assistant: page-per-HTML-file, or lightweight client-side router? 3. **Real-time feedback** — Show upload progress, or just spinner + result? 4. **Should the UI be the default route?** Currently `/health` is the only root-level friendly endpoint. Should `/` redirect to the UI? Wh",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "router",
+        "page-per-html-file",
+        "client-side",
+        "real-time",
+        "root-level",
+        "page",
+        "per",
+        "html"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:73:73": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:73:73",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 73,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "User: We'll eventually have wiki and more UX/UI feautres. So maybe option B already? thoughts?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "ux/ui",
+        "we'll",
+        "eventually",
+        "wiki",
+        "feautres",
+        "maybe",
+        "option",
+        "already"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:74:74": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:74:74",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 74,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "Assistant: Good call. If you're building toward wiki, search, chunk browsing, and more — vanilla JS becomes technical debt fast. React with Vite is the pragmatic middle ground. --- ## Why React + Vite Now | Factor | Vanilla | React + Vite | |--------|---------|--------------| | *",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "good",
+        "call",
+        "you're",
+        "building",
+        "toward",
+        "wiki",
+        "chunk",
+        "browsing"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:75:75": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:75:75",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 75,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "Assistant: Vite is fast and produces static files Express can serve. Not a real downside. --- ## Recommended Stack | Layer | Choice | Why | |-------|--------|-----| | **Build tool** | Vite | Faster than CRA, simpler than Webpack, great DX | | **Framework** | React 18 + TypeScript",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "vite",
+        "fast",
+        "produces",
+        "static",
+        "express",
+        "can",
+        "serve",
+        "not"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:76:76": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:76:76",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 76,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "Assistant: ├── SourcesPage.tsx │ │ │ ├── SourceDetailPage.tsx │ │ │ ├── SearchPage.tsx │ │ │ └── ChunkDetailPage.tsx │ │ ├── components/ │ │ │ ├── SourceCard.tsx │ │ │ ├── ChunkViewer.tsx │ │ │ ├── SearchResult.tsx │ │ │ └── UploadForm.tsx │ │ └── api.ts # fetch wrappers │ ├── in",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "sourcespage.tsx",
+        "sourcedetailpage.tsx",
+        "searchpage.tsx",
+        "chunkdetailpage.tsx",
+        "sourcecard.tsx",
+        "chunkviewer.tsx",
+        "searchresult.tsx",
+        "uploadform.tsx"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:77:77": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:77:77",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 77,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "Assistant: --- ## The Dockerfile Change Multi-stage build: ```dockerfile # Stage 1: Build UI FROM node:20-alpine AS ui-builder WORKDIR /ui COPY ui/package.json ui/package-lock.json* ./ RUN npm ci COPY ui/ ./ RUN npm run build # Stage 2: API + built UI FROM node:20-alpine AS produ",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "multi-stage",
+        "20-alpine",
+        "ui-builder",
+        "ui/package.json",
+        "ui/package-lock.json",
+        "dockerfile",
+        "change",
+        "multi"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:78:78": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:78:78",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 78,
+      "endLine": 78,
+      "source": "memory",
+      "snippet": "Assistant: The new commit shows \"PENDING\" status. The workflow is running. Let me wait and check again.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "new",
+        "commit",
+        "shows",
+        "pending",
+        "status",
+        "workflow",
+        "running",
+        "let"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:79:79": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:79:79",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 79,
+      "endLine": 79,
+      "source": "memory",
+      "snippet": "Assistant: `embeddings[i].values`) in the chunk storage loop - **search.ts (any types)**: Added `VectorRow`, `FtsRow`, `HybridRow` interfaces and replaced all `row: any` with typed interfaces - **extractor.ts (unused fs import)**: Removed `import fs from \"fs/promises\"` - **search",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "embedding",
+        "embeddings",
+        "search.ts",
+        "extractor.ts",
+        "fs/promises",
+        "values",
+        "chunk",
+        "storage"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:80:80": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:80:80",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 80,
+      "endLine": 80,
+      "source": "memory",
+      "snippet": "Assistant: Verification - ✅ `npm run security:lint` — Only warnings remain (fs path checks, ui/ react-hooks) - ✅ `npm test` — All 28 tests pass - ✅ `npm audit` — 8 moderate vulnerabilities remain (all require breaking changes to fix) ### Commit Already pushed: `ffd84a6 security:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "react-hooks",
+        "verification",
+        "npm",
+        "run",
+        "security:lint",
+        "only",
+        "warnings",
+        "remain"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:81:81": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:81:81",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 81,
+      "endLine": 81,
+      "source": "memory",
+      "snippet": "Assistant: Let me check if my edits were actually saved.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "edits",
+        "actually",
+        "saved"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:82:82": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:82:82",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 82,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "Assistant: Let me check if the UI has its own tsconfig and eslint config.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "let",
+        "check",
+        "has",
+        "own",
+        "tsconfig",
+        "eslint",
+        "config"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-28.txt:83:83": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-28.txt:83:83",
+      "path": "memory/.dreams/session-corpus/2026-04-28.txt",
+      "startLine": 83,
+      "endLine": 83,
+      "source": "memory",
+      "snippet": "Assistant: The UI has its own tsconfig setup. I need to update the eslint config to handle UI files correctly with their own tsconfig.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "queryHashes": [
+        "8a4254b47642"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-28"
+      ],
+      "conceptTags": [
+        "has",
+        "own",
+        "tsconfig",
+        "setup",
+        "need",
+        "update",
+        "eslint",
+        "config"
       ]
     }
   }
