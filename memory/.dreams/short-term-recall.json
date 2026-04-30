@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-29T23:56:11.936Z",
+  "updatedAt": "2026-04-30T01:02:38.941Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -36752,23 +36752,27 @@
       "endLine": 286,
       "source": "memory",
       "snippet": "- Candidate: # 2026-04-03 — Daily Log ## Agent Platform — CI/CD & Production Deployment Setup ### Morning: CI Fixes **Problem:** CI workflow was failing with 19 RuboCop offenses and system-test job errors. **Actions Taken:** 1. **Fixed lint violations** — Ran `bin/rubocop -a` to auto-fix 19 offenses in test files 2. **Disabled system-test job** — Commented out in `.github/workflows/ci.yml` since no Capybara tests exist yet 3. **Cleaned up cache files** — Added `.cache` to `.gitignore` and removed cached files from git 4. **Fixed branch mismatch** — Updated CI to run on `master` (repo uses master, not main) **Result:** All CI jobs now passing (scan_ruby, scan_js, lint, test) ### Afternoon: GH",
-      "recallCount": 4,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.8577729523181914,
-      "maxScore": 0.47890527844429015,
+      "totalScore": 3.272124791145324,
+      "maxScore": 0.4952704519033432,
       "firstRecalledAt": "2026-04-16T01:23:11.580Z",
-      "lastRecalledAt": "2026-04-26T11:07:27.556Z",
+      "lastRecalledAt": "2026-04-30T00:50:26.450Z",
       "queryHashes": [
         "b34686ccbbe0",
         "9281fb8ad9e5",
         "f1ff6e7d232f",
-        "02712bbd58fd"
+        "02712bbd58fd",
+        "99c2061517e3",
+        "fbee3a2656de",
+        "24dfc0f61655"
       ],
       "recallDays": [
         "2026-04-16",
         "2026-04-24",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-30"
       ],
       "conceptTags": [
         "ci/cd",
@@ -36824,19 +36828,21 @@
       "endLine": 281,
       "source": "memory",
       "snippet": "- Candidate: - ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive config via en",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9723569929599761,
+      "totalScore": 1.4181064099073408,
       "maxScore": 0.49316086173057555,
       "firstRecalledAt": "2026-04-16T01:26:34.690Z",
-      "lastRecalledAt": "2026-04-16T01:52:45.229Z",
+      "lastRecalledAt": "2026-04-30T00:50:21.522Z",
       "queryHashes": [
         "423f25bf9757",
-        "9281fb8ad9e5"
+        "9281fb8ad9e5",
+        "fbee3a2656de"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-04-30"
       ],
       "conceptTags": [
         "end-to-end",
@@ -55758,22 +55764,25 @@
       "endLine": 376,
       "source": "memory",
       "snippet": "- Candidate: - Candidate: - ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive",
-      "recallCount": 4,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.8378527909517288,
+      "totalScore": 2.766481751203537,
       "maxScore": 0.4847767412662506,
       "firstRecalledAt": "2026-04-26T07:11:54.207Z",
-      "lastRecalledAt": "2026-04-29T11:48:08.215Z",
+      "lastRecalledAt": "2026-04-30T00:50:26.450Z",
       "queryHashes": [
         "12bb0281b38f",
         "02712bbd58fd",
         "dcc07d58c597",
-        "5ae0faba09b7"
+        "5ae0faba09b7",
+        "fbee3a2656de",
+        "24dfc0f61655"
       ],
       "recallDays": [
         "2026-04-26",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "end-to-end",
@@ -72402,18 +72411,19 @@
       "endLine": 38,
       "source": "memory",
       "snippet": "--- ## 2026-04-28 17:30 — Project Rename: karpathy-ingest → Memoria **Victor's decision:** Rename to \"Memoria\" — better reflects the knowledge system vision beyond just ingestion. **Changes made:** 1. **GitHub repo:** Settings → Rename to `memoria` 2. **Local folder:** `~/.openclaw/projects/karpathy-ingest` → `memoria` 3. **Git remote:** Updated to `github.com/ceil-labs/memoria.git` 4. **Codebase:** All references updated (package.json, UI nav, user-agent, logs, test DB names) **Files changed:** 8 files across README, package.json, docker-compose, UI, services, tests **README updated with:** - Inspiration section crediting Karpathy's LLM Wiki - Divergence section documenting how we dif",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.9533152446150779,
+      "totalScore": 2.467778433859348,
       "maxScore": 0.5538501366972923,
       "firstRecalledAt": "2026-04-29T08:20:12.886Z",
-      "lastRecalledAt": "2026-04-29T23:56:11.936Z",
+      "lastRecalledAt": "2026-04-30T00:22:41.484Z",
       "queryHashes": [
         "f15064cce64e",
         "386ff80fe486",
         "280f14c314ab",
-        "e77aca9c8d62"
+        "e77aca9c8d62",
+        "7d259d04261d"
       ],
       "recallDays": [
         "2026-04-29",
@@ -76393,16 +76403,19 @@
       "endLine": 142,
       "source": "memory",
       "snippet": "**New features needed:** 1. **Jobs/Queue page** (`/jobs`) — List all ingest jobs with status 2. **Job detail** (`/jobs/:id`) — Real-time progress via WebSocket 3. **Nav link** — \"Queue\" in top navigation 4. **Ingest page update** — After submit, show \"View in Queue →\" link (new tab) **Database schema addition:** ```sql CREATE TABLE jobs ( id UUID PRIMARY KEY DEFAULT gen_random_uuid(), source_id UUID, status VARCHAR(20) NOT NULL, -- queued|running|completed|failed progress INT DEFAULT 0, -- 0-100 current_step VARCHAR(50), -- extract|reformat|chunk|embed|store error TEXT, created_at TIMESTAMP DEFAULT NOW(), updated_at TIMESTAMP DEFAULT NOW() ); ``` **WebSocket events:** - `jo",
-      "recallCount": 2,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.059678417444229,
+      "totalScore": 2.6026534020900725,
       "maxScore": 0.5367418825626373,
       "firstRecalledAt": "2026-04-29T22:12:03.203Z",
-      "lastRecalledAt": "2026-04-29T23:56:05.638Z",
+      "lastRecalledAt": "2026-04-30T01:02:38.941Z",
       "queryHashes": [
         "89cf62b5a411",
-        "a1dc66b80158"
+        "a1dc66b80158",
+        "57e885fecd1a",
+        "302ab58764b9",
+        "e06ef760fec9"
       ],
       "recallDays": [
         "2026-04-30"
@@ -76416,6 +76429,224 @@
         "current-step",
         "created-at",
         "updated-at"
+      ]
+    },
+    "memory:memory/2026-04-28.md:32:57": {
+      "key": "memory:memory/2026-04-28.md:32:57",
+      "path": "memory/2026-04-28.md",
+      "startLine": 32,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "- **Architecture:** ASCII diagram + component table - **Inspiration & Divergence:** Credits Karpathy, documents how we differ - **Roadmap:** Wiki layer, agent integration, confidence scoring, forgetting curves - **Security:** Documents scanning setup **GitHub security:** Down to 2 moderate vulnerabilities (from 9) after dependency updates **Commit:** `5ad23f7` — pushed to `github.com/ceil-labs/memoria` --- ## Summary: 2026-04-28 **Major deliverables:** 1. ✅ True BM25 via custom PostgreSQL image with pg_textsearch 2. ✅ Auto-search on tab switch + slider/limit debounce 3. ✅ Security scanning (ESLint + CodeQL + Dependabot + Secret detection) 4. ✅ Vulnerability fixes (drizzle-orm, esbuild,",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0353547945618629,
+      "maxScore": 0.5363294377923011,
+      "firstRecalledAt": "2026-04-30T00:22:37.828Z",
+      "lastRecalledAt": "2026-04-30T00:22:41.484Z",
+      "queryHashes": [
+        "99c2061517e3",
+        "7d259d04261d"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "github.com/ceil-labs/memoria",
+        "pg-textsearch",
+        "auto-search",
+        "slider/limit",
+        "drizzle-orm",
+        "architecture",
+        "ascii",
+        "diagram"
+      ]
+    },
+    "memory:memory/2026-03-17.md:130:171": {
+      "key": "memory:memory/2026-03-17.md:130:171",
+      "path": "memory/2026-03-17.md",
+      "startLine": 130,
+      "endLine": 171,
+      "source": "memory",
+      "snippet": "5. Read `MEMORY.md` — long-term memory (main session only) All changes committed to GitHub. ### Agent-to-Agent Communication ✅ - Successfully tested messaging between Ceil and Neo - Coordination protocol established: - Clean separation on daily tasks - **Coordination triggers:** \"lab setup\" or \"infrastructure for testing\" - Neo's focus: HTB training (red/blue team, technique deep-dives) ### Honcho Memory Setup - **Ceil workspace:** Uploaded to Honcho (8 files) - USER.md, MEMORY.md, SOUL.md, IDENTITY.md, AGENTS.md, TOOLS.md, BOOTSTRAP.md, memory/2026-03-17.md - **Neo workspace:** Files ready for upload (SOUL.md, IDENTITY.md, MEMORY.md, USER.md, AGENTS.md, TOOLS.md) - Working on add",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4951823741197586,
+      "maxScore": 0.4951823741197586,
+      "firstRecalledAt": "2026-04-30T00:22:37.828Z",
+      "lastRecalledAt": "2026-04-30T00:22:37.828Z",
+      "queryHashes": [
+        "99c2061517e3"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "long-term",
+        "agent-to-agent",
+        "red/blue",
+        "deep-dives",
+        "user.md",
+        "soul.md",
+        "identity.md"
+      ]
+    },
+    "memory:memory/2026-04-14.md:371:392": {
+      "key": "memory:memory/2026-04-14.md:371:392",
+      "path": "memory/2026-04-14.md",
+      "startLine": 371,
+      "endLine": 392,
+      "source": "memory",
+      "snippet": "- recalls: 0 - status: staged - Candidate: 2026-04-13 09:00 — OpenClaw Upgraded to v2026.4.11 + Active Memory Enabled: This means both Ceil and Neo will now automatically query memory before each reply in direct chats, using MiniMax for the memory search while retaining their primary models for the actual response. - confidence: 0.62 - evidence: memory/2026-04-13.md:384-384 - recalls: 0 - status: staged - Candidate: 2026-04-13 (ongoing) — Wiki HTB Cron Removed + Tailscale Funnel Noted: Removed the `Wiki daily HTB ingest` cron job (was failing and no longer needed).; `memory-wiki` plugin left enabled; existing vault files on disk remain intact.; **Tailscale Funnel** identified as",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49897758364677425,
+      "maxScore": 0.49897758364677425,
+      "firstRecalledAt": "2026-04-30T00:22:41.484Z",
+      "lastRecalledAt": "2026-04-30T00:22:41.484Z",
+      "queryHashes": [
+        "7d259d04261d"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "v2026.4.11",
+        "0.62",
+        "memory/2026-04-13.md",
+        "384-384",
+        "memory-wiki",
+        "recalls",
+        "status",
+        "staged"
+      ]
+    },
+    "memory:memory/2026-04-13.md:343:364": {
+      "key": "memory:memory/2026-04-13.md:343:364",
+      "path": "memory/2026-04-13.md",
+      "startLine": 343,
+      "endLine": 364,
+      "source": "memory",
+      "snippet": "- recalls: 0 - status: staged - Candidate: 2026-04-13 09:00 — OpenClaw Upgraded to v2026.4.11 + Active Memory Enabled: This means both Ceil and Neo will now automatically query memory before each reply in direct chats, using MiniMax for the memory search while retaining their primary models for the actual response. - confidence: 0.00 - evidence: memory/2026-04-13.md:384-384 - recalls: 0 - status: staged - Candidate: 2026-04-13 (ongoing) — Wiki HTB Cron Removed + Tailscale Funnel Noted: Removed the `Wiki daily HTB ingest` cron job (was failing and no longer needed).; `memory-wiki` plugin left enabled; existing vault files on disk remain intact.; **Tailscale Funnel** identified as",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.49861381947994227,
+      "maxScore": 0.49861381947994227,
+      "firstRecalledAt": "2026-04-30T00:22:41.484Z",
+      "lastRecalledAt": "2026-04-30T00:22:41.484Z",
+      "queryHashes": [
+        "7d259d04261d"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "v2026.4.11",
+        "0.00",
+        "memory/2026-04-13.md",
+        "384-384",
+        "memory-wiki",
+        "recalls",
+        "status",
+        "staged"
+      ]
+    },
+    "memory:memory/2026-04-30.md:1:63": {
+      "key": "memory:memory/2026-04-30.md:1:63",
+      "path": "memory/2026-04-30.md",
+      "startLine": 1,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "# 2026-04-30 — Daily Log ## Memoria Background Jobs — Plan Updated: BullMQ **Architecture decision:** Switched from in-memory array to BullMQ (Redis-based) for job queue. ### Why BullMQ - **Production-ready** — retries, delayed jobs, rate limiting, concurrency control - **Dashboard** — `@bull-board` for monitoring jobs via web UI - **Job persistence** — Redis survives restarts (with AOF/persistence config) - **Scalable** — multiple workers can pull from same queue - **Progress tracking** — built-in `job.updateProgress()` API - **TypeScript-first** — excellent DX ### Updated Architecture ``` POST /api/ingest → enqueue BullMQ job → return jobId immediately (~200ms) BullMQ worker processes",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8630010682241132,
+      "maxScore": 0.8630010682241132,
+      "firstRecalledAt": "2026-04-30T01:02:38.941Z",
+      "lastRecalledAt": "2026-04-30T01:02:38.941Z",
+      "queryHashes": [
+        "e06ef760fec9"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "in-memory",
+        "redis-based",
+        "production-ready",
+        "bull-board",
+        "aof/persistence",
+        "built-in",
+        "job.updateprogress",
+        "typescript-first"
+      ]
+    },
+    "memory:memory/2026-04-30.md:44:100": {
+      "key": "memory:memory/2026-04-30.md:44:100",
+      "path": "memory/2026-04-30.md",
+      "startLine": 44,
+      "endLine": 100,
+      "source": "memory",
+      "snippet": "redis: condition: service_healthy environment: REDIS_URL: redis://redis:6379 volumes: pgdata: redisdata: ``` **2. Add dependency** ```bash npm install bullmq ``` ### Queue Design **Queue: `ingest`** - Job name: `process-ingestion` - Job data: `{ url?, filePath?, fileName?, contentType?, userId? }` - Job opts: `{ attempts: 3, backoff: { type: 'exponential', delay: 5000 } }` ### Worker Implementation ```typescript // src/workers/ingestWorker.ts import { Worker } from 'bullmq'; import { connection } from '../lib/redis.js'; const ingestWorker = new Worker('ingest', async (job) => { const { url, filePath, fileName } = job.data; // Step 1: Extract await",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5373545780777931,
+      "maxScore": 0.5373545780777931,
+      "firstRecalledAt": "2026-04-30T01:02:38.941Z",
+      "lastRecalledAt": "2026-04-30T01:02:38.941Z",
+      "queryHashes": [
+        "e06ef760fec9"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "service-healthy",
+        "redis-url",
+        "process-ingestion",
+        "src/workers/ingestworker.ts",
+        "lib/redis.js",
+        "job.data",
+        "redis",
+        "condition"
+      ]
+    },
+    "memory:memory/2026-04-30.md:136:179": {
+      "key": "memory:memory/2026-04-30.md:136:179",
+      "path": "memory/2026-04-30.md",
+      "startLine": 136,
+      "endLine": 179,
+      "source": "memory",
+      "snippet": "showSuccess(`Source ready: ${sourceId}`); }); ``` ### API Changes **POST /api/ingest (updated)** ```typescript // Instead of synchronous processing: const job = await ingestQueue.add('process-ingestion', { url, filePath, fileName, contentType }); return { jobId: job.id, status: 'queued' }; ``` **GET /api/jobs/:id (new)** - Returns job status, progress, step, error from BullMQ ### UI Features (same as before) 1. **Jobs/Queue page** (`/jobs`) — List all jobs via BullMQ `getJobs()` 2. **Job detail** (`/jobs/:id`) — Real-time progress via WebSocket 3. **Nav link** — \"Queue\" in top navigation 4. **Ingest page update** — After submit, \"View in Queue →\" link ### Implementation Order 1. Add",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5319729670882225,
+      "maxScore": 0.5319729670882225,
+      "firstRecalledAt": "2026-04-30T01:02:38.941Z",
+      "lastRecalledAt": "2026-04-30T01:02:38.941Z",
+      "queryHashes": [
+        "e06ef760fec9"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "api/ingest",
+        "ingestqueue.add",
+        "process-ingestion",
+        "job.id",
+        "api/jobs",
+        "jobs/queue",
+        "real-time",
+        "showsuccess"
       ]
     }
   }
