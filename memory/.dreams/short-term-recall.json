@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-30T01:16:09.584Z",
+  "updatedAt": "2026-04-30T02:52:42.244Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -76403,19 +76403,20 @@
       "endLine": 142,
       "source": "memory",
       "snippet": "**New features needed:** 1. **Jobs/Queue page** (`/jobs`) — List all ingest jobs with status 2. **Job detail** (`/jobs/:id`) — Real-time progress via WebSocket 3. **Nav link** — \"Queue\" in top navigation 4. **Ingest page update** — After submit, show \"View in Queue →\" link (new tab) **Database schema addition:** ```sql CREATE TABLE jobs ( id UUID PRIMARY KEY DEFAULT gen_random_uuid(), source_id UUID, status VARCHAR(20) NOT NULL, -- queued|running|completed|failed progress INT DEFAULT 0, -- 0-100 current_step VARCHAR(50), -- extract|reformat|chunk|embed|store error TEXT, created_at TIMESTAMP DEFAULT NOW(), updated_at TIMESTAMP DEFAULT NOW() ); ``` **WebSocket events:** - `jo",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.6026534020900725,
+      "totalScore": 3.0652418226003646,
       "maxScore": 0.5367418825626373,
       "firstRecalledAt": "2026-04-29T22:12:03.203Z",
-      "lastRecalledAt": "2026-04-30T01:02:38.941Z",
+      "lastRecalledAt": "2026-04-30T02:52:42.244Z",
       "queryHashes": [
         "89cf62b5a411",
         "a1dc66b80158",
         "57e885fecd1a",
         "302ab58764b9",
-        "e06ef760fec9"
+        "e06ef760fec9",
+        "918ecf98cf68"
       ],
       "recallDays": [
         "2026-04-30"
