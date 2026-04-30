@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-30T01:02:38.941Z",
+  "updatedAt": "2026-04-30T01:16:09.584Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -76647,6 +76647,37 @@
         "jobs/queue",
         "real-time",
         "showsuccess"
+      ]
+    },
+    "memory:memory/2026-04-30.md:1:47": {
+      "key": "memory:memory/2026-04-30.md:1:47",
+      "path": "memory/2026-04-30.md",
+      "startLine": 1,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "# Memoria Background Jobs — Detailed Implementation Plan (BullMQ) ## Context Memoria is a Node.js/Express API + React UI for document ingestion, chunking, embedding, and semantic search. Currently ingest is synchronous. We need to make it async with background jobs and real-time progress. **Tech stack:** Node 22, Express 5, TypeScript, Drizzle ORM, PostgreSQL 16 + pgvector, React 19 + Vite + Tailwind, Docker Compose. --- ## 1. Infrastructure: Redis Addition **docker-compose.yml changes:** - Add `redis` service (image `redis:7-alpine`) - Command: `redis-server --appendonly yes` (AOF persistence, survives restarts) - Volume: `redisdata:/data` - Healthcheck: `redis-cli ping` - `app` servic",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8467818518675583,
+      "maxScore": 0.8467818518675583,
+      "firstRecalledAt": "2026-04-30T01:16:09.584Z",
+      "lastRecalledAt": "2026-04-30T01:16:09.584Z",
+      "queryHashes": [
+        "79bfdae31014"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "embedding",
+        "node.js/express",
+        "real-time",
+        "docker-compose.yml",
+        "7-alpine",
+        "redis-server",
+        "redis-cli",
+        "memoria"
       ]
     }
   }
