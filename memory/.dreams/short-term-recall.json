@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-30T09:16:16.187Z",
+  "updatedAt": "2026-04-30T10:42:45.541Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -76694,6 +76694,100 @@
         "redis-server",
         "redis-cli",
         "memoria"
+      ]
+    },
+    "memory:memory/2026-04-30.md:1:39": {
+      "key": "memory:memory/2026-04-30.md:1:39",
+      "path": "memory/2026-04-30.md",
+      "startLine": 1,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "--- ## 2026-04-30 17:25 — Smooth Progress + Status Sync Deployed ### Subagent Completed (3m39s) - **Task:** memoria-progress-fix - **Model:** MiniMax 2.7 - **Verified:** Build passes, 38/38 tests pass, deployed to Docker ### Changes **1. Status Sync Fix** - `updateJobProgressByBullJobId()` now sets `status = 'processing'` whenever progress is updated - Fixes the stale-state bug where pending jobs showed 70% progress - DB always consistent: `status=processing` when `progress > 0` **2. Timer-Based Smooth Progress** **LLM Reformat step (~15s):** - Before: single jump from 30% → 70% - After: gradual updates every 2 seconds: 30→35→40→45→50→55→60→65→70 **Embedding step (~3-5s):** - Before",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5134608507156372,
+      "maxScore": 0.5134608507156372,
+      "firstRecalledAt": "2026-04-30T09:49:58.754Z",
+      "lastRecalledAt": "2026-04-30T09:49:58.754Z",
+      "queryHashes": [
+        "d83c06d8376d"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "embedding",
+        "memoria-progress-fix",
+        "2.7",
+        "38/38",
+        "stale-state",
+        "timer-based",
+        "3-5s",
+        "smooth"
+      ]
+    },
+    "memory:memory/2026-04-30.md:1:46": {
+      "key": "memory:memory/2026-04-30.md:1:46",
+      "path": "memory/2026-04-30.md",
+      "startLine": 1,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "--- ## 2026-04-30 17:55 — Real-Time Progress Root Cause Fixed ### Root Cause Analysis The progress bar was NOT updating in real-time because: 1. The worker called `updateJobProgressByBullJobId()` which updates PostgreSQL 2. But it NEVER called `job.updateProgress()` (BullMQ's native method) 3. `QueueEvents.on(\"progress\")` ONLY fires when `job.updateProgress()` is called 4. So Socket.IO never emitted progress events 5. The UI only showed progress on page refresh (from DB), not live ### Fix Applied **`src/workers/ingestWorker.ts`:** - Added optional `bullJob` parameter to `processIngestJob()` - Created `reportProgress(step, percent)` helper that: 1. Updates PostgreSQL via `updateJobPro",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.0656665176153184,
+      "maxScore": 0.5419670939445496,
+      "firstRecalledAt": "2026-04-30T10:17:54.025Z",
+      "lastRecalledAt": "2026-04-30T10:18:07.454Z",
+      "queryHashes": [
+        "e6de6924e553",
+        "7086ce628ebf"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "real-time",
+        "job.updateprogress",
+        "queueevents.on",
+        "socket.io",
+        "src/workers/ingestworker.ts",
+        "real",
+        "time",
+        "progress"
+      ]
+    },
+    "memory:memory/2026-04-30.md:119:153": {
+      "key": "memory:memory/2026-04-30.md:119:153",
+      "path": "memory/2026-04-30.md",
+      "startLine": 119,
+      "endLine": 153,
+      "source": "memory",
+      "snippet": "Spawned subagent (`3e1699a9-f046-4958-975a-6d0d7f577bb9`) to research BullMQ progress patterns. It returned daily project notes instead of the research. No worries — I already identified and fixed the real issue: the worker wasn't calling `job.updateProgress()`. --- ## 2026-04-30 17:55 — Real-Time Progress Root Cause Fixed ### Root Cause Analysis The progress bar was NOT updating in real-time because: 1. The worker called `updateJobProgressByBullJobId()` which updates PostgreSQL 2. But it NEVER called `job.updateProgress()` (BullMQ's native method) 3. `QueueEvents.on(\"progress\")` ONLY fires when `job.updateProgress()` is called 4. So Socket.IO never emitted progress events 5. The UI only",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5304807558655739,
+      "maxScore": 0.5304807558655739,
+      "firstRecalledAt": "2026-04-30T10:42:45.541Z",
+      "lastRecalledAt": "2026-04-30T10:42:45.541Z",
+      "queryHashes": [
+        "2935a3287a56"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "job.updateprogress",
+        "real-time",
+        "queueevents.on",
+        "socket.io",
+        "spawned",
+        "3e1699a9",
+        "f046",
+        "975a"
       ]
     }
   }
