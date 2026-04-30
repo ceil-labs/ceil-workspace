@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-28T19:00:00.915Z",
+  "updatedAt": "2026-04-29T23:56:11.936Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -48506,6 +48506,7 @@
         "2026-04-29"
       ],
       "conceptTags": [
+        "candidate",
         "reflections",
         "strong",
         "patterns",
@@ -48541,11 +48542,11 @@
         "go-ahead",
         "nginx-proxy.conf",
         "agent-platform",
-        "possible",
-        "lasting",
-        "truths",
-        "rails",
-        "auth"
+        "0.62",
+        "memory/2026-04-16.md",
+        "486-488",
+        "candidate",
+        "possible"
       ],
       "promotedAt": "2026-04-28T19:00:00.915Z"
     },
@@ -49859,12 +49860,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `assistant` kept surfacing across 240 memories.; confidence: 0.84; evidence: memory/2026-04-10.md:448-451, memory/.dreams/session-corpus/2026-04-14.txt:3-3, memory/.dreams/session-corpus/2026-04-14.txt:4-4; note: reflection",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-22T19:00:00.459Z",
-      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
       "queryHashes": [
         "7b7a9134bc2c"
       ],
@@ -49874,7 +49875,8 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "0.84",
@@ -49895,12 +49897,12 @@
       "source": "memory",
       "snippet": "Reflections: Theme: `user` kept surfacing across 215 memories.; confidence: 0.76; evidence: memory/2026-04-09.md:10-10, memory/.dreams/session-corpus/2026-04-14.txt:1-1, memory/.dreams/session-corpus/2026-04-14.txt:2-2; note: reflection",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-22T19:00:00.459Z",
-      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
       "queryHashes": [
         "7b7a9134bc2c"
       ],
@@ -49910,7 +49912,8 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "0.76",
@@ -49931,12 +49934,12 @@
       "source": "memory",
       "snippet": "Possible Lasting Truths: 9. **If switching back to dev later:** `docker compose -f docker-compose.ghcr.yml down` → restart dev stack as `openclaw` user. ## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: **[2026-04-13 10:11 PM +08]** GHCR production deployment pre",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-22T19:00:00.459Z",
-      "lastRecalledAt": "2026-04-28T19:00:00.915Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
       "queryHashes": [
         "7b7a9134bc2c"
       ],
@@ -49946,7 +49949,8 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-28",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-04-30"
       ],
       "conceptTags": [
         "docker-compose.ghcr.yml",
@@ -55754,19 +55758,22 @@
       "endLine": 376,
       "source": "memory",
       "snippet": "- Candidate: - Candidate: - ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive",
-      "recallCount": 2,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8772149622440337,
-      "maxScore": 0.4513618201017379,
+      "totalScore": 1.8378527909517288,
+      "maxScore": 0.4847767412662506,
       "firstRecalledAt": "2026-04-26T07:11:54.207Z",
-      "lastRecalledAt": "2026-04-26T11:07:27.556Z",
+      "lastRecalledAt": "2026-04-29T11:48:08.215Z",
       "queryHashes": [
         "12bb0281b38f",
-        "02712bbd58fd"
+        "02712bbd58fd",
+        "dcc07d58c597",
+        "5ae0faba09b7"
       ],
       "recallDays": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-29"
       ],
       "conceptTags": [
         "end-to-end",
@@ -56029,7 +56036,7 @@
         "typescript/express",
         "pdf-parse",
         "md/text",
-        "scope"
+        "gemini-embedding-2"
       ],
       "promotedAt": "2026-04-28T19:00:00.915Z"
     },
@@ -56103,18 +56110,20 @@
       "source": "memory",
       "snippet": "2026-04-26 16:00 — Scope Narrowed: **Victor's directive:** Focus on ingestion + rendering only. No wiki, no compaction, no L2.",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-26T19:00:13.858Z",
-      "lastRecalledAt": "2026-04-26T19:00:13.858Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
       "recallDays": [
         "2026-04-27",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-30",
+        "2026-04-29"
       ],
       "conceptTags": [
         "scope",
@@ -56135,18 +56144,20 @@
       "source": "memory",
       "snippet": "2026-04-26 16:00 — Scope Narrowed: **Scoped deliverable:**",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-26T19:00:13.858Z",
-      "lastRecalledAt": "2026-04-26T19:00:13.858Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
       "recallDays": [
         "2026-04-27",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-30",
+        "2026-04-29"
       ],
       "conceptTags": [
         "scope",
@@ -56163,18 +56174,20 @@
       "source": "memory",
       "snippet": "2026-04-26 16:00 — Scope Narrowed: Ingest: PDF, MD, Text, URL; Output per chunk: Markdown file + Vector embedding; Render: View ingested content (list + detail)",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-26T19:00:13.858Z",
-      "lastRecalledAt": "2026-04-26T19:00:13.858Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
       "recallDays": [
         "2026-04-27",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-30",
+        "2026-04-29"
       ],
       "conceptTags": [
         "embedding",
@@ -56195,18 +56208,20 @@
       "source": "memory",
       "snippet": "2026-04-26 16:00 — Scope Narrowed: **Deferred:** L2 wiki, LLM compilation, compaction, multi-agent scoping, Redis queue.",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-26T19:00:13.858Z",
-      "lastRecalledAt": "2026-04-26T19:00:13.858Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
       "recallDays": [
         "2026-04-27",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-30",
+        "2026-04-29"
       ],
       "conceptTags": [
         "multi-agent",
@@ -56227,18 +56242,20 @@
       "source": "memory",
       "snippet": "2026-04-26 19:07 — karpathy-ingest Status Capture: **Project:** https://github.com/ceil-labs/karpathy-ingest **Server:** Running at `https://srv1405873.tailcd23a1.ts.net:8444`",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-26T19:00:13.858Z",
-      "lastRecalledAt": "2026-04-26T19:00:13.858Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
       "recallDays": [
         "2026-04-27",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-30",
+        "2026-04-29"
       ],
       "conceptTags": [
         "karpathy-ingest",
@@ -56259,18 +56276,20 @@
       "source": "memory",
       "snippet": "What's Built: Dockerized TypeScript/Express API with PostgreSQL + pgvector; Extractors: PDF (pdf-parse), MD/Text (passthrough), URL (cheerio); Chunker: Recursive character splitter, ~400 tokens, 15% overlap; Embedding: gemini-embedding-2 @ 768 dims via **batchEmbedContents API**",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-26T19:00:13.858Z",
-      "lastRecalledAt": "2026-04-26T19:00:13.858Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
       "recallDays": [
         "2026-04-27",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-30",
+        "2026-04-29"
       ],
       "conceptTags": [
         "embedding",
@@ -56291,18 +56310,20 @@
       "source": "memory",
       "snippet": "What's Built: LLM reformat: gemini-2.5-flash (PDFs always, optional for others); Search: Semantic only (cosine similarity via pgvector `<=>` operator)",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-26T19:00:13.858Z",
-      "lastRecalledAt": "2026-04-26T19:00:13.858Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
       "recallDays": [
         "2026-04-27",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-30",
+        "2026-04-29"
       ],
       "conceptTags": [
         "gemini-2.5-flash",
@@ -56323,18 +56344,20 @@
       "source": "memory",
       "snippet": "API Endpoints: | Endpoint | Method | Description | |----------|--------|-------------| | `/health` | GET | Health check | | `/ingest` | POST | File upload or URL ingestion |",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-26T19:00:13.858Z",
-      "lastRecalledAt": "2026-04-26T19:00:13.858Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
       "recallDays": [
         "2026-04-27",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-04-30",
+        "2026-04-29"
       ],
       "conceptTags": [
         "api",
@@ -61936,14 +61959,14 @@
       "startLine": 300,
       "endLine": 356,
       "source": "memory",
-      "snippet": "- Materialized view `chunk_stats` for document statistics **UI:** Labels updated from \"Keyword\" to \"BM25-like\" **Commit:** `2ea1c22` **Pushed to GitHub:** `master` up to `2ea1c22` ### Usage ```bash # Deploy docker compose down docker compose up -d --build # Test via API curl -X POST http://localhost:3000/api/search \\ -H \"Content-Type: application/json\" \\ -d '{\"query\": \"pgvector concurrency\", \"searchType\": \"hybrid\", \"ftsWeight\": 0.5, \"limit\": 5}' ``` **Pushed to GitHub:** `master` up to `31bc484` --- ## 2026-04-27 19:20 — True BM25 Extension Research **Victor's ask:** Find true BM25 PostgreSQL extensions instead of approximations. **Research findings:** ### 1. timescale/pg_te",
-      "recallCount": 7,
+      "snippet": "- Materialized view `chunk_stats` for document statistics **UI:** Labels updated from \"Keyword\" to \"BM25-like\" **Commit:** `2ea1c22` **Pushed to GitHub:** `master` up to `2ea1c22` ### Usage ```bash # Deploy docker compose down docker compose up -d --build # Test via API curl -X POST http://localhost:3000/api/search \\ -H \"Content-Type: application/json\" \\ -d '{\"query\": \"pgvector concurrency\", \"searchType\": \"hybrid\", \"ftsWeight\": 0.5, \"limit\": 5}' ``` **Pushed to GitHub:** `master` up to `31bc484` --- ## 2026-04-27 19:20 — True BM25 Extension Research **Victor's ask:** Find true BM25 PostgreSQL extensions instead of approximations. **Research findings:** ### 1. timescale/pg_textsearch - True BM25 with IDF, k1, b parameters - **Requirements:** PostgreSQL 17+ (build from source), shared_preload_libraries - **Status:** ❌ Unavailable — we run PostgreSQL 16 ### 2. tensorchord/VectorChord-bm25 - True BM25 with Block-WeakAnd for scale - **Requirements:** Custom `tensorchord/vchord-suite` Docker image (not pgvector) - **Status:** ❌ Unavailable — requires switching base image entirely **Conclusion:** No true BM25 extension works with current PG16 + pgvector setup. --- ## 2026-04-27 19:25 — Revert to PostgreSQL FTS **Decision:** Revert to original implementation and label accurately. **Changes:** - Removed `search_bm25()` PostgreSQL function - Removed `migrations/002_add_bm25.sql` - FTS mode back to inline `ts_rank_cd` SQL (cover density ranking) - Hybrid mode back to `ts_rank_cd` for consistency - UI labels updated: \"BM25-like\" → \"Keyword\" (accurate)",
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.3539513260126106,
+      "totalScore": 3.8415224820375435,
       "maxScore": 0.4998289048671722,
       "firstRecalledAt": "2026-04-27T14:47:56.817Z",
-      "lastRecalledAt": "2026-04-28T08:33:16.686Z",
+      "lastRecalledAt": "2026-04-29T11:48:33.983Z",
       "queryHashes": [
         "d30099fc22f1",
         "6ad8c465d737",
@@ -61951,11 +61974,13 @@
         "d24aedc96d08",
         "6635fcc68609",
         "0d3ec84ff792",
-        "21a3ab3bcd82"
+        "21a3ab3bcd82",
+        "34ffcef0ce17"
       ],
       "recallDays": [
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-04-29"
       ],
       "conceptTags": [
         "chunk-stats",
@@ -61966,7 +61991,8 @@
         "0.5",
         "timescale/pg-te",
         "materialized"
-      ]
+      ],
+      "promotedAt": "2026-04-29T19:00:00.919Z"
     },
     "memory:memory/2026-04-17.md:443:451": {
       "key": "memory:memory/2026-04-17.md:443:451",
@@ -72367,6 +72393,4029 @@
         "update",
         "eslint",
         "config"
+      ]
+    },
+    "memory:memory/2026-04-28.md:1:38": {
+      "key": "memory:memory/2026-04-28.md:1:38",
+      "path": "memory/2026-04-28.md",
+      "startLine": 1,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "--- ## 2026-04-28 17:30 — Project Rename: karpathy-ingest → Memoria **Victor's decision:** Rename to \"Memoria\" — better reflects the knowledge system vision beyond just ingestion. **Changes made:** 1. **GitHub repo:** Settings → Rename to `memoria` 2. **Local folder:** `~/.openclaw/projects/karpathy-ingest` → `memoria` 3. **Git remote:** Updated to `github.com/ceil-labs/memoria.git` 4. **Codebase:** All references updated (package.json, UI nav, user-agent, logs, test DB names) **Files changed:** 8 files across README, package.json, docker-compose, UI, services, tests **README updated with:** - Inspiration section crediting Karpathy's LLM Wiki - Divergence section documenting how we dif",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.9533152446150779,
+      "maxScore": 0.5538501366972923,
+      "firstRecalledAt": "2026-04-29T08:20:12.886Z",
+      "lastRecalledAt": "2026-04-29T23:56:11.936Z",
+      "queryHashes": [
+        "f15064cce64e",
+        "386ff80fe486",
+        "280f14c314ab",
+        "e77aca9c8d62"
+      ],
+      "recallDays": [
+        "2026-04-29",
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "github.com/ceil-labs/memoria.git",
+        "package.json",
+        "user-agent",
+        "docker-compose",
+        "project",
+        "rename",
+        "karpathy"
+      ]
+    },
+    "memory:memory/2026-04-26.md:35:68": {
+      "key": "memory:memory/2026-04-26.md:35:68",
+      "path": "memory/2026-04-26.md",
+      "startLine": 35,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "| `/sources` | GET | List all sources with chunk count | | `/sources/:id` | GET | Source metadata | | `/sources/:id/chunks` | GET | List chunks for source | | `/chunks/:id` | GET | Single chunk detail | | `/search` | POST | Semantic search over chunks | | `/data/raw/:id/full.md` | GET | Raw source markdown | | `/data/raw/:id/processed.md` | GET | LLM-reformatted markdown | | `/data/chunks/:id/001.md` | GET | Chunk markdown file | ### Current Data - 1 source ingested: Victor's resume PDF - 7 chunks, LLM-processed - Source ID: `c8f55aec-ca00-49af-86a4-4dcb6b107e7b` - Cleaned up 5 bad test ingests from debugging ### Recent Fixes - Batch embedding: Content objects required (not plain strings)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4682351619005203,
+      "maxScore": 0.4682351619005203,
+      "firstRecalledAt": "2026-04-29T10:40:49.459Z",
+      "lastRecalledAt": "2026-04-29T10:40:49.459Z",
+      "queryHashes": [
+        "5a3753240349"
+      ],
+      "recallDays": [
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "embedding",
+        "id/chunks",
+        "data/raw",
+        "id/full.md",
+        "id/processed.md",
+        "llm-reformatted",
+        "data/chunks",
+        "id/001.md"
+      ]
+    },
+    "memory:memory/2026-04-29.md:73:110": {
+      "key": "memory:memory/2026-04-29.md:73:110",
+      "path": "memory/2026-04-29.md",
+      "startLine": 73,
+      "endLine": 110,
+      "source": "memory",
+      "snippet": "WebSocket broadcasts: progress %, step names, errors ``` **New features needed:** 1. **Jobs/Queue page** (`/jobs`) — List all ingest jobs with status 2. **Job detail** (`/jobs/:id`) — Real-time progress via WebSocket 3. **Nav link** — \"Queue\" in top navigation 4. **Ingest page update** — After submit, show \"View in Queue →\" link (new tab) **Database schema addition:** ```sql CREATE TABLE jobs ( id UUID PRIMARY KEY DEFAULT gen_random_uuid(), source_id UUID, status VARCHAR(20) NOT NULL, -- queued|running|completed|failed progress INT DEFAULT 0, -- 0-100 current_step VARCHAR(50), -- extract|reformat|chunk|embed|store error TEXT, created_at TIMESTAMP DEFAULT NOW(), updated_at T",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5115611702203751,
+      "maxScore": 0.5115611702203751,
+      "firstRecalledAt": "2026-04-29T11:48:08.215Z",
+      "lastRecalledAt": "2026-04-29T11:48:08.215Z",
+      "queryHashes": [
+        "5ae0faba09b7"
+      ],
+      "recallDays": [
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "jobs/queue",
+        "real-time",
+        "gen-random-uuid",
+        "source-id",
+        "0-100",
+        "current-step",
+        "created-at",
+        "updated-at"
+      ]
+    },
+    "memory:memory/2026-04-29.md:1:48": {
+      "key": "memory:memory/2026-04-29.md:1:48",
+      "path": "memory/2026-04-29.md",
+      "startLine": 1,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "# Session Log — 2026-04-29 ## 2026-04-29 00:00 — Session Start (continuation from late 04-28) **Context:** Memoria project (formerly karpathy-ingest) — knowledge system with ingest, search, render. --- ## 2026-04-29 07:30 — Settings Page Implementation **Victor's asks:** 1. Fix ingest 404 error (LLM model name) 2. Add settings page with configurable models 3. Fix database URL display 4. Organize settings UI **Issues found:** - `gemini-1.5-flash-latest` causes 404 — Google deprecated 1.5 versions - `gemini-2.5-flash` works but sometimes 503 (capacity) - Database URL shows URL-encoded `%E2%80%A2` (encoding issue) **Model name research (direct API testing):** | Model | Result | |-------",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5251824662089347,
+      "maxScore": 0.5251824662089347,
+      "firstRecalledAt": "2026-04-29T11:48:15.928Z",
+      "lastRecalledAt": "2026-04-29T11:48:15.928Z",
+      "queryHashes": [
+        "c761a0449623"
+      ],
+      "recallDays": [
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "04-28",
+        "karpathy-ingest",
+        "gemini-1.5-flash-latest",
+        "1.5",
+        "gemini-2.5-flash",
+        "url-encoded",
+        "log",
+        "start"
+      ]
+    },
+    "memory:memory/2026-04-29.md:5:5": {
+      "key": "memory:memory/2026-04-29.md:5:5",
+      "path": "memory/2026-04-29.md",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "2026-04-29 00:00 — Session Start (continuation from late 04-28): **Context:** Memoria project (formerly karpathy-ingest) — knowledge system with ingest, search, render.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "04-28",
+        "karpathy-ingest",
+        "start",
+        "continuation",
+        "late",
+        "context",
+        "memoria",
+        "project"
+      ]
+    },
+    "memory:memory/2026-04-29.md:11:11": {
+      "key": "memory:memory/2026-04-29.md:11:11",
+      "path": "memory/2026-04-29.md",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "2026-04-29 07:30 — Settings Page Implementation: **Victor's asks:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "settings",
+        "page",
+        "implementation",
+        "victor's",
+        "asks"
+      ]
+    },
+    "memory:memory/2026-04-29.md:12:15": {
+      "key": "memory:memory/2026-04-29.md:12:15",
+      "path": "memory/2026-04-29.md",
+      "startLine": 12,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "2026-04-29 07:30 — Settings Page Implementation: Fix ingest 404 error (LLM model name); Add settings page with configurable models; Fix database URL display; Organize settings UI",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "settings",
+        "page",
+        "implementation",
+        "fix",
+        "ingest",
+        "error",
+        "llm",
+        "model"
+      ]
+    },
+    "memory:memory/2026-04-29.md:17:17": {
+      "key": "memory:memory/2026-04-29.md:17:17",
+      "path": "memory/2026-04-29.md",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "2026-04-29 07:30 — Settings Page Implementation: **Issues found:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "settings",
+        "page",
+        "implementation",
+        "issues",
+        "found"
+      ]
+    },
+    "memory:memory/2026-04-29.md:18:20": {
+      "key": "memory:memory/2026-04-29.md:18:20",
+      "path": "memory/2026-04-29.md",
+      "startLine": 18,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "2026-04-29 07:30 — Settings Page Implementation: `gemini-1.5-flash-latest` causes 404 — Google deprecated 1.5 versions; `gemini-2.5-flash` works but sometimes 503 (capacity); Database URL shows URL-encoded `%E2%80%A2` (encoding issue)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "gemini-1.5-flash-latest",
+        "1.5",
+        "gemini-2.5-flash",
+        "url-encoded",
+        "settings",
+        "page",
+        "implementation",
+        "gemini"
+      ]
+    },
+    "memory:memory/2026-04-29.md:22:22": {
+      "key": "memory:memory/2026-04-29.md:22:22",
+      "path": "memory/2026-04-29.md",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "2026-04-29 07:30 — Settings Page Implementation: **Model name research (direct API testing):**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "settings",
+        "page",
+        "implementation",
+        "model",
+        "name",
+        "research",
+        "direct",
+        "api"
+      ]
+    },
+    "memory:memory/2026-04-29.md:24:27": {
+      "key": "memory:memory/2026-04-29.md:24:27",
+      "path": "memory/2026-04-29.md",
+      "startLine": 24,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "2026-04-29 07:30 — Settings Page Implementation: | Model | Result | |-------|--------| | `gemini-1.5-flash` | ❌ 404 | | `gemini-1.5-flash-latest` | ❌ 404 |",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "gemini-1.5-flash",
+        "gemini-1.5-flash-latest",
+        "settings",
+        "page",
+        "implementation",
+        "model",
+        "result",
+        "gemini"
+      ]
+    },
+    "memory:memory/2026-04-29.md:28:31": {
+      "key": "memory:memory/2026-04-29.md:28:31",
+      "path": "memory/2026-04-29.md",
+      "startLine": 28,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "2026-04-29 07:30 — Settings Page Implementation: | `gemini-flash-latest` | ✅ Works (alias) | | `gemini-2.5-flash` | ✅ Works | | `gemini-pro-latest` | ✅ Works (alias) | | `gemini-2.5-pro` | ✅ Works |",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "gemini-flash-latest",
+        "gemini-2.5-flash",
+        "gemini-pro-latest",
+        "gemini-2.5-pro",
+        "settings",
+        "page",
+        "implementation",
+        "gemini"
+      ]
+    },
+    "memory:memory/2026-04-29.md:33:33": {
+      "key": "memory:memory/2026-04-29.md:33:33",
+      "path": "memory/2026-04-29.md",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "2026-04-29 07:30 — Settings Page Implementation: **Key finding:** Google removed `gemini-1.5-*` models from API. Only aliases (`-latest`) and `2.5` versions work.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "gemini-1.5",
+        "2.5",
+        "settings",
+        "page",
+        "implementation",
+        "key",
+        "finding",
+        "google"
+      ]
+    },
+    "memory:memory/2026-04-29.md:35:35": {
+      "key": "memory:memory/2026-04-29.md:35:35",
+      "path": "memory/2026-04-29.md",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "2026-04-29 07:30 — Settings Page Implementation: **Files changed:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "settings",
+        "page",
+        "implementation",
+        "changed"
+      ]
+    },
+    "memory:memory/2026-04-29.md:36:39": {
+      "key": "memory:memory/2026-04-29.md:36:39",
+      "path": "memory/2026-04-29.md",
+      "startLine": 36,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "2026-04-29 07:30 — Settings Page Implementation: `src/config/settings.ts` — Settings store with env fallbacks; `src/routes/settings.ts` — GET/POST `/api/settings`; `src/services/generate.ts` — Read model from settings; `src/services/embedding.ts` — Read key + model from settings",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "embedding",
+        "src/config/settings.ts",
+        "src/routes/settings.ts",
+        "get/post",
+        "api/settings",
+        "src/services/generate.ts",
+        "src/services/embedding.ts",
+        "settings"
+      ]
+    },
+    "memory:memory/2026-04-29.md:40:43": {
+      "key": "memory:memory/2026-04-29.md:40:43",
+      "path": "memory/2026-04-29.md",
+      "startLine": 40,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "2026-04-29 07:30 — Settings Page Implementation: `ui/src/pages/SettingsPage.tsx` — Settings form with sections; `ui/src/App.tsx` — Settings nav link; `ui/src/api.ts` — Settings API wrappers; `.env.example` — Added LLM_MODEL, LLM_BASE_URL, EMBED_MODEL, EMBED_DIM",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "ui/src/pages/settingspage.tsx",
+        "ui/src/app.tsx",
+        "ui/src/api.ts",
+        "env.example",
+        "llm-model",
+        "llm-base-url",
+        "embed-model",
+        "embed-dim"
+      ]
+    },
+    "memory:memory/2026-04-29.md:45:45": {
+      "key": "memory:memory/2026-04-29.md:45:45",
+      "path": "memory/2026-04-29.md",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "2026-04-29 07:30 — Settings Page Implementation: **Commit:** Multiple commits up to `0940ce9`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "settings",
+        "page",
+        "implementation",
+        "commit",
+        "multiple",
+        "commits",
+        "0940ce9"
+      ]
+    },
+    "memory:memory/2026-04-29.md:51:51": {
+      "key": "memory:memory/2026-04-29.md:51:51",
+      "path": "memory/2026-04-29.md",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "2026-04-29 15:30 — Project Rename: karpathy-ingest → Memoria: **Completed earlier (captured now):**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "project",
+        "rename",
+        "karpathy",
+        "ingest",
+        "memoria",
+        "completed",
+        "earlier"
+      ]
+    },
+    "memory:memory/2026-04-29.md:52:55": {
+      "key": "memory:memory/2026-04-29.md:52:55",
+      "path": "memory/2026-04-29.md",
+      "startLine": 52,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "2026-04-29 15:30 — Project Rename: karpathy-ingest → Memoria: GitHub repo renamed to `memoria`; Local folder renamed to `memoria`; Git remote updated; All code references updated (package.json, UI nav, user-agent, logs, test DB names)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "package.json",
+        "user-agent",
+        "project",
+        "rename",
+        "karpathy",
+        "ingest",
+        "memoria"
+      ]
+    },
+    "memory:memory/2026-04-29.md:56:57": {
+      "key": "memory:memory/2026-04-29.md:56:57",
+      "path": "memory/2026-04-29.md",
+      "startLine": 56,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "2026-04-29 15:30 — Project Rename: karpathy-ingest → Memoria: README rewritten with Karpathy inspiration + divergence documentation; README positioned as knowledge system, not just ingestion",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "project",
+        "rename",
+        "karpathy",
+        "ingest",
+        "memoria",
+        "readme",
+        "rewritten"
+      ]
+    },
+    "memory:memory/2026-04-29.md:59:59": {
+      "key": "memory:memory/2026-04-29.md:59:59",
+      "path": "memory/2026-04-29.md",
+      "startLine": 59,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "2026-04-29 15:30 — Project Rename: karpathy-ingest → Memoria: **Commit:** `5ad23f7`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "karpathy-ingest",
+        "project",
+        "rename",
+        "karpathy",
+        "ingest",
+        "memoria",
+        "commit",
+        "5ad23f7"
+      ]
+    },
+    "memory:memory/2026-04-29.md:65:65": {
+      "key": "memory:memory/2026-04-29.md:65:65",
+      "path": "memory/2026-04-29.md",
+      "startLine": 65,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — BM25 Search Failure Analysis & Fix: **Victor's report:** BM25 and Hybrid search showing \"Failed query\" error.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "bm25",
+        "failure",
+        "analysis",
+        "fix",
+        "victor's",
+        "report",
+        "hybrid",
+        "showing"
+      ]
+    },
+    "memory:memory/2026-04-29.md:67:67": {
+      "key": "memory:memory/2026-04-29.md:67:67",
+      "path": "memory/2026-04-29.md",
+      "startLine": 67,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — BM25 Search Failure Analysis & Fix: **Root cause:** `pg_textsearch` extension not installed in new database.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "pg-textsearch",
+        "bm25",
+        "failure",
+        "analysis",
+        "fix",
+        "root",
+        "cause",
+        "extension"
+      ]
+    },
+    "memory:memory/2026-04-29.md:69:69": {
+      "key": "memory:memory/2026-04-29.md:69:69",
+      "path": "memory/2026-04-29.md",
+      "startLine": 69,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — BM25 Search Failure Analysis & Fix: **What happened:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "bm25",
+        "failure",
+        "analysis",
+        "fix",
+        "what",
+        "happened"
+      ]
+    },
+    "memory:memory/2026-04-29.md:70:73": {
+      "key": "memory:memory/2026-04-29.md:70:73",
+      "path": "memory/2026-04-29.md",
+      "startLine": 70,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — BM25 Search Failure Analysis & Fix: Recreated Docker containers with new `memoria` volume (fresh database); `init.sql` created basic schema but **did NOT include** `CREATE EXTENSION pg_textsearch`; BM25 index `idx_chunks_bm25` was never built; `to_bm25query()`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "init.sql",
+        "pg-textsearch",
+        "idx-chunks-bm25",
+        "to-bm25query",
+        "bm25",
+        "failure",
+        "analysis",
+        "fix"
+      ]
+    },
+    "memory:memory/2026-04-29.md:75:75": {
+      "key": "memory:memory/2026-04-29.md:75:75",
+      "path": "memory/2026-04-29.md",
+      "startLine": 75,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — BM25 Search Failure Analysis & Fix: **Error message:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "bm25",
+        "failure",
+        "analysis",
+        "fix",
+        "error",
+        "message"
+      ]
+    },
+    "memory:memory/2026-04-29.md:77:78": {
+      "key": "memory:memory/2026-04-29.md:77:78",
+      "path": "memory/2026-04-29.md",
+      "startLine": 77,
+      "endLine": 78,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — BM25 Search Failure Analysis & Fix: Failed query: SELECT ... ABS(c.content <@> to_bm25query($1, 'idx_chunks_bm25')) ... params: vpn,vpn,5",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "c.content",
+        "to-bm25query",
+        "idx-chunks-bm25",
+        "bm25",
+        "failure",
+        "analysis",
+        "fix",
+        "failed"
+      ]
+    },
+    "memory:memory/2026-04-29.md:81:81": {
+      "key": "memory:memory/2026-04-29.md:81:81",
+      "path": "memory/2026-04-29.md",
+      "startLine": 81,
+      "endLine": 81,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — BM25 Search Failure Analysis & Fix: **Fix applied:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "bm25",
+        "failure",
+        "analysis",
+        "fix",
+        "applied"
+      ]
+    },
+    "memory:memory/2026-04-29.md:82:84": {
+      "key": "memory:memory/2026-04-29.md:82:84",
+      "path": "memory/2026-04-29.md",
+      "startLine": 82,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — BM25 Search Failure Analysis & Fix: Updated `init.sql` to include `CREATE EXTENSION pg_textsearch` and `CREATE INDEX idx_chunks_bm25`; Ran missing SQL on current database to fix immediately; Verified BM25 and Hybrid search working (tested with \"vpn\" query)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "init.sql",
+        "pg-textsearch",
+        "idx-chunks-bm25",
+        "bm25",
+        "failure",
+        "analysis",
+        "fix",
+        "updated"
+      ]
+    },
+    "memory:memory/2026-04-29.md:86:86": {
+      "key": "memory:memory/2026-04-29.md:86:86",
+      "path": "memory/2026-04-29.md",
+      "startLine": 86,
+      "endLine": 86,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — BM25 Search Failure Analysis & Fix: **Test gap identified:** No test verifies BM25 search after database recreation. Need test that:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "bm25",
+        "failure",
+        "analysis",
+        "fix",
+        "test",
+        "gap",
+        "identified",
+        "verifies"
+      ]
+    },
+    "memory:memory/2026-04-29.md:87:89": {
+      "key": "memory:memory/2026-04-29.md:87:89",
+      "path": "memory/2026-04-29.md",
+      "startLine": 87,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — BM25 Search Failure Analysis & Fix: Creates a chunk with content; Runs BM25 search (`searchType: \"fts\"`); Verifies results returned (not error)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "bm25",
+        "failure",
+        "analysis",
+        "fix",
+        "creates",
+        "chunk",
+        "content",
+        "runs"
+      ]
+    },
+    "memory:memory/2026-04-29.md:91:91": {
+      "key": "memory:memory/2026-04-29.md:91:91",
+      "path": "memory/2026-04-29.md",
+      "startLine": 91,
+      "endLine": 91,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — BM25 Search Failure Analysis & Fix: **Commit:** `init.sql` updated with BM25 setup",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "init.sql",
+        "bm25",
+        "failure",
+        "analysis",
+        "fix",
+        "commit",
+        "updated",
+        "setup"
+      ]
+    },
+    "memory:memory/2026-04-29.md:97:97": {
+      "key": "memory:memory/2026-04-29.md:97:97",
+      "path": "memory/2026-04-29.md",
+      "startLine": 97,
+      "endLine": 97,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — Ingest Architecture Decision: Background Jobs: **Victor's ask:** Make ingest async with background jobs + WebSocket progress tracking.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "ingest",
+        "architecture",
+        "decision",
+        "background",
+        "jobs",
+        "victor's",
+        "ask",
+        "async"
+      ]
+    },
+    "memory:memory/2026-04-29.md:99:99": {
+      "key": "memory:memory/2026-04-29.md:99:99",
+      "path": "memory/2026-04-29.md",
+      "startLine": 99,
+      "endLine": 99,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — Ingest Architecture Decision: Background Jobs: **Current problem:** Ingest is synchronous. User must keep page open. Large PDFs take 10-20s. Closing tab cancels request, leaves partial data.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "10-20s",
+        "ingest",
+        "architecture",
+        "decision",
+        "background",
+        "jobs",
+        "current",
+        "problem"
+      ]
+    },
+    "memory:memory/2026-04-29.md:101:101": {
+      "key": "memory:memory/2026-04-29.md:101:101",
+      "path": "memory/2026-04-29.md",
+      "startLine": 101,
+      "endLine": 101,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — Ingest Architecture Decision: Background Jobs: **Proposed architecture:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "ingest",
+        "architecture",
+        "decision",
+        "background",
+        "jobs",
+        "proposed"
+      ]
+    },
+    "memory:memory/2026-04-29.md:103:105": {
+      "key": "memory:memory/2026-04-29.md:103:105",
+      "path": "memory/2026-04-29.md",
+      "startLine": 103,
+      "endLine": 105,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — Ingest Architecture Decision: Background Jobs: POST /api/ingest → enqueue job → return jobId immediately (200ms) Background worker processes: extract → LLM reformat → chunk → embed → store WebSocket broadcasts: progress %, step names, errors",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "api/ingest",
+        "ingest",
+        "architecture",
+        "decision",
+        "background",
+        "jobs",
+        "post",
+        "api"
+      ]
+    },
+    "memory:memory/2026-04-29.md:108:108": {
+      "key": "memory:memory/2026-04-29.md:108:108",
+      "path": "memory/2026-04-29.md",
+      "startLine": 108,
+      "endLine": 108,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — Ingest Architecture Decision: Background Jobs: **New features needed:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "ingest",
+        "architecture",
+        "decision",
+        "background",
+        "jobs",
+        "new",
+        "features",
+        "needed"
+      ]
+    },
+    "memory:memory/2026-04-29.md:109:112": {
+      "key": "memory:memory/2026-04-29.md:109:112",
+      "path": "memory/2026-04-29.md",
+      "startLine": 109,
+      "endLine": 112,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — Ingest Architecture Decision: Background Jobs: **Jobs/Queue page** (`/jobs`) — List all ingest jobs with status; **Job detail** (`/jobs/:id`) — Real-time progress via WebSocket; **Nav link** — \"Queue\" in top navigation; **Ingest page update** — After submit, sh",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "jobs/queue",
+        "real-time",
+        "ingest",
+        "architecture",
+        "decision",
+        "background",
+        "jobs",
+        "queue"
+      ]
+    },
+    "memory:memory/2026-04-29.md:114:114": {
+      "key": "memory:memory/2026-04-29.md:114:114",
+      "path": "memory/2026-04-29.md",
+      "startLine": 114,
+      "endLine": 114,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — Ingest Architecture Decision: Background Jobs: **Database schema addition:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "ingest",
+        "architecture",
+        "decision",
+        "background",
+        "jobs",
+        "database",
+        "schema",
+        "addition"
+      ]
+    },
+    "memory:memory/2026-04-29.md:116:119": {
+      "key": "memory:memory/2026-04-29.md:116:119",
+      "path": "memory/2026-04-29.md",
+      "startLine": 116,
+      "endLine": 119,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — Ingest Architecture Decision: Background Jobs: CREATE TABLE jobs ( id UUID PRIMARY KEY DEFAULT gen_random_uuid(), source_id UUID, status VARCHAR(20) NOT NULL, -- queued|running|completed|failed",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "gen-random-uuid",
+        "source-id",
+        "ingest",
+        "architecture",
+        "decision",
+        "background",
+        "jobs",
+        "create"
+      ]
+    },
+    "memory:memory/2026-04-29.md:120:123": {
+      "key": "memory:memory/2026-04-29.md:120:123",
+      "path": "memory/2026-04-29.md",
+      "startLine": 120,
+      "endLine": 123,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — Ingest Architecture Decision: Background Jobs: progress INT DEFAULT 0, -- 0-100 current_step VARCHAR(50), -- extract|reformat|chunk|embed|store error TEXT, created_at TIMESTAMP DEFAULT NOW(),",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "0-100",
+        "current-step",
+        "created-at",
+        "ingest",
+        "architecture",
+        "decision",
+        "background",
+        "jobs"
+      ]
+    },
+    "memory:memory/2026-04-29.md:124:124": {
+      "key": "memory:memory/2026-04-29.md:124:124",
+      "path": "memory/2026-04-29.md",
+      "startLine": 124,
+      "endLine": 124,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — Ingest Architecture Decision: Background Jobs: updated_at TIMESTAMP DEFAULT NOW()",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "updated-at",
+        "ingest",
+        "architecture",
+        "decision",
+        "background",
+        "jobs",
+        "timestamp",
+        "now"
+      ]
+    },
+    "memory:memory/2026-04-29.md:128:128": {
+      "key": "memory:memory/2026-04-29.md:128:128",
+      "path": "memory/2026-04-29.md",
+      "startLine": 128,
+      "endLine": 128,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — Ingest Architecture Decision: Background Jobs: **WebSocket events:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "ingest",
+        "architecture",
+        "decision",
+        "background",
+        "jobs",
+        "websocket",
+        "events"
+      ]
+    },
+    "memory:memory/2026-04-29.md:129:132": {
+      "key": "memory:memory/2026-04-29.md:129:132",
+      "path": "memory/2026-04-29.md",
+      "startLine": 129,
+      "endLine": 132,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — Ingest Architecture Decision: Background Jobs: `job:created` — New job added to queue; `job:progress` — `{ jobId, step, percent }`; `job:completed` — Done, includes sourceId link; `job:failed` — Error details",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "ingest",
+        "architecture",
+        "decision",
+        "background",
+        "jobs",
+        "job:created",
+        "new",
+        "job"
+      ]
+    },
+    "memory:memory/2026-04-29.md:134:134": {
+      "key": "memory:memory/2026-04-29.md:134:134",
+      "path": "memory/2026-04-29.md",
+      "startLine": 134,
+      "endLine": 134,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — Ingest Architecture Decision: Background Jobs: **Worker implementation:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "ingest",
+        "architecture",
+        "decision",
+        "background",
+        "jobs",
+        "worker",
+        "implementation"
+      ]
+    },
+    "memory:memory/2026-04-29.md:135:138": {
+      "key": "memory:memory/2026-04-29.md:135:138",
+      "path": "memory/2026-04-29.md",
+      "startLine": 135,
+      "endLine": 138,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — Ingest Architecture Decision: Background Jobs: In-memory job queue for MVP (array); Single worker process (setInterval loop); Process jobs sequentially (one at a time); Each step updates progress in DB + emits WebSocket event",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "in-memory",
+        "ingest",
+        "architecture",
+        "decision",
+        "background",
+        "jobs",
+        "job",
+        "queue"
+      ]
+    },
+    "memory:memory/2026-04-29.md:140:140": {
+      "key": "memory:memory/2026-04-29.md:140:140",
+      "path": "memory/2026-04-29.md",
+      "startLine": 140,
+      "endLine": 140,
+      "source": "memory",
+      "snippet": "2026-04-29 19:45 — Ingest Architecture Decision: Background Jobs: **Next session:** Implement background jobs + WebSocket queue page.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "312dd0eab707"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "ingest",
+        "architecture",
+        "decision",
+        "background",
+        "jobs",
+        "implement",
+        "websocket",
+        "queue"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:78:78": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:78:78",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 78,
+      "endLine": 78,
+      "source": "memory",
+      "snippet": "Assistant: `/search` | Query input, results with similarity scores, source links | --- ## Open Decisions 1. **Should Vite proxy API calls in dev?** (`/api/*` → `localhost:3000`) — cleaner than CORS 2. **Should the UI package.json be separate or monorepo-style?** Separate is clean",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "package.json",
+        "monorepo-style",
+        "query",
+        "input",
+        "results",
+        "similarity",
+        "scores",
+        "source"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:79:79": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:79:79",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 79,
+      "endLine": 79,
+      "source": "memory",
+      "snippet": "User: YOu can decide on the open decisions. Go with what's best and you're more familiar with. Proceed",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "can",
+        "decide",
+        "open",
+        "decisions",
+        "what's",
+        "best",
+        "you're",
+        "familiar"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:80:80": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:80:80",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 80,
+      "endLine": 80,
+      "source": "memory",
+      "snippet": "Assistant: Done. Committed as `9c7a040` — UI is built and committed. **Current status:** - `ui/` directory with full React app (ingest, sources, search pages) - `npm run build` in `ui/` produces static files to `ui/dist/` - Express serves those files in production (not in test mo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "ui/dist",
+        "done",
+        "committed",
+        "9c7a040",
+        "built",
+        "current",
+        "status",
+        "directory"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:81:81": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:81:81",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 81,
+      "endLine": 81,
+      "source": "memory",
+      "snippet": "User: An async command completion event was triggered, but user delivery is disabled for this run. Handle the result internally and reply HEARTBEAT_OK only. Do not mention, summarize, or reuse command output. Current time: Monday, April 27th, 2026 - 11:19 AM (Asia/Manila) / 2026-",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "asia/manila",
+        "async",
+        "command",
+        "completion",
+        "event",
+        "was",
+        "triggered"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:82:82": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:82:82",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 82,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "User: We can run as one docker command for production right?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "can",
+        "run",
+        "one",
+        "docker",
+        "command",
+        "production",
+        "right"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:83:83": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:83:83",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 83,
+      "endLine": 83,
+      "source": "memory",
+      "snippet": "Assistant: Yes — one command for production: ```bash docker compose up -d --build ``` That builds the image (including the Vite React UI multi-stage build) and starts both `postgres` + `app` services. Survives reboots since both have `restart: unless-stopped`. The Dockerfile has",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "multi-stage",
+        "unless-stopped",
+        "yes",
+        "one",
+        "command",
+        "production",
+        "bash",
+        "docker"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:84:84": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:84:84",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 84,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "User: [media attached: /home/openclaw/.openclaw/media/inbound/file_297---0c67f008-5230-4437-9663-6395753bf1dc.jpg (image/jpeg) | /home/openclaw/.openclaw/media/inbound/file_297---0c67f008-5230-4437-9663-6395753bf1dc.jpg] To send an image back, prefer the message tool (media/path/",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "home/openclaw",
+        "openclaw/media/inbound/file-297",
+        "image/jpeg",
+        "media/path",
+        "media",
+        "attached",
+        "home",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:85:85": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:85:85",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 85,
+      "endLine": 85,
+      "source": "memory",
+      "snippet": "Assistant: Two issues, both real: 1. **404 on `/api/ingest`** — UI calls `/api/ingest` but Express routes are `/ingest` (no `/api` prefix). Need to mount API under `/api`. 2. **Postgres 5432 exposed** — `ports: - \"5432:5432\"` binds to `0.0.0.0`, accessible externally. Only needs",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "api/ingest",
+        "0.0.0.0",
+        "two",
+        "issues",
+        "both",
+        "real",
+        "api",
+        "ingest"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:86:86": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:86:86",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 86,
+      "endLine": 86,
+      "source": "memory",
+      "snippet": "Assistant: All 28 tests pass. Now let me rebuild the UI with the updated `/api` prefix and commit.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "all",
+        "tests",
+        "pass",
+        "now",
+        "let",
+        "rebuild",
+        "updated",
+        "api"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:87:87": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:87:87",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 87,
+      "endLine": 87,
+      "source": "memory",
+      "snippet": "Assistant: Done. Two fixes in commit `9c4eee9`: 1. **404 on PDF ingest** — All API routes now under `/api/*`. UI calls `/api/ingest`, `/api/sources`, etc. Express serves those correctly. SPA fallback only triggers for non-API routes. 2. **Postgres 5432 exposed** — Removed `ports:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "api/ingest",
+        "api/sources",
+        "non-api",
+        "done",
+        "two",
+        "fixes",
+        "commit",
+        "9c4eee9"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:88:88": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:88:88",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 88,
+      "endLine": 88,
+      "source": "memory",
+      "snippet": "User: [media attached: /home/openclaw/.openclaw/media/inbound/file_297---0c67f008-5230-4437-9663-6395753bf1dc.jpg (image/jpeg) | /home/openclaw/.openclaw/media/inbound/file_297---0c67f008-5230-4437-9663-6395753bf1dc.jpg] I got a 404. Tried to ingest a PDF. I tried the docker comp",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "home/openclaw",
+        "openclaw/media/inbound/file-297",
+        "image/jpeg",
+        "media",
+        "attached",
+        "home",
+        "openclaw",
+        "inbound"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:89:89": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:89:89",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 89,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "User: An async command completion event was triggered, but user delivery is disabled for this run. Handle the result internally and reply HEARTBEAT_OK only. Do not mention, summarize, or reuse command output. Current time: Monday, April 27th, 2026 - 11:39 AM (Asia/Manila) / 2026-",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "heartbeat-ok",
+        "asia/manila",
+        "async",
+        "command",
+        "completion",
+        "event",
+        "was",
+        "triggered"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Fix three issues in the Memoria project: **Location:** /home/openclaw/.openclaw/projects/memoria ## Fix 1: Embedding Service",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "embedding",
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "home/openclaw",
+        "openclaw/projects/memoria",
+        "context",
+        "running"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "User: `EMBED_MODEL` read from settings: ```typescript const EMBED_DIM = 768; const TASK_TYPE = \"RETRIEVAL_DOCUMENT\"; // Read from settings instead of hardcoded function getEmbedModel(): string { const settings = getEffectiveSettings(); return settings.embedModel || \"gemini-embedd",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "embed-model",
+        "embed-dim",
+        "task-type",
+        "retrieval-document",
+        "settings.embedmodel",
+        "gemini-embedd",
+        "read",
+        "settings"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: Example: ```tsx // Instead of: <input value={settings.databaseUrl} readOnly /> // Use: <div className=\"p-3 bg-gray-50 rounded border text-sm font-mono text-gray-600\"> {settings.databaseUrl} </div> ``` ## Fix 3: Update `.env.example` **File:** `.env.example` Add explicit `LL",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "settings.databaseurl",
+        "p-3",
+        "bg-gray-50",
+        "text-sm",
+        "font-mono",
+        "text-gray-600",
+        "env.example",
+        "example"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: Now I'll apply all three fixes:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "now",
+        "i'll",
+        "apply",
+        "all",
+        "three",
+        "fixes"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: ## Summary All three fixes completed and pushed successfully. ### Changes Made **1. `src/services/embedding.ts`** - Imported `getEffectiveSettings` from `../config/settings.js` - Updated `getAi()` to use settings store for API key (fallback to env var) - Added `getEmbe",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "embedding",
+        "src/services/embedding.ts",
+        "config/settings.js",
+        "summary",
+        "all",
+        "three",
+        "fixes",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: Added `OPENAI_API_KEY=your-o…key` - Moved `LLM_MODEL` to its proper place after the API keys ### Test Results - ✅ UI build: succeeded - ✅ 28 tests passed across 4 test files - ✅ Committed and pushed to `master`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "openai-api-key",
+        "your-o",
+        "llm-model",
+        "added",
+        "key",
+        "moved",
+        "proper"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM analyzer check with the --8am flag. Execute: /fsm check --8am Today's date: Wednesday, April 29th, 2026 -",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "context",
+        "running",
+        "depth",
+        "results",
+        "auto"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: Data fetched successfully. All 9 zones at 0% completion rate - this is a critical alert situation. Sending Telegram notification now:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "data",
+        "fetched",
+        "successfully",
+        "all",
+        "zones",
+        "completion",
+        "rate",
+        "critical"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: ## ✅ 8AM FSM Check Complete **Report generated and alert sent to Victor's Telegram.** ### Key Findings: | Metric | Value | |--------|-------| | **Company Completion** | 0% (0/1011) | | **Actionable Pending** | 834 | | **RPR (dependencies)** | 2 | | **Pace** | 🛑 Stalle",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "0/1011",
+        "8am",
+        "fsm",
+        "check",
+        "complete",
+        "report",
+        "generated",
+        "alert"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: | 0% | — | | NEGROS | 96 | 86 | 0 | 0% | +1 | | NORTH QUEZON CITY | 66 | 25 | 0 | 0% | -1 | | PANAY | 152 | 138 | 0 | 0% | +2 | | PASAY-PARANAQUE | 102 | 94 | 0 | 0% | +9 | | PASIG-PATEROS-TAGUIG | 301 | 233 | 0 | 0% | +2 | | SOUTH QUEZON CITY | 50 | 31 | 0 | 0% | -2 |",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "pasay-paranaque",
+        "pasig-pateros-taguig",
+        "negros",
+        "north",
+        "quezon",
+        "city",
+        "panay",
+        "pasay"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM analyzer command: /fsm check --facility This should: 1. Fetch summary data from the Protek FSM API 2. Calc",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "context",
+        "running",
+        "depth",
+        "results",
+        "auto"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: **ProteK FSM Check — Apr 29, 4:06 PM HKT** Analysis completed successfully. Here's what I found: **📊 Overall Summary** | Metric | Value | |--------|-------| | Total Work | 1,376 | | Completed | 243 | | Pending | 458 | | RPR Total | 101 | **⚠️ Alert: MAKATI — CRITICAL*",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "protek",
+        "fsm",
+        "check",
+        "apr",
+        "hkt",
+        "analysis",
+        "completed",
+        "successfully"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: 30.0% | ✅ Normal | | PANAY | 208 | 45 | 95 | 22 | 32.1% | ✅ Normal | | BULACAN | 89 | 20 | 25 | 5 | 44.4% | ✅ Normal | | PASAY-PARANAQUE | 155 | 36 | 42 | 19 | 46.2% | ✅ Normal | | PASIG-PATEROS-TAGUIG | 374 | 40 | 41 | 12 | 49.4% | ✅ Normal | | SOUTH QUEZON CITY | 68",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "30.0",
+        "32.1",
+        "44.4",
+        "pasay-paranaque",
+        "46.2",
+        "pasig-pateros-taguig",
+        "49.4",
+        "normal"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: critical status.**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "critical",
+        "status"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM Analyzer skill with the command: /fsm check --facility This is a scheduled midday analysis at 12:05 PM Asi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "context",
+        "running",
+        "depth",
+        "results",
+        "auto"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: **Midday Analysis Complete (12:06 PM HKT)** **Results:** - ✅ Fetched summary data + raw facility data - ✅ Generated facility RPR breakdown (43 total) - ✅ Saved to `protek-data/2026-04-29/12-06-analysis.json` - ✅ Updated dashboard symlinks **Key Findings:** | Metric | V",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "midday",
+        "analysis",
+        "complete",
+        "hkt",
+        "results",
+        "fetched",
+        "summary",
+        "data"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: agent (explicit target needed for message tool in subagent context). Report is formatted and ready to send.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "explicit",
+        "target",
+        "needed",
+        "message",
+        "tool",
+        "context",
+        "report",
+        "formatted"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: 📊 **Protek FSM Report** (2026-04-28 07:05 HKT) 🧹 Cleanup: Removed 1 old data folder (2026-04-13) - 7.5 MB freed 📈 Company-wide: 0/994 completed (0.0%) ⏳ Pending: 825 | 🔄 RPR: 0 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 📍 **ZONE REPORTS** ━━━━━━━━━━━━━━━━━━━━━━━━━━━",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "7.5",
+        "company-wide",
+        "0/994",
+        "0.0",
+        "protek",
+        "fsm",
+        "report",
+        "hkt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: Alert: Completion rate 0.0% below 10% 🔴 **NORTH QUEZON CITY** • Total assigned: 65 | Actionable: 26 • Completed: 0/26 = **0.0%** | Pending: 26 🚨 Alert: Completion rate 0.0% below 10% 🔴 **PANAY** • Total assigned: 152 | Actionable: 136 • Completed: 0/136 = **0.0%** |",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "0.0",
+        "0/26",
+        "0/136",
+        "alert",
+        "completion",
+        "rate",
+        "below",
+        "north"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 💬 **Common Issues Today** • Rescheduling: 41 (17.1%) • Activation issues: 36 (15.0%) • Customer unavailable: 20 (8.3%)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "17.1",
+        "15.0",
+        "8.3",
+        "common",
+        "issues",
+        "rescheduling",
+        "activation",
+        "customer"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Run the Protek FSM analyzer command `/fsm check` to fetch current status, analyze zone completion rates, and report findings.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "context",
+        "running",
+        "depth",
+        "results",
+        "auto"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: ## FSM Check Complete — April 29, 2026 (10:06 AM HKT) ### 📊 Company-Wide Summary | Metric | Value | |--------|-------| | **Total Assigned** | 1,105 | | **Completed** | 7 (0.6%) | | **Pending** | 846 | | **RPR (blocked)** | 16 | | **Pace** | 🐢 Slow | --- ### 🚨 All 9",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "company-wide",
+        "0.6",
+        "fsm",
+        "check",
+        "complete",
+        "april",
+        "hkt",
+        "company"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: ratio 0.5% | | **PASAY-PARANAQUE** | 114 | 88 | 2 | 2.3% | RPR ratio 4.3% | | **PANAY** | 167 | 143 | 4 | 2.8% | RPR ratio 2% | --- ### 📈 Today's Progress (Check 2 vs 8:07 AM) - **Completed:** +7 - **Pending:** +12 (work being assigned faster than completed) - **RPR:*",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "0.5",
+        "pasay-paranaque",
+        "2.3",
+        "4.3",
+        "2.8",
+        "ratio",
+        "pasay",
+        "paranaque"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: show meaningful completions since morning check. Data saved to `protek-data/2026-04-29/`.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "protek-data/2026-04-29",
+        "show",
+        "meaningful",
+        "completions",
+        "morning",
+        "check",
+        "data",
+        "saved"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Fix all settings issues in the Memoria project. Make everything visible, clear, and properly organized. **Location:** /home/o",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "home/o",
+        "context",
+        "running",
+        "depth",
+        "results"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "User: these with clear defaults: ``` # LLM Settings LLM_MODEL=gemini-1.5-flash-latest LLM_BASE_URL= # Empty = use Google's default endpoint # Embedding Settings EMBED_MODEL=gemini-embedding-2 EMBED_DIM=768 ``` **For LLM_BASE_URL:** Empty string means \"use Google's default\". If us",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "embedding",
+        "llm-model",
+        "gemini-1.5-flash-latest",
+        "llm-base-url",
+        "embed-model",
+        "gemini-embedding-2",
+        "embed-dim",
+        "clear"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "User: ```typescript function maskDatabaseUrl(url: string): string { if (!url) return \"\"; // Simple string replacement, not URL parsing (avoids encoding issues) return url.replace(/:\\/\\/([^:]+):([^@]+)@/, \"://memory:••••@\"); } ``` ## Fix 4: Add EMBED_DIM to Settings **File:** `src",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "url.replace",
+        "embed-dim",
+        "typescript",
+        "function",
+        "maskdatabaseurl",
+        "url",
+        "string",
+        "return"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "User: Google Key: *** │ │ OpenAI Key: *** │ ├─ Embedding ──────────┤ │ Model: [input] │ │ Dimensions: [number] │ ├─ Database ───────────┤ │ URL: (read-only text) │ └───────────────────────┘ ``` Each section should have: - Visual separator (border or background color) - Section he",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "embedding",
+        "openai",
+        "read-only",
+        "google",
+        "key",
+        "model",
+        "input",
+        "dimensions"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "User: without URL encoding - Settings page is visually organized into sections - All env vars are documented in `.env.example` Report back with summary of all changes.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "env.example",
+        "without",
+        "url",
+        "encoding",
+        "settings",
+        "page",
+        "visually",
+        "organized"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: Now I'll apply all the fixes:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "now",
+        "i'll",
+        "apply",
+        "all",
+        "fixes"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: Done. Here's a summary of all changes: **1. Model Names Fix** - Updated `LLM_MODELS` in `SettingsPage.tsx` to use `-latest` suffix: `gemini-1.5-flash-latest`, `gemini-1.5-pro-latest`, `gemini-2.5-flash-latest`, `gemini-2.5-pro-latest` - Changed default in `src/config/s",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "llm-models",
+        "settingspage.tsx",
+        "gemini-1.5-flash-latest",
+        "gemini-1.5-pro-latest",
+        "gemini-2.5-flash-latest",
+        "gemini-2.5-pro-latest",
+        "src/config/s",
+        "done"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: parsing **4. EMBED_DIM Added** - Added `embedDim` to `DEFAULT_SETTINGS`, `getSettings()`, and `getEffectiveSettings()` in `src/config/settings.ts` - Updated `src/services/embedding.ts` to read `embedDim` from settings (with `parseInt()`) instead of hardcoded `768` **5.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "embedding",
+        "embed-dim",
+        "default-settings",
+        "src/config/settings.ts",
+        "src/services/embedding.ts",
+        "parsing",
+        "added",
+        "embeddim"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: 🏭 **Protek FSM Midday Report** — 12:05 PM HKT ━━━━━━━━━━━━━━━━━━━━━━━ 📊 **Overall Status** • Total PRs: **1,194** • Completed: **86** (7.2%) • Pending: **761** • RPR Total: **53** • **Facility RPR: 43** ⚠️ ⚠️ **Zone Alerts: 6 critical, 3 warning** 🏭 **FACILITY RPR B",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "7.2",
+        "protek",
+        "fsm",
+        "midday",
+        "report",
+        "hkt",
+        "overall",
+        "status"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Implement the Settings UI page for the Memoria project. **Location:** /home/openclaw/.openclaw/projects/memoria **Backend Cha",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "home/openclaw",
+        "openclaw/projects/memoria",
+        "context",
+        "running",
+        "depth"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "User: ...DEFAULT_SETTINGS }; export function getSettings() { return { llmModel: runtimeSettings.llmModel, llmBaseUrl: runtimeSettings.llmBaseUrl, googleApiKey: maskKe…ey), openaiApiKey: maskKe…ey), databaseUrl: maskDatabaseUrl(runtimeSettings.databaseUrl), embedModel: runtimeSett",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "default-settings",
+        "runtimesettings.llmmodel",
+        "runtimesettings.llmbaseurl",
+        "runtimesettings.databaseurl",
+        "export",
+        "function",
+        "getsettings"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "User: { return url; } } ``` 2. **Create `src/routes/settings.ts`** — API routes: ```typescript import { Router } from \"express\"; import { getSettings, updateSettings, getEffectiveSettings } from \"../config/settings.js\"; const router = Router(); // GET /api/settings — return curre",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "router",
+        "src/routes/settings.ts",
+        "config/settings.js",
+        "api/settings",
+        "return",
+        "url",
+        "create",
+        "src"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "User: cleanUpdates.googleApiKey = update…Key; } if (updates.openaiApiKey && !updates.openaiApiKey.includes(\"•\")) { cleanUpdates.openaiApiKey = update…Key; } if (updates.embedModel) cleanUpdates.embedModel = updates.embedModel; updateSettings(cleanUpdates); return res.json({ succe",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "openai",
+        "cleanupdates.googleapikey",
+        "updates.openaiapikey",
+        "updates.openaiapikey.includes",
+        "cleanupdates.openaiapikey",
+        "updates.embedmodel",
+        "cleanupdates.embedmodel",
+        "res.json"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "User: settingsRoute from \"./routes/settings.js\"; // Add: app.use(\"/api/settings\", settingsRoute); ``` 5. **Update `.env.example`** — Add new vars: ``` LLM_MODEL=gemini-1.5-flash LLM_BASE_URL= EMBED_MODEL=gemini-embedding-2 ``` **UI Changes:** 6. **Create `ui/src/pages/SettingsPag",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "embedding",
+        "routes/settings.js",
+        "app.use",
+        "api/settings",
+        "env.example",
+        "llm-model",
+        "gemini-1.5-flash",
+        "llm-base-url"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "User: SettingsPage - Add `<Route path=\"/settings\" element={<SettingsPage />} />` - Add \"Settings\" link in nav bar (with Gear icon from lucide-react) 8. **Update `ui/src/api.ts`** — Add settings API wrappers: ```typescript export async function getSettings() { const res = await fe",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "lucide-react",
+        "ui/src/api.ts",
+        "settingspage",
+        "add",
+        "route",
+        "path",
+        "settings",
+        "element"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "User: \"feat: settings page with configurable LLM model and masked API keys\"` 4. Push: `git push origin master` Report back with summary of all files changed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "feat",
+        "settings",
+        "page",
+        "configurable",
+        "llm",
+        "model",
+        "masked",
+        "api"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "Assistant: Now let me build and test:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "now",
+        "let",
+        "test"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: **Task complete.** All changes pushed to master. ## Summary of Files Changed ### Backend (4 files) | File | Action | |------|--------| | `src/config/settings.ts` | Created — Settings store with env defaults and runtime updates, masking functions | | `src/routes/setting",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "src/config/settings.ts",
+        "src/routes/setting",
+        "task",
+        "complete",
+        "all",
+        "changes",
+        "pushed",
+        "master"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: Updated — Added `getSettings()` and `updateSettings()` API wrappers | ### Config | File | Action | |------|--------| | `.env.example` | Updated — Added `LLM_MODEL`, `LLM_BASE_URL`, `EMBED_MODEL` | ## Test Results - **TypeScript build**: ✅ Passed (backend + UI) - **Vite",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "env.example",
+        "llm-model",
+        "llm-base-url",
+        "embed-model",
+        "updated",
+        "added",
+        "getsettings",
+        "updatesettings"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Research the correct model names for the `@google/genai` JavaScript SDK (Google GenAI SDK). **Context:** We are using `@googl",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "google/genai",
+        "context",
+        "running",
+        "depth",
+        "results"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "User: package documentation or source to understand how model names should be formatted 4. Specifically find: - What model name should be used for `gemini-1.5-flash` in the GenAI SDK? - What model name should be used for `gemini-2.5-flash`? - Is it `gemini-1.5-flash`, `gemini-1.5",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "gemini-1.5-flash",
+        "gemini-2.5-flash",
+        "gemini-1.5",
+        "package",
+        "documentation",
+        "source",
+        "understand",
+        "how"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "User: model we want to support 2. A code snippet showing how to properly call `generateContent` with the correct model name 3. Any API version considerations (v1beta vs v1 vs v1alpha) 4. Whether we need to prefix with `models/` or not",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "model",
+        "want",
+        "support",
+        "code",
+        "snippet",
+        "showing",
+        "how",
+        "properly"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "Assistant: I'll research the correct model names for the `@google/genai` SDK by checking the official docs and package.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "google/genai",
+        "i'll",
+        "research",
+        "correct",
+        "model",
+        "names",
+        "google",
+        "genai"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "User: [Subagent Context] You are running as a subagent (depth 1/1). Results auto-announce to your requester; do not busy-poll for status. [Subagent Task]: Research the correct model names for the `@google/genai` JavaScript SDK (Google GenAI SDK). **Context:** We are using `@googl",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "1/1",
+        "auto-announce",
+        "busy-poll",
+        "google/genai",
+        "context",
+        "running",
+        "depth",
+        "results"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "User: package documentation or source to understand how model names should be formatted 4. Specifically find: - What model name should be used for `gemini-1.5-flash` in the GenAI SDK? - What model name should be used for `gemini-2.5-flash`? - Is it `gemini-1.5-flash`, `gemini-1.5",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "gemini-1.5-flash",
+        "gemini-2.5-flash",
+        "gemini-1.5",
+        "package",
+        "documentation",
+        "source",
+        "understand",
+        "how"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "User: model we want to support 2. A code snippet showing how to properly call `generateContent` with the correct model name 3. Any API version considerations (v1beta vs v1 vs v1alpha) 4. Whether we need to prefix with `models/` or not",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "model",
+        "want",
+        "support",
+        "code",
+        "snippet",
+        "showing",
+        "how",
+        "properly"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "Assistant: ## Research Results: `@google/genai` Model Naming ### Summary of Findings **1. Model Naming Convention** Based on the official SDK documentation at `googleapis.github.io/js-genai`: For **Gemini Developer API**, the `model` parameter accepts: - **Plain ID** (recommended",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "google/genai",
+        "googleapis.github.io/js-genai",
+        "research",
+        "results",
+        "google",
+        "genai",
+        "model",
+        "naming"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Assistant: Correct Model Names (Current as of April 2026)** | Model | Correct Name | Notes | |-------|-------------|-------| | Gemini 2.5 Flash | `'gemini-2.5-flash'` | ✅ Active | | Gemini 2.5 Flash Lite | `'gemini-2.5-flash-lite'` | ✅ Active (replacement for 1.5-flash) | | Gemin",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "2.5",
+        "gemini-2.5-flash",
+        "gemini-2.5-flash-lite",
+        "1.5-flash",
+        "correct",
+        "model",
+        "names",
+        "current"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "Assistant: 'gemini-2.5-flash', // ✅ Correct contents: 'Write a haiku about coding', }); // Embeddings - use gemini-embedding-001 const embedding = await ai.models.embedContent({ model: 'gemini-embedding-001', // ✅ Correct contents: 'Hello world', config: { outputDimensionality: 2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "embedding",
+        "embeddings",
+        "gemini-2.5-flash",
+        "gemini-embedding-001",
+        "ai.models.embedcontent",
+        "gemini",
+        "2.5",
+        "flash"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-29.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-29.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-04-29.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: recommended) - `'models/gemini-2.5-flash'` (with prefix) The SDK normalizes both. The error you're seeing `models/gemini-1.5-flash-latest is not found` suggests the model ID itself (`gemini-1.5-flash-latest`) was invalid or the model was retired. --- ### Recommendation",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "401e1af52a6f"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "models/gemini-2.5-flash",
+        "models/gemini-1.5-flash-latest",
+        "gemini-1.5-flash-latest",
+        "recommended",
+        "models",
+        "gemini",
+        "2.5",
+        "flash"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:90:90": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:90:90",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 90,
+      "endLine": 90,
+      "source": "memory",
+      "snippet": "User: [media attached: /home/openclaw/.openclaw/media/inbound/file_298---03f8c30f-8f31-415e-89ae-cddd8cbe4eee.jpg (image/jpeg) | /home/openclaw/.openclaw/media/inbound/file_298---03f8c30f-8f31-415e-89ae-cddd8cbe4eee.jpg] To send an image back, prefer the message tool (media/path/",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "home/openclaw",
+        "openclaw/media/inbound/file-298",
+        "image/jpeg",
+        "media/path",
+        "media",
+        "attached",
+        "home",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:91:91": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:91:91",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 91,
+      "endLine": 91,
+      "source": "memory",
+      "snippet": "Assistant: Fix committed (`2be93e7`). The issue was `USER node` in the Dockerfile + bind mount ` - ./data:/app/data`. Docker created the host `./data` as root, so the `node` user couldn't write. Rebuild: ```bash docker compose down docker compose up -d --build ``` The Dockerfile",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "app/data",
+        "fix",
+        "committed",
+        "2be93e7",
+        "issue",
+        "was",
+        "node",
+        "dockerfile"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:92:92": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:92:92",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 92,
+      "endLine": 92,
+      "source": "memory",
+      "snippet": "User: [media attached: /home/openclaw/.openclaw/media/inbound/file_298---03f8c30f-8f31-415e-89ae-cddd8cbe4eee.jpg (image/jpeg) | /home/openclaw/.openclaw/media/inbound/file_298---03f8c30f-8f31-415e-89ae-cddd8cbe4eee.jpg] I got a different error. { \"error\": \"EACCES: permission den",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "home/openclaw",
+        "openclaw/media/inbound/file-298",
+        "image/jpeg",
+        "media",
+        "attached",
+        "home",
+        "openclaw",
+        "inbound"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:93:93": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:93:93",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 93,
+      "endLine": 93,
+      "source": "memory",
+      "snippet": "User: Can't we create the docker user based on current user? Just concern about using root",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "can't",
+        "create",
+        "docker",
+        "based",
+        "current",
+        "concern",
+        "root"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:94:94": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:94:94",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 94,
+      "endLine": 94,
+      "source": "memory",
+      "snippet": "Assistant: Committed (`fc965ea`). Two fixes: 1. **Dockerfile** — Creates `appuser` with host-matching UID/GID via build args 2. **docker-compose.yml** — Passes `USER_ID`/`GROUP_ID` and sets `user:` field **Important deployment step** — The existing `./data` was created by root ea",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "host-matching",
+        "uid/gid",
+        "docker-compose.yml",
+        "user-id",
+        "group-id",
+        "committed",
+        "fc965ea",
+        "two"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:95:95": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:95:95",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 95,
+      "endLine": 95,
+      "source": "memory",
+      "snippet": "User: Got an error └─$ sudo chown -R $(id -u):$(id -g) ./data ┌──(openclaw㉿srv1405873)-[~/.openclaw/projects/karpathy-ingest] └─$ docker compose down WARN[0000] /home/openclaw/.openclaw/projects/karpathy-ingest/docker-compose.yml: the attribute `version` is obsolete, it will be i",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "home/openclaw",
+        "got",
+        "error",
+        "sudo",
+        "chown",
+        "data",
+        "openclaw",
+        "srv1405873"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:96:96": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:96:96",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 96,
+      "endLine": 96,
+      "source": "memory",
+      "snippet": "User: (internal) load local bake definitions 0.0s => => reading from stdin 633B 0.0s => (internal) load build definition from Dockerfile 0.0s => => transferring dockerfile: 1.13kB 0.0s => (internal) load metadata for docker.io/library/node:20-alpine 1.5s => (internal) load .docke",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "0.0s",
+        "1.13kb",
+        "docker.io/library/node",
+        "20-alpine",
+        "1.5s",
+        "internal",
+        "load",
+        "local"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:97:97": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:97:97",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 97,
+      "endLine": 97,
+      "source": "memory",
+      "snippet": "User: [production 2/8] RUN addgroup -g 1000 appgroup && adduser -u 1000 -G appgroup -D appuser: 0.399 addgroup: gid '1000' in use ------ [+] up 0/1 ⠙ Image karpathy-ingest-app Building 2.2s Dockerfile:38 -------------------- 37 | # Create user matching host UID/GID 38 | >>> RUN a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "2/8",
+        "0.399",
+        "0/1",
+        "karpathy-ingest-app",
+        "2.2s",
+        "uid/gid",
+        "production",
+        "run"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:98:98": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:98:98",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 98,
+      "endLine": 98,
+      "source": "memory",
+      "snippet": "Assistant: GID 1000 is already taken by the `node` group in the Alpine image. Simplest fix: just use the existing `node` user.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "gid",
+        "already",
+        "taken",
+        "node",
+        "group",
+        "alpine",
+        "image",
+        "simplest"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:99:99": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:99:99",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 99,
+      "endLine": 99,
+      "source": "memory",
+      "snippet": "Assistant: Committed (`46ecb9e`). The issue was that the `node:20-alpine` image already has a `node` group with GID 1000, so `addgroup -g 1000` failed. Fix: just use the built-in `node` user (UID 1000, GID 1000). Rebuild: ```bash cd ~/.openclaw/projects/karpathy-ingest docker com",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "20-alpine",
+        "built-in",
+        "committed",
+        "46ecb9e",
+        "issue",
+        "was",
+        "node",
+        "alpine"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:100:100": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:100:100",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 100,
+      "endLine": 100,
+      "source": "memory",
+      "snippet": "User: Got an error └─$ docker compose up --build failed to parse /home/openclaw/.openclaw/projects/karpathy-ingest/docker-compose.yml: yaml: construct errors: line 1: line 27: mapping key \"restart\" already defined at line 25",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "home/openclaw",
+        "got",
+        "error",
+        "docker",
+        "compose",
+        "failed",
+        "parse",
+        "home"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-04-27.txt:101:101": {
+      "key": "memory:memory/.dreams/session-corpus/2026-04-27.txt:101:101",
+      "path": "memory/.dreams/session-corpus/2026-04-27.txt",
+      "startLine": 101,
+      "endLine": 101,
+      "source": "memory",
+      "snippet": "Assistant: Fixed — duplicate `restart` key. Committed (`15c5789`). ```bash docker compose up -d --build ```",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-04-29T19:00:00.919Z",
+      "lastRecalledAt": "2026-04-29T19:00:00.919Z",
+      "queryHashes": [
+        "e29ad1ab29b1"
+      ],
+      "recallDays": [
+        "2026-04-30",
+        "2026-04-29"
+      ],
+      "conceptTags": [
+        "fixed",
+        "duplicate",
+        "restart",
+        "key",
+        "committed",
+        "15c5789",
+        "bash",
+        "docker"
+      ]
+    },
+    "memory:memory/2026-04-13.md:150:169": {
+      "key": "memory:memory/2026-04-13.md:150:169",
+      "path": "memory/2026-04-13.md",
+      "startLine": 150,
+      "endLine": 169,
+      "source": "memory",
+      "snippet": "- Candidate: ## Session Cleanup Skill - Created Created `session-cleanup` skill for archiving/removing stale OpenClaw session files: - Location: `~/.openclaw/skills/session-cleanup/` - SKILL.md: Documentation and workflow - Scripts: `cleanup-sessions.sh` (in progress) Purpose: Address session bloat from .jsonl.reset.* and .jsonl.deleted.* files that slow down agent responses. ## Current Session Status - Main sessions directory: 26MB - Large stale files identified: ~13MB of .reset. and .deleted. files - Archive approach recommended for safety - Cleanup pending completion ## Next Steps 1. Finish cleanup script implementation 2. Archive stale session files 3. Restart gateway to clear cached ref",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5353030875325202,
+      "maxScore": 0.5353030875325202,
+      "firstRecalledAt": "2026-04-29T19:00:42.883Z",
+      "lastRecalledAt": "2026-04-29T19:00:42.883Z",
+      "queryHashes": [
+        "c0442ec75c55"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "gateway",
+        "session-cleanup",
+        "archiving/removing",
+        "openclaw/skills/session-cleanup",
+        "skill.md",
+        "cleanup-sessions.sh",
+        "jsonl.reset",
+        "jsonl.deleted"
+      ]
+    },
+    "memory:memory/2026-04-29.md:108:142": {
+      "key": "memory:memory/2026-04-29.md:108:142",
+      "path": "memory/2026-04-29.md",
+      "startLine": 108,
+      "endLine": 142,
+      "source": "memory",
+      "snippet": "**New features needed:** 1. **Jobs/Queue page** (`/jobs`) — List all ingest jobs with status 2. **Job detail** (`/jobs/:id`) — Real-time progress via WebSocket 3. **Nav link** — \"Queue\" in top navigation 4. **Ingest page update** — After submit, show \"View in Queue →\" link (new tab) **Database schema addition:** ```sql CREATE TABLE jobs ( id UUID PRIMARY KEY DEFAULT gen_random_uuid(), source_id UUID, status VARCHAR(20) NOT NULL, -- queued|running|completed|failed progress INT DEFAULT 0, -- 0-100 current_step VARCHAR(50), -- extract|reformat|chunk|embed|store error TEXT, created_at TIMESTAMP DEFAULT NOW(), updated_at TIMESTAMP DEFAULT NOW() ); ``` **WebSocket events:** - `jo",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.059678417444229,
+      "maxScore": 0.5367418825626373,
+      "firstRecalledAt": "2026-04-29T22:12:03.203Z",
+      "lastRecalledAt": "2026-04-29T23:56:05.638Z",
+      "queryHashes": [
+        "89cf62b5a411",
+        "a1dc66b80158"
+      ],
+      "recallDays": [
+        "2026-04-30"
+      ],
+      "conceptTags": [
+        "jobs/queue",
+        "real-time",
+        "gen-random-uuid",
+        "source-id",
+        "0-100",
+        "current-step",
+        "created-at",
+        "updated-at"
       ]
     }
   }
