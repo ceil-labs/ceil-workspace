@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-01T19:00:00.793Z",
+  "updatedAt": "2026-05-02T19:00:01.155Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -56134,12 +56134,12 @@
       "source": "memory",
       "snippet": "2026-04-26 16:00 — Scope Narrowed: **Victor's directive:** Focus on ingestion + rendering only. No wiki, no compaction, no L2.",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-26T19:00:13.858Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
@@ -56149,7 +56149,8 @@
         "2026-04-30",
         "2026-04-29",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "scope",
@@ -56169,14 +56170,14 @@
       "startLine": 8,
       "endLine": 8,
       "source": "memory",
-      "snippet": "**Scoped deliverable:**",
+      "snippet": "2026-04-26 16:00 — Scope Narrowed: **Scoped deliverable:**",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-26T19:00:13.858Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
@@ -56186,7 +56187,8 @@
         "2026-04-30",
         "2026-04-29",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "scope",
@@ -56204,12 +56206,12 @@
       "source": "memory",
       "snippet": "2026-04-26 16:00 — Scope Narrowed: Ingest: PDF, MD, Text, URL; Output per chunk: Markdown file + Vector embedding; Render: View ingested content (list + detail)",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-26T19:00:13.858Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
@@ -56219,7 +56221,8 @@
         "2026-04-30",
         "2026-04-29",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "embedding",
@@ -56240,12 +56243,12 @@
       "source": "memory",
       "snippet": "2026-04-26 16:00 — Scope Narrowed: **Deferred:** L2 wiki, LLM compilation, compaction, multi-agent scoping, Redis queue.",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-26T19:00:13.858Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
@@ -56255,7 +56258,8 @@
         "2026-04-30",
         "2026-04-29",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "multi-agent",
@@ -56277,12 +56281,12 @@
       "source": "memory",
       "snippet": "2026-04-26 19:07 — karpathy-ingest Status Capture: **Project:** https://github.com/ceil-labs/karpathy-ingest **Server:** Running at `https://srv1405873.tailcd23a1.ts.net:8444`",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-26T19:00:13.858Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
@@ -56292,7 +56296,8 @@
         "2026-04-30",
         "2026-04-29",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "karpathy-ingest",
@@ -56314,12 +56319,12 @@
       "source": "memory",
       "snippet": "What's Built: Dockerized TypeScript/Express API with PostgreSQL + pgvector; Extractors: PDF (pdf-parse), MD/Text (passthrough), URL (cheerio); Chunker: Recursive character splitter, ~400 tokens, 15% overlap; Embedding: gemini-embedding-2 @ 768 dims via **batchEmbedContents API**",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-26T19:00:13.858Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "9b4c3d373463"
       ],
@@ -56329,7 +56334,8 @@
         "2026-04-30",
         "2026-04-29",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "embedding",
@@ -56403,14 +56409,14 @@
         "2026-05-01"
       ],
       "conceptTags": [
-        "api",
-        "endpoints",
         "endpoint",
         "method",
         "description",
         "health",
         "get",
-        "check"
+        "check",
+        "ingest",
+        "post"
       ],
       "promotedAt": "2026-05-01T19:00:00.793Z"
     },
@@ -62108,12 +62114,12 @@
       "source": "memory",
       "snippet": "2026-04-27 07:43 — Session Start: **Victor's asks:**",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T19:00:00.844Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
@@ -62121,7 +62127,8 @@
         "2026-04-28",
         "2026-04-27",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "start",
@@ -62137,12 +62144,12 @@
       "source": "memory",
       "snippet": "2026-04-27 07:43 — Session Start: Recap karpathy-ingest status; Add tests (integration with real DB); Fix README to clearly distinguish dev mode vs production mode",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T19:00:00.844Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
@@ -62150,7 +62157,8 @@
         "2026-04-28",
         "2026-04-27",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "karpathy-ingest",
@@ -62169,14 +62177,14 @@
       "startLine": 10,
       "endLine": 10,
       "source": "memory",
-      "snippet": "2026-04-27 07:43 — Session Start: **Status reviewed:** Phase 1 (ingest + render + search) built and deployed at `https://srv1405873.tailcd23a1.ts.net:8444`.",
+      "snippet": "**Status reviewed:** Phase 1 (ingest + render + search) built and deployed at `https://srv1405873.tailcd23a1.ts.net:8444`.",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T19:00:00.844Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
@@ -62184,7 +62192,8 @@
         "2026-04-28",
         "2026-04-27",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "srv1405873.tailcd23a1.ts.net",
@@ -62195,7 +62204,8 @@
         "ingest",
         "render",
         "built"
-      ]
+      ],
+      "promotedAt": "2026-05-02T19:00:01.155Z"
     },
     "memory:memory/2026-04-27.md:16:16": {
       "key": "memory:memory/2026-04-27.md:16:16",
@@ -62203,14 +62213,14 @@
       "startLine": 16,
       "endLine": 16,
       "source": "memory",
-      "snippet": "2026-04-27 09:10 — Test Suite Implementation: **Test framework:** Vitest + Supertest + Testcontainers (@testcontainers/postgresql)",
+      "snippet": "**Test framework:** Vitest + Supertest + Testcontainers (@testcontainers/postgresql)",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T19:00:00.844Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
@@ -62218,7 +62228,8 @@
         "2026-04-28",
         "2026-04-27",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "testcontainers/postgresql",
@@ -62229,7 +62240,8 @@
         "vitest",
         "supertest",
         "testcontainers"
-      ]
+      ],
+      "promotedAt": "2026-05-02T19:00:01.155Z"
     },
     "memory:memory/2026-04-27.md:18:18": {
       "key": "memory:memory/2026-04-27.md:18:18",
@@ -62239,12 +62251,12 @@
       "source": "memory",
       "snippet": "2026-04-27 09:10 — Test Suite Implementation: **Files created:**",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T19:00:00.844Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
@@ -62252,7 +62264,8 @@
         "2026-04-28",
         "2026-04-27",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "test",
@@ -62269,12 +62282,12 @@
       "source": "memory",
       "snippet": "2026-04-27 09:10 — Test Suite Implementation: `vitest.config.ts` — 60s timeout for testcontainers spin-up; `tests/setup.ts` — PostgreSqlContainer with init.sql migrations, test data dir cleanup; `tests/chunker.test.ts` — Unit tests for splitIntoChunks; `tests/api-contract.test.ts",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-27T19:00:00.844Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "6c24d11cf4d7"
       ],
@@ -62282,7 +62295,8 @@
         "2026-04-28",
         "2026-04-27",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "vitest.config.ts",
@@ -68304,14 +68318,14 @@
         "2026-05-01"
       ],
       "conceptTags": [
+        "gateway",
         "user.md",
         "agents.md",
         "asia/manila",
-        "victor's",
-        "profile",
-        "preferences",
-        "operating",
-        "rules"
+        "systems-minded",
+        "learning-oriented",
+        "deep-dives",
+        "hands-on"
       ],
       "promotedAt": "2026-05-01T19:00:00.793Z"
     },
@@ -68538,14 +68552,14 @@
       "startLine": 6,
       "endLine": 6,
       "source": "memory",
-      "snippet": "2026-04-28 17:30 — Project Rename: karpathy-ingest → Memoria: **Victor's decision:** Rename to \"Memoria\" — better reflects the knowledge system vision beyond just ingestion.",
+      "snippet": "**Victor's decision:** Rename to \"Memoria\" — better reflects the knowledge system vision beyond just ingestion.",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:00.915Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -68553,7 +68567,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "karpathy-ingest",
@@ -68564,7 +68579,8 @@
         "memoria",
         "victor's",
         "decision"
-      ]
+      ],
+      "promotedAt": "2026-05-02T19:00:01.155Z"
     },
     "memory:memory/2026-04-28.md:8:8": {
       "key": "memory:memory/2026-04-28.md:8:8",
@@ -68574,12 +68590,12 @@
       "source": "memory",
       "snippet": "2026-04-28 17:30 — Project Rename: karpathy-ingest → Memoria: **Changes made:**",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:00.915Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -68587,7 +68603,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "karpathy-ingest",
@@ -68608,12 +68625,12 @@
       "source": "memory",
       "snippet": "2026-04-28 17:30 — Project Rename: karpathy-ingest → Memoria: **GitHub repo:** Settings → Rename to `memoria`; **Local folder:** `~/.openclaw/projects/karpathy-ingest` → `memoria`; **Git remote:** Updated to `github.com/ceil-labs/memoria.git`; **Codebase:** All references updated",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:00.915Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -68621,7 +68638,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "karpathy-ingest",
@@ -68642,12 +68660,12 @@
       "source": "memory",
       "snippet": "2026-04-28 17:30 — Project Rename: karpathy-ingest → Memoria: **Files changed:** 8 files across README, package.json, docker-compose, UI, services, tests",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:00.915Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -68655,7 +68673,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "karpathy-ingest",
@@ -68676,12 +68695,12 @@
       "source": "memory",
       "snippet": "2026-04-28 17:30 — Project Rename: karpathy-ingest → Memoria: **README updated with:**",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:00.915Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -68689,7 +68708,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "karpathy-ingest",
@@ -68710,12 +68730,12 @@
       "source": "memory",
       "snippet": "2026-04-28 17:30 — Project Rename: karpathy-ingest → Memoria: Inspiration section crediting Karpathy's LLM Wiki; Divergence section documenting how we differ; Clearer positioning as knowledge system, not just ingestion pipeline",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-28T19:00:00.915Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "1174d07d7efc"
       ],
@@ -68723,7 +68743,8 @@
         "2026-04-29",
         "2026-04-28",
         "2026-05-01",
-        "2026-05-02"
+        "2026-05-02",
+        "2026-05-03"
       ],
       "conceptTags": [
         "karpathy-ingest",
@@ -72615,19 +72636,21 @@
       "source": "memory",
       "snippet": "2026-04-29 00:00 — Session Start (continuation from late 04-28): **Context:** Memoria project (formerly karpathy-ingest) — knowledge system with ingest, search, render.",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-29T19:00:00.919Z",
-      "lastRecalledAt": "2026-05-01T02:41:23.630Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-04-30",
         "2026-04-29",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03",
+        "2026-05-02"
       ],
       "conceptTags": [
         "04-28",
@@ -72648,19 +72671,21 @@
       "source": "memory",
       "snippet": "2026-04-29 07:30 — Settings Page Implementation: **Victor's asks:**",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-29T19:00:00.919Z",
-      "lastRecalledAt": "2026-05-01T02:41:23.630Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-04-30",
         "2026-04-29",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03",
+        "2026-05-02"
       ],
       "conceptTags": [
         "settings",
@@ -72678,19 +72703,21 @@
       "source": "memory",
       "snippet": "2026-04-29 07:30 — Settings Page Implementation: Fix ingest 404 error (LLM model name); Add settings page with configurable models; Fix database URL display; Organize settings UI",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-29T19:00:00.919Z",
-      "lastRecalledAt": "2026-05-01T02:41:23.630Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-04-30",
         "2026-04-29",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03",
+        "2026-05-02"
       ],
       "conceptTags": [
         "settings",
@@ -72711,19 +72738,21 @@
       "source": "memory",
       "snippet": "2026-04-29 07:30 — Settings Page Implementation: **Issues found:**",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-29T19:00:00.919Z",
-      "lastRecalledAt": "2026-05-01T02:41:23.630Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-04-30",
         "2026-04-29",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03",
+        "2026-05-02"
       ],
       "conceptTags": [
         "settings",
@@ -72741,19 +72770,21 @@
       "source": "memory",
       "snippet": "2026-04-29 07:30 — Settings Page Implementation: `gemini-1.5-flash-latest` causes 404 — Google deprecated 1.5 versions; `gemini-2.5-flash` works but sometimes 503 (capacity); Database URL shows URL-encoded `%E2%80%A2` (encoding issue)",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-29T19:00:00.919Z",
-      "lastRecalledAt": "2026-05-01T02:41:23.630Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-04-30",
         "2026-04-29",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03",
+        "2026-05-02"
       ],
       "conceptTags": [
         "gemini-1.5-flash-latest",
@@ -72774,19 +72805,21 @@
       "source": "memory",
       "snippet": "2026-04-29 07:30 — Settings Page Implementation: **Model name research (direct API testing):**",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-04-29T19:00:00.919Z",
-      "lastRecalledAt": "2026-05-01T02:41:23.630Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-04-30",
         "2026-04-29",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03",
+        "2026-05-02"
       ],
       "conceptTags": [
         "settings",
@@ -77635,18 +77668,19 @@
       "source": "memory",
       "snippet": "OpenClaw Version Upgrade Tracking: **Current version:** 2026.4.24 (cbcfdf6) — stable, no issues",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:00.793Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "f16f2797a8f9"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "2026.4.24",
@@ -77667,18 +77701,19 @@
       "source": "memory",
       "snippet": "OpenClaw Version Upgrade Tracking: **Issue encountered:** When upgrading to 2026.4.29, Telegram message sending fails with:",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:00.793Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "f16f2797a8f9"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "2026.4.29",
@@ -77699,18 +77734,19 @@
       "source": "memory",
       "snippet": "OpenClaw Version Upgrade Tracking: channels.telegram.accounts.ceil.botToken: unresolved SecretRef \"file:filemain:/telegram/botToken\"",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:00.793Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "f16f2797a8f9"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "telegram/bottoken",
@@ -77731,18 +77767,19 @@
       "source": "memory",
       "snippet": "OpenClaw Version Upgrade Tracking: **Related GitHub issues:**",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:00.793Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "f16f2797a8f9"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "openclaw",
@@ -77762,18 +77799,19 @@
       "source": "memory",
       "snippet": "OpenClaw Version Upgrade Tracking: #74832 — \"openclaw status fails on Telegram file SecretRef while resolving allowlist metadata\" (OPEN); PR #74833 — fix for Telegram status accessors, still unmerged",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:00.793Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "f16f2797a8f9"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "openclaw",
@@ -77794,18 +77832,19 @@
       "source": "memory",
       "snippet": "OpenClaw Version Upgrade Tracking: **Root cause:** `resolveAllowFrom` tries to strict-resolve botToken SecretRef when building allowlist metadata, but CLI context lacks gateway runtime snapshot. Message send hits this path too (not just status).",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:00.793Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "f16f2797a8f9"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "gateway",
@@ -77826,18 +77865,19 @@
       "source": "memory",
       "snippet": "OpenClaw Version Upgrade Tracking: **Action:** Rolled back to 4.24. Will monitor #74833 and next release (likely 4.30) for proper fix.",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:00.793Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "f16f2797a8f9"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "4.24",
@@ -77858,18 +77898,19 @@
       "source": "memory",
       "snippet": "OpenClaw Version Upgrade Tracking: **Next check:** Next OpenClaw release after PR #74833 merges.",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:00.793Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "f16f2797a8f9"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "openclaw",
@@ -77889,18 +77930,19 @@
       "source": "memory",
       "snippet": "Protek FSM Cleanup: Removed 7 ProTek cron jobs from `~/.openclaw/cron/jobs.json`; Deleted `protek-data/` (~90MB), `protek-dashboard/`, `tmp_fsm_check.sh`; Skill files preserved but disabled in `skill.yaml`",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:00.793Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "f16f2797a8f9"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "openclaw/cron/jobs.json",
@@ -77921,18 +77963,19 @@
       "source": "memory",
       "snippet": "Secrets Audit & Cleanup: Fixed plaintext Brave API key in `openclaw.json` → now uses SecretRef; Removed stale `PROTEK_API_KEY` from `secrets.json` and `gateway.systemd.env`; Audit: `clean. plaintext=0, unresolved=0, shadowed=0, legacy=0`",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:00.793Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "f16f2797a8f9"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "gateway",
@@ -77953,18 +77996,19 @@
       "source": "memory",
       "snippet": "UFW / SSH Hardening: Added dual ListenAddress: Tailscale (100.108.21.107) + public (76.13.183.141); Added UFW allow for ISP range: `103.252.35.0/24`; Added UFW allow for VPS provider console: `169.254.0.0/16`; Provider web console (Hostinger) now works as SSH fallback",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:00.793Z",
-      "lastRecalledAt": "2026-05-01T19:00:00.793Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
       "queryHashes": [
         "f16f2797a8f9"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "100.108.21.107",
@@ -79547,6 +79591,2252 @@
         "ssh",
         "public",
         "localhost"
+      ]
+    },
+    "memory:memory/2026-05-02.md:5:5": {
+      "key": "memory:memory/2026-05-02.md:5:5",
+      "path": "memory/2026-05-02.md",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Memoria Wiki Testing: **Memoria** (personal knowledge system) running at `localhost:3000`. Docker stack: app + postgres + redis.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "memoria",
+        "wiki",
+        "testing",
+        "personal",
+        "knowledge",
+        "running",
+        "localhost",
+        "docker"
+      ]
+    },
+    "memory:memory/2026-05-02.md:8:9": {
+      "key": "memory:memory/2026-05-02.md:8:9",
+      "path": "memory/2026-05-02.md",
+      "startLine": 8,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Phase 0: Ingest: Ingested 9 HTB PDF walkthroughs (Devvortex, Paper, Writeup, Precious, Driver, BoardLight, Cicada, TwoMillion, Certified); Search index active — hybrid search returns chunks with chunkIds for citation",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "phase",
+        "ingest",
+        "ingested",
+        "htb",
+        "pdf",
+        "walkthroughs",
+        "devvortex",
+        "paper"
+      ]
+    },
+    "memory:memory/2026-05-02.md:13:16": {
+      "key": "memory:memory/2026-05-02.md:13:16",
+      "path": "memory/2026-05-02.md",
+      "startLine": 13,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Phase 1: Wiki Tree Created: Enumeration ├── Port Scanning │ └── Nmap TCP All-Ports Scanning (v3, 2 revisions) ├── Service Enumeration",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "all-ports",
+        "phase",
+        "wiki",
+        "tree",
+        "created",
+        "enumeration",
+        "scanning",
+        "nmap"
+      ]
+    },
+    "memory:memory/2026-05-02.md:17:18": {
+      "key": "memory:memory/2026-05-02.md:17:18",
+      "path": "memory/2026-05-02.md",
+      "startLine": 17,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Phase 1: Wiki Tree Created: │ └── SMB Enumeration (v1) └── Web Enumeration",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "phase",
+        "wiki",
+        "tree",
+        "created",
+        "smb",
+        "enumeration",
+        "web"
+      ]
+    },
+    "memory:memory/2026-05-02.md:22:23": {
+      "key": "memory:memory/2026-05-02.md:22:23",
+      "path": "memory/2026-05-02.md",
+      "startLine": 22,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Phase 2: Article with Citations: Created \"Nmap TCP All-Ports Scanning\" with citation to Paper.pdf chunk; Created \"SMB Enumeration\" with citations to Cicada.pdf chunks",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "all-ports",
+        "paper.pdf",
+        "cicada.pdf",
+        "phase",
+        "article",
+        "citations",
+        "created",
+        "nmap"
+      ]
+    },
+    "memory:memory/2026-05-02.md:26:28": {
+      "key": "memory:memory/2026-05-02.md:26:28",
+      "path": "memory/2026-05-02.md",
+      "startLine": 26,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Phase 3: Version & Revision System Tested: Updated article → version bumped 1→2, revision saved; Reverted to v1 → version became 3 (non-destructive), v2 preserved; Revision history: `GET /api/wiki/:slug/revisions` returns versions",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "non-destructive",
+        "api/wiki",
+        "slug/revisions",
+        "phase",
+        "version",
+        "revision",
+        "tested",
+        "updated"
+      ]
+    },
+    "memory:memory/2026-05-02.md:32:35": {
+      "key": "memory:memory/2026-05-02.md:32:35",
+      "path": "memory/2026-05-02.md",
+      "startLine": 32,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "API Fixes Verified (post-rebuild): | Fix | Status | Detail | |-----|--------|--------| | `parentSlug` in list | ✅ | `GET /api/wiki` returns `parentSlug` per article | | `parentSlug` in detail | ✅ | `GET /api/wiki/:slug` returns top-level `parentSlug` + nested `parent` object |",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "post-rebuild",
+        "api/wiki",
+        "top-level",
+        "api",
+        "fixes",
+        "verified",
+        "post",
+        "rebuild"
+      ]
+    },
+    "memory:memory/2026-05-02.md:36:39": {
+      "key": "memory:memory/2026-05-02.md:36:39",
+      "path": "memory/2026-05-02.md",
+      "startLine": 36,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "API Fixes Verified (post-rebuild): | `citationCount` on create | ⚠️ | Field exists in code but response shows `null` — may need another rebuild | | setCitations DX | ✅ | Returns `{ok, mode, total, added, skipped, removed}` | | Bad chunkId guard | ✅ | `400` error listing missing I",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "post-rebuild",
+        "api",
+        "fixes",
+        "verified",
+        "post",
+        "rebuild",
+        "citationcount",
+        "create"
+      ]
+    },
+    "memory:memory/2026-05-02.md:40:40": {
+      "key": "memory:memory/2026-05-02.md:40:40",
+      "path": "memory/2026-05-02.md",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "API Fixes Verified (post-rebuild): | Test suite | ✅ | 71/71 passing (8 test files) |",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "post-rebuild",
+        "71/71",
+        "api",
+        "fixes",
+        "verified",
+        "post",
+        "rebuild",
+        "test"
+      ]
+    },
+    "memory:memory/2026-05-02.md:44:44": {
+      "key": "memory:memory/2026-05-02.md:44:44",
+      "path": "memory/2026-05-02.md",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Issues Found & Fixed: **Issue 1 — Citations appearing as 0:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "issues",
+        "found",
+        "fixed",
+        "issue",
+        "citations",
+        "appearing"
+      ]
+    },
+    "memory:memory/2026-05-02.md:45:46": {
+      "key": "memory:memory/2026-05-02.md:45:46",
+      "path": "memory/2026-05-02.md",
+      "startLine": 45,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Issues Found & Fixed: Root cause: POST /api/wiki response had no citation info; setCitations returned `{ok: true}` with no count; Fix: createArticle now returns `citationCount` + `parentSlug`; setCitations returns full counts",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "api/wiki",
+        "issues",
+        "found",
+        "fixed",
+        "root",
+        "cause",
+        "post",
+        "api"
+      ]
+    },
+    "memory:memory/2026-05-02.md:48:48": {
+      "key": "memory:memory/2026-05-02.md:48:48",
+      "path": "memory/2026-05-02.md",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Issues Found & Fixed: **Issue 2 — parentSlug null in list:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "issues",
+        "found",
+        "fixed",
+        "issue",
+        "parentslug",
+        "null",
+        "list"
+      ]
+    },
+    "memory:memory/2026-05-02.md:49:50": {
+      "key": "memory:memory/2026-05-02.md:49:50",
+      "path": "memory/2026-05-02.md",
+      "startLine": 49,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Issues Found & Fixed: Root cause: list query only selected `parentId` (UUID), not `parentSlug`; Fix: LEFT JOIN on parent table, both `parentId` and `parentSlug` returned",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "issues",
+        "found",
+        "fixed",
+        "root",
+        "cause",
+        "list",
+        "query",
+        "only"
+      ]
+    },
+    "memory:memory/2026-05-02.md:52:52": {
+      "key": "memory:memory/2026-05-02.md:52:52",
+      "path": "memory/2026-05-02.md",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Issues Found & Fixed: **Issue 3 — Bad chunkIds silently failing:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "issues",
+        "found",
+        "fixed",
+        "issue",
+        "bad",
+        "chunkids",
+        "silently",
+        "failing"
+      ]
+    },
+    "memory:memory/2026-05-02.md:53:54": {
+      "key": "memory:memory/2026-05-02.md:53:54",
+      "path": "memory/2026-05-02.md",
+      "startLine": 53,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Issues Found & Fixed: Root cause: FK violation on citation insert would fail silently or roll back article; Fix: Pre-validation before any embedding/insert work; clear 400 with missing IDs listed",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "embedding",
+        "pre-validation",
+        "embedding/insert",
+        "issues",
+        "found",
+        "fixed",
+        "root",
+        "cause"
+      ]
+    },
+    "memory:memory/2026-05-02.md:58:58": {
+      "key": "memory:memory/2026-05-02.md:58:58",
+      "path": "memory/2026-05-02.md",
+      "startLine": 58,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "Phase 4: Ingest Sources Skill + Polling Glue: **New skill:** `skills/ingest-sources/SKILL.md` — full ingest flow for agents:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "skills/ingest-sources/skill.md",
+        "phase",
+        "ingest",
+        "sources",
+        "skill",
+        "polling",
+        "glue",
+        "new"
+      ]
+    },
+    "memory:memory/2026-05-02.md:59:62": {
+      "key": "memory:memory/2026-05-02.md:59:62",
+      "path": "memory/2026-05-02.md",
+      "startLine": 59,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "Phase 4: Ingest Sources Skill + Polling Glue: Single + batch upload (files via multipart, URLs via `sourceUrls`); Optional LLM cleanup (`llmProcess` flag); Two completion-tracking patterns:; Pattern A: poll `GET /api/sources/:id` until `status === \"completed\"`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "completion-tracking",
+        "api/sources",
+        "phase",
+        "ingest",
+        "sources",
+        "skill",
+        "polling",
+        "glue"
+      ]
+    },
+    "memory:memory/2026-05-02.md:63:64": {
+      "key": "memory:memory/2026-05-02.md:63:64",
+      "path": "memory/2026-05-02.md",
+      "startLine": 63,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "Phase 4: Ingest Sources Skill + Polling Glue: Pattern B: subscribe to socket.io `job:progress/completed/failed`; Dedup recipe: scan `GET /api/sources` by `sourceUrl` before re-ingesting",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "socket.io",
+        "progress/completed/failed",
+        "api/sources",
+        "re-ingesting",
+        "phase",
+        "ingest",
+        "sources",
+        "skill"
+      ]
+    },
+    "memory:memory/2026-05-02.md:66:66": {
+      "key": "memory:memory/2026-05-02.md:66:66",
+      "path": "memory/2026-05-02.md",
+      "startLine": 66,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "Phase 4: Ingest Sources Skill + Polling Glue: **Polling glue fix:** `GET /api/sources` and `GET /api/sources/:id` now expose `status` field (was in DB schema, never serialized). Agents can poll sourceId directly without juggling bullJobId vs DB UUID.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "api/sources",
+        "phase",
+        "ingest",
+        "sources",
+        "skill",
+        "polling",
+        "glue",
+        "fix"
+      ]
+    },
+    "memory:memory/2026-05-02.md:68:68": {
+      "key": "memory:memory/2026-05-02.md:68:68",
+      "path": "memory/2026-05-02.md",
+      "startLine": 68,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "Phase 4: Ingest Sources Skill + Polling Glue: **Cross-links wired up:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "cross-links",
+        "phase",
+        "ingest",
+        "sources",
+        "skill",
+        "polling",
+        "glue",
+        "cross"
+      ]
+    },
+    "memory:memory/2026-05-02.md:69:71": {
+      "key": "memory:memory/2026-05-02.md:69:71",
+      "path": "memory/2026-05-02.md",
+      "startLine": 69,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "Phase 4: Ingest Sources Skill + Polling Glue: `search-knowledge/SKILL.md` → links to `ingest-sources` for \"no results → ingest first\" flow; `write-wiki-article/SKILL.md` → links to `ingest-sources` for \"missing material → ingest before drafting\"; `skills/README.md` flowchart upda",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "search-knowledge/skill.md",
+        "ingest-sources",
+        "write-wiki-article/skill.md",
+        "skills/readme.md",
+        "phase",
+        "ingest",
+        "sources",
+        "skill"
+      ]
+    },
+    "memory:memory/2026-05-02.md:73:73": {
+      "key": "memory:memory/2026-05-02.md:73:73",
+      "path": "memory/2026-05-02.md",
+      "startLine": 73,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "Phase 4: Ingest Sources Skill + Polling Glue: **Docker bug fixed:** Production Dockerfile wasn't copying `skills/` into the image (introduced in commit 4a8dcaa). `curl /api/skills` returned `count: 0` in prod despite tests passing. Now skills are in the container and discoverable",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "api/skills",
+        "phase",
+        "ingest",
+        "sources",
+        "skill",
+        "polling",
+        "glue",
+        "docker"
+      ]
+    },
+    "memory:memory/2026-05-02.md:76:79": {
+      "key": "memory:memory/2026-05-02.md:76:79",
+      "path": "memory/2026-05-02.md",
+      "startLine": 76,
+      "endLine": 79,
+      "source": "memory",
+      "snippet": "Verified State: **Sources:** 9 PDFs ingested, chunked, embedded; **Articles:** 6 wiki articles in tree structure; **Revisions:** 2 saved (nmap article v1→v2→v3); **Citations:** 1 on nmap article, 2 on SMB article (verified via detail endpoint)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "verified",
+        "state",
+        "sources",
+        "pdfs",
+        "ingested",
+        "chunked",
+        "embedded",
+        "articles"
+      ]
+    },
+    "memory:memory/2026-05-02.md:80:83": {
+      "key": "memory:memory/2026-05-02.md:80:83",
+      "path": "memory/2026-05-02.md",
+      "startLine": 80,
+      "endLine": 83,
+      "source": "memory",
+      "snippet": "Verified State: **Skills discoverable:** 4 skills (ingest-sources, search-knowledge, write-wiki-article, manage-wiki); **Skills in container:** ✅ `docker exec memoria-app-1 ls /app/skills/`; **Source status polling:** ✅ `GET /api/sources/:id` returns `{status: \"completed\"}`; **Te",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "ingest-sources",
+        "search-knowledge",
+        "write-wiki-article",
+        "manage-wiki",
+        "memoria-app-1",
+        "app/skills",
+        "api/sources",
+        "verified"
+      ]
+    },
+    "memory:memory/2026-05-02.md:86:89": {
+      "key": "memory:memory/2026-05-02.md:86:89",
+      "path": "memory/2026-05-02.md",
+      "startLine": 86,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "Next Steps: Populate more technique articles (directory bruteforce, LDAP enum, etc.); Add more HTB box walkthroughs to source corpus; Test wiki search (`POST /api/wiki/search`) with more queries; Build out Web Enumeration subtree",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "api/wiki/search",
+        "steps",
+        "populate",
+        "technique",
+        "articles",
+        "directory",
+        "bruteforce",
+        "ldap"
+      ]
+    },
+    "memory:memory/2026-05-02.md:98:98": {
+      "key": "memory:memory/2026-05-02.md:98:98",
+      "path": "memory/2026-05-02.md",
+      "startLine": 98,
+      "endLine": 98,
+      "source": "memory",
+      "snippet": "Memoria Cross-Reference System (New Feature): **New endpoints for article-to-article links:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "cross-reference",
+        "article-to-article",
+        "memoria",
+        "cross",
+        "reference",
+        "new",
+        "feature",
+        "endpoints"
+      ]
+    },
+    "memory:memory/2026-05-02.md:99:101": {
+      "key": "memory:memory/2026-05-02.md:99:101",
+      "path": "memory/2026-05-02.md",
+      "startLine": 99,
+      "endLine": 101,
+      "source": "memory",
+      "snippet": "Memoria Cross-Reference System (New Feature): `POST /api/wiki/:slug/links` — create links (mode: replace/append); `PATCH /api/wiki/:slug/links/:linkId` — update a link; `DELETE /api/wiki/:slug/links/:linkId` — remove a link",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "cross-reference",
+        "api/wiki",
+        "slug/links",
+        "replace/append",
+        "memoria",
+        "cross",
+        "reference",
+        "new"
+      ]
+    },
+    "memory:memory/2026-05-02.md:103:103": {
+      "key": "memory:memory/2026-05-02.md:103:103",
+      "path": "memory/2026-05-02.md",
+      "startLine": 103,
+      "endLine": 103,
+      "source": "memory",
+      "snippet": "Memoria Cross-Reference System (New Feature): **Link types:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "cross-reference",
+        "memoria",
+        "cross",
+        "reference",
+        "new",
+        "feature",
+        "link",
+        "types"
+      ]
+    },
+    "memory:memory/2026-05-02.md:104:107": {
+      "key": "memory:memory/2026-05-02.md:104:107",
+      "path": "memory/2026-05-02.md",
+      "startLine": 104,
+      "endLine": 107,
+      "source": "memory",
+      "snippet": "Memoria Cross-Reference System (New Feature): `prerequisite` — must read this first; `supersedes` — this article replaces the older one; `see-also` — related topic; `references` — default, general reference",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "cross-reference",
+        "see-also",
+        "memoria",
+        "cross",
+        "reference",
+        "new",
+        "feature",
+        "prerequisite"
+      ]
+    },
+    "memory:memory/2026-05-02.md:109:109": {
+      "key": "memory:memory/2026-05-02.md:109:109",
+      "path": "memory/2026-05-02.md",
+      "startLine": 109,
+      "endLine": 109,
+      "source": "memory",
+      "snippet": "Memoria Cross-Reference System (New Feature): **Links appear on article detail:** `GET /api/wiki/:slug` now returns `links` (outgoing) and `backlinks` (incoming).",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "cross-reference",
+        "api/wiki",
+        "memoria",
+        "cross",
+        "reference",
+        "new",
+        "feature",
+        "links"
+      ]
+    },
+    "memory:memory/2026-05-02.md:113:113": {
+      "key": "memory:memory/2026-05-02.md:113:113",
+      "path": "memory/2026-05-02.md",
+      "startLine": 113,
+      "endLine": 113,
+      "source": "memory",
+      "snippet": "New Skill: manage-sources: **Skill:** `skills/manage-sources/SKILL.md` — rename ingested sources with audit history.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "manage-sources",
+        "skills/manage-sources/skill.md",
+        "new",
+        "skill",
+        "manage",
+        "sources",
+        "skills",
+        "skill.md"
+      ]
+    },
+    "memory:memory/2026-05-02.md:114:116": {
+      "key": "memory:memory/2026-05-02.md:114:116",
+      "path": "memory/2026-05-02.md",
+      "startLine": 114,
+      "endLine": 116,
+      "source": "memory",
+      "snippet": "New Skill: manage-sources: `PATCH /api/sources/:id` — rename title (immutable content/chunks/embeddings); `GET /api/sources/:id/edits` — audit log of renames; Use cases: URLs as titles → friendly names, duplicate disambiguation, empty title cleanup",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "embedding",
+        "embeddings",
+        "manage-sources",
+        "api/sources",
+        "content/chunks/embeddings",
+        "id/edits",
+        "new",
+        "skill"
+      ]
+    },
+    "memory:memory/2026-05-02.md:120:120": {
+      "key": "memory:memory/2026-05-02.md:120:120",
+      "path": "memory/2026-05-02.md",
+      "startLine": 120,
+      "endLine": 120,
+      "source": "memory",
+      "snippet": "Skills README Flowchart Updated: Full 4-phase agent loop documented:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "4-phase",
+        "skills",
+        "readme",
+        "flowchart",
+        "updated",
+        "full",
+        "phase",
+        "loop"
+      ]
+    },
+    "memory:memory/2026-05-02.md:122:122": {
+      "key": "memory:memory/2026-05-02.md:122:122",
+      "path": "memory/2026-05-02.md",
+      "startLine": 122,
+      "endLine": 122,
+      "source": "memory",
+      "snippet": "Skills README Flowchart Updated: ingest → search → draft → store → manage",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "skills",
+        "readme",
+        "flowchart",
+        "updated",
+        "ingest",
+        "draft",
+        "store",
+        "manage"
+      ]
+    },
+    "memory:memory/2026-05-02.md:125:125": {
+      "key": "memory:memory/2026-05-02.md:125:125",
+      "path": "memory/2026-05-02.md",
+      "startLine": 125,
+      "endLine": 125,
+      "source": "memory",
+      "snippet": "Skills README Flowchart Updated: All 5 skills cross-linked:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "cross-linked",
+        "skills",
+        "readme",
+        "flowchart",
+        "updated",
+        "all",
+        "cross",
+        "linked"
+      ]
+    },
+    "memory:memory/2026-05-02.md:126:129": {
+      "key": "memory:memory/2026-05-02.md:126:129",
+      "path": "memory/2026-05-02.md",
+      "startLine": 126,
+      "endLine": 129,
+      "source": "memory",
+      "snippet": "Skills README Flowchart Updated: **ingest-sources** — add new files/URLs; **manage-sources** — rename/clean up titles; **search-knowledge** — find relevant chunks; **write-wiki-article** — create articles with citations",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "ingest-sources",
+        "files/urls",
+        "manage-sources",
+        "rename/clean",
+        "search-knowledge",
+        "write-wiki-article",
+        "skills",
+        "readme"
+      ]
+    },
+    "memory:memory/2026-05-02.md:130:130": {
+      "key": "memory:memory/2026-05-02.md:130:130",
+      "path": "memory/2026-05-02.md",
+      "startLine": 130,
+      "endLine": 130,
+      "source": "memory",
+      "snippet": "Skills README Flowchart Updated: **manage-wiki** — update, revert, archive, manage citations and links",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "manage-wiki",
+        "skills",
+        "readme",
+        "flowchart",
+        "updated",
+        "manage",
+        "wiki",
+        "update"
+      ]
+    },
+    "memory:memory/2026-05-02.md:134:134": {
+      "key": "memory:memory/2026-05-02.md:134:134",
+      "path": "memory/2026-05-02.md",
+      "startLine": 134,
+      "endLine": 134,
+      "source": "memory",
+      "snippet": "Plan: Vulnerability Assessment Wiki + Cross-References: **Proposed tree:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "cross-references",
+        "plan",
+        "vulnerability",
+        "assessment",
+        "wiki",
+        "cross",
+        "references",
+        "proposed"
+      ]
+    },
+    "memory:memory/2026-05-02.md:136:139": {
+      "key": "memory:memory/2026-05-02.md:136:139",
+      "path": "memory/2026-05-02.md",
+      "startLine": 136,
+      "endLine": 139,
+      "source": "memory",
+      "snippet": "Plan: Vulnerability Assessment Wiki + Cross-References: Vulnerability Assessment ├── Web Application VA │ ├── SQL Injection │ ├── XSS (Cross-Site Scripting)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "cross-references",
+        "cross-site",
+        "plan",
+        "vulnerability",
+        "assessment",
+        "wiki",
+        "cross",
+        "references"
+      ]
+    },
+    "memory:memory/2026-05-02.md:140:143": {
+      "key": "memory:memory/2026-05-02.md:140:143",
+      "path": "memory/2026-05-02.md",
+      "startLine": 140,
+      "endLine": 143,
+      "source": "memory",
+      "snippet": "Plan: Vulnerability Assessment Wiki + Cross-References: │ ├── Command Injection │ └── File Upload Vulnerabilities ├── Network VA │ ├── Unpatched Services",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "network",
+        "cross-references",
+        "plan",
+        "vulnerability",
+        "assessment",
+        "wiki",
+        "cross",
+        "references"
+      ]
+    },
+    "memory:memory/2026-05-02.md:144:147": {
+      "key": "memory:memory/2026-05-02.md:144:147",
+      "path": "memory/2026-05-02.md",
+      "startLine": 144,
+      "endLine": 147,
+      "source": "memory",
+      "snippet": "Plan: Vulnerability Assessment Wiki + Cross-References: │ └── Default Credentials ├── Privilege Escalation │ ├── Linux PrivEsc │ └── Windows PrivEsc",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "cross-references",
+        "plan",
+        "vulnerability",
+        "assessment",
+        "wiki",
+        "cross",
+        "references",
+        "credentials"
+      ]
+    },
+    "memory:memory/2026-05-02.md:148:149": {
+      "key": "memory:memory/2026-05-02.md:148:149",
+      "path": "memory/2026-05-02.md",
+      "startLine": 148,
+      "endLine": 149,
+      "source": "memory",
+      "snippet": "Plan: Vulnerability Assessment Wiki + Cross-References: └── Exploit Research └── CVE Lookup & PoC Verification",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "cross-references",
+        "plan",
+        "vulnerability",
+        "assessment",
+        "wiki",
+        "cross",
+        "references",
+        "exploit"
+      ]
+    },
+    "memory:memory/2026-05-02.md:152:152": {
+      "key": "memory:memory/2026-05-02.md:152:152",
+      "path": "memory/2026-05-02.md",
+      "startLine": 152,
+      "endLine": 152,
+      "source": "memory",
+      "snippet": "Plan: Vulnerability Assessment Wiki + Cross-References: **Cross-reference strategy:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "cross-references",
+        "cross-reference",
+        "plan",
+        "vulnerability",
+        "assessment",
+        "wiki",
+        "cross",
+        "references"
+      ]
+    },
+    "memory:memory/2026-05-02.md:153:156": {
+      "key": "memory:memory/2026-05-02.md:153:156",
+      "path": "memory/2026-05-02.md",
+      "startLine": 153,
+      "endLine": 156,
+      "source": "memory",
+      "snippet": "Plan: Vulnerability Assessment Wiki + Cross-References: SQL Injection → prerequisite: Web Enumeration; SQL Injection → see-also: Command Injection; Privilege Escalation → prerequisite: Enumeration; File Upload → references: Web Application VA",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "cross-references",
+        "see-also",
+        "plan",
+        "vulnerability",
+        "assessment",
+        "wiki",
+        "cross",
+        "references"
+      ]
+    },
+    "memory:memory/2026-05-02.md:157:159": {
+      "key": "memory:memory/2026-05-02.md:157:159",
+      "path": "memory/2026-05-02.md",
+      "startLine": 157,
+      "endLine": 159,
+      "source": "memory",
+      "snippet": "Plan: Vulnerability Assessment Wiki + Cross-References: Nmap All-Ports → prerequisite: Network VA; SMB Enumeration → prerequisite: Windows PrivEsc; VA root → see-also: Enumeration root",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "network",
+        "cross-references",
+        "all-ports",
+        "see-also",
+        "plan",
+        "vulnerability",
+        "assessment",
+        "wiki"
+      ]
+    },
+    "memory:memory/2026-05-02.md:161:161": {
+      "key": "memory:memory/2026-05-02.md:161:161",
+      "path": "memory/2026-05-02.md",
+      "startLine": 161,
+      "endLine": 161,
+      "source": "memory",
+      "snippet": "Plan: Vulnerability Assessment Wiki + Cross-References: **Pending:** Create articles, search sources for evidence, store with citations, wire cross-references, verify graph.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "cross-references",
+        "plan",
+        "vulnerability",
+        "assessment",
+        "wiki",
+        "cross",
+        "references",
+        "pending"
+      ]
+    },
+    "memory:memory/2026-05-02.md:165:165": {
+      "key": "memory:memory/2026-05-02.md:165:165",
+      "path": "memory/2026-05-02.md",
+      "startLine": 165,
+      "endLine": 165,
+      "source": "memory",
+      "snippet": "Daily Log Fix: Earlier error: Memoria content was appended to `memory/2026-05-01.md` instead of creating `memory/2026-05-02.md`. Fixed by moving all May 2nd Memoria content to the correct file.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "memory/2026-05-01.md",
+        "memory/2026-05-02.md",
+        "log",
+        "fix",
+        "earlier",
+        "error",
+        "memoria",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:67:67": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:67:67",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 67,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "User: My own IP isn't fixed since it's from ISP. It's currently at 103.252.35.138. I guess we can set for range /24 on 103.252.35.0 right?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "103.252.35.138",
+        "103.252.35.0",
+        "own",
+        "isn't",
+        "fixed",
+        "it's",
+        "isp",
+        "currently"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:68:68": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:68:68",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 68,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "Assistant: Yes, `/24` on `103.252.35.0/24` would work — but with tradeoffs: ## /24 Analysis | Aspect | Detail | |--------|--------| | **Range** | 103.252.35.0 – 103.252.35.255 (256 IPs) | | **Your IP** | 103.252.35.138 (confirmed from Tailscale logs) | | **Risk** | Anyone on that",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "103.252.35.0/24",
+        "103.252.35.0",
+        "103.252.35.255",
+        "103.252.35.138",
+        "yes",
+        "would",
+        "but",
+        "tradeoffs"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:69:69": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:69:69",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 69,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "Assistant: .0.0–.255.255 | Too broad, not recommended | ## My Take `/24` is a pragmatic choice for a home ISP. Yes, 256 IPs is a lot, but: - It's **only** your ISP's customer block - You're already relying on Tailscale for primary access - This is a **fallback**, not your main pa",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "0.0",
+        "255.255",
+        "too",
+        "broad",
+        "not",
+        "recommended",
+        "take",
+        "pragmatic"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:70:70": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:70:70",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 70,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "User: >• SSH: Add ListenAddress 76.13.183.141 (your VPS public IP) alongside the Tailscale one Can you explain this one?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "76.13.183.141",
+        "ssh",
+        "add",
+        "listenaddress",
+        "vps",
+        "public",
+        "alongside",
+        "tailscale"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:71:71": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:71:71",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 71,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "Assistant: Sure. ## How `ListenAddress` Works `ListenAddress` tells sshd **which network interface/IP to listen on**. It's not \"who can connect\" — it's \"which door to open.\" **Current state:** ```bash ListenAddress 100.108.21.107 # Tailscale IP only ``` SSH only accepts connectio",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "network",
+        "interface/ip",
+        "100.108.21.107",
+        "sure",
+        "how",
+        "listenaddress",
+        "works",
+        "tells"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:72:72": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:72:72",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 72,
+      "endLine": 72,
+      "source": "memory",
+      "snippet": "Assistant: 76.13.183.141:22 | Fallback — if Tailscale is down/slow during boot | ## The Catch Just adding `ListenAddress 76.13.183.141` isn't enough. You also need: 1. **UFW rule** — allow port 22 from your ISP range (the `103.252.35.0/24` we discussed) 2. **SSH still needs key a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "76.13.183.141",
+        "down/slow",
+        "103.252.35.0/24",
+        "fallback",
+        "tailscale",
+        "down",
+        "slow",
+        "boot"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:73:73": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:73:73",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 73,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "User: We still have fail2ban right?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "still",
+        "fail2ban",
+        "right"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:74:74": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:74:74",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 74,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "Assistant: Yep, it's running: ``` Active: active (running) since Fri 2026-05-01 10:26:06 ``` **Status:** ✅ Enabled + active Good news — this means if someone from that `/24` tries brute-forcing SSH, fail2ban will ban their IP after a few failed attempts. That makes the `/24` appr",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "brute-forcing",
+        "yep",
+        "it's",
+        "running",
+        "active",
+        "fri",
+        "status",
+        "enabled"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:75:75": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:75:75",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 75,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "User: Let's add those two rules.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "let's",
+        "add",
+        "those",
+        "two",
+        "rules"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:76:76": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:76:76",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 76,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "Assistant: Done. Here's what's live: **SSH now listens on two addresses:** ``` 100.108.21.107:22 ← Tailscale (primary) 76.13.183.141:22 ← Public IP (fallback) ``` **UFW rules for port 22:** ``` 100.64.0.0/10 ← Tailscale CGNAT range 103.252.35.0/24 ← Your ISP range (fallback) ```",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "100.108.21.107",
+        "76.13.183.141",
+        "100.64.0.0/10",
+        "103.252.35.0/24",
+        "done",
+        "here's",
+        "what's",
+        "live"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:77:77": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:77:77",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 77,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "User: Where can I check listen address?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "where",
+        "can",
+        "check",
+        "listen",
+        "address"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:78:78": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:78:78",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 78,
+      "endLine": 78,
+      "source": "memory",
+      "snippet": "Assistant: Two places: **Config files:** ```bash # The hardening config we just edited sudo cat /etc/ssh/sshd_config.d/hardening.conf # Main SSH config (default, commented out) sudo cat /etc/ssh/sshd_config | grep ListenAddress ``` **Live running state:** ```bash # What sshd is a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "etc/ssh/sshd-config",
+        "two",
+        "places",
+        "config",
+        "bash",
+        "hardening",
+        "edited",
+        "sudo"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:79:79": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:79:79",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 79,
+      "endLine": 79,
+      "source": "memory",
+      "snippet": "User: I was trying to connect via terminal direct from VPS provider and got the below. I guess it's being blocked accordingly? 21957.510833] [UFW BLOCK] IN=eth0 OUT= MAC=f2:e8:d4:ba:83:b1:44:38:39:ff:ff:41:08:00 SRC=162.216.149.89 DST=76.13.183.141 LEN=59 TOS=0x00 PREC=0x00 TTL=2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "21957.510833",
+        "162.216.149.89",
+        "76.13.183.141",
+        "was",
+        "trying",
+        "connect",
+        "via",
+        "terminal"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:80:80": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:80:80",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 80,
+      "endLine": 80,
+      "source": "memory",
+      "snippet": "User: IN=eth0 OUT= MAC=f2:e8:d4:ba:83:b1:44:38:39:ff:ff:41:08:00 SRC=134.209.179.20 DST=76.13.183.141 LEN=40 TOS=0x00 PREC=0x00 TTL=54 ID=21412 PROTO=TCP SPT=61201 DPT=23 WINDOW=62473 RES=0x00 SYN URGP=0 [21970.628221] [UFW BLOCK] IN=eth0 OUT= MAC=f2:e8:d4:ba:83:b1:44:38:39:ff:ff",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "134.209.179.20",
+        "76.13.183.141",
+        "21970.628221",
+        "eth0",
+        "out",
+        "mac",
+        "ff:ff",
+        "src"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:81:81": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:81:81",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 81,
+      "endLine": 81,
+      "source": "memory",
+      "snippet": "User: TTL=54 ID=21412 PROTO=TCP SPT=61201 DPT=23 WINDOW=62473 RES=0x00 SYN URGP=0",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "ttl",
+        "proto",
+        "tcp",
+        "spt",
+        "dpt",
+        "window",
+        "res",
+        "0x00"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:82:82": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:82:82",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 82,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "Assistant: Those logs are **not SSH** — they're random internet scanners hitting ports 5353 (mDNS) and 23 (Telnet). UFW correctly drops them. Nothing to do with your connection. But let me check if your VPS provider's console connection is hitting port 22 and getting blocked:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "those",
+        "logs",
+        "not",
+        "ssh",
+        "they're",
+        "random",
+        "internet",
+        "scanners"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:83:83": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:83:83",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 83,
+      "endLine": 83,
+      "source": "memory",
+      "snippet": "Assistant: **Found it.** Your provider's console is being blocked. The logs you originally shared (ports 5353, 23) are just random internet noise. But look at these **port 22** blocks: ``` SRC=169.254.0.1 DST=76.13.183.141 ... DPT=22 ``` **`169.254.0.1`** is a **link-local addres",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "169.254.0.1",
+        "76.13.183.141",
+        "link-local",
+        "found",
+        "provider's",
+        "console",
+        "blocked",
+        "logs"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:84:84": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:84:84",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 84,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "Assistant: infrastructure: ```bash sudo ufw allow from 169.254.0.0/16 to any port 22 proto tcp comment 'VPS provider console' ``` This covers the entire link-local range safely — it's **only** used for local network services and can't be reached from the internet. Want me to add",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "network",
+        "169.254.0.0/16",
+        "link-local",
+        "infrastructure",
+        "bash",
+        "sudo",
+        "ufw",
+        "allow"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:85:85": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:85:85",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 85,
+      "endLine": 85,
+      "source": "memory",
+      "snippet": "User: Is 169 public IP or private Ip range?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "public",
+        "private",
+        "range"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:86:86": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:86:86",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 86,
+      "endLine": 86,
+      "source": "memory",
+      "snippet": "Assistant: **Private** — specifically **link-local** (APIPA range). - **Not routable** on the public internet - Devices self-assign from this range when they can't get an IP from DHCP - Your VPS provider uses it internally for their console/terminal infrastructure So `169.254.0.1",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "link-local",
+        "self-assign",
+        "console/terminal",
+        "169.254.0.1",
+        "private",
+        "specifically",
+        "link",
+        "local"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:87:87": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:87:87",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 87,
+      "endLine": 87,
+      "source": "memory",
+      "snippet": "User: Ok let's add",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "let's",
+        "add"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:88:88": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:88:88",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 88,
+      "endLine": 88,
+      "source": "memory",
+      "snippet": "Assistant: Done. Your provider's web console should now work: **UFW rules for port 22:** ``` 100.64.0.0/10 ← Tailscale 103.252.35.0/24 ← Your ISP (direct) 169.254.0.0/16 ← VPS provider console ← NEW ``` Try the provider's web terminal again — it should connect now.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "100.64.0.0/10",
+        "103.252.35.0/24",
+        "169.254.0.0/16",
+        "done",
+        "provider's",
+        "web",
+        "console",
+        "now"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:89:89": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:89:89",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 89,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "User: [media attached: /home/openclaw/.openclaw/media/inbound/file_355---0a23669f-faad-4706-99ee-a0578c1ea3a2.jpg (image/jpeg) | /home/openclaw/.openclaw/media/inbound/file_355---0a23669f-faad-4706-99ee-a0578c1ea3a2.jpg] To send an image back, prefer the message tool (media/path/",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "home/openclaw",
+        "openclaw/media/inbound/file-355",
+        "image/jpeg",
+        "media/path",
+        "media",
+        "attached",
+        "home",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-01.txt:90:90": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-01.txt:90:90",
+      "path": "memory/.dreams/session-corpus/2026-05-01.txt",
+      "startLine": 90,
+      "endLine": 90,
+      "source": "memory",
+      "snippet": "Assistant: Perfect — the console is working. Confirmed: **Hostinger VPS console** (kul.hostingervps.com) now connects through. You're logged in as `root` there — that's normal for provider consoles, they typically bypass normal auth. **Three SSH paths now confirmed:** | Path | St",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:01.155Z",
+      "lastRecalledAt": "2026-05-02T19:00:01.155Z",
+      "queryHashes": [
+        "23c989536796"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "kul.hostingervps.com",
+        "perfect",
+        "console",
+        "working",
+        "confirmed",
+        "hostinger",
+        "vps",
+        "now"
       ]
     }
   }
