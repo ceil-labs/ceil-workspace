@@ -166,3 +166,12 @@ write it down
 - **Test framework:** Vitest + Supertest + Testcontainers (@testcontainers/postgresql) [score=0.843 recalls=0 avg=0.620 source=memory/2026-04-27.md:16-16]
 <!-- openclaw-memory-promotion:memory:memory/2026-04-28.md:6:6 -->
 - **Victor's decision:** Rename to "Memoria" — better reflects the knowledge system vision beyond just ingestion. [score=0.837 recalls=0 avg=0.620 source=memory/2026-04-28.md:6-6]
+
+## Promoted From Short-Term Memory (2026-05-04)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-04-28.md:8:8 -->
+- **Changes made:** [score=0.869 recalls=0 avg=0.620 source=memory/2026-04-28.md:8-8]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-28.md:14:14 -->
+- **Files changed:** 8 files across README, package.json, docker-compose, UI, services, tests [score=0.869 recalls=0 avg=0.620 source=memory/2026-04-28.md:14-14]
+<!-- openclaw-memory-promotion:memory:memory/2026-04-28.md:16:16 -->
+- **README updated with:** [score=0.869 recalls=0 avg=0.620 source=memory/2026-04-28.md:16-16]
