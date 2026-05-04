@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-03T19:00:01.117Z",
+  "updatedAt": "2026-05-04T04:45:55.742Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -6800,19 +6800,21 @@
       "endLine": 53,
       "source": "memory",
       "snippet": "# 2026-04-07 — Dreaming Activated ## Summary Dreaming feature is now fully activated via slash command. Previous configuration-only approach didn't create the cron job; `/dreaming on` was required. ## Dreaming Activation ### What Was Missing - Config was set in `openclaw.json` (plugins.entries.memory-core.config.dreaming) - Gateway was restarted - **But**: No cron job was auto-created from config alone ### Solution Used slash command interface to enable: ``` /dreaming on ``` ### Confirmed Status ``` Dreaming status: • enabled: on • sweep cadence: 0 3 * * * (3:00 AM daily) • promotion policy: score>=0.8, recalls>=3, uniqueQueries>=3 Phases: • light -> REM -> deep (each sweep) • deep pha",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.969055140018463,
-      "maxScore": 0.49863009154796595,
+      "totalScore": 1.751316400588208,
+      "maxScore": 0.7822612605697449,
       "firstRecalledAt": "2026-04-12T02:06:27.192Z",
-      "lastRecalledAt": "2026-04-12T02:06:30.374Z",
+      "lastRecalledAt": "2026-05-04T04:41:40.689Z",
       "queryHashes": [
         "b1a812254815",
-        "3b2cdf3b87f1"
+        "3b2cdf3b87f1",
+        "4b68c0b2d338"
       ],
       "recallDays": [
-        "2026-04-12"
+        "2026-04-12",
+        "2026-05-04"
       ],
       "conceptTags": [
         "gateway",
@@ -36997,20 +36999,22 @@
       "endLine": 414,
       "source": "memory",
       "snippet": "- status: staged - Candidate: Assistant: The research completed successfully — I already summarized the findings above. Here's the short version: - **K2.6-code-preview isn't officially released yet** (as of today), but rumors say it's imminent - **Your existing `kimi-coding` API key and endpoint** will likely - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-14.txt:20-20 - recalls: 0 - status: staged - Candidate: User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18279\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Tue 2026-04-14 11:29 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.8536809206008911,
-      "maxScore": 0.4307176351547241,
+      "totalScore": 1.297176718711853,
+      "maxScore": 0.4434957981109619,
       "firstRecalledAt": "2026-04-16T11:13:00.642Z",
-      "lastRecalledAt": "2026-04-26T07:11:54.207Z",
+      "lastRecalledAt": "2026-05-04T04:30:20.708Z",
       "queryHashes": [
         "0f1ebcfab0fa",
-        "12bb0281b38f"
+        "12bb0281b38f",
+        "7b0c81ac3004"
       ],
       "recallDays": [
         "2026-04-16",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-05-04"
       ],
       "conceptTags": [
         "k2.6-code-preview",
@@ -54158,20 +54162,22 @@
       "endLine": 365,
       "source": "memory",
       "snippet": "- Candidate: - Candidate: **Context:** Neo (Telegram) experienced an LLM idle timeout on `kimi/k2p5` via the `kimi-coding` provider. After ~60s, OpenClaw auto-fallback to `minimax-m2.7` successfully. Model was later reset to `kimi/k2p5`. **Investigation:** - Confirmed via `openclaw logs` — primary profile `kimi-coding:default` hit `LLM idle timeout (60s)`, HTTP 408. - OpenClaw GitHub repo search revealed **Issue #55065** (no idle timeout mechanism) plus transient kimi-coding provider latency issues. - Victor confirmed he's on OpenClaw **v4.9** and the tool-call format bug is already resolved in this version. **Current Assessment:** - Only symptom observed is the **60s idle timeout** — likely",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.2128105362682837,
+      "totalScore": 1.658269934895565,
       "maxScore": 0.7477299233704108,
       "firstRecalledAt": "2026-04-24T06:38:54.278Z",
-      "lastRecalledAt": "2026-04-26T11:14:06.792Z",
+      "lastRecalledAt": "2026-05-04T04:30:20.708Z",
       "queryHashes": [
         "f1ff6e7d232f",
-        "04d942d19d67"
+        "04d942d19d67",
+        "7b0c81ac3004"
       ],
       "recallDays": [
         "2026-04-24",
-        "2026-04-26"
+        "2026-04-26",
+        "2026-05-04"
       ],
       "conceptTags": [
         "kimi/k2p5",
