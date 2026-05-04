@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-04T10:55:22.979Z",
+  "updatedAt": "2026-05-04T11:30:07.720Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -82882,6 +82882,37 @@
         "api/auth/owner",
         "tier",
         "lockwiki"
+      ]
+    },
+    "memory:memory/2026-05-04.md:79:113": {
+      "key": "memory:memory/2026-05-04.md:79:113",
+      "path": "memory/2026-05-04.md",
+      "startLine": 79,
+      "endLine": 113,
+      "source": "memory",
+      "snippet": "**Access control discovery:** - Wiki assets: accessible without authentication (public) - Note assets: return `401 Unauthorized` when accessed directly without auth — stricter than wiki assets ### Node Host Setup Clarification Victor asked about setting up a node host on his MacBook Pro for browser tool access. **Key clarifications:** - **Port 443** is needed because Tailscale HTTPS exposes the gateway on port 443 externally; internal gateway port is 18789 - **Isolated Chrome**: no special setup needed — the node host launches it automatically in `~/.openclaw/browser/` with no logins/cookies - **Versions don't need to match** between gateway and node — they negotiate protocol v3 at handsh",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.7689500348298495,
+      "maxScore": 0.7689500348298495,
+      "firstRecalledAt": "2026-05-04T11:30:07.720Z",
+      "lastRecalledAt": "2026-05-04T11:30:07.720Z",
+      "queryHashes": [
+        "9a482551143e"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "gateway",
+        "openclaw/browser",
+        "logins/cookies",
+        "access",
+        "control",
+        "discovery",
+        "wiki",
+        "assets"
       ]
     }
   }
