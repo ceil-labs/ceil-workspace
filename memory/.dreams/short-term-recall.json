@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-04T09:12:39.042Z",
+  "updatedAt": "2026-05-04T10:55:22.979Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -6718,13 +6718,13 @@
       "endLine": 60,
       "source": "memory",
       "snippet": "# 2026-04-06 — OpenClaw 2026.4.5 Upgrade + Dreaming Enabled ## Summary Upgraded OpenClaw from 2026.4.1 to 2026.4.5. Configured and tested experimental dreaming feature for automatic memory consolidation. ## OpenClaw Upgrade ### Version - **From:** 2026.4.1 - **To:** 2026.4.5 ### Upgrade Steps 1. `npm update -g openclaw` 2. `openclaw doctor --fix` (migrated config, backup created) 3. `openclaw gateway restart` ### Config Migration - Doctor automatically fixed config - Backup saved: `~/.openclaw/openclaw.json.bak` - No deprecated settings found (clean upgrade) ## Dreaming Configuration (Experimental) ### What is Dreaming? Background memory consolidation system that moves strong short-te",
-      "recallCount": 10,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.064897944004127,
+      "totalScore": 5.536644826800414,
       "maxScore": 0.7926711156674108,
       "firstRecalledAt": "2026-04-12T02:06:27.192Z",
-      "lastRecalledAt": "2026-05-04T09:12:06.765Z",
+      "lastRecalledAt": "2026-05-04T10:36:55.724Z",
       "queryHashes": [
         "b1a812254815",
         "3b2cdf3b87f1",
@@ -6735,7 +6735,8 @@
         "fefe4048e15b",
         "2d91467c7129",
         "72f6cc919e6a",
-        "3764dae27c0a"
+        "3764dae27c0a",
+        "a8e2f61772f9"
       ],
       "recallDays": [
         "2026-04-12",
@@ -82850,6 +82851,37 @@
         "semantic",
         "bug",
         "fix"
+      ]
+    },
+    "memory:memory/2026-05-04.md:49:65": {
+      "key": "memory:memory/2026-05-04.md:49:65",
+      "path": "memory/2026-05-04.md",
+      "startLine": 49,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "| Tier | lockWiki=false | lockWiki=true | |------|----------------|---------------| | Anonymous | Wiki + skills + health + graph open | Only health + skills + auth status | | API Key | Everything except owner-only | Everything except owner-only | | Owner Cookie | Everything | Everything | Owner-only endpoints (return 403 for API keys): - POST /api/settings - POST /api/reembed/run - /api/auth/api-keys CRUD - PUT /api/auth/lock-wiki - DELETE /api/auth/owner --- **Session end:** 2026-05-04 00:46 UTC",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.48884732425212857,
+      "maxScore": 0.48884732425212857,
+      "firstRecalledAt": "2026-05-04T10:38:21.040Z",
+      "lastRecalledAt": "2026-05-04T10:38:21.040Z",
+      "queryHashes": [
+        "179ea9038ba0"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "owner-only",
+        "api/settings",
+        "api/reembed/run",
+        "api/auth/api-keys",
+        "api/auth/lock-wiki",
+        "api/auth/owner",
+        "tier",
+        "lockwiki"
       ]
     }
   }
