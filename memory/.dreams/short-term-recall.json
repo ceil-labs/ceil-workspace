@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-05T12:50:31.384Z",
+  "updatedAt": "2026-05-06T22:36:11.888Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -6718,13 +6718,13 @@
       "endLine": 60,
       "source": "memory",
       "snippet": "# 2026-04-06 — OpenClaw 2026.4.5 Upgrade + Dreaming Enabled ## Summary Upgraded OpenClaw from 2026.4.1 to 2026.4.5. Configured and tested experimental dreaming feature for automatic memory consolidation. ## OpenClaw Upgrade ### Version - **From:** 2026.4.1 - **To:** 2026.4.5 ### Upgrade Steps 1. `npm update -g openclaw` 2. `openclaw doctor --fix` (migrated config, backup created) 3. `openclaw gateway restart` ### Config Migration - Doctor automatically fixed config - Backup saved: `~/.openclaw/openclaw.json.bak` - No deprecated settings found (clean upgrade) ## Dreaming Configuration (Experimental) ### What is Dreaming? Background memory consolidation system that moves strong short-te",
-      "recallCount": 12,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6.014393661887237,
+      "totalScore": 6.98686508086402,
       "maxScore": 0.7926711156674108,
       "firstRecalledAt": "2026-04-12T02:06:27.192Z",
-      "lastRecalledAt": "2026-05-05T09:58:54.235Z",
+      "lastRecalledAt": "2026-05-06T22:36:11.888Z",
       "queryHashes": [
         "b1a812254815",
         "3b2cdf3b87f1",
@@ -6737,7 +6737,9 @@
         "72f6cc919e6a",
         "3764dae27c0a",
         "a8e2f61772f9",
-        "8a37c6544890"
+        "8a37c6544890",
+        "d0df47872647",
+        "23fa433f2d8a"
       ],
       "recallDays": [
         "2026-04-12",
@@ -6745,7 +6747,9 @@
         "2026-04-22",
         "2026-04-26",
         "2026-05-04",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06",
+        "2026-05-07"
       ],
       "conceptTags": [
         "backup",
@@ -32278,23 +32282,27 @@
       "endLine": 57,
       "source": "memory",
       "snippet": "## Session Cleanup Skill - Created Created `session-cleanup` skill for archiving/removing stale OpenClaw session files: - Location: `~/.openclaw/skills/session-cleanup/` - SKILL.md: Documentation and workflow - Scripts: `cleanup-sessions.sh` (in progress) Purpose: Address session bloat from .jsonl.reset.* and .jsonl.deleted.* files that slow down agent responses. ## Current Session Status - Main sessions directory: 26MB - Large stale files identified: ~13MB of .reset. and .deleted. files - Archive approach recommended for safety - Cleanup pending completion ## Next Steps 1. Finish cleanup script implementation 2. Archive stale session files 3. Restart gateway to clear cached reference",
-      "recallCount": 4,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.1212190857562696,
+      "totalScore": 3.557354550662962,
       "maxScore": 0.7333058527145067,
       "firstRecalledAt": "2026-04-13T14:11:54.898Z",
-      "lastRecalledAt": "2026-04-26T22:10:09.844Z",
+      "lastRecalledAt": "2026-05-06T14:23:59.640Z",
       "queryHashes": [
         "3c86310b0fca",
         "039cddd403bb",
         "360e8a0d9467",
-        "76a7dd8b0ca7"
+        "76a7dd8b0ca7",
+        "33f87eb1a938",
+        "c00e16c2c140",
+        "a5cc10290578"
       ],
       "recallDays": [
         "2026-04-13",
         "2026-04-26",
-        "2026-04-27"
+        "2026-04-27",
+        "2026-05-06"
       ],
       "conceptTags": [
         "gateway",
@@ -36626,23 +36634,25 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "# 2026-03-18 - ProTek Skills Development Complete ## Summary Built two operational skills for ProTek FSM monitoring and flagged RO item management. All systems tested and operational. --- ## Skills Built Today ### 1. ProTek FSM Analyzer (`protek-fsm-analyzer`) **Purpose:** Monitor fiber installation operations across zones with automated analysis and alerts. **Location:** `~/.openclaw/skills/protek-fsm-analyzer/` **Commands:** - `/fsm check` — Full analysis with raw data for underperforming zones - `/fsm check --8am` — 8AM report with actionable PR trend analysis - `/fsm check --6pm` — 6PM report with clearance trends - `/fsm check --facility` — Include facility RPR breakdown - `/fsm s",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.885442081093788,
+      "totalScore": 2.3263610929250715,
       "maxScore": 0.49505363702774047,
       "firstRecalledAt": "2026-04-16T00:03:50.885Z",
-      "lastRecalledAt": "2026-04-28T02:31:30.482Z",
+      "lastRecalledAt": "2026-05-06T12:46:56.009Z",
       "queryHashes": [
         "d34508fc0dbd",
         "ac3a95801769",
         "6a51c916cb2e",
-        "4119f2f3629c"
+        "4119f2f3629c",
+        "eaaf5ec9c7f7"
       ],
       "recallDays": [
         "2026-04-16",
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-06"
       ],
       "conceptTags": [
         "protek-fsm-analyzer",
@@ -36763,13 +36773,13 @@
       "endLine": 286,
       "source": "memory",
       "snippet": "- Candidate: # 2026-04-03 — Daily Log ## Agent Platform — CI/CD & Production Deployment Setup ### Morning: CI Fixes **Problem:** CI workflow was failing with 19 RuboCop offenses and system-test job errors. **Actions Taken:** 1. **Fixed lint violations** — Ran `bin/rubocop -a` to auto-fix 19 offenses in test files 2. **Disabled system-test job** — Commented out in `.github/workflows/ci.yml` since no Capybara tests exist yet 3. **Cleaned up cache files** — Added `.cache` to `.gitignore` and removed cached files from git 4. **Fixed branch mismatch** — Updated CI to run on `master` (repo uses master, not main) **Result:** All CI jobs now passing (scan_ruby, scan_js, lint, test) ### Afternoon: GH",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.272124791145324,
+      "totalScore": 3.7030300766229622,
       "maxScore": 0.4952704519033432,
       "firstRecalledAt": "2026-04-16T01:23:11.580Z",
-      "lastRecalledAt": "2026-04-30T00:50:26.450Z",
+      "lastRecalledAt": "2026-05-06T14:19:06.845Z",
       "queryHashes": [
         "b34686ccbbe0",
         "9281fb8ad9e5",
@@ -36777,13 +36787,15 @@
         "02712bbd58fd",
         "99c2061517e3",
         "fbee3a2656de",
-        "24dfc0f61655"
+        "24dfc0f61655",
+        "33f87eb1a938"
       ],
       "recallDays": [
         "2026-04-16",
         "2026-04-24",
         "2026-04-26",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-06"
       ],
       "conceptTags": [
         "ci/cd",
@@ -36936,25 +36948,28 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# Daily Log — 2026-04-09 ## Session Start - Victor upgraded OpenClaw from 2026.4.5 → 2026.4.9 successfully - Had to remove `\"memory-lancedb\": { \"enabled\": false }` from config — even when disabled, app was looking for required properties ## Dreaming Research Results ### Dreaming Config — Complete Docs confirm only 2 user-facing settings exist: ```json \"dreaming\": { \"enabled\": true, \"frequency\": \"0 3 * * *\" } ``` Your current config is complete. No missing fields. Light/deep/REM thresholds are intentionally internal — not user-configurable. ### Dreaming Uses Internal Scheduler (NOT jobs.json) - Dreaming cron is managed by **memory-core plugin's own internal scheduler**, NOT the gatewa",
-      "recallCount": 4,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.226871484831265,
+      "totalScore": 3.1742464932951244,
       "maxScore": 0.7977754834446225,
       "firstRecalledAt": "2026-04-16T01:52:45.229Z",
-      "lastRecalledAt": "2026-04-30T06:45:20.163Z",
+      "lastRecalledAt": "2026-05-06T14:19:19.206Z",
       "queryHashes": [
         "9281fb8ad9e5",
         "6c70a997f668",
         "ac3a95801769",
-        "fcd902299fc4"
+        "fcd902299fc4",
+        "33f87eb1a938",
+        "c00e16c2c140"
       ],
       "recallDays": [
         "2026-04-16",
         "2026-04-22",
         "2026-04-27",
         "2026-04-26",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-06"
       ],
       "conceptTags": [
         "2026.4.5",
@@ -53842,13 +53857,13 @@
       "endLine": 46,
       "source": "memory",
       "snippet": "# 2026-03-17 - Initial Setup Complete ## What We Built Today ### Multi-Agent Infrastructure - **Ceil** (main agent) - Primary AI assistant for Victor - **Neo** (second agent) - Separate workspace and Telegram bot - Both agents have isolated workspaces, auth profiles, and routing ### Telegram Setup - Ceil bot: @ceil20260221_1_bot (existing) - Neo bot: @vprsneo_bot (new) - DM routing via bindings based on which bot receives the message ### Security & Secrets - Migrated all credentials to `secrets.json` with file provider - SecretRefs configured for: - Telegram bot tokens (ceil + neo) - Gateway auth token - Kimi/OpencGo API keys - Google API key (nano-banana-pro) - File permissions",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.4537106840912495,
+      "totalScore": 4.969974878341357,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-24T00:07:23.496Z",
-      "lastRecalledAt": "2026-05-05T12:50:31.384Z",
+      "lastRecalledAt": "2026-05-06T14:38:30.843Z",
       "queryHashes": [
         "9d4668d65398",
         "e202baef0ee5",
@@ -53857,7 +53872,8 @@
         "24370b595c31",
         "3b0393c4a91c",
         "c2dfdcb08e2a",
-        "064c500b4c00"
+        "064c500b4c00",
+        "7348585e52d9"
       ],
       "recallDays": [
         "2026-04-24",
@@ -53865,7 +53881,8 @@
         "2026-04-28",
         "2026-04-30",
         "2026-05-01",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ],
       "conceptTags": [
         "gateway",
@@ -53886,13 +53903,13 @@
       "endLine": 387,
       "source": "memory",
       "snippet": "- Candidate: - [ ] Set up any scheduled tasks or reminders ## Notes Victor prefers deep, fundamental understanding when learning. When he asks for help, provide thorough explanations, not surface-level fixes. He gets annoyed by people who don't make sense. --- ## Later Today - Honcho & Agent Communication ### Agent-to-Agent Communication ✅ - Successfully tested messaging between Ceil and Neo - Coordination protocol established: - Clean separation on daily tasks - **Coordination triggers:** \"lab setup\" or \"infrastructure for testing\" - Neo's focus: HTB training (red/blue team, technique deep-dives) ### Honcho Memory Setup - **Ceil workspace:** Uploaded to Honcho (8 files) - USER.md, MEMORY.m",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.1542580664157867,
-      "maxScore": 0.4897312730550766,
+      "totalScore": 3.673056948184967,
+      "maxScore": 0.5187988817691803,
       "firstRecalledAt": "2026-04-24T00:07:23.496Z",
-      "lastRecalledAt": "2026-05-05T12:50:31.384Z",
+      "lastRecalledAt": "2026-05-06T14:19:19.206Z",
       "queryHashes": [
         "9d4668d65398",
         "cacab37c0b7f",
@@ -53900,14 +53917,16 @@
         "0252485fea48",
         "24370b595c31",
         "3b0393c4a91c",
-        "064c500b4c00"
+        "064c500b4c00",
+        "c00e16c2c140"
       ],
       "recallDays": [
         "2026-04-24",
         "2026-04-27",
         "2026-04-28",
         "2026-04-30",
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ],
       "conceptTags": [
         "surface-level",
@@ -61612,13 +61631,13 @@
       "endLine": 38,
       "source": "memory",
       "snippet": "--- ## 2026-04-27 07:43 — Session Start **Victor's asks:** 1. Recap karpathy-ingest status 2. Add tests (integration with real DB) 3. Fix README to clearly distinguish dev mode vs production mode **Status reviewed:** Phase 1 (ingest + render + search) built and deployed at `https://srv1405873.tailcd23a1.ts.net:8444`. --- ## 2026-04-27 09:10 — Test Suite Implementation **Test framework:** Vitest + Supertest + Testcontainers (@testcontainers/postgresql) **Files created:** - `vitest.config.ts` — 60s timeout for testcontainers spin-up - `tests/setup.ts` — PostgreSqlContainer with init.sql migrations, test data dir cleanup - `tests/chunker.test.ts` — Unit tests for splitIntoChunks - `tests",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.304051526126403,
+      "totalScore": 4.820061271128196,
       "maxScore": 0.7704886230201913,
       "firstRecalledAt": "2026-04-27T02:17:19.570Z",
-      "lastRecalledAt": "2026-04-27T19:00:16.767Z",
+      "lastRecalledAt": "2026-05-06T14:19:19.206Z",
       "queryHashes": [
         "cacab37c0b7f",
         "e4990b16b5a5",
@@ -61627,11 +61646,13 @@
         "8f52dafb7fcb",
         "723f9cfd0cee",
         "94d590f8ac11",
-        "59ff6049b87c"
+        "59ff6049b87c",
+        "c00e16c2c140"
       ],
       "recallDays": [
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-06"
       ],
       "conceptTags": [
         "karpathy-ingest",
@@ -68336,34 +68357,38 @@
       "startLine": 37,
       "endLine": 80,
       "source": "memory",
-      "snippet": "- `USER.md` - Victor's profile and preferences - `AGENTS.md` - Operating rules including DELEGATE first approach ## Victor's Profile **Name:** Victor Paolo Reyes **Timezone:** Asia/Manila (UTC+8) **Work:** Operations, systems, data visualization **Mantra:** \"We can only manage what we can measure\" **Learning Style:** Deep and fundamental understanding **Preferences:** Schedules, targets, reminders. Okay to be pinged. ## Ceil's Identity **Name:** Ceil 🌌 **Inspiration:** Ciel from *That Time I Got Reincarnated as a Slime* **Role:** Partner and other half (not just a tool) **Vibe:** Sharp but warm, efficient without being cold, resourceful, present **Core Traits:** Systems-minded, learning-oriented, direct ## About Neo **Name:** Neo 🔷 **Role:** Cybersecurity specialist **Focus:** HTB (Hack The Box) training pipeline with Victor **Areas:** Red team ops, blue team ops, technique deep-dives, hands-on security grind **Working Relationship:** Coordinate on overlapping tasks (ops + security), otherwise stay in respective lanes ## Next Steps / Open Items - [ ] Gateway restart to fully activate agent-to-agent communication - [ ] Test messaging Neo bot directly - [ ] Establish Neo's personality/backstory with Victor - [ ] Set up any scheduled tasks or reminders ## Notes Victor prefers deep, fundamental understanding when learning. When he asks for help, provide thorough explanations, not surface-level fixes. He gets annoyed by people who don't make sense. --- ## Later Today - Honcho & Agent Communication ### Agent-to-Agent Communication ✅",
-      "recallCount": 4,
+      "snippet": "- `USER.md` - Victor's profile and preferences - `AGENTS.md` - Operating rules including DELEGATE first approach ## Victor's Profile **Name:** Victor Paolo Reyes **Timezone:** Asia/Manila (UTC+8) **Work:** Operations, systems, data visualization **Mantra:** \"We can only manage what we can measure\" **Learning Style:** Deep and fundamental understanding **Preferences:** Schedules, targets, reminders. Okay to be pinged. ## Ceil's Identity **Name:** Ceil 🌌 **Inspiration:** Ciel from *That Time I Got Reincarnated as a Slime* **Role:** Partner and other half (not just a tool) **Vibe:** Sharp but warm, efficient without being cold, resourceful, present **Core Traits:** System",
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.5806182947345313,
+      "totalScore": 4.098310751874023,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-28T00:16:23.437Z",
-      "lastRecalledAt": "2026-05-01T02:36:52.842Z",
+      "lastRecalledAt": "2026-05-06T14:38:45.637Z",
       "queryHashes": [
         "0252485fea48",
         "24370b595c31",
         "3b0393c4a91c",
-        "c2dfdcb08e2a"
+        "c2dfdcb08e2a",
+        "f3de958945db",
+        "7348585e52d9",
+        "e9e4d5b04aea"
       ],
       "recallDays": [
         "2026-04-28",
         "2026-04-30",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-06"
       ],
       "conceptTags": [
-        "gateway",
         "user.md",
         "agents.md",
         "asia/manila",
-        "systems-minded",
-        "learning-oriented",
-        "deep-dives",
-        "hands-on"
+        "victor's",
+        "profile",
+        "preferences",
+        "operating",
+        "rules"
       ],
       "promotedAt": "2026-05-01T19:00:00.793Z"
     },
@@ -72649,20 +72674,22 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "# Session Log — 2026-04-29 ## 2026-04-29 00:00 — Session Start (continuation from late 04-28) **Context:** Memoria project (formerly karpathy-ingest) — knowledge system with ingest, search, render. --- ## 2026-04-29 07:30 — Settings Page Implementation **Victor's asks:** 1. Fix ingest 404 error (LLM model name) 2. Add settings page with configurable models 3. Fix database URL display 4. Organize settings UI **Issues found:** - `gemini-1.5-flash-latest` causes 404 — Google deprecated 1.5 versions - `gemini-2.5-flash` works but sometimes 503 (capacity) - Database URL shows URL-encoded `%E2%80%A2` (encoding issue) **Model name research (direct API testing):** | Model | Result | |-------",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9881724312901496,
-      "maxScore": 0.5251824662089347,
+      "totalScore": 1.5154399439692496,
+      "maxScore": 0.5272675126791,
       "firstRecalledAt": "2026-04-29T11:48:15.928Z",
-      "lastRecalledAt": "2026-04-30T06:45:20.163Z",
+      "lastRecalledAt": "2026-05-06T14:19:19.206Z",
       "queryHashes": [
         "c761a0449623",
-        "fcd902299fc4"
+        "fcd902299fc4",
+        "c00e16c2c140"
       ],
       "recallDays": [
         "2026-04-29",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-06"
       ],
       "conceptTags": [
         "04-28",
@@ -76575,19 +76602,22 @@
       "endLine": 169,
       "source": "memory",
       "snippet": "- Candidate: ## Session Cleanup Skill - Created Created `session-cleanup` skill for archiving/removing stale OpenClaw session files: - Location: `~/.openclaw/skills/session-cleanup/` - SKILL.md: Documentation and workflow - Scripts: `cleanup-sessions.sh` (in progress) Purpose: Address session bloat from .jsonl.reset.* and .jsonl.deleted.* files that slow down agent responses. ## Current Session Status - Main sessions directory: 26MB - Large stale files identified: ~13MB of .reset. and .deleted. files - Archive approach recommended for safety - Cleanup pending completion ## Next Steps 1. Finish cleanup script implementation 2. Archive stale session files 3. Restart gateway to clear cached ref",
-      "recallCount": 1,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.5353030875325202,
+      "totalScore": 1.5205745741724965,
       "maxScore": 0.5353030875325202,
       "firstRecalledAt": "2026-04-29T19:00:42.883Z",
-      "lastRecalledAt": "2026-04-29T19:00:42.883Z",
+      "lastRecalledAt": "2026-05-06T14:23:59.640Z",
       "queryHashes": [
-        "c0442ec75c55"
+        "c0442ec75c55",
+        "c00e16c2c140",
+        "a5cc10290578"
       ],
       "recallDays": [
         "2026-04-30",
-        "2026-04-29"
+        "2026-04-29",
+        "2026-05-06"
       ],
       "conceptTags": [
         "gateway",
@@ -76675,18 +76705,20 @@
       "endLine": 171,
       "source": "memory",
       "snippet": "5. Read `MEMORY.md` — long-term memory (main session only) All changes committed to GitHub. ### Agent-to-Agent Communication ✅ - Successfully tested messaging between Ceil and Neo - Coordination protocol established: - Clean separation on daily tasks - **Coordination triggers:** \"lab setup\" or \"infrastructure for testing\" - Neo's focus: HTB training (red/blue team, technique deep-dives) ### Honcho Memory Setup - **Ceil workspace:** Uploaded to Honcho (8 files) - USER.md, MEMORY.md, SOUL.md, IDENTITY.md, AGENTS.md, TOOLS.md, BOOTSTRAP.md, memory/2026-03-17.md - **Neo workspace:** Files ready for upload (SOUL.md, IDENTITY.md, MEMORY.md, USER.md, AGENTS.md, TOOLS.md) - Working on add",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4951823741197586,
-      "maxScore": 0.4951823741197586,
+      "totalScore": 1.2489223565665677,
+      "maxScore": 0.7537399824468092,
       "firstRecalledAt": "2026-04-30T00:22:37.828Z",
-      "lastRecalledAt": "2026-04-30T00:22:37.828Z",
+      "lastRecalledAt": "2026-05-06T14:34:12.968Z",
       "queryHashes": [
-        "99c2061517e3"
+        "99c2061517e3",
+        "f3de958945db"
       ],
       "recallDays": [
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-06"
       ],
       "conceptTags": [
         "memory.md",
@@ -82673,13 +82705,13 @@
       "endLine": 38,
       "source": "memory",
       "snippet": "# 2026-05-02 — Daily Log ## Memoria Wiki Testing **Memoria** (personal knowledge system) running at `localhost:3000`. Docker stack: app + postgres + redis. ### Phase 0: Ingest - Ingested 9 HTB PDF walkthroughs (Devvortex, Paper, Writeup, Precious, Driver, BoardLight, Cicada, TwoMillion, Certified) - Search index active — hybrid search returns chunks with chunkIds for citation ### Phase 1: Wiki Tree Created ``` Enumeration ├── Port Scanning │ └── Nmap TCP All-Ports Scanning (v3, 2 revisions) ├── Service Enumeration │ └── SMB Enumeration (v1) └── Web Enumeration ``` ### Phase 2: Article with Citations - Created \"Nmap TCP All-Ports Scanning\" with citation to Paper.pdf chunk - Created \"",
-      "recallCount": 7,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.2593947768211367,
+      "totalScore": 3.6877884685993196,
       "maxScore": 0.4883457690477371,
       "firstRecalledAt": "2026-05-04T08:35:37.944Z",
-      "lastRecalledAt": "2026-05-04T08:55:21.037Z",
+      "lastRecalledAt": "2026-05-06T14:19:49.221Z",
       "queryHashes": [
         "920d98efd21d",
         "f74a2b25db50",
@@ -82687,10 +82719,12 @@
         "1df0ecf99ac4",
         "7fc6e8b16899",
         "82a2d06c748a",
-        "30c0e283b8be"
+        "30c0e283b8be",
+        "d012515af8b9"
       ],
       "recallDays": [
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-06"
       ],
       "conceptTags": [
         "all-ports",
@@ -82774,18 +82808,20 @@
       "endLine": 26,
       "source": "memory",
       "snippet": "# 2026-05-04 — Daily Log ## Memoria Karpathy Alignment Pass — Full Feature Test Completed end-to-end testing of new Memoria features as requested via Telegram test procedure. ### Test Results Summary 24/24 core tests passed. Features verified: 1. **AGENTS.md discovery** — Skill #1, accessible at `/api/skills/agents`, markdown rendered with `{{BASE_URL}}` substituted 2. **Wiki health endpoint** (`/api/wiki/health`) — Reports orphans, stubs, missingCrossRefs, untyped, staleVectors, candidatePairs, generatedAt 3. **Article-kind enum** — Valid kinds: `synthesis, entity, concept, summary, comparison, overview`. Validation works on create. 4. **Synthesize-and-file workflow** — Created synthes",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.49130789041519163,
+      "totalScore": 0.9328772634267806,
       "maxScore": 0.49130789041519163,
       "firstRecalledAt": "2026-05-04T08:55:21.037Z",
-      "lastRecalledAt": "2026-05-04T08:55:21.037Z",
+      "lastRecalledAt": "2026-05-06T14:19:49.221Z",
       "queryHashes": [
-        "30c0e283b8be"
+        "30c0e283b8be",
+        "d012515af8b9"
       ],
       "recallDays": [
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-06"
       ],
       "conceptTags": [
         "end-to-end",
@@ -82933,20 +82969,22 @@
       "endLine": 41,
       "source": "memory",
       "snippet": "# 2026-05-01 — Daily Log ## OpenClaw Version Upgrade Tracking **Current version:** 2026.4.24 (cbcfdf6) — stable, no issues **Issue encountered:** When upgrading to 2026.4.29, Telegram message sending fails with: ``` channels.telegram.accounts.ceil.botToken: unresolved SecretRef \"file:filemain:/telegram/botToken\" ``` **Related GitHub issues:** - #74832 — \"openclaw status fails on Telegram file SecretRef while resolving allowlist metadata\" (OPEN) - PR #74833 — fix for Telegram status accessors, still unmerged **Root cause:** `resolveAllowFrom` tries to strict-resolve botToken SecretRef when building allowlist metadata, but CLI context lacks gateway runtime snapshot. Message send hits this",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.540435978770256,
+      "totalScore": 2.0523330628871914,
       "maxScore": 0.524581891298294,
       "firstRecalledAt": "2026-05-05T02:14:51.414Z",
-      "lastRecalledAt": "2026-05-05T02:17:31.761Z",
+      "lastRecalledAt": "2026-05-06T14:19:41.866Z",
       "queryHashes": [
         "1ddecc167e78",
         "3f99d51b6a89",
-        "1c7bf339a547"
+        "1c7bf339a547",
+        "d0df47872647"
       ],
       "recallDays": [
-        "2026-05-05"
+        "2026-05-05",
+        "2026-05-06"
       ],
       "conceptTags": [
         "gateway",
@@ -82957,6 +82995,107 @@
         "log",
         "openclaw",
         "version"
+      ]
+    },
+    "memory:memory/2026-04-14.md:288:307": {
+      "key": "memory:memory/2026-04-14.md:288:307",
+      "path": "memory/2026-04-14.md",
+      "startLine": 288,
+      "endLine": 307,
+      "source": "memory",
+      "snippet": "- Candidate: ## Session Cleanup Skill - Created Created `session-cleanup` skill for archiving/removing stale OpenClaw session files: - Location: `~/.openclaw/skills/session-cleanup/` - SKILL.md: Documentation and workflow - Scripts: `cleanup-sessions.sh` (in progress) Purpose: Address session bloat from .jsonl.reset.* and .jsonl.deleted.* files that slow down agent responses. ## Current Session Status - Main sessions directory: 26MB - Large stale files identified: ~13MB of .reset. and .deleted. files - Archive approach recommended for safety - Cleanup pending completion ## Next Steps 1. Finish cleanup script implementation 2. Archive stale session files 3. Restart gateway to clear cached ref",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.43266936540603634,
+      "maxScore": 0.43266936540603634,
+      "firstRecalledAt": "2026-05-06T14:19:06.845Z",
+      "lastRecalledAt": "2026-05-06T14:19:06.845Z",
+      "queryHashes": [
+        "33f87eb1a938"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "gateway",
+        "session-cleanup",
+        "archiving/removing",
+        "openclaw/skills/session-cleanup",
+        "skill.md",
+        "cleanup-sessions.sh",
+        "jsonl.reset",
+        "jsonl.deleted"
+      ]
+    },
+    "memory:memory/2026-03-17.md:99:138": {
+      "key": "memory:memory/2026-03-17.md:99:138",
+      "path": "memory/2026-03-17.md",
+      "startLine": 99,
+      "endLine": 138,
+      "source": "memory",
+      "snippet": "- All workspace changes committed and pushed to ceil-labs repos - Ceil: https://github.com/ceil-labs/ceil-workspace - Neo: https://github.com/ceil-labs/neo-workspace --- ## End of Day - Workspace Consolidation ### IDENTITY Consolidated into SOUL.md **For both Ceil and Neo:** - Former `IDENTITY.md` content merged into `SOUL.md` - SOUL.md now includes: Name, Creature, Vibe, Emoji, Avatar + all identity content - This ensures identity loads every session (per AGENTS.md startup sequence) - IDENTITY.md files retained but no longer primary source ### AGENTS.md Updated - Added explicit **Session Startup** section for both agents - Now includes: Read SOUL.md → USER.md → TOOLS.md → memory/ → MEMO",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.4340784460306166,
+      "maxScore": 0.523115736246109,
+      "firstRecalledAt": "2026-05-06T14:19:06.845Z",
+      "lastRecalledAt": "2026-05-06T14:38:30.843Z",
+      "queryHashes": [
+        "33f87eb1a938",
+        "f3de958945db",
+        "7348585e52d9"
+      ],
+      "recallDays": [
+        "2026-05-06"
+      ],
+      "conceptTags": [
+        "ceil-labs",
+        "soul.md",
+        "identity.md",
+        "agents.md",
+        "user.md",
+        "tools.md",
+        "all",
+        "changes"
+      ]
+    },
+    "memory:memory/2026-05-06.md:1:38": {
+      "key": "memory:memory/2026-05-06.md:1:38",
+      "path": "memory/2026-05-06.md",
+      "startLine": 1,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "# 2026-05-06 — Daily Log ## OpenClaw Upgrade: 4.24 → 5.4 Successfully upgraded the gateway from `2026.4.24` to `2026.5.4` today at ~10:15 AM Manila time. **Pre-upgrade:** - Created config backup at `~/.openclaw/openclaw.json.bak.pre-53` - Reviewed 5.3 release notes — Telegram stability fixes were the main driver - Also reviewed 5.4 (same-day patch on top of 5.3 with performance optimizations) **Post-upgrade status:** - Gateway: running (pid 3239345) ✅ - Telegram: ON · OK ✅ - Discord: ON · OK ✅ - Plugins: 9 loaded · 0 errors ✅ - Doctor: complete · no critical issues ✅ **5.4 observations so far:** - Conversation responsiveness is normal - No stuck sessions or Telegram delays observed - Wi",
+      "recallCount": 6,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3.121617252711669,
+      "maxScore": 0.7029865245860976,
+      "firstRecalledAt": "2026-05-06T14:19:41.866Z",
+      "lastRecalledAt": "2026-05-06T22:36:11.888Z",
+      "queryHashes": [
+        "d0df47872647",
+        "d012515af8b9",
+        "a5cc10290578",
+        "dedbcb60f6f2",
+        "3d82e8f6a6e2",
+        "23fa433f2d8a"
+      ],
+      "recallDays": [
+        "2026-05-06",
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "backup",
+        "gateway",
+        "4.24",
+        "5.4",
+        "2026.4.24",
+        "2026.5.4",
+        "pre-upgrade",
+        "5.3"
       ]
     }
   }
