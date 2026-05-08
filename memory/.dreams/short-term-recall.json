@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-06T22:36:11.888Z",
+  "updatedAt": "2026-05-08T02:34:23.560Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -6718,13 +6718,13 @@
       "endLine": 60,
       "source": "memory",
       "snippet": "# 2026-04-06 — OpenClaw 2026.4.5 Upgrade + Dreaming Enabled ## Summary Upgraded OpenClaw from 2026.4.1 to 2026.4.5. Configured and tested experimental dreaming feature for automatic memory consolidation. ## OpenClaw Upgrade ### Version - **From:** 2026.4.1 - **To:** 2026.4.5 ### Upgrade Steps 1. `npm update -g openclaw` 2. `openclaw doctor --fix` (migrated config, backup created) 3. `openclaw gateway restart` ### Config Migration - Doctor automatically fixed config - Backup saved: `~/.openclaw/openclaw.json.bak` - No deprecated settings found (clean upgrade) ## Dreaming Configuration (Experimental) ### What is Dreaming? Background memory consolidation system that moves strong short-te",
-      "recallCount": 14,
+      "recallCount": 15,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 6.98686508086402,
+      "totalScore": 7.4700831249066075,
       "maxScore": 0.7926711156674108,
       "firstRecalledAt": "2026-04-12T02:06:27.192Z",
-      "lastRecalledAt": "2026-05-06T22:36:11.888Z",
+      "lastRecalledAt": "2026-05-07T23:23:56.726Z",
       "queryHashes": [
         "b1a812254815",
         "3b2cdf3b87f1",
@@ -6739,7 +6739,8 @@
         "a8e2f61772f9",
         "8a37c6544890",
         "d0df47872647",
-        "23fa433f2d8a"
+        "23fa433f2d8a",
+        "69fc55df4f89"
       ],
       "recallDays": [
         "2026-04-12",
@@ -6749,7 +6750,8 @@
         "2026-05-04",
         "2026-05-05",
         "2026-05-06",
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-08"
       ],
       "conceptTags": [
         "backup",
@@ -36634,25 +36636,27 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "# 2026-03-18 - ProTek Skills Development Complete ## Summary Built two operational skills for ProTek FSM monitoring and flagged RO item management. All systems tested and operational. --- ## Skills Built Today ### 1. ProTek FSM Analyzer (`protek-fsm-analyzer`) **Purpose:** Monitor fiber installation operations across zones with automated analysis and alerts. **Location:** `~/.openclaw/skills/protek-fsm-analyzer/` **Commands:** - `/fsm check` — Full analysis with raw data for underperforming zones - `/fsm check --8am` — 8AM report with actionable PR trend analysis - `/fsm check --6pm` — 6PM report with clearance trends - `/fsm check --facility` — Include facility RPR breakdown - `/fsm s",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.3263610929250715,
+      "totalScore": 2.76392008960247,
       "maxScore": 0.49505363702774047,
       "firstRecalledAt": "2026-04-16T00:03:50.885Z",
-      "lastRecalledAt": "2026-05-06T12:46:56.009Z",
+      "lastRecalledAt": "2026-05-08T02:34:23.560Z",
       "queryHashes": [
         "d34508fc0dbd",
         "ac3a95801769",
         "6a51c916cb2e",
         "4119f2f3629c",
-        "eaaf5ec9c7f7"
+        "eaaf5ec9c7f7",
+        "bd619e1389ba"
       ],
       "recallDays": [
         "2026-04-16",
         "2026-04-27",
         "2026-04-28",
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-08"
       ],
       "conceptTags": [
         "protek-fsm-analyzer",
@@ -72674,22 +72678,24 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "# Session Log — 2026-04-29 ## 2026-04-29 00:00 — Session Start (continuation from late 04-28) **Context:** Memoria project (formerly karpathy-ingest) — knowledge system with ingest, search, render. --- ## 2026-04-29 07:30 — Settings Page Implementation **Victor's asks:** 1. Fix ingest 404 error (LLM model name) 2. Add settings page with configurable models 3. Fix database URL display 4. Organize settings UI **Issues found:** - `gemini-1.5-flash-latest` causes 404 — Google deprecated 1.5 versions - `gemini-2.5-flash` works but sometimes 503 (capacity) - Database URL shows URL-encoded `%E2%80%A2` (encoding issue) **Model name research (direct API testing):** | Model | Result | |-------",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.5154399439692496,
+      "totalScore": 2.0107889398932457,
       "maxScore": 0.5272675126791,
       "firstRecalledAt": "2026-04-29T11:48:15.928Z",
-      "lastRecalledAt": "2026-05-06T14:19:19.206Z",
+      "lastRecalledAt": "2026-05-07T08:31:52.466Z",
       "queryHashes": [
         "c761a0449623",
         "fcd902299fc4",
-        "c00e16c2c140"
+        "c00e16c2c140",
+        "4c235e2d6722"
       ],
       "recallDays": [
         "2026-04-29",
         "2026-04-30",
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-07"
       ],
       "conceptTags": [
         "04-28",
@@ -82705,13 +82711,13 @@
       "endLine": 38,
       "source": "memory",
       "snippet": "# 2026-05-02 — Daily Log ## Memoria Wiki Testing **Memoria** (personal knowledge system) running at `localhost:3000`. Docker stack: app + postgres + redis. ### Phase 0: Ingest - Ingested 9 HTB PDF walkthroughs (Devvortex, Paper, Writeup, Precious, Driver, BoardLight, Cicada, TwoMillion, Certified) - Search index active — hybrid search returns chunks with chunkIds for citation ### Phase 1: Wiki Tree Created ``` Enumeration ├── Port Scanning │ └── Nmap TCP All-Ports Scanning (v3, 2 revisions) ├── Service Enumeration │ └── SMB Enumeration (v1) └── Web Enumeration ``` ### Phase 2: Article with Citations - Created \"Nmap TCP All-Ports Scanning\" with citation to Paper.pdf chunk - Created \"",
-      "recallCount": 8,
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.6877884685993196,
-      "maxScore": 0.4883457690477371,
+      "totalScore": 6.087270018458366,
+      "maxScore": 0.5141777604818344,
       "firstRecalledAt": "2026-05-04T08:35:37.944Z",
-      "lastRecalledAt": "2026-05-06T14:19:49.221Z",
+      "lastRecalledAt": "2026-05-07T09:19:23.563Z",
       "queryHashes": [
         "920d98efd21d",
         "f74a2b25db50",
@@ -82720,11 +82726,17 @@
         "7fc6e8b16899",
         "82a2d06c748a",
         "30c0e283b8be",
-        "d012515af8b9"
+        "d012515af8b9",
+        "8c14afd82e6f",
+        "c3b517cd2aaf",
+        "4c235e2d6722",
+        "47aef8465830",
+        "9b9e76d4d8eb"
       ],
       "recallDays": [
         "2026-05-04",
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-07"
       ],
       "conceptTags": [
         "all-ports",
@@ -82744,20 +82756,25 @@
       "endLine": 166,
       "source": "memory",
       "snippet": "### Plan: Vulnerability Assessment Wiki + Cross-References **Proposed tree:** ``` Vulnerability Assessment ├── Web Application VA │ ├── SQL Injection │ ├── XSS (Cross-Site Scripting) │ ├── Command Injection │ └── File Upload Vulnerabilities ├── Network VA │ ├── Unpatched Services │ └── Default Credentials ├── Privilege Escalation │ ├── Linux PrivEsc │ └── Windows PrivEsc └── Exploit Research └── CVE Lookup & PoC Verification ``` **Cross-reference strategy:** - SQL Injection → prerequisite: Web Enumeration - SQL Injection → see-also: Command Injection - Privilege Escalation → prerequisite: Enumeration - File Upload → references: Web Application VA - Nmap All-Ports → prer",
-      "recallCount": 3,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.3846963703632353,
-      "maxScore": 0.47087945640087125,
+      "totalScore": 3.229310372471809,
+      "maxScore": 0.4897466480731964,
       "firstRecalledAt": "2026-05-04T08:35:43.977Z",
-      "lastRecalledAt": "2026-05-04T08:40:28.076Z",
+      "lastRecalledAt": "2026-05-07T11:49:09.124Z",
       "queryHashes": [
         "f74a2b25db50",
         "1df0ecf99ac4",
-        "7fc6e8b16899"
+        "7fc6e8b16899",
+        "8c14afd82e6f",
+        "47aef8465830",
+        "9b9e76d4d8eb",
+        "c7a788c895af"
       ],
       "recallDays": [
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-07"
       ],
       "conceptTags": [
         "network",
@@ -83068,24 +83085,27 @@
       "endLine": 38,
       "source": "memory",
       "snippet": "# 2026-05-06 — Daily Log ## OpenClaw Upgrade: 4.24 → 5.4 Successfully upgraded the gateway from `2026.4.24` to `2026.5.4` today at ~10:15 AM Manila time. **Pre-upgrade:** - Created config backup at `~/.openclaw/openclaw.json.bak.pre-53` - Reviewed 5.3 release notes — Telegram stability fixes were the main driver - Also reviewed 5.4 (same-day patch on top of 5.3 with performance optimizations) **Post-upgrade status:** - Gateway: running (pid 3239345) ✅ - Telegram: ON · OK ✅ - Discord: ON · OK ✅ - Plugins: 9 loaded · 0 errors ✅ - Doctor: complete · no critical issues ✅ **5.4 observations so far:** - Conversation responsiveness is normal - No stuck sessions or Telegram delays observed - Wi",
-      "recallCount": 6,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.121617252711669,
-      "maxScore": 0.7029865245860976,
+      "totalScore": 4.369010018222248,
+      "maxScore": 0.7645697572117052,
       "firstRecalledAt": "2026-05-06T14:19:41.866Z",
-      "lastRecalledAt": "2026-05-06T22:36:11.888Z",
+      "lastRecalledAt": "2026-05-07T23:23:59.203Z",
       "queryHashes": [
         "d0df47872647",
         "d012515af8b9",
         "a5cc10290578",
         "dedbcb60f6f2",
         "3d82e8f6a6e2",
-        "23fa433f2d8a"
+        "23fa433f2d8a",
+        "69fc55df4f89",
+        "4b0eed280d56"
       ],
       "recallDays": [
         "2026-05-06",
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-08"
       ],
       "conceptTags": [
         "backup",
@@ -83096,6 +83116,230 @@
         "2026.5.4",
         "pre-upgrade",
         "5.3"
+      ]
+    },
+    "memory:memory/2026-05-02.md:73:108": {
+      "key": "memory:memory/2026-05-02.md:73:108",
+      "path": "memory/2026-05-02.md",
+      "startLine": 73,
+      "endLine": 108,
+      "source": "memory",
+      "snippet": "**Docker bug fixed:** Production Dockerfile wasn't copying `skills/` into the image (introduced in commit 4a8dcaa). `curl /api/skills` returned `count: 0` in prod despite tests passing. Now skills are in the container and discoverable. ### Verified State - **Sources:** 9 PDFs ingested, chunked, embedded - **Articles:** 6 wiki articles in tree structure - **Revisions:** 2 saved (nmap article v1→v2→v3) - **Citations:** 1 on nmap article, 2 on SMB article (verified via detail endpoint) - **Skills discoverable:** 4 skills (ingest-sources, search-knowledge, write-wiki-article, manage-wiki) - **Skills in container:** ✅ `docker exec memoria-app-1 ls /app/skills/` - **Source status polling:** ✅ `GE",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.400793221592903,
+      "maxScore": 0.49175341129302974,
+      "firstRecalledAt": "2026-05-07T05:52:02.346Z",
+      "lastRecalledAt": "2026-05-07T09:19:17.255Z",
+      "queryHashes": [
+        "8c14afd82e6f",
+        "c3b517cd2aaf",
+        "47aef8465830"
+      ],
+      "recallDays": [
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "api/skills",
+        "ingest-sources",
+        "search-knowledge",
+        "write-wiki-article",
+        "manage-wiki",
+        "memoria-app-1",
+        "app/skills",
+        "docker"
+      ]
+    },
+    "memory:memory/2026-05-07.md:1:38": {
+      "key": "memory:memory/2026-05-07.md:1:38",
+      "path": "memory/2026-05-07.md",
+      "startLine": 1,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "# Daily Log — 2026-05-07 ## /new Greeting Delivery Bug — Confirmed on Neo Victor tested `/new` with Neo after creating `BOOTSTRAP.md` for the Neo workspace. Same behavior as Ceil: no greeting delivered after `/new`. **Pattern confirmed:** - Ceil: `/new` → system ack ✅ → no greeting ❌ → requires follow-up message - Neo: `/new` → system ack ✅ → no greeting ❌ → requires follow-up message **Current workaround:** Send a dummy message immediately after `/new` to trigger normal pipeline delivery. **Open issue:** GitHub #68955 (Telegram — **still open**, no PR merged yet) - No fix in 5.5 or 5.6 - Not on the critical path for those releases --- ## OpenClaw 5.6 — Evaluated **Released:** May 6,",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.955754145979881,
+      "maxScore": 0.49691426455974574,
+      "firstRecalledAt": "2026-05-07T06:04:43.845Z",
+      "lastRecalledAt": "2026-05-07T23:23:59.203Z",
+      "queryHashes": [
+        "c3b517cd2aaf",
+        "4c235e2d6722",
+        "69fc55df4f89",
+        "4b0eed280d56"
+      ],
+      "recallDays": [
+        "2026-05-07",
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "bootstrap.md",
+        "follow-up",
+        "5.5",
+        "5.6",
+        "log",
+        "new",
+        "greeting",
+        "delivery"
+      ]
+    },
+    "memory:memory/2026-05-07.md:50:65": {
+      "key": "memory:memory/2026-05-07.md:50:65",
+      "path": "memory/2026-05-07.md",
+      "startLine": 50,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "- 10 markdown writeups + 15 PDF official writeups - Total chunks: ~250+ across all sources - Search verified: returning relevant HTB technique chunks - Config fix: corrected `llmBaseURL` resolved the embedding timeout issue **Sources ingested:** - Victor's writeups: BoardLight, Certified, Cicada, Devvortex, Driver, Paper, Precious, SteamCloud, TwoMillion, Writeup - Official writeups: Administrator, BoardLight, Cap, Certified, Cicada, Devvortex, Driver, GoodGames, Jerry, Paper, Precious, Sau, SteamCloud, TwoMillion, Writeup --- ## Session Start --- ## Session Start",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9273566931486129,
+      "maxScore": 0.4705546617507934,
+      "firstRecalledAt": "2026-05-07T09:19:17.255Z",
+      "lastRecalledAt": "2026-05-07T09:19:23.563Z",
+      "queryHashes": [
+        "47aef8465830",
+        "9b9e76d4d8eb"
+      ],
+      "recallDays": [
+        "2026-05-07"
+      ],
+      "conceptTags": [
+        "embedding",
+        "markdown",
+        "writeups",
+        "pdf",
+        "official",
+        "total",
+        "chunks",
+        "across"
+      ]
+    },
+    "memory:memory/2026-04-17.md:423:432": {
+      "key": "memory:memory/2026-04-17.md:423:432",
+      "path": "memory/2026-04-17.md",
+      "startLine": 423,
+      "endLine": 432,
+      "source": "memory",
+      "snippet": "- Candidate: docker compose run --rm app bash # If container already running docker compose exec app bin/rails <command> ``` **Important:** Rails is NOT installed on host — must use Docker. ### Current Stack | Component | Version | |-----------|---------| | Ruby | 4.0.2 | | Rails | 8.1.3 | | Database | PostgreSQL 16 | | Cache | Redis 7 | | CSS | Tailwind CSS | | User | UID 1001 (not root) | ### Next Steps - Setup built-in Rails 8 authentication generator (`bin/rails generate authentication`) - Test authentication flow - Continue development workflow with Docker - Commit initial Rails app structure - confidence: 0.43 - evidence: memory/2026-04-02.md:166-189 - recalls: 1 - status: stag",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.47406410872936244,
+      "maxScore": 0.47406410872936244,
+      "firstRecalledAt": "2026-05-08T02:30:13.313Z",
+      "lastRecalledAt": "2026-05-08T02:30:13.313Z",
+      "queryHashes": [
+        "60fe72ced654"
+      ],
+      "recallDays": [
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "bin/rails",
+        "4.0.2",
+        "8.1.3",
+        "built-in",
+        "0.43",
+        "memory/2026-04-02.md",
+        "166-189",
+        "candidate"
+      ]
+    },
+    "memory:memory/2026-05-07.md:97:127": {
+      "key": "memory:memory/2026-05-07.md:97:127",
+      "path": "memory/2026-05-07.md",
+      "startLine": 97,
+      "endLine": 127,
+      "source": "memory",
+      "snippet": "- **#78422** — Telegram polling watchdog tied to `getUpdates` liveness (low-medium: prevents silent disconnects) - **#78532, #78685** — Telegram message delivery reporting fixes (low: better delivery status tracking) **Not fixed:** - #68955 (`/new` greeting bug) — still open, no fix in 5.7 - Active Memory: only security scope change (admin required for global toggles), no functional improvements **Decision:** Worth upgrading when convenient — good reliability patch, especially the skills cache and context engine fixes. Not urgent. Plan to upgrade tomorrow morning to avoid disturbing current session. Skipping 5.5/5.6 and going straight to 5.7. --- ## Memoria DB Backup Created PostgreSQL",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4816791236400604,
+      "maxScore": 0.4816791236400604,
+      "firstRecalledAt": "2026-05-08T02:33:54.070Z",
+      "lastRecalledAt": "2026-05-08T02:33:54.070Z",
+      "queryHashes": [
+        "0fa20d4485c5"
+      ],
+      "recallDays": [
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "low-medium",
+        "5.7",
+        "5.5/5.6",
+        "telegram",
+        "polling",
+        "watchdog",
+        "tied"
+      ]
+    },
+    "memory:memory/2026-03-19.md:1:42": {
+      "key": "memory:memory/2026-03-19.md:1:42",
+      "path": "memory/2026-03-19.md",
+      "startLine": 1,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "# 2026-03-19 - Cashflow Analyzer v2.0 Released ## Summary Updated cashflow-analyzer skill to v2.0 with row position detection and formatting issue reporting. ## Changes Made ### New Features 1. **Row Gap Detection** - Detects when weekly entries have gaps (e.g., row 30 → row 32) - Reports exact current and expected positions - Currently detected: \"3-15TO3-20-26\" at row 32 should be at row 31 2. **Formatting Issue Detection** - Detects cells missing ₱ currency symbols - Currently detected: 7 cells need formatting - Provides manual fix instructions for Google Sheets 3. **Conditional Formatting Guidance** - Instructions for applying green (positive) / red (negative) co",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.44689590930938716,
+      "maxScore": 0.44689590930938716,
+      "firstRecalledAt": "2026-05-08T02:34:23.560Z",
+      "lastRecalledAt": "2026-05-08T02:34:23.560Z",
+      "queryHashes": [
+        "bd619e1389ba"
+      ],
+      "recallDays": [
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "v2.0",
+        "cashflow-analyzer",
+        "e.g",
+        "3-15to3-20-26",
+        "cashflow",
+        "analyzer",
+        "released",
+        "summary"
+      ]
+    },
+    "memory:memory/2026-03-19.md:162:211": {
+      "key": "memory:memory/2026-03-19.md:162:211",
+      "path": "memory/2026-03-19.md",
+      "startLine": 162,
+      "endLine": 211,
+      "source": "memory",
+      "snippet": "**Files Changed:** - `~/.openclaw/skills/protek-fsm-analyzer/handler.js` - `~/.openclaw/skills/protek-fsm-analyzer/skill.yaml` --- ## MiniMax Model Update (10:55 AM) **Change:** Updated default subagent model from MiniMax 2.5 to MiniMax 2.7 **Files Updated:** - `~/.openclaw/openclaw.json` - Subagent model and fallbacks - `AGENTS.md` - Subagent defaults reference - `TOOLS.md` - Model reference - `workspace-neo/TOOLS.md` - Model reference **Configuration Changes:** ```json // agents.defaults.subagents.model \"opencode-go/minimax-m2.5\" → \"opencode-go/minimax-m2.7\" // agents.defaults.model.fallbacks Added: \"opencode-go/minimax-m2.7\" Removed: \"opencode-go/minimax-m2.5\" // agents.defaults.mo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4376480549573898,
+      "maxScore": 0.4376480549573898,
+      "firstRecalledAt": "2026-05-08T02:34:23.560Z",
+      "lastRecalledAt": "2026-05-08T02:34:23.560Z",
+      "queryHashes": [
+        "bd619e1389ba"
+      ],
+      "recallDays": [
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "2.5",
+        "2.7",
+        "openclaw/openclaw.json",
+        "agents.md",
+        "tools.md",
+        "workspace-neo/tools.md",
+        "agents.defaults.subagents.model",
+        "opencode-go/minimax-m2.5"
       ]
     }
   }
