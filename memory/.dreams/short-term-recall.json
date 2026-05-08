@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-08T02:34:23.560Z",
+  "updatedAt": "2026-05-08T15:02:33.709Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -83340,6 +83340,37 @@
         "workspace-neo/tools.md",
         "agents.defaults.subagents.model",
         "opencode-go/minimax-m2.5"
+      ]
+    },
+    "memory:memory/2026-05-07.md:118:141": {
+      "key": "memory:memory/2026-05-07.md:118:141",
+      "path": "memory/2026-05-07.md",
+      "startLine": 118,
+      "endLine": 141,
+      "source": "memory",
+      "snippet": "**Future use:** Saying any backup-related phrase will trigger the memoria skill and run the backup automatically. --- ## Memoria DB Backup Created PostgreSQL custom-format dump of memoria_db: - **File:** `backups/memoria_db_backup_20260508_103121.dump` - **Size:** 1.9 MB - **Format:** PostgreSQL custom (pg_dump -Fc) - **Contents:** All wiki articles, sources, chunks, citations, notes, graph data, and assets metadata - **DB:** memoria_db @ memoria-postgres-1 (Docker) - **User:** memory **Verify:** `file backups/memoria_db_backup_20260508_103121.dump` → PostgreSQL custom database dump - v1.16-0 **Restore command (for reference):** ```bash docker exec -e PGPASSWORD=changeme memoria-postgre",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.446659442782402,
+      "maxScore": 0.446659442782402,
+      "firstRecalledAt": "2026-05-08T15:02:33.709Z",
+      "lastRecalledAt": "2026-05-08T15:02:33.709Z",
+      "queryHashes": [
+        "906e87c0f6bd"
+      ],
+      "recallDays": [
+        "2026-05-08"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "backup-related",
+        "custom-format",
+        "memoria-db",
+        "1.9",
+        "pg-dump",
+        "memoria-postgres-1"
       ]
     }
   }
