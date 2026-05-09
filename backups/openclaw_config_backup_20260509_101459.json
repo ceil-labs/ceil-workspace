@@ -1,0 +1,580 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.5.4",
+    "lastTouchedAt": "2026-05-09T01:15:08.721Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-05-09T01:15:08.485Z",
+    "lastRunVersion": "2026.5.4",
+    "lastRunCommand": "doctor",
+    "lastRunMode": "local"
+  },
+  "browser": {
+    "enabled": true,
+    "defaultProfile": "laptop-chrome",
+    "profiles": {
+      "laptop-chrome": {
+        "cdpUrl": "http://127.0.0.1:9222",
+        "color": "#00AA00"
+      },
+      "user": {
+        "driver": "existing-session",
+        "attachOnly": true,
+        "color": "#00AA00"
+      }
+    }
+  },
+  "secrets": {
+    "providers": {
+      "filemain": {
+        "source": "file",
+        "path": "/home/openclaw/.openclaw/secrets.json",
+        "mode": "json"
+      }
+    },
+    "defaults": {
+      "file": "filemain"
+    }
+  },
+  "auth": {
+    "profiles": {
+      "kimi:default": {
+        "provider": "kimi",
+        "mode": "api_key"
+      },
+      "opencode-go:default": {
+        "provider": "opencode-go",
+        "mode": "api_key"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "kimi": {
+        "baseUrl": "https://api.kimi.com/coding/",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "k2p6",
+            "name": "Kimi for Coding",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 9.5e-7,
+              "output": 0.000004,
+              "cacheRead": 1.6e-7,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 32768,
+            "api": "anthropic-messages"
+          }
+        ]
+      },
+      "opencode-go": {
+        "baseUrl": "https://opencode.ai/zen/go/v1/",
+        "api": "anthropic-messages",
+        "models": [
+          {
+            "id": "minimax-m2.7",
+            "name": "MiniMax M2.7",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 100000,
+            "maxTokens": 8192,
+            "api": "anthropic-messages"
+          },
+          {
+            "id": "minimax-m2.5",
+            "name": "MiniMax M2.5",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 100000,
+            "maxTokens": 8192,
+            "api": "anthropic-messages"
+          },
+          {
+            "id": "glm-5",
+            "name": "GLM-5",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 131072,
+            "maxTokens": 8192
+          },
+          {
+            "id": "kimi-k2.6",
+            "name": "Kimi K2.6",
+            "api": "openai-completions",
+            "reasoning": true,
+            "input": [
+              "text",
+              "image"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 262144,
+            "maxTokens": 16384
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "kimi/k2p6",
+        "fallbacks": [
+          "opencode-go/minimax-m2.7",
+          "opencode-go/kimi-k2.6",
+          "opencode-go/glm-5"
+        ]
+      },
+      "models": {
+        "kimi/k2p6": {
+          "alias": "Kimi for Coding"
+        },
+        "opencode-go/kimi-k2.6": {
+          "alias": "Kimi"
+        },
+        "opencode-go/glm-5": {
+          "alias": "GLM"
+        },
+        "opencode-go/minimax-m2.7": {
+          "alias": "MiniMax"
+        }
+      },
+      "workspace": "/home/openclaw/.openclaw/workspace",
+      "memorySearch": {
+        "sources": [
+          "memory",
+          "sessions"
+        ],
+        "multimodal": {
+          "enabled": false
+        },
+        "experimental": {
+          "sessionMemory": true
+        },
+        "provider": "gemini",
+        "remote": {
+          "apiKey": {
+            "source": "file",
+            "provider": "filemain",
+            "id": "/google/apiKey"
+          }
+        },
+        "fallback": "none",
+        "model": "gemini-embedding-2-preview",
+        "outputDimensionality": 3072
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "subagents": {
+        "model": "opencode-go/minimax-m2.7",
+        "maxConcurrent": 8
+      },
+      "maxConcurrent": 4
+    },
+    "list": [
+      {
+        "id": "main",
+        "default": true,
+        "name": "Ceil",
+        "workspace": "/home/openclaw/.openclaw/workspace",
+        "agentDir": "/home/openclaw/.openclaw/agents/main/agent",
+        "memorySearch": {
+          "extraPaths": [
+            "/home/openclaw/.openclaw/workspace/multimodal/images",
+            "/home/openclaw/.openclaw/workspace/multimodal/audio",
+            "/home/openclaw/.openclaw/workspace/multimodal/video",
+            "/home/openclaw/.openclaw/workspace/multimodal/documents"
+          ]
+        }
+      },
+      {
+        "id": "neo",
+        "name": "Neo",
+        "workspace": "/home/openclaw/.openclaw/workspace-neo",
+        "agentDir": "/home/openclaw/.openclaw/agents/neo/agent",
+        "memorySearch": {
+          "sources": [
+            "memory",
+            "sessions"
+          ],
+          "extraPaths": [
+            "/home/openclaw/.openclaw/workspace-neo/multimodal/images",
+            "/home/openclaw/.openclaw/workspace-neo/multimodal/audio",
+            "/home/openclaw/.openclaw/workspace-neo/multimodal/video",
+            "/home/openclaw/.openclaw/workspace-neo/multimodal/documents",
+            "/home/openclaw/.openclaw/workspace-neo/htb/boxes/writeups"
+          ],
+          "multimodal": {
+            "enabled": false,
+            "modalities": [
+              "image",
+              "audio"
+            ],
+            "maxFileBytes": 10000000
+          },
+          "experimental": {
+            "sessionMemory": true
+          },
+          "provider": "gemini",
+          "remote": {
+            "apiKey": {
+              "source": "file",
+              "provider": "filemain",
+              "id": "/google/apiKey"
+            }
+          },
+          "fallback": "none",
+          "model": "gemini-embedding-2-preview",
+          "outputDimensionality": 3072
+        }
+      }
+    ]
+  },
+  "memory": {},
+  "tools": {
+    "profile": "full",
+    "web": {
+      "fetch": {
+        "enabled": true
+      },
+      "search": {
+        "provider": "tavily",
+        "enabled": true,
+        "openaiCodex": {}
+      }
+    },
+    "sessions": {
+      "visibility": "all"
+    },
+    "agentToAgent": {
+      "enabled": true,
+      "allow": [
+        "main",
+        "neo"
+      ]
+    },
+    "exec": {
+      "host": "gateway",
+      "security": "full"
+    }
+  },
+  "bindings": [
+    {
+      "agentId": "main",
+      "match": {
+        "channel": "telegram",
+        "accountId": "ceil"
+      }
+    },
+    {
+      "agentId": "main",
+      "match": {
+        "channel": "discord"
+      }
+    },
+    {
+      "agentId": "neo",
+      "match": {
+        "channel": "telegram",
+        "accountId": "neo"
+      }
+    }
+  ],
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer",
+    "reset": {
+      "mode": "idle",
+      "idleMinutes": 52560000
+    },
+    "resetByType": {},
+    "resetByChannel": {},
+    "maintenance": {
+      "mode": "enforce",
+      "pruneAfter": "3d",
+      "maxEntries": 50,
+      "resetArchiveRetention": "2d",
+      "maxDiskBytes": "50mb",
+      "highWaterBytes": "40mb"
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "streaming": {
+        "mode": "off"
+      },
+      "accounts": {
+        "ceil": {
+          "dmPolicy": "pairing",
+          "tokenFile": "/home/openclaw/.openclaw/telegram-ceil-bot-token",
+          "groupAllowFrom": [
+            "-1003821232321"
+          ],
+          "groupPolicy": "allowlist",
+          "streaming": {
+            "mode": "off"
+          }
+        },
+        "neo": {
+          "dmPolicy": "pairing",
+          "tokenFile": "/home/openclaw/.openclaw/telegram-neo-bot-token",
+          "groupAllowFrom": [
+            "-1003821232321"
+          ],
+          "groupPolicy": "allowlist",
+          "streaming": {
+            "mode": "off"
+          }
+        },
+        "default": {
+          "dmPolicy": "pairing",
+          "groupPolicy": "allowlist"
+        }
+      }
+    },
+    "discord": {
+      "enabled": true,
+      "token": {
+        "source": "file",
+        "provider": "filemain",
+        "id": "/discord/botToken"
+      },
+      "groupPolicy": "allowlist",
+      "streaming": {
+        "mode": "off"
+      },
+      "guilds": {
+        "841934517598027827": {
+          "requireMention": false,
+          "users": [
+            "717620869274271756"
+          ]
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "controlUi": {
+      "allowedOrigins": [
+        "https://srv1405873.tailcd23a1.ts.net"
+      ]
+    },
+    "auth": {
+      "mode": "token",
+      "token": {
+        "source": "file",
+        "provider": "filemain",
+        "id": "/gateway/authToken"
+      }
+    },
+    "tailscale": {
+      "mode": "serve",
+      "resetOnExit": false
+    },
+    "nodes": {
+      "denyCommands": [
+        "camera.snap",
+        "camera.clip",
+        "screen.record",
+        "contacts.add",
+        "calendar.add",
+        "reminders.add",
+        "sms.send"
+      ]
+    }
+  },
+  "skills": {
+    "allowBundled": [
+      "skill-creator",
+      "clawhub",
+      "discord",
+      "gh-issues",
+      "github",
+      "xurl"
+    ],
+    "install": {
+      "nodeManager": "npm"
+    },
+    "entries": {
+      "wiki-synthesis": {
+        "enabled": true
+      },
+      "protek-fsm-analyzer": {
+        "enabled": true,
+        "config": {
+          "api_base": "https://protek-fsm.herokuapp.com",
+          "data_retention_days": 14,
+          "alert_threshold_completion": 0.2,
+          "alert_threshold_pending_growth": 50,
+          "telegram_channel": "-1003821232321"
+        }
+      },
+      "protek-flagged-items": {
+        "enabled": true,
+        "config": {
+          "api_base": "https://protek-fsm.herokuapp.com",
+          "default_lookback_days": 100,
+          "telegram_channel": "-1003821232321"
+        }
+      },
+      "daily-expenses": {
+        "enabled": true,
+        "config": {
+          "sheet_id": "1I6fvHntIpdRy_xCMbE1cdo_5IPRU_FeV_ePC1Xz559Q",
+          "account": "vpaoloreyes@gmail.com",
+          "telegram_channel": "-1003552691386"
+        }
+      },
+      "clawhub": {
+        "enabled": false
+      }
+    }
+  },
+  "plugins": {
+    "allow": [
+      "telegram",
+      "discord",
+      "browser",
+      "kimi",
+      "opencode-go",
+      "memory-wiki",
+      "memory-core",
+      "active-memory",
+      "tavily"
+    ],
+    "slots": {
+      "memory": "memory-core"
+    },
+    "entries": {
+      "telegram": {
+        "enabled": true,
+        "config": {}
+      },
+      "memory-core": {
+        "enabled": true,
+        "config": {
+          "dreaming": {
+            "enabled": true,
+            "frequency": "0 3 * * 0"
+          }
+        }
+      },
+      "memory-wiki": {
+        "enabled": true,
+        "config": {
+          "vaultMode": "isolated",
+          "vault": {
+            "path": "/home/openclaw/.openclaw/wiki/main",
+            "renderMode": "native"
+          },
+          "ingest": {
+            "autoCompile": true,
+            "maxConcurrentJobs": 1
+          },
+          "search": {
+            "backend": "shared",
+            "corpus": "all"
+          },
+          "render": {
+            "preserveHumanBlocks": true,
+            "createBacklinks": true,
+            "createDashboards": true
+          }
+        }
+      },
+      "browser": {
+        "enabled": true,
+        "config": {}
+      },
+      "kimi": {
+        "enabled": true
+      },
+      "opencode-go": {
+        "enabled": true
+      },
+      "active-memory": {
+        "enabled": true,
+        "config": {
+          "enabled": true,
+          "agents": [
+            "main",
+            "neo"
+          ],
+          "allowedChatTypes": [
+            "direct"
+          ],
+          "model": "opencode-go/minimax-m2.7",
+          "modelFallback": "kimi/k2p6",
+          "queryMode": "full",
+          "promptStyle": "recall-heavy",
+          "timeoutMs": 60000,
+          "maxSummaryChars": 220,
+          "persistTranscripts": false,
+          "logging": true
+        }
+      },
+      "tavily": {
+        "enabled": true,
+        "config": {
+          "webSearch": {
+            "apiKey": "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"
+          }
+        }
+      }
+    },
+    "bundledDiscovery": "compat"
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions",
+    "groupChat": {
+      "visibleReplies": "message_tool"
+    }
+  }
+}
