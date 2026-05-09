@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-08T15:02:33.709Z",
+  "updatedAt": "2026-05-09T01:14:23.378Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -83085,13 +83085,13 @@
       "endLine": 38,
       "source": "memory",
       "snippet": "# 2026-05-06 — Daily Log ## OpenClaw Upgrade: 4.24 → 5.4 Successfully upgraded the gateway from `2026.4.24` to `2026.5.4` today at ~10:15 AM Manila time. **Pre-upgrade:** - Created config backup at `~/.openclaw/openclaw.json.bak.pre-53` - Reviewed 5.3 release notes — Telegram stability fixes were the main driver - Also reviewed 5.4 (same-day patch on top of 5.3 with performance optimizations) **Post-upgrade status:** - Gateway: running (pid 3239345) ✅ - Telegram: ON · OK ✅ - Discord: ON · OK ✅ - Plugins: 9 loaded · 0 errors ✅ - Doctor: complete · no critical issues ✅ **5.4 observations so far:** - Conversation responsiveness is normal - No stuck sessions or Telegram delays observed - Wi",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.369010018222248,
+      "totalScore": 4.8595800537990685,
       "maxScore": 0.7645697572117052,
       "firstRecalledAt": "2026-05-06T14:19:41.866Z",
-      "lastRecalledAt": "2026-05-07T23:23:59.203Z",
+      "lastRecalledAt": "2026-05-09T01:14:23.378Z",
       "queryHashes": [
         "d0df47872647",
         "d012515af8b9",
@@ -83100,12 +83100,14 @@
         "3d82e8f6a6e2",
         "23fa433f2d8a",
         "69fc55df4f89",
-        "4b0eed280d56"
+        "4b0eed280d56",
+        "4798a3901959"
       ],
       "recallDays": [
         "2026-05-06",
         "2026-05-07",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-09"
       ],
       "conceptTags": [
         "backup",
@@ -83158,22 +83160,24 @@
       "endLine": 38,
       "source": "memory",
       "snippet": "# Daily Log — 2026-05-07 ## /new Greeting Delivery Bug — Confirmed on Neo Victor tested `/new` with Neo after creating `BOOTSTRAP.md` for the Neo workspace. Same behavior as Ceil: no greeting delivered after `/new`. **Pattern confirmed:** - Ceil: `/new` → system ack ✅ → no greeting ❌ → requires follow-up message - Neo: `/new` → system ack ✅ → no greeting ❌ → requires follow-up message **Current workaround:** Send a dummy message immediately after `/new` to trigger normal pipeline delivery. **Open issue:** GitHub #68955 (Telegram — **still open**, no PR merged yet) - No fix in 5.5 or 5.6 - Not on the critical path for those releases --- ## OpenClaw 5.6 — Evaluated **Released:** May 6,",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.955754145979881,
-      "maxScore": 0.49691426455974574,
+      "totalScore": 2.4542914658784865,
+      "maxScore": 0.49853731989860534,
       "firstRecalledAt": "2026-05-07T06:04:43.845Z",
-      "lastRecalledAt": "2026-05-07T23:23:59.203Z",
+      "lastRecalledAt": "2026-05-09T01:14:23.378Z",
       "queryHashes": [
         "c3b517cd2aaf",
         "4c235e2d6722",
         "69fc55df4f89",
-        "4b0eed280d56"
+        "4b0eed280d56",
+        "4798a3901959"
       ],
       "recallDays": [
         "2026-05-07",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-09"
       ],
       "conceptTags": [
         "bootstrap.md",
@@ -83255,19 +83259,21 @@
       "startLine": 97,
       "endLine": 127,
       "source": "memory",
-      "snippet": "- **#78422** — Telegram polling watchdog tied to `getUpdates` liveness (low-medium: prevents silent disconnects) - **#78532, #78685** — Telegram message delivery reporting fixes (low: better delivery status tracking) **Not fixed:** - #68955 (`/new` greeting bug) — still open, no fix in 5.7 - Active Memory: only security scope change (admin required for global toggles), no functional improvements **Decision:** Worth upgrading when convenient — good reliability patch, especially the skills cache and context engine fixes. Not urgent. Plan to upgrade tomorrow morning to avoid disturbing current session. Skipping 5.5/5.6 and going straight to 5.7. --- ## Memoria DB Backup Created PostgreSQL",
-      "recallCount": 1,
+      "snippet": "- **#78422** — Telegram polling watchdog tied to `getUpdates` liveness (low-medium: prevents silent disconnects) - **#78532, #78685** — Telegram message delivery reporting fixes (low: better delivery status tracking) **Not fixed:** - #68955 (`/new` greeting bug) — still open, no fix in 5.7 - Active Memory: only security scope change (admin required for global toggles), no functional improvements **Decision:** Worth upgrading when convenient — good reliability patch, especially the skills cache and context engine fixes. Not urgent. Plan to upgrade tomorrow morning to avoid disturbing current session. Skipping 5.5/5.6 and going straight to 5.7. --- ## Memoria Skill Update — Backup Support",
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4816791236400604,
-      "maxScore": 0.4816791236400604,
+      "totalScore": 0.9961737722158431,
+      "maxScore": 0.5144946485757828,
       "firstRecalledAt": "2026-05-08T02:33:54.070Z",
-      "lastRecalledAt": "2026-05-08T02:33:54.070Z",
+      "lastRecalledAt": "2026-05-09T01:14:23.378Z",
       "queryHashes": [
-        "0fa20d4485c5"
+        "0fa20d4485c5",
+        "4798a3901959"
       ],
       "recallDays": [
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-09"
       ],
       "conceptTags": [
         "backup",
