@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-11T22:44:03.645Z",
+  "updatedAt": "2026-05-12T06:33:31.476Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -36644,13 +36644,13 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "# 2026-03-18 - ProTek Skills Development Complete ## Summary Built two operational skills for ProTek FSM monitoring and flagged RO item management. All systems tested and operational. --- ## Skills Built Today ### 1. ProTek FSM Analyzer (`protek-fsm-analyzer`) **Purpose:** Monitor fiber installation operations across zones with automated analysis and alerts. **Location:** `~/.openclaw/skills/protek-fsm-analyzer/` **Commands:** - `/fsm check` — Full analysis with raw data for underperforming zones - `/fsm check --8am` — 8AM report with actionable PR trend analysis - `/fsm check --6pm` — 6PM report with clearance trends - `/fsm check --facility` — Include facility RPR breakdown - `/fsm s",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.595091837644577,
+      "totalScore": 4.03069078028202,
       "maxScore": 0.49505363702774047,
       "firstRecalledAt": "2026-04-16T00:03:50.885Z",
-      "lastRecalledAt": "2026-05-09T19:01:20.350Z",
+      "lastRecalledAt": "2026-05-12T06:33:31.476Z",
       "queryHashes": [
         "d34508fc0dbd",
         "ac3a95801769",
@@ -36659,7 +36659,8 @@
         "eaaf5ec9c7f7",
         "bd619e1389ba",
         "e0e00bc2dbfa",
-        "b2598bb69f14"
+        "b2598bb69f14",
+        "ec6951283e7d"
       ],
       "recallDays": [
         "2026-04-16",
@@ -36668,7 +36669,8 @@
         "2026-05-06",
         "2026-05-08",
         "2026-05-09",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-12"
       ],
       "conceptTags": [
         "protek-fsm-analyzer",
@@ -55985,18 +55987,20 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "# Daily Memory Log — 2026-03-30 ## ProTek Cron Job Delivery — Continued Observation ### Morning Results (Mar 30) | Time | Job | Status | Notes | |------|-----|--------|-------| | **07:05** | **Morning Cleanup** | **❌ Failed** | No delivery | | **08:05** | **Morning Trends** | **❌ Failed** | No delivery | | 10:05 | Mid-Morning | ⏳ Pending | Awaiting | | 12:05 | Midday Facility | ⏳ Pending | Awaiting | ### Pattern Analysis — Morning Failures **Both morning jobs failed today** — different from Mar 29 where 08:05 delivered. **Comparison:** | Job | Mar 28 | Mar 29 | Mar 30 | |-----|--------|--------|--------| | 07:05 | ✅ | ❌ | ❌ | | 08:05 | ❌ | ✅ | ❌ | **Observation:** Both morning slots n",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.45965273082256314,
+      "totalScore": 0.9017698675394057,
       "maxScore": 0.45965273082256314,
       "firstRecalledAt": "2026-04-26T11:07:27.556Z",
-      "lastRecalledAt": "2026-04-26T11:07:27.556Z",
+      "lastRecalledAt": "2026-05-12T06:33:31.476Z",
       "queryHashes": [
-        "02712bbd58fd"
+        "02712bbd58fd",
+        "ec6951283e7d"
       ],
       "recallDays": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-05-12"
       ],
       "conceptTags": [
         "mid-morning",
@@ -56016,18 +56020,20 @@
       "endLine": 50,
       "source": "memory",
       "snippet": "# Daily Memory Log — 2026-03-28 ## ProTek Cron Job Delivery — Ongoing Monitoring ### Issue: 8:05 AM Report Missing **Reported:** March 28, 9:12 AM HKT **Missing job:** ProTek 08:05 Morning Trends (e1793498-dcfd-42e0-95f7-7ddd8c9049ce) ### Recent Delivery History | Date/Time | Job | Status | Received | |-----------|-----|--------|----------| | Mar 26, 12:05 | 12:05 Midday | ✅ | Yes | | Mar 27, 07:05 | 07:05 Morning | ❌ | No (error) | | Mar 27, 08:05 | 08:05 Morning | ❌ | No (error) | | Mar 27, 12:05 | 12:05 Midday | ✅ | Yes | | **Mar 28, 08:05** | **08:05 Morning** | **❌** | **No** | ### Pattern Analysis - **12:05 PM jobs:** Consistently delivering ✅ - **Morning jobs (07:05, 08:05):*",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4552436470985412,
+      "totalScore": 0.893377673625946,
       "maxScore": 0.4552436470985412,
       "firstRecalledAt": "2026-04-26T11:07:27.556Z",
-      "lastRecalledAt": "2026-04-26T11:07:27.556Z",
+      "lastRecalledAt": "2026-05-12T06:33:31.476Z",
       "queryHashes": [
-        "02712bbd58fd"
+        "02712bbd58fd",
+        "ec6951283e7d"
       ],
       "recallDays": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-05-12"
       ],
       "conceptTags": [
         "date/time",
@@ -83624,19 +83630,21 @@
       "endLine": 28,
       "source": "memory",
       "snippet": "# Daily Log — 2026-05-09 ## Session Summary (from 2026-05-07 work) ### BOOTSTRAP.md Creation - Created `BOOTSTRAP.md` for both Ceil and Neo workspaces - Includes session continuity check via `sessions_list` + `sessions_history` - Located at `~/.openclaw/workspace/BOOTSTRAP.md` and `~/.openclaw/workspace-neo/BOOTSTRAP.md` ### OpenClaw Release Evaluation - **5.5** (May 5): Deferred — no critical fixes - **5.6** (May 6): Deferred — low-risk patch, not critical - **5.7** (May 7): Evaluated as worth upgrading when convenient - Key fixes: skills cache clearing on `/new`, context engine invalidation, Telegram polling watchdog - **Not fixed:** `/new` greeting bug (#68955) still open - Plan:",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9903554230928421,
+      "totalScore": 1.426062512397766,
       "maxScore": 0.5371465981006622,
       "firstRecalledAt": "2026-05-09T10:25:12.887Z",
-      "lastRecalledAt": "2026-05-09T10:42:34.387Z",
+      "lastRecalledAt": "2026-05-12T06:33:31.476Z",
       "queryHashes": [
         "a25d1851dac5",
-        "075a3bf43c35"
+        "075a3bf43c35",
+        "ec6951283e7d"
       ],
       "recallDays": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-12"
       ],
       "conceptTags": [
         "bootstrap.md",
@@ -89598,6 +89606,68 @@
         "official",
         "total",
         "chunks"
+      ]
+    },
+    "memory:memory/2026-03-26.md:1:41": {
+      "key": "memory:memory/2026-03-26.md:1:41",
+      "path": "memory/2026-03-26.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "# Daily Memory Log — 2026-03-26 ## Session Issues Investigated ### OpenClaw GitHub Issues (Performance Related) Logged two issues for investigation: 1. **Issue #53747** — https://github.com/openclaw/openclaw/issues/53747 - Related to slow responses / tool call failures 2. **PR #54448** — https://github.com/openclaw/openclaw/pull/54448 - Related to performance fix ### Root Cause: Repeated Failed Tool Calls **Discovery:** Earlier perceived \"slowness\" was NOT general performance issue. Root cause was **repeated failed tool calls** with validation errors (empty `{}` parameters being sent). Evidence: Multiple \"Validation failed for tool exec: command: must have property 'command'\" e",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4320952534675598,
+      "maxScore": 0.4320952534675598,
+      "firstRecalledAt": "2026-05-12T06:17:55.071Z",
+      "lastRecalledAt": "2026-05-12T06:17:55.071Z",
+      "queryHashes": [
+        "7c79a924f19b"
+      ],
+      "recallDays": [
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "log",
+        "issues",
+        "investigated",
+        "openclaw",
+        "github",
+        "performance",
+        "related",
+        "logged"
+      ]
+    },
+    "memory:memory/2026-03-20.md:1:44": {
+      "key": "memory:memory/2026-03-20.md:1:44",
+      "path": "memory/2026-03-20.md",
+      "startLine": 1,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "# 2026-03-20 - Daily Log ## ProTek FSM Cron Issue (8:05 AM) **Observation:** 8:05 AM cron job — ONLY preamble sent to Telegram, actual report missing **What happened:** | Component | Status | Evidence | |-----------|--------|----------| | API data fetched | ✅ Success | `08-06-analysis.json` exists | | Report generated | ✅ Success | `08-06-summary.json` exists | | **Telegram delivery** | ❌ **FAILED** | Only preamble received: \"I see the cron job is delivering...\" | **Root Cause Analysis:** - Cron job triggered successfully at 8:05 AM - Data was fetched and analyzed (files saved at 08:06) - Agent's initial response (preamble) was captured by `announce` mode - **Skill's formatted report was",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4447837740182876,
+      "maxScore": 0.4447837740182876,
+      "firstRecalledAt": "2026-05-12T06:33:31.476Z",
+      "lastRecalledAt": "2026-05-12T06:33:31.476Z",
+      "queryHashes": [
+        "ec6951283e7d"
+      ],
+      "recallDays": [
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "08-06-analysis.json",
+        "08-06-summary.json",
+        "log",
+        "protek",
+        "fsm",
+        "cron",
+        "issue",
+        "observation"
       ]
     }
   }
