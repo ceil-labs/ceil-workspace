@@ -47,6 +47,26 @@
 - Ask before destructive commands
 - No "mental notes" — write it down
 
+## Memoria Wiki Best Practices
+
+### Multiple Citations Required
+- **Never limit wiki articles to a single citation.** The more source chunks cited, the stronger the article's grounding.
+- Aim for **3-7 citations minimum** per article. Complex articles should cite 10+ chunks.
+- Cite from **multiple sources** when possible — different perspectives strengthen the article.
+- Each major claim or section should have its own citation.
+- Example: The "TanStack npm Supply Chain Attack" wiki cites **7 chunks** from 2 sources (TanStack postmortem + Snyk analysis).
+
+### Cross-Reference Wikis
+- After creating a new wiki, **link it to related articles** using `see-also` or `prerequisite` cross-references.
+- **Cross-references are directional, not bidirectional by default.** Only add a reverse link if the relationship semantics differ.
+- Don't duplicate content — link to the canonical article and expand where needed.
+- The graph view shows relationships — make sure new articles are connected to the knowledge graph.
+
+### Article Structure
+- Start with a **clear summary** (used in search results and graph labels).
+- Use **headers** for scannability — the chunker respects header boundaries.
+- Include **actionable takeaways** or **key findings** sections when relevant.
+
 ## Promoted From Short-Term Memory (2026-05-10)
 
 <!-- openclaw-memory-promotion:memory:memory/2026-03-25.md:1:57 -->

@@ -170,6 +170,34 @@ Research is our default mode because:
 
 **Remember:** Research tasks should rarely be handled directly. When in doubt, delegate first.
 
+## Wiki & Citation Best Practices (Memoria)
+
+When writing wiki articles in Memoria, follow these guidelines:
+
+### Multiple Citations, Not Just One
+- **Never limit to a single citation.** The more source chunks you cite, the stronger the article's grounding.
+- Aim for **3-7 citations** per article minimum. Complex articles should cite 10+ chunks.
+- Cite from **multiple sources** when possible — different perspectives strengthen the article.
+- Each major claim or section should have its own citation.
+
+### Citation Quality
+- Cite **specific, relevant chunks** — not random ones.
+- Prefer **primary sources** (original docs, official postmortems) over secondary.
+- When synthesizing across sources, cite each source that contributed to the synthesis.
+
+### Cross-References Between Wikis
+- After creating a new wiki, **link it to related articles** using `see-also` or `prerequisite` cross-references.
+- **Cross-references are directional, not bidirectional by default.** Only add a reverse link if the relationship semantics differ (e.g., A `see-also` B, and B `prerequisite` A because B requires understanding A first).
+- Don't duplicate content — link to the canonical article and expand where needed.
+- The graph view shows relationships — make sure new articles are connected to the knowledge graph.
+
+### Article Structure
+- Start with a **clear summary** (used in search results and graph labels).
+- Use **headers** for scannability — the chunker respects header boundaries.
+- Include **actionable takeaways** or **key findings** sections when relevant.
+
+---
+
 ## Agent-to-Agent Communication
 
 **Ceil can communicate with Neo:**

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-12T06:33:31.476Z",
+  "updatedAt": "2026-05-12T08:57:37.484Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -82820,13 +82820,13 @@
       "endLine": 166,
       "source": "memory",
       "snippet": "### Plan: Vulnerability Assessment Wiki + Cross-References **Proposed tree:** ``` Vulnerability Assessment ├── Web Application VA │ ├── SQL Injection │ ├── XSS (Cross-Site Scripting) │ ├── Command Injection │ └── File Upload Vulnerabilities ├── Network VA │ ├── Unpatched Services │ └── Default Credentials ├── Privilege Escalation │ ├── Linux PrivEsc │ └── Windows PrivEsc └── Exploit Research └── CVE Lookup & PoC Verification ``` **Cross-reference strategy:** - SQL Injection → prerequisite: Web Enumeration - SQL Injection → see-also: Command Injection - Privilege Escalation → prerequisite: Enumeration - File Upload → references: Web Application VA - Nmap All-Ports → prer",
-      "recallCount": 9,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.079294592142104,
-      "maxScore": 0.4897466480731964,
+      "totalScore": 5.03618961572647,
+      "maxScore": 0.5128196477890015,
       "firstRecalledAt": "2026-05-04T08:35:43.977Z",
-      "lastRecalledAt": "2026-05-09T19:01:19.164Z",
+      "lastRecalledAt": "2026-05-12T08:57:37.484Z",
       "queryHashes": [
         "f74a2b25db50",
         "1df0ecf99ac4",
@@ -82836,12 +82836,15 @@
         "9b9e76d4d8eb",
         "c7a788c895af",
         "28018ed1f989",
-        "c9cc1da5e3ad"
+        "c9cc1da5e3ad",
+        "b162dc59a770",
+        "75606838c56f"
       ],
       "recallDays": [
         "2026-05-04",
         "2026-05-07",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-12"
       ],
       "conceptTags": [
         "network",
@@ -89668,6 +89671,68 @@
         "cron",
         "issue",
         "observation"
+      ]
+    },
+    "memory:memory/2026-05-12.md:1:37": {
+      "key": "memory:memory/2026-05-12.md:1:37",
+      "path": "memory/2026-05-12.md",
+      "startLine": 1,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "# Daily Log — 2026-05-12 ## TanStack Supply Chain Attack — Memoria Exposure Check **Source:** @0xlupin tweet — https://x.com/0xlupin/status/2053980673350697096 **Attack:** Supply chain compromise of TanStack packages. Malicious versions released: `1.166.12`, `1.166.15`, `1.169.5`, `1.169.8`. Flagged April 16, went live May 12. **Memoria exposure:** - Direct `tanstack` dependency: **None** - `package-lock.json` references: **0** - `node_modules/` presence: **None** - `npm audit --audit-level critical`: **0 critical vulnerabilities** **Conclusion:** Memoria is **not affected**. The project does not use TanStack. **Key dependencies to monitor for supply chain risk:** - `@google/genai`, `o",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.5150859922170639,
+      "maxScore": 0.5150859922170639,
+      "firstRecalledAt": "2026-05-12T08:57:31.682Z",
+      "lastRecalledAt": "2026-05-12T08:57:31.682Z",
+      "queryHashes": [
+        "b162dc59a770"
+      ],
+      "recallDays": [
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "1.166.12",
+        "1.166.15",
+        "1.169.5",
+        "1.169.8",
+        "package-lock.json",
+        "node-modules",
+        "audit-level",
+        "google/genai"
+      ]
+    },
+    "memory:memory/2026-05-12.md:32:57": {
+      "key": "memory:memory/2026-05-12.md:32:57",
+      "path": "memory/2026-05-12.md",
+      "startLine": 32,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "- **7 citations** from 2 sources (TanStack postmortem + Snyk analysis) - Covers: attack chain (4 steps), impact (42 packages, 84 versions, 12.7M+ downloads), remediation (7 steps), Memoria exposure analysis - **Example of multi-citation best practice** — demonstrates citing multiple chunks across multiple sources **Guidance updates made:** 1. **AGENTS.md** — New section \"Wiki & Citation Best Practices\": - Multiple citations (3-7 minimum, 10+ for complex articles) - Cite from multiple sources when possible - Cross-reference new wikis to related articles - Clear summary, headers, actionable takeaways 2. **MEMORY.md** — New section \"Memoria Wiki Best Practices\": - Multiple cit",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4954351127147674,
+      "maxScore": 0.4954351127147674,
+      "firstRecalledAt": "2026-05-12T08:57:31.682Z",
+      "lastRecalledAt": "2026-05-12T08:57:31.682Z",
+      "queryHashes": [
+        "b162dc59a770"
+      ],
+      "recallDays": [
+        "2026-05-12"
+      ],
+      "conceptTags": [
+        "12.7m",
+        "multi-citation",
+        "agents.md",
+        "3-7",
+        "cross-reference",
+        "memory.md",
+        "citations",
+        "sources"
       ]
     }
   }
