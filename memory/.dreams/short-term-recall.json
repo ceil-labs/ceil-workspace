@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-15T06:53:59.943Z",
+  "updatedAt": "2026-05-15T15:35:50.866Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -7195,13 +7195,13 @@
       "endLine": 110,
       "source": "memory",
       "snippet": "**Status**: Documented in `karpathy-architecture-design.md`. Implementation pending. ## Commands Reference **Production Deploy:** ```bash cd ~/agent-platform git pull origin master docker compose -f docker-compose.ghcr.yml pull docker compose -f docker-compose.ghcr.yml up -d ``` **Local Dev:** ```bash cd ~/.openclaw/projects/agent-platform docker compose up -d ``` **Check Build Status:** ```bash gh run list --limit 3 ```",
-      "recallCount": 17,
+      "recallCount": 26,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9.113417642689154,
+      "totalScore": 13.423238685107632,
       "maxScore": 0.7706353324573588,
       "firstRecalledAt": "2026-04-12T11:13:30.487Z",
-      "lastRecalledAt": "2026-05-13T11:52:25.047Z",
+      "lastRecalledAt": "2026-05-15T09:57:20.974Z",
       "queryHashes": [
         "3325b29e4dbc",
         "d16046c294ff",
@@ -7219,7 +7219,16 @@
         "a5160ae88763",
         "7869d46978d4",
         "59ff6049b87c",
-        "9b8feb10e87d"
+        "9b8feb10e87d",
+        "dde64973531d",
+        "d5091d0d3d2d",
+        "bac755dba0cf",
+        "0dee96dc0a0e",
+        "3df23baead22",
+        "39133745f5b9",
+        "5af0204a1ac8",
+        "7d3eafd7d3f4",
+        "5644ede0ebdc"
       ],
       "recallDays": [
         "2026-04-12",
@@ -7228,7 +7237,8 @@
         "2026-04-26",
         "2026-04-27",
         "2026-04-28",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-15"
       ],
       "conceptTags": [
         "karpathy-architecture-design.md",
@@ -37055,22 +37065,24 @@
       "endLine": 414,
       "source": "memory",
       "snippet": "- status: staged - Candidate: Assistant: The research completed successfully — I already summarized the findings above. Here's the short version: - **K2.6-code-preview isn't officially released yet** (as of today), but rumors say it's imminent - **Your existing `kimi-coding` API key and endpoint** will likely - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-14.txt:20-20 - recalls: 0 - status: staged - Candidate: User: Conversation info (untrusted metadata): ```json { \"message_id\": \"18279\", \"sender_id\": \"8154042516\", \"sender\": \"Victor Paolo Reyes\", \"timestamp\": \"Tue 2026-04-14 11:29 GMT+8\" } ``` Sender (untrusted metadata): ```json { \"label\": \"Victor Paolo Reyes",
-      "recallCount": 3,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.297176718711853,
-      "maxScore": 0.4434957981109619,
+      "totalScore": 1.79619742333889,
+      "maxScore": 0.499020704627037,
       "firstRecalledAt": "2026-04-16T11:13:00.642Z",
-      "lastRecalledAt": "2026-05-04T04:30:20.708Z",
+      "lastRecalledAt": "2026-05-15T10:14:43.336Z",
       "queryHashes": [
         "0f1ebcfab0fa",
         "12bb0281b38f",
-        "7b0c81ac3004"
+        "7b0c81ac3004",
+        "c3cc6bd4af82"
       ],
       "recallDays": [
         "2026-04-16",
         "2026-04-26",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-15"
       ],
       "conceptTags": [
         "k2.6-code-preview",
@@ -49724,13 +49736,13 @@
       "endLine": 512,
       "source": "memory",
       "snippet": "## 2026-04-16 09:51 — OpenClaw Model Config Fixed: kimi/k2p6 Now Resolves Correctly **Problem:** Model `kimi/k2p6` was falling back to `kimi-coding/k2p6` because provider name mismatch caused \"selected model unavailable\" error. **Root cause:** Config had provider named `kimi-coding` but requests used `kimi/k2p6` alias. **Changes made to `~/.openclaw/openclaw.json`:** 1. Renamed `auth.profiles` key: `kimi-coding:default` → `kimi:default` 2. Updated `auth.profiles` provider field: `kimi-coding` → `kimi` 3. Renamed `models.providers` key: `kimi-coding` → `kimi` 4. Removed test model `k2p7` from models list 5. Updated `agents.defaults.model.primary`: `kimi-coding/k2p6` → `kimi/k2p6` 6. Fixed",
-      "recallCount": 19,
+      "recallCount": 20,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 9.95219965579399,
+      "totalScore": 10.453234633826103,
       "maxScore": 0.8087188959349056,
       "firstRecalledAt": "2026-04-22T02:07:43.762Z",
-      "lastRecalledAt": "2026-05-09T02:26:50.831Z",
+      "lastRecalledAt": "2026-05-15T10:14:43.336Z",
       "queryHashes": [
         "fc49abb81cea",
         "1f7b4b3166e4",
@@ -49750,13 +49762,15 @@
         "0904b5594d62",
         "df20d7e21352",
         "e731da06cec5",
-        "f1d43fbea140"
+        "f1d43fbea140",
+        "c3cc6bd4af82"
       ],
       "recallDays": [
         "2026-04-22",
         "2026-04-26",
         "2026-05-05",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-15"
       ],
       "conceptTags": [
         "kimi/k2p6",
@@ -54246,25 +54260,31 @@
       "endLine": 365,
       "source": "memory",
       "snippet": "- Candidate: - Candidate: **Context:** Neo (Telegram) experienced an LLM idle timeout on `kimi/k2p5` via the `kimi-coding` provider. After ~60s, OpenClaw auto-fallback to `minimax-m2.7` successfully. Model was later reset to `kimi/k2p5`. **Investigation:** - Confirmed via `openclaw logs` — primary profile `kimi-coding:default` hit `LLM idle timeout (60s)`, HTTP 408. - OpenClaw GitHub repo search revealed **Issue #55065** (no idle timeout mechanism) plus transient kimi-coding provider latency issues. - Victor confirmed he's on OpenClaw **v4.9** and the tool-call format bug is already resolved in this version. **Current Assessment:** - Only symptom observed is the **60s idle timeout** — likely",
-      "recallCount": 5,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.573874565008213,
+      "totalScore": 4.9357617547541155,
       "maxScore": 0.7477299233704108,
       "firstRecalledAt": "2026-04-24T06:38:54.278Z",
-      "lastRecalledAt": "2026-05-13T11:52:32.164Z",
+      "lastRecalledAt": "2026-05-15T10:14:35.868Z",
       "queryHashes": [
         "f1ff6e7d232f",
         "04d942d19d67",
         "7b0c81ac3004",
         "d7911d5e4751",
-        "564bfc8923ca"
+        "564bfc8923ca",
+        "d5091d0d3d2d",
+        "bac755dba0cf",
+        "0dee96dc0a0e",
+        "5644ede0ebdc",
+        "52ab8d51872d"
       ],
       "recallDays": [
         "2026-04-24",
         "2026-04-26",
         "2026-05-04",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-15"
       ],
       "conceptTags": [
         "kimi/k2p5",
@@ -54284,25 +54304,29 @@
       "endLine": 497,
       "source": "memory",
       "snippet": "- **Status**: Documented in `karpathy-architecture-design.md`. Implementation pending. ## Commands Reference **Production Deploy:** ```bash cd ~/agent-platform git pull origin master docker compose -f docker-compose.ghcr.yml pull docker compose -f docker-compose.ghcr.yml up -d ``` **Local Dev:** ```bash cd ~/.openclaw/projects/agent-platform docker compose up -d ``` **Check Build Status:** ```bash gh run list --limit 3 ``` [confidence=0.76 evidence=memory/2026-04-04.md:88-110] - - Added build args `USER_ID` and `GROUP_ID` in docker-compose.yml - Pre-create `node_modules` directory with correct ownership - **Result**: Local dev `docker compose up` works seamlessly ### 3. Build Pipeline Unders",
-      "recallCount": 5,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.325831687450409,
-      "maxScore": 0.47706275880336757,
+      "totalScore": 3.7331782758235934,
+      "maxScore": 0.48171321153640745,
       "firstRecalledAt": "2026-04-24T06:38:54.278Z",
-      "lastRecalledAt": "2026-05-04T09:12:30.111Z",
+      "lastRecalledAt": "2026-05-15T09:57:20.058Z",
       "queryHashes": [
         "f1ff6e7d232f",
         "29f6d952b980",
         "ae627c47b90e",
         "d7911d5e4751",
-        "b76b6480fa8a"
+        "b76b6480fa8a",
+        "dde64973531d",
+        "bac755dba0cf",
+        "5af0204a1ac8"
       ],
       "recallDays": [
         "2026-04-24",
         "2026-04-26",
         "2026-04-27",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-15"
       ],
       "conceptTags": [
         "karpathy-architecture-design.md",
@@ -82959,20 +82983,21 @@
       "endLine": 83,
       "source": "memory",
       "snippet": "**Summary:** OpenClaw 2026.3.23-1 with kimi-coding provider (k2p5 model) produces malformed tool calls — read/exec calls with missing path/command parameters. **Symptom:** Repeated errors like: - `read tool called without path` - `Missing required parameter: path (path or file_path)` **Root Cause:** Bug in OpenClaw's Kimi tool call argument parsing/repair logic. **Reference:** https://github.com/openclaw/openclaw/issues/53747 ### GitHub PR #54448 — The Fix **Title:** preserve Kimi tool call arguments instead of clearing valid JSON **Fixes:** Issue #53747 (and #54442, #54366) **Changes:** 1. `tryParseMalformedToolCallArguments` — Return parsed args when JSON.parse succeeds (was incorre",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.755636689066887,
+      "totalScore": 3.227804893255234,
       "maxScore": 0.4733405232429504,
       "firstRecalledAt": "2026-05-04T09:12:02.178Z",
-      "lastRecalledAt": "2026-05-15T06:22:28.449Z",
+      "lastRecalledAt": "2026-05-15T09:42:48.642Z",
       "queryHashes": [
         "0c7f590bf37f",
         "3764dae27c0a",
         "1611f4799098",
         "b76b6480fa8a",
         "9e1f61e2b18d",
-        "b6b31e1f5034"
+        "b6b31e1f5034",
+        "d5091d0d3d2d"
       ],
       "recallDays": [
         "2026-05-04",
@@ -83570,20 +83595,22 @@
       "endLine": 156,
       "source": "memory",
       "snippet": "**Future use:** Saying any backup-related phrase will trigger the memoria skill and run the backup automatically. --- ## Memoria DB Backup Created PostgreSQL custom-format dump of memoria_db: - **File:** `backups/memoria_db_backup_20260508_103121.dump` - **Size:** 1.9 MB - **Format:** PostgreSQL custom (pg_dump -Fc) - **Contents:** All wiki articles, sources, chunks, citations, notes, graph data, and assets metadata - **DB:** memoria_db @ memoria-postgres-1 (Docker) - **User:** memory **Verify:** `file backups/memoria_db_backup_20260508_103121.dump` → PostgreSQL custom database dump - v1.16-0 **Restore command (for reference):** ```bash docker exec -e PGPASSWORD=changeme memoria-postgre",
-      "recallCount": 8,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.651276931166649,
-      "maxScore": 0.45996592640876766,
+      "totalScore": 4.342450273942508,
+      "maxScore": 0.6911733427758591,
       "firstRecalledAt": "2026-05-09T10:25:05.579Z",
-      "lastRecalledAt": "2026-05-09T10:25:46.272Z",
+      "lastRecalledAt": "2026-05-15T15:35:50.866Z",
       "queryHashes": [
         "9f48d655ab51",
         "ef7b7d984e79",
-        "a25d1851dac5"
+        "a25d1851dac5",
+        "89121dc99c7d"
       ],
       "recallDays": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-15"
       ],
       "conceptTags": [
         "backup",
@@ -83637,18 +83664,20 @@
       "endLine": 71,
       "source": "memory",
       "snippet": "- Updated `SKILL.md` with backup section and `scripts/backup-memoria.sh` ### Rich Text Paste Research (Memoria UI) - **Problem:** Pasting formatted text from Slack/VS Code/browser into Memoria textarea loses all formatting (bold, italic, code, links) - **Root cause:** Memoria only intercepts image paste, lets default text paste happen. Browser default only uses `text/plain`. - **Solution:** Detect `text/html` in clipboard, convert to Markdown using Turndown.js - **Full research:** `workspace/research/rich-text-paste-memoria.md` - **Agent prompt ready:** For implementing rich text paste in `NoteEditPage.tsx` - Key edge cases: Slack wrapper divs, VS Code language class detection, Google Docs",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.7371004223823547,
-      "maxScore": 0.4342751055955887,
+      "totalScore": 2.414293544561162,
+      "maxScore": 0.6771931221788072,
       "firstRecalledAt": "2026-05-09T10:25:06.876Z",
-      "lastRecalledAt": "2026-05-09T10:25:46.272Z",
+      "lastRecalledAt": "2026-05-15T15:35:50.866Z",
       "queryHashes": [
-        "ef7b7d984e79"
+        "ef7b7d984e79",
+        "89121dc99c7d"
       ],
       "recallDays": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-15"
       ],
       "conceptTags": [
         "backup",
@@ -83736,23 +83765,25 @@
       "endLine": 126,
       "source": "memory",
       "snippet": "**Goal:** Remove opencode-go from active config (not renewing subscription). Keep all scaffolding for future re-enable. **Changes applied (5 fields):** | # | Path | Before | After | |---|------|--------|-------| | 1 | `agents.defaults.model.fallbacks` | `[opencode-go/minimax-m2.7, opencode-go/kimi-k2.6, opencode-go/glm-5]` | `[]` | | 2 | `agents.defaults.subagents.model` | `opencode-go/minimax-m2.7` | `kimi/k2p6` | | 3 | `plugins.entries.active-memory.config.model` | `opencode-go/minimax-m2.7` | `kimi/k2p6` | | 4 | `plugins.allow` | included `opencode-go` | removed | | 5 | `plugins.entries.opencode-go` | `{ enabled: true }` | removed | **Scaffolding preserved (for future re-enable):** - `",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.6867907166481015,
+      "totalScore": 3.1347977370023723,
       "maxScore": 0.4890515387058258,
       "firstRecalledAt": "2026-05-09T10:33:16.227Z",
-      "lastRecalledAt": "2026-05-09T10:43:01.914Z",
+      "lastRecalledAt": "2026-05-15T10:14:35.868Z",
       "queryHashes": [
         "89719677bded",
         "d6188472a0bb",
         "e8a349fedbf7",
         "c77d704d0c71",
         "78c31eedf091",
-        "c14136613b0e"
+        "c14136613b0e",
+        "52ab8d51872d"
       ],
       "recallDays": [
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-15"
       ],
       "conceptTags": [
         "opencode-go",
