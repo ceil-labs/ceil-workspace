@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-12T08:57:37.484Z",
+  "updatedAt": "2026-05-15T06:53:59.943Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -7195,13 +7195,13 @@
       "endLine": 110,
       "source": "memory",
       "snippet": "**Status**: Documented in `karpathy-architecture-design.md`. Implementation pending. ## Commands Reference **Production Deploy:** ```bash cd ~/agent-platform git pull origin master docker compose -f docker-compose.ghcr.yml pull docker compose -f docker-compose.ghcr.yml up -d ``` **Local Dev:** ```bash cd ~/.openclaw/projects/agent-platform docker compose up -d ``` **Check Build Status:** ```bash gh run list --limit 3 ```",
-      "recallCount": 16,
+      "recallCount": 17,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 8.66197550532858,
+      "totalScore": 9.113417642689154,
       "maxScore": 0.7706353324573588,
       "firstRecalledAt": "2026-04-12T11:13:30.487Z",
-      "lastRecalledAt": "2026-04-27T19:00:16.767Z",
+      "lastRecalledAt": "2026-05-13T11:52:25.047Z",
       "queryHashes": [
         "3325b29e4dbc",
         "d16046c294ff",
@@ -7218,7 +7218,8 @@
         "8e060fbc1405",
         "a5160ae88763",
         "7869d46978d4",
-        "59ff6049b87c"
+        "59ff6049b87c",
+        "9b8feb10e87d"
       ],
       "recallDays": [
         "2026-04-12",
@@ -7226,7 +7227,8 @@
         "2026-04-24",
         "2026-04-26",
         "2026-04-27",
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-13"
       ],
       "conceptTags": [
         "karpathy-architecture-design.md",
@@ -7343,24 +7345,26 @@
       "endLine": 107,
       "source": "memory",
       "snippet": "- ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive config via environment",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.3050148706038094,
+      "totalScore": 3.793663446148167,
       "maxScore": 0.9386655967937991,
       "firstRecalledAt": "2026-04-12T13:59:40.081Z",
-      "lastRecalledAt": "2026-04-16T01:14:39.495Z",
+      "lastRecalledAt": "2026-05-13T11:48:06.756Z",
       "queryHashes": [
         "d16046c294ff",
         "09b7c59d651c",
         "cac7a1aba3fb",
-        "6181dc273126"
+        "6181dc273126",
+        "201769887290"
       ],
       "recallDays": [
         "2026-04-12",
         "2026-04-13",
         "2026-04-14",
-        "2026-04-16"
+        "2026-04-16",
+        "2026-05-13"
       ],
       "conceptTags": [
         "end-to-end",
@@ -32288,14 +32292,14 @@
       "startLine": 1,
       "endLine": 57,
       "source": "memory",
-      "snippet": "## Session Cleanup Skill - Created Created `session-cleanup` skill for archiving/removing stale OpenClaw session files: - Location: `~/.openclaw/skills/session-cleanup/` - SKILL.md: Documentation and workflow - Scripts: `cleanup-sessions.sh` (in progress) Purpose: Address session bloat from .jsonl.reset.* and .jsonl.deleted.* files that slow down agent responses. ## Current Session Status - Main sessions directory: 26MB - Large stale files identified: ~13MB of .reset. and .deleted. files - Archive approach recommended for safety - Cleanup pending completion ## Next Steps 1. Finish cleanup script implementation 2. Archive stale session files 3. Restart gateway to clear cached references 4. Test performance improvement --- ## Session Maintenance Config Applied (Later Session) **Decision:** Didn't need session-cleanup skill — OpenClaw has built-in session maintenance. **Config added to `~/.openclaw/openclaw.json`:** ```json \"session\": { \"maintenance\": { \"mode\": \"enforce\", \"pruneAfter\": \"3d\", \"resetArchiveRetention\": \"2d\", \"maxEntries\": 50, \"maxDiskBytes\": \"50mb\", \"highWaterBytes\": \"40mb\" } } ``` **Rationale:** Victor has Honcho for cross-session memory, so local sessions can be aggressively pruned. **Gateway restart needed to fully apply.** --- ## Honcho Tool Names Fixed (Both Workspaces) **Issue:** Old Honcho v1.x tool names in AGENTS.md, TOOLS.md, MEMORY.md across both workspaces. **Fixed references:** - `honcho_profile` → `honcho_context` (detail='card') - `honcho_recall` → `honcho_ask` (depth='quick')",
-      "recallCount": 7,
+      "snippet": "## Session Cleanup Skill - Created Created `session-cleanup` skill for archiving/removing stale OpenClaw session files: - Location: `~/.openclaw/skills/session-cleanup/` - SKILL.md: Documentation and workflow - Scripts: `cleanup-sessions.sh` (in progress) Purpose: Address session bloat from .jsonl.reset.* and .jsonl.deleted.* files that slow down agent responses. ## Current Session Status - Main sessions directory: 26MB - Large stale files identified: ~13MB of .reset. and .deleted. files - Archive approach recommended for safety - Cleanup pending completion ## Next Steps 1. Finish cleanup script implementation 2. Archive stale session files 3. Restart gateway to clear cached reference",
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.557354550662962,
+      "totalScore": 4.004991026822058,
       "maxScore": 0.7333058527145067,
       "firstRecalledAt": "2026-04-13T14:11:54.898Z",
-      "lastRecalledAt": "2026-05-06T14:23:59.640Z",
+      "lastRecalledAt": "2026-05-13T11:54:00.879Z",
       "queryHashes": [
         "3c86310b0fca",
         "039cddd403bb",
@@ -32303,13 +32307,15 @@
         "76a7dd8b0ca7",
         "33f87eb1a938",
         "c00e16c2c140",
-        "a5cc10290578"
+        "a5cc10290578",
+        "6328f859a7e8"
       ],
       "recallDays": [
         "2026-04-13",
         "2026-04-26",
         "2026-04-27",
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-13"
       ],
       "conceptTags": [
         "gateway",
@@ -33311,25 +33317,27 @@
       "endLine": 86,
       "source": "memory",
       "snippet": "**Context:** Neo (Telegram) experienced an LLM idle timeout on `kimi/k2p5` via the `kimi-coding` provider. After ~60s, OpenClaw auto-fallback to `minimax-m2.7` successfully. Model was later reset to `kimi/k2p5`. **Investigation:** - Confirmed via `openclaw logs` — primary profile `kimi-coding:default` hit `LLM idle timeout (60s)`, HTTP 408. - OpenClaw GitHub repo search revealed **Issue #55065** (no idle timeout mechanism) plus transient kimi-coding provider latency issues. - Victor confirmed he's on OpenClaw **v4.9** and the tool-call format bug is already resolved in this version. **Current Assessment:** - Only symptom observed is the **60s idle timeout** — likely transient provider-side",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.8238526944057005,
+      "totalScore": 3.2923564705983654,
       "maxScore": 0.7372151851277668,
       "firstRecalledAt": "2026-04-14T03:15:47.633Z",
-      "lastRecalledAt": "2026-05-09T02:14:03.807Z",
+      "lastRecalledAt": "2026-05-15T06:22:28.449Z",
       "queryHashes": [
         "80abc314aba1",
         "fc49abb81cea",
         "04d942d19d67",
         "ef9fcc493051",
-        "7fcb337fb0ab"
+        "7fcb337fb0ab",
+        "b6b31e1f5034"
       ],
       "recallDays": [
         "2026-04-14",
         "2026-04-22",
         "2026-04-26",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-15"
       ],
       "conceptTags": [
         "kimi/k2p5",
@@ -33613,19 +33621,23 @@
       "endLine": 26,
       "source": "memory",
       "snippet": "## Light Sleep <!-- openclaw:dreaming:light:start --> - Candidate: Reflections: No strong patterns surfaced. - confidence: 0.62 - evidence: memory/2026-04-13.md:415-415 - recalls: 0 - status: staged - Candidate: **[2026-04-13 10:11 PM +08]** GHCR production deployment preparation — stopped dev stack, ready for next-session testing. - confidence: 0.62 - evidence: memory/2026-04-13.md:3-3 - recalls: 0 - status: staged - Candidate: **Progress:** Development docker compose stack (`agent-platform-app-1`, `agent-platform-proxy-1`, etc.) has been stopped to free port 3000 for GHCR production testing.; **Context reviewed:** `docker-compose.ghcr.yml`, `.env.production`, `Dockerfile`,",
-      "recallCount": 2,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.57922716163022,
+      "totalScore": 2.91186599455697,
       "maxScore": 0.7911834550045833,
       "firstRecalledAt": "2026-04-14T09:15:26.830Z",
-      "lastRecalledAt": "2026-04-14T09:18:14.725Z",
+      "lastRecalledAt": "2026-05-13T11:53:57.558Z",
       "queryHashes": [
         "cac7a1aba3fb",
-        "7b99e526f8a2"
+        "7b99e526f8a2",
+        "f46408dd5ad9",
+        "471527312ae0",
+        "b5dcf3ba3c0b"
       ],
       "recallDays": [
-        "2026-04-14"
+        "2026-04-14",
+        "2026-05-13"
       ],
       "conceptTags": [
         "0.62",
@@ -36903,18 +36915,22 @@
       "endLine": 305,
       "source": "memory",
       "snippet": "- Candidate: - - ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive config via",
-      "recallCount": 1,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.49126775264739986,
+      "totalScore": 1.840862539410591,
       "maxScore": 0.49126775264739986,
       "firstRecalledAt": "2026-04-16T01:26:34.690Z",
-      "lastRecalledAt": "2026-04-16T01:26:34.690Z",
+      "lastRecalledAt": "2026-05-13T11:52:28.625Z",
       "queryHashes": [
-        "423f25bf9757"
+        "423f25bf9757",
+        "3e32d3e87941",
+        "201769887290",
+        "189c48458083"
       ],
       "recallDays": [
-        "2026-04-16"
+        "2026-04-16",
+        "2026-05-13"
       ],
       "conceptTags": [
         "end-to-end",
@@ -53933,13 +53949,13 @@
       "endLine": 387,
       "source": "memory",
       "snippet": "- Candidate: - [ ] Set up any scheduled tasks or reminders ## Notes Victor prefers deep, fundamental understanding when learning. When he asks for help, provide thorough explanations, not surface-level fixes. He gets annoyed by people who don't make sense. --- ## Later Today - Honcho & Agent Communication ### Agent-to-Agent Communication ✅ - Successfully tested messaging between Ceil and Neo - Coordination protocol established: - Clean separation on daily tasks - **Coordination triggers:** \"lab setup\" or \"infrastructure for testing\" - Neo's focus: HTB training (red/blue team, technique deep-dives) ### Honcho Memory Setup - **Ceil workspace:** Uploaded to Honcho (8 files) - USER.md, MEMORY.m",
-      "recallCount": 8,
+      "recallCount": 10,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.673056948184967,
+      "totalScore": 4.555429717898369,
       "maxScore": 0.5187988817691803,
       "firstRecalledAt": "2026-04-24T00:07:23.496Z",
-      "lastRecalledAt": "2026-05-06T14:19:19.206Z",
+      "lastRecalledAt": "2026-05-13T11:54:04.184Z",
       "queryHashes": [
         "9d4668d65398",
         "cacab37c0b7f",
@@ -53948,7 +53964,9 @@
         "24370b595c31",
         "3b0393c4a91c",
         "064c500b4c00",
-        "c00e16c2c140"
+        "c00e16c2c140",
+        "62ca387cf330",
+        "cec374911393"
       ],
       "recallDays": [
         "2026-04-24",
@@ -53956,7 +53974,8 @@
         "2026-04-28",
         "2026-04-30",
         "2026-05-05",
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-13"
       ],
       "conceptTags": [
         "surface-level",
@@ -54227,23 +54246,25 @@
       "endLine": 365,
       "source": "memory",
       "snippet": "- Candidate: - Candidate: **Context:** Neo (Telegram) experienced an LLM idle timeout on `kimi/k2p5` via the `kimi-coding` provider. After ~60s, OpenClaw auto-fallback to `minimax-m2.7` successfully. Model was later reset to `kimi/k2p5`. **Investigation:** - Confirmed via `openclaw logs` — primary profile `kimi-coding:default` hit `LLM idle timeout (60s)`, HTTP 408. - OpenClaw GitHub repo search revealed **Issue #55065** (no idle timeout mechanism) plus transient kimi-coding provider latency issues. - Victor confirmed he's on OpenClaw **v4.9** and the tool-call format bug is already resolved in this version. **Current Assessment:** - Only symptom observed is the **60s idle timeout** — likely",
-      "recallCount": 4,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.122818993571331,
+      "totalScore": 2.573874565008213,
       "maxScore": 0.7477299233704108,
       "firstRecalledAt": "2026-04-24T06:38:54.278Z",
-      "lastRecalledAt": "2026-05-04T09:12:24.817Z",
+      "lastRecalledAt": "2026-05-13T11:52:32.164Z",
       "queryHashes": [
         "f1ff6e7d232f",
         "04d942d19d67",
         "7b0c81ac3004",
-        "d7911d5e4751"
+        "d7911d5e4751",
+        "564bfc8923ca"
       ],
       "recallDays": [
         "2026-04-24",
         "2026-04-26",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-13"
       ],
       "conceptTags": [
         "kimi/k2p5",
@@ -55853,25 +55874,29 @@
       "endLine": 376,
       "source": "memory",
       "snippet": "- Candidate: - Candidate: - ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive",
-      "recallCount": 6,
+      "recallCount": 9,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.766481751203537,
+      "totalScore": 4.036889144778252,
       "maxScore": 0.4847767412662506,
       "firstRecalledAt": "2026-04-26T07:11:54.207Z",
-      "lastRecalledAt": "2026-04-30T00:50:26.450Z",
+      "lastRecalledAt": "2026-05-13T11:53:57.558Z",
       "queryHashes": [
         "12bb0281b38f",
         "02712bbd58fd",
         "dcc07d58c597",
         "5ae0faba09b7",
         "fbee3a2656de",
-        "24dfc0f61655"
+        "24dfc0f61655",
+        "f46408dd5ad9",
+        "3e32d3e87941",
+        "b5dcf3ba3c0b"
       ],
       "recallDays": [
         "2026-04-26",
         "2026-04-29",
-        "2026-04-30"
+        "2026-04-30",
+        "2026-05-13"
       ],
       "conceptTags": [
         "end-to-end",
@@ -56053,18 +56078,20 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "# Daily Memory Log — 2026-03-27 ## ProTek Cron Job Delivery Issue ### Timeline of Events | Date/Time (HKT) | Event | Status | |-----------------|-------|--------| | Mar 20-26 | ProTek reports delivering normally | ✅ Working | | Mar 26, 12:05 | Last successful delivery | ✅ Delivered | | Mar 27, 05:50 | Gateway restart (update check for 3.24) | ⚠️ Restart | | Mar 27, 07:05 | First failure - \"Unsupported channel: telegram\" | ❌ Failed | | Mar 27, 08:05 | Second failure | ❌ Failed | | Mar 27, 09:03 | Manual test with message tool | ✅ Delivered | | Mar 27, 10:05 | Reverted to announce mode | ⏳ Awaiting 12:05 test | ### Key Finding from @chrysb Tweet OpenClaw 3.11 (released Mar 12) introduced",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.49376438856124877,
-      "maxScore": 0.49376438856124877,
+      "totalScore": 1.2336166383330278,
+      "maxScore": 0.7398522497717791,
       "firstRecalledAt": "2026-04-26T11:10:28.508Z",
-      "lastRecalledAt": "2026-04-26T11:10:28.508Z",
+      "lastRecalledAt": "2026-05-15T06:53:59.943Z",
       "queryHashes": [
-        "a3b7f3605f2a"
+        "a3b7f3605f2a",
+        "cceb5171ce31"
       ],
       "recallDays": [
-        "2026-04-26"
+        "2026-04-26",
+        "2026-05-15"
       ],
       "conceptTags": [
         "gateway",
@@ -68508,18 +68535,20 @@
       "endLine": 82,
       "source": "memory",
       "snippet": "- Location: `~/.openclaw/workspace/protek-data/` - Retention: 14 days - Format: JSON files by date **Output:** Telegram channel `-1003821232321` (ProTek Alerts) --- ### 2. ProTek Flagged Items (`protek-flagged-items`) **Purpose:** Query and triage ProTek flagged RO items from FSM API. **Location:** `~/.openclaw/skills/protek-flagged-items/` **Commands:** - `/flagged` — Default approval queue (last 100 days) - `/flagged approval` — Pending approval queue - `/flagged missing-evidence` — Items missing evidence - `/flagged zone <zone-id>` — Zone-specific items - `/flagged search <term>` — Search by PR or subscriber - `/flagged material <ONU|TELSET|IPTV>` — Filter by material - `/flagged exp",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.4656288772821426,
-      "maxScore": 0.4656288772821426,
+      "totalScore": 1.2075294313481477,
+      "maxScore": 0.7419005540660052,
       "firstRecalledAt": "2026-04-28T02:31:30.482Z",
-      "lastRecalledAt": "2026-04-28T02:31:30.482Z",
+      "lastRecalledAt": "2026-05-15T06:53:59.943Z",
       "queryHashes": [
-        "4119f2f3629c"
+        "4119f2f3629c",
+        "cceb5171ce31"
       ],
       "recallDays": [
-        "2026-04-28"
+        "2026-04-28",
+        "2026-05-15"
       ],
       "conceptTags": [
         "openclaw/workspace/protek-data",
@@ -82930,22 +82959,24 @@
       "endLine": 83,
       "source": "memory",
       "snippet": "**Summary:** OpenClaw 2026.3.23-1 with kimi-coding provider (k2p5 model) produces malformed tool calls — read/exec calls with missing path/command parameters. **Symptom:** Repeated errors like: - `read tool called without path` - `Missing required parameter: path (path or file_path)` **Root Cause:** Bug in OpenClaw's Kimi tool call argument parsing/repair logic. **Reference:** https://github.com/openclaw/openclaw/issues/53747 ### GitHub PR #54448 — The Fix **Title:** preserve Kimi tool call arguments instead of clearing valid JSON **Fixes:** Issue #53747 (and #54442, #54366) **Changes:** 1. `tryParseMalformedToolCallArguments` — Return parsed args when JSON.parse succeeds (was incorre",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.2822961658239365,
-      "maxScore": 0.4694664567708969,
+      "totalScore": 2.755636689066887,
+      "maxScore": 0.4733405232429504,
       "firstRecalledAt": "2026-05-04T09:12:02.178Z",
-      "lastRecalledAt": "2026-05-04T09:12:39.042Z",
+      "lastRecalledAt": "2026-05-15T06:22:28.449Z",
       "queryHashes": [
         "0c7f590bf37f",
         "3764dae27c0a",
         "1611f4799098",
         "b76b6480fa8a",
-        "9e1f61e2b18d"
+        "9e1f61e2b18d",
+        "b6b31e1f5034"
       ],
       "recallDays": [
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-15"
       ],
       "conceptTags": [
         "2026.3.23-1",
@@ -83156,14 +83187,14 @@
       "startLine": 1,
       "endLine": 38,
       "source": "memory",
-      "snippet": "# 2026-05-06 — Daily Log ## OpenClaw Upgrade: 4.24 → 5.4 Successfully upgraded the gateway from `2026.4.24` to `2026.5.4` today at ~10:15 AM Manila time. **Pre-upgrade:** - Created config backup at `~/.openclaw/openclaw.json.bak.pre-53` - Reviewed 5.3 release notes — Telegram stability fixes were the main driver - Also reviewed 5.4 (same-day patch on top of 5.3 with performance optimizations) **Post-upgrade status:** - Gateway: running (pid 3239345) ✅ - Telegram: ON · OK ✅ - Discord: ON · OK ✅ - Plugins: 9 loaded · 0 errors ✅ - Doctor: complete · no critical issues ✅ **5.4 observations so far:** - Conversation responsiveness is normal - No stuck sessions or Telegram delays observed - Will monitor for 24h before considering further upgrades ## 5.5 Release — Deferred OpenClaw `2026.5.5` was released today (May 6, 09:00 UTC). Reviewed the changelog — it's a low-risk incremental patch (Discord heartbeat fix, TUI cleanup, xAI/Grok reasoning fix, plugin sync improvements). No critical Telegram fixes. **Decision:** Wait 24h to confirm 5.4 stability before upgrading to 5.5. Will revisit tomorrow. ## Pending Items - **Node host setup** — Victor's MacBook Pro. Paused to focus on upgrade. To revisit. - **Kimi quota** — Still on cooldown from May 4 rate limit. Fallback chain working (MiniMax → Kimi-K2.6 → GLM-5). --- **Session end:** 2026-05-06 18:07 Manila / 10:07 UTC",
-      "recallCount": 10,
+      "snippet": "# 2026-05-06 — Daily Log ## OpenClaw Upgrade: 4.24 → 5.4 Successfully upgraded the gateway from `2026.4.24` to `2026.5.4` today at ~10:15 AM Manila time. **Pre-upgrade:** - Created config backup at `~/.openclaw/openclaw.json.bak.pre-53` - Reviewed 5.3 release notes — Telegram stability fixes were the main driver - Also reviewed 5.4 (same-day patch on top of 5.3 with performance optimizations) **Post-upgrade status:** - Gateway: running (pid 3239345) ✅ - Telegram: ON · OK ✅ - Discord: ON · OK ✅ - Plugins: 9 loaded · 0 errors ✅ - Doctor: complete · no critical issues ✅ **5.4 observations so far:** - Conversation responsiveness is normal - No stuck sessions or Telegram delays observed - Wi",
+      "recallCount": 13,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.387557425014888,
+      "totalScore": 6.8621471453832745,
       "maxScore": 0.7645697572117052,
       "firstRecalledAt": "2026-05-06T14:19:41.866Z",
-      "lastRecalledAt": "2026-05-09T10:42:34.387Z",
+      "lastRecalledAt": "2026-05-15T06:53:59.383Z",
       "queryHashes": [
         "d0df47872647",
         "d012515af8b9",
@@ -83174,13 +83205,17 @@
         "69fc55df4f89",
         "4b0eed280d56",
         "4798a3901959",
-        "075a3bf43c35"
+        "075a3bf43c35",
+        "145e98c914c3",
+        "0b896d77c9bb",
+        "e57c581f049f"
       ],
       "recallDays": [
         "2026-05-06",
         "2026-05-07",
         "2026-05-08",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-15"
       ],
       "conceptTags": [
         "backup",
@@ -89733,6 +89768,131 @@
         "memory.md",
         "citations",
         "sources"
+      ]
+    },
+    "memory:memory/2026-04-15.md:303:310": {
+      "key": "memory:memory/2026-04-15.md:303:310",
+      "path": "memory/2026-04-15.md",
+      "startLine": 303,
+      "endLine": 310,
+      "source": "memory",
+      "snippet": "- Candidate: - - ✅ Dependabot (weekly gem and Actions updates) ### Next Steps (When Victor Returns) 1. **Wait for first GHCR image build** — Check Actions tab (~5 min build time) 2. **Create test user on VPS** — Set up separate Linux user for production deployment testing 3. **Test end-to-end deployment** — Clone repo, configure .env, run `docker-compose.ghcr.yml` 4. **Verify default login flow** — admin@localhost / changeme123 → forced password change ### Notes - Production Dockerfile uses COPY (not volume mounts) for immutable builds - GHCR images are public (repo is public) — no auth needed to pull - First-time deployment requires `db:create db:migrate db:seed` - All sensitive config via",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.48484370708465574,
+      "maxScore": 0.48484370708465574,
+      "firstRecalledAt": "2026-05-13T11:48:06.756Z",
+      "lastRecalledAt": "2026-05-13T11:48:06.756Z",
+      "queryHashes": [
+        "201769887290"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "end-to-end",
+        "docker-compose.ghcr.yml",
+        "first-time",
+        "candidate",
+        "dependabot",
+        "weekly",
+        "gem",
+        "actions"
+      ]
+    },
+    "memory:memory/2026-04-17.md:491:492": {
+      "key": "memory:memory/2026-04-17.md:491:492",
+      "path": "memory/2026-04-17.md",
+      "startLine": 491,
+      "endLine": 492,
+      "source": "memory",
+      "snippet": "- --- **[2026-04-13 10:11 PM +08]** GHCR production deployment preparation — stopped dev stack, ready for next-session testing. - **Progress:** Development docker compose stack (`agent-platform-app-1`, `agent-platform-proxy-1`, etc.) has been stopped to free port 3000 for GHCR production testing. - **Context reviewed:** `docker-compose.ghcr.yml`, `.env.production`, `Dockerfile`, `nginx-proxy.conf`, GHCR workflow, and deployment docs are all up-to-date on `master` with n8n integration and Rails auth gating. - **Port 3000 collision resolved:** Dev stack down; Tailscale serve (`https://srv1405873.tailcd23a1.ts.net:8444`) already points to `localhost:3000`, so GHCR prod can start with zero Tails",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.45152324736118316,
+      "maxScore": 0.45152324736118316,
+      "firstRecalledAt": "2026-05-13T11:52:25.047Z",
+      "lastRecalledAt": "2026-05-13T11:52:25.047Z",
+      "queryHashes": [
+        "9b8feb10e87d"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "next-session",
+        "agent-platform-app-1",
+        "agent-platform-proxy-1",
+        "docker-compose.ghcr.yml",
+        "env.production",
+        "nginx-proxy.conf",
+        "up-to-date",
+        "srv1405873.tailcd23a1.ts.net"
+      ]
+    },
+    "memory:memory/2026-03-25.md:45:70": {
+      "key": "memory:memory/2026-03-25.md:45:70",
+      "path": "memory/2026-03-25.md",
+      "startLine": 45,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "**Rationale:** Victor has Honcho for cross-session memory, so local sessions can be aggressively pruned. **Gateway restart needed to fully apply.** --- ## Honcho Tool Names Fixed (Both Workspaces) **Issue:** Old Honcho v1.x tool names in AGENTS.md, TOOLS.md, MEMORY.md across both workspaces. **Fixed references:** - `honcho_profile` → `honcho_context` (detail='card') - `honcho_recall` → `honcho_ask` (depth='quick') - `honcho_analyze` → `honcho_ask` (depth='thorough') - `honcho_search` → `honcho_search_conclusions` **Files fixed:** - `workspace/AGENTS.md` ✅ - `workspace/MEMORY.md` ✅ - `workspace-neo/AGENTS.md` ✅ - `workspace-neo/TOOLS.md` ✅ **Already clean:** `workspace/TOOLS.md`, `work",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8840066939592361,
+      "maxScore": 0.4613941133022308,
+      "firstRecalledAt": "2026-05-13T11:53:57.558Z",
+      "lastRecalledAt": "2026-05-13T11:54:00.879Z",
+      "queryHashes": [
+        "b5dcf3ba3c0b",
+        "6328f859a7e8"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "gateway",
+        "cross-session",
+        "v1.x",
+        "agents.md",
+        "tools.md",
+        "memory.md",
+        "honcho-profile",
+        "honcho-context"
+      ]
+    },
+    "memory:memory/2026-04-17.md:403:411": {
+      "key": "memory:memory/2026-04-17.md:403:411",
+      "path": "memory/2026-04-17.md",
+      "startLine": 403,
+      "endLine": 411,
+      "source": "memory",
+      "snippet": "- Candidate: --- **[2026-04-13 10:11 PM +08]** GHCR production deployment preparation — stopped dev stack, ready for next-session testing. - **Progress:** Development docker compose stack (`agent-platform-app-1`, `agent-platform-proxy-1`, etc.) has been stopped to free port 3000 for GHCR production testing. - **Context reviewed:** `docker-compose.ghcr.yml`, `.env.production`, `Dockerfile`, `nginx-proxy.conf`, GHCR workflow, and deployment docs are all up-to-date on `master` with n8n integration and Rails auth gating. - **Port 3000 collision resolved:** Dev stack down; Tailscale serve (`https://srv1405873.tailcd23a1.ts.net:8444`) already points to `localhost:3000`, so GHCR prod can start with",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4219432771205902,
+      "maxScore": 0.4219432771205902,
+      "firstRecalledAt": "2026-05-13T11:53:57.558Z",
+      "lastRecalledAt": "2026-05-13T11:53:57.558Z",
+      "queryHashes": [
+        "b5dcf3ba3c0b"
+      ],
+      "recallDays": [
+        "2026-05-13"
+      ],
+      "conceptTags": [
+        "next-session",
+        "agent-platform-app-1",
+        "agent-platform-proxy-1",
+        "docker-compose.ghcr.yml",
+        "env.production",
+        "nginx-proxy.conf",
+        "up-to-date",
+        "srv1405873.tailcd23a1.ts.net"
       ]
     }
   }
