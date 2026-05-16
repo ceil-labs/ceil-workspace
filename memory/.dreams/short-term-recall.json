@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-15T15:35:50.866Z",
+  "updatedAt": "2026-05-15T16:34:49.662Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -83399,20 +83399,22 @@
       "endLine": 127,
       "source": "memory",
       "snippet": "- **#78422** — Telegram polling watchdog tied to `getUpdates` liveness (low-medium: prevents silent disconnects) - **#78532, #78685** — Telegram message delivery reporting fixes (low: better delivery status tracking) **Not fixed:** - #68955 (`/new` greeting bug) — still open, no fix in 5.7 - Active Memory: only security scope change (admin required for global toggles), no functional improvements **Decision:** Worth upgrading when convenient — good reliability patch, especially the skills cache and context engine fixes. Not urgent. Plan to upgrade tomorrow morning to avoid disturbing current session. Skipping 5.5/5.6 and going straight to 5.7. --- ## Memoria Skill Update — Backup Support",
-      "recallCount": 2,
+      "recallCount": 3,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 0.9961737722158431,
-      "maxScore": 0.5144946485757828,
+      "totalScore": 1.745028995856542,
+      "maxScore": 0.7488552236406988,
       "firstRecalledAt": "2026-05-08T02:33:54.070Z",
-      "lastRecalledAt": "2026-05-09T01:14:23.378Z",
+      "lastRecalledAt": "2026-05-15T16:34:49.094Z",
       "queryHashes": [
         "0fa20d4485c5",
-        "4798a3901959"
+        "4798a3901959",
+        "603df6cfc75d"
       ],
       "recallDays": [
         "2026-05-08",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-16"
       ],
       "conceptTags": [
         "backup",
@@ -83595,22 +83597,25 @@
       "endLine": 156,
       "source": "memory",
       "snippet": "**Future use:** Saying any backup-related phrase will trigger the memoria skill and run the backup automatically. --- ## Memoria DB Backup Created PostgreSQL custom-format dump of memoria_db: - **File:** `backups/memoria_db_backup_20260508_103121.dump` - **Size:** 1.9 MB - **Format:** PostgreSQL custom (pg_dump -Fc) - **Contents:** All wiki articles, sources, chunks, citations, notes, graph data, and assets metadata - **DB:** memoria_db @ memoria-postgres-1 (Docker) - **User:** memory **Verify:** `file backups/memoria_db_backup_20260508_103121.dump` → PostgreSQL custom database dump - v1.16-0 **Restore command (for reference):** ```bash docker exec -e PGPASSWORD=changeme memoria-postgre",
-      "recallCount": 9,
+      "recallCount": 11,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 4.342450273942508,
-      "maxScore": 0.6911733427758591,
+      "totalScore": 5.5949739648623105,
+      "maxScore": 0.7833533440636855,
       "firstRecalledAt": "2026-05-09T10:25:05.579Z",
-      "lastRecalledAt": "2026-05-15T15:35:50.866Z",
+      "lastRecalledAt": "2026-05-15T16:34:49.662Z",
       "queryHashes": [
         "9f48d655ab51",
         "ef7b7d984e79",
         "a25d1851dac5",
-        "89121dc99c7d"
+        "89121dc99c7d",
+        "603df6cfc75d",
+        "de311d78dcad"
       ],
       "recallDays": [
         "2026-05-09",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-16"
       ],
       "conceptTags": [
         "backup",
