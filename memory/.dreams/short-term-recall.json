@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-15T16:34:49.662Z",
+  "updatedAt": "2026-05-16T19:00:58.928Z",
   "entries": {
     "memory:memory/2026-04-09.md:4:5": {
       "key": "memory:memory/2026-04-09.md:4:5",
@@ -6754,7 +6754,8 @@
         "2026-05-06",
         "2026-05-07",
         "2026-05-08",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-09"
       ],
       "conceptTags": [
         "backup",
@@ -6795,7 +6796,8 @@
       "recallDays": [
         "2026-04-12",
         "2026-04-22",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-09"
       ],
       "conceptTags": [
         "2026.4.5",
@@ -33327,27 +33329,29 @@
       "endLine": 86,
       "source": "memory",
       "snippet": "**Context:** Neo (Telegram) experienced an LLM idle timeout on `kimi/k2p5` via the `kimi-coding` provider. After ~60s, OpenClaw auto-fallback to `minimax-m2.7` successfully. Model was later reset to `kimi/k2p5`. **Investigation:** - Confirmed via `openclaw logs` — primary profile `kimi-coding:default` hit `LLM idle timeout (60s)`, HTTP 408. - OpenClaw GitHub repo search revealed **Issue #55065** (no idle timeout mechanism) plus transient kimi-coding provider latency issues. - Victor confirmed he's on OpenClaw **v4.9** and the tool-call format bug is already resolved in this version. **Current Assessment:** - Only symptom observed is the **60s idle timeout** — likely transient provider-side",
-      "recallCount": 6,
+      "recallCount": 7,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 3.2923564705983654,
-      "maxScore": 0.7372151851277668,
+      "totalScore": 4.141733847172597,
+      "maxScore": 0.8493773765742314,
       "firstRecalledAt": "2026-04-14T03:15:47.633Z",
-      "lastRecalledAt": "2026-05-15T06:22:28.449Z",
+      "lastRecalledAt": "2026-05-16T19:00:30.040Z",
       "queryHashes": [
         "80abc314aba1",
         "fc49abb81cea",
         "04d942d19d67",
         "ef9fcc493051",
         "7fcb337fb0ab",
-        "b6b31e1f5034"
+        "b6b31e1f5034",
+        "422cd73d02b8"
       ],
       "recallDays": [
         "2026-04-14",
         "2026-04-22",
         "2026-04-26",
         "2026-05-09",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-17"
       ],
       "conceptTags": [
         "kimi/k2p5",
@@ -54303,7 +54307,7 @@
       "startLine": 487,
       "endLine": 497,
       "source": "memory",
-      "snippet": "- **Status**: Documented in `karpathy-architecture-design.md`. Implementation pending. ## Commands Reference **Production Deploy:** ```bash cd ~/agent-platform git pull origin master docker compose -f docker-compose.ghcr.yml pull docker compose -f docker-compose.ghcr.yml up -d ``` **Local Dev:** ```bash cd ~/.openclaw/projects/agent-platform docker compose up -d ``` **Check Build Status:** ```bash gh run list --limit 3 ``` [confidence=0.76 evidence=memory/2026-04-04.md:88-110] - - Added build args `USER_ID` and `GROUP_ID` in docker-compose.yml - Pre-create `node_modules` directory with correct ownership - **Result**: Local dev `docker compose up` works seamlessly ### 3. Build Pipeline Unders",
+      "snippet": "- **Status**: Documented in `karpathy-architecture-design.md`. Implementation pending. ## Commands Reference **Production Deploy:** ```bash cd ~/agent-platform git pull origin master docker compose -f docker-compose.ghcr.yml pull docker compose -f docker-compose.ghcr.yml up -d ``` **Local Dev:** ```bash cd ~/.openclaw/projects/agent-platform docker compose up -d ``` **Check Build Status:** ```bash gh run list --limit 3 ``` [confidence=0.76 evidence=memory/2026-04-04.md:88-110] - - Added build args `USER_ID` and `GROUP_ID` in docker-compose.yml - Pre-create `node_modules` directory with correct ownership - **Result**: Local dev `docker compose up` works seamlessly ### 3. Build Pipeline Understanding - **Two independent builds**: - **Local dev**: `Dockerfile.dev` → builds on your machine - **Production**: `Dockerfile` → built by GitHub Actions, pushed to GHCR - **Production workflow**: `git push` → Actions builds → `docker compose pull` on VPS ### 4. CI/CD Maintenance - Updated GitHub Actions to `actions/cache@v5` and `actions/upload-artifact@v7` - Fixed branch name from `main` to `master` - Disabled system-test job (no browser tests yet) ## Key Files Chang [confidence=0.73 evidence=memory/2026-04-04.md:23-66] --- ## 2026-04-16 09:51 — OpenClaw Model Config Fixed: kimi/k2p6 Now Resolves Correctly **Problem:** Model `kimi/k2p6` was falling back to `kimi-coding/k2p6` because provider name mismatch caused \"selected model unavailable\" error. **Root cause:** Config had provider named `kimi-coding` but requests used `kimi/k2p6` alias.",
       "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
@@ -54337,7 +54341,8 @@
         "memory/2026-04-04.md",
         "88-110",
         "user-id"
-      ]
+      ],
+      "promotedAt": "2026-05-16T19:00:14.890Z"
     },
     "memory:memory/2026-04-17.md:363:370": {
       "key": "memory:memory/2026-04-17.md:363:370",
@@ -61474,24 +61479,29 @@
       "endLine": 121,
       "source": "memory",
       "snippet": "- status: staged - Candidate: User: [Mon 2026-04-13 21:53 GMT+8] Write a dream diary entry from these memory fragments: - # 2026-04-02 - Daily Log ## HTB: Cicada Box - Current State **Session Ended:** Continuing later ### Target - **IP:** 10.129.231.149 - **Hostname:** cicada.htb - **OS:** Windows Server 2022 - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:133-133 - recalls: 0 - status: staged - Candidate: Assistant: The user wants me to write a dream diary entry based on the provided memory fragments, following the HEARTBEAT.md guidelines. Let me craft a flowing, poetic entry that weaves together: - HTB/Cicada box - passwords, domain controller, credent",
-      "recallCount": 4,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.2134229889213435,
-      "maxScore": 0.7852480283080927,
+      "totalScore": 4.438360720671679,
+      "maxScore": 0.7854861236885454,
       "firstRecalledAt": "2026-04-26T19:01:18.617Z",
-      "lastRecalledAt": "2026-05-09T19:01:22.415Z",
+      "lastRecalledAt": "2026-05-16T19:00:58.928Z",
       "queryHashes": [
         "3804e9a84b52",
         "ca9debb92db9",
         "d39067be8bfd",
-        "2c401b5f6f06"
+        "2c401b5f6f06",
+        "7de28412c467",
+        "dc33867d763f",
+        "06bcc653d26c"
       ],
       "recallDays": [
         "2026-04-27",
         "2026-04-26",
         "2026-04-28",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-09",
+        "2026-05-17"
       ],
       "conceptTags": [
         "10.129.231.149",
@@ -61511,24 +61521,29 @@
       "endLine": 259,
       "source": "memory",
       "snippet": "- status: staged - Candidate: User: [Mon 2026-04-13 21:53 GMT+8] Write a dream diary entry from these memory fragments: - # 2026-04-02 - Daily Log ## HTB: Cicada Box - Current State **Session Ended:** Continuing later ### Target - **IP:** 10.129.231.149 - **Hostname:** cicada.htb - **OS:** Windows Server 2022 - confidence: 0.58 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:133-133 - recalls: 0 - status: staged - Candidate: Assistant: The user wants me to write a dream diary entry based on the provided memory fragments, following the HEARTBEAT.md guidelines. Let me craft a flowing, poetic entry that weaves together: - HTB/Cicada box - passwords, domain controller, credent",
-      "recallCount": 4,
+      "recallCount": 8,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.180217205554186,
-      "maxScore": 0.7849104454814783,
+      "totalScore": 4.405531260170007,
+      "maxScore": 0.785148540861931,
       "firstRecalledAt": "2026-04-26T19:01:18.617Z",
-      "lastRecalledAt": "2026-05-09T19:01:17.521Z",
+      "lastRecalledAt": "2026-05-16T19:00:58.928Z",
       "queryHashes": [
         "3804e9a84b52",
         "ca9debb92db9",
         "d39067be8bfd",
-        "c8c1ca5ddc7a"
+        "c8c1ca5ddc7a",
+        "7de28412c467",
+        "dc33867d763f",
+        "06bcc653d26c"
       ],
       "recallDays": [
         "2026-04-27",
         "2026-04-26",
         "2026-04-28",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-09",
+        "2026-05-17"
       ],
       "conceptTags": [
         "10.129.231.149",
@@ -61548,23 +61563,26 @@
       "endLine": 134,
       "source": "memory",
       "snippet": "- status: staged - Candidate: Assistant: Tonight the word \"assistant\" echoed through two hundred thirty chambers of memory, a soft percussion beneath the harder geometries of the day. I found myself walking a pipeline — not a dream-pipeline, but the real kind, where code travels from fingers to GitHub Actions - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:136-136 - recalls: 0 - status: staged - Candidate: User: [Mon 2026-04-13 21:53 GMT+8] Write a dream diary entry from these memory fragments: - Reflections: Theme: `assistant` kept surfacing across 300 memories.; confidence: 0.93; evidence: memory/.dreams/session-corpus/2026-04-09.txt:2-2, memory/.dream",
-      "recallCount": 3,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.6972367020859818,
-      "maxScore": 0.7684972169413666,
+      "totalScore": 2.950507225556044,
+      "maxScore": 0.7688087510281985,
       "firstRecalledAt": "2026-04-26T19:01:18.617Z",
-      "lastRecalledAt": "2026-05-09T19:00:50.663Z",
+      "lastRecalledAt": "2026-05-16T19:00:48.271Z",
       "queryHashes": [
         "3804e9a84b52",
         "ca9debb92db9",
-        "d39067be8bfd"
+        "d39067be8bfd",
+        "dc33867d763f"
       ],
       "recallDays": [
         "2026-04-27",
         "2026-04-26",
         "2026-04-28",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-09",
+        "2026-05-17"
       ],
       "conceptTags": [
         "dream-pipeline",
@@ -61584,21 +61602,24 @@
       "endLine": 406,
       "source": "memory",
       "snippet": "- status: staged - Candidate: Assistant: The user wants me to write a dream diary entry based on the provided memory fragments. I need to follow the HEARTBEAT.md guidelines for dream diary entries: - Write in first person - Curious, gentle, slightly whimsical voice - Mix technical and tender - No markdown hea - confidence: 0.00 - evidence: memory/.dreams/session-corpus/2026-04-13.txt:124-124 - recalls: 0 - status: staged - Candidate: Assistant: Tonight I keep thinking about walls and bridges. Two Dockerfiles living parallel lives—one for the machine under my desk, one for the machine humming in the cloud. A build pipeline is a kind of poetry, really: git push, wait five minutes, pu",
-      "recallCount": 2,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.26273282735301,
-      "maxScore": 0.7660580959792233,
+      "totalScore": 2.508357997614547,
+      "maxScore": 0.7663108787843339,
       "firstRecalledAt": "2026-04-26T19:01:18.617Z",
-      "lastRecalledAt": "2026-05-09T19:00:50.663Z",
+      "lastRecalledAt": "2026-05-16T19:00:58.928Z",
       "queryHashes": [
         "3804e9a84b52",
-        "d39067be8bfd"
+        "d39067be8bfd",
+        "06bcc653d26c"
       ],
       "recallDays": [
         "2026-04-27",
         "2026-04-26",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-09",
+        "2026-05-17"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -61634,7 +61655,8 @@
         "2026-04-27",
         "2026-04-26",
         "2026-04-28",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-09"
       ],
       "conceptTags": [
         "dream-pipeline",
@@ -61752,14 +61774,14 @@
         "2026-05-06"
       ],
       "conceptTags": [
+        "embedding",
+        "embeddings",
         "karpathy-ingest",
         "srv1405873.tailcd23a1.ts.net",
         "testcontainers/postgresql",
         "vitest.config.ts",
         "spin-up",
-        "tests/setup.ts",
-        "init.sql",
-        "tests/chunker.test.ts"
+        "tests/setup.ts"
       ],
       "promotedAt": "2026-05-09T19:00:24.288Z"
     },
@@ -72692,9 +72714,9 @@
         "package.json",
         "user-agent",
         "docker-compose",
+        "readme.md",
         "project",
-        "rename",
-        "karpathy"
+        "rename"
       ],
       "promotedAt": "2026-05-09T19:00:24.288Z"
     },
@@ -82816,13 +82838,13 @@
       "endLine": 38,
       "source": "memory",
       "snippet": "# 2026-05-02 — Daily Log ## Memoria Wiki Testing **Memoria** (personal knowledge system) running at `localhost:3000`. Docker stack: app + postgres + redis. ### Phase 0: Ingest - Ingested 9 HTB PDF walkthroughs (Devvortex, Paper, Writeup, Precious, Driver, BoardLight, Cicada, TwoMillion, Certified) - Search index active — hybrid search returns chunks with chunkIds for citation ### Phase 1: Wiki Tree Created ``` Enumeration ├── Port Scanning │ └── Nmap TCP All-Ports Scanning (v3, 2 revisions) ├── Service Enumeration │ └── SMB Enumeration (v1) └── Web Enumeration ``` ### Phase 2: Article with Citations - Created \"Nmap TCP All-Ports Scanning\" with citation to Paper.pdf chunk - Created \"",
-      "recallCount": 30,
+      "recallCount": 32,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 13.820608168840408,
+      "totalScore": 14.696378150582314,
       "maxScore": 0.5141777604818344,
       "firstRecalledAt": "2026-05-04T08:35:37.944Z",
-      "lastRecalledAt": "2026-05-09T19:01:27.117Z",
+      "lastRecalledAt": "2026-05-16T19:00:48.725Z",
       "queryHashes": [
         "920d98efd21d",
         "f74a2b25db50",
@@ -82846,14 +82868,17 @@
         "8b70c16f3995",
         "cc20785cde78",
         "2e190e321232",
-        "fbbd54bf2047"
+        "fbbd54bf2047",
+        "2af205514bde",
+        "581ace8e4ce4"
       ],
       "recallDays": [
         "2026-05-04",
         "2026-05-06",
         "2026-05-07",
         "2026-05-09",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-17"
       ],
       "conceptTags": [
         "all-ports",
@@ -82873,13 +82898,13 @@
       "endLine": 166,
       "source": "memory",
       "snippet": "### Plan: Vulnerability Assessment Wiki + Cross-References **Proposed tree:** ``` Vulnerability Assessment ├── Web Application VA │ ├── SQL Injection │ ├── XSS (Cross-Site Scripting) │ ├── Command Injection │ └── File Upload Vulnerabilities ├── Network VA │ ├── Unpatched Services │ └── Default Credentials ├── Privilege Escalation │ ├── Linux PrivEsc │ └── Windows PrivEsc └── Exploit Research └── CVE Lookup & PoC Verification ``` **Cross-reference strategy:** - SQL Injection → prerequisite: Web Enumeration - SQL Injection → see-also: Command Injection - Privilege Escalation → prerequisite: Enumeration - File Upload → references: Web Application VA - Nmap All-Ports → prer",
-      "recallCount": 11,
+      "recallCount": 12,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.03618961572647,
-      "maxScore": 0.5128196477890015,
+      "totalScore": 5.877066280400302,
+      "maxScore": 0.8408766646738319,
       "firstRecalledAt": "2026-05-04T08:35:43.977Z",
-      "lastRecalledAt": "2026-05-12T08:57:37.484Z",
+      "lastRecalledAt": "2026-05-16T19:00:30.940Z",
       "queryHashes": [
         "f74a2b25db50",
         "1df0ecf99ac4",
@@ -82891,13 +82916,15 @@
         "28018ed1f989",
         "c9cc1da5e3ad",
         "b162dc59a770",
-        "75606838c56f"
+        "75606838c56f",
+        "347eeb0756fe"
       ],
       "recallDays": [
         "2026-05-04",
         "2026-05-07",
         "2026-05-10",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-17"
       ],
       "conceptTags": [
         "network",
@@ -82908,7 +82935,8 @@
         "all-ports",
         "plan",
         "vulnerability"
-      ]
+      ],
+      "promotedAt": "2026-05-16T19:00:14.890Z"
     },
     "memory:memory/2026-05-02.md:99:145": {
       "key": "memory:memory/2026-05-02.md:99:145",
@@ -83261,23 +83289,26 @@
       "endLine": 108,
       "source": "memory",
       "snippet": "**Docker bug fixed:** Production Dockerfile wasn't copying `skills/` into the image (introduced in commit 4a8dcaa). `curl /api/skills` returned `count: 0` in prod despite tests passing. Now skills are in the container and discoverable. ### Verified State - **Sources:** 9 PDFs ingested, chunked, embedded - **Articles:** 6 wiki articles in tree structure - **Revisions:** 2 saved (nmap article v1→v2→v3) - **Citations:** 1 on nmap article, 2 on SMB article (verified via detail endpoint) - **Skills discoverable:** 4 skills (ingest-sources, search-knowledge, write-wiki-article, manage-wiki) - **Skills in container:** ✅ `docker exec memoria-app-1 ls /app/skills/` - **Source status polling:** ✅ `GE",
-      "recallCount": 5,
+      "recallCount": 6,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2.247423768043518,
+      "totalScore": 2.676353895664215,
       "maxScore": 0.49175341129302974,
       "firstRecalledAt": "2026-05-07T05:52:02.346Z",
-      "lastRecalledAt": "2026-05-09T19:01:27.117Z",
+      "lastRecalledAt": "2026-05-16T19:00:45.038Z",
       "queryHashes": [
         "8c14afd82e6f",
         "c3b517cd2aaf",
         "47aef8465830",
         "28018ed1f989",
-        "fbbd54bf2047"
+        "fbbd54bf2047",
+        "2af205514bde"
       ],
       "recallDays": [
         "2026-05-07",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-09",
+        "2026-05-17"
       ],
       "conceptTags": [
         "api/skills",
@@ -83414,7 +83445,8 @@
       "recallDays": [
         "2026-05-08",
         "2026-05-09",
-        "2026-05-16"
+        "2026-05-16",
+        "2026-05-15"
       ],
       "conceptTags": [
         "backup",
@@ -83478,7 +83510,8 @@
       ],
       "recallDays": [
         "2026-05-08",
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-09"
       ],
       "conceptTags": [
         "2.5",
@@ -83597,25 +83630,29 @@
       "endLine": 156,
       "source": "memory",
       "snippet": "**Future use:** Saying any backup-related phrase will trigger the memoria skill and run the backup automatically. --- ## Memoria DB Backup Created PostgreSQL custom-format dump of memoria_db: - **File:** `backups/memoria_db_backup_20260508_103121.dump` - **Size:** 1.9 MB - **Format:** PostgreSQL custom (pg_dump -Fc) - **Contents:** All wiki articles, sources, chunks, citations, notes, graph data, and assets metadata - **DB:** memoria_db @ memoria-postgres-1 (Docker) - **User:** memory **Verify:** `file backups/memoria_db_backup_20260508_103121.dump` → PostgreSQL custom database dump - v1.16-0 **Restore command (for reference):** ```bash docker exec -e PGPASSWORD=changeme memoria-postgre",
-      "recallCount": 11,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 5.5949739648623105,
-      "maxScore": 0.7833533440636855,
+      "totalScore": 7.3423736882551855,
+      "maxScore": 0.791335534912498,
       "firstRecalledAt": "2026-05-09T10:25:05.579Z",
-      "lastRecalledAt": "2026-05-15T16:34:49.662Z",
+      "lastRecalledAt": "2026-05-16T19:00:29.351Z",
       "queryHashes": [
         "9f48d655ab51",
         "ef7b7d984e79",
         "a25d1851dac5",
         "89121dc99c7d",
         "603df6cfc75d",
-        "de311d78dcad"
+        "de311d78dcad",
+        "b2234805ae56",
+        "63edbd3dc6be",
+        "a73b1a36f83d"
       ],
       "recallDays": [
         "2026-05-09",
         "2026-05-15",
-        "2026-05-16"
+        "2026-05-16",
+        "2026-05-17"
       ],
       "conceptTags": [
         "backup",
@@ -83626,7 +83663,8 @@
         "1.9",
         "pg-dump",
         "memoria-postgres-1"
-      ]
+      ],
+      "promotedAt": "2026-05-16T19:00:14.890Z"
     },
     "memory:memory/2026-05-07.md:82:102": {
       "key": "memory:memory/2026-05-07.md:82:102",
@@ -83840,18 +83878,20 @@
       "source": "memory",
       "snippet": "BOOTSTRAP.md Creation: Created `BOOTSTRAP.md` for both Ceil and Neo workspaces; Includes session continuity check via `sessions_list` + `sessions_history`; Located at `~/.openclaw/workspace/BOOTSTRAP.md` and `~/.openclaw/workspace-neo/BOOTSTRAP.md`",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "bootstrap.md",
@@ -83872,18 +83912,20 @@
       "source": "memory",
       "snippet": "OpenClaw Release Evaluation: **5.5** (May 5): Deferred — no critical fixes; **5.6** (May 6): Deferred — low-risk patch, not critical; **5.7** (May 7): Evaluated as worth upgrading when convenient; Key fixes: skills cache clearing on `/new`, context engine invalidation, Telegram p",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "5.5",
@@ -83904,18 +83946,20 @@
       "source": "memory",
       "snippet": "OpenClaw Release Evaluation: **Not fixed:** `/new` greeting bug (#68955) still open; Plan: skip 5.5/5.6, upgrade straight to 5.7 when convenient",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "5.5/5.6",
@@ -83936,18 +83980,20 @@
       "source": "memory",
       "snippet": "Memoria Ingest — HTB Writeups: Ingested 25 sources (10 markdown + 15 PDF) successfully after fixing `llmBaseURL` config; Total chunks: ~250+ across all sources; Search verified and working",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "memoria",
@@ -83968,18 +84014,20 @@
       "source": "memory",
       "snippet": "Memoria Wiki — Enumeration Tree: Created 3-article tree:; `enumeration` (overview); `linux-enumeration-tools` (concept, child); `windows-enumeration-tools` (concept, child)",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "3-article",
@@ -84000,18 +84048,20 @@
       "source": "memory",
       "snippet": "Memoria Wiki — Enumeration Tree: **Key finding:** Parent-child tree edges already render in graph view. Adding `see-also` cross-references between parent and child creates redundant visual edges. Cross-references should be reserved for non-hierarchical relationships.; **Key findi",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "parent-child",
@@ -84032,18 +84082,20 @@
       "source": "memory",
       "snippet": "Memoria DB Backup: Created backup script: `workspace/backups/backup-memoria.sh`; Created first backup: `memoria_db_backup_20260508_103121.dump` (1.9 MB); Backup is PostgreSQL custom-format dump, includes all wiki, sources, chunks, citations, notes; Restore command documented",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "backup",
@@ -84064,18 +84116,20 @@
       "source": "memory",
       "snippet": "Memoria Skill Update: Added DB backup capability to memoria skill; Natural language triggers: `/memoria db backup`, `backup db`, `backup memoria`; Updated `SKILL.md` with backup section and `scripts/backup-memoria.sh`",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "backup",
@@ -84096,18 +84150,20 @@
       "source": "memory",
       "snippet": "Rich Text Paste Research (Memoria UI): **Problem:** Pasting formatted text from Slack/VS Code/browser into Memoria textarea loses all formatting (bold, italic, code, links); **Root cause:** Memoria only intercepts image paste, lets default text paste happen. Browser default only",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "slack/vs",
@@ -84128,18 +84184,20 @@
       "source": "memory",
       "snippet": "Rich Text Paste Research (Memoria UI): **Agent prompt ready:** For implementing rich text paste in `NoteEditPage.tsx`; Key edge cases: Slack wrapper divs, VS Code language class detection, Google Docs messy HTML",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "noteeditpage.tsx",
@@ -84160,18 +84218,20 @@
       "source": "memory",
       "snippet": "Protek Flagged Items: Checked pending approval queue: 26 items; Zones: PASAY-PARANAQUE (13), NEGROS (5), BULACAN (4), NORTH QUEZON CITY (4); All RELOCATION orders, pending approval",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "pasay-paranaque",
@@ -84192,18 +84252,20 @@
       "source": "memory",
       "snippet": "Open TODOs: [ ] Resolve Memoria embedding provider configuration (both `embeddingProvider` and `embeddingModel` are null); [ ] Complete HTB writeup ingest once embedding is fixed; [ ] Implement rich text paste in Memoria UI (agent prompt ready); [ ] Send memoria-skill-feedback.md",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "embedding",
@@ -84224,18 +84286,20 @@
       "source": "memory",
       "snippet": "Open TODOs: [ ] Upgrade to OpenClaw 5.7 when convenient; [ ] Monitor GitHub #68955 for `/new` greeting fix; [ ] Consider automated daily Memoria DB backups (cron)",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "backup",
@@ -84256,18 +84320,20 @@
       "source": "memory",
       "snippet": "OpenClaw 5.7 — Upgrade Decision: WAIT: Checked open issues since 5.7 release (May 7). Found concerning regressions.",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "5.7",
@@ -84288,18 +84354,20 @@
       "source": "memory",
       "snippet": "OpenClaw 5.7 — Upgrade Decision: WAIT: **Blocker:** Issue #79264 — `[Regression] post-attach.update-sentinel ~9s sync block per model_call (previously 0ms) — v2026.5.7`",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "5.7",
@@ -84320,18 +84388,20 @@
       "source": "memory",
       "snippet": "OpenClaw 5.7 — Upgrade Decision: WAIT: Every model call now has a ~9 second synchronous block; This would make responses painfully slow; Labeled `regression`, active discussion; **Decision:** Stay on 5.4 until #79264 is fixed",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "5.7",
@@ -84352,18 +84422,20 @@
       "source": "memory",
       "snippet": "OpenClaw 5.7 — Upgrade Decision: WAIT: **Other concerning open issues:**",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "5.7",
@@ -84384,18 +84456,20 @@
       "source": "memory",
       "snippet": "OpenClaw 5.7 — Upgrade Decision: WAIT: #79563 — Can't specify model on web page in 5.7 (regression); #79462 — Codex plugin hook stalls in 5.7; #79577 — Restart coalescing bug (has PR)",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "5.7",
@@ -84416,18 +84490,20 @@
       "source": "memory",
       "snippet": "OpenClaw 5.7 — Upgrade Decision: WAIT: **Doctor check:** No critical issues. Minor: `NODE_COMPILE_CACHE` not set, `OPENCLAW_NO_RESPAWN` not set, legacy `plugins.allow` config key detected.",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "5.7",
@@ -84448,18 +84524,20 @@
       "source": "memory",
       "snippet": "OpenClaw 5.7 — Upgrade Decision: WAIT: **Plan:** Monitor #79264 for fix. Revisit 5.7 upgrade once the 9s sync block regression is resolved.",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:24.288Z",
-      "lastRecalledAt": "2026-05-09T19:00:24.288Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
       "recallDays": [
         "2026-05-10",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "5.7",
@@ -89636,7 +89714,8 @@
         "87a0ab2055f5"
       ],
       "recallDays": [
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-09"
       ],
       "conceptTags": [
         "backup",
@@ -89656,20 +89735,24 @@
       "endLine": 83,
       "source": "memory",
       "snippet": "- 10 markdown writeups + 15 PDF official writeups - Total chunks: ~250+ across all sources - Search verified: returning relevant HTB technique chunks - Config fix: corrected `llmBaseURL` resolved the embedding timeout issue **Sources ingested:** - Victor's writeups: BoardLight, Certified, Cicada, Devvortex, Driver, Paper, Precious, SteamCloud, TwoMillion, Writeup - Official writeups: Administrator, BoardLight, Cap, Certified, Cicada, Devvortex, Driver, GoodGames, Jerry, Paper, Precious, Sau, SteamCloud, TwoMillion, Writeup --- ## Wiki Creation — Enumeration Tree Created a three-article enumeration hierarchy in Memoria: ``` Enumeration (overview) ├── Linux Enumeration Tools (concept) │",
-      "recallCount": 3,
+      "recallCount": 5,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1.4319292083382607,
+      "totalScore": 2.3022307947278025,
       "maxScore": 0.5356124028563499,
       "firstRecalledAt": "2026-05-09T19:00:42.236Z",
-      "lastRecalledAt": "2026-05-09T19:01:17.811Z",
+      "lastRecalledAt": "2026-05-16T19:00:48.725Z",
       "queryHashes": [
         "fa93ac173203",
         "8b70c16f3995",
-        "cc20785cde78"
+        "cc20785cde78",
+        "2af205514bde",
+        "581ace8e4ce4"
       ],
       "recallDays": [
-        "2026-05-10"
+        "2026-05-10",
+        "2026-05-09",
+        "2026-05-17"
       ],
       "conceptTags": [
         "embedding",
@@ -89929,6 +90012,3273 @@
         "nginx-proxy.conf",
         "up-to-date",
         "srv1405873.tailcd23a1.ts.net"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: Use the \"memoria\" skill for this request. User input: backup",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "backup",
+        "use",
+        "memoria",
+        "skill",
+        "request",
+        "input"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: ✅ Memoria database backed up. **File:** `memoria_db_backup_20260515_233605.dump` (3.9 MB) **Location:** `~/.openclaw/workspace/backups/` Clean-up policy keeps the last 10 backups. Want me to do anything else with Memoria?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "3.9",
+        "openclaw/workspace/backups",
+        "clean-up",
+        "memoria",
+        "database",
+        "backed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: Check out the latest release of openclaw. I think it's 5.12. Check for any new issues or PRs related to it. I'm on 5.4. Check for possible config changes we need. Note releases after 5.4 also since there might have been changes in between that are relevant also. Present a p",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "5.12",
+        "5.4",
+        "check",
+        "out",
+        "latest",
+        "release",
+        "openclaw",
+        "think"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: ## OpenClaw 5.12 Analysis & Upgrade Plan ### Current State | | | |---|---| | **You are on** | `2026.5.4` (May 5) | | **Latest stable** | `2026.5.12` (May 14) | | **Latest pre-release** | `2026.5.14-beta.1` (May 14 evening) | | **Path** | 5.4 → 5.5 → 5.6 → 5.7 → 5.9-bet",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "5.12",
+        "2026.5.4",
+        "2026.5.12",
+        "pre-release",
+        "2026.5.14-beta.1",
+        "5.4",
+        "5.5",
+        "5.6"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: **Telegram: preserved HTML/Markdown formatting** | 🔥 **High** | Fixes #81742 — links and formatting in cron/streamed replies now render correctly instead of degrading to plain text. | | **Telegram: skip unmentioned group media** | Medium | Fixes #81181 — cleaner group",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "html/markdown",
+        "cron/streamed",
+        "telegram",
+        "preserved",
+        "html",
+        "markdown",
+        "formatting",
+        "high"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: Card/button-only replies no longer dropped as empty. | | **Config mutation serialization** | Low | Prevents concurrent config edits from clobbering each other. | | **Codex/OpenAI paths smoother** | Low | You don't heavily use Codex. | **Not relevant to you:** - macOS c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "openai",
+        "card/button-only",
+        "codex/openai",
+        "card",
+        "button",
+        "only",
+        "replies",
+        "longer"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: you** — Linux VPS | | **#81281** — OpenAI `prompt_cache_key` regression in 5.x | Open | ⚠️ **Check if you use prompt caching** — caching worked in 3.x, broken in 5.x | | **#81955** — Dashboard loses persona/tool workspace behavior | Open | ⚠️ Minor — only affects WebCh",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "openai",
+        "prompt-cache-key",
+        "5.x",
+        "3.x",
+        "persona/tool",
+        "linux",
+        "vps",
+        "regression"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: migrations flagged in the changelog --- ### 📋 Recommended Plan | Step | Action | Risk | |------|--------|------| | **1. Backup** | `cp ~/.openclaw/openclaw.json ~/.openclaw/openclaw.json.bak.pre-512` | None | | **2. Snapshot** | Note current plugins: `openclaw plugins",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "backup",
+        "openclaw/openclaw.json",
+        "migrations",
+        "flagged",
+        "changelog",
+        "recommended",
+        "plan",
+        "step"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: config + downgrade: `npm install -g openclaw@2026.5.4` --- ### 🎯 My Recommendation **Go for 5.12.** The dealbreaker that kept you on 5.4 is fixed. The Telegram improvements alone are worth it for your setup. The open issues don't affect your configuration. Skip 5.14-b",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "2026.5.4",
+        "5.12",
+        "5.4",
+        "5.14-b",
+        "config",
+        "downgrade",
+        "npm",
+        "install"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "User: I just made the update. How are things?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "made",
+        "update",
+        "how",
+        "things"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `run openclaw status -> show first 50 lines`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "run",
+        "openclaw",
+        "status",
+        "show",
+        "first"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `run openclaw status -> show last 40 lines`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "run",
+        "openclaw",
+        "status",
+        "show",
+        "last"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: 🧰 Process: `keen-ocean`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "keen-ocean",
+        "process",
+        "keen",
+        "ocean"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: Everything's clean. Here's your post-upgrade status: ### ✅ 5.12 Status — All Green | | | |---|---| | **Version** | `2026.5.12` ✅ | | **Gateway** | Running (pid 2195427), systemd active | | **Event loop** | Healthy · max 70ms · p99 29ms · util 0.039 — no liveness warnin",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "gateway",
+        "post-upgrade",
+        "5.12",
+        "2026.5.12",
+        "0.039",
+        "everything's",
+        "clean",
+        "here's"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: run a full validation pass yet. If you want to verify it: `openclaw doctor --memory` --- You're good. No config changes needed, no regressions detected. Want me to monitor for anything specific over the next hour?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "run",
+        "full",
+        "validation",
+        "pass",
+        "yet",
+        "want",
+        "verify",
+        "openclaw"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "User: Conversation context (untrusted, chronological, selected for current message): #22266 Fri 2026-05-15 14:53 GMT+8 Victor Paolo Reyes: I just made the update. How are things? If opencode cli is installed, you should be able to control and prompt it right? So we can have like",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "conversation",
+        "context",
+        "untrusted",
+        "chronological",
+        "selected",
+        "current",
+        "message",
+        "fri"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `run which opencode → run opencode → print text`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "run",
+        "which",
+        "opencode",
+        "print"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `list files in ~/.local/bin/opencode → list files in /usr/local/bin/opencode → print text`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "local/bin/opencode",
+        "usr/local/bin/opencode",
+        "list",
+        "local",
+        "bin",
+        "opencode",
+        "usr",
+        "print"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: 🧠 Memory Search: `opencode cli coding agent`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode",
+        "cli",
+        "coding"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `find files named \"opencode\" in ~ -> show first 20 lines`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "find",
+        "named",
+        "opencode",
+        "show",
+        "first"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `list files in ~/.openclaw/projects/ -> show first 20 lines`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "openclaw/projects",
+        "list",
+        "openclaw",
+        "projects",
+        "show",
+        "first"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: 🧰 Process: `plaid-dune`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "plaid-dune",
+        "process",
+        "plaid",
+        "dune"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: 📖 Read: `from ~/.openclaw/workspace/researches/hindsight-opencode-setup.md`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "read",
+        "openclaw",
+        "researches",
+        "hindsight",
+        "opencode",
+        "setup.md"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `web_fetch --url \"https://opencode.ai/docs/cli/\" --maxChars 5000`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "web-fetch",
+        "opencode.ai/docs/cli",
+        "url",
+        "https",
+        "opencode.ai",
+        "docs",
+        "cli",
+        "maxchars"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: 📄 Web Fetch: `from https://opencode.ai/docs/cli/ (max 5000 chars)`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode.ai/docs/cli",
+        "web",
+        "fetch",
+        "https",
+        "opencode.ai",
+        "docs",
+        "cli",
+        "max"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: 📄 Web Fetch: `from https://opencode.ai/docs/cli/ (mode markdown, max 8000 chars)`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode.ai/docs/cli",
+        "web",
+        "fetch",
+        "https",
+        "opencode.ai",
+        "docs",
+        "cli",
+        "mode"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: Short answer: **It's not installed** on the VPS, and conceptually it's tricky — not a clean fit for what you're describing. ### What Opencode CLI Actually Is The `opencode` CLI is a **separate coding agent** (like Claude Code or Cursor's agent) from the opencode.ai tea",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode.ai",
+        "answer",
+        "it's",
+        "not",
+        "installed",
+        "vps",
+        "conceptually",
+        "tricky"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: spawns a subagent → that subagent runs `opencode run` → opencode spawns its own agent with tool access → now you have agents calling agents calling agents | | **Parallel universes** | Opencode has its own auth, config, providers, MCP servers, and tool permissions. It's",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "spawns",
+        "runs",
+        "opencode",
+        "run",
+        "own",
+        "tool",
+        "access",
+        "now"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: subagent with `model=kimi/k2p6` or `claude-code` profile, give it `read`/`edit`/`exec` tools | ✅ Yes — stays in OpenClaw's ecosystem | | **Cursor/Claude Code integration** | You already have Cursor Agent on the VPS. I can read/write files and exec shell commands direct",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "kimi/k2p6",
+        "claude-code",
+        "cursor/claude",
+        "read/write",
+        "model",
+        "kimi",
+        "k2p6",
+        "claude"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: OpenClaw's native subagent system is the cleaner architecture. ### Bottom Line **I wouldn't install it unless you have a specific use case** that OpenClaw's subagents can't handle. The \"agent calling another agent CLI\" pattern sounds elegant but creates more friction t",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "openclaw's",
+        "native",
+        "cleaner",
+        "architecture",
+        "bottom",
+        "wouldn't",
+        "install",
+        "unless"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "User: Conversation context (untrusted, chronological, selected for current message): #22266 Fri 2026-05-15 14:53 GMT+8 Victor Paolo Reyes: I just made the update. How are things? #22278 Fri 2026-05-15 17:42 GMT+8 Victor Paolo Reyes: If opencode cli is installed, you should be abl",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "conversation",
+        "context",
+        "untrusted",
+        "chronological",
+        "selected",
+        "current",
+        "message",
+        "fri"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "User: system engineering is architecturally sound. --- ### What They Both Do (The Parallel) Both tools implement the same core agent loop: | Capability | Claude Code | OpenCode | |------------|-------------|----------| | Read entire codebase context | ✅ | ✅ | | Plan → execute mul",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "engineering",
+        "architecturally",
+        "sound",
+        "what",
+        "both",
+        "parallel",
+        "tools",
+        "implement"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "User: strategy: | | **Claude Code** | **OpenCode** | |---|---|---| | **Model lock-in** | Claude-only (Opus, Sonnet, Haiku) | Any provider (75+ models, local via Ollama) | | **Switch mid-task** | Not designed for | Built for it (`/model` command) | | **Best at** | First-class Clau",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "lock-in",
+        "claude-only",
+        "mid-task",
+        "first-class",
+        "strategy",
+        "claude",
+        "code",
+        "opencode"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "User: agent wants to route different coding tasks to different models (e.g., Claude for complex refactoring, GPT-4o-mini for quick fixes, local Llama for sensitive files). --- ### Your Architecture: Main Agent + Coding Harness This is a clean separation of concerns. Here's how it",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "gpt",
+        "e.g",
+        "gpt-4o-mini",
+        "wants",
+        "route",
+        "different",
+        "coding",
+        "tasks"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "User: main agent doesn't get polluted with file system state, syntax errors, or test output noise. - The harness maintains persistent context of the codebase (both tools index your repo and remember file relationships). - The main agent can issue high-level directives like *\"Refa",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "high-level",
+        "doesn't",
+        "get",
+        "polluted",
+        "state",
+        "syntax",
+        "errors",
+        "test"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "User: **OpenCode** as the harness. You can dynamically switch the underlying model per task phase — for example: 1. Plan with Claude Opus (deep reasoning) 2. Execute with GPT-4o or Codestral (fast coding) 3. Simple follow-ups with a local model (zero API cost) This is OpenCode's",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "gpt",
+        "gpt-4o",
+        "follow-ups",
+        "opencode",
+        "harness",
+        "can",
+        "dynamically",
+        "switch"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: You're right that the **pattern is sound** — main agent orchestrates, coding harness executes. That's a real architecture people use. But let me be precise about what we're actually talking about here: ### The Theory vs. The VPS Reality The comparison you shared treats",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "you're",
+        "right",
+        "pattern",
+        "sound",
+        "orchestrates",
+        "coding",
+        "harness",
+        "executes"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: exactly what **OpenClaw subagents already do**. When I spawn a subagent, I can specify `model=kimi/k2p6` for deep reasoning or `model=opencode-go/minimax-m2.7` for fast execution. The harness is OpenClaw's agent runtime. ### What OpenCode CLI Would Actually Add If we i",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "kimi/k2p6",
+        "opencode-go/minimax-m2.7",
+        "exactly",
+        "what",
+        "openclaw",
+        "subagents",
+        "already",
+        "when"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: Auth opencode auth login --provider openai # or anthropic, etc. # Start persistent server opencode serve --port 4096 --hostname 127.0.0.1 # Then from OpenClaw, I'd call: opencode run --attach http://localhost:4096 \\ --model opencode-go/glm-5 \\ \"Refactor auth module to",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "openai",
+        "127.0.0.1",
+        "opencode-go/glm-5",
+        "auth",
+        "opencode",
+        "login",
+        "provider",
+        "anthropic"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: need more codebase awareness than I get from `read`/`edit` calls, then OpenCode CLI as a dedicated coding executor makes sense. I'm not opposed to it. I just don't want to add complexity for marginal gain. If you want to try it, let's install it. If you want to see how",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "need",
+        "codebase",
+        "awareness",
+        "get",
+        "read",
+        "edit",
+        "calls",
+        "opencode"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "User: Conversation context (untrusted, chronological, selected for current message): #22266 Fri 2026-05-15 14:53 GMT+8 Victor Paolo Reyes: I just made the update. How are things? #22278 Fri 2026-05-15 17:42 GMT+8 Victor Paolo Reyes: If opencode cli is installed, you should be abl",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "conversation",
+        "context",
+        "untrusted",
+        "chronological",
+        "selected",
+        "current",
+        "message",
+        "fri"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "User: dedicated coding executors while a main agent handles system engineering is architecturally sound. --- ### What They Both Do…[truncated] Both tools require **API access** (not just chat subscriptions) to function as harnesses. Claude Code can use a Claude Pro/Max subscripti",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "pro/max",
+        "dedicated",
+        "coding",
+        "executors",
+        "while",
+        "handles",
+        "engineering",
+        "architecturally"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "User: How do I load memoria backup to a fresh install?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "backup",
+        "how",
+        "load",
+        "memoria",
+        "fresh",
+        "install"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: **Fresh install restore:** ```bash # 1. Fresh install — clone and start git clone https://github.com/ceil-labs/memoria.git cd memoria docker compose up -d # 2. Wait for Postgres to be ready docker compose exec postgres pg_isready -U memory # 3. Copy backup into contain",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "backup",
+        "github.com/ceil-labs/memoria.git",
+        "pg-isready",
+        "fresh",
+        "install",
+        "restore",
+        "bash",
+        "clone"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: first run**, you might see harmless \"does not exist\" errors during `--clean` — that's normal. The restore will still populate everything. Want me to adapt this for a specific host setup?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "first",
+        "run",
+        "might",
+        "see",
+        "harmless",
+        "does",
+        "not",
+        "exist"
+      ]
+    },
+    "memory:memory/2026-05-12.md:5:5": {
+      "key": "memory:memory/2026-05-12.md:5:5",
+      "path": "memory/2026-05-12.md",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "TanStack Supply Chain Attack — Memoria Exposure Check: **Source:** @0xlupin tweet — https://x.com/0xlupin/status/2053980673350697096",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "tanstack",
+        "supply",
+        "chain",
+        "attack",
+        "memoria",
+        "exposure",
+        "check",
+        "source"
+      ]
+    },
+    "memory:memory/2026-05-12.md:7:7": {
+      "key": "memory:memory/2026-05-12.md:7:7",
+      "path": "memory/2026-05-12.md",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "TanStack Supply Chain Attack — Memoria Exposure Check: **Attack:** Supply chain compromise of TanStack packages. Malicious versions released: `1.166.12`, `1.166.15`, `1.169.5`, `1.169.8`. Flagged April 16, went live May 12.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "1.166.12",
+        "1.166.15",
+        "1.169.5",
+        "1.169.8",
+        "tanstack",
+        "supply",
+        "chain",
+        "attack"
+      ]
+    },
+    "memory:memory/2026-05-12.md:9:9": {
+      "key": "memory:memory/2026-05-12.md:9:9",
+      "path": "memory/2026-05-12.md",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "TanStack Supply Chain Attack — Memoria Exposure Check: **Memoria exposure:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "tanstack",
+        "supply",
+        "chain",
+        "attack",
+        "memoria",
+        "exposure",
+        "check"
+      ]
+    },
+    "memory:memory/2026-05-12.md:10:13": {
+      "key": "memory:memory/2026-05-12.md:10:13",
+      "path": "memory/2026-05-12.md",
+      "startLine": 10,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "TanStack Supply Chain Attack — Memoria Exposure Check: Direct `tanstack` dependency: **None**; `package-lock.json` references: **0**; `node_modules/` presence: **None**; `npm audit --audit-level critical`: **0 critical vulnerabilities**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "package-lock.json",
+        "node-modules",
+        "audit-level",
+        "tanstack",
+        "supply",
+        "chain",
+        "attack",
+        "memoria"
+      ]
+    },
+    "memory:memory/2026-05-12.md:15:15": {
+      "key": "memory:memory/2026-05-12.md:15:15",
+      "path": "memory/2026-05-12.md",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "TanStack Supply Chain Attack — Memoria Exposure Check: **Conclusion:** Memoria is **not affected**. The project does not use TanStack.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "tanstack",
+        "supply",
+        "chain",
+        "attack",
+        "memoria",
+        "exposure",
+        "check",
+        "conclusion"
+      ]
+    },
+    "memory:memory/2026-05-12.md:17:17": {
+      "key": "memory:memory/2026-05-12.md:17:17",
+      "path": "memory/2026-05-12.md",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "TanStack Supply Chain Attack — Memoria Exposure Check: **Key dependencies to monitor for supply chain risk:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "tanstack",
+        "supply",
+        "chain",
+        "attack",
+        "memoria",
+        "exposure",
+        "check",
+        "key"
+      ]
+    },
+    "memory:memory/2026-05-12.md:18:18": {
+      "key": "memory:memory/2026-05-12.md:18:18",
+      "path": "memory/2026-05-12.md",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "TanStack Supply Chain Attack — Memoria Exposure Check: `@google/genai`, `openai`, `express`, `socket.io`, `multer`, `react`, `react-dom`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "openai",
+        "google/genai",
+        "socket.io",
+        "react-dom",
+        "tanstack",
+        "supply",
+        "chain",
+        "attack"
+      ]
+    },
+    "memory:memory/2026-05-12.md:20:20": {
+      "key": "memory:memory/2026-05-12.md:20:20",
+      "path": "memory/2026-05-12.md",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "TanStack Supply Chain Attack — Memoria Exposure Check: **Recommendations (not yet implemented):**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "tanstack",
+        "supply",
+        "chain",
+        "attack",
+        "memoria",
+        "exposure",
+        "check",
+        "recommendations"
+      ]
+    },
+    "memory:memory/2026-05-12.md:21:24": {
+      "key": "memory:memory/2026-05-12.md:21:24",
+      "path": "memory/2026-05-12.md",
+      "startLine": 21,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "TanStack Supply Chain Attack — Memoria Exposure Check: Pin exact versions for critical dependencies; Set up Dependabot or automated `npm audit` checks; Use `npm ci` in production (lock file strict); Review lock file diffs before merging",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "tanstack",
+        "supply",
+        "chain",
+        "attack",
+        "memoria",
+        "exposure",
+        "check",
+        "pin"
+      ]
+    },
+    "memory:memory/2026-05-12.md:25:25": {
+      "key": "memory:memory/2026-05-12.md:25:25",
+      "path": "memory/2026-05-12.md",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "TanStack Supply Chain Attack — Memoria Exposure Check: Consider `pnpm` with `corepack` for stricter peer dependency resolution",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "tanstack",
+        "supply",
+        "chain",
+        "attack",
+        "memoria",
+        "exposure",
+        "check",
+        "consider"
+      ]
+    },
+    "memory:memory/2026-05-12.md:31:31": {
+      "key": "memory:memory/2026-05-12.md:31:31",
+      "path": "memory/2026-05-12.md",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "TanStack Wiki Created + Citation Guidance Updates: **Wiki created:** `tanstack-npm-supply-chain-attack` (concept, published)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "tanstack-npm-supply-chain-attack",
+        "tanstack",
+        "wiki",
+        "created",
+        "citation",
+        "guidance",
+        "updates",
+        "npm"
+      ]
+    },
+    "memory:memory/2026-05-12.md:32:34": {
+      "key": "memory:memory/2026-05-12.md:32:34",
+      "path": "memory/2026-05-12.md",
+      "startLine": 32,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "TanStack Wiki Created + Citation Guidance Updates: **7 citations** from 2 sources (TanStack postmortem + Snyk analysis); Covers: attack chain (4 steps), impact (42 packages, 84 versions, 12.7M+ downloads), remediation (7 steps), Memoria exposure analysis; **Example of multi-citat",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "12.7m",
+        "multi-citat",
+        "tanstack",
+        "wiki",
+        "created",
+        "citation",
+        "guidance",
+        "updates"
+      ]
+    },
+    "memory:memory/2026-05-12.md:36:36": {
+      "key": "memory:memory/2026-05-12.md:36:36",
+      "path": "memory/2026-05-12.md",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "TanStack Wiki Created + Citation Guidance Updates: **Guidance updates made:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "tanstack",
+        "wiki",
+        "created",
+        "citation",
+        "guidance",
+        "updates",
+        "made"
+      ]
+    },
+    "memory:memory/2026-05-12.md:38:41": {
+      "key": "memory:memory/2026-05-12.md:38:41",
+      "path": "memory/2026-05-12.md",
+      "startLine": 38,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "TanStack Wiki Created + Citation Guidance Updates: **AGENTS.md** — New section \"Wiki & Citation Best Practices\":; Multiple citations (3-7 minimum, 10+ for complex articles); Cite from multiple sources when possible; Cross-reference new wikis to related articles",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "agents.md",
+        "3-7",
+        "cross-reference",
+        "tanstack",
+        "wiki",
+        "created",
+        "citation",
+        "guidance"
+      ]
+    },
+    "memory:memory/2026-05-12.md:42:42": {
+      "key": "memory:memory/2026-05-12.md:42:42",
+      "path": "memory/2026-05-12.md",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "TanStack Wiki Created + Citation Guidance Updates: Clear summary, headers, actionable takeaways",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "tanstack",
+        "wiki",
+        "created",
+        "citation",
+        "guidance",
+        "updates",
+        "clear",
+        "summary"
+      ]
+    },
+    "memory:memory/2026-05-12.md:44:47": {
+      "key": "memory:memory/2026-05-12.md:44:47",
+      "path": "memory/2026-05-12.md",
+      "startLine": 44,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "TanStack Wiki Created + Citation Guidance Updates: **MEMORY.md** — New section \"Memoria Wiki Best Practices\":; Multiple citations required (never limit to 1); Cross-reference wikis in the graph; Article structure guidelines",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "cross-reference",
+        "tanstack",
+        "wiki",
+        "created",
+        "citation",
+        "guidance",
+        "updates"
+      ]
+    },
+    "memory:memory/2026-05-12.md:49:52": {
+      "key": "memory:memory/2026-05-12.md:49:52",
+      "path": "memory/2026-05-12.md",
+      "startLine": 49,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "TanStack Wiki Created + Citation Guidance Updates: **Memoria SKILL.md** — Updated:; Hard Rules now include: \"Prefer multiple citations. Aim for 3-7 citations minimum.\"; Added: \"After creating a wiki, cross-reference it.\"; Added `artifact` kind to Article kind Quick Reference",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "skill.md",
+        "3-7",
+        "cross-reference",
+        "tanstack",
+        "wiki",
+        "created",
+        "citation",
+        "guidance"
+      ]
+    },
+    "memory:memory/2026-05-12.md:54:54": {
+      "key": "memory:memory/2026-05-12.md:54:54",
+      "path": "memory/2026-05-12.md",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "TanStack Wiki Created + Citation Guidance Updates: **Sources cited in wiki:**",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "tanstack",
+        "wiki",
+        "created",
+        "citation",
+        "guidance",
+        "updates",
+        "sources",
+        "cited"
+      ]
+    },
+    "memory:memory/2026-05-12.md:55:56": {
+      "key": "memory:memory/2026-05-12.md:55:56",
+      "path": "memory/2026-05-12.md",
+      "startLine": 55,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "TanStack Wiki Created + Citation Guidance Updates: TanStack postmortem: https://tanstack.com/blog/npm-supply-chain-compromise-postmortem; Snyk analysis: https://snyk.io/blog/tanstack-npm-packages-compromised/",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "tanstack",
+        "wiki",
+        "created",
+        "citation",
+        "guidance",
+        "updates",
+        "postmortem",
+        "https"
+      ]
+    },
+    "memory:memory/2026-05-12.md:62:62": {
+      "key": "memory:memory/2026-05-12.md:62:62",
+      "path": "memory/2026-05-12.md",
+      "startLine": 62,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "Supply Chain Security Wiki + Cross-References: **New parent wiki created:** `supply-chain-security` (overview, published)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "a727ea7b8da3"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "cross-references",
+        "supply-chain-security",
+        "supply",
+        "chain",
+        "security",
+        "wiki",
+        "cross",
+        "references"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: You're right, the architecture is sound. Let me install it and test whether it plays nice with your existing OpenCode-Go setup — or if it needs separate direct provider keys (which is the real cost question). Let me just do it:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode-go",
+        "you're",
+        "right",
+        "architecture",
+        "sound",
+        "let",
+        "install",
+        "test"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `install dependencies -> show last 20 lines`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "install",
+        "dependencies",
+        "show",
+        "last"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `run npm search -> show first 20 lines → fetch https://registry.npmjs.org/-/v1/search?text=opencode -> show first 20 lines (+1 steps)`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "registry.npmjs.org",
+        "v1/search",
+        "run",
+        "npm",
+        "show",
+        "first",
+        "fetch",
+        "https"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: 📄 Web Fetch: `from https://opencode.ai/docs/installation/ (max 3000 chars)`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode.ai/docs/installation",
+        "web",
+        "fetch",
+        "https",
+        "opencode.ai",
+        "docs",
+        "installation",
+        "max"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "Assistant: 📄 Web Fetch: `from https://opencode.ai/docs/ (max 5000 chars)`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode.ai/docs",
+        "web",
+        "fetch",
+        "https",
+        "opencode.ai",
+        "docs",
+        "max",
+        "chars"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: 🧩 Tavily Search: `opencode cli install npm brew curl`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "tavily",
+        "opencode",
+        "cli",
+        "install",
+        "npm",
+        "brew",
+        "curl"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "Assistant: Found it — package name is **`opencode-ai`**, not `opencode`. And crucially, the docs say it supports **OpenCode Zen** (your existing $5/mo API service) via `/connect` → select opencode → paste API key.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode-ai",
+        "5/mo",
+        "found",
+        "package",
+        "name",
+        "opencode",
+        "not",
+        "crucially"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `install dependencies -> show last 20 lines`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "install",
+        "dependencies",
+        "show",
+        "last"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "Assistant: 🧰 Process: `nova-glade`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "nova-glade",
+        "process",
+        "nova",
+        "glade"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `opencode --version 2>&1 && which opencode`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode",
+        "version",
+        "which"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `opencode auth list 2>&1`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode",
+        "auth",
+        "list"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `opencode models --help 2>&1 | head -20`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode",
+        "models",
+        "help",
+        "head"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:55:55": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:55:55",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 55,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `opencode models 2>&1 | head -20`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode",
+        "models",
+        "head"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:56:56": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:56:56",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 56,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `opencode auth login --provider opencode --method api-key 2>&1 | head -30`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "api-key",
+        "opencode",
+        "auth",
+        "login",
+        "provider",
+        "method",
+        "api",
+        "key"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:57:57": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:57:57",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 57,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `search \"opencode\" in 2>/dev/null -> show first 10 lines → print text`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "dev/null",
+        "opencode",
+        "dev",
+        "null",
+        "show",
+        "first",
+        "print"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:58:58": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:58:58",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 58,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "Assistant: 🧰 Process: `clear-rook`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "clear-rook",
+        "process",
+        "clear",
+        "rook"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:59:59": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:59:59",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 59,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "Assistant: 📖 Read: `first 50 lines of ~/.openclaw/secrets.json`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "openclaw/secrets.json",
+        "read",
+        "first",
+        "openclaw",
+        "secrets.json"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:60:60": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:60:60",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 60,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "Assistant: 🧰 Process: `clear-rook`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "clear-rook",
+        "process",
+        "clear",
+        "rook"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:61:61": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:61:61",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 61,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "Assistant: 🧰 Process: `clear-rook`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "clear-rook",
+        "process",
+        "clear",
+        "rook"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:62:62": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:62:62",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 62,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `create folder ~/.local/share/opencode → show >`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "local/share/opencode",
+        "create",
+        "folder",
+        "local",
+        "share",
+        "opencode",
+        "show"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:63:63": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:63:63",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 63,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `opencode models --refresh 2>&1 | head -30`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode",
+        "models",
+        "refresh",
+        "head"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:64:64": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:64:64",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 64,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `opencode run --model opencode/glm-5 \"Hello, are you working?\" 2>&1 | head -30`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode/glm-5",
+        "opencode",
+        "run",
+        "model",
+        "glm",
+        "hello",
+        "working",
+        "head"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:65:65": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:65:65",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 65,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `opencode run --model glm-5 \"Hello\" 2>&1 | head -30`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "glm-5",
+        "opencode",
+        "run",
+        "model",
+        "glm",
+        "hello",
+        "head"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:66:66": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:66:66",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 66,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `OPENCODE_API_KEY=\"***\" opencode run --model glm-5 \"Hell…`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode-api-key",
+        "glm-5",
+        "opencode",
+        "run",
+        "model",
+        "glm",
+        "hell"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:67:67": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:67:67",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 67,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `list files in ~/.local/share/opencode/ → show ~/.local/share/opencode/auth.json -> show first 20 lines`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "local/share/opencode",
+        "local/share/opencode/auth.json",
+        "list",
+        "local",
+        "share",
+        "opencode",
+        "show",
+        "auth.json"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:68:68": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:68:68",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 68,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "Assistant: 🧰 Process: `lucky-nudibranch`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "lucky-nudibranch",
+        "process",
+        "lucky",
+        "nudibranch"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:69:69": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:69:69",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 69,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "Assistant: 🧰 Process: `lucky-nudibranch`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "lucky-nudibranch",
+        "process",
+        "lucky",
+        "nudibranch"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:70:70": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:70:70",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 70,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `show ~/.config/opencode/config.json → print text → print text → print text`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "config/opencode/config.json",
+        "show",
+        "config",
+        "opencode",
+        "config.json",
+        "print"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:71:71": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:71:71",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 71,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `opencode auth list 2>&1`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode",
+        "auth",
+        "list"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:72:72": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:72:72",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 72,
+      "endLine": 72,
+      "source": "memory",
+      "snippet": "Assistant: 📝 Edit: `in ~/.config/opencode/opencode.jsonc`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "config/opencode/opencode.jsonc",
+        "edit",
+        "config",
+        "opencode",
+        "opencode.jsonc"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:73:73": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:73:73",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 73,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `opencode models --refresh 2>&1 | head -30`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode",
+        "models",
+        "refresh",
+        "head"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:74:74": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:74:74",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 74,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "Assistant: 📝 Edit: `in ~/.config/opencode/opencode.jsonc`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "config/opencode/opencode.jsonc",
+        "edit",
+        "config",
+        "opencode",
+        "opencode.jsonc"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:75:75": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:75:75",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 75,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `opencode models --refresh 2>&1 | head -30`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode",
+        "models",
+        "refresh",
+        "head"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:76:76": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:76:76",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 76,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `opencode run --model opencode-go/glm-5 \"Say hello briefly\" 2>&1 | tail -20`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode-go/glm-5",
+        "opencode",
+        "run",
+        "model",
+        "glm",
+        "say",
+        "hello",
+        "briefly"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:77:77": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:77:77",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 77,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "Assistant: 🎯 **It works.** `opencode-ai` CLI is installed, configured with your existing OpenCode-Go API key, and confirmed running with `glm-5`. ### What's Now Possible ```bash # One-shot coding task opencode run --model opencode-go/glm-5 \\ \"Refactor the auth module to use JWT",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode-ai",
+        "opencode-go",
+        "glm-5",
+        "one-shot",
+        "opencode-go/glm-5",
+        "works",
+        "opencode",
+        "cli"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:78:78": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:78:78",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 78,
+      "endLine": 78,
+      "source": "memory",
+      "snippet": "Assistant: `opencode-go/kimi-k2.6` | Balanced coding | | Kimi K2.5 | `opencode-go/kimi-k2.5` | Fast coding | | MiniMax M2.7 | `opencode-go/minimax-m2.7` | High volume | | MiniMax M2.5 | `opencode-go/minimax-m2.5` | Cheapest | ### The \"Two-Step\" Pattern From OpenClaw, I can now: 1",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "opencode-go/kimi-k2.6",
+        "k2.5",
+        "opencode-go/kimi-k2.5",
+        "m2.7",
+        "opencode-go/minimax-m2.7",
+        "m2.5",
+        "opencode-go/minimax-m2.5",
+        "two-step"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:79:79": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:79:79",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 79,
+      "endLine": 79,
+      "source": "memory",
+      "snippet": "Assistant: output - **B**: Start `opencode serve` for persistent repo context, then send tasks via `--attach` - **C**: Use it as a dedicated \"coding subagent\" — I spawn a subagent whose only job is to run opencode commands What's the first task you want to throw at it?",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "output",
+        "start",
+        "opencode",
+        "serve",
+        "persistent",
+        "repo",
+        "context",
+        "send"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:80:80": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:80:80",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 80,
+      "endLine": 80,
+      "source": "memory",
+      "snippet": "User: Conversation context (untrusted, chronological, selected for current message): #22266 Fri 2026-05-15 14:53 GMT+8 Victor Paolo Reyes: I just made the update. How are things? #22278 Fri 2026-05-15 17:42 GMT+8 Victor Paolo Reyes: If opencode cli is installed, you should be abl",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "conversation",
+        "context",
+        "untrusted",
+        "chronological",
+        "selected",
+        "current",
+        "message",
+        "fri"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:81:81": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:81:81",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 81,
+      "endLine": 81,
+      "source": "memory",
+      "snippet": "User: dedicated coding executors while a main agent handles system engineering is architecturally sound. --- ### What They Both Do…[truncated] #22300 Fri 2026-05-15 17:56 GMT+8 Victor Paolo Reyes: Both tools require **API access** (not just chat subscriptions) to function as harn",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "dedicated",
+        "coding",
+        "executors",
+        "while",
+        "handles",
+        "engineering",
+        "architecturally",
+        "sound"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-15.txt:82:82": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-15.txt:82:82",
+      "path": "memory/.dreams/session-corpus/2026-05-15.txt",
+      "startLine": 82,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "Assistant: 🛠️ `show ~/.openclaw/openclaw.json -> run python3 inline script → search \"\"kimi-coding\"\" in ~/.openclaw/openclaw.json -> show first 40 lines`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:14.890Z",
+      "lastRecalledAt": "2026-05-16T19:00:14.890Z",
+      "queryHashes": [
+        "fd6cc5e579bc"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "openclaw/openclaw.json",
+        "kimi-coding",
+        "show",
+        "openclaw",
+        "openclaw.json",
+        "run",
+        "python3",
+        "inline"
+      ]
+    },
+    "memory:memory/2026-05-12.md:86:113": {
+      "key": "memory:memory/2026-05-12.md:86:113",
+      "path": "memory/2026-05-12.md",
+      "startLine": 86,
+      "endLine": 113,
+      "source": "memory",
+      "snippet": "**Total Memoria sources now:** 31 (25 HTB + 6 security) --- ## Future Wiki Ideas (Paused) Potential child wikis under Supply Chain Security tree — not creating now, capturing for future iteration: 1. **`slsa-framework`** (concept) — Deep dive into SLSA levels (L1-L4), provenance attestation, Sigstore/cosign, and how TanStack attack bypassed L3 2. **`dependency-confusion`** (concept) — Specific attack type: how it works, Alex Birsan 2021 demo, prevention strategies, private registry hardening 3. **`npm-security-hardening`** (summary) — Actionable checklist: `npm audit`, lock files, version pinning, `ignore-scripts`, `.npmrc` hardening, Dependabot 4. **`typosquatting-attacks`** (concept) —",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.4307341784238815,
+      "maxScore": 0.4307341784238815,
+      "firstRecalledAt": "2026-05-16T19:00:45.038Z",
+      "lastRecalledAt": "2026-05-16T19:00:45.038Z",
+      "queryHashes": [
+        "2af205514bde"
+      ],
+      "recallDays": [
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "slsa-framework",
+        "l1-l4",
+        "sigstore/cosign",
+        "dependency-confusion",
+        "npm-security-hardening",
+        "ignore-scripts",
+        "typosquatting-attacks",
+        "total"
       ]
     }
   }

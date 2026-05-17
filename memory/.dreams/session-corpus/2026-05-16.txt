@@ -1,0 +1,3 @@
+[main/sessions/main/155a7467-37e5-44ef-83dc-b16584078631.jsonl#L13] User: How do I load memoria backup to a fresh install?
+[main/sessions/main/155a7467-37e5-44ef-83dc-b16584078631.jsonl#L15] Assistant: **Fresh install restore:** ```bash # 1. Fresh install — clone and start git clone https://github.com/ceil-labs/memoria.git cd memoria docker compose up -d # 2. Wait for Postgres to be ready docker compose exec postgres pg_isready -U memory # 3. Copy backup into con
+[main/sessions/main/155a7467-37e5-44ef-83dc-b16584078631.jsonl#L15] Assistant: first run**, you might see harmless "does not exist" errors during `--clean` — that's normal. The restore will still populate everything. Want me to adapt this for a specific host setup?

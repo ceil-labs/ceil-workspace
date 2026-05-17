@@ -1,25 +1,15 @@
 {
   "version": 1,
   "files": {
+    "memory/2026-05-12.md": {
+      "mtimeMs": 1778577779168,
+      "size": 5473,
+      "lastDreamingDayIngested": "2026-05-17"
+    },
     "memory/2026-05-09.md": {
       "mtimeMs": 1778323547645,
-      "size": 7681
-    },
-    "memory/2026-05-07.md": {
-      "mtimeMs": 1778252720889,
-      "size": 7687
-    },
-    "memory/2026-05-06.md": {
-      "mtimeMs": 1778062187357,
-      "size": 1424
-    },
-    "memory/2026-05-04.md": {
-      "mtimeMs": 1777894274352,
-      "size": 6104
-    },
-    "memory/2026-05-02.md": {
-      "mtimeMs": 1777731215170,
-      "size": 7176
+      "size": 7681,
+      "lastDreamingDayIngested": "2026-05-17"
     }
   }
 }
